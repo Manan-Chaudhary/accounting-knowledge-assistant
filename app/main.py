@@ -20,7 +20,7 @@ app.include_router(integration_router)
 
 @app.get("/")
 def root():
-    return RedirectResponse(url="/chat")
+    return RedirectResponse(url="/home")
 
 # mounts CSS for all
 app.mount("/static", StaticFiles(directory="static"), name="static")
