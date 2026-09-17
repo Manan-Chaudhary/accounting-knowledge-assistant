@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Accounting Digital Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .auth-container {
+            width: 100%;
+            max-width: 420px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 36px 32px;
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .auth-logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 6px;
+        }
+
+        .auth-subtitle {
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .team-badge {
+            display: inline-block;
+            margin-bottom: 12px;
+            border: 1px solid #e5e7eb;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #4b5563;
+            background: #f8fafc;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .alert-banner {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .alert-error {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #991b1b;
+        }
+
+        .alert-success {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            color: #166534;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 6px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-wrapper input {
+            width: 100%;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-size: 14px;
+            color: #111827;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            font-family: inherit;
+        }
+
+        .input-wrapper input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .input-wrapper.error input {
+            border-color: #ef4444;
+            background-color: #fffaf0;
+        }
+
+        .input-wrapper.error input:focus {
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+        }
+
+        .field-error-text {
+            display: none;
+            color: #ef4444;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background-color 0.2s;
+            margin-top: 8px;
+        }
+
+        .submit-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        .submit-btn:disabled {
+            background-color: #93c5fd;
+            cursor: not-allowed;
+        }
+
+        .hint-text {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #9ca3af;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="team-badge">Team 83 · RMIT Capstone</div>
+            <div class="auth-logo">Accounting Digital Assistant</div>
+            <div class="auth-subtitle">Sign in to access your workspace</div>
+        </div>
+
+        <!-- Notification Banner -->
+        <div id="alertBanner" class="alert-banner">
+            <i id="alertIcon" class="fas fa-exclamation-circle"></i>
+            <span id="alertMessage"></span>
+        </div>
+
+        <form id="loginForm" novalidate>
+            <div class="form-group">
+                <label for="emailInput">Email Address</label>
+                <div class="input-wrapper" id="emailWrapper">
+                    <input type="email" id="emailInput" placeholder="name@rmit.edu.au" autocomplete="email" required>
+                </div>
+                <div class="field-error-text" id="emailError">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <div class="input-wrapper" id="passwordWrapper">
+                    <input type="password" id="passwordInput" placeholder="••••••••" autocomplete="current-password" required>
+                </div>
+                <div class="field-error-text" id="passwordError">Password is required (min. 6 characters).</div>
+            </div>
+
+            <button type="submit" id="submitBtn" class="submit-btn">
+                <span>Sign In</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </form>
+
+        <div class="hint-text">
+            Prototype Demo Mode<br>
+            Use any email + password (≥ 6 chars) to sign in.<br>
+            Use <code>error@rmit.edu.au</code> to simulate an auth error state.
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const emailInput = document.getElementById('emailInput');
+        const passwordInput = document.getElementById('passwordInput');
+        const emailWrapper = document.getElementById('emailWrapper');
+        const passwordWrapper = document.getElementById('passwordWrapper');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+        const submitBtn = document.getElementById('submitBtn');
+        const alertBanner = document.getElementById('alertBanner');
+        const alertMessage = document.getElementById('alertMessage');
+        const alertIcon = document.getElementById('alertIcon');
+
+        function showAlert(message, type = 'error') {
+            alertBanner.className = `alert-banner ${type === 'error' ? 'alert-error' : 'alert-success'}`;
+            alertIcon.className = type === 'error' ? 'fas fa-exclamation-circle' : 'fas fa-check-circle';
+            alertMessage.innerText = message;
+            alertBanner.style.display = 'flex';
+        }
+
+        function hideAlert() {
+            alertBanner.style.display = 'none';
+        }
+
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // Live validation clearing on typing
+        emailInput.addEventListener('input', () => {
+            emailWrapper.classList.remove('error');
+            emailError.style.display = 'none';
+            hideAlert();
+        });
+
+        passwordInput.addEventListener('input', () => {
+            passwordWrapper.classList.remove('error');
+            passwordError.style.display = 'none';
+            hideAlert();
+        });
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            hideAlert();
+
+            let isValid = true;
+            const email = emailInput.value.trim();
+            const password = passwordInput.value;
+
+            // Email validation
+            if (!email || !validateEmail(email)) {
+                emailWrapper.classList.add('error');
+                emailError.style.display = 'block';
+                isValid = false;
+            }
+
+            // Password validation
+            if (!password || password.length < 6) {
+                passwordWrapper.classList.add('error');
+                passwordError.style.display = 'block';
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            // Loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Authenticating...';
+
+            try {
+                // Simulated Prototype Authentication Response
+                await new Promise(resolve => setTimeout(resolve, 800));
+
+                // Demo error trigger
+                if (email === 'error@rmit.edu.au') {
+                    throw new Error('Invalid credentials or account locked. Please verify your email and password.');
+                }
+
+                // Successful-login transition prototype
+                showAlert('Login successful! Redirecting to workspace...', 'success');
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Success';
+                
+                // Store simulated user token/session for UI demonstration
+                localStorage.setItem('auth_user', JSON.stringify({ email: email, role: 'Auditor' }));
+
+                setTimeout(() => {
+                    window.location.href = '/upload';
+                }, 900);
+
+            } catch (err) {
+                showAlert(err.message, 'error');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>Sign In</span> <i class="fas fa-arrow-right"></i>';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -32,6 +32,18 @@
 
         <div class="sidebar-footer">
             <div class="settings-btn"><i class="fas fa-cog"></i> Settings</div>
+    
+            <!-- Logout UI Prototype matching style.css -->
+            <div class="user-profile">
+                <div class="user-info">
+                    <span class="user-name" id="sidebarUserName">Demo User</span>
+                    <span class="user-role">Auditor</span>
+                </div>
+                <a href="javascript:void(0)" id="logoutBtn" class="logout-btn" title="Sign out">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+
             <div class="version-text">Prototype · v0.1</div>
         </div>
     </aside>
@@ -87,12 +99,25 @@
     </main>
 
     <script>
+        const currentUser = JSON.parse(localStorage.getItem('auth_user') || '{"email":"auditor@rmit.edu.au"}');
+        const userNameElem = document.getElementById('sidebarUserName');
         const fileInput = document.getElementById('fileInput');
         const browseBtn = document.getElementById('browseBtn');
         const dropZone = document.getElementById('dropZone');
         const tableBody = document.getElementById('documentsTableBody');
         const searchInput = document.getElementById('searchInput');
 
+        if (userNameElem) userNameElem.innerText = currentUser.email.split('@')[0];
+
+            const logoutBtn = document.getElementById('logoutBtn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', () => {
+                    if (confirm('Are you sure you want to log out?')) {
+                        localStorage.removeItem('auth_user');
+                        window.location.href = '/login';
+                    }
+                });
+            }
         let documentsData = [];
 
         browseBtn.addEventListener('click', () => fileInput.click());

@@ -17,6 +17,10 @@ templates = Jinja2Templates(directory=BASE_DIR / "templates")
 @router.get("/upload", response_class=HTMLResponse)
 def home(request: Request):
     return templates.TemplateResponse(request=request, name="upload.html")
+
+@router.get("/login", response_class=HTMLResponse)
+def login_page(request: Request):
+    return templates.TemplateResponse(request=request, name="login.html")
 # Examples
 # @router.get("/upload")
 # def upload_page():
