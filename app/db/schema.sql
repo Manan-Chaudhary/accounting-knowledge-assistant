@@ -8,7 +8,8 @@ create table if not exists documents (
     filename text not null,
     source_label text,
     storage_path text,
-    status text not null default 'pending',  -- 'pending' | 'ready' | 'failed'
+    status text not null default 'pending', -- 'pending' | 'ready' | 'failed'
+    failure_reason text,
     uploaded_by text,
     uploaded_at timestamp default now()
 );

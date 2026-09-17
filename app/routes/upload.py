@@ -6,6 +6,7 @@ from fastapi import APIRouter, Request, UploadFile, File, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from supabase import create_client, Client
+import httpx
 
 router = APIRouter()
 
@@ -48,10 +49,12 @@ async def upload_document(file: UploadFile = File(...)):
         supabase.storage.from_(bucket_name).upload(
             path=storage_path,
             file=file_bytes,
-            file_options={"content-type": file.content_type or "application/octet-stream"}
+            file_options={
+                "content-type": file.content_type or "application/octet-stream"
+            }
         )
 
-        # 2. Insert record matching teammate's table schema
+        # 2. Insert document record
         doc_record = {
             "filename": file.filename,
             "source_label": file.filename,
@@ -62,13 +65,35 @@ async def upload_document(file: UploadFile = File(...)):
         }
 
         res = supabase.table("documents").insert(doc_record).execute()
+
+        if not res.data:
+            raise ValueError("Document record was not created.")
+
+        document = res.data[0]
+        document_id = document["id"]
+
+        # 3. Trigger n8n document-processing workflow
+        n8n_url = "http://n8n:5678/webhook/process-document"
+
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            n8n_response = await client.post(
+                n8n_url,
+                json={"document_id": document_id}
+            )
+
+        if n8n_response.status_code >= 400:
+            raise ValueError(
+                f"n8n processing trigger failed: "
+                f"{n8n_response.status_code} {n8n_response.text}"
+            )
+
         return {
-            "message": "File uploaded successfully",
-            "document": res.data[0] if res.data else doc_record
+            "message": "File uploaded and processing started",
+            "document": document
         }
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
 
 @router.get("/documents")
 def list_documents():
