@@ -8,6 +8,7 @@ from app.routes.upload import router as upload_router
 from app.routes.testing import router as testing_router
 from app.routes.home import router as home_router
 from app.routes.integration import router as integration_router
+from app.routes.auth import router as auth_router
 
 
 app = FastAPI()
@@ -27,3 +28,5 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Mount the Chainlit app located at app/chainlit/chainlit_app.py -> needs to be last
 mount_chainlit(app=app, target="app/chainlit/chainlit_app.py", path="/chat")
+# application sign in auth 
+app.include_router(auth_router)
