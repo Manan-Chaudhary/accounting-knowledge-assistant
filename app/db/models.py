@@ -19,7 +19,8 @@ class Document(Base):
     filename = Column(String, nullable=False)
     source_label = Column(String, nullable=True)
     storage_path = Column(String, nullable=True)  # Supabase Storage path to the raw file
-    status = Column(String, nullable=False, default="pending")  # pending | ready | failed
+    status = Column(String, nullable=False, default="pending")  # pending | processing | ready | failed
+    failure_reason = Column(Text, nullable=True)
     uploaded_by = Column(String, nullable=True)
     uploaded_at = Column(DateTime, default=datetime.utcnow)
 
