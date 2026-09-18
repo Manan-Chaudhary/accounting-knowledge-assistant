@@ -9,9 +9,7 @@ export function Sidebar() {
   const navigate = useNavigate()
 
   const handleSignOut = () => {
-    if (window.confirm('Are you sure you want to log out?')) {
-      navigate('/login')
-    }
+    navigate('/login')
   }
 
   const navItemClass = ({ isActive }: { isActive: boolean }) =>
@@ -19,7 +17,7 @@ export function Sidebar() {
 
   return (
     <aside className="sidebar">
-      <div className="logo">Accounting Digital Assistant</div>
+      <div className="logo">Alfa Focus SMSF Assistant</div>
 
       <div className="sidebar-section">
         <div className="sidebar-title">TEAM 83 · RMIT CAPSTONE</div>
@@ -30,9 +28,7 @@ export function Sidebar() {
 
       <div className="sidebar-section">
         <div className="sidebar-title">Recent Conversations</div>
-        <div className="sidebar-item"><i className="far fa-file-alt" /> Prepaid expenses</div>
-        <div className="sidebar-item"><i className="far fa-file-alt" /> Revenue recognition</div>
-        <div className="sidebar-item"><i className="far fa-file-alt" /> Monthly close checklist</div>
+        <div className="sidebar-item sidebar-item--empty">Recent conversations will appear here.</div>
       </div>
 
       <div className="sidebar-section">
@@ -58,7 +54,6 @@ export function Sidebar() {
             Sign out
           </a>
         </div>
-        <div className="version-text">v0.2 · Week 2 wireframes</div>
       </div>
     </aside>
   )

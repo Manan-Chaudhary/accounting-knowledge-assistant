@@ -32,6 +32,13 @@ export function Chat() {
         {!error && connected && <span className="chat-status--ok">Connected</span>}
       </div>
 
+      <div className="compliance-banner" role="note">
+        <i className="fas fa-triangle-exclamation" aria-hidden="true" />
+        <span>
+          Please do not enter client names, TFNs, member numbers or other client-identifying information.
+        </span>
+      </div>
+
       <div className="chat-messages">
         {messages.map((message) => (
           <div

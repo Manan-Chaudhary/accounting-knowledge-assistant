@@ -5,9 +5,9 @@ import { Layout } from '../components/Layout'
 // passes no template context either).
 export function Home() {
   return (
-    <Layout badge="INTERNAL · SPRINT 1 W2">
+    <Layout badge="INTERNAL">
       <div className="welcome-section">
-        <h1 className="welcome-title">Accounting Knowledge Assistant</h1>
+        <h1 className="welcome-title">Alfa Focus SMSF Assistant</h1>
         <p className="welcome-subtitle">
           Access trusted accounting information, internal documents and AI-powered tools.
         </p>

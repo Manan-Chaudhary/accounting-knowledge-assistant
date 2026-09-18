@@ -89,6 +89,17 @@
      font-weight: 500;
  }
 
+ /* Honest empty-state text, not a real (clickable-looking) nav item. */
+ .sidebar-item--empty {
+     color: #9ca3af;
+     font-style: italic;
+     cursor: default;
+ }
+
+ .sidebar-item--empty:hover {
+     background-color: transparent;
+ }
+
  .sidebar-footer {
      margin-top: auto;
  }
@@ -207,6 +218,18 @@
      color: #9ca3af;
      font-size: 12px;
      margin-top: 16px;
+ }
+
+ /* Inline upload-error, replacing window.alert(). Same red pair as
+    .status-badge.failed above. */
+ .upload-error {
+     background-color: #fee2e2;
+     color: #991b1b;
+     border: 1px solid #fecaca;
+     border-radius: 8px;
+     padding: 10px 16px;
+     margin-top: 16px;
+     font-size: 13px;
  }
 
  /* files */
@@ -338,6 +361,39 @@
  .status-badge.uploaded {
      background-color: #e0e7ff;
      color: #4338ca;
+ }
+
+ /* Document ingestion lifecycle states (REQUIREMENTS.md §5.1). Same pill
+    shape as .status-badge above; colours reuse pairs already used elsewhere
+    in this stylesheet so the palette stays consistent. */
+ .status-badge.pending {
+     background-color: #f3f4f6;
+     color: #374151;
+ }
+
+ .status-badge.processing {
+     background-color: #dbeafe;
+     color: #1e40af;
+ }
+
+ .status-badge.ready {
+     background-color: #dcfce7;
+     color: #166534;
+ }
+
+ .status-badge.failed {
+     background-color: #fee2e2;
+     color: #991b1b;
+ }
+
+ .status-badge.superseded {
+     background-color: #fef3c7;
+     color: #92400e;
+ }
+
+ .status-badge.withdrawn {
+     background-color: #e5e7eb;
+     color: #4b5563;
  }
 
  /* 操作按钮 */
@@ -835,4 +891,20 @@
     of silently clipping the user-profile card off the bottom of the screen. */
  .sidebar {
      overflow-y: auto;
+ }
+
+ /* Chat compliance/privacy warning (DH-3). Same warning palette already
+    approved for this product in public/css/alfa-focus.css .warning-banner. */
+ .compliance-banner {
+     display: flex;
+     align-items: flex-start;
+     gap: 8px;
+     flex-wrap: wrap;
+     background: #fef3c7;
+     border: 1px solid #f59e0b;
+     border-radius: 8px;
+     padding: 10px 16px;
+     margin-bottom: 16px;
+     font-size: 13px;
+     color: #92400e;
  }

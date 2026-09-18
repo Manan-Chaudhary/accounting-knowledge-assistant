@@ -7,7 +7,7 @@ import { Layout } from '../components/Layout'
 // (docs/TESTING-PAGE-REQUIREMENTS.md).
 export function Testing() {
   return (
-    <Layout badge="INTERNAL · SPRINT 1 W2">
+    <Layout badge="INTERNAL">
       <div className="page-header">
         <h1 className="welcome-title">LLM Testing & Evaluation</h1>
         <p className="welcome-subtitle">

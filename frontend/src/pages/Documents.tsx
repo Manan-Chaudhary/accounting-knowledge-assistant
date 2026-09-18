@@ -18,6 +18,7 @@ export function Documents() {
   const [uploading, setUploading] = useState(false)
   const [dragOver, setDragOver] = useState(false)
   const [loadError, setLoadError] = useState<string | null>(null)
+  const [uploadError, setUploadError] = useState<string | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const fetchDocuments = async () => {
@@ -41,6 +42,7 @@ export function Documents() {
     formData.append('file', file)
 
     setUploading(true)
+    setUploadError(null)
     try {
       const response = await fetch('/upload', { method: 'POST', body: formData })
       if (!response.ok) {
@@ -50,7 +52,9 @@ export function Documents() {
       if (fileInputRef.current) fileInputRef.current.value = ''
       await fetchDocuments()
     } catch (err) {
-      window.alert('Upload error: ' + (err instanceof Error ? err.message : String(err)))
+      setUploadError(
+        `Unable to upload the selected document. ${err instanceof Error ? err.message : String(err)}`,
+      )
     } finally {
       setUploading(false)
     }
@@ -74,7 +78,7 @@ export function Documents() {
   })
 
   return (
-    <Layout badge="Capstone Prototype">
+    <Layout badge="INTERNAL">
       <h1 className="page-title">Documents</h1>
       <p className="page-subtitle">Upload documents for use within the system.</p>
 
@@ -113,6 +117,12 @@ export function Documents() {
         </button>
         <div className="file-types">Supported file types: PDF · DOCX · TXT</div>
       </div>
+
+      {uploadError && (
+        <div className="upload-error" role="alert">
+          <strong>Upload failed.</strong> {uploadError}
+        </div>
+      )}
 
       <div className="list-header">
         <h2 className="list-title">Uploaded Documents</h2>
@@ -180,7 +190,17 @@ export function Documents() {
                     <td>{ext}</td>
                     <td>{dateStr}</td>
                     <td><span className={`status-badge ${status}`}>{doc.status || 'pending'}</span></td>
-                    <td><button className="action-btn"><i className="fas fa-ellipsis-h" /></button></td>
+                    <td>
+                      <button
+                        className="action-btn"
+                        type="button"
+                        aria-label={`Actions for ${doc.filename}`}
+                        title="Document actions"
+                        disabled
+                      >
+                        <i className="fas fa-ellipsis-h" aria-hidden="true" />
+                      </button>
+                    </td>
                   </tr>
                 )
               })}
