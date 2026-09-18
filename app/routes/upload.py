@@ -15,9 +15,10 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
 
-@router.get("/upload", response_class=HTMLResponse)
-def home(request: Request):
-    return templates.TemplateResponse(request=request, name="upload.html")
+# /upload (GET, HTML) is now served by the React app
+# (frontend/src/pages/Documents.tsx), retired here once the React page was
+# validated as equivalent. POST /upload and GET /documents below are
+# unchanged — the React page calls these same JSON endpoints.
 
 @router.get("/login", response_class=HTMLResponse)
 def login_page(request: Request):
