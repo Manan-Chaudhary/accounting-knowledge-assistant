@@ -211,11 +211,14 @@ docker compose down
 ### Access the Application
 
 | Endpoint | URL | Description |
-|----------|-----|-------------|
-| Chat interface | `http://localhost:8000/chat` | Main Chainlit UI |
-| Document upload | `http://localhost:8000/upload` | Bulk document ingestion |
-| Evaluation | `http://localhost:8000/testing` | Benchmark runner |
-| API docs | `http://localhost:8000/docs` | FastAPI Swagger UI |
+|---|---|---|
+| Web Application (SPA) | `http://localhost:8000/home` | React SPA dashboard (Home) |
+| Document Management | `http://localhost:8000/docs` | Document upload and status management (React) |
+| Sign In | `http://localhost:8000/login` | Authentication portal |
+| Evaluation Suite | `http://localhost:8000/testing` | Benchmark testing runner |
+| Chat Interface | `http://localhost:8000/assistant` | Integrated Chainlit chat assistant |
+| API Docs | `http://localhost:8000/docs` (API) | FastAPI Swagger UI |
+| n8n Workflow Editor | `http://localhost:5678` | n8n automation console |
 
 For LAN access, replace `localhost` with your machine's local IP address.
 
@@ -291,12 +294,46 @@ Tracked here so nobody assumes they work:
 ## n8n Workflow Automation
 
 n8n runs as a separate service alongside the FastAPI/Chainlit application using Docker Compose.
+### Importing and Running Workflows (Team Reproduction Guide)
+
+To initialise and run the shared workflow in a fresh local environment:
+
+1. **Start the containers**:
+   ```bash
+   docker compose up --build
 
 ### Start the environment
 
 ```bash
 docker compose up --build
 ```
+Open n8n:
+Navigate to http://localhost:5678 in your browser. (Complete the one-time owner setup if prompted).
+
+Import the shared workflow:
+
+In the n8n left navigation bar, go to Workflows.
+
+Click the Add Workflow button (or the three dots menu ... in the top right).
+
+Select Import from File.
+
+Choose the exported file from the repository:
+
+n8n/workflows/fastapi-connectivity-test.json
+
+Execute and Verify:
+
+Click Save and ensure the workflow is active.
+
+Click Test step or trigger the webhook to verify the connection between n8n and FastAPI.
+
+Confirm that the execution log returns the expected JSON response:
+
+{
+  "status": "ok",
+  "message": "FastAPI successfully reached from n8n"
+}
 
 Services:
 
