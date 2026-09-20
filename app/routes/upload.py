@@ -1,18 +1,13 @@
-from pathlib import Path
 import os
 import uuid
 from datetime import datetime
-from fastapi import APIRouter, Request, UploadFile, File, HTTPException
-from fastapi.responses import HTMLResponse
-from fastapi.templating import Jinja2Templates
+from fastapi import APIRouter, UploadFile, File, HTTPException
 from supabase import create_client, Client
 import httpx
 
 router = APIRouter()
 
 
-BASE_DIR = Path(__file__).resolve().parents[2]
-templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
 
 # /upload (GET, HTML) is now served by the React app
@@ -20,9 +15,6 @@ templates = Jinja2Templates(directory=BASE_DIR / "templates")
 # validated as equivalent. POST /upload and GET /documents below are
 # unchanged — the React page calls these same JSON endpoints.
 
-@router.get("/login", response_class=HTMLResponse)
-def login_page(request: Request):
-    return templates.TemplateResponse(request=request, name="login.html")
 # Examples
 # @router.get("/upload")
 # def upload_page():

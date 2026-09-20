@@ -796,147 +796,62 @@
      }
  }
 
- /* ================= React port fixes =================
-    Everything above this line is a verbatim copy of static/css/style.css.
-    Fixes below are scoped to the React app only. */
+/* ================= React-specific refinements ================= */
 
- /* .new-chat-btn was a <button> in the original; the React sidebar renders
-    it as a <Link> (an <a>), which browsers underline by default. */
- .new-chat-btn {
-     text-decoration: none;
- }
+/* ================= Auth / UX refinements ================= */
 
- /* The original mockup used short display names ("Alex Morgan"); real user
-    emails (e.g. dev.user@alfafocus.com.au) are long enough to overflow the
-    row and collide with "Sign out". */
- .user-profile {
-     gap: 8px;
- }
+.logout-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
 
- .user-info {
-     min-width: 0;
-     overflow: hidden;
- }
+    border: 0;
+    background: transparent;
 
- .user-name {
-     overflow: hidden;
-     text-overflow: ellipsis;
-     white-space: nowrap;
- }
+    color: #dc2626;
 
- .logout-btn {
-     flex-shrink: 0;
-     white-space: nowrap;
- }
-
- /* Sidebar content (logo + new chat + recent conversations + nav + footer)
-    can exceed 100vh on shorter windows; the original fixed-height sidebar
-    had no way to reach the footer when that happens. Let it scroll instead
-    of silently clipping the user-profile card off the bottom of the screen. */
- .sidebar {
-     overflow-y: auto;
- }
-
-
- /* ================= Login Page Styles ================= */
-.login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #f9fafb;
-}
-
-.login-form {
-    background: #ffffff;
-    padding: 32px 40px;
-    border-radius: 12px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.login-form h1 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #111827;
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-.login-form label {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
+    font-family: inherit;
+    font-size: 13px;
     font-weight: 500;
-    color: #374151;
-    gap: 6px;
-}
 
-.login-form input[type="email"],
-.login-form input[type="password"],
-.login-form input[type="text"] {
-    width: 100%;
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
-    padding: 10px 12px;
-    font-size: 14px;
-    color: #111827;
-    background: white;
-    outline: none;
-    transition: 0.2s;
-}
-
-.login-form input:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-.login-form__toggle {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center;
-    gap: 8px !important;
-    font-size: 13px !important;
-    color: #6b7280 !important;
     cursor: pointer;
 }
 
-.login-form__toggle input[type="checkbox"] {
-    cursor: pointer;
+.logout-btn:hover:not(:disabled) {
+    text-decoration: underline;
 }
 
-.login-form button[type="submit"] {
-    width: 100%;
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.2s;
+.logout-btn:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.logout-btn:disabled {
+    cursor: wait;
+    opacity: 0.55;
+}
+
+.sidebar-signout-error {
     margin-top: 8px;
+    padding: 8px 10px;
+
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+
+    background: #fef2f2;
+
+    color: #991b1b;
+
+    font-size: 11px;
+    line-height: 1.4;
 }
 
-.login-form button[type="submit"]:hover:not(:disabled) {
-    background-color: #1d4ed8;
-}
-
-.login-form button[type="submit"]:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-.login-form__support {
-    font-size: 12px;
+.sidebar-item--empty {
     color: #9ca3af;
-    text-align: center;
-    margin-top: 8px;
+    font-style: italic;
+    cursor: default;
+}
+
+.sidebar-item--empty:hover {
+    background-color: transparent;
 }
