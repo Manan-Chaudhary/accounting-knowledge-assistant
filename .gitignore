@@ -20,3 +20,6 @@ venv/
 # IDE
 .vscode/
 .idea/
+
+# Claude Code local tooling (personal pattern log, not shared team config)
+.claude/

@@ -4,7 +4,7 @@
 from datetime import datetime
 
 from pgvector.sqlalchemy import Vector
-from sqlalchemy import Column, DateTime, ForeignKey, Integer, String, Text, UniqueConstraint
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String, Text, UniqueConstraint
 from sqlalchemy.orm import relationship
 
 from app.db.database import Base
@@ -45,7 +45,10 @@ class AppUser(Base):
 
     id = Column(Integer, primary_key=True)
     email = Column(String, unique=True, nullable=False)
-    role = Column(String, nullable=False, default="staff")  # staff | admin
+    # Salted password hash (bcrypt). Null means the account cannot sign in yet.
+    password_hash = Column(String, nullable=True)
+    role = Column(String, nullable=False, default="staff")  # staff | admin | team
+    is_active = Column(Boolean, nullable=False, default=True)
     created_at = Column(DateTime, default=datetime.utcnow)
 
 

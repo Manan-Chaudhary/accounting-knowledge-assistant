@@ -44,12 +44,15 @@ These are enforced in code and checked by the evaluation suite, not aspirational
 ```
 accounting-knowledge-assistant/
 ├── app/
-│ ├── main.py               # Entry point — registers routes, mounts Chainlit at /chat (mounted LAST)
+│ ├── main.py               # Entry point — registers routes, mounts Chainlit at /chat, then the
+│ │                          # built React SPA (frontend/dist) as the catch-all (all mounted LAST)
 │ ├── config.py             # Loads all env vars from one place (.env locally, Render env vars in prod)
 │ │
 │ ├── routes/
-│ │ ├── upload.py           # /upload — document ingest into the corpus
-│ │ └── testing.py          # /testing — benchmark runner and evaluation results
+│ │ ├── upload.py           # /upload, /documents — document ingest and listing JSON API
+│ │ ├── testing.py          # (retired: /testing is now served by the React SPA)
+│ │ ├── home.py             # (retired: /home is now served by the React SPA)
+│ │ └── auth.py             # /login — prototype login page (real auth flow is a separate task)
 │ │
 │ ├── chainlit/
 │ │ └── chainlit_app.py     # Chat app: on_chat_start, on_message, auth callback
@@ -68,13 +71,22 @@ accounting-knowledge-assistant/
 │   ├── models.py           # ORM models: Document, DocumentChunk, AppUser, EvalResult
 │   └── schema.sql          # Table definitions — mirrors models.py
 │
+├── frontend/                # React SPA (Vite + TS) — Home, Documents, Testing, Chat, Login
+│ ├── src/
+│ │ ├── pages/               # One component per route (ported 1:1 from the old templates/)
+│ │ ├── components/          # Shared Sidebar/Layout
+│ │ ├── auth/                # AuthProvider/RequireAuth seam for the not-yet-built login flow
+│ │ ├── chainlit/             # ChainlitProvider wiring the chat page to /chat via @chainlit/react-client
+│ │ └── styles/legacy.css    # Ported verbatim from static/css/style.css, plus a small override block
+│ └── dist/                  # `npm run build` output — served by app/main.py in production
+│
 ├── benchmarks/
 │   └── questions.jsonl     # Versioned benchmark set — see docs/EVALUATION.md
 │
 ├── tests/                  # Test scripts for database, embeddings, and connections
 │
-├── templates/              # Jinja2 templates for /upload and /testing
-├── static/                 # Shared CSS and minimal client-side JS
+├── templates/              # Jinja2 templates — only login.html remains (real pages are React now)
+├── static/                 # Shared CSS (static/css/style.css, still used by templates/login.html)
 ├── docs/                   # See the documentation table above
 │
 ├── .env.example            # Documents every required env var, no real values
@@ -85,7 +97,8 @@ accounting-knowledge-assistant/
 
 ### Layer overview
 
-- **`routes/`** — HTTP handlers. Each route renders a template or delegates to `services/`/`rag/` — no business logic lives here directly.
+- **`frontend/`** — the React SPA. Owns every page except the prototype login screen; built with `npm run build` and served same-origin by FastAPI (see `app/main.py`'s catch-all route) so the chat session cookie stays same-origin per `docs/LOGIN-PAGE-REQUIREMENTS.md`.
+- **`routes/`** — HTTP handlers. `upload.py` and `auth.py` still serve real HTML/JSON; `home.py`/`testing.py` are retired stubs kept only so their routers stay importable. No business logic lives here directly — delegates to `services/`/`rag/`.
 - **`chainlit/`** — the chat interface. `on_message` is where a user's question enters the RAG pipeline via `rag/`.
 - **`services/`** — logic that isn't HTTP- or chat-specific: document lifecycle and file storage. Keeps `routes/` from growing bloated handlers.
 - **`rag/`** — the pipeline itself, split by responsibility (embed → retrieve → generate) so each piece can be tested and swapped independently. `retriever.py` is the highest-value file in the repo: retrieval, not generation, is where RAG systems actually fail.

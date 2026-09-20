@@ -30,9 +30,15 @@ create index if not exists document_chunks_embedding_idx
 create table if not exists app_users (
     id serial primary key,
     email text unique not null,
-    role text not null default 'staff',  -- 'staff' | 'admin'
+    password_hash text,                 -- bcrypt hash; null = cannot sign in
+    role text not null default 'staff', -- 'staff' | 'admin' | 'team'
+    is_active boolean not null default true,
     created_at timestamp default now()
 );
+
+-- Existing databases created before auth: run these alters once in Supabase SQL editor.
+-- alter table app_users add column if not exists password_hash text;
+-- alter table app_users add column if not exists is_active boolean not null default true;
 
 create table if not exists eval_results (
     id serial primary key,
