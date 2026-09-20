@@ -34,7 +34,7 @@ export function Home() {
               Admin management
             </span>
           </div>
-          <Link to="/docs" className="card-btn">View Documents</Link>
+          <Link to="/documents" className="card-btn">View Documents</Link>
         </div>
 
         <div className="card">

@@ -24,7 +24,7 @@ function App() {
             }
           />
           <Route
-            path="/docs"
+            path="/documents"
             element={
               <RequireAuth>
                 <Documents />

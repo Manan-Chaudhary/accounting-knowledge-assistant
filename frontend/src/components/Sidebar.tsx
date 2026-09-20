@@ -39,7 +39,7 @@ export function Sidebar() {
         <NavLink to="/home" className={navItemClass}>
           <i className="fas fa-home" /> Home
         </NavLink>
-        <NavLink to="/docs" className={navItemClass}>
+        <NavLink to="/documents" className={navItemClass}>
           <i className="far fa-file-pdf" /> Documents
         </NavLink>
         <NavLink to="/testing" className={navItemClass}>
