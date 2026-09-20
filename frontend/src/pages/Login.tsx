@@ -1,28 +1,87 @@
 import { type FormEvent, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { useAuth } from '../auth/AuthProvider'
+import "../styles/legacy.css";
 
-// PLACEHOLDER — form shape only, per docs/LOGIN-PAGE-REQUIREMENTS.md §5.
-// There is no FastAPI /login route yet (that's the separate auth-flow task,
-// AU-83..87). This page exists so RequireAuth has somewhere to redirect to
-// and so the auth task can wire real submit logic into this slot without a
-// second frontend PR. Do not add credential-checking logic here.
 export function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [showPassword, setShowPassword] = useState(false) // AU-13
+  const [showPassword, setShowPassword] = useState(false)
   const [submitting, setSubmitting] = useState(false)
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
-  const handleSubmit = (event: FormEvent) => {
+  const { refetch } = useAuth()
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const fromLocation = (location.state as { from?: Location })?.from?.pathname || '/home'
+
+  const handleSubmit = async (event: FormEvent) => {
     event.preventDefault()
-    setSubmitting(true) // AU-15: disable submit while a request is in flight
-    // TODO(auth task): POST to the real login endpoint once it exists, then
-    // honour the "from" redirect target per AU-26/27 and clear this stub.
-    window.setTimeout(() => setSubmitting(false), 500)
+    setErrorMessage(null)
+
+   
+    if (!email || !password) {
+      setErrorMessage('Please fill in all fields.')
+      return
+    }
+
+    if (password.length < 6) {
+      setErrorMessage('Password must be at least 6 characters.')
+      return
+    }
+
+    setSubmitting(true)
+
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include', 
+        body: JSON.stringify({ email, password }),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.detail || 'Authentication failed. Please check your credentials.')
+      }
+      refetch()
+      navigate(fromLocation, { replace: true })
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setErrorMessage(err.message)
+      } else {
+        setErrorMessage('An unexpected error occurred. Please try again.')
+      }
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
     <div className="login-page">
       <form className="login-form" onSubmit={handleSubmit}>
         <h1>Sign in</h1>
+
+        {errorMessage && (
+          <div
+            style={{
+              padding: '10px 14px',
+              backgroundColor: '#fef2f2',
+              color: '#991b1b',
+              border: '1px solid #fecaca',
+              borderRadius: '6px',
+              fontSize: '13px',
+              marginBottom: '16px',
+            }}
+          >
+            {errorMessage}
+          </div>
+        )}
+
         <label>
           Email address
           <input
@@ -31,6 +90,7 @@ export function Login() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             required
+            disabled={submitting}
           />
         </label>
         <label>
@@ -41,6 +101,7 @@ export function Login() {
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             required
+            disabled={submitting}
           />
         </label>
         <label className="login-form__toggle">
@@ -48,6 +109,7 @@ export function Login() {
             type="checkbox"
             checked={showPassword}
             onChange={(event) => setShowPassword(event.target.checked)}
+            disabled={submitting}
           />
           Show password
         </label>

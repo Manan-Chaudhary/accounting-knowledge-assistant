@@ -16,9 +16,9 @@ FRONTEND_DIST = "frontend/dist"
 app = FastAPI()
 
 # Routers for file upload and LLM testing endpoints
-app.include_router(upload_router)
+#app.include_router(upload_router)
 app.include_router(testing_router)
-app.include_router(home_router)
+#app.include_router(home_router)
 app.include_router(integration_router)
 
 # mounts CSS for all
