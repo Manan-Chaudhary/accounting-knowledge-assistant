@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import { Layout } from '../components/Layout'
+import { useAuth } from '../auth/AuthProvider'
 
 // Port of templates/index.html — static content, no fetches (the original
 // passes no template context either).
 export function Home() {
+  const { user } = useAuth()
+
   return (
     <Layout badge="INTERNAL · SPRINT 1 W2">
       <div className="welcome-section">
@@ -37,17 +40,19 @@ export function Home() {
           <Link to="/documents" className="card-btn">View Documents</Link>
         </div>
 
-        <div className="card">
-          <div className="card-icon"><i className="fas fa-flask" /></div>
-          <div className="card-title">LLM Testing & Evaluation</div>
-          <div className="card-desc">Test, evaluate and compare candidate language models.</div>
-          <div style={{ marginBottom: 12 }}>
-            <span className="status-badge uploaded" style={{ background: '#f3f4f6', color: '#374151' }}>
-              Project team
-            </span>
+        {user?.role === 'team' && (
+          <div className="card">
+            <div className="card-icon"><i className="fas fa-flask" /></div>
+            <div className="card-title">LLM Testing & Evaluation</div>
+            <div className="card-desc">Test, evaluate and compare candidate language models.</div>
+            <div style={{ marginBottom: 12 }}>
+              <span className="status-badge uploaded" style={{ background: '#f3f4f6', color: '#374151' }}>
+                Project team
+              </span>
+            </div>
+            <Link to="/testing" className="card-btn">Open Testing</Link>
           </div>
-          <Link to="/testing" className="card-btn">Open Testing</Link>
-        </div>
+        )}
       </div>
 
       <div className="info-banner">

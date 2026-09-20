@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { AuthProvider } from './auth/AuthProvider'
 import { RequireAuth } from './auth/RequireAuth'
+import { RequireTeam } from './auth/RequireTeam'
 import { ChainlitProvider } from './chainlit/ChainlitProvider'
 import { Chat } from './pages/Chat'
 import { Documents } from './pages/Documents'
@@ -35,7 +36,9 @@ function App() {
             path="/testing"
             element={
               <RequireAuth>
-                <Testing />
+                <RequireTeam>
+                  <Testing />
+                </RequireTeam>
               </RequireAuth>
             }
           />
