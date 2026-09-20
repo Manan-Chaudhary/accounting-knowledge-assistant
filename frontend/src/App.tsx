@@ -8,7 +8,7 @@ import { Documents } from './pages/Documents'
 import { Home } from './pages/Home'
 import { Login } from './pages/Login'
 import { Testing } from './pages/Testing'
-
+import "./styles/legacy.css";
 function App() {
   return (
     <AuthProvider>

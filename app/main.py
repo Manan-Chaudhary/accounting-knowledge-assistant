@@ -47,7 +47,7 @@ app.add_middleware(
 app.include_router(auth_router)
 app.include_router(upload_router)
 app.include_router(testing_router)
-app.include_router(home_router)
+#app.include_router(home_router)
 app.include_router(integration_router)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
