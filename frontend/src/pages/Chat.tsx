@@ -93,7 +93,7 @@ function AssistantCard({ content }: { content: string }) {
   return (
     <div className="assistant-card">
       <div className="assistant-card__header">
-        <span className="assistant-card__name">Alfa Focus SMSF Assistant</span>
+        <span className="assistant-card__name">Alfa Focus Assistant</span>
         {badge && <span className="assistant-card__badge">{badge}</span>}
       </div>
 
@@ -146,9 +146,29 @@ export function Chat() {
   const [draft, setDraft] = useState('')
 
   useEffect(() => {
-    if (!session) {
-      connect({ userEnv: {} })
-    }
+    if (session) return
+
+    // Exchange the FastAPI aka_session cookie for a Chainlit access_token JWT
+    // cookie before the socket connects. Chainlit's header_auth_callback reads
+    // the aka_session cookie from the request headers on this call and responds
+    // by setting its own HttpOnly access_token cookie. The WebSocket upgrade
+    // that follows then presents that cookie to authenticate itself.
+    fetch('/chat/auth/header', {
+      method: 'POST',
+      credentials: 'include',
+    })
+      .then((res) => {
+        if (!res.ok) {
+          console.error('Chainlit header auth failed:', res.status)
+        }
+      })
+      .catch((err) => {
+        console.error('Chainlit header auth error:', err)
+      })
+      .finally(() => {
+        connect({ userEnv: {} })
+      })
+
     return () => disconnect()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -198,7 +218,7 @@ export function Chat() {
           <input
             value={draft}
             onChange={(event) => setDraft(event.target.value)}
-            placeholder="Ask an SMSF question…"
+            placeholder="Ask an Accounting question…"
             disabled={disabled || !connected}
           />
           <button type="submit" className="chat-composer__send" disabled={disabled || !connected || !draft.trim()}>

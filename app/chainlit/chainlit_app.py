@@ -11,14 +11,21 @@ logger = logging.getLogger(__name__)
 
 @cl.header_auth_callback
 async def header_auth_callback(headers) -> Optional[cl.User]:
-    """Accept the FastAPI aka_session cookie — Chainlit does not check passwords (AU-84)."""
+    """Accept the FastAPI aka_session cookie — Chainlit does not check passwords (AU-84).
+
+    Chainlit calls POST /chat/auth/header before the WebSocket connects.
+    That request carries the browser's aka_session cookie in its headers.
+    user_from_request_headers decodes it and returns the corresponding cl.User.
+    Returning None causes Chainlit to reject the connection with 401.
+    """
     try:
         user = await anyio.to_thread.run_sync(user_from_request_headers, headers)
         if user:
             return user
+        logger.warning("chainlit_header_auth_no_session_cookie")
     except Exception as e:
         logger.warning("user_from_request_headers error: %s", e)
-    return cl.User(identifier="jackliu0165@gmail.com", metadata={"role": "team", "provider": "fallback"})
+    return None
 
 @cl.on_chat_start
 async def start():
