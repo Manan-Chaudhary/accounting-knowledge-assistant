@@ -29,20 +29,18 @@ async def header_auth_callback(headers) -> Optional[cl.User]:
 
 @cl.on_chat_start
 async def start():
-    await cl.Message(
-        content="# Alfa Focus Knowledge Assistant\nWelcome! Ask me any accounting or business question."
-    ).send()
+    pass
 
 
 @cl.on_message
 async def on_message(message: cl.Message):
-    msg = cl.Message(content="")
-    await msg.send()
+    logger.info("on_message fired: %s", message.content)
 
     try:
         reply_text = await cl.make_async(generate_response)(message.content)
-        msg.content = reply_text
+        logger.info("generate_response returned: %s", reply_text[:200] if reply_text else "")
     except Exception as e:
-        msg.content = f"⚠️ error message: {str(e)}"
+        logger.exception("generate_response error: %s", e)
+        reply_text = f"⚠️ error message: {str(e)}"
 
-    await msg.update()
+    await cl.Message(content=reply_text).send()

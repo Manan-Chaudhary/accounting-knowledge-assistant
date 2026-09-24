@@ -86,7 +86,62 @@ function sourceButtonLabel(label: string): string {
   return `Open ${firstSegment || 'link'}`
 }
 
+function getMessageText(message: any): string {
+  if (message.output && typeof message.output === 'string' && message.output.trim().length > 0) {
+    return message.output
+  }
+  if (message.content && typeof message.content === 'string' && message.content.trim().length > 0) {
+    return message.content
+  }
+  return ''
+}
+
+function getCleanMessages(messages: any[]): any[] {
+  const seenIds = new Set<string>()
+  const flat: any[] = []
+
+  function traverse(list: any[]) {
+    for (const msg of list) {
+      if (!msg) continue
+      const text = getMessageText(msg)
+      if (text && text.trim().length > 0) {
+        if (msg.id && !seenIds.has(msg.id)) {
+          seenIds.add(msg.id)
+          flat.push(msg)
+        }
+      }
+      if (Array.isArray(msg.steps) && msg.steps.length > 0) {
+        traverse(msg.steps)
+      }
+    }
+  }
+
+  traverse(messages)
+
+  const result: any[] = []
+  const seenAssistantOutputs = new Set<string>()
+
+  for (const msg of flat) {
+    const text = getMessageText(msg).trim()
+    if (msg.type === 'user_message') {
+      result.push(msg)
+      seenAssistantOutputs.clear()
+    } else {
+      if (!seenAssistantOutputs.has(text)) {
+        seenAssistantOutputs.add(text)
+        result.push(msg)
+      }
+    }
+  }
+
+  return result
+}
+
 function AssistantCard({ content }: { content: string }) {
+  if (!content || !content.trim()) {
+    return null
+  }
+
   const { badge, content: body } = extractBadge(content)
   const blocks = parseAssistantContent(body)
 
@@ -146,6 +201,7 @@ export function Chat() {
   const [draft, setDraft] = useState('')
 
   useEffect(() => {
+    let unmounted = false
     if (session) return
 
     // Exchange the FastAPI aka_session cookie for a Chainlit access_token JWT
@@ -166,10 +222,15 @@ export function Chat() {
         console.error('Chainlit header auth error:', err)
       })
       .finally(() => {
-        connect({ userEnv: {} })
+        if (!unmounted) {
+          connect({ userEnv: {} })
+        }
       })
 
-    return () => disconnect()
+    return () => {
+      unmounted = true
+      disconnect()
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -177,21 +238,28 @@ export function Chat() {
     event.preventDefault()
     const content = draft.trim()
     if (!content) return
-    sendMessage({ name: 'user', type: 'user_message', output: content })
+    sendMessage(
+      {
+        id: crypto.randomUUID(),
+        name: 'user',
+        type: 'user_message',
+        output: content,
+        createdAt: new Date().toISOString(),
+      },
+      [],
+    )
     setDraft('')
   }
 
-  const hasMessages = messages.length > 0
+  const allMessages = getCleanMessages(messages)
 
   return (
     <Layout badge="Capstone Prototype">
       <div className="chat-page">
-        {!hasMessages && (
-          <div className="chat-greeting">
-            <h1>How can I help with SMSF guidance?</h1>
-            <p>Ask about contribution caps, pensions, compliance and approved SMSF procedures.</p>
-          </div>
-        )}
+        <div className="chat-greeting">
+          <h1>How can I help with SMSF guidance?</h1>
+          <p>Ask about contribution caps, pensions, compliance and approved SMSF procedures.</p>
+        </div>
 
         <div className="chat-status">
           {error && <span className="chat-status--error">Connection error!</span>}
@@ -199,18 +267,19 @@ export function Chat() {
         </div>
 
         <div className="chat-messages">
-          {messages.map((message) =>
-            message.type === 'user_message' ? (
+          {allMessages.map((message) => {
+            const text = getMessageText(message)
+            return message.type === 'user_message' ? (
               <div className="chat-message chat-message--user" key={message.id}>
                 <div className="chat-message__label">You</div>
-                <div className="chat-message__bubble">{message.output}</div>
+                <div className="chat-message__bubble">{text}</div>
               </div>
             ) : (
               <div className="chat-message chat-message--assistant" key={message.id}>
-                <AssistantCard content={message.output} />
+                <AssistantCard content={text} />
               </div>
-            ),
-          )}
+            )
+          })}
           {loading && <div className="chat-message chat-message--assistant chat-message--pending">…</div>}
         </div>
 
