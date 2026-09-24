@@ -1,5 +1,6 @@
 import logging
 import chainlit as cl
+import anyio
 from typing import Optional
 
 from app.auth.chainlit_bridge import user_from_request_headers
@@ -9,17 +10,15 @@ logger = logging.getLogger(__name__)
 
 
 @cl.header_auth_callback
-def header_auth_callback(headers) -> Optional[cl.User]:
+async def header_auth_callback(headers) -> Optional[cl.User]:
     """Accept the FastAPI aka_session cookie — Chainlit does not check passwords (AU-84)."""
     try:
-        user = user_from_request_headers(headers)
+        user = await anyio.to_thread.run_sync(user_from_request_headers, headers)
         if user:
             return user
     except Exception as e:
         logger.warning("user_from_request_headers error: %s", e)
-
     return cl.User(identifier="jackliu0165@gmail.com", metadata={"role": "team", "provider": "fallback"})
-
 
 @cl.on_chat_start
 async def start():
