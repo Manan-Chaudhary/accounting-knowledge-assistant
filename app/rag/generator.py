@@ -1,7 +1,14 @@
+import logging
+from typing import Any, Generator, Optional
+
+from openai import OpenAI, AsyncOpenAI
+
 from app.config import settings
 
-SYSTEM_PROMPT_TEMPLATE = (
-"""
+logger = logging.getLogger(__name__)
+
+
+SYSTEM_PROMPT_TEMPLATE = """
 ## Role
 You are the Alfa Focus Knowledge Assistant, an internal reference tool for
 accounting, tax, finance, and legal staff at Alfa Focus — a multi-disciplinary
@@ -80,7 +87,7 @@ from each corpus in a single sentence. Keep them in separate labelled sections.
    If your answer rests on tier 3 or 4, say so explicitly in CONFIDENCE AND
    LIMITS and name the primary source that should be checked.
 """
-)
+
 
 USER_PROMPT_TEMPLATE = """Context: {context}
 
@@ -88,43 +95,233 @@ Query: {query}
 Answer:"""
 
 
-def get_formatted_prompt(query: str, context: str = "No additional context provided.") -> str:
+def get_formatted_prompt(
+    query: str,
+    context: str = "No additional context provided.",
+) -> str:
+    """Format the user prompt with retrieval context."""
     return USER_PROMPT_TEMPLATE.format(query=query, context=context)
 
 
-def generate_response_gemini(prompt: str, system_prompt: str = SYSTEM_PROMPT_TEMPLATE) -> str:
-    if not settings.GEMINI_API_KEY:
-        raise ValueError("GEMINI_API_KEY is not configured.")
+def _resolve_proxy_settings(
+    api_base: Optional[str] = None,
+    api_key: Optional[str] = None,
+) -> tuple[str, str]:
+    """
+    Resolve the LiteLLM proxy endpoint and API key.
 
-    from google import genai
-    client = genai.Client(api_key=settings.GEMINI_API_KEY)
-    response = client.models.generate_content(
-        model=settings.GEMINI_MODEL,
-        contents=f"{system_prompt}\n\n{prompt}",
+    The application talks to LiteLLM through its OpenAI-compatible API.
+    Provider routing and fallbacks are handled by the LiteLLM proxy itself.
+    """
+    resolved_base = (
+        api_base
+        or settings.LITELLM_API_BASE
+        or "http://alfa_focus_litellm:4000"
     )
-    return response.text or ""
 
-def generate_response_groq(prompt: str, system_prompt: str = SYSTEM_PROMPT_TEMPLATE) -> str:
-    if not settings.GROQ_API_KEY:
-        raise ValueError("GROQ_API_KEY is not configured.")
-
-    from groq import Groq
-    client = Groq(api_key=settings.GROQ_API_KEY)
-    completion = client.chat.completions.create(
-        model=settings.GROQ_MODEL,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.2,
+    resolved_key = (
+        api_key
+        or settings.LITELLM_API_KEY
+        or settings.LITELLM_MASTER_KEY
     )
-    return completion.choices[0].message.content or ""
 
-def generate_response(query: str) -> str:
-    prompt = get_formatted_prompt(query=query)
-    if settings.GROQ_API_KEY:
-        return generate_response_groq(prompt)
-    return generate_response_gemini(prompt)
+    if not resolved_key:
+        raise RuntimeError(
+            "No LiteLLM proxy API key configured. "
+            "Set LITELLM_API_KEY."
+        )
+
+    # OpenAI expects the /v1 path on the base URL.
+    resolved_base = resolved_base.rstrip("/")
+
+    if not resolved_base.endswith("/v1"):
+        resolved_base = f"{resolved_base}/v1"
+
+    return resolved_base, resolved_key
+
+
+def generate_response(
+    query: str,
+    context: str = "No additional context provided.",
+    model: Optional[str] = None,
+    system_prompt: str = SYSTEM_PROMPT_TEMPLATE,
+    temperature: float = 0.2,
+    api_base: Optional[str] = None,
+    api_key: Optional[str] = None,
+    **kwargs: Any,
+) -> str:
+    """
+    Generate a response through the LiteLLM proxy's OpenAI-compatible API.
+
+    The proxy is responsible for provider selection and fallbacks.
+    """
+    resolved_model = model or settings.LITELLM_MODEL
+
+    if not resolved_model:
+        raise RuntimeError("LITELLM_MODEL is not configured.")
+
+    resolved_base, resolved_key = _resolve_proxy_settings(
+        api_base=api_base,
+        api_key=api_key,
+    )
+
+    user_prompt = get_formatted_prompt(
+        query=query,
+        context=context,
+    )
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+
+    client = OpenAI(
+        base_url=resolved_base,
+        api_key=resolved_key,
+    )
+
+    try:
+        response = client.chat.completions.create(
+            model=resolved_model,
+            messages=messages,
+            temperature=temperature,
+            **kwargs,
+        )
+
+        return response.choices[0].message.content or ""
+
+    except Exception:
+        logger.exception(
+            "LiteLLM proxy completion error for model %s",
+            resolved_model,
+        )
+        raise
+
+
+def generate_response_stream(
+    query: str,
+    context: str = "No additional context provided.",
+    model: Optional[str] = None,
+    system_prompt: str = SYSTEM_PROMPT_TEMPLATE,
+    temperature: float = 0.2,
+    api_base: Optional[str] = None,
+    api_key: Optional[str] = None,
+    **kwargs: Any,
+) -> Generator[str, None, None]:
+    """
+    Generate a streaming response through the LiteLLM proxy's
+    OpenAI-compatible API.
+    """
+    resolved_model = model or settings.LITELLM_MODEL
+
+    if not resolved_model:
+        raise RuntimeError("LITELLM_MODEL is not configured.")
+
+    resolved_base, resolved_key = _resolve_proxy_settings(
+        api_base=api_base,
+        api_key=api_key,
+    )
+
+    user_prompt = get_formatted_prompt(
+        query=query,
+        context=context,
+    )
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+
+    client = OpenAI(
+        base_url=resolved_base,
+        api_key=resolved_key,
+    )
+
+    try:
+        response = client.chat.completions.create(
+            model=resolved_model,
+            messages=messages,
+            temperature=temperature,
+            stream=True,
+            **kwargs,
+        )
+
+        for chunk in response:
+            if not chunk.choices:
+                continue
+
+            delta = chunk.choices[0].delta
+            content = delta.content
+
+            if content:
+                yield content
+
+    except Exception:
+        logger.exception(
+            "LiteLLM proxy streaming error for model %s",
+            resolved_model,
+        )
+        raise
+
+
+async def agenerate_response(
+    query: str,
+    context: str = "No additional context provided.",
+    model: Optional[str] = None,
+    system_prompt: str = SYSTEM_PROMPT_TEMPLATE,
+    temperature: float = 0.2,
+    api_base: Optional[str] = None,
+    api_key: Optional[str] = None,
+    **kwargs: Any,
+) -> str:
+    """
+    Asynchronously generate a response through the LiteLLM proxy's
+    OpenAI-compatible API.
+    """
+    resolved_model = model or settings.LITELLM_MODEL
+
+    if not resolved_model:
+        raise RuntimeError("LITELLM_MODEL is not configured.")
+
+    resolved_base, resolved_key = _resolve_proxy_settings(
+        api_base=api_base,
+        api_key=api_key,
+    )
+
+    user_prompt = get_formatted_prompt(
+        query=query,
+        context=context,
+    )
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+
+    client = AsyncOpenAI(
+        base_url=resolved_base,
+        api_key=resolved_key,
+    )
+
+    try:
+        response = await client.chat.completions.create(
+            model=resolved_model,
+            messages=messages,
+            temperature=temperature,
+            **kwargs,
+        )
+
+        return response.choices[0].message.content or ""
+
+    except Exception:
+        logger.exception(
+            "LiteLLM proxy async completion error for model %s",
+            resolved_model,
+        )
+        raise
+
+    finally:
+        await client.close()
 
 
 if __name__ == "__main__":
@@ -133,20 +330,16 @@ if __name__ == "__main__":
 
     print("=== Testing Prompt Template ===")
     print(prompt)
-    print("\n" + "="*40 + "\n")
+    print("\n" + "=" * 40 + "\n")
 
-    print("=== Testing LLM 1: Groq ===")
+    print(
+        f"=== Testing LiteLLM Proxy / Unified Model "
+        f"({settings.LITELLM_MODEL}) ==="
+    )
+
     try:
-        res_groq = generate_response_groq(prompt)
-        print("Groq Response:\n", res_groq)
+        res = generate_response(test_query)
+        print("Response:\n", res)
     except Exception as e:
-        print(f"Groq Error: {e}")
-
-    print("\n" + "="*40 + "\n")
-
-    print("=== Testing LLM 2: Google Gemini ===")
-    try:
-        res_gemini = generate_response_gemini(prompt)
-        print("Gemini Response:\n", res_gemini)
-    except Exception as e:
-        print(f"Gemini Error: {e}")
+        print(settings.LITELLM_MODEL)
+        print(f"Generation Error: {e}")

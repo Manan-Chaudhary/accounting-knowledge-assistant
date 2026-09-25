@@ -14,13 +14,18 @@ class Settings:
     SUPABASE_DB_URL: str = os.getenv("SUPABASE_DB_URL", "")
     HF_TOKEN: str = os.getenv("HF_TOKEN", "")
 
-    # LLM 1: Gemini
+    # LiteLLM Proxy / Unified LLM Interface
+    LITELLM_API_BASE: str = os.getenv("LITELLM_API_BASE", "")  # e.g., "http://localhost:4000" or deployed proxy URL
+    LITELLM_API_KEY: str = os.getenv("LITELLM_API_KEY", "")    # Virtual key or master key
+    LITELLM_MODEL: str = os.getenv("LITELLM_MODEL", "gemini/gemini-2-5-flash")
+    LITELLM_FALLBACK_MODELS: list[str] = _csv_env("LITELLM_FALLBACK_MODELS", "gemini/gemini-2.5-flash")
+
+    # Direct provider keys (fallback or direct LiteLLM provider routing)
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
-
-    # LLM 2: Groq
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
     GROQ_MODEL: str = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
 
     # supabase setting
     SUPABASE_URL: str = os.getenv("SUPABASE_URL", "")

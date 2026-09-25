@@ -2,9 +2,9 @@
 
 ## 1. Why this exists
 
-Checklist item: "[LLM BACKEND] - Research best free LLM candidates from LiteLLM model catalog." This is research only, not an implementation - it narrows the field for the empirical bake-off the `/testing` page is designed to run (see [`TESTING-PAGE-REQUIREMENTS.md`](TESTING-PAGE-REQUIREMENTS.md) and the multi-model `EvalResult` schema in [`EVALUATION.md`](EVALUATION.md) section 5). It answers the "Generation model" row of the open-decisions table in [`RAG-DESIGN.md`](RAG-DESIGN.md) section 8.
+Checklist item: "[LLM BACKEND] - Research best free LLM candidates from LiteLLM model catalog." This document narrows the field for the empirical bake-off the `/testing` page is designed to run (see [`TESTING-PAGE-REQUIREMENTS.md`](TESTING-PAGE-REQUIREMENTS.md) and the multi-model `EvalResult` schema in [`EVALUATION.md`](EVALUATION.md) section 5). It answers the "Generation model" row of the open-decisions table in [`RAG-DESIGN.md`](RAG-DESIGN.md) section 8.
 
-**LiteLLM is not integrated anywhere in this repo yet.** `app/rag/generator.py` currently calls the Gemini and Groq SDKs directly (`generate_response_gemini`, `generate_response_groq`), picking Groq if `GROQ_API_KEY` is set, else falling back to Gemini. Adopting LiteLLM means wrapping those two call sites (and any new candidates) behind `litellm.completion(model=...)` instead of two separate SDKs.
+**Implementation Status:** LiteLLM is now integrated into `app/rag/generator.py` and `app/config.py`. Calls are unified through `litellm.completion` and `litellm.acompletion`, supporting both a dedicated LiteLLM Proxy endpoint (`LITELLM_API_BASE` + `LITELLM_API_KEY`) and direct provider routing/fallbacks (`LITELLM_MODEL`, `LITELLM_FALLBACK_MODELS`).
 
 ## 2. Constraints this research is scored against
 
