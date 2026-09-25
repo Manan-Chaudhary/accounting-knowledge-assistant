@@ -1,0 +1,511 @@
+/* ============================================================
+   Alfa Focus SMSF Assistant
+   Authentication screen
+   ============================================================ */
+
+   .login-page {
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+
+    padding: 0;
+
+    background: #f5f7fb;
+
+    font-family: 'Inter', sans-serif;
+
+    color: #181d27;
+}
+
+
+/* ------------------------------------------------------------
+   Full page frame
+   ------------------------------------------------------------ */
+
+.login-frame {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px;
+
+    border: 1px solid #d8e0eb;
+    border-radius: 12px;
+
+    background: #f5f7fb;
+}
+
+
+/* ------------------------------------------------------------
+   Top-left brand
+   ------------------------------------------------------------ */
+
+.login-page-brand {
+    position: absolute;
+
+    top: 40px;
+    left: 40px;
+}
+
+.login-page-brand__name {
+    margin-bottom: 8px;
+
+    color: #2463eb;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.01em;
+}
+
+.login-page-brand__product {
+    color: #536174;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 0.015em;
+}
+
+
+/* ------------------------------------------------------------
+   Main login card
+   ------------------------------------------------------------ */
+
+.login-card {
+    width: 476px;
+
+    padding: 38px 44px 40px;
+
+    background: #ffffff;
+
+    border: 1px solid #d7dfe9;
+    border-radius: 13px;
+
+    box-shadow:
+        0 1px 2px rgba(16, 24, 40, 0.02),
+        0 2px 6px rgba(16, 24, 40, 0.015);
+}
+
+
+/* ------------------------------------------------------------
+   AF mark
+   ------------------------------------------------------------ */
+
+.login-monogram {
+    width: 84px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 30px;
+
+    border-radius: 11px;
+
+    background: #e4edfd;
+
+    color: #2865e9;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ------------------------------------------------------------
+   Title
+   ------------------------------------------------------------ */
+
+.login-card-heading {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.login-card-heading h1 {
+    margin: 0 0 11px;
+
+    color: #181d27;
+
+    font-size: 26px;
+    font-weight: 650;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.025em;
+}
+
+.login-card-heading p {
+    margin: 0;
+
+    color: #657287;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* ------------------------------------------------------------
+   Form
+   ------------------------------------------------------------ */
+
+.login-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+}
+
+.login-field {
+    margin-bottom: 27px;
+}
+
+.login-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #151b26;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.login-field input {
+    width: 100%;
+    height: 44px;
+
+    padding: 0 13px;
+
+    border: 1px solid #cfd8e4;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #1f2937;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+
+    transition:
+        border-color 120ms ease,
+        box-shadow 120ms ease;
+}
+
+.login-field input::placeholder {
+    color: #67758a;
+
+    opacity: 1;
+}
+
+.login-field input:hover:not(:disabled) {
+    border-color: #aebccc;
+}
+
+.login-field input:focus {
+    border-color: #2865e9;
+
+    box-shadow:
+        0 0 0 3px rgba(40, 101, 233, 0.10);
+}
+
+.login-field input[aria-invalid='true'] {
+    border-color: #dc2626;
+}
+
+.login-field input[aria-invalid='true']:focus {
+    box-shadow:
+        0 0 0 3px rgba(220, 38, 38, 0.08);
+}
+
+.login-field input:disabled {
+    background: #f8fafc;
+
+    cursor: not-allowed;
+
+    opacity: 0.75;
+}
+
+
+/* ------------------------------------------------------------
+   Password
+   ------------------------------------------------------------ */
+
+.login-password {
+    position: relative;
+}
+
+.login-password input {
+    padding-right: 45px;
+}
+
+.login-password-toggle {
+    position: absolute;
+
+    top: 50%;
+    right: 11px;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-50%);
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: #526174;
+
+    cursor: pointer;
+}
+
+.login-password-toggle:hover:not(:disabled) {
+    background: #f2f5f9;
+}
+
+.login-password-toggle:focus-visible {
+    outline: 2px solid #2865e9;
+    outline-offset: 1px;
+}
+
+.login-password-toggle:disabled {
+    cursor: not-allowed;
+
+    opacity: 0.5;
+}
+
+
+/* ------------------------------------------------------------
+   Validation / authentication message
+   ------------------------------------------------------------ */
+
+.login-message {
+    min-height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 1px 0 23px;
+
+    padding: 0 12px;
+
+    border: 1px solid transparent;
+    border-radius: 7px;
+
+    background: #f5f7fa;
+
+    color: #657287;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+.login-message--error {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #b42318;
+}
+
+
+/* ------------------------------------------------------------
+   Button
+   ------------------------------------------------------------ */
+
+.login-submit {
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 16px;
+
+    border: 0;
+    border-radius: 7px;
+
+    background: #2865e9;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color 120ms ease,
+        box-shadow 120ms ease,
+        transform 80ms ease;
+}
+
+.login-submit:hover:not(:disabled) {
+    background: #1f58d5;
+
+    box-shadow:
+        0 3px 10px rgba(37, 99, 235, 0.16);
+}
+
+.login-submit:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+.login-submit:focus-visible {
+    outline: 3px solid rgba(40, 101, 233, 0.18);
+    outline-offset: 2px;
+}
+
+.login-submit:disabled {
+    cursor: wait;
+
+    opacity: 0.7;
+}
+
+
+/* ------------------------------------------------------------
+   Button loading
+   ------------------------------------------------------------ */
+
+.login-button-spinner {
+    width: 14px;
+    height: 14px;
+
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    border-top-color: #ffffff;
+
+    border-radius: 50%;
+
+    animation: login-spin 0.7s linear infinite;
+}
+
+
+/* ------------------------------------------------------------
+   Authorised access note
+   ------------------------------------------------------------ */
+
+.login-authorised-note {
+    margin: 23px 0 0;
+
+    color: #69768a;
+
+    text-align: center;
+
+    font-size: 10.5px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+/* ------------------------------------------------------------
+   Loading
+   ------------------------------------------------------------ */
+
+.login-loading {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.login-spinner {
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #dbe5f4;
+    border-top-color: #2865e9;
+
+    border-radius: 50%;
+
+    animation: login-spin 0.7s linear infinite;
+}
+
+@keyframes login-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------ */
+
+@media (max-width: 620px) {
+    .login-frame {
+        margin: 0;
+
+        border: 0;
+        border-radius: 0;
+    }
+
+    .login-page-brand {
+        top: 25px;
+        left: 24px;
+    }
+
+    .login-card {
+        width: calc(100% - 32px);
+        max-width: 476px;
+
+        padding: 34px 28px 36px;
+    }
+
+    .login-card-heading h1 {
+        font-size: 23px;
+    }
+}
+
+@media (max-height: 720px) and (min-width: 621px) {
+    .login-card {
+        transform: scale(0.92);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .login-field input,
+    .login-submit {
+        transition: none;
+    }
+
+    .login-spinner,
+    .login-button-spinner {
+        animation-duration: 1.4s;
+    }
+}

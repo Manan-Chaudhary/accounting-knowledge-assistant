@@ -44,12 +44,15 @@ These are enforced in code and checked by the evaluation suite, not aspirational
 ```
 accounting-knowledge-assistant/
 ├── app/
-│ ├── main.py               # Entry point — registers routes, mounts Chainlit at /chat (mounted LAST)
+│ ├── main.py               # Entry point — registers routes, mounts Chainlit at /chat, then the
+│ │                          # built React SPA (frontend/dist) as the catch-all (all mounted LAST)
 │ ├── config.py             # Loads all env vars from one place (.env locally, Render env vars in prod)
 │ │
 │ ├── routes/
-│ │ ├── upload.py           # /upload — document ingest into the corpus
-│ │ └── testing.py          # /testing — benchmark runner and evaluation results
+│ │ ├── upload.py           # /upload, /documents — document ingest and listing JSON API
+│ │ ├── testing.py          # (retired: /testing is now served by the React SPA)
+│ │ ├── home.py             # (retired: /home is now served by the React SPA)
+│ │ └── auth.py             # /login — prototype login page (real auth flow is a separate task)
 │ │
 │ ├── chainlit/
 │ │ └── chainlit_app.py     # Chat app: on_chat_start, on_message, auth callback
@@ -68,13 +71,22 @@ accounting-knowledge-assistant/
 │   ├── models.py           # ORM models: Document, DocumentChunk, AppUser, EvalResult
 │   └── schema.sql          # Table definitions — mirrors models.py
 │
+├── frontend/                # React SPA (Vite + TS) — Home, Documents, Testing, Chat, Login
+│ ├── src/
+│ │ ├── pages/               # One component per route (ported 1:1 from the old templates/)
+│ │ ├── components/          # Shared Sidebar/Layout
+│ │ ├── auth/                # AuthProvider/RequireAuth seam for the not-yet-built login flow
+│ │ ├── chainlit/             # ChainlitProvider wiring the chat page to /chat via @chainlit/react-client
+│ │ └── styles/legacy.css    # Ported verbatim from static/css/style.css, plus a small override block
+│ └── dist/                  # `npm run build` output — served by app/main.py in production
+│
 ├── benchmarks/
 │   └── questions.jsonl     # Versioned benchmark set — see docs/EVALUATION.md
 │
 ├── tests/                  # Test scripts for database, embeddings, and connections
 │
-├── templates/              # Jinja2 templates for /upload and /testing
-├── static/                 # Shared CSS and minimal client-side JS
+├── templates/              # Jinja2 templates — only login.html remains (real pages are React now)
+├── static/                 # Shared CSS (static/css/style.css, still used by templates/login.html)
 ├── docs/                   # See the documentation table above
 │
 ├── .env.example            # Documents every required env var, no real values
@@ -85,7 +97,8 @@ accounting-knowledge-assistant/
 
 ### Layer overview
 
-- **`routes/`** — HTTP handlers. Each route renders a template or delegates to `services/`/`rag/` — no business logic lives here directly.
+- **`frontend/`** — the React SPA. Owns every page except the prototype login screen; built with `npm run build` and served same-origin by FastAPI (see `app/main.py`'s catch-all route) so the chat session cookie stays same-origin per `docs/LOGIN-PAGE-REQUIREMENTS.md`.
+- **`routes/`** — HTTP handlers. `upload.py` and `auth.py` still serve real HTML/JSON; `home.py`/`testing.py` are retired stubs kept only so their routers stay importable. No business logic lives here directly — delegates to `services/`/`rag/`.
 - **`chainlit/`** — the chat interface. `on_message` is where a user's question enters the RAG pipeline via `rag/`.
 - **`services/`** — logic that isn't HTTP- or chat-specific: document lifecycle and file storage. Keeps `routes/` from growing bloated handlers.
 - **`rag/`** — the pipeline itself, split by responsibility (embed → retrieve → generate) so each piece can be tested and swapped independently. `retriever.py` is the highest-value file in the repo: retrieval, not generation, is where RAG systems actually fail.
@@ -198,11 +211,14 @@ docker compose down
 ### Access the Application
 
 | Endpoint | URL | Description |
-|----------|-----|-------------|
-| Chat interface | `http://localhost:8000/chat` | Main Chainlit UI |
-| Document upload | `http://localhost:8000/upload` | Bulk document ingestion |
-| Evaluation | `http://localhost:8000/testing` | Benchmark runner |
-| API docs | `http://localhost:8000/docs` | FastAPI Swagger UI |
+|---|---|---|
+| Web Application (SPA) | `http://localhost:8000/home` | React SPA dashboard (Home) |
+| Document Management | `http://localhost:8000/docs` | Document upload and status management (React) |
+| Sign In | `http://localhost:8000/login` | Authentication portal |
+| Evaluation Suite | `http://localhost:8000/testing` | Benchmark testing runner |
+| Chat Interface | `http://localhost:8000/assistant` | Integrated Chainlit chat assistant |
+| API Docs | `http://localhost:8000/docs` (API) | FastAPI Swagger UI |
+| n8n Workflow Editor | `http://localhost:5678` | n8n automation console |
 
 For LAN access, replace `localhost` with your machine's local IP address.
 
@@ -278,12 +294,46 @@ Tracked here so nobody assumes they work:
 ## n8n Workflow Automation
 
 n8n runs as a separate service alongside the FastAPI/Chainlit application using Docker Compose.
+### Importing and Running Workflows (Team Reproduction Guide)
+
+To initialise and run the shared workflow in a fresh local environment:
+
+1. **Start the containers**:
+   ```bash
+   docker compose up --build
 
 ### Start the environment
 
 ```bash
 docker compose up --build
 ```
+Open n8n:
+Navigate to http://localhost:5678 in your browser. (Complete the one-time owner setup if prompted).
+
+Import the shared workflow:
+
+In the n8n left navigation bar, go to Workflows.
+
+Click the Add Workflow button (or the three dots menu ... in the top right).
+
+Select Import from File.
+
+Choose the exported file from the repository:
+
+n8n/workflows/fastapi-connectivity-test.json
+
+Execute and Verify:
+
+Click Save and ensure the workflow is active.
+
+Click Test step or trigger the webhook to verify the connection between n8n and FastAPI.
+
+Confirm that the execution log returns the expected JSON response:
+
+{
+  "status": "ok",
+  "message": "FastAPI successfully reached from n8n"
+}
 
 Services:
 
