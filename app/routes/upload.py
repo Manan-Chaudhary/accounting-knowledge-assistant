@@ -7,9 +7,6 @@ import httpx
 
 router = APIRouter()
 
-
-
-
 # /upload (GET, HTML) is now served by the React app
 # (frontend/src/pages/Documents.tsx), retired here once the React page was
 # validated as equivalent. POST /upload and GET /documents below are

@@ -32,6 +32,8 @@ class Settings:
     SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "")
     SUPABASE_BUCKET: str = os.getenv("SUPABASE_BUCKET", "documents")
 
+    N8N_SHARED_SECRET: str = os.getenv("N8N_SHARED_SECRET", "")
+
     # FastAPI-owned session (signed cookie). Required for /api/auth/*.
     # Generate with: python -c "import secrets; print(secrets.token_urlsafe(32))"
     SESSION_SECRET: str = os.getenv("SESSION_SECRET", "")

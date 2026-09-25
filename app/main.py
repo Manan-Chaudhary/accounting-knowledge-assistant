@@ -40,6 +40,7 @@ async def enforce_authenticated_access(request: Request, call_next):
     is_public = (
         path == "/login"
         or path.startswith("/api/auth/")
+        or path.startswith("/api/n8n/")
         or path.startswith("/static/")
         or path.startswith("/assets/")
         or path.startswith("/chat")
