@@ -1,0 +1,989 @@
+Title: SMSFR 2009/2 - Meaning of 'borrow money' or 'maintain an existing borrowing of money'
+Publisher: Australian Taxation Office
+Document type: ruling
+Authority tier: 1
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20092%2FNAT%2FATO%2F00001
+Retrieved: 2026-09-25
+Topic: smsf-property-lrba
+---
+
+# Self Managed Superannuation Funds Ruling
+
+## SMSFR 2009/2
+
+### Self Managed Superannuation Funds: the meaning of 'borrow money' or 'maintain an existing borrowing of money' for the purposes of section 67 of the Superannuation Industry (Supervision) Act 1993
+
+- Please note that the
+PDF version
+is the authorised version of this ruling.
+
+There is a Compendium for this document:
+SMSFR 2009/2EC
+.
+
+Legislative changes to limited recourse borrowing arrangements commence on 10 August. We are currently reviewing and updating this Ruling. For more information on these changes, see Limited Recourse Borrowing Arrangement (LRBA) Provisions
+
+Contents | Para
+What this Ruling is about | 1
+Ruling | 7
+Funds to which the Ruling applies | 19
+Date of effect | 20
+Appendix 1: Explanation | 21
+Appendix 2: Detailed contents list | 106
+
+Preamble
+This publication represents the Commissioner's view about the way in which provisions of the Superannuation Industry (Supervision) Act 1993 , or regulations under that Act, apply to superannuation funds that the Commissioner regulates: principally self managed superannuation funds. Self Managed Superannuation Funds Rulings (whether draft or final) are not legally binding on the Commissioner. However, if the Commissioner later takes the view that the law applies less favourably to you than this ruling indicates, the fact that you acted in accordance with this ruling would be a relevant factor in your favour in the Commissioner's exercise of any discretion as to what action to take in response to a breach of that law. The Commissioner may, having regard to all the circumstances, decide that it is appropriate to take no action in response to the breach.
+
+### What this Ruling is about
+
+1. This Ruling explains the meaning of the phrases 'borrow money' or 'maintain an existing borrowing of money' for the purposes of section 67 of the Superannuation Industry (Supervision) Act 1993 (SISA).[1]
+
+2. It also explains how the application of the meaning of these terms to the facts of an arrangement determines whether a self managed superannuation fund (SMSF) trustee has contravened the general prohibition on borrowing in subsection 67(1).
+
+Relevant provision(s)
+
+3. Subsection 67(1) prohibits trustees of regulated superannuation funds from borrowing, or from maintaining an existing borrowing of money, except in specific circumstances.[2]
+
+4. This Ruling explains the meaning of the following terms for the purposes of section 67:
+
+•
+'borrow';
+
+•
+'maintain an existing borrowing'; and
+
+•
+'money'.
+
+5. This Ruling also briefly outlines the exceptions to the prohibition against borrowing provided for by section 67, but will not deal with the exceptions in detail. The Ruling only deals with the meaning of the terms identified in paragraph 4 of this Ruling to the extent that they are used in the section 67 exceptions.
+
+6. This Ruling does not consider the application of any other SISA provisions that may apply to a transaction discussed or example given that illustrates the application of section 67.
+
+### Ruling
+
+The SISA rules dealing with borrowing money
+
+7. Subsection 67(1) prohibits a trustee of an SMSF from borrowing money or maintaining an existing borrowing of money.
+
+8. Other subsections in section 67 provide for limited exceptions to this prohibition. These exceptions only apply if there would otherwise be a contravention of the prohibition in subsection 67(1).
+
+9. The expressions 'borrow money' and 'maintain an existing borrowing of money' as used in section 67 (both in subsection 67(1) and in the exceptions) are not defined in the SISA. These expressions therefore take their ordinary meaning as read in the context of the SISA.
+
+Borrowing money
+
+10. The prohibition and exceptions in section 67 only apply to borrowings of money. Therefore, for the purposes of section 67, a borrowing is an arrangement that exhibits two necessary characteristics:
+
+•
+a temporary transfer of an amount of money from one entity (the lender) to another (the borrower); and
+
+•
+an obligation or an intention on the part of the borrower to repay that amount to the lender (which may be satisfied by the provision of an asset).
+
+11. For these purposes, money is any generally accepted medium of exchange for goods, services or the payment of debts that confers complete liquidity on its holder. It includes both Australian and foreign currency.
+
+12. Some borrowings limit the rights of the lender to recover the amount borrowed on default by the borrower to specific assets against which the borrowing is secured. While this may lead to the lender not recovering the full amount lent, it does not alter the nature of the arrangement. In these circumstances, the necessary obligation or intention to repay the amount of money lent still exists.
+
+Maintaining an existing borrowing of money
+
+13. The prohibition and exceptions also apply to the maintenance of an existing borrowing of money. An existing borrowing is maintained in circumstances where a borrowing arrangement previously entered into remains in place in circumstances where the SMSF trustee is obliged or intends to repay the money lent. This includes circumstances where an SMSF trustee has borrowed the money and where an SMSF trustee has become liable for obligations under a borrowing arrangement entered into by another party.
+
+When does an arrangement contravene subsection 67(1)?
+
+14. The question of whether a borrowing arrangement has been entered into may not always be clear on the available facts. A careful analysis of all the circumstances surrounding the arrangement is necessary. An objective analysis of any documentation together with the actions of the parties may result in an arrangement that is not described as a borrowing exhibiting the necessary characteristics of a borrowing, therefore resulting in a contravention of subsection 67(1).
+
+15. Examples of transactions or circumstances that are a 'borrowing' based on common terms and conditions include, but are not limited to:
+
+•
+a loan of money, whether secured or unsecured;
+
+•
+a margin lending account once drawn upon; and
+
+•
+a bank overdraft once drawn upon.
+
+16. Examples of transactions or circumstances that are not a 'borrowing' based on common terms and conditions include, but are not limited to:
+
+•
+bona fide contributions to SMSFs that are accepted and dealt with in accordance with the Superannuation Industry (Supervision) Regulations 1994 (SISR);
+
+•
+the liability of an SMSF to pay benefits to members as they fall due;
+
+•
+arrangements under which expenses are paid on behalf of the SMSF trustee by an agent or any other person where reimbursement is immediately sought from and made by the SMSF; and
+
+•
+normal commercial delays in the payment of expenses incurred by an SMSF trustee.
+
+Exceptions to the prohibition on borrowing money
+
+17. There are specific exceptions in section 67 to the prohibition on the SMSF trustee borrowing or maintaining a borrowing of money. These include where the borrowing is to:
+
+•
+fund a payment to a beneficiary;[3]
+
+•
+cover settlement of certain securities transactions;[4]
+
+•
+allow the SMSF to acquire an asset under certain limited recourse arrangements;[5] or
+
+•
+fund a payment of the superannuation surcharge.[6]
+
+18. Nevertheless, trustees must also consider whether other SISA or SISR provisions apply to an arrangement. These include:
+
+•
+the sole purpose test in section 62;
+
+•
+the covenants in section 52; and
+
+•
+the prohibition against granting a charge against an asset of the SMSF in regulation 13.14 of the SISR.
+
+### Funds to which the Ruling applies
+
+19. This Ruling applies to SMSFs[7] and former SMSFs.[8] References in the Ruling to SMSFs extend to former SMSFs unless otherwise indicated.
+
+### Date of effect
+
+20. This Ruling applies to years of income commencing both before and after its date of issue. However, this Ruling will not apply to taxpayers to the extent that it conflicts with the terms of a settlement of a dispute agreed to before the date of issue of this Ruling.
+
+Commissioner of Taxation
+
+8 April 2009
+
+### Appendix 1 - Explanation
+
+This Appendix is provided as information to help you understand how the Commissioner's view has been reached.
+
+Background
+
+21. Section 67 prohibits SMSF trustees from borrowing money or maintaining an existing borrowing of money except in specific circumstances as set out in the legislation. The policy intent of section 67 is reflected in the Explanatory Memorandum to the Superannuation Legislation Amendment Bill (No. 4) 1999. In the Regulation Impact Statement for that Bill, the general purposes of the SISA rules dealing with investment activities were stated to be the limiting of risk associated with fund investments and the preservation of superannuation savings until retirement, consistent with the objectives of retirement incomes policy. More specifically in relation to section 67, it was stated that:
+
+Superannuation funds are generally not permitted to borrow in their own right. This is designed to reduce the risk to retirement income from funds gearing their assets.
+
+22. The prohibitions in section 67 are complemented by other investment rules in the SISA and the SISR. For example:
+
+•
+the sole purpose test, which prohibits a trustee from maintaining an SMSF for any purpose other than for the provision of retirement and certain related benefits - section 62. All of the activities of maintaining an SMSF are subject to this test;[9]
+
+•
+subject to specific exceptions, an SMSF trustee or investment manager is prohibited from acquiring assets from related parties of the SMSF - section 66;
+
+•
+subject to exceptions (for example in relation to certain derivative contracts), an SMSF trustee cannot recognise, or in any way sanction, an assignment of a superannuation interest or a charge over, or in relation to a member's benefits, or an SMSF asset - regulations 13.12, 13.13 and 13.14 of the SISR;
+
+•
+an SMSF trustee or investment manager is prohibited from lending money or providing financial assistance to a member of the fund or a relative of the member - subsection 65(1);[10]
+
+•
+all SMSF investment dealings must be at arm's length or must be conducted on arm's length terms and conditions - section 109; and
+
+•
+subject to some transitional provisions and specific exceptions, an SMSF trustee is prohibited from acquiring or maintaining in-house assets[11] that have a total market value in excess of 5% of the total market value of SMSF assets - Part 8.
+
+Contraventions - audit requirements and consequences
+
+23. SMSF trustees are required to appoint an approved auditor to audit the financial accounts and statements of the SMSF each year.[12] When conducting an audit, the approved auditor is also required to conduct a compliance audit to ensure the SMSF has complied with the SISA and SISR. There is an approved form for notifying the Commissioner of contraventions.[13]
+
+24. Non-compliance with section 67 may expose SMSF trustees to civil penalties.[14] Contravention or involvement in a contravention attracts both civil and criminal consequences and places at risk the SMSF's status as a complying superannuation fund under the SISA.[15]
+
+Legislation
+
+25. Subsection 67(1) provides that a trustee of an SMSF must not:
+
+(a)
+borrow money; or
+
+(b)
+maintain an existing borrowing of money.
+
+26. Specific exceptions to this prohibition are set out in subsection 67(2) to 67(6).[16]
+
+Explanation
+
+The meaning of 'borrow'
+
+27. The term 'borrow' is not defined in the SISA and therefore takes its ordinary meaning in its statutory context. The term is relevantly defined in The Macquarie Dictionary[17] as:
+
+1. to take or obtain (a thing) on the promise to return it or its equivalent; obtain the temporary use of.
+
+28. Further, a 'borrower', according to Butterworths Australian Legal Dictionary[18] is:
+
+A person to whom money is lent. Borrowing necessarily implies repayment at some time and under some circumstances: Re Southern Brazilian Rio Grande Do Sul Railway Co Ltd (1905) 2 Ch 78 at 83.
+
+29. In its broadest sense, the term 'borrow' may apply to all appropriations from another party, whether in the form of money or any other type of assets. However, section 67 restricts the scope of the types of borrowings regulated by the provision to borrowings of 'money'. That is, the provision only regulates transactions involving the fund borrowing 'money' or maintaining an existing borrowing of 'money'. The Commissioner also considers that the meanings of 'borrow' and 'borrower' referred to in paragraphs 27 and 28 of this Ruling best reflect the contextual use of the term in the SISA.
+
+30. Therefore, for the purposes of subsection 67(1) a borrowing is an arrangement under which there is a temporary transfer of money from one party to another where there is an obligation or intention that the money (the principal amount) transferred will be returned or repaid (plus any interest payable as stipulated under the arrangement between the parties, whether payable in advance or during the term of the borrowing). The party providing the money is typically referred to as the lender and the party receiving the money and which is liable to repay the money is typically referred to as the borrower.
+
+31. Nevertheless, it is not strictly necessary that money is ultimately repaid for the arrangement to be a borrowing of money. For example, in circumstances where the borrower provides money's worth to the lender (for example, by transferring an asset) to satisfy or fulfil the obligation or intention to repay the money borrowed, the arrangement originally entered into would remain a borrowing of money. Such an arrangement remains a borrowing until the obligation or intention to repay the amount borrowed has been fully satisfied or fulfilled. This is so even if the parties originally contemplate that something other than money will satisfy the obligation or intention to repay the money borrowed.
+
+32. Further, where an obligation to repay is forgiven or is otherwise waived, or if an intention to repay on the part of the borrower changes and there is otherwise no obligation to repay, the arrangement is a borrowing up until the point where an obligation or intention to repay no longer exists.
+
+33. While an obligation or intention to repay is a necessary feature of a borrowing, a limitation on the lender's capacity to recover the amount lent on default by the borrower does not mean an arrangement is not properly characterised as a borrowing. A limited recourse loan is an example of a borrowing even though the lender's recourse on default is limited to assets whose value may be less than the principal amount outstanding at that time.[19]
+
+Relationship between 'borrowing' and 'loan'
+
+34. In discussing what constitutes a borrowing, additional guidance can be obtained from considering the ordinary meaning of 'loan'. According to Butterworths Australian Legal Dictionary[20] a 'loan' is:
+
+the temporary transfer of an asset, usually funds, from a lender who controls the funds to a borrower in return for payment, usually in the form of interest. The asset must be returned either in one sum at the maturity of the loan or in periodic payments.
+
+35. Similarly, a 'loan' of money under a contract has been defined in the following terms:[21]
+
+A contract of loan of money is a contract whereby one person lends or agrees to lend a sum of money to another, in consideration of a promise express or implied to repay that sum on demand, or at a fixed or determinable future time, or conditionally upon an event which is bound to happen, with or without interest.
+
+36. When these definitions are compared to those of borrowing referred to in paragraphs 27 and 28 of this Ruling, it is clear that a 'borrowing' of money would include a 'loan' of money. Both terms contemplate the temporary transfer or usage of something on the condition that it is returned.
+
+37. In defining and exploring the features of a borrowing for the purposes of this Ruling, it is assumed that to 'borrow money' includes 'taking out a loan of money'[22] as that term is ordinarily understood. The Commissioner therefore considers case law on the interpretation of the concept of a 'loan' may be used as a guide in the interpretation of section 67 to the extent that the context allows. Nevertheless, a borrowing of money is not restricted to what is in form a loan of money or arrangements that are described as loans.[23]
+
+SISA definition of 'loan'
+
+38. Subsection 10(1) includes a definition of the term 'loan'. The Commissioner considers that this definition extends beyond the ordinary meaning of 'loan' identified in paragraphs 34 and 35 of this Ruling. This definition is not applicable to the interpretation of the term 'borrow' as used in section 67, but is only relevant in construing the term 'loan' and its grammatical variations in the SISA.[24]
+
+Necessary features of a 'borrowing'
+
+39. A number of characteristics emerge from case law that considers the ordinary meaning of a 'borrowing' or a 'loan'. The necessary features are that:
+
+•
+there is a temporary transfer of an asset from a lender to a borrower;[25] and
+
+•
+there is an obligation or intention to return the temporarily transferred asset to the lender.[26]
+
+40. As noted earlier,[27] for the purposes of section 67, the asset borrowed must be money,[28] although the borrower may ultimately provide money's worth (for example, by transferring an asset) in satisfaction of their obligation or intention to repay the relevant amount of money to the lender.
+
+Necessary feature 1: temporary transfer of money
+
+41. A temporary transfer of money contemplates a payment of funds from the lender to the borrower. Ordinarily this involves the lender providing money directly to the borrower, which the borrower can then use for their own purposes. However, it is also possible that the temporary transfer of money may occur by way of constructive payment.
+
+42. A constructive payment can occur where one entity, at the direction of or on behalf of a second entity, makes a payment to a third entity. For example, a constructive advance of money is made where a lender provides funds to a vendor of an asset if the borrower is the purchaser of that asset and has an obligation or intention to repay the amount provided by the lender.
+
+43. This is illustrated in the diagram below. Constructive payment principles ensure that Entity 1 (the lender) is taken to have made a payment to Entity 2 (the borrower/purchaser), which is then taken to be on-paid to Entity 3 (the vendor). Although Entity 2 never actually receives any money, the constructive payment made to it may support the existence of a borrowing if there is an obligation or an intention that Entity 2 repays the amount to Entity 1.[29] There must be an agreement or understanding between Entity 1 and Entity 2 that the payment is to proceed in this manner:
+
+44. In other cases, Entity 2 may owe Entity 1 a debt, which may or may not be a borrowing (for example, the debt may be a payment for services rendered by Entity 1 to Entity 2). A new borrowing may arise in these circumstances if the evidence supports a conclusion that the original debt has been extinguished and replaced by a new liability to pay an amount under a borrowing.[30]
+
+Necessary feature 2: obligation or intention to repay
+
+45. Though an express obligation to repay readily points to the second necessary feature being present, it is not essential in determining the existence of a borrowing arrangement. In cases where there is no express obligation to repay the amount owed by the borrower, there must be a demonstrable intention for there to be repayment of the funds by the borrower. Nevertheless, any intention or implied obligation to repay may be ousted by the deliberate deletion of clauses expressly providing for repayment by the borrower.[31]
+
+46. In other words, for there to be a borrowing, the parties must intend that there be an obligation to repay. This may be apparent from the terms of any arrangement between the parties involved or may be objectively inferred from the actions or behaviours of the parties. For instance, the imposition of financial detriment upon the borrower of the funds in the event that they are not repaid indicates that there is an obligation or intention to repay the money. This is so even if the lender's capacity to recover the amount from the borrower's assets is restricted, as in the case of limited recourse loans.[32]
+
+47. The Commissioner considers that where no express or demonstrable obligation or intention to repay the money exists, the amount in question will be a contribution to the SMSF. This will also be the case where the obligation or intention to repay the money ceases to exist, for example, due to forgiveness of the debt by the lender.
+
+Other common features of a 'borrowing'
+
+48. The following features are commonly found in borrowings of money. However, these are not necessary features of a borrowing of money and so may not be present in all money borrowing arrangements. The necessary features of a borrowing of money are identified at paragraphs 39 and 40 of this Ruling. Nevertheless, the presence of these features may evidence the existence of a borrowing of money:
+
+•
+the obligations of the lender and borrower are enforceable at common law based on contractual agreements;[33]
+
+•
+there is an obligation to pay interest that recognises that the lender is being compensated for the borrower's temporary use of the funds; or
+
+•
+there is security to which the lender may have recourse to if the borrower does not comply with its obligations under the arrangement.
+
+Analysis of different types of financing arrangements
+
+49. Whether an arrangement is a borrowing does not depend on the label given to it. Instead, this will depend on whether the arrangement's terms, together with the facts and circumstances surrounding the entry into and the carrying out of the arrangement, support the existence of the features of a borrowing discussed at paragraphs 39 to 47 of this Ruling.
+
+50. A borrowing of money is not restricted to what is in legal form a loan of money or to arrangements that are described in any relevant documentation as a 'loan'. A borrowing of money can be effected by various forms of legal arrangement.[34]
+
+51. It is necessary to discover the true substance of the transaction, having regard to its purpose and by reference to its legal nature rather than its economic effect.[35]
+
+52. It follows that the fact that a debt or some other form of financial accommodation exists is not of itself sufficient to characterise an arrangement as a borrowing of money. In the case of Prime Wheat Association Ltd v. Chief Commissioner of Stamp Duties[36] the New South Wales Supreme Court considered a share sale agreement which provided for payment by instalments over a 20 year period. The question being considered was whether the sale agreement was a 'loan security' attracting stamp duty. The answer turned on whether it could be said that the share sale agreement which provided for payment over a 20 year period evidenced a loan of money. Gleeson CJ concluded that:[37]
+
+Here there was no advance of money. There was, as required by the language of the definition of advance, financial accommodation, but that is not sufficient. An agreement for sale which allows credit to a purchaser does not, on that account alone, involve an advance of money... Ultimately, there was a debt, but not a loan.
+
+...
+
+The essence of a loan is an obligation of repayment. Here what was involved on the part of the purchasers was payment, not repayment...
+
+53. The same approach was taken in the Full Federal Court case of Eastern Nitrogen Ltd v. Federal Commissioner of Taxation[38] when considering whether a sale and leaseback arrangement was a loan. In deciding that a finance lease was not a loan Carr J stated:[39]
+
+I accept the appellant's submissions that although the overall arrangement was a financing arrangement, it did not involve a loan. There was no obligation to repay a sum advanced. The authorities recognise that arrangements can be made for financial accommodation without a loan being involved...
+
+54. Accordingly, when analysing a financing arrangement in the context of section 67, the question to be addressed is whether the two necessary features of a borrowing of money identified at paragraphs 39 and 40 of this Ruling exist as a matter of legal substance.
+
+55. An arrangement which may not exhibit the two necessary features of a borrowing of money identified in this Ruling at its outset, but which is subsequently altered in such a manner that these features become present, will become a borrowing at the time those features first co-exist.
+
+56. The following examples focus on the application of the prohibition in subsection 67(1). In any case, where it is determined that an SMSF trustee has borrowed money or has maintained an existing borrowing of money, it is also necessary to determine whether any of the exceptions provided by subsections 67(2) to 67(6) apply.
+
+57. It should be noted that some other SISA or SISR provisions may also apply to the facts given in an example. However, the purpose of these examples is only to demonstrate the application of the prohibition set out in subsection 67(1) to the facts given. No inferences should be drawn about the application of other SISA or SISR provisions to the examples.
+
+Example 1: money advanced by members
+
+58. Tracey and Nadia are trustees and members of an SMSF. The trustees have determined that the SMSF should acquire an asset as part of the fund's investment strategy. However, the SMSF has insufficient money available to acquire the asset in question. Tracey determines that she will advance the required money to the SMSF with the amount repayable once sufficient money is accumulated by the fund to enable it to repay the debt.
+
+59. The arrangement between Tracey and the SMSF involves the SMSF borrowing money. Accordingly, the SMSF trustees have contravened paragraph 67(1)(a) unless one of the exceptions apply.
+
+Example 2: overdrafts
+
+60. Ian and Jenny are trustees and members of an SMSF. The SMSF makes a payment by cheque to an entity for services rendered to the SMSF. The SMSF has insufficient funds in its bank account to cover the full value of the cheque with the result that the bank account becomes overdrawn.
+
+61. The overdraft is a borrowing by the SMSF. Accordingly, the SMSF trustees have contravened paragraph 67(1)(a) unless one of the exceptions apply.
+
+Example 3: contribution
+
+62. Terry and Dennis are trustees and members of an SMSF. The trustees have determined that they should acquire an asset as part of the fund's investment strategy. However, the SMSF has insufficient money available to acquire the asset in question. Terry and Dennis each pay an amount to the SMSF as a contribution. The additional contributions will enable the SMSF to acquire the asset. The member's contributions meet the standards set out in Part 7 of the SISR. The trustees treat the contributions in accordance with Parts 5 and 7 of the SISR.
+
+63. The amounts paid by Terry and Dennis are contributions to the SMSF. There is no obligation to repay the money in circumstances that establishes a borrowing. Accordingly, the SMSF trustees have not contravened paragraph 67(1)(a).
+
+Example 4: margin lending account
+
+64. John and Kerry are trustees and members of an SMSF. As part of the SMSF's investment strategy the trustees maintain a margin lending account. The margin lending account has a cash and a loan component which are used in combination for the acquisition of shares. As part of the arrangement the trustees are able to drawdown additional amounts to finance the acquisition of additional shares.
+
+65. Each drawdown under the account involves a temporary transfer of money to the SMSF with an obligation to repay. Each additional amount drawn from the account gives rise to a further borrowing. Accordingly, the SMSF trustees contravene paragraph 67(1)(a) each time they draw down the margin lending account unless one of the exceptions apply.
+
+Example 5: contracts for difference
+
+66. Nick and Natalia are trustees and members of an SMSF. As part of the SMSF's investment strategy[40] the trustees invest in contracts for difference. The investment requires that the trustees make additional payments if a loss arises from movements in the prices of the asset or indices underlying the investment.
+
+67. The requirement to pay a deposit and meet margin calls does not represent borrowing. No money has been temporarily transferred to the SMSF trustees under the arrangement. The payments made by the SMSF are pursuant to contractual liabilities that do not involve repayments.[41] Accordingly, the SMSF trustees have not contravened paragraph 67(1)(a).
+
+Example 6: payments made on behalf of SMSF
+
+68. Cass and Cameron are trustees and members of an SMSF. The SMSF is due to make a payment to an entity for services rendered to the SMSF. The SMSF's employer sponsor makes the payment on behalf of the SMSF. The employer sponsor and the SMSF trustees agree that the amount paid on behalf of the fund will not be reimbursed but will instead reduce the employer sponsor's obligation to make a contribution to the SMSF on behalf of its employees.[42]
+
+69. The arrangement does not give rise to a borrowing as the SMSF does not have an obligation to repay the amount paid on its behalf. Accordingly, the SMSF trustees have not contravened paragraph 67(1)(a). The amount paid by the employer sponsor is a contribution made by it to the SMSF.
+
+Example 7: reimbursement of payments made on behalf of SMSF
+
+70. Gary and Sonia are trustees and members of an SMSF. The SMSF is due to make a payment to an entity for services rendered to the SMSF. Gary pays the amount on behalf of the SMSF. Gary immediately seeks and is given a reimbursement from the SMSF of the amount paid on behalf of the fund.
+
+71. The arrangement does not give rise to a borrowing as there was no temporary transfer of money from Gary to the SMSF. The amount was paid on the SMSF's behalf and was then immediately reimbursed to Gary. Accordingly, the SMSF trustees have not contravened paragraph 67(1)(a).
+
+Example 8: deferred repayment of amount paid on behalf of SMSF
+
+72. Aaron and Sarah are trustees and members of an SMSF. The SMSF wishes to acquire an asset, but has insufficient money available to acquire the asset. The SMSF reaches an agreement with Sarah under which Sarah will pay the amount required to the vendor of the asset on behalf of the SMSF and title to the asset will be transferred from the vendor to the SMSF. In turn the SMSF agrees to repay the amount to Sarah at a stipulated time (for example, 12 months) in the future. No additional amounts are payable by the SMSF to Sarah that recognise the SMSF's use of the funds in the intervening period.
+
+73. This agreement gives rise to a borrowing. In contrast to Example 7, there is a constructive temporary transfer of money from Sarah to the SMSF with an obligation that the amount be repaid by the SMSF at a fixed or determinable time in the future. Accordingly, the SMSF trustees have contravened paragraph 67(1)(a) unless one of the exceptions apply.
+
+74. In the absence of an obligation to repay the amount in question to Sarah, the payment made by Sarah to the vendor would be a contribution to the SMSF made by Sarah.
+
+Example 9: instalment purchase agreement
+
+75. Donna and Mary are trustees and members of an SMSF. The SMSF wishes to acquire an asset from a vendor who is unrelated to the SMSF.[43] An agreement is reached under which the SMSF will make ten equal payments to the vendor and in return title will pass from the vendor to the SMSF. The agreement and surrounding circumstances do not reflect a transfer of money from the vendor to the SMSF.
+
+76. This agreement does not give rise to a borrowing of money. Instead the arrangement provides for the acquisition of an asset by the SMSF trustee by way of instalment payments.[44] Even though the agreement provides financial accommodation to the SMSF trustee, not all forms of such accommodation are borrowings of money.[45] Accordingly, the SMSF trustees have not contravened paragraph 67(1)(a).
+
+77. An arrangement involving the SMSF borrowing money, which otherwise displays the same facts as set out in paragraph 75 of this Ruling, including the making of a similar series of payments by of repayment of the borrowing, may satisfy the requirements of subsection 67(4A). In such a case, whilst the arrangement will involve a borrowing by the SMSF, the exception in subsection 67(4A) will ensure that the borrowing is not prohibited, provided that the conditions set out in that subsection are met.[46]
+
+Example 10: sale and repurchase arrangement
+
+78. Liz and Vicki are the trustees and members of an SMSF. The SMSF wishes to access money to fund further investments. The SMSF enters into an arrangement with a financier to do that in the following manner:
+
+•
+the SMSF sells shares to the financier for an amount of money; and
+
+•
+the SMSF and the financier enter into a forward purchase agreement under which the SMSF is obligated to purchase shares from the financier at a specified time for a price equal to the money paid by the financier plus a further amount calculated by applying an interest rate to the money paid by the financier.
+
+79. This arrangement effects a borrowing of money by the SMSF and is therefore prohibited by subsection 67(1) of the SISA. The two necessary features of a borrowing - the temporary transfer of money from the financier to the SMSF, and the obligation or intention on the part of the SMSF to repay the money - are both present. The SMSF has therefore borrowed money from the financier, with the further amount payable on repurchase of the shares effectively being an interest payment and the holding of the shares by the financier effectively being security for the repayment of the money.[47]
+
+The meaning of 'money'
+
+80. Relevantly the term 'money' is not defined in the SISA and therefore takes its ordinary meaning in the context of the SISA. It is defined in The Macquarie Dictionary[48] as:
+
+coin or certificate (as banknotes, etc.) generally accepted in payment of debts and current transactions.
+
+81. This definition recognises that currency is the most commonly recognised form of money. Australian currency and foreign currency are both money for SISA purposes.
+
+82. In a legal context, 'money' has been described as:[49]
+
+Any generally accepted medium of exchange for goods, services, and the payment of debts...Money confers complete liquidity on its holder. It serves as a medium of exchange, a measure of value, a standard for deferred payments, a store of value, and a commodity whose worth depends upon its resale value.
+
+83. Certain documents or agreements may evidence or provide the framework for the transfer of money from one entity to another. However, money will only have been transferred once funds have moved between those entities. For example, establishing a loan facility does not of itself transfer money. Money is transferred once the loan facility has been drawn upon. This is consistent with the idea that money confers complete liquidity on its holder. Similarly, a promise to pay money at some time in the future is not actually money.[50]
+
+84. For SISA purposes the Commissioner draws a distinction between money used as currency or a unit of exchange and money whose market value exceeds its stated value as legal tender. For example, banknotes and coins that have become 'collectable items' will have a market value which exceeds their face value, and will therefore be regarded as 'commodities' rather than 'money'. The banknotes and coins in question have become the object of exchange, rather than the medium of exchange.[51]
+
+The meaning of 'maintain an existing borrowing'
+
+85. In addition to prohibiting an SMSF trustee from borrowing money, subsection 67(1) also prohibits an SMSF trustee from maintaining an existing borrowing of money. In the Commissioner's view, the distinction between borrowing money and maintaining an existing borrowing of money is largely a technical issue. To the extent that the distinction impacts on the basis of the underlying contravention, the following explanation provides guidance on the Commissioner's view of the meaning of 'maintain an existing borrowing of money'.
+
+86. Like 'borrow' and 'money', the phrase 'maintain an existing borrowing' is not defined in the SISA and takes its ordinary meaning in its statutory context. In the Commissioner's view, it is to be interpreted as a composite phrase. While the meaning of individual words comprising a composite phrase necessarily influences its meaning, the phrase itself must be construed as a whole within the statutory context in which it appears.[52]
+
+87. Adopting this approach, the prohibition against 'maintaining an existing borrowing' at its core contemplates a situation where an SMSF trustee has previously entered into a borrowing and that borrowing continues in existence. In this way, the provision recognises the ongoing nature of the arrangement and acts to prohibit the continuation of the conduct. This application puts beyond doubt the status of a borrowing on foot after the initial transfer of the money from the lender to the borrower.
+
+88. The extension of the prohibition (and the exceptions) to the maintenance of an existing borrowing puts beyond any doubt a continuing contravention of section 67 (or access to an exception in the section) while the arrangement is on foot. This is important in applying the compliance test to SMSFs in subsection 42A(5) on an income year by income year basis.
+
+89. Support for this view is found in the wording of subsections 67(5) and (6), which allowed trustees of superannuation funds to maintain an existing borrowing in the transition from paragraph 16(1)(b) of the Occupational Superannuation Standards Regulations (OSSR)[53] to section 67.
+
+90. The Commissioner considers the prohibition also applies to arrangements where SMSF trustees undertake obligations with respect to amounts borrowed by other parties.[54] Unlike the core scenario contemplated by the phrase 'maintaining an existing borrowing', these circumstances can extend beyond a case where an SMSF trustee has borrowed money. In particular, an SMSF trustee may maintain a borrowing of another party regardless of whether an amount has been received in consideration for undertaking the borrower's obligations.
+
+91. It would be expected that the fulfilment of the borrower's obligations under the arrangement apart from the obligation to repay the principal amount (for example, meeting an obligation to pay interest) would be part of maintaining a borrowing. However, the question of whether a borrowing is being maintained is not dependent on whether the borrower's obligations are in fact met or how the borrower goes about meeting those obligations. For example, if a borrower takes out another loan to meet its obligations, such as to pay interest, under the original loan, the second loan is a separate borrowing.
+
+92. Similarly, if the borrower pays out the original loan by borrowing replacement funds (commonly known as refinancing), it is considered that a new separate borrowing has been entered into.[55]
+
+93. The Commissioner also considers that each drawdown of funds from a loan facility or similar arrangement constitutes a separate borrowing, even if the facility or arrangement makes provision for redraws arising from earlier repayments.[56]
+
+94. In each of the cases of a new borrowing considered in paragraphs 91 to 93 of this Ruling, it is necessary to consider the purpose of the borrowing to determine if an exception in section 67 applies. In particular, where an SMSF borrows money to refinance an existing borrowing as described in paragraph 92 of this Ruling, it will also be necessary to consider the purpose of the original borrowing together with the manner in which the new borrowing is applied to determine whether one of the exceptions in section 67 applies.
+
+Example 11: maintain a borrowing
+
+95. Gwen and Melissa are trustees and members of an SMSF. The trustees borrowed an amount of money on 14 April 2001. The loan agreement provided that on the annual anniversary of the borrowing the interest rate could be renegotiated by either party to the loan. The loan was fully repaid on 14 April 2006.
+
+96. The SMSF trustees borrowed money and maintained that borrowing for a period of five years. Accordingly, the SMSF trustees contravened subsection 67(1) in each of those five years.[57]
+
+Example 12: existing borrowing not maintained
+
+97. Peter and Linda are directors of a corporate trustee of an SMSF and members of that SMSF. The corporate trustee has an existing borrowing. However, due to Linda ceasing to be a director of the corporate trustee and ceasing to be a member of the SMSF, the corporate trustee is required to repay the borrowing. The corporate trustee negotiates a new loan which enables the SMSF to pay out the previously existing borrowing.
+
+98. The corporate trustee is no longer maintaining the original borrowing. However there is a new borrowing, which contravenes paragraph 67(1)(a).
+
+Exceptions to the prohibition against borrowing
+
+99. The following is intended to provide further background to the exceptions to the general prohibition against a superannuation fund trustee borrowing money. It is not intended to provide guidance with respect to the application of the provisions outlined.
+
+Borrowing to fund payment to a beneficiary - subsection 67(2)
+
+100. Under subsection 67(2), the trustee of an SMSF is permitted to borrow money to make a payment to a beneficiary if the following conditions are satisfied:
+
+•
+the payment is required by law or by the governing rules of the fund;
+
+•
+the trustee would not be able to make the payment if the borrowing is not permitted;
+
+•
+the period of the borrowing does not exceed 90 days; and
+
+•
+the total amount of the borrowing does not exceed 10% of the value of the assets of the fund.
+
+Borrowing to cover settlement of certain securities transactions - subsection 67(3)
+
+101. Under subsection 67(3), the trustee of an SMSF is permitted to borrow money to cover the settlement for a range of securities, as listed under paragraph 67(3)(a), if the following conditions are satisfied:
+
+•
+at the time the investment decision was made, it was likely that the borrowing would not be needed;
+
+•
+the period of the borrowing does not exceed 7 days;
+
+•
+the total amount borrowed does not exceed 10% of the value of the assets of the fund; and
+
+•
+no written determination was made by the Regulator (in this case, the Commissioner) exempting the borrowing from the operation of subsection 67(3).
+
+Borrowing to acquire an asset under certain limited recourse arrangements - subsection 67(4A)
+
+102. Under subsection 67(4A), the trustee of an SMSF is permitted to borrow money under a limited recourse arrangement where the arrangement satisfies the following conditions:
+
+•
+the borrowed money is used to acquire an asset that is held on trust so that the trustee of the SMSF receives a beneficial interest and a right to acquire the legal ownership of the asset (or any replacement) through the payment of instalments;
+
+•
+the lender's recourse against the trustee in the event of default on the borrowing and related fees, or the exercise of rights by the fund trustee, is limited to rights relating to the asset; and
+
+•
+the asset (or any replacement) must be one which the trustee is permitted to acquire directly.
+
+Section 67 - exceptions with limited or no ongoing operation
+
+103. The exceptions in subsections 67(2A), 67(5) and 67(6) have limited or no ongoing operation. They are mentioned here for completeness.
+
+104. Under subsection 67(2A), the trustee of an SMSF is permitted to borrow to pay a surcharge assessment or advance instalment that the trustee is required to make under the Superannuation Contributions Tax (Assessment And Collection) Act 1997 if certain other conditions are satisfied. Superannuation contributions tax does not apply to contributions made after the 2004-2005 financial year.
+
+105. Subsections 67(5) and 67(6) provided transitional relief to trustees of superannuation funds that borrowed money or maintained a borrowing of money in contravention of paragraph 16(1)(b) of the OSSR, which first introduced limitations on the capacity of superannuation funds to borrow. This transitional relief expired for funds meeting the conditions to be an SMSF on 1 July 1995.
+
+### Appendix 2 - Detailed contents list
+
+106. The following is a detailed contents list for this Ruling:
+
+| Paragraph
+What this Ruling is about | 1
+Relevant provision(s) | 3
+Ruling | 7
+The SISA rules dealing with borrowing money | 7
+Borrowing money | 10
+Maintaining an existing borrowing of money | 13
+When does an arrangement contravene subsection 67(1)? | 14
+Exceptions to the prohibition on borrowing money | 17
+Funds to which the Ruling applies | 19
+Date of effect | 20
+Appendix 1 - Explanation | 21
+Background | 21
+Contraventions - audit requirements and consequences | 23
+Legislation | 25
+Explanation | 27
+The meaning of 'borrow' | 27
+Relationship between 'borrowing' and 'loan' | 34
+SISA definition of 'loan' | 38
+Necessary features of a 'borrowing' | 39
+Necessary feature 1: temporary transfer of money | 41
+Necessary feature 2: obligation or intention to repay | 45
+Other common features of a 'borrowing' | 48
+Analysis of different types of financing arrangements | 49
+Example 1: money advanced by members | 58
+Example 2: overdrafts | 60
+Example 3: contribution | 62
+Example 4: margin lending account | 64
+Example 5: contracts for difference | 66
+Example 6: payments made on behalf of SMSF | 68
+Example 7: reimbursement of payments made on behalf of SMSF | 70
+Example 8: deferred repayment of amount paid on behalf of SMSF | 72
+Example 9: instalment purchase agreement | 75
+Example 10: sale and repurchase arrangement | 78
+The meaning of 'money' | 80
+The meaning of 'maintain an existing borrowing' | 85
+Example 11: maintain a borrowing | 95
+Example 12: existing borrowing not maintained | 97
+Exceptions to the prohibition against borrowing | 99
+Borrowing to fund payment to a beneficiary - subsection 67(2 ) | 100
+Borrowing to cover settlement of certain securities transactions - subsection 67(3 ) | 101
+Borrowing to acquire an asset under certain limited recourse arrangements - subsection 67(4A ) | 102
+Section 67 - exceptions with limited or no ongoing operation | 103
+Appendix 2 - Detailed contents list | 106
+
+#### Footnotes
+
+[1]
+
+All legislative references in this Ruling are to the SISA unless otherwise indicated.
+
+[2]
+
+As provided in subsections 67(2) to 67(6).
+
+[3]
+
+See subsection 67(2).
+
+[4]
+
+See subsection 67(3).
+
+[5]
+
+See subsection 67(4A).
+
+[6]
+
+See subsection 67(2A).
+
+[7]
+
+As defined in section 17A.
+
+[8]
+
+A former SMSF is a fund that has ceased being a SMSF and has not appointed a registrable superannuation entity (RSE) licensee as trustee - see subsection 10(4).
+
+[9]
+
+See SMSFR 2008/2: Self Managed Superannuation Funds: the application of the sole purpose test in section 62 of the Superannuation Industry (Supervision) Act 1993 to the provision of benefits other than retirement, employment termination or death benefits.
+
+[10]
+
+See SMSFR 2008/1: Self Managed Superannuation Funds: giving financial assistance using the resources of a self managed superannuation fund to a member or relative of a member that is prohibited for the purposes of paragraph 65(1)(b) of the Superannuation Industry (Supervision) Act 1993.
+
+[11]
+
+'In-house assets' are defined in section 71 and are, subject to specific exceptions, assets that are a loan to or an investment in a related party of the SMSF, or investments in a related trust, or assets that are subject to a lease or lease arrangement with a related party of the SMSF. See SMSFR 2008/D5: Self Managed Superannuation Funds: the meaning of 'asset', 'loan', 'investment in', 'lease' and 'lease arrangement' in the definition of an 'in-house asset' in the Superannuation Industry (Supervision) Act 1993.
+
+[12]
+
+See section 35C.
+
+[13]
+
+See section 129.
+
+[14]
+
+See subsection 67(7).
+
+[15]
+
+See subsection 42A(5) in relation to SMSFs. The status of a fund as complying or non-complying for SISA purposes will also have consequences for the fund under the income tax law and other parts of the superannuation law. Also see generally Law Administration Practice Statements PS LA 2006/17, PS LA 2006/18 and PS LA 2006/19.
+
+[16]
+
+See further paragraphs 99 to 105 of this Ruling.
+
+[17]
+
+The Macquarie Dictionary, 2001, rev. 3rd edn, The Macquarie Library Pty Ltd, Sydney.
+
+[18]
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney.
+
+[19]
+
+Federal Commissioner of Taxation v. Firth [2002] FCA 413; (2002) 120 FCR 450; 2002 ATC 4346; (2002) 50 ATR 1 at paragraph 73.
+
+[20]
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney.
+
+[21]
+
+Beale, H.G (ed), (2004), Chitty on Contracts, 29th edn., London, Sweet & Maxwell, paragraph 38-223, Volume 2, p.840.
+
+[22]
+
+Case 73/96 [1996] AATA 81; 96 ATC 653.
+
+[23]
+
+See further paragraphs 49 to 51 of this Ruling.
+
+[24]
+
+See, for example, paragraph 65(1)(a), which deals with lending money of the SMSF to a member or a relative of a member, and subsection 71(1), which includes a loan to a related party of the SMSF within the meaning of an 'in-house asset'.
+
+[25]
+
+Re Gordon and Secretary, Department of Social Security (1992) 16 AAR 100.
+
+[26]
+
+Re Southern Brazilian Rio Grande Do Sul Railway Co Ltd (1905) 2 Ch 78.
+
+[27]
+
+See paragraphs 29 and 31 of this Ruling.
+
+[28]
+
+See paragraphs 80 to 84 of this Ruling for a discussion of what constitutes money.
+
+[29]
+
+See further paragraphs 45 to 47 of this Ruling.
+
+[30]
+
+See paragraphs 43 and 44 of SMSFR 2008/D1: Application of the Superannuation Industry (Supervision) Act 1993 to unpaid trust distributions payable to a Self Managed Superannuation Fund.
+
+[31]
+
+R v. New Queensland Copper Co Ltd (1917) 23 CLR 495; [1917] HCA 34.
+
+[32]
+
+See paragraph 33 of this Ruling.
+
+[33]
+
+De Vigier v. Inland Revenue Commissioners [1964] 2 All ER 907 establishes that the obligation or intention to repay may be established other than by common law contractual rights.
+
+[34]
+
+Example 10 at paragraphs 78 and 79 of this Ruling provides an example of such an arrangement.
+
+[35]
+
+Beconwood Securities Pty Ltd v. Australia and New Zealand Banking Group Limited [2008] FCA 594 at paragraphs 40, 42 and 43.
+
+[36]
+
+(1997) 42 NSWLR 505; 97 ATC 5015; (1997) 37 ATR 479.
+
+[37]
+
+(1997) 42 NSWLR 505 at 512; 97 ATC 5015 at 5019-5020; (1997) 37 ATR 479 at 484.
+
+[38]
+
+(2001) 108 FCR 27; 2001 ATC 4164; (2000) 46 ATR 474.
+
+[39]
+
+(2001) 108 FCR 27 at 39; 2001 ATC 4164 at 4173; (2000) 46 ATR 474 at 485.
+
+[40]
+
+The covenant in paragraph 52(2)(f) requires funds to formulate and give effect to an investment strategy having regard to the whole of the circumstances of the SMSFs, including the risks associated with investments made by the SMSF. Consideration of the risks associated with investment products such as contracts for difference is particularly important given the higher amount of potential loss associated with these types of strategy. The covenants in paragraph 52(2)(b) (exercise of prudent care, skill and diligence in dealing with trust property) and paragraph 52(2)(c) (ensuring trustee duties and powers are performed and exercised in the best interests of the beneficiaries) are also relevant.
+
+[41]
+
+See Prime Wheat Association Ltd v. Chief Commissioner of Stamp Duties (NSW) (1997) 42 NSWLR 505; 97 ATC 5015; (1997) 37 ATR 479, extracted at paragraph 52 of this Ruling.
+
+[42]
+
+See MT 2005/1: What is the tax treatment of an expense incurred by a superannuation fund that is paid by an employer or eligible person on behalf of a superannuation fund?
+
+[43]
+
+Where the vendor is a related party of the fund the arrangement may contravene section 66.
+
+[44]
+
+The covenant in paragraph 52(2)(f) requires funds to formulate and give effect to an investment strategy having regard to the whole of the circumstances of the SMSFs, including the risks associated with investments made by the SMSF. Consideration of the risks associated with purchasing assets by instalment is important in this context. The covenants in paragraph 52(2)(b) (exercise of prudent care, skill and diligence in dealing with trust property) and paragraph 52(2)(c) (ensuring trustee duties and powers are performed and exercised in the best interests of the beneficiaries) are also relevant.
+
+[45]
+
+See paragraphs 52 to 54 of this Ruling, in particular Prime Wheat Association Ltd v. Chief Commissioner of Stamp Duties (NSW) (1997) 42 NSWLR 505 at 512; 97 ATC 5015 at 5019-5020; (1997) 37 ATR 479 at 484, extracted at paragraph 52 of this Ruling.
+
+[46]
+
+See paragraph 102 of this Ruling for a brief summary of the key features of an arrangement that satisfies subsection 67(4A).
+
+[47]
+
+On these facts, the arrangement would still be a borrowing of money even if the further payment on repurchase of the shares was not payable - see paragraph 48 of this Ruling.
+
+[48]
+
+The Macquarie Dictionary, 2001, rev. 3rd edn, The Macquarie Library Pty Ltd, Sydney.
+
+[49]
+
+Encyclopaedic Australian Legal Dictionary (LexisNexis AU, 2009).
+
+[50]
+
+Burrill v. Commissioner of Taxation (1996) 67 FCR 519 at 525; 96 ATC 4629 at 4634; (1996) 33 ATR 133 at 138.
+
+[51]
+
+Moss v. Hancock [1899] 2 QB 111 at 116; Cusack v. Federal Commissioner of Taxation [2002] FCA 1012; 2002 ATC 4676; (2002) ATR 443.
+
+[52]
+
+BHP Billiton Iron Ore Pty Ltd v. The National Competition Council [2006] FCA 1764 at paragraphs 117 and 118 per Middleton J.
+
+[53]
+
+The OSSR and the Occupational Superannuation Standards Act 1987, under which the regulations were made, were the predecessors to the SIS regime.
+
+[54]
+
+Sections 65 and 109 may also be contravened in these circumstances.
+
+[55]
+
+See TR 95/25: Income tax: deductions for interest under subsection 51(1) of the Income Tax Assessment Act 1936 following FC of T v. Roberts; FC of T v. Smith, in particular paragraph 42; and TR 2000/2: Income tax: deductibility of interest on moneys drawn down under line of credit facilities and redraw facilities, in particular paragraphs 46 and 47.
+
+[56]
+
+See TR 2000/2: Income tax: deductibility of interest on moneys drawn down under line of credit facilities and redraw facilities, in particular paragraph 39.
+
+[57]
+
+Consequently the fund may not be regarded as passing the test for being a complying superannuation fund under subsection 42A(5) for those five years of income.
+
+Previously released in draft form as SMSFR 2008/D4
+
+### References
+
+ATO references:
+
+NO 2008/3593
+
+ISSN: 1835-2138
+
+Subject References:
+
+former SMSF
+
+self managed superannuation funds
+
+SMSF
+
+SMSF borrowings
+
+superannuation
+
+Business Line:
+SEO
+
+Legislative References:
+
+SISA 1993
+
+SISA 1993 10(1)
+
+SISA 1993 10(4)
+
+SISA 1993 17A
+
+SISA 1993 35C
+
+SISA 1993 42A(5)
+
+SISA 1993 52
+
+SISA 1993 52(2)(b)
+
+SISA 1993 52(2)(c)
+
+SISA 1993 52(2)(f)
+
+SISA 1993 62
+
+SISA 1993 65
+
+SISA 1993 65(1)
+
+SISA 1993 65(1)(a)
+
+SISA 1993 65(1)(b)
+
+SISA 1993 66
+
+SISA 1993 67
+
+SISA 1993 67(1)
+
+SISA 1993 67(1)(a)
+
+SISA 1993 67(2)
+
+SISA 1993 67(2A)
+
+SISA 1993 67(3)
+
+SISA 1993 67(3)(a)
+
+SISA 1993 67(4)
+
+SISA 1993 67(4A)
+
+SISA 1993 67(5)
+
+SISA 1993 67(6)
+
+SISA 1993 67(7)
+
+SISA 1993 Pt 8
+
+SISA 1993 71
+
+SISA 1993 71(1)
+
+SISA 1993 109
+
+SISA 1993 129
+
+SISR 1994
+
+SISR 1994 Pt 5
+
+SISR 1994 Pt 7
+
+SISR 1994 13.12
+
+SISR 1994 13.13
+
+SISR 1994 13.14
+
+Occupational Superannuation Standards Regulations 16(1)(b)
+
+Occupational Superannuation Standards Act 1987
+
+Superannuation Contributions Tax (Assessment And Collection) Act 1997
+
+Case References:
+
+Beconwood Securities Pty Ltd v. Australia and New Zealand Banking Group Limited
+
+[2008] FCA 594
+
+BHP Billiton Iron Ore Pty Ltd v. The National Competition Council
+
+[2006] FCA 1764
+
+Burrill v. Commissioner of Taxation
+
+(1996) 67 FCR 519
+
+96 ATC 4629
+
+(1996) 33 ATR 133
+
+Case 73/96
+
+[1996] AATA 81
+
+96 ATC 653
+
+Cusack v. Federal Commissioner of Taxation
+
+[2002] FCA 1012
+
+2002 ATC 4676
+
+50 ATR 443
+
+De Vigier v. Inland Revenue Commissioners
+
+[1964] 2 All ER 907
+
+Eastern Nitrogen Ltd v. Federal Commissioner of Taxation
+
+(2001) 108 FCR 27
+
+2001 ATC 4164
+
+(2000) 46 ATR 474
+
+Federal Commissioner of Taxation v. Firth
+
+[2002] FCA 413
+
+(2002) 120 FCR 450
+
+2002 ATC 4346
+
+(2002) 50 ATR 1
+
+Moss v. Hancock
+
+[1899] 2 QB 111
+
+Prime Wheat Association Ltd v. Chief Commissioner of Stamp Duties (NSW)
+
+(1997) 42 NSWLR 505
+
+97 ATC 5015
+
+(1997) 37 ATR 479
+
+R v. New Queensland Copper Co Ltd
+
+(1917) 23 CLR 495
+
+[1917] HCA 34
+
+(1917) 23 ALR 373
+
+Re Gordon and Secretary, Department of Social Security
+
+(1992) 16 AAR 100
+
+Re Southern Brazilian Rio Grande Do Sul Railway Co Ltd
+
+(1905) 2 Ch 78
+
+Other References:
+
+Beale, H.G (ed), (2004), Chitty on Contracts, 29th edn., London, Sweet & Maxwell
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney
+
+Encyclopaedic Australian Legal Dictionary (LexisNexis AU, 2009)
+
+Explanatory Memorandum to the Superannuation Legislation Amendment Bill (No. 4) 1999
+
+Law Administration Practice Statement PS LA 2006/17
+
+Law Administration Practice Statement PS LA 2006/18
+
+Law Administration Practice Statement PS LA 2006/19
+
+The Macquarie Dictionary, 2001, rev. 3rd edn, The Macquarie Library Pty Ltd, Sydney
+
+Copyright notice
+
+© Australian Taxation Office for the Commonwealth of Australia
+
+You are free to copy, adapt, modify, transmit and distribute material on this website as you wish (but not in any way that suggests the ATO or the Commonwealth endorses you or any of your services or products).

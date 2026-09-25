@@ -1,0 +1,248 @@
+Title: Registered agent lodgment program
+Publisher: Australian Taxation Office
+Document type: program schedule
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program
+Retrieved: 2026-09-25
+Topic: professional-standards
+---
+
+=== Section: Registered agent lodgment program 2026–27
+Source URL: https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program
+
+# Registered agent lodgment program 2026–27
+
+Find lodgment and payment due dates and details about the registered agent lodgment program.
+
+## About the lodgment program
+
+Why we provide the lodgment program for registered agents and what your practice needs to know about due dates.
+
+## Due dates by month
+
+Find registered agent lodgment program due dates listed by month to help your practice plan upcoming lodgments.
+
+## Due dates for tax returns by client type
+
+Find registered agent lodgment program due dates listed by income tax return for the major client types.
+
+## Due dates by obligation type
+
+Registered agent lodgment program due dates listed by obligation type (for income tax, see Due dates for tax returns).
+
+## Taxpayers with overdue tax returns
+
+How overdue prior year tax returns may affect your client's lodgment due date for a standard year.
+
+## Taxpayers with a lodgment prosecution
+
+Find out about earlier lodgment dates for any of your clients who were prosecuted.
+
+## Situations where we request earlier lodgment
+
+When we can request lodgment of a document earlier than the registered agent lodgment program due date.
+
+## Lodgment and payment dates on weekends or public holidays
+
+When to lodge where a due date falls on a weekend or public holiday.
+QC34535
+
+=== Section: About the lodgment program
+Source URL: https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/about-the-lodgment-program
+
+# About the lodgment program
+
+Why we provide the lodgment program for registered agents and what your practice needs to know about due dates.
+Last updated 1 July 2026
+
+## Why we provide the lodgment program
+
+Registered agents play an important role in helping taxpayers meet their tax and superannuation lodgment obligations.
+
+We provide a lodgment program of concessional lodgment due dates to help you manage your workload.
+
+This allows you to progressively lodge your clients' obligations over the 12-month period ending 30 June 2027.
+
+## Lodgment and payment due dates
+
+Various factors can affect the lodgment due date you receive for a client, for example:
+
+- when you added them to your client list
+
+- the type of entity
+
+- the income reported in their last return
+
+- the tax liability from their last return
+
+- whether
+
+- they are new registrants
+
+- they have overdue prior year returns
+
+- their last return was taxable or non-taxable.
+
+It's also important to remember that lodgment and payment due dates may change if your clients' circumstances change – for example, when we process a prior year amendment.
+
+We recommend you regularly check your clients' lodgment due dates using Online services for agents or the practitioner lodgment service.
+
+You should also know how to ensure clients are covered by your lodgment program.
+
+When a due date falls on a weekend or public holiday, you can lodge and your client can pay on the next business day.
+
+The payment due date for a tax return is determined by:
+
+- client type
+
+- lodgment due date
+
+- when the return is lodged.
+
+The list of lodgment program due dates on this website is not comprehensive – it is a guide only. Unless otherwise stated, the due dates provided are for 30 June balancers.
+QC105109
+
+=== Section: Due dates by month
+Source URL: https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-by-month
+
+# Due dates by month
+
+Find registered agent lodgment program due dates listed by month to help your practice plan upcoming lodgments.
+
+## July 2026
+
+Registered agent lodgment program due dates for July 2026.
+
+## August 2026
+
+Registered agent lodgment program due dates for August 2026.
+
+## September 2026
+
+Registered agent lodgment program due dates for September 2026.
+
+## October 2026
+
+Registered agent lodgment program due dates for October 2026.
+
+## November 2026
+
+Registered agent lodgment program due dates for November 2026.
+
+## December 2026
+
+Registered agent lodgment program due dates for December 2026.
+
+## January 2027
+
+Registered agent lodgment program due dates for January 2027.
+
+## February 2027
+
+Registered agent lodgment program due dates for February 2027.
+
+## March 2027
+
+Registered agent lodgment program due dates for March 2027.
+
+## April 2027
+
+Registered agent lodgment program due dates for April 2027.
+
+## May 2027
+
+Registered agent lodgment program due dates for May 2027.
+
+## June 2027
+
+Registered agent lodgment program due dates for June 2027.
+QC34594
+
+=== Section: Due dates for tax returns by client type
+Source URL: https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type
+
+# Due dates for tax returns by client type
+
+Find registered agent lodgment program due dates listed by income tax return for the major client types.
+
+## Individuals and trusts
+
+Registered agent lodgment program and payment due dates for individuals and trusts.
+
+## Companies and super funds
+
+Registered agent lodgment program and payment due dates for companies and super funds.
+
+## Large and medium taxpayers
+
+Registered agent lodgment program due dates for large and medium clients.
+
+## Partnerships
+
+Find out when registered agents need to lodge partnership returns for clients.
+
+## Consolidated groups
+
+Registered agent lodgment program and payment due dates for consolidated groups.
+
+## Substituted accounting periods
+
+Registered agent lodgment due dates for clients with a substituted accounting period.
+QC102708
+
+=== Section: Due dates by obligation type
+Source URL: https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-by-obligation-type
+
+# Due dates by obligation type
+
+Registered agent lodgment program due dates listed by obligation type (for income tax, see Due dates for tax returns).
+
+## Activity statements
+
+Registered agent lodgment program and payment due dates for activity statements.
+
+## Super lodgment
+
+Registered agent lodgment due dates for self-managed super funds or APRA-regulated funds.
+
+## PAYG withholding payment summary annual report
+
+Lodgment due date for your clients' PAYG withholding payment summary annual reports.
+
+## FBT return
+
+Registered agent lodgment program and payment due dates for fringe benefits tax (FBT) returns.
+
+## Taxable payments annual report
+
+Lodgment due date for your clients' Taxable payments annual reports.
+
+## Annual PAYG instalment notice
+
+Lodgment due date for your clients' annual PAYG instalment notices and when to vary instalment amounts.
+
+## PAYG withholding annual reports
+
+Lodgment due date for your clients' PAYG withholding annual reports.
+
+## Franking account return
+
+Lodgment due date for your clients' franking account tax returns.
+
+## Pillar Two global and domestic minimum tax obligations
+
+Lodgment due dates for your multinational enterprise group clients' Pillar Two obligations.
+
+## Annual investment income report
+
+Lodgment due date for your clients' annual investment income reports (AAIR).
+
+## Venture capital deficit tax return
+
+Lodgment due date for your clients' Venture capital deficit tax returns.
+
+## Early stage innovation company report
+
+Lodgment due date for your clients' early stage innovation company reports.
+QC34537

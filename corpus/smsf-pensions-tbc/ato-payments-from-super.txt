@@ -1,0 +1,215 @@
+Title: Key super rates and thresholds - Payments from super
+Publisher: Australian Taxation Office
+Document type: rates and thresholds
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/payments-from-super
+Retrieved: 2026-09-25
+Topic: smsf-pensions-tbc
+---
+
+# Payments from super
+
+What you need to be aware of when receiving payments from your super.
+Last updated 16 September 2026
+
+## Low rate cap amount
+
+There is a limit set on the amount of taxable components (taxed and untaxed elements) of a super lump sum that can receive a lower (or nil) rate of tax. This is called the low rate cap amount. It applies to members that are older than their preservation age but younger than 60 years of age.
+
+The low rate cap is a lifetime cap which is reduced by any amount previously applied to the low rate threshold.
+
+From 1 July 2026, the low rate cap is $260,000.
+
+Before 1 July 2026, the low rate cap amount was indexed each year in increments of $5,000 (rounded down) based on Average weekly ordinary times earnings (AWOTE).
+
+Note: Following recent changes to the family law framework, from December 2024 the low rate cap amount no longer applies to family law arrangements.
+
+Income year | Amount of cap
+2025–26 | $260,000
+2024–25 | $245,000
+2023–24 | $235,000
+2022–23 | $230,000
+2021–22 | $225,000
+2020–21 | $215,000
+2019–20 | $210,000
+2018–19 | $205,000
+2017–18 | $200,000
+2016–17 | $195,000
+2015–16 | $195,000
+2014–15 | $185,000
+2013–14 | $180,000
+2012–13 | $175,000
+2011–12 | $165,000
+2010–11 | $160,000
+2009–10 | $150,000
+2008–09 | $145,000
+2007–08 | $140,000
+
+## Untaxed plan cap amount
+
+The untaxed plan cap amount limits the concessional tax treatment of benefits that include a part that has not been taxed within a super fund. It:
+
+- applies to each super plan from which a person receives super lump sum member benefits
+
+- is used to determine whether the excess untaxed roll-over amount arises.
+
+The untaxed plan cap amount is indexed in increments of $5,000 (rounded down) based on AWOTE. The new indexed amount is generally available each February.
+
+Income year | Amount of cap
+2026–27 | $1,935,000
+2025–26 | $1,865,000
+2024–25 | $1,780,000
+2023–24 | $1,705,000
+2022–23 | $1,650,000
+2021–22 | $1,615,000
+2020–21 | $1,565,000
+2019–20 | $1,515,000
+2018–19 | $1,480,000
+2017–18 | $1,445,000
+2016–17 | $1,415,000
+2015–16 | $1,395,000
+2014–15 | $1,355,000
+2013–14 | $1,315,000
+2012–13 | $1,255,000
+2011–12 | $1,205,000
+2010–11 | $1,155,000
+2009–10 | $1,100,000
+2008–09 | $1,045,000
+2007–08 | $1,000,000
+
+## Minimum annual payments for super income streams
+
+A minimum amount must be paid each year from pensions or annuities that started on or after 1 July 2007.
+
+For certain pensions and annuities, the minimum payment amounts were temporarily reduced by:
+
+- 50% for the 2008–09, 2009–10 and 2010–11 years
+
+- 25% for the 2011–12 and 2012–13 years.
+
+The minimum payment amount returned to normal in 2013–14.
+
+The reductions in these years apply only to account-based pensions and annuities (allocated pensions and annuities and market-linked pensions and annuities).
+
+Age | 2008–09 to 2010–11 income years (inclusive) | 2011–12 to 2012–13 income years (inclusive) | 2013–14 to 2018–19 income years (inclusive) | 2019–20 to 2022–23 income years (inclusive) | 2023–2024 onwards
+Under 65 | 2.0% | 3.0% | 4.0% | 2.0% | 4.0%
+65–74 | 2.5% | 3.75% | 5.0% | 2.5% | 5.0%
+75–79 | 3.0% | 4.5% | 6.0% | 3.0% | 6.0%
+80–84 | 3.5% | 5.25% | 7.0% | 3.5% | 7.0%
+85–89 | 4.5% | 6.75% | 9.0% | 4.5% | 9.0%
+90–94 | 5.5% | 8.25% | 11.0% | 5.5% | 11.0%
+95 or more | 7.0% | 10.5% | 14.0% | 7.0% | 14.0%
+
+Note: These withdrawal factors are indicative only. To determine the precise minimum annual payment (especially for market linked income streams), refer to the pro-rating, rounding and other rules in the Superannuation Industry (Supervision) Regulations 1994.
+
+### Temporarily reducing superannuation minimum payment amounts
+
+The government reduced the minimum annual payment required for account-based pensions and annuities, allocated pensions and annuities and market-linked pensions and annuities by 50% for the 2019–20, 2020–21, 2021–22 and 2022–23 financial years. This reduction has not been extended for the 2023–24 income year and onwards.
+
+Superannuation and annuity providers calculate the minimum annual payment required as at 1 July each year, based on the account balance of the member or annuitant. The 50% reduction applied to this calculated minimum annual payment.
+
+Note: Pension payments for 2019–20 year that were above the reduced minimum withdrawal rate and were taken before 25 March 2020, can't be re-categorised as a lump sum or commutation. This applies even if a valid minute or election from the member was in place before the government announced reduction.
+
+#### Example: annual minimum pension payment
+
+Robert is 67 years old. At 1 July 2019, Robert’s account-based pension balance was $480,000. Robert’s minimum annual payment was calculated at 5% (the percentage applicable to his age) of his pension balance, which is $24,000. Following the law change, Robert’s required annual minimum pension payment for 2019–20 is $12,000.
+
+If Robert has already withdrawn more than $12,000 for 2019–20, he isn't able to put the amount above $12,000 back into his superannuation account unless he’s eligible to make superannuation contributions. These would be subject to any other rules or limits, such as contribution caps.
+
+End of example
+
+### Superannuation pensions and annuities that have already commenced
+
+For pensions and annuities that commence part-way through a financial year, the temporary 50% reduction applies to the minimum annual payment that is calculated proportionally on the account balance on commencement day.
+
+#### Example: temporary reduction in minimum drawdown amounts
+
+Thomas commences an account-based pension on 1 January 2020 at age 66. His pension account balance on the commencement day was $250,000.
+
+Under current minimum drawdown requirements, his minimum annual payment amount would be $12,500 (5% of $250,000).
+
+As the pension commenced on 1 January 2020, the required minimum amount is calculated proportionately from the commencement day to the end of the financial year:
+
+[$12,500 (minimum annual payment amount) × 182 (days remaining)] ÷ 366 (2020 is a leap year) = $6,215.
+
+Following the temporary reduction in minimum drawdown requirements, Thomas is only required to drawdown 2.5% of his account balance, which is $3,107 ($3,110 rounded up to the nearest 10 whole dollars).
+
+If Thomas has already withdrawn over $3,110 for 2019–20, he can't put the amount above $3,110 back into his superannuation account unless he’s eligible to make superannuation contributions. These would be subject to any other rules or limits, such as contribution caps.
+
+End of example
+
+For more information on making contributions, see:
+
+- Caps, limits and tax on super contributions
+
+- Personal super contributions.
+
+Preservation age
+
+Generally, you must reach your preservation age and meet a condition of release before you can access your super. Use the following table to work out your preservation age.
+
+Date of birth | Preservation age
+Before 1 July 1960 | 55
+1 July 1960 – 30 June 1961 | 56
+1 July 1961 – 30 June 1962 | 57
+1 July 1962 – 30 June 1963 | 58
+1 July 1963 – 30 June 1964 | 59
+From 1 July 1964 | 60
+
+## Super lump sums
+
+The table below shows the maximum tax rate that is applied to each component of a super lump sum you are paid, based on your age when you receive the payment.
+
+Income component derived in the income year | Age when payment is received | Amount subject to tax | Maximum rate of tax (excluding Medicare levy )
+Member benefit – taxable component – taxed element | Under preservation age | Whole amount | 20%
+Member benefit – taxable component – taxed element | At or above preservation age and under 60 years | Up to the low rate cap amount | Nil
+Member benefit – taxable component – taxed element | At or above preservation age and under 60 years | Above the low rate cap amount | 15%
+Member benefit – taxable component – taxed element | 60 years or more | Nil – amount is non-assessable, non-exempt income | n/a
+Member benefit – taxable component – untaxed element | Under preservation age | Up to untaxed plan cap amount | 30%
+Member benefit – taxable component – untaxed element | Under preservation age | Above untaxed plan cap amount | 45%
+Member benefit – taxable component – untaxed element | At or above preservation age and under 60 years | Up to the low rate cap amount | 15%
+Member benefit – taxable component – untaxed element | At or above preservation age and under 60 years | Above the low rate cap amount and up to the untaxed plan cap amount | 30%
+Member benefit – taxable component – untaxed element | At or above preservation age and under 60 years | Above the untaxed plan cap amount | 45%
+Member benefit – taxable component – untaxed element | 60 years or more | Up to the untaxed plan cap amount | 15%
+Member benefit – taxable component – untaxed element | 60 years or more | Above the untaxed plan cap amount | 45%
+Death benefit lump sum benefit paid to non-dependants – taxable component – taxed element | Any | Whole amount | 15%
+Death benefit lump sum benefit paid to non-dependants – taxable component – untaxed element | Any | Whole amount | 30%
+Death benefit lump sum benefit paid to dependants – taxable component – taxed and untaxed elements | Any | None | Nil
+Rollover super benefits – taxable component – taxed element | Any | Nil – amount is non-assessable, non-exempt income | n/a
+Rollover super benefits – taxable component – untaxed element | Any | Amounts under the untaxed plan cap amount are non-assessable, non-exempt income | n/a
+Rollover super benefits – taxable component – untaxed element | Any | Above the untaxed plan cap amount | 45%
+Super lump sum benefits less than $200 | Any | None | Nil
+Super lump sum benefit (terminally ill recipient) | Any | None | Nil
+
+Notes:
+
+- A temporary budget repair levy of 2% applied for the 2014–15, 2015–16 and 2016–17 income years to individuals with a taxable income of more than $180,000 per year. The levy was payable at a rate of 2% of each dollar of a taxpayer’s taxable income over $180,000. The levy ceased to apply from 1 July 2017.
+
+- The Medicare levy rate is 2% from 1 July 2014 onwards. It is applied in addition to the maximum rate of tax for each income component.
+
+- The Medicare levy rate was 1.5% up to and including 30 June 2014 and is applied in addition to the maximum rate of tax for each income component.
+
+- In the 2011–12 income year, the flood levy applied where an individual's taxable income exceeds $50,000. We published information to help you work out whether the flood levy applied to you.
+
+## Departing Australia superannuation payment
+
+This table covers Departing Australia superannuation payment (DASP) tax rates for lump sums and rollovers.
+
+If we hold temporary resident unclaimed super money for a former temporary resident, and they returned to Australia as a permanent resident, they have the option of rolling the money over to their super fund. This is the only time a rollover of DASP is an option. The rollover amount is still classified as a DASP and will be taxed at the rates shown in this table.
+
+Payment component | DASP ordinary tax rate | DASP Working holiday makers (WHM) tax rate
+Tax-free component | Nil | Nil
+Taxable component – taxed element Applies to taxed elements whether taken as a lump sum or rollover. | 35% | 65%
+Taxable component – untaxed element Applies to both lump sums and roll-over amounts up to the untaxed roll-over plan cap amount. Any part of a rollover that exceeds the untaxed roll-over plan cap amount is subject to a 47% tax rate under the Superannuation (Excess Untaxed Roll-over Amounts Tax) Act 2007 rather than at DASP tax rates. | 45% | 65%
+
+The temporary budget repair levy applied in the 2014–15, 2015–16 and 2016–17 income years. For those years, the DASP tax rates were as follows:
+
+- tax free component – Nil
+
+- taxable component taxed element – 38%
+
+- taxable component untaxed element – 47%.
+
+During these years, any part of a rollover that exceeded the untaxed roll-over plan cap amount was subject to a 49% tax under the Superannuation (Excess Untaxed Roll-over Amounts Tax) Act 2007 rather than at DASP tax rates.
+QC18123

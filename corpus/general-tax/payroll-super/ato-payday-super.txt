@@ -1,0 +1,573 @@
+Title: Payday Super for employers
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/super-for-employers/about-payday-super
+Retrieved: 2026-09-25
+Topic: general-tax/payroll-super
+---
+
+=== Section: About Payday Super – Superannuation Changes
+Source URL: https://www.ato.gov.au/businesses-and-organisations/super-for-employers/about-payday-super
+
+# About Payday Super
+
+How employers calculate, pay and report super guarantee under Payday Super from 1 July 2026.
+Last updated 10 August 2026
+
+## How Payday Super works
+
+Payday Super is a change to how you pay your employees’ super guarantee. From 1 July 2026 you must:
+
+- pay employees their super guarantee for each payday (instead of quarterly)
+
+- calculate super based on an employee's qualifying earnings, which is a new term that brings together ordinary time earnings and other payments.
+
+Payday Super does not change:
+
+- who you have to pay super for (you continue to pay super for eligible employees, including independent contractors paid mainly for their labour)
+
+- the percentage you use to calculate super guarantee contributions (still 12%)
+
+- the systems and platforms you use to make super guarantee contributions (except for the Small Business Super Clearing House, which has now closed).
+
+Media: Payday Super is here
+
+https://tv.ato.gov.au/media/bi9or7orsim83tExternal Link (Duration: 2:40)
+
+You can download this page as a printable fact sheet, Payday Super (PDF 146KB)This link will download a file.
+
+## What you need to do
+
+- Check the information below about what's changed.
+
+- Stay informed. Visit Payday Super for employers or speak to your tax professional for advice.
+
+To find out how to pay super for your employees under Payday Super, see Paying super on payday.
+
+## Changes from 1 July 2026
+
+- Deadline for super guarantee contributions
+
+- Calculating super guarantee amounts
+
+- Reporting super payments
+
+- Late payments and the super guarantee charge
+
+- Penalties
+
+- Small Business Superannuation Clearing House (SBSCH)
+
+- Checking employee data and processing payments
+
+- Allocations by super funds
+
+- Offering employees a stapled fund
+
+### Deadline for super guarantee contributions
+
+#### Before 1 July 2026
+
+Super guarantee contributions must be received by a super fund within 28 days of the end of the quarter, but can be paid quarterly or more frequently, e.g. monthly.
+
+The due dates are 28 October, 28 January, 28 April and 28 July.
+
+#### From 1 July 2026
+
+Super guarantee contributions must be received by your employees’ super funds within 7 business days after paying your employees, with enough information to allocate the contributions to the employees' member accounts.
+
+There are some exceptions to the 7 business day deadline, such as for new employees.
+
+For more information see Payment deadlines for Payday Super.
+
+### Calculating super guarantee amounts
+
+#### Before 1 July 2026
+
+The super guarantee amount is calculated as 12% of ordinary time earnings.
+
+#### From 1 July 2026
+
+The super guarantee amount is calculated as 12% of qualifying earnings. Qualifying earnings include ordinary time earnings, all commissions, salary sacrifice contributions and other amounts that were previously included in an employee's salary or wages for super guarantee.
+
+For more information see What payments are qualifying earnings.
+
+### Reporting super payments
+
+#### Before 1 July 2026
+
+You report either ordinary time earnings or super liability through Single Touch Payroll (STP).
+
+#### From 1 July 2026
+
+You report both qualifying earnings and super liability through STP.
+
+### Late payments and the super guarantee charge
+
+#### Before 1 July 2026
+
+The super guarantee charge applies when amounts aren’t received by a super fund within 28 days of the end of a quarter. The super guarantee charge:
+
+- is self-assessed by the employer, who must lodge a super guarantee statement
+
+- is calculated based on salary and wages
+
+- includes interest at 10% per annum
+
+- includes a flat administration fee
+
+- is not tax deductible.
+
+#### From 1 July 2026
+
+The super guarantee charge applies when amounts aren’t received by a super fund within 7 business days after payday (unless longer applies, such as for new employees). The super guarantee charge:
+
+- is assessed by the ATO (employers don't lodge a super guarantee statement)
+
+- is calculated based on qualifying earnings
+
+- includes interest that compounds daily at the general interest charge rate
+
+- includes an amount to reflect the cost of enforcement and encourage early disclosure by employers – this is called the administrative uplift amount. It can be reduced if the ATO hasn't taken action in the past and if the employer lodges a voluntary disclosure statement
+
+- is tax deductible.
+
+For more information see:
+
+- Missed or late Payday Super payments
+
+- What happens if you don't pay super correctly.
+
+### Penalties
+
+#### Before 1 July 2026
+
+Penalties are a maximum of 200% of the super guarantee charge, which can be remitted in part or in full.
+
+#### From 1 July 2026
+
+Penalties are 25% or 50% of the unpaid super guarantee charge, depending on any prior penalties.
+
+### Small Business Superannuation Clearing House (SBSCH)
+
+#### Before 1 July 2026
+
+The SBSCH closed to new users on 1 October 2025.
+
+Existing users had access to the service until 30 June 2026. All users must transition to an alternative option to pay their employees’ super. See How to work out and pay super.
+
+#### From 1 July 2026
+
+SBSCH is no longer accessible.
+
+### Checking employee data and processing payments
+
+#### Before 1 July 2026
+
+- Super payments may take a number of days to be received by a super fund.
+
+- Employers could receive incomplete or inaccurate data from their employees, which causes errors when they try to contribute to a super fund and delayed payments.
+
+- Employers may be unaware of key changes to large super funds' details.
+
+#### From 1 July 2026
+
+To help employers and intermediaries meet the new deadlines, the SuperStream data and payment standards have been revised to:
+
+- allow near real-time payments through the New Payments Platform
+
+- improve error messaging so employers can address errors faster
+
+- provide a new member verification request, which enables employers to confirm that a super fund can match their employee contribution to the super fund for the first time and will accept a contribution for them.
+
+Improvements to the Fund Validation Service also give employers early notice of key changes to large super funds' details, such as fund mergers, that could affect their ability to make contributions to super funds.
+
+### Allocations by super funds
+
+#### Before 1 July 2026
+
+Super funds have 20 business days to allocate or return contributions.
+
+#### From 1 July 2026
+
+Super funds have 3 business days to allocate or return contributions. This timeframe does not include the day the contribution is received.
+
+For more information see SuperStream changes.
+
+### Offering employees a stapled fund
+
+#### Previously
+
+You must provide your employees with a choice of super fund. If you don't receive a choice form from an employee, you can request stapled super fund details from the ATO.
+
+#### From 27 March 2026
+
+You can request details of an employee's stapled super fund and offer this to your employee at the same time you provide their choice form.
+QC105838
+
+=== Section: Paying super on payday
+Source URL: https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday
+
+# Paying super on payday
+
+How to pay employee super guarantee under Payday Super from 1 July 2026, including due dates and qualifying earnings.
+
+## How to work out and pay super
+
+A step-by-step guide for employers to calculate and pay super guarantee contributions under Payday Super.
+
+## What payments are qualifying earnings
+
+Which payments count as qualifying earnings for super guarantee from 1 July 2026.
+
+## Payment deadlines for Payday Super
+
+When employers need to pay super guarantee under Payday Super, starting 1 July 2026.
+
+## Paying super for a new employee or fund
+
+How to set up super contributions for a new employee or when paying to a new super fund.
+
+## Which super fund to pay into
+
+As an employer, where you pay eligible employee's super contributions is important to meet the super fund choice rules.
+
+## SuperStream for employers
+
+SuperStream is a standard requiring all employers to provide payments and related data to super funds electronically.
+
+## Single Touch Payroll reporting under Payday Super
+
+How to meet your STP reporting obligations under Payday Super using your payroll software from 1 July 2026.
+
+## If you have overpaid super guarantee
+
+What to do if you've paid more super guarantee than required under Payday Super.
+QC105839
+
+=== Section: Missed or late Payday Super payments
+Source URL: https://www.ato.gov.au/businesses-and-organisations/super-for-employers/missed-or-late-payday-super-payments
+
+# Missed or late Payday Super payments
+
+About the super guarantee charge (SGC) and data matching under Payday Super from 1 July 2026.
+
+## What to do if you miss a Payday Super contribution
+
+What to do if you miss a super guarantee contribution under Payday Super.
+
+## What happens if you don't pay super correctly
+
+About the super guarantee charge, its 4 components and what happens if you don't pay the charge.
+
+## How we check Payday Super compliance
+
+How we match data to determine super guarantee obligations and monitor compliance with Payday Super requirements.
+
+## Getting it right: compliance in the first year of Payday Super
+
+An employer's guide to how the ATO is approaching compliance with super guarantee in the first year of Payday Super.
+QC105840
+
+=== Section: Payday Super: How to manage super during the changeover
+Source URL: https://www.ato.gov.au/businesses-and-organisations/super-for-employers/payday-super-how-to-manage-super-during-the-changeover
+
+# Payday Super: How to manage super during the changeover
+
+How to change from quarterly super to the new Payday Super from 1 July 2026.
+Last updated 10 August 2026
+
+Media: Managing the changeover to Payday Super
+
+https://tv.ato.gov.au/ato-tv/media?v=bi9or7or5xz1uxExternal Link (Duration: 3:18)
+
+## What you need to do in 2026
+
+This information will help employers manage the changeover to Payday Super. Here are the key things to know from 1 July 2026.
+
+- Employers pay super guarantee for each payday, instead of quarterly.
+
+- Contributions are due in employees' super accounts within 7 business days after payday (unless longer applies, such as for new employees).
+
+- The Small Business Superannuation Clearing House (SBSCH) has now closed. You need to switch to an alternative provider.
+
+- For the quarter ending June, you will continue to pay super guarantee in full, on time and to the right fund, by the quarterly due date. This way, you will avoid the super guarantee charge. The final quarterly payment (June quarter) is due in employees' super accounts by 28 July.
+
+- If you miss the 28 July due date, you will need to lodge a super guarantee charge (SGC) statement and pay the SGC for the quarter ending 30 June 2026.
+
+- The late payment offset won't be available for the final June quarterly payment.
+
+For a comparison of the differences between the current system and the changes from 1 July 2026, see About Payday Super.
+
+## How to pay super during the June–July changeover
+
+### How super contributions are allocated
+
+How your super contributions are allocated against your super obligations during the changeover depends on when they reach your employee's super fund.
+
+If you pay quarterly and Payday Super contributions on time, you don’t risk incurring penalties.
+
+When the contribution is received by the employee's super fund | How the contribution is allocated
+On or before 30 June 2026 | The contribution is allocated to super guarantee obligations for the quarter ending 30 June 2026 (unless claimed as a late payment offset in a super guarantee charge statement for a quarter up to and including the quarter ending 31 March 2026). Any remaining amount is carried forward to the first available QE day (the day you make a payment of qualifying earnings). Amounts can be carried forward for up to 12 months.
+From 1 July to 28 July 2026 | The contribution is first allocated to super guarantee obligations for the quarter ending 30 June 2026. Any remaining amount is carried forward to the first available QE day (for up to 12 months).
+On or after 29 July 2026 | The contribution cannot be allocated to super guarantee obligations for the quarter ending 30 June 2026. It can only be allocated to available QE days from 1 July 2026 onwards.
+
+### Quarter ending 30 June 2026
+
+For the quarter ending 30 June 2026, you continue to calculate, pay and report super guarantee for your employees (including eligible contractors) under the existing quarterly super guarantee rules. This means you:
+
+- calculate super based on the ordinary time earnings you've paid to your employees between 1 April and 30 June
+
+- pay before the due date of 28 July to allow time for super funds to receive and allocate the money to employees' accounts.
+
+Be sure to finalise your June quarter payments by 28 July 2026 (or earlier).
+
+If you miss this deadline:
+
+- you must lodge a super guarantee charge statement by 28 August and pay the super guarantee charge to us for the June quarter
+
+- the late payment offset is not available
+
+- any super contributions received on or after 29 July will be applied under the new Payday Super rules, even if you intended these contributions to be made for any super you owe for the June quarter.
+
+### Pay runs from 1 July 2026
+
+From 1 July 2026 you calculate, pay and report super guarantee for your employees (including eligible contractors) under the Payday Super rules.
+
+This means you:
+
+- calculate super based on the qualifying earnings you pay to your employees from 1 July (even if the work that earned this pay was done before 1 July)
+
+- pay super guarantee for each payday so the money is in your employees' super accounts within 7 business days after payday (unless longer applies, such as for new employees).
+
+Super for pay runs in July may be due before your final quarterly super payment is due on 28 July. Contributions received on or before 28 July will reduce any super owing for the June quarter first. If there is any remainder, contributions will then be used under Payday Super. If you pay quarterly and Payday Super contributions on time, you don’t risk incurring penalties.
+
+#### Example: paying super on time during the changeover
+
+Priya has 5 employees. She pays their super quarterly and their wages fortnightly on a Monday. Priya knows that this July she will need to pay the super under the quarterly super system for the last time, as well as start paying under the new Payday Super system.
+
+For Priya, this means she’ll need to pay super for the:
+
+- April to June 2026 quarter (due in employees' super accounts by 28 July 2026)
+
+- payday on Monday 6 July 2026, now subject to the new Payday Super rules, (due to employees' super accounts by Wednesday 15 July, which is 7 business days after payday).
+
+For the June quarter payment, Priya works out the super guarantee as 12% of the ordinary time earnings she paid to her employees between 1 April and 30 June 2026. The last pay run she includes in this calculation is the payday of Monday 22 June.
+
+For the payday of 6 July 2026, Priya works out the super guarantee as 12% of the qualifying earnings she paid to her employees on that day.
+
+Priya pays her first Payday Super payment on 6 July (payday), and it's received on 13 July.
+
+She then finalises her quarterly contributions and pays that on 10 July, which is received on 15 July.
+
+Priya knows that contributions received on or before 28 July will go to super owed for the June quarter first. This means her Payday Super payment will be used to pay a portion of the June quarter payment. She also knows that if she pays the correct amount for both her quarterly payment and her first Payday Super payment, in full by 15 July, both contributions will be made on time.
+
+#### Example: paying late super contributions for the April to June 2026 quarter during the changeover
+
+Leanne employs Reece and pays him a $4,000 wage on the 27th of each month.
+
+On 27 July, Leanne owes Reece $1,920 in super guarantee:
+
+- $1,440 for the April to June 2026 quarter ($4,000 × 3 months × 12%)
+
+- $480 for the QE day 27 July.
+
+When Leanne pays Reece his wage on 27 July, she also pays a $1,920 contribution to Reece's super fund through a clearing house. The contribution is received by the fund on 31 July.
+
+Payday Super obligations
+
+The $480 portion of the contribution for the QE day 27 July is received within 7 business days.
+
+Leanne has met her Payday Super obligations.
+
+Quarterly super obligations
+
+The $1,440 portion of the contribution for the April to June 2026 quarter is received after the 28 July 2026 due date.
+
+Leanne hasn't met her quarterly super obligations and the contribution can't be applied to her super guarantee obligations for the June 2026 quarter.
+
+Because Leanne missed the due date, the super guarantee charge applies. The Payday Super compliance approach does not apply to quarterly super, so to meet her obligations, Leanne must lodge a super guarantee statement. She must pay the super guarantee charge for the outstanding $1,440 she owes for the June 2026 quarter to the ATO.
+
+Leanne can no longer reduce her quarterly super obligations by paying contributions to Reece's super fund.
+
+Looking ahead
+
+The $1,440 that Leanne has contributed to Reece's super fund late for the June 2026 quarter will be automatically applied against her super guarantee obligations for upcoming QE days. Leanne's future super obligations will continue to apply.
+
+End of example
+
+### Managing your cash flow
+
+You may have multiple super payments due during July 2026, including:
+
+- super payments for each payday
+
+- the final quarterly super payment due 28 July.
+
+You should review your expected pay cycles for July to understand the impacts of paying super each payday. You may consider setting aside additional funds to make sure you can meet your obligations. For more information, see Manage your business cash flow.
+
+If your cashflow permits, you can pay your June quarter super on or before your first payday in July. If you do this, your business will have:
+
+- a more seamless changeover to the Payday Super system
+
+- time to correct any rejected contributions before the 28 July deadline.
+
+#### How often to pay wages
+
+The Fair Work Ombudsman provides information about when and how to pay your employees.
+
+Most awards or agreements will set out when employees must be paid:
+
+- weekly
+
+- fortnightly, or
+
+- monthly.
+
+If it doesn't, employees must be paid at least monthly. For more information, visit the Fair Work Ombudsman’s websiteExternal Link.
+
+Example: July cash flow when paying super quarterly
+
+Mark has 7 employees. He currently pays their super quarterly and their wages fortnightly on a Monday.
+
+To prepare for Payday Super, Mark reviews his pay cycles in June to figure out how many times he'll need to pay super in July. He works out that he'll have to pay super for 3 periods in July:
+
+- the April to June 2026 quarter (super is due by 28 July 2026)
+
+- the payday on Monday 6 July (Mark's first payday under the Payday Super rules which must be received and can be allocated by funds within 7 business days, by 15 July in this case)
+
+- the payday on Monday 20 July (super is due to employee's super funds by 29 July).
+
+Mark puts aside extra money to make sure he has enough to meet all his obligations on time.
+
+Mark knows that super contributions received on or before 28 July go to super owed for the April to June quarter, first. He decides to pay his last quarterly super payment and his first Payday Super payment at the same time on 6 July so both contributions will reach employees' funds by 15 July.
+
+End of example
+
+## How to report super in Single Touch Payroll
+
+From 1 July 2026, employers must report the year-to-date amount of qualifying earnings for each employee through their Single Touch Payroll (STP) reporting each payday. Qualifying earnings is a new term for the types of payments you make to employees that are used to calculate the super guarantee under Payday Super.
+
+Employers will also have to report the year-to-date super liability for each employee.
+
+Employers can't report qualifying earnings prior to 1 July 2026. Until then, employers must report either OTE or super liability in STP to be compliant.
+
+You should review your STP software and prepare to correctly map pay codes now. This will help you meet reporting obligations and ensure readiness when updated payroll software is available.
+
+For more information, see When to start reporting qualifying earnings in STP.
+
+### If you don't use Single Touch Payroll yet
+
+All employers should now be Single Touch Payroll (STP) reporting and transitioned to STP Phase 2 reporting, unless covered by a deferral or exemption.
+
+If you are required to report using STP, you must report accurately and on time. Failing to report using STP may result in penalties. For further information, see draft PS LA 2026/D2: Administration of penalties for failure to comply with Single Touch Payroll reporting obligations.
+
+If you can't report qualifying earnings and super liability from 1 July 2026, you should begin reporting these amounts as soon as possible after that date. From 1 July 2027, if you don't report these amounts, we'll reject your reporting and penalties may apply.
+
+You don't need to request a deferral if you can start reporting qualifying earnings during the 2026–27 financial year.
+
+### If you don't use SuperStream
+
+SuperStream is the way businesses must pay employee superannuation guarantee contributions to super funds.
+
+If you pay direct to a fund and don't use SuperStream for super payments, you may receive returned payments without error codes.
+
+If you use SuperStream, you can contact the super fund or clearing house (if you use one) directly to find out more about where to find errors.
+
+Common errors include:
+
+- incorrect unique superannuation identifier (USI) or member number
+
+- ABN mismatch
+
+- incorrect fund details
+
+- inactive electronic service address (for payments to self-managed super funds)
+
+- incorrect contribution amounts.
+
+You should also speak with your clearing house (if you use one) and your employees' super fund to make sure that you are using a SuperStream compliant method.
+
+Remember, employers must ensure super payments reach employees’ super funds within 7 business days after payday (some longer timeframes may apply).
+
+## Preparing to meet the 7-day timeframe for Payday Super
+
+Payments can take time to reach super funds. Sometimes errors occur and this adds additional processing time. When Payday Super starts, your payments must be received (and have enough information to be allocated) by super funds within 7 business days after payday to avoid the super guarantee charge (SGC). This timeframe needs to take into account the time it takes for processing and for errors to be rectified.
+
+To make sure you're ready to meet this 7-business day timeframe, speak with your payroll provider, clearing house (if you use one) and your employees' super fund to understand:
+
+- how long your clearing house takes to process payments
+
+- whether payments are processed via the New Payments Platform (which is almost immediate)
+
+- where you can find error messages (in your payroll product, clearing house portal, or from the fund)
+
+- how long it takes for a payment to return if rejected (funds have 3 business days to allocate or return contributions to you if they're unable to be allocated. This timeframe does not include the day the contribution is received).
+
+For steps you can follow to prepare for 1 July, see our Payday Super checklist for employers. We have released our compliance approach for the first year of Payday Super, for employers who may have difficulty changing over.
+
+### Example: meeting the 7-business day timeframe
+
+Mandy is preparing for Payday Super and wants to ensure any contributions she makes will be received and can be allocated by her employee's super fund within 7 business days after payday.
+
+Mandy speaks with her clearing house and learns that they'll upgrade to the New Payments Platform from 1 July 2026. This means payments will be processed within the same business day.
+
+Mandy understands the fund will have 3 business days to reject the contribution if it can't be allocated to a member account. She also finds out where she can view error messages in case this occurs.
+
+Knowing these timeframes, Mandy decides she will pay super on payday (not after). This will ensure she has time to process payments and resolve any errors with the fund within 7 business days after payday.
+
+End of example
+
+### Member verification request
+
+A new member verification request (MVR) allows you to use your payroll or software solution to verify an employees’ super fund details before the contribution is made. An MVR can be used:
+
+- before making a contribution to a super fund for the first time
+
+- where there has been a change in employee information (such as name)
+
+- where a contribution has previously been rejected.
+
+To reduce errors from 1 July, speak to your payroll provider about how you can access the MVR.
+
+## How to tell your employees about Payday Super
+
+Your staff may have questions or concerns about Payday Super. You can tell them:
+
+- super will be paid every payday, instead of every quarter
+
+- the super payment will still be shown on their payslip
+
+- the super contribution will be received by their fund within 7 business days after payday, however it may not be visible in their account straight away (depends on how often the fund updates information)
+
+- there is no change to the amount of super they will receive (unless their pay changes)
+
+- they must keep their contact details up to date with the ATO, the super fund and their employer to avoid errors when paying their super.
+
+### Concessional contributions cap
+
+The concessional contributions cap is the maximum super you can receive each year at a lower tax rate. For the 2026–27 year, the concessional contributions cap is $32,500.
+
+Changes have been announced to avoid employees exceeding their concessional contributions cap in 2026–27, where this is a result of having additional super payments made due to Payday Super starting. This is not yet law.
+
+## If you have difficulty changing over to Payday Super
+
+If you start paying super for each payday from 1 July, but some payments are received late (for example, due to incorrect details and the super fund rejecting payments and you fix the error quickly) you're likely to be considered low risk by the ATO.
+
+### Our compliance approach
+
+We have released a guide to outline our approach to compliance in the first year of Payday Super. Under this approach, you won't be the focus of ATO compliance action as long as you:
+
+- make your payments for each payday on time
+
+- fix any errors as soon as possible.
+
+We will take a firmer approach to:
+
+- serious or deliberate cases of non-compliance
+
+- employers not attempting to pay super guarantee for each payday.
+
+QC106539

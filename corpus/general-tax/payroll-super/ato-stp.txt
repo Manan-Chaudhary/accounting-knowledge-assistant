@@ -1,0 +1,422 @@
+Title: Single Touch Payroll
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll
+Retrieved: 2026-09-25
+Topic: general-tax/payroll-super
+---
+
+=== Section: Single Touch Payroll
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll
+
+# Single Touch Payroll
+
+Understand how using Single Touch Payroll streamlines employer reporting to us and other government agencies.
+
+## What STP is
+
+Learn how STP works, what happens when you report, and how it affects new employees and activity statement reporting.
+
+## Expanding Single Touch Payroll (Phase 2)
+
+Single Touch Payroll Phase 2 will streamline reporting information about employees to government agencies.
+
+## News, events and resources
+
+Resources to help you understand Single Touch Payroll (STP), such as employer guides, factsheets, and webinars.
+
+## STP reporting options
+
+There are different Single Touch Payroll (STP) reporting options depending on the number and type of your employees.
+
+## How to report Single Touch Payroll data
+
+You can send Single Touch Payroll (STP) data to us in a few ways.
+
+## Start reporting
+
+Checklists, troubleshooting and employer reporting guidelines to help you report through Single Touch Payroll (STP).
+
+## Concessional reporting
+
+Employers who need to transition to Single Touch Payroll reporting may have concessional reporting options.
+
+## Need more time
+
+Depending on your situation, you may be exempt from Single Touch Payroll reporting or able to defer reporting.
+
+## When STP reporting can cease
+
+When Single Touch Payroll (STP) reporting can cease and what to do if you no longer have STP reporting obligations.
+
+## STP and activity statements
+
+How we use Single Touch Payroll (STP) data to simplify employer reporting obligations.
+
+## Single Touch Payroll for intermediaries
+
+Registered agents providing a payroll service and insolvency practitioners need to understand Single Touch Payroll.
+
+## Single Touch Payroll for employees
+
+Your year-to-date tax and super information is available in ATO online services (accessed through myGov).
+
+## STP employer reporting guidelines
+
+Our guidelines help employers understand how to report under Single Touch Payroll Phase 1 and Phase 2.
+QC54701
+
+=== Section: What STP is
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp
+
+# What STP is
+
+Learn how STP works, what happens when you report, and how it affects new employees and activity statement reporting.
+Last updated 1 September 2021
+Explains what Single Touch Payroll (STP) is and how to use it to report your payroll information each pay day.
+
+## Streamlined reporting
+
+Single Touch Payroll (STP) is an Australian Government initiative to streamline employers' reporting to government agencies.
+
+With STP you report employees' payroll information to us each time you pay them through STP-enabled software. Payroll information includes:
+
+- salaries and wages
+
+- pay as you go (PAYG) withholding
+
+- superannuation liability information.
+
+STP started on 1 July 2018 for employers with 20 or more employees and 1 July 2019 for employers with 19 or fewer employees and is a mandatory obligation.
+
+From 1 January 2022, the data collected through STP was expanded (known as STP Phase 2) to collect additional payroll information.
+
+All employers should now be STP reporting and transitioned to STP Phase 2 reporting unless covered by a deferral or exemption.
+
+If you are new to employing, you will need to start reporting now through STP Phase 2 enabled software as soon as you start paying your employees to avoid any penalties.
+
+We have a range of resources available to help you understand your STP reporting.
+
+## How STP works
+
+STP works by sending tax and super information from your STP-enabled payroll or accounting software to the ATO when you run your payroll.
+
+You will:
+
+- run your payroll
+
+- pay your employees as normal
+
+- give them a payslip.
+
+Your pay cycle doesn't need to change. You can continue to pay your employees weekly, fortnightly or monthly.
+
+Your STP-enabled payroll software will send us a report that includes the information we need from you, such as:
+
+- salaries and wages
+
+- PAYG withholding
+
+- super liability information.
+
+### Reporting
+
+There are several ways you can report your STP data to us.
+
+STP Phase 2 doesn't change the payments you need to report through STP, but it does change how those amounts need to be reported. Full lists of the payments that must be reported in STP Phase 1 and STP Phase 2 are available in the STP employer reporting guidelines.
+
+Super funds also report to us. They let us know when you make the super payment to your employees' chosen or default fund. This is an important step toward making sure employees are paid their correct entitlements.
+
+Our systems will match the STP information to your employer and employee records.
+
+If your employees have a myGov account linked to ATO online services, they will be able to see their year-to-date tax and super information in their income statement. Their data is updated every time you report. For most employers, this will be each pay day.
+
+At the end of the financial year, you'll need to finalise your STP data. This means you are making a declaration that you have completed your reporting for the financial year.
+
+Once you finalise your data, your employee's income statement in ATO online services will be marked as 'Tax ready'. They, or their registered agent, will be able use the income statement to lodge their tax return.
+
+You won't need to provide your employees payment summaries or provide us with a payment summary annual report for amounts you report through STP.
+
+You will still need to provide payment summaries for amounts you don't report through STP.
+
+## Sharing data collected from STP
+
+STP data reported by employers is shared. We exchange data with Services Australia and other government agencies to support the administration of the welfare system and other services.
+
+## Employee access
+
+If your employees have a myGov account linked to ATO online services, they will be able to see their year-to-date tax and super information in their Income statement. Their data is updated every time you report. For most employers, this will be each pay day.
+
+## Finalising your data
+
+At the end of the financial year, you'll need to finalise your STP data. This means you are making a declaration that you have completed your reporting for the financial year.
+
+Once you finalise your data, your employees' Income statement in ATO online services will be marked as 'Tax ready'. They, or their registered agent, will use the Income statement to lodge their tax return.
+
+You won't need to provide us with a payment summary annual report for the payments you report through STP.
+
+If you currently lodge an activity statement you will continue to do so.
+
+## Penalties
+
+We have engaged and communicated widely with employers and tax and BAS professionals since STP reporting became a mandatory obligation.
+
+If you haven't commenced STP reporting or haven't transitioned to STP Phase 2 reporting and you aren't covered by a deferral or exemption, you may be subject to failure to lodge (FTL) penalties.
+
+Explains what Single Touch Payroll (STP) is and how to use it to report your payroll information each pay day.
+QC60136
+
+=== Section: Expanding Single Touch Payroll Phase 2
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/expanding-single-touch-payroll-phase-2
+
+# Expanding Single Touch Payroll Phase 2
+
+Single Touch Payroll Phase 2 will streamline reporting information about employees to government agencies.
+Last updated 22 December 2022
+
+## What is Single Touch Payroll Phase 2?
+
+In the 2019–20 Budget, the government announced that Single Touch Payroll (STP) would be expanded to include additional information.
+
+The expansion of STP, also known as STP Phase 2, reduces the reporting burden for employers who need to report information about their employees to multiple government agencies. It helps Services Australia’s customers, who may be your employees, get the right payment at the right time.
+
+## Flexible approach to STP Phase 2
+
+To support you, our approach to STP Phase 2 is flexible, reasonable and pragmatic based on your business readiness and individual circumstances.
+
+Digital service providers (DSPs) who need more time to make the changes and update their solutions to support STP 2 can apply for a deferral for their customers. If your DSP has a deferral, they will let you know.
+
+If you can start reporting by your DSP's deferral date, you don't need to apply for more time.
+
+### Requesting more time to transition
+
+If you need more time to transition to STP Phase 2 reporting, you can:
+
+- apply for more time past your DSP's deferral date
+
+- have your registered agent apply for more time on your behalf.
+
+For more information about applying for a delayed transition, see STP expansion (Phase 2) delayed transitions.
+
+There won't be penalties for genuine mistakes in your first year of STP Phase 2 reporting.
+
+## Benefits of STP Phase 2
+
+### Benefits for employers
+
+We'll use the STP Phase 2 information to streamline employer interactions. For example:
+
+- You'll no longer have to send us your employees' tax file number (TFN) declarations. Your employees will provide it to you, and you'll need to keep it with your employee records.
+
+- If you're using a concessional reporting option, such as for closely held payees or for inbound assignees, you'll be able to tell us through reporting income types.
+
+- If you make a Lump sum E payment, you won't need to provide Lump sum E letters to your employees. You'll have included the amount and the period it relates to.
+
+- If you change software or your employee’s payroll ID, you can tell us in your STP report if your solution has this functionality. This will help fix issues with duplicate income statements for employees in ATO online services through myGov.
+
+We'll also share payroll information you report to us in near real-time with Services Australia. They'll use it to streamline requests:
+
+- for you to provide or confirm employment and payroll information about your employees
+
+- from your employees to provide employment and payroll information such as pay slips for prior periods.
+
+You may no longer need to provide separation certificates when your employees leave. The date and reason an employee leaves will be in your STP report.
+
+You can also voluntarily report child support deductions or garnishees (or both) through STP. This reduces the need to send separate remittance advices to the Child Support Registrar.
+
+### Benefits for employees
+
+Some changes under Phase 2 help us streamline interactions for employees, such as:
+
+- Making it easier for employees at tax time now we have better visibility of the types of income received and where it should be pre-filled on their individual income tax return.
+
+- Over time, the new information reported will allow us to tell employees if they've provided you with incorrect information that may lead to them getting a tax bill. For example, where an employee hasn’t notified you that they have a study and training support loan.
+
+We'll also share STP information with Services Australia so they can streamline interactions with their customers. Over time, they'll use STP data to improve their services by:
+
+- pre-filling details they already know – saving their customers time filling out claims and reports
+
+- reducing how often they'll need to contact customers – STP will give them some information that they currently need to confirm by phone or online
+
+- streamlining claims – their customers won’t need to supply as many documents
+
+- enhancing Family Tax Benefit processes – by sending SMS and email messages to their customers when
+
+- STP data shows their family income estimate may be too low
+
+- they have a new job
+
+- their employment has changed.
+
+- helping them pay their customers the right amount
+
+- using STP information to improve the customer experience if a customer has debt to pay. STP information allows Services Australia to understand their customers’ recent employment and income history – this helps them assist customers to repay any money owed.
+
+## Employer guide
+
+The STP Phase 2 employer reporting guidelines outline what is required for reporting through your STP Phase 2-enabled software.
+
+For more information about STP Phase 2 reporting, see:
+
+- Employer STP Phase 2 checklist
+
+- Tax and BAS professional STP Phase 2 checklist
+
+- Mandatory reporting under STP.
+
+## What isn't changing
+
+While you'll need to report additional information in your STP report, there are many things that will stay the same, such as:
+
+- the way you lodge
+
+- the due date
+
+- the types of payments that are needed
+
+- tax and super obligations
+
+- end-of-year finalisation requirements.
+
+## Key changes
+
+Most of the additional information you need to report should already be captured in your current payroll software.
+
+The key changes to the STP report include:
+
+- Disaggregation of gross
+
+- Employment and taxation conditions
+
+- Income types
+
+- Country codes
+
+- Child support
+
+- Business Management Software IDs and Payroll IDs
+
+### Disaggregation of gross
+
+Your STP report currently includes a gross amount. This is the total of many different components and payment types. Because some of these are treated differently for social security purposes, you will now need to report more detail.
+
+### Employment and taxation conditions
+
+There are many factors that influence how you manage your employees in your payroll. These include:
+
+- their employment basis
+
+- the information on their TFN declaration
+
+- details of when and why they leave.
+
+You currently provide this information in different ways and on different forms.
+
+Phase 2 streamlines this process by including the information in your STP report.
+
+### Income types
+
+You already tell us about the type of income your employees receive in your STP report.
+
+The reporting of income types introduced in Phase 2:
+
+- identifies payments you make to your employees with specific tax consequences
+
+- makes it easier for them to complete their individual income tax return
+
+- helps us identify where you are using a concessional reporting arrangement.
+
+### Country codes
+
+Sometimes you'll need to report a country code. For example, if you make a payment to an Australian resident working overseas, you'll need to provide information about the host country.
+
+### Child support
+
+You'll have the option to include child support garnishees and deductions in your STP report. This will reduce the need to give separate remittance advices to the Child Support Registrar.
+
+This is optional and not all STP-enabled solutions will offer this functionality.
+
+### Business Management Software IDs and Payroll IDs
+
+You may have the option to provide us with previous Business Management Software IDs and Payroll IDs in your STP report. This might occur when you've changed your business structure or changed software and can't zero out or finalise previous records.
+
+Providing this information will help us reduce and fix issues with duplicate income statements for employees in ATO online services.
+
+This is optional and not all STP-enabled solutions will offer this functionality.
+
+Single Touch Payroll Phase 2 will streamline reporting information about employees to government agencies.
+
+## Employer STP Phase 2 checklist
+
+Use this checklist to help prepare for Single Touch Payroll (STP) Phase 2 reporting.
+
+## Tax and BAS professional STP Phase 2 checklist
+
+Use this checklist to help your clients prepare for Single Touch Payroll (STP) Phase 2 reporting.
+
+## Common STP Phase 2 reporting questions and mistakes
+
+See some common questions and mistakes to help employers report accurately through Single Touch Payroll (STP) Phase 2.
+QC65099
+
+=== Section: How to report Single Touch Payroll data
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/how-to-report-single-touch-payroll-data
+
+# How to report Single Touch Payroll data
+
+You can send Single Touch Payroll (STP) data to us in a few ways.
+Last updated 5 November 2023
+
+## Your options to send STP data
+
+How you send STP information to us depends on the software you use. There are three types of solutions. After you run your payroll you can either send the STP information:
+
+- directly to us from your payroll software
+
+- through a third party sending service provider (SSP) which is integrated into your software
+
+- through a third party sending service provider (SSP) service which is outside your software.
+
+To find out what type of solution is suitable you can:
+
+- talk to your existing software provider
+
+- look at the STP product register to find STP payroll softwareExternal Link.
+
+## Option one: Report through existing payroll or accounting solution
+
+You can report from your existing payroll or accounting software if it is STP-enabled.
+
+Next steps
+
+- Talk to your software provider to find out what they offer and what you need to do
+
+- Read our Get ready and Start reporting checklists
+
+## Option two: Choose STP-enabled payroll software
+
+If you don't currently use payroll software, you can find a suitable product for your business needs, including micro employers (1–4 employees) on the product register.
+
+Next steps
+
+- Talk to your registered tax or BAS agent to find out which payroll software product would best suit your business needs
+
+- Look at the product register to find STP payroll softwareExternal Link
+
+## Option three: Ask a third party to report for you
+
+You can ask a third party to report for you, for example a:
+
+- registered tax or BAS agent
+
+- payroll service provider.
+
+It is your obligation to make sure the third party will be reporting for you through STP-enabled software.
+
+If you use a registered tax or BAS agent, talk to them about your options. They may be able to report through STP for you, or work with you to outsource your payroll to a payroll service provider.
+
+Payroll service providers who are providing a STP reporting service must be registered as a tax or BAS agent. You can check their registration details with the Tax Practitioners BoardExternal Link.
+
+QC60137

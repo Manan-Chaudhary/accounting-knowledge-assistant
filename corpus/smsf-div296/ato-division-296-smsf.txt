@@ -1,0 +1,80 @@
+Title: About Division 296 tax for SMSFs
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs
+Retrieved: 2026-09-25
+Topic: smsf-div296
+---
+
+# About Division 296 tax for SMSFs
+
+How Division 296 tax will apply for self-managed super funds (SMSFs).
+Last updated 29 June 2026
+
+## Division 296 tax from 1 July 2026
+
+From 1 July 2026, Division 296 tax will reduce the tax concessions available to individuals through their super. Division 296 tax can generally be paid from the individual’s super fund(s).
+
+It applies at a rate of 15% to an individual’s taxable super earnings. Broadly, this is a portion of the earnings on all your super interests determined by the extent that your total super balance (TSB) exceeds the large super balance threshold (LSBT).
+
+An additional rate of 10% will also apply to an individual’s very large super balance earnings component. Broadly, this is a portion of the earnings on all your super interests, determined by the extent that your TSB exceeds the very large super balance threshold (VLSBT).
+
+For the 2026–27 income year, the LSBT is $3 million and the VLSBT is $10 million. Both thresholds may increase due to indexation in future years.
+
+For the 2026–27 income year, for Division 296 tax to apply, it is the TSB at the end of the income year that must be greater than the LSBT or VLSBT. For subsequent income years, it will apply if either the TSB just before the start of the income year or at the end of the year exceeds these thresholds.
+
+Limited recourse borrowing arrangement (LRBA) amounts are disregarded when determining a member’s TSB for Division 296 tax purposes.
+
+For more information, refer to Division 296 tax.
+
+## Self-managed super funds (SMSFs) and Division 296
+
+Although Division 296 tax is assessed to the individual, SMSF trustees will need to provide information to us on their members that have a TSB exceeding the LSBT (in-scope members) for this to occur. The SMSF calculates its Division 296 fund earnings for the income year, which is an adjusted amount of fund taxable income. A portion of that amount is then attributed to the in-scope member’s interests in the SMSF as the member’s relevant super earnings and reported to us. The way that attribution occurs will depend on whether the member’s interest in the SMSF is an accumulation interest or defined benefit pension. Subject to some exceptions, for example where Division 296 fund earnings are nil, an actuary will need to be engaged to work out the amount attributable.
+
+You should report your in-scope member's relevant super earnings in the Self-managed superannuation fund annual return from the 2026–27 income year onwards. You will know your member is impacted by Division 296 if the TSB value of the member's interest in the SMSF exceeds the LSBT.
+
+If you do not report your member's relevant super earnings on the SMSF annual return, we will notify you of your in-scope members and you will need to amend the SMSF annual return to report this to us. If you have a tax agent, the notification will go to them via Online services for agents. Otherwise, we will issue correspondence to your mailing address.
+
+## Capital gains tax (CGT) adjustment for Division 296 tax
+
+To calculate Division 296 fund earnings, an SMSF can elect to make a CGT adjustment to the cost base or reduced cost base of its CGT assets to the market value of those assets as at the end of 30 June 2026. This recognises the level of accrued value prior to the commencement of the Division 296 tax.
+
+The CGT adjustment election applies to all CGT assets held by the SMSF at the end of 30 June 2026. Generally, it is only available to assets the SMSF holds or owns directly, and not to those held indirectly, other than through a custodian or tax look-through (for example, LRBA trust) arrangement.
+
+The CGT adjustment election only applies for the purpose of working out Division 296 fund earnings for the SMSF for a year, to the extent that it is affected by the cost base or reduced cost base of the CGT asset.
+
+The election:
+
+- must be in the approved form (an approved form will be provided in due course)
+
+- must be made by the due date of the SMSFs annual return for the 2026–27 income year
+
+- cannot be revoked.
+
+The election does not need to be provided to the ATO.
+
+SMSFs must keep a record of the choice:
+
+- for each CGT asset to which the election applies, records of each element of its cost base and reduced cost base (as affected by the choice)
+
+- in plain English or be readily accessible and convertible into English
+
+- for 5 years after it becomes certain that there can be no further CGT events occur in relation to any of the CGT assets to which the election applies.
+
+SMSFs that apply the CGT adjustment will adjust the cost base of all its CGT assets (for Division 296 tax purposes) as follows:
+
+- The first element of the cost base or reduced cost base is taken to be the asset’s market value as at the end of 30 June 2026.
+
+- Each other element of the cost base or reduced cost base is taken to have been adjusted to nil at the end of 30 June 2026 (such that any amounts that formed part of the cost base or reduced cost base on or before that day are disregarded).
+
+## Further guidance
+
+We are currently drafting a law companion ruling that will support funds with calculating their Division 296 fund earnings and member's relevant super earnings, including content on the CGT adjustment. For more information, refer to the regulationsExternal Link and the following relevant legislation:
+
+- Superannuation (Building a Stronger and Fairer Super System) Imposition Act 2026 – Federal Register of LegislationExternal Link
+
+- Treasury Laws Amendment (Building a Stronger and Fairer Super System) Act 2026 – Federal Register of LegislationExternal Link
+
+QC107628

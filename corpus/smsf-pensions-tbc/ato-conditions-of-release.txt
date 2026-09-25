@@ -1,0 +1,160 @@
+Title: Conditions of release
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/tax-and-super-professionals/for-superannuation-professionals/apra-regulated-funds/paying-benefits/releasing-benefits/conditions-of-release
+Retrieved: 2026-09-25
+Topic: smsf-pensions-tbc
+---
+
+# Conditions of release
+
+How a member can meet a condition of release to access super preserved benefits or restricted non-preserved benefits.
+Last updated 13 October 2025
+
+## Common conditions of release
+
+The most common conditions of release for paying superannuation benefits are when the member:
+
+- has reached their preservation age and retires
+
+- has reached their preservation age and begins a transition-to-retirement income stream
+
+- ceases an employment arrangement on or after reaching 60 years old
+
+- is 65 years old (even if they haven't retired), or
+
+- has died (see Paying superannuation death benefits).
+
+In some special circumstances, at least part of a member’s super benefits can be released before their preservation age.
+
+### Preservation age
+
+Access to super benefits is generally restricted to members who have reached their preservation age.
+
+Date of birth | Preservation age (years )
+Before 1 July 1960 | 55
+1 July 1960 – 30 June 1961 | 56
+1 July 1961 – 30 June 1962 | 57
+1 July 1962 – 30 June 1963 | 58
+1 July 1963 – 30 June 1964 | 59
+After 30 June 1964 | 60
+
+### Retirement under super laws
+
+There are no restrictions on the form in which super benefits can be taken at retirement.
+
+If the member is:
+
+- under 60 years old –they can access their preserved benefits only when they
+
+- reach preservation age
+
+- cease gainful employment, and
+
+- have no intention to become gainfully employed in the future
+
+- at least 60 years old – they can access their preserved benefits when they leave a job.
+
+If a member who is 60 years or over ceases one employment arrangement but continues in another employment arrangement, they may cash all benefits accumulated up to that time. All amounts accrued after that date will be preserved or restricted non-preserved benefits. They can't be cashed until a fresh condition of release is met.
+
+### Preservation age – transition to retirement
+
+Preservation age is the minimum retirement age a member is normally able to access their preserved benefits. Members who haven't retired may access their super with a transition to retirement income stream once they have reached their preservation age. This is subject to the governing rules of your fund.
+
+A transition to retirement income stream must:
+
+- be account-based
+
+- not be commuted, unless the member has met a condition of release with no cashing restrictions
+
+- meet the minimum pension standards
+
+- not exceed a maximum of 10% of the account balance at the start of each financial year.
+
+### Turning 65
+
+A member who has reached 65 years old may cash their benefits at any time. There are no cashing restrictions. This means the benefits can be paid as an income stream or a lump sum.
+
+A fund member isn't compelled to draw down their super once they reach a particular age. They can keep their benefits in the fund indefinitely. The only time it is compulsory for a fund to pay out a member’s benefit is when a member dies.
+
+## Special conditions of release
+
+In special circumstances at least part of a member’s super benefits can be released before the member has reached preservation age. For more information, see Early access to super.
+
+As trustee, you must ensure that the member has met a condition of release before you release any funds. You must also check that the governing rules of your fund allow it. It's possible that a benefit may be payable under the super laws but not under the rules of your fund. For more information, see Release authorities.
+
+Rollovers to other super funds don’t require the member to satisfy a condition of release. This is subject to the governing rules of your fund. For information on the Kiwi Saver scheme, see Trans-Tasman retirement savings transfers.
+
+Payments of benefits to members who haven't met a condition of release aren't treated as super benefits. Instead, they'll be taxed as ordinary income at the member's marginal tax rate. This is also known as illegal early release of super. Significant penalties may apply to you as trustee and to your fund. For more information, see Taxpayer Alert TA 2009/1 Superannuation Illegal Early Release Arrangements.
+
+Special conditions of release include the following.
+
+### Terminating gainful employment
+
+Where a member (who hasn't met another condition of release) has ceased employment with an employer who had contributed to the member's fund, on termination:
+
+- all preserved benefits may be paid, but they
+
+- must be taken as a lifetime pension or annuity
+
+- can't be commuted into a lump sum(unless the preserved benefits are less than $200, in which case the member can cash the benefits without restriction)
+
+- all unrestricted non-preserved benefits can be cashed out on request from the member (no cashing restrictions).
+
+This is subject to the governing rules of your fund.
+
+### Permanent incapacity
+
+A member's benefits may be cashed if you're satisfied their ill health makes it unlikely that they'll engage in gainful employment that they're reasonably qualified for by education, training or experience.
+
+### Temporary incapacity
+
+A member's benefits may be paid if you're satisfied the member has temporarily ceased work due to physical or mental ill health that doesn't constitute permanent incapacity. In general, temporary incapacity benefits may be paid only from the insured benefits or voluntary employer funded benefits.
+
+### Severe financial hardship
+
+To release benefits under severe financial hardship, you need to be satisfied the member:
+
+- can't meet reasonable and immediate family living expenses
+
+- has been receiving relevant government income support payments for a continuous period of 26 weeks, and
+
+- was receiving that support at the time they applied to the trustees.
+
+The payment must be a single gross lump sum of no more than $10,000 and no less than $1,000 (or a lesser amount if the member's benefits are less than $1,000). Only one payment is permitted in any 12-month period.
+
+Alternatively, if the member has reached their preservation age plus 39 weeks, you need to be satisfied the member:
+
+- has been receiving relevant government income support payments for a cumulative period of 39 weeks since reaching their preservation age
+
+- wasn't gainfully employed on a full-time or part-time basis at the time of applying to the trustees.
+
+If you release benefits under these circumstances, there are no cashing restrictions.
+
+### Compassionate grounds
+
+Benefits may be released on specified compassionate grounds if the following conditions are met:
+
+- the member doesn't have the financial capacity to meet an expense
+
+- release is allowable under the governing rules of your fund.
+
+The amount of super you can pay on compassionate grounds is limited to what is reasonably needed. It is paid as a lump sum.
+
+### Terminal medical condition
+
+If a member has a terminal medical condition and 2 medical professionals certify the condition is likely to result in the member’s death in the next 24 months, the balance of their super account may be paid as a tax-free lump sum benefit. There are no cashing restrictions.
+
+### First home super saver scheme
+
+The First home super saver (FHSS) scheme allows your fund members to save for their first home inside their superannuation. Your members can do this by making voluntary concessional and non-concessional contributions to their super. When your members are ready to receive their FHSS amounts, they can request a release from us to withdraw personal contributions they've made into super since 1 July 2017, along with associated earnings.
+
+For more information, see:
+
+- Early access to super
+
+- SuperStream release authorities
+
+QC46861

@@ -1,0 +1,199 @@
+Title: CGT concessions eligibility overview
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-cgt-concessions-eligibility-conditions/cgt-concessions-eligibility-overview
+Retrieved: 2026-09-25
+Topic: general-tax/cgt
+---
+
+# CGT concessions eligibility overview
+
+How small business CGT concessions work, eligibility steps, order for applying concessions, effect on superannuation.
+Last updated 28 January 2026
+
+## How the small business CGT concessions work
+
+The small business CGT concessions allow you to reduce, disregard or defer some or all of a capital gain from an active asset used in a small business.
+
+The 4 small business CGT concessions include the:
+
+- small business 15-year exemption
+
+- small business 50% active asset reduction
+
+- small business retirement exemption
+
+- small business roll-over.
+
+The concessions are available when you dispose of an active asset and meet basic eligibility conditions.
+
+You must also meet any additional conditions that apply specifically to the individual concessions.
+
+There are rules about the order in which you apply:
+
+- the CGT small business concessions
+
+- any current year or prior year capital losses
+
+- the CGT discount.
+
+For each capital gain, you may be able to apply one or both of:
+
+- any of the 4 concessions for which you meet the eligibility conditions
+
+- the CGT discount (if applicable).
+
+## Basic eligibility conditions
+
+To be eligible for any of the CGT concessions, you must first meet the basic eligibility conditions.
+
+All the concessions, except for the small business 50% active asset reduction, have additional requirements you must meet.
+
+Note: Depreciating assets do not meet the basic eligibility conditions:
+
+### Step 1: Determine if you are an eligible entity
+
+You must meet one of the following conditions:
+
+- You are a CGT small business entity eligibility with an aggregated turnover of less than $2 million.
+
+- You are not running a business (other than as a partner) but your asset is used in your affiliate or connected entity's small business (CGT concessions on passively-held assets).
+
+- You are a partner in a partnership that is a small business entity, and the asset is either
+
+- an interest in a partnership asset (partnership assets)
+
+- an asset you own that is not an interest in a partnership asset (partner's assets) but is used in the business of the partnership.
+
+- You meet the maximum net asset value test.
+
+### Step 2: The asset must be an active asset
+
+The asset must meet the active asset test.
+
+### Step 3: Is the asset a share in a company or an interest in a trust?
+
+If it is, it must meet additional conditions.
+
+### Step 4: Does your situation involve a CGT event related to a partnership?
+
+The eligibility condition in this step applies to a CGT event happening after 7:30 pm AEDT on 8 May 2018 that involves the creation, transfer, variation or ending of your right or interest to either:
+
+- an amount of income or capital of a partnership
+
+- an amount calculated by reference to the entitlement of a partner in a partnership to an amount of the partnership‘s income or capital.
+
+If the CGT event involved ending your right or interest, it must be a membership interest in the partnership immediately before the CGT event happens. For all other cases, your right or interest must be a membership interest in the partnership immediately after the CGT event happens.
+
+### Depreciating assets not eligible
+
+You make a capital gain or capital loss from a depreciating asset to the extent you have used the asset for a non-taxable purpose (private use). Under the uniform capital allowance system, any gain or loss from a depreciating asset is either:
+
+- included in your assessable income
+
+- deductible as a balancing adjustment, to the extent the asset was used for a taxable purpose (business use).
+
+Any capital gain you make in this way does not qualify for the small business CGT concessions because it reflects the non-business use of the asset.
+
+## Applying the small business CGT concessions
+
+If you have more than one capital gain for the year, you can apply as many of the small business CGT concessions as you are eligible for until each capital gain is reduced to zero. Each active asset's attributable capital gain is assessed for CGT concession eligibility individually.
+
+The small business 50% active asset reduction applies automatically if the basic conditions are met and you have not specifically chosen for it not to apply. However, you must choose whether to apply the:
+
+- small business 15-year exemption
+
+- small business retirement exemption
+
+- small business roll-over.
+
+You need to make the choice before you lodge your income tax return for the income year in which the relevant CGT event happened
+
+Lodging and preparing your income tax return is generally enough proof of the choice you've made. However, for the small business retirement exemption, you must also keep a written record of the amount you choose to disregard.
+
+### Steps to apply the small business CGT concessions, capital losses and the CGT discount
+
+You need to work through the following steps.
+
+#### Step 1: Do you meet the basic eligibility conditions for the small business CGT concessions?
+
+For more information, see Basic eligibility conditions.
+
+- Yes: Go to step 2.
+
+- No: You do not qualify for any of the small business CGT concessions. However, you may be eligible for the CGT discount.
+
+#### Step 2: Do you qualify for the small business 15-year exemption?
+
+For more information, see small business 15-year exemption.
+
+- Yes: Disregard the entire capital gain. You do not need to apply any of the other small business CGT concessions.
+
+- No: Go to step 3.
+
+#### Step 3: Offset any capital losses against the capital gain
+
+If you have more than one capital gain, you can choose the order in which your capital gains are reduced by your capital losses.
+
+#### Step 4: If you are eligible, apply the CGT discount
+
+Apply the CGT discount to the remaining capital gain.
+
+#### Step 5: Apply the small business 50% active asset reduction
+
+Apply the 50% reduction to reduce the remaining capital gain. You can choose not to apply the reduction if you intend to apply one of the other small business concessions instead.
+
+#### Step 6: If you eligible, apply the small business retirement exemption or small business roll-over
+
+For eligibility information, see:
+
+- small business retirement exemption
+
+- small business roll-over.
+
+If you're eligible, use these to reduce the remaining capital gain.
+
+#### Step 7: Include information in your lodgment
+
+The amount remaining is the net capital gain to include in your assessable income for the year.
+
+Example: applying the small business CGT concessions to reduce a capital gain
+
+Kendra is a small business operator who sells an active asset that she has owned for more than 12 months. She makes a capital gain of $20,000.
+
+Kendra also has a separate capital loss of $4,000.
+
+She meets all the conditions for both the small business 50% active asset reduction and the CGT discount.
+
+Kendra calculates her net capital gain as follows:
+
+$20,000 (capital gain)
+
+− $4,000 (capital loss)
+
+= $16,000 (net capital gain)
+
+× 50% (applying the CGT discount)
+
+= $8,000 (net capital gain)
+
+× 50% (applying the small business active asset reduction)
+
+= $4,000 (reduced capital gain)
+
+Kendra may be able to further reduce her $4,000 (already reduced) capital gain by using the small business retirement exemption and small business roll-over if she meets the conditions for those concessions.
+
+If eligible, she can keep applying the other small business CGT concessions to reduce her capital gain to zero.
+
+End of example
+
+## How the CGT concessions affect super contributions
+
+Amounts from both the small business 15-year exemption and the small business retirement exemption can be contributed to your super fund without affecting your non-concessional contributions limits.
+
+## CGT concessions on passively-held assets
+
+Details of the conditions you must meet to claim CGT concessions on passively-held assets.
+QC22655

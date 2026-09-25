@@ -1,0 +1,291 @@
+Title: Deceased estates
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/individuals-and-families/deceased-estates
+Retrieved: 2026-09-25
+Topic: general-tax/estates
+---
+
+=== Section: Deceased estates
+Source URL: https://www.ato.gov.au/individuals-and-families/deceased-estates
+
+# Deceased estates
+
+What to do when someone dies, getting authority to deal with the ATO, lodging a final tax return, and trust tax returns.
+
+## Checklist: what to do when someone dies
+
+Use this step-by-step checklist to manage tax for a deceased estate.
+
+## Who can represent a deceased estate
+
+How to become a legal personal representative (LPR), get a grant of probate and appoint a tax agent.
+
+## Notifying us of a death and who will manage the estate
+
+Who can notify us, how to notify, and what documents you will need.
+
+## Accessing a deceased person's tax and super information
+
+Who can access the tax and super information we hold, and how to get it.
+
+## Doing a final tax return for the deceased person
+
+Work out if a 'date of death' tax return is required, how to lodge, and who can receive any refund.
+
+## Doing trust tax returns for the deceased estate
+
+When and how to lodge a trust tax return, income to include, how tax applies, how to get a TFN and ABN, and tax rates.
+
+## Confirming tax obligations are complete
+
+Check that all tax obligations are complete before the final distribution of the deceased estate.
+
+## If you are a beneficiary of a deceased estate
+
+Work out if there is tax on money or assets you inherited, or are presently entitled to.
+QC23846
+
+=== Section: Doing a final tax return for the deceased person
+Source URL: https://www.ato.gov.au/individuals-and-families/deceased-estates/doing-a-final-tax-return-for-the-deceased-person
+
+# Doing a final tax return for the deceased person
+
+Work out if a 'date of death' tax return is required, how to lodge, and who can receive any refund.
+Last updated 4 June 2026
+
+## Do you need to lodge a final return for a deceased person
+
+You may need to lodge a final tax return for the deceased person for the income year in which they died. This is called a 'date of death' tax return.
+
+This is different to the trust tax return for the deceased's estate. For tax purposes, income received by the deceased estate after the person's death is treated separately to the income of the deceased person.
+
+## Who can lodge a date of death tax return
+
+You can lodge the date of death tax return after you:
+
+- have notified us of the person's death
+
+- been entered on our records as the person who is managing the deceased's tax affairs.
+
+Usually, the authorised legal personal representative (LPR) lodges the deceased person's date of death tax return.
+
+If you are not an authorised LPR, we will assess the lodged tax return and determine the appropriate action within the law and our internal policies.
+
+If the deceased didn't have a will (died intestate) and no one has been appointed to administer the estate within 6 months of the date of death, we may:
+
+- raise an assessment of the estate's tax-related liabilities
+
+- seek to recover any amount of tax owing.
+
+## When a tax return is required
+
+You must lodge a date of death tax return if any of the following applied to the deceased person in the income year in which they died:
+
+- they had tax withheld from their income, including from interest or dividends
+
+- their taxable income was above the tax-free threshold
+
+- they lodged tax returns in the income years before their death, or had outstanding tax returns.
+
+### Outstanding tax returns
+
+When you notify us of the death, we can tell you if the person had any outstanding tax returns for prior income years.
+
+If there are outstanding tax returns, you will also need to lodge these.
+
+If you fail to lodge a return or provide relevant information, we can assess the amount that is payable or refundable.
+
+## If a tax return is not required
+
+If a date of death tax return isn't required, let us know by completing and sending a non-lodgment advice form.
+
+On the form, where it asks for the reason, print ‘DECEASED’, followed by the date of death.
+
+## Period of the tax return
+
+The date of death tax return covers the period from 1 July of the income year in which the person died, up to the date of death.
+
+This is different to a trust tax return for the deceased estate, which is for the period after the person died.
+
+### Example: period of final tax return
+
+Maree died on 4 March 2026. Her authorised LPR is her son, Zach. Maree's taxable income up to her date of death was above the tax-free threshold.
+
+Zach lodges a date of death tax return for Maree. This covers Maree's income from 1 July 2025 to 4 March 2026.
+
+End of example
+
+## Lodging the tax return
+
+You lodge a date of death tax return using the paper form tax return for individuals. You cannot use myTax or myGov, because these can only be used by the person who holds the account to lodge their own return. This includes where you are claiming a refund of franking credits.
+
+If you are the authorised LPR of the deceased estate and have appointed a tax agent to help you, the agent can prepare and lodge the return online.
+
+## Preparing the tax return
+
+- Obtaining the deceased's tax information
+
+- Identifying information
+
+- Income and deductions
+
+- Capital gains tax
+
+- Losses
+
+- Medicare levy
+
+- Study and training loan repayments
+
+### Obtaining the deceased's tax information
+
+If you can't find the information you need in the deceased person's papers:
+
+- if you're the authorised LPR of the deceased estate, you can obtain the deceased person's tax information from us
+
+- if you're not the authorised LPR of the deceased estate, the deceased person's former tax agent may be able to help with information and advice – otherwise, we may still be able to assist you.
+
+### Identifying information
+
+When preparing the return:
+
+- write ‘DECEASED ESTATE’ at the top of the first page
+
+- give the name as 'LEGAL REPRESENTATIVE OF [taxpayer's name] (DECEASED)', or similar
+
+- to the question ‘Will you need to lodge an Australian tax return in the future?', print X in the ‘No’ box
+
+- sign the tax return with your name 'on behalf of [deceased person's name]'.
+
+The deceased person's tax file number (TFN) may be in their personal papers. If you are the authorised LPR, you can obtain the TFN from us.
+
+### Income and deductions
+
+Include:
+
+- income earned and deductible expenses incurred by the deceased person in the income year up to the day they died
+
+- costs of preparing the return, such as tax agent fees and similar expenses incurred by the executor or administrator, even if they were incurred after the deceased's death.
+
+Income and deductions incurred by the estate after the deceased's death are reported in a trust tax return.
+
+### Capital gains tax
+
+For capital gains tax (CGT) events that happened before the deceased's death, include those capital gains and losses in their date of death tax return.
+
+If an asset passes under the will to a foreign resident, charity or super fund, CGT may apply at the time of the taxpayer's death. Any capital gain or capital loss that applies in these circumstances must be reported on the deceased's date of death tax return.
+
+### Losses
+
+Tax and capital losses incurred by the deceased cannot be carried forward for use by the deceased estate.
+
+If these losses cannot be deducted or applied in the date of death tax return, they will lapse.
+
+### Medicare levy
+
+#### Medicare levy exemption
+
+If the deceased person (and any dependants) was fully exempt from the Medicare levy until their death, they are fully exempt for the number of days in the income year.
+
+If the deceased person was half exempt from the Medicare levy until their death, they are half exempt for the number of days in the income year.
+
+For help completing the tax return, see:
+
+- Medicare levy reduction or exemption – myTax
+
+- M1 Medicare levy reduction or exemption – label V and label W in the paper-based tax return.
+
+#### Medicare levy surcharge
+
+If the deceased person (and any dependants) was covered by private hospital cover or was exempt from the Medicare levy until their death, they do not pay the Medicare levy surcharge for the number of days in the income year.
+
+For help completing the tax return, see:
+
+- Medicare levy surcharge – myTax
+
+- M2 Medicare levy surcharge (label A)in the paper-based tax return.
+
+### Study and training loan repayments
+
+You don't need to include information about repayments of study and training loans (such as the Higher Education Loan Program). This is assessed automatically.
+
+If the income reported in the tax return is more than the minimum repayment threshold, the assessment will include a final repayment. After this, any remaining debt is cancelled.
+
+## Notice of assessment, refunds and tax owing
+
+We will send the notice of assessment to you, including details of any refund or tax owing.
+
+You must provide for any tax owing before distributing the estate's assets to the beneficiaries. If this isn't done, you may be personally liable for any tax owing.
+
+If you are the authorised LPR, we will release any refund or franking credits to you.
+
+If there is no authorised LPR, we will assess whether we can release refunds or franking credits. We may take into account:
+
+- the terms of the will, if there is one
+
+- the rules of succession, if there is no will.
+
+QC40481
+
+=== Section: Doing trust tax returns for the deceased estate
+Source URL: https://www.ato.gov.au/individuals-and-families/deceased-estates/doing-trust-tax-returns-for-the-deceased-estate
+
+# Doing trust tax returns for the deceased estate
+
+When and how to lodge a trust tax return, income to include, how tax applies, how to get a TFN and ABN, and tax rates.
+
+## Registering a deceased estate trust and lodging returns
+
+Work out if a trust tax return is required for a deceased estate, how to get a TFN and ABN, and how to lodge returns.
+
+## Who pays tax on deceased estate income
+
+How tax works during administration of the estate, and whether to pay tax for beneficiaries.
+
+## Deductibility of legal personal representative legal costs
+
+Check if legal costs you incur as the legal personal representative (LPR) are deductible.
+
+## When a beneficiary is presently entitled to income
+
+Work out if a beneficiary is presently entitled, and what information you need to give them.
+
+## Tax rates – deceased estate
+
+Check the tax rates for the first 3 years of the deceased estate, and the rates for later years.
+QC67527
+
+=== Section: If you are a beneficiary of a deceased estate
+Source URL: https://www.ato.gov.au/individuals-and-families/deceased-estates/if-you-are-a-beneficiary-of-a-deceased-estate
+
+# If you are a beneficiary of a deceased estate
+
+Work out if there is tax on money or assets you inherited, or are presently entitled to.
+Last updated 4 June 2026
+
+## Inheriting money and assets
+
+There are no inheritance or estate taxes in Australia.
+However, you may have tax obligations for the assets you inherit, such as:
+- capital gains tax (CGT) may apply if you dispose of an asset inherited from a deceased estate
+- income tax applies as usual to any dividends or rental income from shares or property you inherited.
+
+## Receiving income of a deceased estate
+
+Until the deceased person's estate is finalised, it may continue to earn income. For example, the estate may have income from a rental property or other investments.
+If you become presently entitled to income of the deceased estate, you need to include it in your tax return.
+If this happens, the legal personal representative (LPR) of the estate should provide you with the necessary information to complete your tax return.
+
+## Receiving a super death benefit
+
+If the deceased person had super, the super fund's trustee will work out who will receive benefits. Super paid after a person's death is called a 'super death benefit'.
+The tax on a super death benefit depends on:
+- whether you were a dependant of the deceased under tax law
+- whether it is paid as a lump sum or income stream
+- whether the super is tax-free or taxable (and whether the super fund has already paid tax on the taxable component)
+- your age and the age of the deceased person when they died (for income streams).
+To find out about your entitlement you will need to contact the super fund trustee directly.
+QC40485

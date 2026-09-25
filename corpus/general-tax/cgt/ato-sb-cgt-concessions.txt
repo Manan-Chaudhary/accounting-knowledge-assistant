@@ -1,0 +1,777 @@
+Title: Small business CGT concessions
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions
+Retrieved: 2026-09-25
+Topic: general-tax/cgt
+---
+
+=== Section: Small business CGT concessions
+Source URL: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions
+
+# Small business CGT concessions
+
+What you need to know to access the 4 small business CGT concessions.
+
+## Small business CGT concessions eligibility conditions
+
+Basic eligibility conditions, order to apply, passively-held assets, active assets, affiliates, connection and control.
+
+## Small business 15-year exemption
+
+How to claim the small business 15-year exemption on a business asset to reduce or disregard CGT.
+
+## Small business 50% active asset reduction
+
+Reduce the capital gain on an active asset by 50% (in addition to the CGT discount if conditions are met).
+
+## Small business retirement exemption
+
+How to claim the small business retirement exemption to reduce or disregard CGT on active assets.
+
+## Small business roll-over
+
+Defer all or part of a capital gain made from selling an active asset.
+QC72742
+
+=== Section: Small business 15-year exemption
+Source URL: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-15-year-exemption
+
+# Small business 15-year exemption
+
+How to claim the small business 15-year exemption on a business asset to reduce or disregard CGT.
+Last updated 6 June 2023
+
+## How it works
+
+You will not pay CGT when you dispose of an active asset if all of the following are true:
+
+- You meet the basic eligibility conditions.
+
+- You or the significant individual (if you are a company or trust) is
+
+- 55 years or older and the event happened in connection with your retirement, or
+
+- permanently incapacitated (no age requirement).
+
+- You continuously owned the CGT asset for the 15-year period ending just before the CGT event happened.
+
+- A CGT event happening in connection with an individual's retirement depends on the circumstances of each case. There would need to be at least a significant reduction in the number of hours the individual works or a significant change in their present activities to be regarded as a retirement. The timing may precede or proceed actual retirement.
+
+There are modified rules about the requirement that the asset is continuously owned for at least 15 years for CGT assets acquired:
+
+- or transferred under the rollover provisions relating to assets compulsorily acquired, lost or destroyed
+
+- due to marriage or relationship breakdown.
+
+You must choose to apply the small business 15-year exemption and apply it first.
+
+You do not have to apply capital losses against your capital gain before applying the small business 15-year exemption.
+
+If you make a capital loss from the CGT event, you may use the capital loss to reduce other capital gains.
+
+### Significant individual test
+
+A company or trust must have a significant individual for a total of at least 15 years of the whole period of ownership of the CGT asset.
+
+The significant individual does not have to be the same individual.
+
+### Modified rules – involuntary disposals and relationship breakdown rollover
+
+A requirement of the small business 15-year exemption is that you must have continuously owned the CGT asset for at least 15 years.
+
+However, there are modified rules for CGT assets acquired or transferred under the rollover provisions relating to assets compulsorily acquired, lost or destroyed, or due to marriage or relationship breakdown.
+
+For the purpose of determining whether the 15-year requirement has been met you can choose to:
+
+- include the ownership period of your former spouse, or
+
+- begin the ownership period from the time the asset was transferred to you.
+
+If you choose to include your former spouse’s ownership period of the CGT asset, that asset is treated as if you acquired it when your former spouse acquired the asset.
+
+If you acquired a replacement asset to meet the rollover requirements for the compulsory acquisition, loss or destruction of a CGT asset, the replacement asset is treated as if you acquired it when you acquired the original asset.
+
+#### Example: small business 15-year exemption and relationship breakdown rollover
+
+Cesar and Therese are both 65 years old and were married for 30 years. During their marriage, Cesar owned a farm where he operated a dairy farming business.
+
+When Cesar and Therese divorced, the farm was transferred to Therese under the relationship breakdown rollover provisions.
+
+Therese has operated the dairy business for the past 5 years.
+
+Therese decides to sell the farm to retire. She can apply the 15-year exemption because she chooses to include Cesar’s ownership period to determine her ownership and active asset periods.
+
+End of example
+
+### Separate interests in the same CGT asset
+
+If you own separate interests in the same CGT asset and sell those interests together, the 15-year exemption applies only to interests in the asset that you have owned continuously for at least 15 years.
+
+The exemption does not apply to any interest you have owned for less than 15 years. This is because interests in an asset acquired at different times are separate CGT assets.
+
+#### Example: separate interests in same CGT asset
+
+On 1 December 2002, Janet purchased a 40% interest in a 400-hectare parcel of grazing land.
+
+On 1 December 2007, she purchased the remaining 60% interest in the land.
+
+On 15 December 2020 (Janet's 60th birthday), she sold the land and retired.
+
+Janet owned the:
+
+- 40% interest she purchased in 2002 for at least 15 years
+
+- 60% interest she purchased in 2007 for just over 13 years.
+
+The 2 interests are separate CGT assets and, accordingly, the capital gain made on the sale of the 60% interest is not eligible for the 15-year exemption. It may be eligible for other CGT concessions.
+
+End of example
+
+## Extra conditions – company or trust claiming exemption
+
+### Discretionary trusts with tax losses or no net income
+
+For the CGT event year, if a discretionary trust has no net income (or had a tax loss) and did not make a distribution of income or capital, it may work out the small business participation percentages by focusing on the most recent year in which a distribution was made prior to the CGT event year.
+
+### Exempt distributions
+
+If a capital gain made by a company or trust is disregarded under the small business 15-year exemption, or would have been except that the capital gain was disregarded anyway because the relevant CGT asset was acquired before 20 September 1985, any distributions made by the company or trust of that exempt amount to a CGT concession stakeholder are not:
+
+- included in the assessable income of the CGT concession stakeholder
+
+- deductible to the company or trust.
+
+This applies if certain conditions are met. The conditions are:
+
+- the company or trust must make a payment before the later of
+
+- 2 years after the relevant CGT event that resulted in the capital gain
+
+- 6 months after the latest time a possible financial benefit becomes or could become due under the look-through earnout right relating to the CGT asset and the disposal
+
+- further time allowed by us in certain cases
+
+- the payment must be made to an individual who was a CGT concession stakeholder of the company or trust just before the CGT event
+
+- the total payments made to each CGT concession stakeholder must not exceed an amount determined by multiplying the CGT concession stakeholder's participation percentage by the exempt amount.
+
+#### Example: exempt distribution from a company
+
+Joe is a significant individual of Company X, owning 60% of the shares in the company. Joe's wife, Anne, owns the remaining 40% of shares in the company.
+
+The company makes a capital gain of $10,000, which it can disregard under the small business 15-year exemption because:
+
+- Joe is 56
+
+- both Joe and Anne are planning to retire.
+
+Six months after the CGT event, the company distributes the amount of the exempt capital gain to the shareholders. As CGT concession stakeholders, Joe and Anne both qualify for the small business 15-year distribution exemption. The amount that is exempt is calculated as follows:
+
+- For Joe: 60% of $10,000 = $6,000
+
+- For Anne: 40% of $10,000 = $4,000
+
+If it is decided to distribute $8,000 each to Joe and Anne, they can exclude from their assessable incomes for the income year an amount of $6,000 and $4,000 respectively. The balance is likely to be assessable as a dividend.
+
+End of example
+
+#### Example: exempt distribution from a discretionary trust
+
+The beneficiaries of the Malik family discretionary trust are:
+
+- the members of the Malik family
+
+- 2 employees of the family business run by the trustee of the trust.
+
+Mrs. and Mr. Malik and their 3 children are significant individuals of the discretionary trust and are, therefore, CGT concession stakeholders.
+
+The trustee of the trust sells a CGT asset of the business and makes a capital gain of $50,000. The gain qualifies for the small business 15-year exemption because Mr. Malik is:
+
+- 58 years old
+
+- plans to retire from the family business.
+
+In the next income year, the trustee distributes the $50,000 capital gain equally to Mrs. and Mr. Malik, and their 3 children.
+
+As CGT concession stakeholders, Mrs. and Mr. Malik and their 3 children are each able to treat the distribution of $10,000 as an exempt amount.
+
+End of example
+
+## Effects on superannuation
+
+If you are contributing a 15-year exemption amount to a super fund or retirement savings account (RSA), the amount is generally a non-concessional contribution.
+
+To exclude the amount from your non-concessional contributions cap and have it count towards your CGT cap amount instead, you must notify the fund on the CGT cap election form. You must complete this form by no later than the time you make the contribution.
+
+### When to make super contributions
+
+If you're an individual who disregarded the capital gain under the small business 15-year exemption and you are contributing some or all of the capital proceeds to super, the contribution must be made on or before the later of:
+
+- the day you lodge your income tax return for the income year in which the relevant CGT event happened
+
+- 30 days after you received capital proceeds.
+
+If you receive a 15-year exemption amount from a company or trust, the contribution must be made within 30 days after the entity made the payment to you.
+
+## Death and the small business 15-year exemption
+
+You may be eligible for the small business 15-year exemption if you make a capital gain on an asset within 2 years of a person's death, if that asset is or was part of the deceased individual’s estate, and you're a:
+
+- beneficiary of the deceased estate
+
+- legal personal representative (LPR)
+
+- trustee or beneficiary of the testamentary trust (trusts created by a will).
+
+You may also be eligible if you, together with the deceased, owned the asset as joint tenants.
+
+You'll be eligible for the 15-year exemption to the same extent that the deceased would have been just prior to their death, except that:
+
+- the CGT event does not need to be in connection with the retirement of the deceased
+
+- the deceased needs to have been 55 or older immediately before their death, rather than at the time of the CGT event.
+
+We can extend the 2-year period. You will need to apply for an extension on a capital gain rollover.
+
+How to claim the small business 15-year exemption on a business asset to reduce or disregard CGT.
+QC52288
+
+=== Section: Small business 50% active asset reduction
+Source URL: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-50-percent-active-asset-reduction
+
+# Small business 50% active asset reduction
+
+Reduce the capital gain on an active asset by 50% (in addition to the CGT discount if conditions are met).
+Last updated 6 June 2023
+
+## Applying the 50% active asset reduction
+
+To apply the small business 50% active asset reduction, you must meet the basic eligibility conditions common to all 4 small business CGT concessions.
+
+Unlike the other small business CGT concessions, the small business 50% active asset reduction applies automatically. This is unless you choose for it not to apply.
+
+Depending on what improves your situation, you may choose not to apply the small business 50% active asset reduction and instead apply the small business retirement exemption or small business roll-over. For example, a company or trust may choose not to apply the small business 50% active asset reduction to make larger tax-free payments with the small business retirement exemption.
+
+After applying any current or prior year capital losses and the CGT discount (if applicable), any remaining capital gain is reduced by 50%.
+
+Example: application of small business 50% active asset reduction
+
+Lana owns land used in her business for more than 12 months. She sells the land and makes a capital gain of $17,000. In the same year, she also makes a capital loss of $3,000 from the sale of another asset.
+
+After offsetting the $3,000 capital loss against her $17,000 capital gain, Lana is left with a net capital gain of $14,000.
+
+Because Lana has owned the land for more than 12 months and meets the basic eligibility conditions, she is eligible for the:
+
+- CGT discount
+
+- small business 50% active asset reduction.
+
+She can reduce her capital gain as follows:
+
+$14,000 (net capital gain)
+
+× 50% (CGT discount)
+
+= $7,000
+
+× 50% (small business 50% active asset reduction)
+
+= $3,500 (capital gain)
+
+End of example
+
+## Special rules for trust beneficiaries
+
+Special rules allow concessions obtained by a trust to be passed on to beneficiaries who are entitled to a share of the trust's net capital gain.
+
+A beneficiary must gross up their share of any capital gain received from a trust. If the trust has applied:
+
+- the CGT discount or the small business 50% active asset reduction, multiply the capital gain by 2
+
+- both the CGT discount and the small business 50% active asset reduction, multiply the capital gain by 4.
+
+Next, the beneficiary's grossed up share of the trust capital gain is used to calculate their net capital gain to be included in their assessable income by reducing:
+
+- trust capital gains by any capital losses of the beneficiary
+
+- remaining trust capital gains by the CGT discount (unless the beneficiary is a company) and the small business 50% active asset reduction (if the trust’s capital gain was reduced by these 2 concessions).
+
+A corporate beneficiary must gross up (as above) their share of any net capital gains received that the trust has reduced by the CGT discount. However, they are not entitled to reduce this grossed-up amount by the CGT discount because companies are ineligible for the CGT discount.
+
+Example: beneficiary of a trust applies small business 50% active asset reduction
+
+The LemInvest unit trust makes a capital gain of $100,000 when it disposes of an active asset.
+
+LemInvest has no capital losses and meets all the conditions for the CGT discount and the small business 50% active asset reduction.
+
+The trust’s net capital gain is $25,000 because no other concessions apply.
+
+LemInvest has one individual beneficiary, Gert, who is presently entitled to the net income of the trust. She has a separate capital loss of $10,000.
+
+Gert works out her net capital gain as follows:
+
+$100,000 grossed up share of trust capital gain ($25,000 × 4)
+
+− $10,000 (capital loss)
+
+× 50% (CGT discount)
+
+= $45,000
+
+× 50% (small business 50% active asset reduction)
+
+= $22,500 (net capital gain)
+
+End of example
+
+### How trust distributions are treated
+
+If a beneficiary’s interest in a trust is fixed (for example, an interest in a unit trust), there are rules where the trust distributes to the beneficiary an amount of capital gain that was excluded from the trust’s net income because it claimed the small business 50% active asset reduction.
+
+The distribution of the small business 50% active asset reduction amount is a non-assessable amount under CGT event E4.
+
+The payment of the non-assessable amount will firstly reduce the cost base of the beneficiary’s interest in the trust. If the cost base is reduced to zero, a capital gain may arise in respect of the beneficiary’s interest in the trust. This capital gain may qualify for the CGT discount (after applying any capital losses) if the interest in the trust has been owned by the beneficiary for at least 12 months.
+
+If a beneficiary’s interest in a trust is not fixed (for example, the trust is a discretionary trust), there are no CGT consequences for the beneficiary.
+
+Reduce the capital gain on an active asset by 50% (in addition to the CGT discount if conditions are met).
+QC52289
+
+=== Section: Small business retirement exemption
+Source URL: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-retirement-exemption
+
+# Small business retirement exemption
+
+How to claim the small business retirement exemption to reduce or disregard CGT on active assets.
+Last updated 6 June 2023
+
+## How it works
+
+Capital gains from the disposal of active assets may be disregarded up to a lifetime limit of $500,000 per individual, or CGT concession stakeholder for a company or trust.
+
+You may choose to disregard all or part of a capital gain if you meet:
+
+- the basic eligibility conditions
+
+- extra conditions specific to the small business retirement exemption.
+
+You do not need to end your:
+
+- employment
+
+- business office holdings
+
+- business activities.
+
+If you choose this exemption, you disregard the amount of the capital gain you have chosen as the CGT exempt amount.
+
+The amount of any capital gain that exceeds the CGT exempt amount does not qualify for this exemption.
+
+You must keep a written record of the amount you choose to disregard (the CGT exempt amount).
+
+A company or trust must also keep a written record of each stakeholder's percentage if there is more than one CGT concession stakeholder.
+
+## Choosing the small business retirement exemption
+
+You may choose to apply the small business retirement exemption (if you're not eligible for the small business 15-year exemption):
+
+- where there has been a change in status of a CGT asset and the asset was
+
+- a replacement or capital improved asset in a roll-over under subdivision 152-E (CGT event J2)
+
+- a share in a company or an interest in a trust that was a replacement asset in a roll-over under subdivision 152-E (CGT event J2)
+
+- where you chose the roll-over under subdivision 152-E and by the end of the relevant period you had not acquired a replacement asset, or made any capital improvements (CGT event J5)
+
+- where you chose the roll-over under subdivision 152-E and by the end of the relevant period the amount you incurred on a replacement asset was less than the amount chosen for the roll-over (CGT event J6).
+
+Unless the capital gain arises from CGT event J5 or J6, you may choose the small business roll-over instead of the retirement exemption (if all conditions are met) or you may choose both concessions for different parts of the remaining capital gain.
+
+### CGT events J5 or J6
+
+If the capital gain arises as a result of CGT events J5 or J6 (about the replacement asset conditions not being met for the small business roll-over concession), you can choose the small business retirement exemption for those capital gains without having to meet the basic eligibility conditions again. This is because you would have already met the basic eligibility conditions at the time you chose the small business roll-over.
+
+### Receiving actual capital proceeds not required
+
+You do not have to receive actual capital proceeds from the CGT event to be able to choose the small business retirement exemption. For example, this could happen with non-arms length transactions and when an active asset is gifted and proceeds (if any) are less than market value. In this case, the market value substitution rule would apply.
+
+You can choose the small business retirement exemption where CGT event J2, J5 or J6 happens.
+
+Example: capital proceeds not received for small business retirement exemption
+
+In December 2006, Harry retired from farming and transferred the farm, which he acquired in 1996, to his son for no consideration.
+
+The market value of the farm was $1 million, so the market value substitution rule applies to deem the capital proceeds to equal the market value of the farm.
+
+The cost base of the farm was $600,000, so Harry made a capital gain of $400,000.
+
+Harry reduced his capital gain by the 50% CGT discount to $200,000 and then further, by the 50% active asset reduction, to $100,000.
+
+Even though he has not received any capital proceeds, Harry may choose the retirement exemption for the full amount of the remaining $100,000 capital gain (assuming the other retirement exemption conditions are met).
+
+End of example
+
+A company or trust must make a payment of the disregarded capital gain to at least one of its CGT concession stakeholders to access the retirement exemption on a gain for which there are no actual proceeds.
+
+### You or the CGT concession stakeholder is under 55
+
+The CGT exempt amount from the proceeds on disposal of the asset must be paid into a complying superannuation fund or a retirement savings account (RSA).
+
+The amount is generally a non-concessional contribution if you're an individual contributing a retirement exemption amount to a super fund or RSA.
+
+To exclude the amount from your non-concessional contributions cap and have it count towards your CGT cap amount instead, you must notify the fund using the CGT cap election form. You must complete this form by no later than the time you make the contribution.
+
+At the time of the super contribution, the company or trust must notify the trustee of the fund or the RSA that the contribution is being made in accordance with the requirements of the small business retirement exemption.
+
+#### When to make super contributions and payments
+
+If you choose the small business retirement exemption for CGT events J2, J5 or J6:
+
+- individuals must make the contribution when choosing to use the small business retirement exemption
+
+- companies and trusts must make payments 7 days after choosing to disregard the capital gain.
+
+In any other case:
+
+- individuals must make contributions when choosing to use the retirement exemption, or when proceeds are received (whichever is later)
+
+- companies and trusts must make payments by the later of 7 days after:
+
+- choosing to disregard the capital gain
+
+- receiving the capital proceeds from the CGT event.
+
+If you choose the retirement exemption after you've received the capital proceeds (for example, when you lodge your income tax return), you're not required to make the contribution until you make the choice.
+
+You may use the capital proceeds for other purposes before making the choice.
+
+However, once you make the choice:
+
+- individuals must immediately make a contribution of an amount equal to the exempt amount
+
+- companies or trusts must make the payment within 7 days.
+
+#### Capital proceeds received in instalments
+
+If capital proceeds from a CGT event are received in instalments:
+
+- an individual is required to make contributions to super upon receipt of each instalment (up to the CGT exempt amount)
+
+- a company or trust must make a payment
+
+- on behalf of at least one of its CGT concession stakeholders to super on receipt of each instalment, up to the CGT exempt amount
+
+- to the greatest extent possible in the initial instalments, instead of spreading payment evenly across all instalments.
+
+You are treated as receiving capital proceeds in instalments if your capital proceeds from the disposal of a CGT asset are increased by one or more financial benefits that you receive under a look-through earnout right relating to that CGT disposal.
+
+### You or the CGT concession stakeholder is 55 years old or older
+
+There is no requirement to pay any amount to a complying super fund or RSA, if:
+
+- an individual is over 55 just before choosing the retirement exemption (even if under 55 years old when receiving the capital proceeds)
+
+- a CGT concession stakeholder is over 55 just before a payment is made to the super fund on their behalf.
+
+## Extra conditions – company or trust claiming exemption
+
+If you're a company or trust, other than a public entity, you must also meet the following conditions:
+
+- you meet the significant individual test
+
+- you make a payment (based on each individual's percentage of the exempt amount) to at least one of your CGT concession stakeholders
+
+- the payment is equal to the exempt amount or the amount of capital proceeds (whichever is less).
+
+The requirement to make a payment to at least one CGT concession stakeholder can be met by making the payment directly, or indirectly, through one or more interposed entities to a CGT concession stakeholder.
+
+There are no tax consequences for the interposed entity that receives and passes on the payments.
+
+Payments to a CGT stakeholder to meet the retirement exemption requirements are not:
+
+- assessable income
+
+- exempt income
+
+- deductible from your assessable income
+
+- treated as a dividend or frankable distribution, if you are:
+
+- a company making a payment to a CGT concession stakeholder
+
+- a company making a payment to an interposed entity
+
+- an interposed entity receiving a payment and passing that payment on.
+
+This is the case despite section 109 of the ITAA 1936, which can treat excessive payments to shareholders, directors and associates as dividends. Therefore, section 109 does not apply to these payments.
+
+Division 7A of the ITAA 1936 also does not apply to treat such payments made by a company or trust as dividends.
+
+## Death and the small business retirement exemption
+
+You may be eligible for the small business retirement exemption if you make a capital gain on an asset within 2 years of a person's death, that asset is or was part of the deceased individual's estate, and you're a:
+
+- beneficiary of the deceased estate
+
+- legal personal representative (LPR)
+
+- trustee or beneficiary of the testamentary trust (a trust created by a will).
+
+You may also be eligible if you, together with the deceased, owned the asset as joint tenants.
+
+You'll be eligible for the small business retirement exemption to the same extent that the deceased would have been just prior to their death, except that there is no requirement for the amount to be paid into a super fund or RSA. This is even if the deceased was less than 55 years old just before death.
+
+We can extend the 2-year period in certain circumstances.
+
+How to claim the small business retirement exemption to reduce or disregard CGT on active assets.
+QC52290
+
+=== Section: Small business roll-over
+Source URL: https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-roll-over
+
+# Small business roll-over
+
+Defer all or part of a capital gain made from selling an active asset.
+Last updated 4 September 2025
+
+## How small business roll-over works
+
+The small business roll-over allows eligible small businesses to defer all or part of a capital gain made from selling an active asset.
+
+If you acquire a replacement asset or incur costs on making capital improvements to an existing asset, these gains will be deferred until you dispose of the asset.
+
+To qualify for the small business roll-over, you:
+
+- need to meet the basic eligibility conditions for the small business CGT concessions
+
+- can then choose the roll-over for the gain made from selling an active asset.
+
+If you choose the roll-over, the capital gain won't be included in your assessable income.
+
+You can choose the roll-over before you acquire a replacement asset or incur costs on capital improvements to an existing asset. The entity that chooses the roll-over must be the same entity that acquires the replacement asset.
+
+Further CGT events occur if you have not acquired a replacement asset or incurred costs on capital improvements of an existing asset at the end of the replacement asset period (2 years from the CGT event). Consequences of choosing the roll-over explains this in further detail.
+
+### Share in a company or interest in a trust
+
+For a share in a company or interest in a trust to be an active asset, the company or trust must meet the 80% test. This means the market value of the active assets and certain financial instruments of the company or trust must be 80% or more of the total market value of all the assets of the company or trust.
+
+### Distributing part of the roll-over amount
+
+If a company or trust chooses the roll-over for a capital gain, and then distributes an amount out of that gain to a shareholder or beneficiary, the tax consequences for the recipient may vary. If you're uncertain as to how this may apply to your circumstances, you can apply for a private ruling.
+
+## Applying the small business roll-over
+
+You can apply the small business roll-over to as much of the capital gain as you decide.
+
+If you choose to apply the roll-over to only some of the capital gain, you will make a capital gain equal to the remaining amount that you are not rolling over.
+
+There is a specific order to apply the small business CGT concessions.
+
+## Consequences of choosing the roll-over
+
+Further CGT events happen if:
+
+- you previously chose the roll-over, and
+
+- certain conditions are not met by the end of the replacement asset period.
+
+The replacement asset period starts one year before the last CGT event in the income year for which you obtained the roll-over; it ends at the later of:
+
+- 2 years after the last CGT event, and
+
+- 6 months after the latest time a possible financial benefit becomes or could become due under a look-through earnout right relating to the CGT asset and the disposal.
+
+The following CGT events will happen, and a capital gain will arise, if:
+
+- you don't acquire the replacement assets or make capital improvements to existing assets within the replacement asset period, or the assets are not active assets at the end of that period (CGT event J5)
+
+- the roll-over amount is greater than your cost of the replacement asset or capital improved asset (CGT event J6)
+
+- after the end of the replacement asset period, there's a change in the status of a replacement or capital improved asset you chose for the small business roll-over (CGT event J2).
+
+We can extend the replacement asset period. Applying for an extension on a capital gain roll-over explains how to get an extension of time.
+
+### Example: consequences of choosing the roll-over
+
+Lana disposes of an active asset (a parcel of land) and decides to search for a suitable replacement asset to use in her business. As she meets all basic eligibility conditions, she qualifies for the small business roll-over.
+
+After applying other small business CGT concessions, Lana defers the remaining capital gain of $3,500 for the disposal of this asset.
+
+After 6 months, Lana acquires another small parcel of land directly adjoining the main business premises to use in her business. The replacement land costs $10,000, and it is her active asset before the end of the replacement asset period.
+
+This deferred capital gain of $3,500 may later become assessable if Lana:
+
+- sells the land, or
+
+- stops using it in her business.
+
+This is when CGT event J2 would occur.
+
+However, she could then choose a further small business roll-over if she acquires another replacement active asset. Or if Lana is eligible, she could choose the retirement exemption instead.
+
+End of example
+
+### Failure to acquire a replacement asset or make a capital improvement after a roll-over (CGT event J5)
+
+CGT event J5 happens if you choose to obtain a roll-over, and by the end of the replacement asset period:
+
+- you haven't acquired a replacement asset, and have not made a capital improvement to an existing asset
+
+- the replacement or capital improved asset is not your active asset (for example, you sold it, it became your trading stock, or it's no longer used in the business)
+
+- where the replacement asset is a share in a company or an interest in a trust:
+
+- the share or trust interest fails the 80% test (unless the failure is temporary)
+
+- you, or an entity connected with you, are not a CGT concession stakeholder in the company or trust, or
+
+- CGT concession stakeholders in the company or trust do not have a small business participation percentage in you of at least 90%.
+
+#### Consequences of CGT event J5
+
+When CGT event J5 happens, you make a capital gain equal to the amount of the capital gain previously disregarded under the small business roll-over.
+
+The time of the event is at the end of the replacement asset period.
+
+A capital gain from CGT event J5 may be eligible for the small business retirement exemption if you meet the relevant conditions. You don’t need to meet the basic eligibility conditions again, but you must meet the small business retirement exemption conditions.
+
+However, you can't apply the CGT discount, small business 50% active asset reduction, or the small business 15-year exemption to reduce this gain.
+
+Example: CGT event J5
+
+In September 2020, Luke made a capital gain of $80,000 on an active asset. He met the maximum net asset value test.
+
+Luke disregarded the whole capital gain under the small business roll-over.
+
+In September 2022 (the end of the 2-year period), Luke didn't have any replacement or capital improved assets. CGT event J5 happens and Luke makes a capital gain of $80,000 in September 2022.
+
+End of example
+
+### Roll-over amount greater than cost of replacement asset (CGT event J6)
+
+CGT event J6 happens if:
+
+- you choose to obtain a roll-over
+
+- by the end of the replacement asset period you acquired a replacement asset or made a capital improvement to an existing asset; CGT event J5 hasn't happened, however the amount you chose to roll over is greater than the sum of the following
+
+- the amount paid to acquire the replacement asset (that is, the first element of the cost base of the replacement asset)
+
+- any incidental costs incurred in acquiring that asset, which can include giving property (that is, the second element of the cost base of the replacement asset), and
+
+- the amount expended on capital improvements to one or more assets that were acquired or already owned (that is, the fourth element of the cost base of the asset).
+
+#### Consequences of CGT event J6
+
+When CGT event J6 happens, you make a capital gain equal to the difference between the amount:
+
+- of the capital gain disregarded under the small business roll-over, and
+
+- incurred on the replacement asset or capital improvements.
+
+The time of the event is at the end of the replacement asset period.
+
+When CGT event J6 occurs, you may be eligible for the small business retirement exemption, if you meet the relevant conditions for that exemption. You don’t need to meet the basic eligibility conditions again.
+
+However, you can't apply the 50% discount, small business 50% active asset reduction, or the small business 15-year exemption to reduce this gain.
+
+Example: CGT event J6
+
+In October 2020, Nicky:
+
+- made a capital gain of $700,000 on an active asset
+
+- met the maximum net asset value test
+
+- chose to disregard the whole capital gain.
+
+In November 2021, Nicky purchased new business premises for $300,000 and spent $150,000 on improving some other assets. The replacement and capital improved assets met all relevant conditions.
+
+The capital gain that was rolled over was $700,000. However, the costs of the replacement and capital improved assets were only $450,000.
+
+In October 2022, 2 years after the original CGT event, CGT event J6 happens because there has been insufficient costs incurred and Nicky makes a capital gain of $250,000. The roll-over of $450,000 of the original capital gain continues.
+
+End of example
+
+### Change in status of replacement asset (CGT event J2)
+
+CGT event J2 happens if, after the end of the replacement asset period, there is a change in the status of a replacement or capital improved asset you chose for the small business roll-over.
+
+Examples of CGT event J2 include:
+
+- the replacement or capital improved asset stops being your active asset
+
+- the replacement or capital improved asset becomes your trading stock
+
+- you start to use the replacement or capital improved asset solely to produce exempt income
+
+- where the replacement asset is a share in a company or an interest in a trust:
+
+- the share or interest stops being an active asset – that is, the share or trust interest fails the 80% test (and the failure is not temporary)
+
+- a liquidator or administrator of the company declares the shares worthless (CGT event G3)
+
+- you, or an entity connected with you, cease to be a CGT concession stakeholder in the company or trust (or that entity is no longer connected with you)
+
+- CGT concession stakeholders in the company or trust cease to have a small business participation percentage in you of at least 90%.
+
+#### Consequences of CGT event J2
+
+When CGT event J2 happens to your replacement or capital improved asset, you make a capital gain equal to the gain previously disregarded under the small business roll-over.
+
+If there was more than one replacement or capital improved asset and a change happens to only some of the assets, the capital gain is the difference between the:
+
+- amount that was originally rolled over, and
+
+- relevant costs on the remaining replacement or improved assets that met the relevant conditions.
+
+The time of the event is when the change happens.
+
+A capital gain from CGT event J2 may qualify for either:
+
+- further roll-over, if you acquire another replacement asset
+
+- the small business retirement exemption.
+
+This is if you meet the relevant conditions for the small business roll-over or small business retirement exemption.
+
+If you dispose of a replacement or capital improved asset, another CGT event (CGT event A1) happens in addition to CGT event J2. Any capital gain you make from CGT event A1 on the disposal of the replacement or capital improved asset may qualify for any of the small business CGT concessions. This is if the relevant conditions are met.
+
+If CGT event J2 or J6 have previously happened in relation to the roll-over, the capital gain is calculated as in the example below, less the capital gain previously made under the respective CGT events.
+
+Example: CGT event J2
+
+Pan disposes of an active asset for $10,000, making a capital gain of $2,000.
+
+He buys 2 replacement assets for $5,000 each. The assets are not depreciating assets.
+
+Pan chooses the small business roll-over. $1,000 of the capital gain is disregarded for each replacement asset.
+
+Pan later sells one of the replacement assets for $7,500 – so he makes a capital gain of $2,500.
+
+He also makes a capital gain of $1,000 because the sale of the replacement asset results in that asset no longer being an active asset (CGT event J2). The $1,000 capital gain is the capital gain made on the disposal of the active asset that was rolled over in respect of this replacement asset.
+
+Pan’s capital gain of $1,000 (from CGT event J2 happening) may be eligible for either:
+
+- further roll-over relief
+
+- the retirement exemption.
+
+The capital gain of $2,500 made from the disposal of the replacement asset (CGT event A1) may be eligible for any of the concessions. This is if the relevant conditions are met.
+
+End of example
+
+## Small business roll-over prior to death
+
+If, just before dying, a person still owned a replacement or capital improved asset from an earlier small business roll-over, both CGT events J2 and A1 will happen upon the person's death.
+
+CGT event J2 happens because the replacement asset or capital improved asset will stop being the deceased's active asset.
+
+CGT event A1 will happen when the asset is transferred to their legal personal representative (LPR) or beneficiary upon the deceased's death.
+
+The capital gain from CGT event A1 and CGT event J2 are disregarded under the general rules concerning death. The capital gain on the replacement asset from CGT event A1 is effectively deferred until a later sale of the asset by the LPR or beneficiary. However, the capital gain from CGT event J2 is not transferred to the LPR or beneficiary and, as a result, remains permanently disregarded.
+QC52291

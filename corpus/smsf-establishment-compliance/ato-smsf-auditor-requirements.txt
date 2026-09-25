@@ -1,0 +1,52 @@
+Title: SMSF auditor professional requirements
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/tax-and-super-professionals/for-superannuation-professionals/smsf-auditors/smsf-auditor-professional-requirements
+Retrieved: 2026-09-25
+Topic: smsf-establishment-compliance
+---
+
+# SMSF auditor professional requirements
+
+Ongoing professional requirements and obligations you need to meet as an SMSF auditor.
+Last updated 25 September 2025
+
+## Conducting SMSF audits
+
+To conduct self-managed super fund (SMSF) audits, you must:
+
+- be registered with the Australian Securities & Investments Commission (ASIC) as an approved SMSF auditorExternal Link
+
+- have a valid SMSF auditor numberExternal Link (SAN)
+
+- meet ongoing obligations as prescribed by the
+
+- Superannuation Industry (Supervision) Act 1993 (SISA)
+
+- Superannuation Industry (Supervision) Regulations 1994 (SISR)
+
+- comply with your ongoing ASIC obligationsExternal Link.
+
+## Complying with SISA and SISR requirements
+
+Under section 128F of the SISA, you are required to:
+
+- complete the continuing professional development (CPD) requirements as prescribed in regulation 9A.04 of the SISR
+
+- hold professional indemnity insurance at the level prescribed in regulation 9A.05 of the SISR
+
+- comply with the applicable auditing and assurance standardsExternal Link issued by the Auditing and Assurance Standards Board.
+
+Under regulation 9A.06 of the SISR, you are required to comply with the auditor independence requirements specified in APES 110 – Code of Ethics for Professional Accountants (including Independence standards)External Link.
+
+You must also comply with any conditions that ASIC has imposed on your SMSF auditor registration under section 128D of the SISA.
+
+## Impact of AI on auditors
+
+The Auditing and Assurance Standards Board (AUASB) has issued considerations for auditors on the use of artificial intelligence (AI)External Link.
+
+SMSF auditors should review this information if you or the entities you are auditing use AI tools or are considering using AI.
+
+QC45562

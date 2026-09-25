@@ -1,0 +1,69 @@
+Title: Create the SMSF trust deed
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/create-the-smsf-trust-deed
+Retrieved: 2026-09-25
+Topic: smsf-establishment-compliance
+---
+
+# Create the SMSF trust deed
+
+A trust deed needs to be prepared outlining the rules and conditions under which the SMSF will operate.
+Last updated 2 April 2025
+
+## About trust deeds
+
+A trust deed is a legal document that sets out the rules for how a self-managed super fund (SMSF) will operate.
+
+Your trust deed can't override the law; however together with superannuation laws, they form the governing rules of your SMSF.
+
+The trust deed must:
+
+- be tailored to your fund to meet its objectives and the members' needs
+
+- state that the fund's sole purpose is to pay retirement benefits to members or death benefits to members' beneficiaries.
+
+## Preparing the trust deed
+
+The trust deed should cover areas that specify:
+
+- who the trustees are
+
+- who can be a member and their rights (such as rights to amend the deed and how members choose investments)
+
+- when and how benefits can be paid (lump sum or income stream)
+
+- how illness, incapacity and death of the members is dealt with (such as enduring power of attorney and binding death benefit nominations)
+
+- situations that would require the SMSF to be wound up.
+
+You can engage someone to help you organise a trust deed. However, as it's a legal document you need to make sure it's prepared by someone competent to do so.
+
+There are services that offer packages or kits to help you prepare your fund's trust deed. If you buy a package or kit, make sure the trust deed complies with the current law and is unique to:
+
+- your fund’s objectives
+
+- your members’ circumstances.
+
+All trustees must:
+
+- sign and date the trust deed
+
+- ensure it is properly executed according to the relevant state or territory laws.
+
+### Death benefit nominations
+
+A death benefit is the payment of a member’s super savings to a nominated beneficiary if the member dies.
+
+If allowed in the fund’s trust deed, a member can use a death benefit nomination form to identify who to pay their death benefit to and in what proportion.
+
+The nomination can be either:
+
+- binding, which directs the trustees to pay the death benefit to a legal personal representative or dependant
+
+- non-binding, which notifies the trustees of the member’s preferred beneficiaries, leaving the trustees to make the final decision.
+
+If you want to create a death benefit nomination, you should speak with an SMSF professional.
+QC23313

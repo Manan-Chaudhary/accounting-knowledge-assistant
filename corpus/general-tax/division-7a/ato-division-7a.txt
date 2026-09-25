@@ -1,0 +1,351 @@
+Title: Private company benefits - Division 7A dividends
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends
+Retrieved: 2026-09-25
+Topic: general-tax/division-7a
+---
+
+=== Section: Private company benefits – Division 7A dividends
+Source URL: https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends
+
+# Private company benefits – Division 7A dividends
+
+Explains what a dividend for income tax purposes under Division 7A is and the effect and tax treatment.
+Last updated 12 August 2020
+A payment or other benefit provided by a private company to a shareholder or their associate can be treated as a dividend for income tax purposes under Division 7A even if the participants treat it as some other form of transaction such as a loan, advance, gift or writing off a debt.
+
+Division 7A can also apply when a private company provides a payment or benefit to a shareholder or associate through another entity, or if a trust has allocated income to a private company but has not actually paid it, and the trust has provided a payment or benefit to the company's shareholder or their associate.
+
+Division 7A is part of the Income Tax Assessment Act 1936 and is intended to prevent profits or assets being provided to shareholders or their associates tax free.
+
+A Division 7A deemed dividend is generally unfranked. Given this, the most effective way to provide a payment or other benefit to a shareholder or their associate is to pay it as a normal dividend (with a franking credit if available) and for the shareholder to include it in their assessable income.
+
+Division 7A doesn't apply to amounts that are assessable to the shareholder or their associate under other parts of the income tax law, such as normal dividends or director's fees.
+
+A payment or benefit that is potentially subject to Division 7A isn't treated as a dividend if it's repaid or converted into a Division 7A complying loan by the company's lodgment day for the income year in which the payment or benefit occurs.
+
+See also
+
+- Division 7A calculator and decision tool
+
+Explains what a dividend for income tax purposes under Division 7A is and the effect and tax treatment.
+
+## Entities and taxpayers affected
+
+Explains how private companies, shareholders, associates, trusts and interposed entities may be affected by Division 7A.
+
+## Payments and other benefits affected
+
+Lists payments and benefits that Division 7A may apply to, plus a link to the Division 7A calculator and decision tool.
+
+## Related tax issues
+
+Explains other tax implications (such as fringe benefits tax) if your transactions are subject to Division 7A.
+
+## Videos
+
+Videos - help with Division 7A.
+
+## Managing Division 7A risks, and corrective action
+
+Explains how the most effective way to provide a payment or other benefit may be to pay it as a normal dividend.
+
+## Contact us about Division 7A
+
+Support is available if you have any Division 7A queries.
+
+## In detail
+
+Detailed information about private company benefits and Division 7A dividends.
+QC17861
+
+=== Section: Entities and taxpayers affected
+Source URL: https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/entities-and-taxpayers-affected
+
+# Entities and taxpayers affected
+
+Explains how private companies, shareholders, associates, trusts and interposed entities may be affected by Division 7A.
+Last updated 2 July 2026
+Info Alert
+
+Bendel case - High Court decision
+We’re reviewing the content on this page as a result of a recent court decision. Refer to our Decision Impact Statement for more information.
+Entities potentially affected by Division 7A include:
+
+- Private companies
+
+- Shareholders and their associates
+
+- Trusts
+
+- Interposed entities
+
+## Private companies
+
+Division 7A applies to payments and other benefits by private companies including:
+
+- non-resident private companies – the payment or other benefit doesn't have to be provided by a private company that is a resident or has any connection with Australia (other than by reason of providing the payment or other benefit to an Australian resident)
+
+- closely held corporate limited partnerships (that is, with fewer than 50 members or where another entity has, directly or indirectly and for its own benefit, an entitlement to a 75% or more of the partnership's income or capital) – payments or benefits provided to partners or their associates (see Division 7A - closely held corporate limited partnerships).
+
+## Shareholders and their associates
+
+Division 7A applies to payments or other benefits provided by a private company to shareholders or associates of the shareholders.
+
+Payments or loans to shareholders or their associates that are companies are not treated as Division 7A dividends except where the company shareholder or associate is trustee of a trust.
+
+Even after an entity ceases to be a shareholder or their associate, payments or other benefits subsequently provided to them may still be treated as a dividend if the benefit was provided because the entity had been a shareholder or their associate.
+
+For the purpose of Division 7A, equity holders and non-share equity interests are treated in the same way as shareholders and shares.
+
+### Associate
+
+The definition of an associate is very broad and depends on what type of entity the shareholder is.
+
+For an individual shareholder, an associate includes:
+
+- a relative of the individual
+
+- a partner of the individual or a partnership in which the individual is a partner
+
+- the spouse or child of an individual partner
+
+- a trustee of a trust under which the individual or an associate benefits
+
+- a company under the control of the individual or associate.
+
+For a company shareholder, an associate includes:
+
+- a partner of the company or a partnership in which the company is a partner
+
+- a trustee of a trust under which the company or associate benefits
+
+- another individual or associate who controls the company
+
+- another company that is under the control of the company or the company's associate.
+
+For a trustee shareholder, an associate includes an entity or associate of the entity that benefits or is capable of benefiting under the trust.
+
+For a partnership shareholder, an associate includes each partner of the partnership or their associates.
+
+## Trusts
+
+Division 7A applies to certain payments or other benefits provided by a trust to shareholders or their associates where the private company has an unpaid present entitlement (UPE) to the profits of the trust.
+
+For further information, see Trust payments and other benefits.
+
+## Interposed entities
+
+An amount may be treated as a Division 7A dividend even if it's paid or lent by the private company to the shareholder or their associate through one or more other entities.
+
+Payments or loans may be treated as Division 7A dividends where they are made on the understanding that the interposed entity, or a further interposed entity, will pay or lend an amount to the shareholder or their associate.
+
+Next
+
+- Payments and other benefits affected
+
+QC45067
+
+=== Section: Payments and other benefits affected
+Source URL: https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/payments-and-other-benefits-affected
+
+# Payments and other benefits affected
+
+Lists payments and benefits that Division 7A may apply to, plus a link to the Division 7A calculator and decision tool.
+Last updated 31 January 2019
+
+Division 7A may apply to any payments or other benefits provided by private companies directly or indirectly to their shareholders or their associates, including the following transactions and events:
+
+- private use of company assets
+
+- transfer of company assets
+
+- gifts
+
+- loans and other forms of credit
+
+- writing off (forgiving) a debt
+
+- guarantees
+
+- payments or the loans by a trust where a company has unpaid present entitlements
+
+- payments and loans through interposed entities.
+
+Payments or other benefits deemed as dividends under Division 7A can be treated as assessable income of the shareholder or their associate in the form of unfranked dividends.
+
+If the payment or other benefit is provided to a shareholder or their associate in their capacity as an employee or an associate or an employee of the private company, Fringe Benefits Tax (FBT) can apply to the payment or other benefit (see Related tax issues).
+
+A payment or loan that's potentially subject to Division 7A isn't treated as a dividend where:
+
+- it's fully repaid or converted to a Division 7A complying loan by the company's lodgment day for the income year in which the payment or loan occurs
+
+- it's already treated as assessable income (or excluded from being assessable income) under another part of the income tax law.
+
+You may be able to use the Division 7A calculator and decision tool to:
+
+- determine whether a payment or other benefit provided by a private company to a shareholder or their associate will give rise to a dividend
+
+- calculate the minimum yearly repayment required if there is a complying loan.
+
+Find out about:
+
+- Loans and other forms of credit
+
+- Private use of assets
+
+- Trust payments and other benefits
+
+- Transactions through interposed entities
+
+- Writing off (forgiving) a debt
+
+- Tax treatment of Division 7A dividends
+
+- Payments and other benefits not affected
+
+## Legislative framework
+
+The treatment of a payment or other benefit under Division 7A depends on whether it's categorised by the legislation as either a:
+
+- payment (see section 109C) – note that the legislation treats as a payment the transfer of a company asset to, or the private use of a company asset by, a shareholder or their associate (whether or not this involves a formal arrangement such as a lease or licence, or merely an informal right to use)
+
+- loan ( see section 109D), or
+
+- debt forgiveness (see section 109F).
+
+See also:
+
+- Division 7A - Payments by private companies
+
+- Division 7A - loans by private companies
+
+- Division 7A - debt forgiveness by private companies
+
+Lists payments and benefits that Division 7A may apply to, plus a link to the Division 7A calculator and decision tool.
+
+## Loans and other forms of credit
+
+Learn how to treat a loan from a private company to a shareholder or their associate under Division 7A .
+
+## Private use of assets
+
+Learn how the use of a company asset, or the transfer of a company asset may be treated as Division 7A dividend.
+
+## Writing off (forgiving) a debt
+
+Where a private company writes off a debt owed by a shareholder/associate, the debt amount may be treated as a dividend.
+
+## Tax treatment of Division 7A dividends
+
+See how payments or benefits treated as dividends can be assessable income in the form of unfranked dividends.
+
+## Payments and other benefits not affected
+
+Certain payments and other benefits are specifically excluded from being treated as Division 7A dividends.
+
+## Transactions through interposed entities
+
+Find out when Division 7A may apply where a private company pays or loans an amount to an interposed entity.
+
+## Trust payments and other benefits
+
+Learn how Division 7A applies to certain benefits provided where a private company has an unpaid present entitlement.
+QC45068
+
+=== Section: Related tax issues
+Source URL: https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/related-tax-issues
+
+# Related tax issues
+
+Explains other tax implications (such as fringe benefits tax) if your transactions are subject to Division 7A.
+Last updated 31 January 2019
+
+Explains the tax and other implications if your transactions are subject to Division 7A.
+
+## Fringe benefits tax (FBT)
+
+Division 7A does not apply to payments made to shareholders or their associates in their capacity as an employee or as an associate of an employee of a private company. However, such payments may be subject to FBT.
+
+Division 7A does apply to loans and debt forgiveness provided to shareholders or their associates even where such benefits are provided in their capacity as an employee or as an associate of an employee. To avoid double taxation, such benefits are not subject to FBT.
+
+See also:
+
+- Fringe benefits tax
+
+- Division 7A and fringe benefits tax
+
+## Dividend imputation and franking credits
+
+Payments and other benefits taken to be Division 7A dividends are generally unfrankable distributions unless they are provided under a family law obligation.
+
+The Commissioner has a general discretion to allow a Division 7A dividend to be frankable if it arises because of an honest mistake or inadvertent omission (see ATO relief).
+
+See also:
+
+- Division 7A - franking implications
+
+## Withholding tax
+
+Payments and other benefits treated as Division 7A dividends are generally not subject to dividend withholding tax or PAYG withholding.
+
+## Family law settlements
+
+Payments and other benefits provided by a private company to shareholders or their associates as a result of divorce or other relationship breakdowns may be treated as Division 7A dividends and are assessable income of the recipient. However, such payments or other benefits are treated as frankable dividends if provided under a family law obligation, such as a court order under the Family Law Act 1975, a maintenance agreement approved by a court under that Act or court orders relating to a de facto marriage breakdown.
+
+See also:
+
+- Division 7A - marriage or relationship breakdown - dividends and deemed dividends
+
+- Taxation Ruling 2014/5 - Income tax: matrimonial property proceedings and payments of money or transfers of property by a private company to a shareholder (or their associate)
+
+Explains other tax implications (such as fringe benefits tax) if your transactions are subject to Division 7A.
+QC45062
+
+=== Section: Managing Division 7A risks, and corrective action
+Source URL: https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/managing-division-7a-risks-and-corrective-action
+
+# Managing Division 7A risks, and corrective action
+
+Explains how the most effective way to provide a payment or other benefit may be to pay it as a normal dividend.
+Last updated 31 January 2019
+
+## Distributing retained profits
+
+The operation of Division 7A as an integrity measure means that the most effective way to distribute retained profits to shareholders may be to pay the amount in the form of a dividend (with a franking credit if available) and for the shareholder to report it as such (as assessable income with or without a franking credit).
+
+Apart from anything else, a Division 7A dividend generally isn't frankable even though it's taken to be paid out of the company's profits. This means that the whole amount of the dividend is taxed in the hands of the shareholder, without any accompanying tax credit (as would apply with a franked dividend).
+
+## Avoiding issues in the first place
+
+Division 7A dividends may inadvertently arise as a consequence of a failure to keep private expenses separate from company expenses.
+
+To avoid this:
+
+- don't pay private expenses from a company account
+
+- keep proper records for your company that record and explain all transactions, including payments to and receipts from associated trusts and shareholders and their associates
+
+- if you lend money to shareholders or their associates make sure it's on the basis of a written agreement with terms that ensure it's treated as a complying loan – so the loan amount isn't treated as a Division 7A dividend.
+
+## Repay or convert dividend amount by lodgment day
+
+A payment or other benefit that's potentially subject to Division 7A isn't treated as a Division 7A dividend if it's repaid or converted to a complying loan by the company's lodgment day for the income year in which the payment occurs. A company's lodgment day is the actual day on which the company lodges its income tax return or the due date for lodgment, whichever is earlier.
+
+This means that you can take corrective action after the income year is ended but before you need to finalise your tax affairs and lodge your return. Note, however, that the underlying transaction must occur by the lodgment day.
+
+## ATO relief
+
+The law allows the Commissioner to disregard a deemed dividend outcome or allow the dividend to be franked in certain circumstances.
+
+This means that if you've made a mistake or circumstances have changed beyond your control, you can apply to us for relief from the consequences of having Division 7A apply to a payment or loan.
+
+See also:
+
+- Division 7A - exercise of Commissioner's discretion under section 109RB
+
+Explains how the most effective way to provide a payment or other benefit may be to pay it as a normal dividend.
+QC45061
