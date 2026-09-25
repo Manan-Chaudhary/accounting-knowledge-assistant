@@ -152,12 +152,18 @@ SUPABASE_DB_URL=postgresql://postgres:[password]@db.[project-ref].supabase.co:54
 # Embedding model
 HF_TOKEN=hf_your_token_here
 
-# LLM providers (choose one or both)
-GEMINI_API_KEY=your_gemini_key
-GEMINI_MODEL=gemini-2.5-flash
+# LiteLLM Proxy / Unified LLM (Recommended)
+LITELLM_MASTER_KEY=sk-master-key-here
+LITELLM_API_BASE=http://localhost:4000
+LITELLM_API_KEY=sk-master-key-here
+LITELLM_MODEL=groq/openai/gpt-oss-120b
+LITELLM_FALLBACK_MODELS=gemini/gemini-2.5-flash
 
+# Provider API keys (loaded by LiteLLM Proxy)
 GROQ_API_KEY=your_groq_key
-GROQ_MODEL=openai/gpt-oss-120b
+GEMINI_API_KEY=your_gemini_key
+OPENROUTER_API_KEY=your_openrouter_key
+OPENAI_API_KEY=your_openai_key
 ```
 
 See [`.env.example`](.env.example) for all variables and [`docs/DATABASE.md`](docs/DATABASE.md) for database setup.
