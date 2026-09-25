@@ -14,7 +14,7 @@
         0,
         0
       ],
-      "id": "8034876a-6861-480d-87da-a2ab9bc4cd2b",
+      "id": "5c18f5a8-ff0a-4738-a60d-87f517e1b8e0",
       "name": "Webhook",
       "webhookId": "54e0e304-53b9-424b-8ce8-262d335b343a"
     },
@@ -22,6 +22,8 @@
       "parameters": {
         "method": "POST",
         "url": "=http://app:8000/api/n8n/process-document/{{$json.body.document_id}}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -30,8 +32,14 @@
         224,
         0
       ],
-      "id": "6e98fb8b-c7b2-48cb-8114-e1214752b201",
-      "name": "HTTP Request"
+      "id": "30b1826b-2f0d-4303-9dd7-fe2d6f985885",
+      "name": "HTTP Request",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "cHY7vFqlNkCV456G",
+          "name": "Header Auth account"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -53,11 +61,11 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "9ea550dc-0e5f-4d16-bea1-56f2b1ffe47c",
+  "versionId": "18f10711-e5fb-4eab-9deb-2c2a10494317",
   "meta": {
-    "instanceId": "2dc3f392d19a6085b5cac239a01193171c85801d52316d655c1301d477d7d0cc"
+    "instanceId": "baf6c832058ebd8d13624d62f104c4fc840d4af5aa51c1f8f55aa0cc070ae895"
   },
   "nodeGroups": [],
-  "id": "hz15mQXMJgWeb22r",
+  "id": "Emy1Wb2BZOpkDMfJ",
   "tags": []
 }
