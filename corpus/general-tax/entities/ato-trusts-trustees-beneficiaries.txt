@@ -1,0 +1,211 @@
+Title: Trusts, trustees and beneficiaries
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-trustees-and-beneficiaries
+Retrieved: 2026-09-25
+Topic: general-tax/entities
+---
+
+=== Section: Trusts, trustees and beneficiaries
+Source URL: https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-trustees-and-beneficiaries
+
+# Trusts, trustees and beneficiaries
+
+An overview of the role of trusts, trustees and beneficiaries.
+Last updated 31 January 2024
+
+## Trusts
+
+Trusts are widely used for investment and business purposes.
+A trust is an obligation imposed on a person or other entity to hold property for the benefit of beneficiaries. While in legal terms a trust is a relationship not a legal entity, trusts are treated as taxpayer entities for the purposes of tax administration.
+
+## Trustees
+
+The trustee(s) (there may be more than one) of a trust may be a person or a company (the latter is known as a corporate trustee). In either case, the trustee must be legally capable of holding trust property in their own right. The trustee holds the trust property for the benefit of the beneficiaries.
+Where the trust is established by deed (which in the case of a deceased estate is the will), the trustee must deal with the trust property in line with the intentions of the settlor as set out in the trust deed. They must also act in accordance with the relevant state or territory law regulating trusts, and with any other applicable law, including tax law.
+Under trust law, trustees are:
+- personally liable for the debts of the trusts they administer, and
+- entitled to be indemnified out of the trust property for liabilities incurred in the proper exercise of the trustee's powers (except where a breach of trust has occurred).
+Under tax law, the trustee is responsible for managing the trust's tax affairs, including registering the trust in the tax system, lodging trust tax returns and paying some tax liabilities.
+
+## Beneficiaries
+
+A trust beneficiary can be a person, a company or the trustee of another trust.
+The trustee may also be a beneficiary, but not the sole beneficiary unless there is more than one trustee.
+Beneficiaries may have an entitlement to trust income or capital that is set out in the trust deed or they may acquire an entitlement because the trustee exercises a discretion to pay them income or capital.
+Generally, the beneficiaries are taxed on the net income of a trust based on their share of the trust's income – regardless of when or whether the income is actually paid to them.
+Next:
+- Trust income
+
+## Trust vesting
+
+What trust vesting means, what happens when it occurs, and whether the vesting rules can be changed.
+QC23084
+
+=== Section: Trust income
+Source URL: https://www.ato.gov.au/businesses-and-organisations/trusts/trust-income-losses-and-capital-gains/trust-income
+
+# Trust income
+
+Understand how the income of a trust is taxed.
+Last updated 24 January 2019
+
+## How income is treated
+
+The net income of a trust (effectively its taxable income) is its assessable income for the year less allowable deductions worked out on the assumption that the trustee is a resident (even if the trustee is actually a non-resident).
+
+Because the income of a trust is determined in accordance with the trust deed and its net income is determined in accordance with tax law, the two amounts are often different.
+
+Generally, the net income of a trust is taxed in the hands of the beneficiaries (or the trustee on their behalf) based on their share of the trust's income (that is, the share they are 'presently entitled' to) regardless of when or whether the income is actually paid to them.
+
+For example, if the beneficiary has a 50% share of the trust's income, they are assessed on a 50% share of the trust's net income. This is referred to as the proportionate approach.
+
+Special rules apply to franked distributions and capital gains included in the trust's net income.
+
+A beneficiary is presently entitled to trust income for an income year where they have, by the end of that year, a present or immediate right to demand payment from the trustee. The entitlement will depend on the trust deed and any discretion that the trustee has under the deed to allocate income between beneficiaries.
+
+The trustee will need to provide each beneficiary with details of their share of the net income, so that the beneficiaries can include this amount in their tax returns.
+
+See also
+
+- Resolutions checklist
+
+## Tax rates
+
+Adult and company beneficiaries pay tax on their share of the trust's net income at the tax rates that apply to them.
+
+The trustee pays tax on behalf of non-resident beneficiaries and those who are minors, based on their share of the trust's net income. These beneficiaries may need to declare their share of the trust's net income in their own income tax returns, and can claim a credit for the tax paid on their behalf by the trustee.
+
+Higher rates of tax apply to most trust distributions to minors (see Your income if you are under 18 years old).
+
+If there is any part of the trust's income for which no beneficiary is presently entitled, the trustee is taxed on the corresponding share of net income. If there is no trust income the trustee is taxed on any net income.
+
+The trustee is generally taxed on the trust income at the highest marginal rate that applies to individuals except for some types of trusts (including deceased estates), which are taxed at modified individual rates.
+
+## Franked distributions
+
+Unless prevented by the trust deed, a beneficiary may be made specifically entitled to a franked distribution, resulting in the beneficiary being taxed on the franked distribution. In this way, franked distributions can be streamed to particular beneficiaries for tax purposes.
+
+If no beneficiary is specifically entitled to a franked distribution, it's taxed proportionately to all beneficiaries based on their entitlement to the trust income (with some modifications) – that is, in much the same way as the other net income of the trust.
+
+If a beneficiary qualifies for a franking credit offset, they are also required to include the amount in their assessable income.
+
+If the trust is not a family trust, a beneficiary without a fixed entitlement to the franked distribution is generally not entitled to use the associated franking credits unless their total franking credits from all sources for a year is $5,000 or less.
+
+See also:
+
+- Tax treatment of trust franked distributions
+
+- Streaming trust capital gains and franked distributions
+
+- Resolutions checklist
+
+## Losses
+
+A loss made by a trust in an income year can't be distributed to beneficiaries. However, it can be carried forward and used to reduce the trust's net income in a later year.
+
+See also:
+
+- Trust loss provisions
+
+Generally, the net income of a trust is taxed in the hands of the beneficiaries based on their entitlement to the income (whether or not they have received the amount). In some cases the trustee is taxed on behalf of the beneficiary.
+QC23087
+
+=== Section: Trust vesting
+Source URL: https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-trustees-and-beneficiaries/trust-vesting
+
+# Trust vesting
+
+What trust vesting means, what happens when it occurs, and whether the vesting rules can be changed.
+Last updated 11 February 2019
+
+## What vesting means
+
+A trust deed usually specifies a date, or an event (such as the youngest beneficiary attaining a certain age), on which the interests in the trust property must vest. The deed may describe this as the 'vesting date' or 'termination date'.
+
+On vesting, the beneficial interests in the property of the trust become fixed. This is to avoid breaching the 'rule against perpetuities'. You should check your trust deed so that you are aware of when your trust will vest.
+
+## When a trust vests
+
+What happens when a trust vests will depend on the terms of the trust. For example, the trust deed may direct that, on the vesting day, the trustee is to end the trust by distributing the trust property to particular beneficiaries or it may provide that the trustee continues to hold the trust property on trust from this date for certain beneficiaries.
+
+The vesting of the trust does not always end the trust or create a new trust. If the trustee is permitted by the trust deed to hold trust property for specified beneficiaries after the vesting date, the same underlying trust relationship continues although the duties of the trustee will have changed. For example, the trustee will no longer have any discretionary powers to appoint income or capital after vesting.
+
+There may be income tax implications of the trust vesting depending on the trust deed, including capital gains tax (CGT) consequences. Our views on the income tax consequences of a trust vesting are set out in Taxation Ruling TR 2018/6 Income Tax: Trust Vesting – amending the vesting date and consequences of a trust vesting
+
+If the vesting of the trust has not resulted in a CGT event happening or led to the creation of a new trust, the trust continues to use its current trust registrations (ABN/TFN/GST).
+
+## Provisions of the trust deed dealing with vesting
+
+You might have the power under your deed to amend the provisions that deal with vesting, including the vesting date. Determining this requires consideration of the terms of the trust deed, including any specific and general powers of the trustee and any relevant exceptions to those powers.
+
+If the trust deed does not provide you with powers to extend or bring forward the vesting date, you will need to approach the supreme court in your state or territory to make any changes to the vesting date.
+
+Continuing to administer the trust in the same manner as it was administered before the vesting date will not extend the vesting date.
+
+It's too late to change the vesting date or vesting clause of a trust after it has vested.
+
+## Validly extended vesting dates
+
+Amending the vesting date with a valid exercise of power in a trust deed or the approval of a relevant court prior to the trust vesting, will not cause CGT event E1 to happen or create a new trust.
+
+## Administrative approach on trusts vesting
+
+We want to support trustees and beneficiaries who engage with us and want to get their tax affairs in order.
+
+You are encouraged to contact us before you lodge your return if you have any concerns whether your trust may have vested or is about to vest. We will work with you to get it right.
+
+We won't devote compliance resources solely to apply TR 2018/6 Income Tax: Trust vesting – consequences of a trust vesting in relation to trusts that vested before the issue of the final ruling. However, we will act consistently with the views set out in TR 2018/6 where the Commissioner is required to:
+
+- issue or amend assessments (if we identify other tax risks in relation to the trust during compliance activities that affect its net income and to whom it is assessed)
+
+- state a view (for example in a private ruling or in submissions in a litigation matter).
+
+We won't apply penalties that trustees or beneficiaries may be liable to pay where the parties engage with us and have a compliance history that shows they have been generally compliant with their tax obligations. We also won't assess interest where it can be established, or the Commissioner can reasonably be satisfied, that income tax has been paid on the net income of the trust that is consistent with what we consider to be correctly payable.
+
+## What you need to do
+
+- You need to carefully check the trust deed to determine the vesting date and what action the trustee must take on vesting. We recommend that you regularly review your trust deed, but this is particularly important if there has been, or is proposed to be, a change in trustee or any other amendments to your trust deed.
+
+- Understand your obligations on vesting as the trustee. Ignoring or being unaware of the trust vesting date can have significant tax and trust law implications for both trustees and beneficiaries. The best way to prevent any issues arising is to check the vesting date and vesting clause in your trust deed. This will allow you time to seek professional advice if the requirements are not clear, and make preparations or amendments to the trust deed as required.
+
+- If the vesting date for your trust has already passed, you may want to seek professional advice about the legal implications of your trust vesting.
+
+- You need to consider taking further action if you become of aware of any issues. This may include
+
+- amending any relevant assessments that are within period of review (your amendment request should include the name of the trust that has vested)
+
+- contacting us for advice if you have questions or concerns about the tax consequences of your trust vesting.
+
+
+
+
+
+
+
+You can apply for a private ruling, request an early engagement discussion or write to us at the address below.
+
+Australian Taxation Office
+GPO Box 9990
+[insert the name and postcode of your capital city]
+
+For example:
+
+Australian Taxation Office
+GPO Box 9990
+SYDNEY NSW 2001
+
+Next steps:
+
+- Early engagement
+
+- Making a voluntary disclosure
+
+- Applying for a private binding ruling
+
+- Request an amendment to a business or super tax return
+
+What to do when a trust vests and how to act if issues occur.
+QC49690

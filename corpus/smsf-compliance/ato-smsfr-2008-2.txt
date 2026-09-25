@@ -1,0 +1,1018 @@
+Title: SMSFR 2008/2 - Sole purpose test and benefits other than retirement, employment termination or death benefits
+Publisher: Australian Taxation Office
+Document type: ruling
+Authority tier: 1
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20082%2FNAT%2FATO%2F00001
+Retrieved: 2026-09-25
+Topic: smsf-compliance
+---
+
+# Self Managed Superannuation Funds Ruling
+
+## SMSFR 2008/2
+
+### Self Managed Superannuation Funds: the application of the sole purpose test in section 62 of the Superannuation Industry (Supervision) Act 1993 to the provision of benefits other than retirement, employment termination or death benefits
+
+- Please note that the
+PDF version
+is the authorised consolidated version of this ruling and amending notices.
+
+This ruling is being reviewed as a result of a recent court/tribunal decision. Refer to Decision Impact Statement: Aussiegolfa Pty Ltd (Trustee) v Federal Commissioner of Taxation (Published 3 December 2018).
+
+There is a Compendium for this document:
+SMSFR 2008/2EC
+.
+
+This document incorporates revisions made since original publication. View its history and amending notices, if applicable.
+
+Contents | Para
+What this Ruling is about | 1
+Ruling | 3
+Funds to which Ruling applies | 17
+Date of effect | 18
+Appendix 1: Examples | 19
+Appendix 2: Explanation | 96
+Appendix 3: Detailed contents list | 137
+
+Preamble
+Self Managed Superannuation Funds Rulings (whether draft or final) are not legally binding on the Commissioner. However, if the Commissioner later takes the view that the law applies less favourably to you than this ruling indicates, the fact that you acted in accordance with this ruling would be a relevant factor in your favour in the Commissioner's exercise of any discretion as to what action to take in response to a breach of that law. The Commissioner may, having regard to all the circumstances, decide that it is appropriate to take no action in response to the breach. [ Note: This is a consolidated version of this document. Refer to the Legal Database (http://law.ato.gov.au) to check its currency and to view the details of all changes.]
+
+### What this Ruling is about
+
+1. Subsection 62(1) of the Superannuation Industry (Supervision) Act 1993 (SISA)[1] requires each trustee of a self managed superannuation fund (SMSF) to ensure that the SMSF is maintained solely for the purposes specified in that subsection.[2] However, there are some circumstances where an SMSF may be maintained solely for these purposes while providing benefits (particularly to members or other related parties) other than those specified in section 62. This Ruling clarifies when the provision of such benefits does not contravene the sole purpose test in section 62.
+
+2. This Ruling does not provide the Commissioner's views on how other SISA and Superannuation Industry Supervision Regulations 1994 (SISR) provisions apply to any of the arrangements discussed in the Ruling.[3]
+
+### Ruling
+
+3. The sole purpose test in section 62 prohibits trustees from maintaining an SMSF for purposes other than for the provision of benefits specified in subsection 62(1). The core purposes specified in that subsection essentially relate to providing retirement or death benefits for, or in relation to, SMSF members.[4] The SMSF can also maintain the fund for one or more of these purposes and other specified ancillary purposes, which relate to the provision of benefits on the cessation of a member's employment and other death benefits and approved benefits not specified under the core purposes.[5]
+
+4. Any trustee who maintains an SMSF for other purposes contravenes section 62.
+
+5. Determining the purpose for which an SMSF is being maintained requires a survey of all of the events and circumstances relating to the SMSF's maintenance. This enables an objective assessment of whether the SMSF is being maintained for any purpose other than those specified by subsection 62(1).
+
+6. A trustee must maintain an SMSF in a manner that complies with the sole purpose test at all times while the SMSF is in existence. This extends to all activities undertaken by the SMSF during its life cycle, which broadly encompasses:
+
+•
+accepting contributions;
+
+•
+acquiring and investing fund assets;
+
+•
+administering the fund (including maintaining the structure of the fund);
+
+•
+employing and using fund assets; and
+
+•
+paying benefits, including benefits on or after retirement.
+
+7. A strict standard of compliance is required under the sole purpose test. The test requires exclusivity of purpose, which is a higher standard than the maintenance of the SMSF for a dominant or principal purpose.
+
+8. Nevertheless, the provision by an SMSF of benefits other than those specified in subsection 62(1) that are incidental, remote or insignificant does not of itself displace an assessment that the trustee has not contravened the sole purpose test. As set out at paragraph 5 of this Ruling, determining whether benefits are incidental, remote or insignificant requires the circumstances surrounding the SMSF's maintenance to be viewed holistically and objectively.
+
+9. For example, an SMSF may provide benefits that fall outside the scope of those that are specified in subsection 62(1) as an incident of activities carried on by it that meet the requirements of the sole purpose test. In contrast, the provision of benefits, other than those specified in subsection 62(1), that is not an inherent or unavoidable consequence of otherwise legitimate activities of the SMSF may result in a contravention of the sole purpose test, particularly if the benefits are relatively significant in nature.
+
+10. The Commissioner considers the factors listed in paragraphs 12 and 13 of this Ruling are relevant in determining whether the provision of a benefit that is not specified in section 62 is of such a nature that it does not cause or contribute to a conclusion that the sole purpose test has been contravened.
+
+11. These lists are not an exhaustive statement of the factors that may be relevant in a particular case, but rather reflects the factors that commonly arise in considering whether the provision of benefits not specified in subsection 62(1) contravene the sole purpose test. Once again, it is stressed that in a particular case all of the facts and circumstances associated with the maintenance of the SMSF are relevant in deciding if the trustee has complied with the sole purpose test. To consider the provision of a benefit in isolation from the overall maintenance of the SMSF would, in the Commissioner's view, involve a misapplication of the test.
+
+12. Factors that would weigh in favour of a conclusion that an SMSF
+is not
+being maintained in accordance with section 62 because of the provision of benefits not specified in section 62 include:
+
+•
+The trustee negotiated for or sought out the benefit, even if the additional benefit is negotiated for or sought out in the course of undertaking other activities that are consistent with section 62.
+
+•
+The benefit has influenced the decision-making of the trustee to favour one course of action over another.
+
+•
+The benefit is provided by the SMSF to a member or another party at a cost or financial detriment to the SMSF.[6]
+
+•
+There is a pattern or preponderance of events that, when viewed in their entirety, amount to a material benefit being provided that is not specified under subsection 62(1).[7]
+
+13. Factors that would weigh in favour of a conclusion that an SMSF
+is
+being maintained in accordance with section 62 despite the provision of benefits not specified in section 62 include:
+
+•
+The benefit is an inherent or unavoidable part of other activities undertaken by the trustee that are consistent with the provision of benefits specified by subsection 62(1).
+
+•
+The benefit is remote or isolated, or is insignificant (whether it is provided once only or considered cumulatively with other like benefits) when assessed relative to other activities undertaken by the trustee that are consistent with the provision of benefits specified by subsection 62(1).
+
+•
+The benefit is provided by the SMSF on arm's length commercial terms (for example, if the benefit is provided at market value), consistent with the financial interests of the SMSF and at no cost or financial detriment to the SMSF.[8]
+
+•
+All of the activities of the trustee are in accordance with the covenants set out in section 52.
+
+•
+All of the SMSF's investments and activities are undertaken as part of or are consistent with a properly considered and formulated investment strategy.[9]
+
+14. The identity of the entity deriving a benefit other than one specified in subsection 62(1) influences how these factors apply in a given case. Subsection 62(1) specifies benefits that are provided to or in respect of an SMSF member
+on or after
+the member's retirement, employment termination or death. Benefits provided
+before
+a member's retirement, employment termination or death
+to the member or a related party
+(for example, a relative of the member or a related business) are, of their nature, more likely to raise questions about compliance with the sole purpose test. Such benefits are sometimes referred to as
+current day benefits
+. This is particularly pertinent in the SMSF context, as persons necessarily operate in the dual capacity of trustee and member. The relevance of the entity deriving the benefit and the timing of the benefit is consistent with the underlying object of the sole purpose test, being to ensure that the retirement income objective of SMSFs remains unqualified.
+
+15. Investments consisting of collectables and other boutique items such as works of art, antiques, jewellery, classic cars and wine, pose particular issues in relation to the application of the sole purpose test. These kinds of assets lend themselves to personal enjoyment and therefore can involve significant current day benefits being derived by those using or accessing the asset. Trustees should be in a position to show (for example, by reference to independent expert opinion) how acquiring assets of this kind involves a reasonable investment for the SMSF.
+
+15A. Further, in addition to the sole purpose test in section 62, section 62A and regulation 13.18AA of the SISR impose rules on SMSF trustees making, holding and realising investments involving specified collectables or personal use assets.[9A] These rules apply with effect from 1 July 2011 (other than in relation to such investments held by the SMSF trustees on 30 June 2011 where the rules apply from 1 July 2016).[9B]
+
+16. As the sole purpose test requires a holistic assessment of all of the circumstances associated with the maintenance of an SMSF, the application of the test may give different outcomes for different SMSFs even though each SMSF has made a similar investment or undertaken a similar activity. This is because each SMSF will have its own peculiar set of circumstances in relation to its maintenance. In addition, the sole purpose test is particularly concerned with how a trustee of an SMSF came to make an investment or undertake an activity, which is likely to vary from trustee to trustee.
+
+### Funds to which this Ruling applies
+
+17. This Ruling applies to SMSFs[10] and former SMSFs.[11] References in the Ruling to SMSFs include former SMSFs unless otherwise indicated.
+
+### Date of effect
+
+18. This Ruling applies both before and after its date of issue. However, the Ruling does not apply to taxpayers to the extent that it conflicts with the terms of settlement of a dispute agreed to before the date of issue of the Ruling.
+
+Commissioner of Taxation
+
+16 July 2008
+
+### Appendix 1 - Summary of examples
+
+This Appendix is provided as information to help you understand how the Commissioner's view has been reached.
+
+19. The examples in this Appendix are designed to illustrate how the general approach to applying the sole purpose test set out in the Ruling, including the factors set out in paragraphs 12 and 13 of this Ruling, influence the question of whether the sole purpose test has been contravened. The examples must be read in the context of the holistic approach described in paragraphs 5, 8, 11 and 16 of this Ruling. Accordingly, additional facts and circumstances may alter the conclusions reached in the examples.
+
+20. Many of the examples given below involve the use and enjoyment of assets of an SMSF by a member or other related party of the SMSF. An asset of an SMSF that is used and enjoyed by a related party of the SMSF is generally an in-house asset[12] of the SMSF unless a specific exemption applies. This is so even under an informal arrangement or if no payments are involved. Even if the use and enjoyment of the asset does not contravene the sole purpose test, trustees must still ensure that the total market value of the SMSF's in-house assets does not exceed 5% of the market value of the SMSF's total assets.[13] Footnotes in the examples indicate where the in-house asset rules may have relevance.
+
+21. Some other SISA or SISR provisions may also apply to the facts given in an example (for example the arm's length requirements in section 109). Footnotes in the examples also indicate the possibility of other SISA or SISR provisions applying.
+
+22. The purpose of setting out these examples is only to demonstrate the application of the sole purpose test to the facts given. No inferences should be drawn about the application of other SISA or SISR provisions to the examples. There may also be additional SISA or SISR provisions that apply that have not been mentioned.
+
+Property investment and use examples
+
+Example 1 - benefit inherent in investment: merely an incidental benefit
+
+23. As part of a portfolio of property investments, an SMSF trustee invests in a number of holiday apartments through a property syndicate. The investments are made through a widely held trust and the apartments are owned and managed by the trust. Income is pooled and allocated to investors on a pro-rata basis. No particular investor has a right to a specified holiday apartment.
+
+24. All investors in the property syndicate pay normal market rates when staying at the apartments but, subject to availability on the day of arrival, may be able to upgrade their accommodation at no extra cost. Investors cannot dispose of this right.
+
+25. Two members of the SMSF stay at the apartments and have their accommodation upgraded.
+
+26. This benefit, represented by the upgrade right and its exercise, is incidental to the SMSF's investment in the holiday apartments. The trustee does not contravene the sole purpose test in these circumstances.[14]
+
+27. The trustee did not seek to obtain this benefit for the members and there is nothing to suggest that it influenced the trustee's decision-making in making the investment. Further, it is an inherent feature of investing in the apartments available to all investors and is a relatively insignificant benefit.
+
+28. Even if the trustee makes a pattern of like property investments (for example, due to expertise the trustee has in making property investments in certain holiday destinations) that each provide a similar benefit, this fact alone does not suggest a purpose of maintaining the SMSF in contravention of the sole purpose test.
+
+29. In contrast to Example 1, Case 43/95 (the Swiss Chalet case)[15] is an example where there was a pattern of investing in assets that provided other benefits of a substantial nature to the members of the fund. This was a significant factor the Administrative Appeals Tribunal considered when it found an ulterior purpose in relation to the maintenance of the fund.
+
+Example 2 - separately negotiated benefit: more than an incidental benefit
+
+30. An SMSF trustee invests in a non-related company that owns a block of holiday apartments at a popular tourist destination. The members of the SMSF holiday in this area every year and prior to making the investment owned a separate holiday house nearby.
+
+31. The trustee, when undertaking the investment, negotiated for members of the SMSF to be able to stay at the apartments for free. This is not a standard feature of the investment. In return, the SMSF was required to accept a reduction in dividends payable by the company. The members of the SMSF sell their holiday house immediately after the SMSF makes the holiday apartment investment.
+
+32. The separate negotiation of the benefit, which materially affects the return on the SMSF's investment, demonstrates that the benefit is purposeful and not incidental. The facts reveal that the SMSF is being maintained for a purpose of providing benefits other than those specified by section 62 and therefore indicate a contravention of the sole purpose test.[16]
+
+33. In Example 2, the facts indicate that the SMSF trustee deliberately sought out an additional benefit, other than a benefit specified in subsection 62(1), in connection with the maintenance of the SMSF. This is a very important factor in establishing a contravention of the sole purpose test, irrespective of whether the additional benefit came at a cost (such as a reduction in investment return) to the SMSF. Nevertheless, all of the circumstances still need to be taken into account in each case, as the facts of the next two examples illustrate.
+
+Example 3 - maintenance of asset: merely an incidental benefit
+
+34. In line with an SMSF's investment strategy, the trustees of an SMSF decide to invest in a house near a beach in North Queensland. According to their research, the capital growth and rental demand of properties in the area will be strong in the future due to infrastructure and tourism developments in the local region.
+
+35. The house is managed by a local firm and is made available to unrelated third parties for short term holiday accommodation. The managers provide the trustees with regular reports detailing items requiring maintenance and repair. The SMSF trustees visit the house, as needed, for a few days in an off-peak period when the house is not booked to undertake significant maintenance and repairs. While staying at the beach house the members pay the normal commercial rates (that is those charged to non-related parties) to the management firm for staying at the house.
+
+36. The facts of themselves do not indicate that there is a breach of the sole purpose test in these circumstances. The benefit (short-term accommodation while undertaking necessary repairs and maintenance to the fund's asset) is incidental to the legitimate maintenance of an investment that is in accordance with section 62, is relatively insignificant, and is provided for at market value to the SMSF trustees.[17]
+
+Example 4 - benefit to related party at market value: merely an incidental benefit
+
+37. In line with the SMSF's investment strategy, the trustees of the SMSF invest in residential units across Australia. The units are let through an agency, which manages the maintenance of the units and lets the units at normal commercial rates. These units are let for both long and short term stays subject to market demand.
+
+38. A trustee of the SMSF regularly travels in relation to her employment. If a unit owned by the SMSF is unoccupied at a destination to which the member travels, the member stays in the unit and pays the normal commercial rates.
+
+39. There is no evidence to suggest that the location of the investments is influenced by the travel plans of the member. As the letting of the units is managed by an agent, it is also clear that the vacancy of the unit is not influenced by the member's travel itinerary.
+
+40. These facts of themselves do not indicate that the sole purpose test has been breached in these circumstances. In particular, the SMSF is not subject to any financial detriment. There is also no evidence to suggest that the benefit (short-term accommodation when travelling) was sought through the choice of investments made by the trustees of the SMSF. The benefit is relatively insignificant, and is provided for at market value to the particular SMSF trustee.[18]
+
+Assignment of attached benefit examples
+
+41. In other cases, trustees may be able to divest the SMSF and/or its members of benefits attaching to an investment that are outside of those specified by subsection 62(1) to more readily establish that the sole purpose test has not been contravened. Example 5 illustrates this point. It can be compared to the circumstances in Example 6.
+
+Example 5 - benefit assigned to unrelated party at market value: merely an incidental benefit
+
+42. In line with the SMSF's investment strategy, the trustee invests in shares in the Solo Golf Club. Membership rights attach to the shares, which can be assigned by the owner of the shares on nomination of a person who can then exercise the rights.
+
+43. The SMSF arranges for the golf club to assign the membership rights independently from the SMSF. The nominated person is not a related party of the SMSF and pays annual fees directly to the Solo Golf Club.
+
+44. In these circumstances, the trustee's actions do not contravene the sole purpose test even though the investment in the shares includes membership rights for an individual.
+
+45. The circumstances show that the SMSF's purpose in investing in the shares was not to provide membership rights to members or any other entity other than at market value.[18A]
+
+Example 6 - benefit assigned to unrelated party at market value: more than an incidental benefit
+
+46. Lee and Andrew are keen golfers who regularly play golf together. Lee and Andrew are each a member and individual trustee of their respective unrelated SMSFs.
+
+47. Both SMSFs invest in shares in the Tango Golf Club. Membership rights attach to the shares, which can be assigned by the owner of the shares on nomination of a person who can then exercise the rights.
+
+48. Advice obtained by Lee and Andrew, each as trustee of their respective SMSF, indicates an expectation of minimal capital growth. However, Lee and Andrew decide to continue with the investment as they are enticed by the golf memberships attached to the shares and are attracted to the Tango course layout.
+
+49. Lee and Andrew nominate each other to be the person who can exercise the right to play golf attaching to their respective shares in the golf club. Each pays annual fees directly to the Tango Golf Club.
+
+50. The facts in this case indicate that both SMSFs are being maintained for a purpose other than that specified under subsection 62(1). Lee and Andrew negotiated with each other for a purposeful benefit outside of those specified in subsection 62(1). Lee and Andrew's decision to proceed with the arrangement despite qualified investment advice reinforces this conclusion.
+
+51. Example 6 can be contrasted with the Swiss Chalet case,[19] in which a fund was found not to be maintained in accordance with the sole purpose test. In that case the Tribunal noted that 'the fact that Mr A and his friend were enabled as a result of the investment by the fund, after paying the annual subscription fee, to play golf could by itself be regarded as so incidental and remote as not to amount to an infringement of the test'.[20] However, the Tribunal then went on to say that there were other relevant factors surrounding the way in which the particular asset was maintained by the fund, and that the access to the golf membership needed to be viewed in the context of other investments of the fund so that 'a circumstance which in isolation may be insignificant or remote becomes more significant'.[21] For the purposes of comparison, it is also important to note that there was evidence in the Swiss Chalet case suggesting that the golf club memberships were only used on an occasional basis and that there was professional advice sought which indicated the potential for capital growth.
+
+Collectable asset investment and use examples
+
+52. Examples 7, 8, 10 and 11 involve SMSFs investing in works of art. In the case of collectables and other boutique investments such as works of art, antiques, jewellery, classic cars and wine, trustees must take care to ensure that SMSF members are not granted use of or access to the assets of the SMSF in circumstances that suggest that the trustee is maintaining the SMSF for a purpose not specified in subsection 62(1).
+
+52A. Further, in addition to the sole purpose test in section 62, section 62A and regulation 13.18AA of the SISR prescribe rules in relation to trustees of SMSFs making, holding and realising investments involving specified collectables or personal use assets.[21A] Contravention of these rules may result in an offence and be subject to penalty.
+
+Example 7 - use of work of art by members: more than an incidental benefit
+
+53. A trustee of an SMSF acquires a significant work of art. The investment strategy of the SMSF requires it to hold a certain percentage of its investment as listed securities. The SMSF trustee liquidates all of the listed securities that the SMSF holds to fund the acquisition of the work of art. The trustee is unable to demonstrate how the acquisition of the work of art is a better investment than the listed securities it previously held. Soon after the work of art is acquired, it is displayed in the home of a member, who pays the SMSF a reasonable rental fee for this privilege.
+
+54. These facts indicate a contravention of the sole purpose test.[22]
+
+55. If an asset, such as a work of art, owned by the SMSF is provided for the use and enjoyment of the member, this may indicate that a purpose of the investment is to provide a benefit otherwise than in accordance with subsection 62(1). Here, the liquidation of a class of assets forming an integral part of the SMSF's investment strategy reinforces the conclusion that the provision of the benefit outside of those stipulated in subsection 62(1) was purposeful and not in accordance with the sole purpose test, even though a reasonable amount is paid to the SMSF for the use of the work of art.
+
+Example 8 - use of work of art by a related party at no cost: more than an incidental benefit
+
+56. Helen and Reginald are trustees of an SMSF. They are also partners in an accountancy firm.
+
+57. As SMSF trustees, Helen and Reginald purchase a painting as an investment in accordance with the investment strategy of the SMSF. While it is a sound investment due to expectations of strong capital growth, the painting is not a major piece that is likely to attract strong interest from major galleries.
+
+58. Helen and Reginald wish to avoid the high cost of professional storage of the painting in climatically controlled conditions, and so are willing to lease the painting on the basis that it would be insured and preserved by the lessee. However, they are unable to find an unrelated third party that is willing to lease the painting on this basis.
+
+59. While continuing to seek third party lessees, Helen and Reginald arrange to hang the painting in their accountancy office. The accountancy firm regularly leases paintings from unrelated third parties to hang in the office on arm's length terms and conditions. However, the firm does not pay any amount to the SMSF for the use of the painting and the painting is not insured by the firm.
+
+60. This arrangement for the free use and enjoyment of the SMSF's asset by the related firm demonstrates a purposeful benefit that is more than an incidental benefit. The asset is treated in a different way to the other works of art leased by the firm from unrelated third parties. Therefore, on balance, an assessment of these facts indicates that a contravention of the sole purpose test has occurred.[23]
+
+61. In Example 8, the facts indicate that there are some practical reasons for arranging for the work of art to be hung in the office of the accountancy firm. However as stated in paragraph 7 of this Ruling, the sole purpose test imposes a strict standard of compliance requiring exclusivity of purpose. All of the facts and circumstances relating to the SMSF's maintenance need to be taken into account. Here, the failure to provide any consideration for the use of the painting (in contrast to the treatment of other works of art leased by the firm) is a particularly important factor.
+
+62. [Omitted.]
+
+63. [Omitted.]
+
+64. Although the impact of an arrangement on the SMSF's resources is always a relevant consideration in considering whether the sole purpose test has been contravened, it is not determinative. As the next two examples demonstrate, it is ultimately the purposes of the activities of the trustees in maintaining the SMSF, as objectively ascertained by taking into account all the facts and circumstances of each case, that determines whether the sole purpose test is contravened.
+
+Example 10 - loan of work of art to an unrelated art gallery for short-term exhibition: merely an incidental benefit
+
+65. Assume the same facts as outlined in Example 8.
+
+66. Instead of arranging for the painting to be hung in the accountancy firm's office, Helen and Reginald have an opportunity to have the painting hung in a local art gallery. This gallery has decided to put on a special exhibition of regional talent that is to run for two months. The painting fits the criteria of the exhibition and Helen and Reginald believe that inclusion in the exhibition will enhance the value of the work. They offer the painting to the gallery for inclusion in the exhibition at no cost and the gallery accepts their offer.
+
+67. In these circumstances, the painting provides a benefit for the community at large. However the facts given in this example do not establish any contravention of the sole purpose test. The benefits provided by the SMSF outside of those specified by subsection 62(1) are incidental to the purpose of investing in and maintaining the painting and are relatively remote and insignificant.
+
+68. The decision when viewed objectively may be seen to be consistent with promoting the capital growth of the painting. No parties related to the SMSF particularly benefit under this arrangement. Therefore, on balance an assessment of these facts indicates that the fund is being maintained solely for the purposes specified in subsection 62(1).[25]
+
+Example 11 - loan of work of art to a related art gallery: more than incidental benefit
+
+69. An SMSF trustee maintains an investment in an art collection as part of its investment strategy. The collection is regarded as significant and different galleries express interest in particular works from time to time. At any particular time it is not uncommon for some works from the collection to be out on lease to unrelated third parties. The trustee has expertise in investing in works of art and obtains independent valuations in relation to each of its investments.
+
+70. A related party of the SMSF owns an art gallery which is part of the business of that related party. The SMSF regularly loans its works of art to the gallery at no cost. Some dealings of the SMSF are determined by the art gallery's desire to acquire certain paintings. That is, some acquisitions and disposals of artworks by the SMSF match the business plan of the related party's business.
+
+71. In this example there is a pattern of events, including regular dealing with art works according to the needs of the related party business and the loaning of art works to that business at no cost, which result in a contravention of the sole purpose test when those events are viewed in their entirety.[26]
+
+72. In sum, where an SMSF invests in collectables and other boutique assets, it will be common for questions relating to the application of the sole purpose test to arise due to the nature of the asset that is being invested in and the how that asset is likely to be used by the SMSF. The provision of a current day benefit, particularly to a related party, will often not be incidental to maintaining the SMSF for the purposes of providing solely for retirement, employment termination or death benefits, as set out in section 62.
+
+Post-retirement benefit example
+
+73. The sole purpose test continues to operate at all times while the SMSF is in existence.[27] Even after all the members have retired, the SMSF must still be maintained solely for the purpose of providing the benefits stipulated in subsection 62(1). Such benefits are required to be provided in the form stipulated under the SISA operating standards.[28] That is, the benefits are to be provided in the form of one or more lump sums (which may be paid either in money or in-specie) or pensions (which cannot be paid in-specie).[29]
+
+Example 12 - use of an SMSF asset by a member post-retirement: more than an incidental benefit
+
+74. Assume the same facts as in Example 7[30] except that the members are retired and are receiving a superannuation income stream from the SMSF when the listed securities held by the SMSF are liquidated to enable the investment in the work of art.
+
+75. As was the case in Example 7, these facts indicate a contravention of the sole purpose test. The fact that the members have retired does not alter the conclusion regarding the purpose of the SMSF's maintenance.
+
+76. In Example 12, issues relating to the sole purpose test are raised by both the decision to acquire the work of art and the use of the work of art after it is acquired. To the extent that the use of the work of art indicates that the sole purpose test is contravened in this last example, it may be possible for the asset to be transferred to the members in the form of an in-specie lump sum benefit.[30A] For this to occur, it would be necessary for the trust deed to allow for a benefit to be paid in this form. In these circumstances, no questions about the application of the sole purpose test arise in relation to the use of the asset after it is transferred to the members as a lump-sum benefit, as this use does not concern the maintenance of the SMSF.
+
+Shareholder benefit examples
+
+77. Examples 13 and 14 involve SMSFs investing in shares that provide collateral benefits to shareholders in the form of discount entitlements for the supply of goods and services. As these examples illustrate, different outcomes may result under the sole purpose test depending on the circumstances surrounding the decision of the SMSF to invest in the shares.
+
+Example 13 - choosing an option that provides a benefit to members: more than an incidental benefit
+
+78. A public company has issued Discount Card shares on the Australian Securities Exchange that are listed separately to the company's ordinary shares. From the date of listing, the purchase of a nominal number of Discount Card shares entitles a shareholder to participate in the Shareholder Discount Plan provided they agree to a debit on their dividend payments each six months. The only difference between the rights attaching to the shares relates to the Discount Card. The trustee of an SMSF invests in Discount Card shares and obtains a shareholder discount card, which allows its members to purchase discounted goods at particular stores.
+
+79. The investment contravenes the sole purpose test in these circumstances.
+
+80. By investing in the Discount Card shares rather than the ordinary shares, an objective assessment of the circumstances indicates that the trustee has purposefully sought to provide a benefit to the members otherwise than in accordance with subsection 62(1), particularly in view of the reduced dividend rights attaching to the shares.
+
+Example 14 - ordinary shares with shareholder benefits: merely an incidental benefit
+
+81. An SMSF holds ordinary shares in a financial institution which are listed on the Australian Securities Exchange. The SMSF currently holds its accounts with the same financial institution. The trustees of the SMSF also have individual accounts with the same financial institution.
+
+82. The SMSF consistent with its investment strategy, purchases further shares in the financial institution as the long-term capital growth of the shares has been steady. The increase in the SMSF's shareholding entitles the SMSF to receive a discount card, for which the SMSF can only nominate an individual to receive the card. The discount card entitles the holder to receive lower transaction fees, extra interest on term deposits and the application fee is waived on any personal loans.
+
+83. The SMSF nominates one of its trustees to receive the discount card in their personal capacity and therefore that person will receive the benefits that are attached to the discount card.
+
+84. These facts indicate a borderline case. On these facts alone the Commissioner does not consider that there is a contravention of the sole purpose test.
+
+85. However, further additional facts may indicate a contravention of the sole purpose test. For example, if the evidence showed that the trustee increased the SMSF's shareholding in the knowledge that a trustee was about to apply for a loan for their own personal purposes, this points to a contravention of the test. The relative significance of the benefits (for example, the amount of the application fee waived) is also relevant.
+
+Expense payment examples
+
+86. If an SMSF's funds are used for the purpose of paying expenses that are unnecessary, excessive or otherwise not properly incurred, this would generally indicate a contravention of the sole purpose test.
+
+87. Example 15 considers a case where expenses are reimbursed from SMSF funds. It is a requirement of being an SMSF that no SMSF trustee or director of a corporate SMSF trustee receives any remuneration from the SMSF or from any other person for the performance of duties or services as trustee or director respectively.[31] However, an SMSF trustee or director of a corporate SMSF trustee may have expenses that have been properly incurred in the performance of those duties reimbursed or paid out of the trust property. This right to indemnity does not extend to expenses incurred unnecessarily or improperly.
+
+Example 15 - reimbursement for dual purpose: more than an incidental benefit
+
+88. Jackie and Phillip are trustees and members of an SMSF. The SMSF invests in overseas properties, including in the United States. Jackie and Phillip regularly travel overseas and decided to plan a family trip to the United States. The overseas trip was planned for four weeks, during which time they visited several theme parks and tourist attractions. They also spent several days inspecting existing investment properties as well as other properties identified as potential further investments for the SMSF.
+
+89. The SMSF funded the airfares and accommodation for the entire trip.
+
+90. The sole purpose test is contravened in these circumstances. The expenses reimbursed do not relate only to the performance of trustee duties or services by Jackie and Phillip. The SMSF is being used to provide a benefit other than those specified in subsection 62(1).[32]
+
+91. In Example 16, the payment of excessive consideration to a related party suggests a contravention of the sole purpose test.
+
+Example 16 - limited recourse borrowing from related party lender at excessive rates: more than an incidental benefit
+
+92. Brenton and Craig are trustees of an SMSF. The SMSF wishes to acquire shares in a blue chip company in line with the SMSF's investment strategy. Brenton and Craig have sought independent advice that the investment in the shares is sound.
+
+93. The SMSF decides to enter into a limited recourse borrowing arrangement, under which it makes an initial contribution to acquire the beneficial interest in the shares and borrows funds to secure that interest in the shares. The SMSF borrows the funds from a related party, being a business partnership in which Craig is a partner.
+
+94. The SMSF enters an agreement to acquire 20,000 shares under the arrangement. The SMSF borrows $100,000 from the related party partnership that is applied towards the acquisition of the shares (representing 50% of the purchase price of the shares). The parties agree on an interest rate on the borrowing (say 20%) that is significantly above the market interest rate (approximately 10%) for moderately geared arrangements of this type without a clear basis for the discrepancy.
+
+95. The partnership receives a benefit from the SMSF due to the higher than market interest rates payable under the borrowing. Being a related party of the SMSF and given the non-arm's length terms of the arrangement that result in a clear cost or financial detriment to the SMSF, the facts indicate a contravention of the sole purpose test in these circumstances. The benefit received by the related party partnership is not an incidental benefit.[33]
+
+### Appendix 2 - Explanation
+
+This Appendix is provided as information to help you understand how the Commissioner's view has been reached.
+
+Background
+
+96. The sole purpose test in section 62 ensures that an SMSF uses concessionally taxed superannuation savings for the specified core purposes of providing retirement or death benefits for or in relation to its members[34] or for one or more of these purposes and other stipulated ancillary purposes. Ancillary purposes generally relate to the provision of benefits on the cessation of a member's employment and other death benefits and approved benefits not specified under the core benefits.[35] These core and ancillary purposes can be contrasted with a purpose of providing other benefits to members; benefits to other entities, in particular relatives or associates of members; benefits to employer-sponsors;[36] or benefits to other businesses related to members or employer-sponsors. The Commissioner considers that the sole purpose test is designed to ensure that the retirement income objective of SMSFs remains unqualified.
+
+97. The sole purpose test in section 62 is complemented by other rules in the SISA. Specific rules apply in relation to SMSF investments involving specified collectables and personal use assets. Other SISA rulesapply to dealings with members, their relatives and other related parties[37] of the SMSF. A contravention of one or more of these provisions may be indicative of circumstances establishing a breach of the sole purpose test. For example:
+
+•
+an SMSF trustee may commit an offence if the rules prescribed in relation to making, holding and realising investments involving specified collectables and personal use assets are contravened - section 62A and regulation 13.18AA of the SISR;
+
+•
+an SMSF trustee or investment manager is prohibited from lending money, or providing any other financial assistance using the resources of the SMSF, to a member of the SMSF or a relative of a member of the SMSF - section 65;[38]
+
+•
+subject to specific exceptions, an SMSF trustee is prohibited from acquiring assets from related parties of the SMSF - section 66;
+
+•
+subject to exceptions in relation to certain derivative contracts, an SMSF trustee cannot recognise or in any way sanction an assignment of a superannuation interest or a charge over or in relation to a member's benefits or an SMSF asset - regulations 13.12, 13.13 and 13.14 of the SISR;
+
+•
+subject to specific exceptions, an SMSF trustee is prohibited from borrowing or maintaining an existing borrowing of money - section 67;
+
+•
+all SMSF investment dealings must be at arm's length or must be conducted on arm's length terms and conditions - section 109; and
+
+•
+subject to transitional provisions and specific exceptions, an SMSF trustee is prohibited from acquiring or maintaining in-house assets[39] that have a total market value in excess of 5% of the total market value of SMSF assets - Part 8 in particular Division 3 of that Part.
+
+98. Trustees should particularly note that an asset of an SMSF that is used and enjoyed by a related party of the SMSF, even under an informal arrangement with no payments involved, is an in-house asset of the SMSF unless an exemption applies.
+
+Contraventions - audit requirements and consequences
+
+99. SMSF trustees are required to appoint an approved auditor to audit the financial accounts and statements of the fund each year.[40] When conducting an audit, the approved auditor is also required to conduct a compliance audit to ensure the SMSF has complied with the SISA and SISR. There is an approved form[41] for notifying the Tax Office of contraventions.[42]
+
+100. Non-compliance with section 62 may expose trustees or investment managers of SMSFs to penalties.[43] Contravention, or involvement in a contravention, attracts both civil and criminal consequences and places at risk the SMSF's status as a complying superannuation fund under the SISA.[44]
+
+Legislation
+
+101. Subsection 62(1) requires each trustee of an SMSF to ensure that the SMSF is maintained for either:
+
+•
+one or more of the core purposes stipulated in paragraph 62(1)(a); or
+
+•
+one or more of these core purposes and one or more of the ancillary purposes stipulated in paragraph 62(1)(b).
+
+102. The permitted core purposes in paragraph 62(1)(a) relate to the provision of age retirement and death benefits in respect of SMSF members. Permitted ancillary purposes in paragraph 62(1)(b) that a trustee may also maintain the SMSF for in addition to one or more of the core purposes include the provision of transition to retirement pensions[45] and benefits paid to a member on cessation of work due to incapacity.
+
+The nature of the sole purpose test
+
+103. Establishing whether the provision of a benefit not specified in section 62 has contravened the sole purpose test requires all activities associated with the SMSF's maintenance to be viewed holistically. Therefore, determining the purposes for which an SMSF is being maintained requires a survey of all facts and circumstances to enable an objective assessment of whether the SMSF is maintained for any purpose other than those specified under subsection 62(1).
+
+104. The sole purpose test in section 62 is a strict test requiring exclusivity of purpose. This is supported by the Administrative Appeals Tribunal decision in the Swiss Chalet case.[46] This case considered whether a fund was maintained solely for the purpose of the provision of benefits in the event of retirement for each member.[47] As the Tribunal explained:[48]
+
+The legislature, by adopting the 'sole purpose' test, has expressly determined that a strict standard of compliance should be adhered to. Under the Act, the test requires more than the presence of a dominant or principal purpose in the maintenance of a superannuation fund - it requires an exclusivity of purpose commensurate with that purpose being the 'sole purpose'.
+
+105. In the Swiss Chalet case, the fund's assets included a holiday house, shares in a private company (the only asset of which were shares in a golf club), and units in a family trust (the only asset of which was a chalet in Switzerland). The Tribunal considered all of the circumstances and was satisfied that the fund failed the sole purpose test because the managing director of the fund's trustee company had a second purpose, namely to make fund assets available for his use and the use of family and friends.
+
+106. Judicial guidance on the application of the sole purpose test is also found in the consideration, in an income tax context, of the related questions of whether a superannuation fund was established or maintained solely for the provision of superannuation benefits for employees and their dependants.
+
+107. In Raymor Contractors v. Federal Commissioner of Taxation (Raymor Contractors), Davies J, when considering whether a contribution was made 'for the purpose of making provision for superannuation benefits' in subsection 82AAC(1) of the Income Tax Assessment Act 1936 (ITAA 1936) said that purpose 'did not look primarily to the subjective factors actuating the setting aside or payment of the sum claimed'.[49]
+
+108. In summarising previous judicial consideration of whether a superannuation fund was established or maintained solely for the provision of superannuation benefits for employees and their dependants, Davies J went on to state:[50]
+
+...to ascertain whether a fund was being maintained and applied for the benefit of employees, it was proper to examine not merely the terms of the deed under which it was managed and controlled, but also the use made by the trustee of the trust funds and of the powers and discretions conferred on the trustee, the extent to which employees actually received benefits from the fund and the extent to which the funds went to the benefit of persons who were not employees.
+
+109. The investment activities of an SMSF are of particular relevance in determining whether its maintenance complies with the sole purpose test. In Federal Commissioner of Taxation v. Roche (Roche),[51] the Commissioner argued that a fund was not exempt from tax under former subsection 23F(15) of the ITAA 1936 because it was not 'established and maintained solely' for the purpose of providing superannuation retirement or death benefits for employees. In this context, Pincus J said:[52]
+
+To determine the purpose for which a fund is maintained, one must examine the circumstances surrounding the payments into the fund and the way in which the fund is invested.
+
+110. Similarly, in Case X60, which concerned whether a fund was 'established and maintained solely' for the purposes specified in former paragraph 23F(2)(a) of the ITAA 1936, Member Hogan indicated that a purpose inconsistent with the sole purpose test is to be 'established by consideration of the facts of the manner in which the trustees' investment program has been conducted'.[53]
+
+111. Based on these authorities, the Commissioner considers that the matter of determining whether an SMSF is maintained solely for purposes consistent with those stipulated in section 62 is discerned from an objective consideration of all the facts and circumstances surrounding the maintenance of an SMSF.
+
+112. The subjective intention or purpose of an SMSF trustee is a relevant factor only insofar as it can be taken into account in objectively determining the nature of the facts and circumstances of a case.
+
+113. In other words, the focus of the sole purpose test is whether the evidence, on balance, leads to the objective conclusion that the SMSF is being maintained for the requisite purpose provided for in subsection 62(1) and not what the SMSF trustees purported intentions or motivations were.
+
+Benefits outside of those specified by subsection 62(1)
+
+114. Although the sole purpose test is a strict test requiring exclusivity of purpose, the case law supports the proposition that activities conducted by an SMSF can demonstrate its maintenance consistent with the sole purpose test in section 62, even though benefits, other than those stipulated in section 62, are provided to a member or some other entity.
+
+115. In Case X60, Member Hogan stated that:[54]
+
+...an incidental, but not purposeful.....benefiting of someone other than the employees and their beneficiaries by the trustee in the conduct of their investment program cannot be seen, of itself, as a contravention of the sole purpose test ... (Member Hogan's emphasis).
+
+116. Similarly, in the Swiss Chalet case, the Tribunal noted:[55]
+
+...it may be that there are isolated incidents which, viewed in the overall context of the way in which a superannuation fund is being maintained, are so incidental, remote or insignificant, that they cannot, having regard to the objects sought to be achieved by the Act, be regarded as constituting a breach of the sole purpose test. Such incidents will be rare.
+
+117. The comments of Hill J in Walstern Pty Ltd v. Federal Commissioner of Taxation (Walstern)[56] also support the accommodation of incidental benefits in the context of a sole purpose test. This case considered the phrase 'for the purpose of making provision for superannuation benefits for an eligible employee' under former section 82AAE of the ITAA 1936. His Honour accepted that the 'purpose' required by section 82AAE was a sole rather than a dominant or principal purpose; but nevertheless did not think that the test would be failed simply by the contributor incidentally taking into account a purpose other than the provision of superannuation benefits for the employee.[57]
+
+118. In Walstern, the context of the issue was whether the availability of tax deductions was the object of a superannuation contribution or was merely incidental to the purpose of making provision for superannuation benefits. The Commissioner considers that, in a SISA context, superannuation tax concessions, although a form of benefit, are not a factor when applying the sole purpose test.
+
+119. In light of these decisions, the Commissioner considers that section 62 is not contravened if a benefit which is otherwise not specified in subsection 62(1) is incidentally and not purposefully provided to a member or other entity and all other activities undertaken by the trustee demonstrate that the SMSF is being maintained consistently with section 62.
+
+120. Conversely, a benefit is not incidental if it is one of the objects or purposes of the trustee to provide that benefit. The question of whether a benefit is incidental and not purposeful is discerned from an objective consideration of all the facts and circumstances of the case.
+
+121. Further, the Commissioner considers that section 62 is not contravened if the provision of a benefit which is otherwise not specified in subsection 62(1) is an isolated or rare occurrence in the context of the overall maintenance of the fund and the benefit is remote or insignificant. In addition, the nature of some benefits that are not specified in subsection 62(1) will be so remote or insignificant that a pattern or preponderance of the fund providing such benefits will not result in a contravention of the sole purpose test.
+
+122. Paragraphs 12 and 13 of this Ruling set out some factors that the Commissioner considers will be particularly relevant in making a decision about whether an SMSF is being maintained in accordance with the sole purpose test in section 62.
+
+123. However, it is important to note that the listing of these factors is not intended to limit those that are relevant for these purposes. A holistic assessment of all relevant factors must be taken into account and balanced. It would be inconsistent with the nature of the sole purpose test if a particular conclusion about an SMSF trustee's compliance with the sole purpose test necessarily followed from the mere fact that the trustee has met one or more of the factors associated with that conclusion.
+
+124. One of the factors listed at paragraphs 12 and 13 of this Ruling is whether or not the benefit in question is provided by the SMSF to a member or another party at a cost or financial detriment to the SMSF. In the Commissioner's view, the question of whether a benefit is provided at a cost or financial detriment to the SMSF extends to circumstances where there is a net opportunity cost to the SMSF associated with providing the benefit. For example, the SMSF will incur a net opportunity cost if, by pursuing the provision of a particular benefit, the SMSF is unable to undertake another course of action that objectively would provide a higher return.
+
+125. Example 13[58] illustrates a case where this factor is influential in finding a contravention of the sole purpose test. In that example, the clear alternative available to the SMSF was to invest in ordinary shares of the same company, which did not involve the provision of the discount benefit to the members of the SMSF and the debiting of the dividends paid to the SMSF in recognition of this benefit. However, consistent with the overall approach to the sole purpose test discussed at paragraphs 5, 8, 11 and 16 of this Ruling, the mere fact that a benefit is provided at a net opportunity cost to the SMSF may not determine whether the test is contravened.
+
+126. In the case of collectables and other boutique investments such as works of art, antiques, jewellery, classic cars and wine, trustees must take care to ensure that SMSF members are not granted use of or access to the assets, especially if this is at a financial detriment to the SMSF. These kinds of assets lend themselves to personal enjoyment and therefore can involve significant current day benefits being derived by those using or accessing the asset. Examples 7, 8, 10 and 11[59] are illustrative of this.
+
+126A. SMSF trustees investing in collectables and other boutique assets, also need to comply with the rules prescribed by section 62A and regulation 13.18AA of the SISR when making, holding and realising investments involving specified collectables and personal use assets.
+
+127. More generally, an SMSF may lease an asset to a related party of the fund in accordance with arm's length requirements[60] and the properly formulated investment strategy of the SMSF. In these circumstances, the operation of the in-house asset rules in Part 8 will need to be considered.
+
+128. Nevertheless, the fact that the related party benefits - in the sense that it has the use of invested capital, or the use and enjoyment of an asset owned by the SMSF - needs to be assessed in the context of the dealing being at arm's length when applying the sole purpose test. The mere fact that a related party enjoys the use of an SMSF asset does not by itself establish a breach of the sole purpose test. However, in some cases the benefits conferred by an SMSF's activities in relation to in-house assets cannot be seen as merely incidental to the provision of the benefits permitted by section 62.
+
+The sole purpose test and reimbursement
+
+129. Section 17A sets out the conditions that must be satisfied before a superannuation fund is considered an SMSF. One of those conditions[61] requires that no trustee of the fund receives any remuneration from the fund, or from any person, for duties and services performed as trustee. A similar condition requires that no director of a corporate trustee receives any remuneration from the fund, or from any person, for duties and services performed as director of the corporate trustee.
+
+130. However trustees may reimburse themselves or pay out of the trust property expenses that have been properly incurred in the performance of those duties. The indemnity does not extend to expenses incurred unnecessarily or improperly. As was stated in RWG Management Ltd v. Commissioner for Corporate Affairs:
+
+A trustee's right to be indemnified out of the trust property is limited to liabilities or expenses that have been properly incurred in the execution of the trust...If, for example, a trustee incurs some liability by an act in relation to the trust property which is in excess of his powers, he has no right of indemnity...The result is the same where a liability is incurred as a result of conduct on the part of the trustee which in breach of his duty, not as being in excess of power, but as being in breach of his duty to execute the trust with reasonable diligence and care ...
+
+131. If an SMSF trustee is reimbursed out of the funds of the SMSF for expenses properly incurred in the administration of the SMSF, the reimbursement will not involve the provision of a benefit in contravention of the sole purpose test. However, the sole purpose test is likely to be contravened if an SMSF trustee is reimbursed out of the funds of the SMSF for expenses that are not properly incurred in the administration of the SMSF.[64] This latter scenario includes circumstances where the expenses reimbursed are manifestly excessive.
+
+132. Example 15[65] sets out a case where an SMSF trustee is reimbursed for expenses that are both properly incurred in the administration of the SMSF and incurred for purposes outside of the administration of the SMSF.
+
+The sole purpose test and post-retirement benefits
+
+133. A trustee must maintain an SMSF in a manner that complies with the sole purpose test at all times while the SMSF is in existence. The sole purpose test applies equally to the maintenance of the SMSF after the retirement of its members. Example 12[66] sets out a case where the sole purpose test is contravened in these types of circumstances.
+
+134. The permitted purposes in subsection 62(1) relate to the provision of specified benefits to a member of the SMSF or, after the death of the member, to their dependants or legal personal legal representative. The form in which benefits can be provided from an SMSF is prescribed in the operating standards in the SISR, as made under paragraph 31(2)(e) of the SISA.
+
+135. Division 6.2 of the SISR provides that benefits may be cashed on satisfaction of a condition of release (for example age retirement), or they may be rolled-over or transferred within the superannuation system, or allotted in accordance with Division 6.7 of the SISR (relating to splittable contributions). Division 6.3 of the SISR further requires that when a benefit is cashed it must be paid in the form of a pension that meets the conditions in Part 1A of the SISR, or in the form of a lump sum. 'Lump sum' is defined in regulation 6.01 of the SISR to include an asset and therefore a lump sum, but not a pension, may be paid in-specie.
+
+136. If a trustee maintains an SMSF for a purpose of providing a benefit in a form other than those just described, or for the benefit of persons other than those permitted, there is likely to be a contravention of the sole purpose test.
+
+### Appendix 3 - Detailed contents list
+
+137. The following is a detailed contents list for this Ruling:
+
+| Paragraph
+What this Ruling is about | 1
+Ruling | 3
+Funds to which this Ruling applies | 17
+Date of effect | 18
+Appendix 1 - Examples | 19
+Property investment and use examples | 23
+Example 1 - benefit inherent in investment: merely an incidental benefit | 23
+Example 2 - separately negotiated benefit: more than an incidental benefit | 30
+Example 3 - maintenance of asset: merely an incidental benefit | 34
+Example 4 - benefit to related party at market value: merely an incidental benefit | 37
+Assignment of attached benefit examples | 41
+Example 5 - benefit assigned to unrelated party at market value: merely an incidental benefit | 42
+Example 6 - benefit assigned to unrelated party at market value: more than an incidental benefit | 46
+Collectable asset investment and use examples | 52
+Example 7 - use of work of art by members: more than an incidental benefit | 53
+Example 8 - use of work of art by a related party at no cost: more than an incidental benefit | 56
+Example 10 - loan of work of art to an unrelated art gallery for short-term exhibition: merely an incidental benefit | 65
+Example 11 - loan of work of art to a related art gallery: more than incidental benefit | 69
+Post-retirement benefit example | 73
+Example 12 - use of an SMSF asset by a member post-retirement: more than an incidental benefit | 74
+Shareholder benefits examples | 77
+Example 13 - choosing an option that provides a benefit to members: more than an incidental benefit | 78
+Example 14 - ordinary shares with shareholder benefits: merely an incidental benefit | 81
+Expense payment examples | 86
+Example 15 - reimbursement for dual purpose: more than an incidental benefit | 88
+Example 16 - limited recourse borrowing from related party lender at excessive rates: more than an incidental benefit | 92
+Appendix 2 - Explanation | 96
+Background | 96
+Contraventions - audit requirements and consequences | 99
+Legislation | 101
+The nature of the sole purpose test | 103
+Benefits outside of those specified by subsection 62(1) | 114
+The sole purpose test and reimbursement | 129
+The sole purpose test and post-retirement benefits | 133
+Appendix 3 - Detailed contents list | 137
+
+#### Footnotes
+
+[1]
+
+All legislative references in this Ruling are to the SISA unless otherwise indicated.
+
+[2]
+
+Subsection 62(1) refers to a regulated superannuation fund. An SMSF will be a regulated superannuation fund if it meets the definition provided by section 19. Concessional tax treatment is only available to an SMSF if it is a regulated superannuation fund.
+
+[3]
+
+Other provisions of the SISA that complement section 62 are outlined in paragraph 97 of this Ruling.
+
+[4]
+
+Paragraph 62(1)(a).
+
+[5]
+
+Paragraph 62(1)(b).
+
+[6]
+
+In this context, the terms 'cost' and 'financial detriment' may include expenses incurred by an SMSF to provide a benefit or income foregone to provide a benefit.
+
+[7]
+
+As happened, for example, in the Swiss Chalet case - Case 43/95 95 ATC 374; (1995) 31 ATR 1067. See further at paragraphs 29, 51, 104 and 105 of this Ruling.
+
+[8]
+
+In this context, the terms 'cost' and 'financial detriment' may include expenses incurred by an SMSF to provide a benefit or income foregone to provide a benefit.
+
+[9]
+
+Although not a legal requirement, documentation of the SMSF's investment strategy will assist in identifying that this factor applies to a given case. Seeking independent advice in some circumstances may also provide objective evidence that investments or activities are consistent with a properly considered and formulated investment strategy.
+
+[9A]
+
+These rules are not the subject of this Ruling, see paragraph 2 above.
+
+[9B]
+
+See subregulations 13.18AA(9) and 13.18AA(10) of the SISR.
+
+[10]
+
+As defined in section 17A.
+
+[11]
+
+A former SMSF is a fund that has ceased being an SMSF and has not appointed a registrable superannuation entity (RSE) licensee as trustee - see subsection 10(4).
+
+[12]
+
+An 'in-house asset' is defined in section 71 and is, subject to specific exceptions, a loan to or an investment in a related party of the SMSF; an investment in a related trust; or an asset that is subject to a lease or lease arrangement with a related party of the SMSF.
+
+[13]
+
+See section 83.
+
+[14]
+
+Under this arrangement an apartment is not an in-house asset of the SMSF when a related party of the SMSF is occupying the apartment. This is because an investment in a widely held trust as defined in subsection 71(1A) is exempt from being an in-house asset by paragraph 71(1)(h).
+
+[15]
+
+95 ATC 374; (1995) 31 ATR 1067. See also paragraphs 51, 104 and 105 of this Ruling.
+
+[16]
+
+The holiday apartment is not an in-house asset of the SMSF when a related party of the SMSF occupies the apartment. This is because the investment in the non-related company does not meet the basic requirement to be an in-house asset - see footnote 12.
+
+[17]
+
+Trustees also need to consider the operation of the in-house asset rules in Part 8 in this case. See also Taxation Ruling TR 2010/1 Income Tax: superannuation contributions.
+
+[18]
+
+Trustees also need to consider the operation of the in-house asset provisions in Part 8.
+
+[18A]
+
+Section 62A and regulation 13.18AA of the SISR impose rules on SMSF trustees making, holding and realising investments involving specified collectables or personal use assets. Specifically, paragraph 13.18AA(1)(l) of the SISR lists 'memberships of sporting or social clubs'. These rules apply with effect from 1 July 2011 (other than in relation to such investments held by the SMSF trustees on 30 June 2011 where the rules apply from 1 July 2016).
+
+[19]
+
+95 ATC 374; (1995) 31 ATR 1067. See also paragraphs 29, 104 and 105 of this Ruling.
+
+[20]
+
+95 ATC 374 at 382; (1995) 31 ATR 1067 at 1076.
+
+[21]
+
+95 ATC 374 at 382; (1995) 31 ATR 1067 at 1076.
+
+[21A]
+
+Refer to section 62A and regulation 13.18AA of the SISR for a listing of investments which are 'collectables and personal use assets'. These rules apply with effect from 1 July 2011 (other than in relation to such investments held by the SMSF on 30 June 2011 where the rules apply from 1 July 2016).
+
+[22]
+
+Trustees also need to consider the operation of the collectables and personal use assets rules in section 62A and regulation 13.18AA of the SISR, the in-house asset rules in Part 8 and the arm's length rules in section 109.
+
+[23]
+
+Trustees also need to consider the operation of the collectables and personal use assets rules in section 62A and regulation 13.18AA of the SISR, the in-house asset rules in Part 8 and the arm's length rules in section 109.
+
+[24]
+
+[Omitted.]
+
+[25]
+
+Unlike Example 8, issues relating to the in-house asset rules do not arise because the painting is not used by a related party. Note additionally that section 62A and regulation 13.18AA of the SISR impose rules on SMSF trustees making, holding and realising investments involving specified collectables or personal use assets. Trustees who make investments in theses assets must consider whether these provisions have application.
+
+[26]
+
+Trustees also need to consider the operation of the collectables and personal use assets rules in section 62A and regulation 13.18AA of the SISR, the in-house asset rules in Part 8 and the arm's length rules in section 109.
+
+[27]
+
+See paragraph 6 of the Ruling.
+
+[28]
+
+The operating standards for regulated superannuation funds are provided for by section 31 and the SISR.
+
+[29]
+
+See paragraphs 133 to 136 of this Ruling.
+
+[30]
+
+See paragraphs 53 to 55 of this Ruling.
+
+[30A]
+
+Trustees also need to consider the operation of the collectables and personal use assets rules in section 62A and regulation 13.18AA of the SISR.
+
+[31]
+
+See section 17A.
+
+[32]
+
+Trustees also need to consider the operation of the financial assistance rules in paragraph 65(1)(b).
+
+[33]
+
+Trustees also need to consider the operation of the rules relating to borrowing in section 67, in particular the exception in section 67A for certain limited recourse borrowing arrangements; and the financial assistance rules in paragraph 65(1)(b). Note that sections 67A and 67B replace former subsection 67(4A) which applies to certain limited recourse borrowing arrangements entered into before 7 July 2010.
+
+[34]
+
+Paragraph 62(1)(a).
+
+[35]
+
+Paragraph 62(1)(b).
+
+[36]
+
+The term 'employer-sponsor' is defined in subsection 16(1).
+
+[37]
+
+The term 'related party' is defined in subsection 10(1).
+
+[38]
+
+In relation to paragraph 65(1)(b), see Self Managed Superannuation Funds Rulings SMSFR 2008/1.
+
+[39]
+
+An 'in-house asset' is defined in section 71 and is, subject to specific exceptions, a loan to or an investment in a related party of the SMSF; an investment in a related trust; or an asset that is subject to a lease or lease arrangement with a related party of the SMSF.
+
+[40]
+
+See section 35C.
+
+[41]
+
+See section 11A.
+
+[42]
+
+Section 129 requires an auditor of an SMSF to report contraventions immediately after forming the opinion that it is likely that a contravention may have occurred, may be occurring or may occur in relation to the SMSF.
+
+[43]
+
+See subsection 62(2).
+
+[44]
+
+See subsection 42A(5) in relation to SMSFs. The status of an SMSF as complying or non-complying for SISA purposes will also have consequences for the SMSF under the income tax law and other parts of the superannuation law. Also see generally Law Administration Practice Statements PS LA 2006/17, PS LA 2006/18 and PS LA 2006/19.
+
+[45]
+
+As defined in subregulation 6.01(2) of the SISR, this is a pension that commences after reaching a prescribed age but prior to retiring from work. See Legislative Determination Superannuation Industry (Supervision) Act approval of provision of benefits (No.1) 2007.
+
+[46]
+
+95 ATC 374; (1995) 31 ATR 1067.
+
+[47]
+
+Although this case concerned the former provisions of the Occupational Superannuation Standards Act 1987, which was subsequently renamed the Superannuation Entities (Taxation) Act 1987 and was effectively replaced in 1993 by the SISA, the provision under consideration is comparable to section 62.
+
+[48]
+
+95 ATC 374 at 382; (1995) 31 ATR 1067 at 1075-1076.
+
+[49]
+
+91 ATC 4259 at 4260; (1991) 21 ATR 1410 at 1412.
+
+[50]
+
+91 ATC 4259 at 4261; (1991) 21 ATR 1410 at 1412-1413.
+
+[51]
+
+91 ATC 5024; (1991) 22 ATR 828.
+
+[52]
+
+91 ATC 5024 at 5027; (1991) 22 ATR 828 at 831.
+
+[53]
+
+90 ATC 438 at 446; (1990) 21 ATR 3477 at 3485.
+
+[54]
+
+90 ATC 438 at 446; (1990) 21 ATR 3477 at 3485-3486.
+
+[55]
+
+95 ATC 374 at 382; (1995) 31 ATR 1067 at 1075.
+
+[56]
+
+[2003] FCA 1428; (2003) 138 FCR 1.
+
+[57]
+
+[2003] FCA 1428 at paragraph 65; (2003) 138 FCR 1 at 17-18. See also Roche 91 ATC 5024 at 5030; (1991) 22 ATR 828 at 835-836.
+
+[58]
+
+See paragraphs 78 to 80 of this Ruling.
+
+[59]
+
+See paragraphs 53 to 60, 62 and 63, and 65 to 71 of this Ruling.
+
+[60]
+
+See section 109.
+
+[61]
+
+Paragraph 17A(1)(f).
+
+[62]
+
+[Omitted.]
+
+[63]
+
+[Omitted.]
+
+[64]
+
+See sections 56 and 57 which apply in respect of indemnification of the trustee from assets of the fund.
+
+[65]
+
+See paragraphs 88 to 90 of this Ruling.
+
+[66]
+
+See paragraphs 74 and 75 of this Ruling.
+
+SMSFR 2007/D1
+
+### References
+
+ATO references:
+
+NO 2006/20050
+
+ISSN: 1039-0731
+
+Related Rulings/Determinations:
+
+SMSFR 2008/1
+
+Subject References:
+
+breach of sole purpose
+
+self managed superannuation funds
+
+SMSF exotic assets
+
+sole purpose
+
+sole purpose - incidental benefits
+
+superannuation
+
+Business Line:
+SEO
+
+Legislative References:
+
+ITAA 1936 23F(2)(a)
+
+ITAA 1936 23F(15)
+
+ITAA 1936 82AAC(1)
+
+ITAA 1936 82AAE
+
+SISA 1993
+
+SISA 1993 10(1)
+
+SISA 1993 10(4)
+
+SISA 1993 11A
+
+SISA 1993 16(1)
+
+SISA 1993 17A
+
+SISA 1993 17A(1)(f)
+
+SISA 1993 17A(1)(g)
+
+SISA 1993 19
+
+SISA 1993 31
+
+SISA 1993 31(2)(e)
+
+SISA 1993 35C
+
+SISA 1993 42A(5)
+
+SISA 1993 52
+
+SISA 1993 56
+
+SISA 1993 57
+
+SISA 1993 62
+
+SISA 1993 62A
+
+SISA 1993 62(1)
+
+SISA 1993 62(1)(a)
+
+SISA 1993 62(1)(b)
+
+SISA 1993 62(2)
+
+SISA 1993 65
+
+SISA 1993 65(1)(b)
+
+SISA 1993 66
+
+SISA 1993 67
+
+SISA 1993 67A
+
+SISA 1993 67(4A)
+
+SISA 1993 67B
+
+SISA 1993 Pt 8
+
+SISA 1993 71
+
+SISA 1993 71(1)(h)
+
+SISA 1993 71(1A)
+
+SISA 1993 Pt 8 Div 3
+
+SISA 1993 83
+
+SISA 1993 109
+
+SISA 1993 129
+
+SISR 1994
+
+SISR 1994 Pt 1A
+
+SISR 1994 6.01
+
+SISR 1994 6.01(2)
+
+SISR 1994 Div 6.2
+
+SISR 1994 Div 6.3
+
+SISR 1994 Div 6.7
+
+SISR 1994 13.12
+
+SISR 1994 13.13
+
+SISR 1994 13.14
+
+SISR 1994 13.18AA
+
+Occupational Superannuation Standards Act 1987
+
+Superannuation Entities (Taxation) Act 1987
+
+Superannuation Industry (Supervision) Act approval of provision of benefits (No.1) 2007
+
+Case References:
+
+Case 43/95
+
+95 ATC 374
+
+(1995) 31 ATR 1067
+
+Case X60
+
+90 ATC 438
+
+(1990) 21 ATR 3477
+
+Federal Commissioner of Taxation v. Roche
+
+91 ATC 5024
+
+(1991) 22 ATR 828
+
+Raymor Contractors v. Federal Commissioner of Taxation
+
+91 ATC 4259
+
+(1991) 21 ATR 1410
+
+RWG Management Ltd v. Commissioner for Corporate Affairs
+
+[1985] VR 385
+
+Walstern Pty Ltd v. Federal Commissioner of Taxation
+
+(2003) 138 FCR 1
+
+[2003] FCA 1428
+
+54 ATR 423
+
+2003 ATC 5076
+
+Other References:
+
+PS LA 2006/17
+
+PS LA 2006/18
+
+PS LA 2006/19
+
+TA 2008/12
+
+SMSFR 2008/2 history
+
+| Date: | Version: | Change:
+| 16 July 2008 | Original ruling |
+You are here → | 21 November 2012 | Consolidated ruling | Addendum
+
+Copyright notice
+
+© Australian Taxation Office for the Commonwealth of Australia
+
+You are free to copy, adapt, modify, transmit and distribute material on this website as you wish (but not in any way that suggests the ATO or the Commonwealth endorses you or any of your services or products).

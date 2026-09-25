@@ -1,0 +1,211 @@
+Title: Your obligations as an SMSF trustee
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/before-you-start-an-smsf/your-obligations-as-an-smsf-trustee
+Retrieved: 2026-09-25
+Topic: smsf-establishment-compliance
+---
+
+# Your obligations as an SMSF trustee
+
+Your obligations as a trustee or director of a corporate trustee of an SMSF and what happens when they are not met.
+Last updated 2 April 2025
+
+## Understand your obligations
+
+All trustees of your SMSF are responsible for running the fund and making decisions that are in the best financial interests of all members.
+
+This means you are responsible for decisions made by other trustees even if you're not involved in making the decision.
+
+Trustees must meet specific obligations under the Superannuation Industry (Supervision) Act 1993:
+
+- Exercise honesty, care, skill and diligence
+
+- Meet the sole purpose test
+
+- Accept contributions and rollovers
+
+- Develop and review your SMSF investment strategy
+
+- Comply with investment restrictions
+
+- Pay benefits
+
+- Value SMSF assets
+
+- Prepare SMSF financial statements
+
+- Arrange the yearly audit
+
+- Lodge the SMSF annual return (SAR)
+
+- Pay yearly fees
+
+- Notify us of changes to your SMSF
+
+- Keep accurate records
+
+- Meet the residency rules
+
+Media: SMSF - What's involved with an SMSF
+
+https://tv.ato.gov.au/media/bd1bdiubfi93qeExternal Link (Duration: 2:24)
+
+### Exercise honesty, care, skill and diligence
+
+As a trustee, you must ensure your SMSF complies with:
+
+- your trust deed
+
+- the rules of the Superannuation Industry (Supervision) Act 1993 (SISA).
+
+The SISA states that as a trustee, you must:
+
+- act honestly in all matters concerning your fund
+
+- act in the best financial interest of all members
+
+- not hinder any trustee from performing or exercising functions or powers
+
+- not access or allow others to access benefits early
+
+- retain control over your fund.
+
+### Meet the sole purpose test
+
+The sole purpose of your SMSF is to provide retirement benefits to your members, or to pay death benefits if a member dies before retirement.
+
+To be eligible for the tax concessions normally available to super funds, your SMSF must meet the sole purpose test.
+
+Generally, it is illegal for anyone to benefit from the SMSF outside of this sole purpose. It can be illegal to:
+
+- access funds early
+
+- invest in a related business
+
+- be paid for your duties or services as a trustee
+
+- use the SMSF's assets for personal use.
+
+An example of breaching (or contravening) the sole purpose test is where your SMSF invests in a rental property specifically to allow a related party to live in that property.
+
+For more information on the sole purpose test, see Self-managed superannuation funds ruling SMSFR 2008/2 The application of the sole purpose test in section 62 of the Superannuation Industry (Supervision) Act 1993 to the provision of benefits other than retirement, employment termination or death benefits.
+
+### Accept contributions and rollovers
+
+In accordance with the trust deed and superannuation laws, you need to follow specific rules for accepting contributions and rollovers.
+
+You also need to make sure any contributions and rollovers are:
+
+- properly documented
+
+- allocated to the correct member's account.
+
+### Develop and review your SMSF investment strategy
+
+Your SMSF's investment strategy must:
+
+- consider all members' personal circumstances
+
+- include investment objectives and types of investments allowed
+
+- consider liquidity and diversification of assets and whether to hold insurance
+
+- be regularly reviewed and updated when needed.
+
+When making investments, you must demonstrate with records how your decisions comply with your SMSF investment strategy.
+
+### Comply with investment restrictions
+
+There are restrictions on SMSF investments. Any investment your fund makes cannot provide a present-day benefit for the members or related parties. Other than very limited circumstances, generally:
+
+- you can't acquire assets from, or lend money to, fund members or other related parties
+
+- your SMSF can't borrow money.
+
+### Pay benefits
+
+Trustees are responsible for ensuring a member is legally entitled to access their super benefit before releasing any retirement benefits. Generally, members can only access benefits once they meet a condition of release.
+
+You must pay benefits to members according to the trust deed and super laws.
+
+### Value SMSF assets
+
+Each year you must value your SMSF's assets at market value so you can prepare the fund’s accounts, statements and the SMSF annual return (SAR). Some assets must be valued and reported in a specific way. You must also keep evidence of your valuations to provide to your SMSF auditor.
+
+### Prepare SMSF financial statements
+
+Each year you need to prepare:
+
+- a statement of financial position
+
+- an operating statement for your SMSF.
+
+You must then provide this to your SMSF auditor.
+
+### Arrange the yearly audit
+
+Your SMSF must be audited each year by an independent SMSF auditor who is registered with the Australian Securities & Investments Commission (ASIC). The auditor will assess your fund's compliance with super laws and report any contraventions to us.
+
+### Lodge the SMSF annual return (SAR)
+
+Each year you must lodge the SAR by its due date and pay any tax liability. If the SAR is more than 2 weeks overdue, you may not be able to receive contributions or rollovers until you lodge your return.
+
+You may also be required to lodge:
+
+- transfer balance account reports once your SMSF begins paying a pension
+
+- activity statements.
+
+### Pay yearly fees
+
+Your SMSF is required to pay the supervisory levy when you lodge your SAR. The amount will depend on whether your fund is new, existing, or winding up.
+
+If your SMSF is set up with a corporate trustee, you will also have to pay ASIC fees.
+
+### Notify us of changes to your SMSF
+
+You must tell us about certain changes to your SMSF within 28 days.
+
+If your SMSF is set up with a corporate trustee, you're also required to inform ASIC.
+
+### Keep accurate records
+
+You must keep records of all decisions and actions your SMSF takes. This will provide you with supporting evidence on the decisions you and the other trustees make.
+
+### Meet the residency rules
+
+Your SMSF must be an Australian super fund at all times during the financial year. If it isn't, the assets and income of the fund will be taxed at the highest marginal rate.
+
+Your fund is an Australian super fund if it meets all 3 of these residency conditions at all times during the financial year:
+
+- establishment or at least one asset held in Australia
+
+- central management and control ordinarily in Australia
+
+- active members.
+
+If a member moves or travels overseas for an extended period, this may affect the residency status of the fund.
+
+## Consequences of not meeting your obligations
+
+The ATO is a key regulator for SMSFs. This means we're responsible for:
+
+- administering super and tax laws
+
+- ensuring trustee compliance.
+
+Our main focus is to assist trustees to understand their obligations and comply with the law.
+
+When an obligation is not met and results in a contravention, we may need to take compliance action. The action we take will depend on the:
+
+- type of breach, or contravention
+
+- trustee's attitude to their obligations
+
+- seriousness of the contravention.
+
+For more information on consequences of not meeting obligations, see how we deal with non-compliance.
+QC23323

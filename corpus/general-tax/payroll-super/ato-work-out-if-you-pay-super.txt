@@ -1,0 +1,181 @@
+Title: Work out if you have to pay super
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super
+Retrieved: 2026-09-25
+Topic: general-tax/payroll-super
+---
+
+# Work out if you have to pay super
+
+Work out which types of employees are eligible to be paid super and when you need to pay.
+Last updated 15 July 2026
+
+## When super guarantee is required
+
+If you pay a worker that is eligible for super guarantee, you must work out contributions using at least the super guarantee rate. If you do not pay enough super guarantee on time and to the right fund, you will be liable to pay a tax called the super guarantee charge.
+
+Things to consider about paying super:
+
+- Amount of earnings – you pay super regardless of how much you pay your employee (up to the maximum contribution base).
+
+- Employee age – for employees who are
+
+- 18 years or older, you pay super regardless of how many hours they work
+
+- under 18 years old, you pay super if they work more than 30 hours in a week.
+
+- Rate – the super rate is 12% (the super rate for Norfolk Island is 11% from 1 July 2026 and 12% from 1 July 2027).
+
+- How it is calculated – use your employee's qualifying earnings to work out the minimum contribution.
+
+- How frequently you need to make super contributions – from 1 July 2026, you pay super guarantee to your employee's super fund for each payday. It generally needs to be received by the fund with sufficient information to allocate the payment within 7 business days after pay.
+
+- What to do when you miss a payment or make a late payment
+
+- if you have not received an assessment for the super guarantee charge from us, pay the outstanding amount to the super fund as soon as possible
+
+- if you have received an assessment from us (which will be for more than you would have otherwise paid if you'd paid on time), you will need to pay the assessment amount to us.
+
+## Eligibility
+
+Generally, all employees are eligible for super guarantee. It doesn't matter if the employee is:
+
+- full time, part time or casual
+
+- receiving a super pension or annuity while working (this includes employees on transition to retirement)
+
+- a temporary resident, such as a backpacker
+
+- a company director
+
+- a family member working in your business.
+
+### Example: occasional employers
+
+Each summer, Samir – a 32-year-old seasonal fruit picker – works at the ABC produce farm. He usually works 15 hours a month for 3 months, earning $435 a month before tax.
+
+In 2025–26, Samir is eligible for super guarantee, which his employer pays at 12% of his qualifying earnings.
+
+End of example
+
+## Employees under 18
+
+Employees under 18 years old are eligible for super guarantee if they work for you for more than 30 hours in a week, regardless of how much you pay them.
+
+As stated in Superannuation Guarantee Determination SGD 93/1, the number of hours worked is the actual number of hours the employee works in that week. You can't average the hours across fortnightly or monthly pay periods.
+
+### Example: under 18 years old and working different hours a week
+
+Lily is 17 years old and has 2 jobs – working at a hardware shop and a local café.
+
+Lily worked 32 hours in a week at the shop and earned $800 before tax.
+
+Lily also works 6 hours a month in the café, earning $150.
+
+As Lily has worked:
+
+- more than 30 hours in one week in the hardware store, this employer pays her super guarantee for this week
+
+- not more than 30 hours in a week in the café, this employer doesn't pay her super guarantee for this work.
+
+End of example
+
+## Domestic or private workers
+
+A domestic or private worker does work:
+
+- relating personally to you (not to a business of yours)
+
+- relating to your home, household affairs or family – such as a nanny, housekeeper or carer.
+
+Domestic or private workers are eligible for super guarantee if they work for you for more than 30 hours in a week, regardless of how much you pay them.
+
+### Example: domestic or private worker and working less than 30 hours a week
+
+Noah works in a private arrangement as a housekeeper for Scarlett and he does all the cleaning and cooking at her home for 25 hours a week.
+
+As Noah has worked less than 30 hours in one week, Scarlett doesn't need to pay him super guarantee regardless of how much she pays him.
+
+End of example
+
+## NDIS plan
+
+You may also have to pay super guarantee for a domestic worker or carer if the following both apply:
+
+- you have a National Disability Insurance Scheme (NDIS) plan that you manage yourself
+
+- you use your funds to hire a carer or other domestic worker.
+
+## Independent contractors
+
+Independent contractors who are paid mainly for their labour are eligible for super guarantee.
+
+You calculate the super guarantee on the labour component of their invoice.
+
+This applies even if they quote an Australian business number (ABN), and regardless of how much they earn.
+
+## Sportspeople, performers and film makers
+
+Individuals who undertake any of the following activities are eligible for super guarantee on the payments they receive for those activities:
+
+- playing sport, performing music, dance or entertainment, undertaking promotional activities, or an activity involving similar skills
+
+- providing services that are required for the above activities to occur
+
+- filming or recording any television or radio broadcast, or providing services that are required for that filming or recording to occur.
+
+You calculate super guarantee on the component of the invoice that relates to their work.
+
+This applies to sportspeople, performers and film makers even if they quote an ABN, and regardless of how much they earn.
+
+## International workers
+
+Your worker is eligible for super guarantee even if they are a temporary resident, such as a backpacker or a working holiday maker.
+
+If you send an Australian employee to work temporarily in another country, you must continue to pay super contributions for them in Australia.
+
+If you have employees working overseas, you can apply for a certificate of coverage so you don't have to pay super in the other country as well.
+
+However, you don't have to pay super for:
+
+- non-resident employees who work outside Australia
+
+- some foreign executives who hold certain visas or entry permits (phone us on 13 10 20 for information)
+
+- employees temporarily working in Australia who are covered by a bilateral super agreement – you must keep a copy of the employee’s certificate of coverage to prove the exemption.
+
+If you’re a non-resident employer, you don't have to pay super for resident employees for work they do outside Australia.
+
+## Self-employed
+
+If you're self-employed as a sole trader or in a partnership, you don't have to pay super guarantee for yourself.
+
+## Armed forces reservists
+
+You don't have to pay super guarantee for members of the army, naval or air force reserve for work carried out in that role.
+
+## High income earners who opt out of super
+
+You don't have to pay super guarantee for high-income earners working for multiple employers if your employee has successfully applied to opt out.
+
+We will send you a copy of the Super guarantee employer shortfall exemption certificate which will specify the period for which you do not have to pay super guarantee for a financial year.
+
+## Super for employees working overseas - certificate of coverage
+
+Employers must pay super for Australians working temporarily overseas and should apply for a certificate of coverage.
+
+## Super for independent contractors
+
+Super for independent contractors, including choice of fund and how much to pay.
+
+## Super for sole traders and partnerships
+
+Self-employed sole traders or partners don't have to pay super guarantee but can make personal super contributions.
+
+## Super for sportspeople, performers, film makers and related activities
+
+If you pay a sportsperson, performer, musician, film maker, or an individual involved in similar or related activities, you may need to pay them super.
+QC33749

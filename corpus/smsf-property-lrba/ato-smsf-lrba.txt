@@ -1,0 +1,819 @@
+Title: Limited recourse borrowing arrangements
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements
+Retrieved: 2026-09-25
+Topic: smsf-property-lrba
+---
+
+=== Section: Limited recourse borrowing arrangements
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements
+
+# Limited recourse borrowing arrangements
+
+How to set up limited recourse borrowing arrangements, and the different superannuation laws and rules that apply.
+Info Alert
+
+Changes to LRBA rules from 10 August 2026
+Legislative changes to limited recourse borrowing arrangements (LRBAs) commence on 10 August 2026. We're updating this guidance to reflect the new rules. See Limited Recourse Borrowing Arrangement (LRBA) Provisions for more information.
+
+## About LRBAs
+
+What an LRBA is and what you need to consider before entering into one.
+
+## Rules for entering an LRBA
+
+The rules your self-managed super fund (SMSF) must follow depends on when you entered the LRBA.
+
+## Relationships with the LRBA lender
+
+Understanding whether the relationship between loan and lender creates any compliance issues under superannuation law.
+
+## Rules on assets under LRBA
+
+SMSF trustees must consider how superannuation law applies to the asset held by the holding trust under the LRBA.
+
+## In-house asset rules for LRBAs
+
+Certain exceptions apply to the in-house asset rules for LRBAs, as the holding trust is a related party.
+
+## LRBAs and total superannuation balance
+
+How to work out a member's share of the outstanding balance of an LRBA for their total superannuation balance.
+
+## Changes to limited recourse borrowing arrangements
+
+Information about changes to the limited recourse borrowing arrangements (LRBA) law, effective from 10 August 2026.
+QC20439
+
+=== Section: About LRBAs
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/about-lrbas
+
+# About LRBAs
+
+What an LRBA is and what you need to consider before entering into one.
+Published 2 April 2025
+
+## About limited recourse borrowing arrangements
+
+Borrowing money for your SMSF is allowed in limited circumstances. One of these exceptions is for limited recourse borrowing arrangements (LRBA).
+
+An LRBA is an arrangement where the:
+
+- SMSF trustee obtains a loan that is used to purchase an acquirable asset
+
+- asset is held in a separate trust from the SMSF, known as a holding trust
+
+- SMSF acquires beneficial interest in the asset and after repaying the loan has the right to legal ownership of the asset
+
+- other assets of the SMSF are protected if the loan defaults.
+
+While the asset is not held directly by the SMSF, any investment returns earned from the asset go to the SMSF.
+
+### Holding trusts
+
+While superannuation law doesn't specify the type of trust that must be used as a holding trust, you must ensure that the SMSF trustee has:
+
+- a beneficial interest in the asset being held in the holding trust
+
+- the right to acquire legal ownership of the asset after making one or more payments.
+
+Special in-house asset rules apply if the asset is the only asset owned by the holding trust.
+
+Complex trust structures are unlikely to meet the requirement that the SMSF trustee has the necessary interest in a particular asset of the holding trust. For example, a discretionary trust could not be used. Also, the holding trust cannot be one in which the SMSF trustee is one of a number of unit holders in a unit trust.
+
+## Before entering an LRBA
+
+Before entering an LRBA, we recommend that you seek advice from a qualified, licensed professional to help you decide if it's right for your SMSF. Don't decide until you understand how the investment works.
+
+## What you need to consider to borrow under an LRBA
+
+To borrow under an LRBA, trustees must ensure it:
+
+- meets the requirements of super laws (different rules apply depending on when the LRBA was entered)
+
+- meets the rules for assets under the LRBA
+
+- is consistent with the fund's investment strategy
+
+- meets the governing rules outlined in your trust deed.
+
+You should also consider:
+
+- who the lender will be and if you have a relationship with the lender
+
+- if the loan can be called in early
+
+- what happens if borrowing rates reduce or increase
+
+- if the lender can sell the loan to a different lender
+
+- if the terms of the loan can be altered
+
+- if the asset being offered is good quality and the value of the asset
+
+- fees and costs
+
+- if you must pay a commission
+
+- insurance and maintenance costs.
+
+### SMSF specific advice
+
+You can apply for self-managed super fund specific advice to find out how super law applies to your specific circumstances.
+QC103935
+
+=== Section: Rules for entering an LRBA
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/rules-for-entering-an-lrba
+
+# Rules for entering an LRBA
+
+The rules your self-managed super fund (SMSF) must follow depends on when you entered the LRBA.
+Last updated 3 August 2026
+
+## Arrangements entered into on or after 10 August 2026
+
+Changes to the LRBA provisions for real property commenced on 10 August 2026.
+
+LRBAs entered into on or after 10 August 2026 to finance a real property asset acquired after this date, must only be for business real property.
+
+LRBAs entered into on or after 10 August 2026 for a real property must be maintained or refinanced while still meeting the definition of business real property.
+
+The changes do not apply if an SMSF:
+
+- has exchanged a binding contract to acquire real property before 10 August 2026, even if the contract is settled or the LRBA is entered into after this date, or
+
+- maintains or refinances an earlier LRBA on or after 10 August 2026.
+
+The changes apply where the arrangement is an LRBA, regardless of whether the lender is a bank, non-bank lender or related party. The identity of the lender does not determine whether the real property must be business real property.
+
+There are no other changes to how LRBAs operate or any exceptions to the general prohibition on borrowing by an SMSF
+
+## Arrangements entered from 7 July 2010
+
+Before entering a limited recourse borrowing arrangement (LRBA), you need to ensure your potential arrangement meets the current super laws.
+
+If the conditions are not met, your SMSF is prohibited from borrowing money.
+
+### Use of borrowed money
+
+The borrowed money must be used to acquire either a:
+
+- single asset
+
+- collection of identical assets that have the same market value and can be treated as a single asset.
+
+The borrowed money can also be used to pay for expenses from:
+
+- the borrowing or asset acquisition, such as loan establishment costs or stamp duty
+
+- maintaining or repairing the asset.
+
+The borrowed money cannot be used to improve an asset.
+
+The asset cannot be subject to a charge other than as provided in relation to the borrowing by the SMSF. A charge means any other mortgage, loan or encumbrance.
+
+### Legal ownership
+
+The asset is held in the holding trust so that the SMSF trustee receives a beneficial interest in the asset.
+
+The SMSF trustee has the right to acquire legal ownership of the asset by making one or more payments.
+
+### Recourse under LRBA
+
+Any recourse that anyone has under the LRBA against the SMSF trustee is limited to rights relating to the asset. This applies to rights relating to:
+
+- a default on the borrowing and related charges
+
+- the SMSF's rights to the asset, such as income from the asset.
+
+### Asset replacement
+
+The asset can be replaced by another asset in limited circumstances. These include:
+
+- a share in a company or unit in a unit trust where the replacement asset
+
+- is a share or unit in the same company or unit trust and has the same market value at the time of replacement
+
+- is a share or unit in another company or unit trust if the replacement occurs because of a takeover, merger, demerger or restructure of the original entity
+
+- an instalment receipt that converts to a share or collection of shares in a company
+
+- a share in a company where the replacement asset is a stapled security if it occurs under a scheme of arrangement of a company such as a restructure
+
+- a unit in a unit trust can be replaced by a unit in the same trust if the replacement is due to an exercise of discretion granted to the trustee of that unit trust under the trust deed.
+
+For more information, see Self Managed Superannuation Funds Ruling SMSFR 2012/1 Self Managed Superannuation Funds: limited recourse borrowing arrangements – application of key concepts.
+
+## Arrangements entered between 24 September 2007 and 6 July 2010
+
+Different rules apply to arrangements entered on or after 24 September 2007 and before 7 July 2010. Arrangements entered during this time must continue to meet the rules that applied when the arrangement was entered.
+
+If the conditions are not met, your SMSF is prohibited from borrowing money.
+
+### Use of borrowed money
+
+The borrowed money was used to acquire an asset (or a replacement asset) that the fund is not otherwise prohibited from acquiring.
+
+### Legal ownership
+
+The asset is held in the holding trust so that the SMSF trustee receives a beneficial interest in the asset.
+
+The SMSF trustee has the right to acquire legal ownership of the asset by making one or more payments after receiving the beneficial interest.
+
+### Recourse under LRBA
+
+Any recourse that anyone has under the LRBA against the SMSF trustee is limited to rights relating to the asset. This applies to rights relating to:
+
+- a default on the borrowing and related charges
+
+- the SMSF's rights to the asset, such as income from the asset.
+
+### Asset replacement
+
+Under the rules that apply at this time, the replacement asset is not limited to any particular type of asset. It must be an asset the SMSF trustee is not prohibited from acquiring.
+
+If the arrangement that applied during this period ceases, any new borrowing or replacement asset will fall under the rules that apply from 7 July 2010. Any refinancing will also have to meet the law that applies from 7 July 2010.
+
+## Arrangements entered before 24 September 2007
+
+SMSFs were unable to enter LRBAs involving borrowing money to acquire an asset.
+
+## Changes resulting in a new arrangement
+
+If any of the parties make a significant change to the terms or conditions of an LRBA, the arrangement comes to an end and a new one starts.
+
+If the original arrangement was entered between 24 September 2007 and 6 July 2010, the current rules will apply to the new arrangement.
+
+Changes resulting in a new arrangement include:
+
+- The borrowing under the original arrangement is refinanced.
+
+- There is a borrowing that is inconsistent with the earlier arrangement – for example, borrowing to acquire an asset or class of asset clearly not contemplated under the original arrangement.
+
+- There has been a change to the ultimate beneficiaries of the arrangement resulting from selling a structure involving a pre-existing arrangement.
+
+### Example: new arrangement due to change in SMSF members
+
+An LRBA was entered before 7 July 2010.
+
+On 17 April 2014, all trustees of the SMSF and directors of the lender were replaced by new trustees and directors.
+
+As there has been a change to all the ultimate beneficiaries, the LRBA is treated as a new arrangement and must meet the current rules.
+
+End of example
+
+## Conditions for refinancing an LRBA
+
+You can refinance an LRBA if it meets the requirements of the law that applied when the refinancing took place.
+
+If you entered an arrangement between 24 September 2007 and 6 July 2010 and refinanced the LRBA from 7 July 2010, the new arrangement must meet the current rules.
+
+Where a new trust is created to hold the asset, SMSF trustees must ensure that the:
+
+- asset is transferred directly to that new trust
+
+- SMSF does not temporarily obtain title to the asset at that time.
+
+## Varying the terms of an LRBA
+
+Varying the contract of borrowing does not always result in the end of the previous borrowing and the creation of a new and different borrowing (a refinancing). This depends on the:
+
+- nature and extent of the variation
+
+- intention of the parties.
+
+Relevant factors to consider include where:
+
+- the original agreement allowed the parties to vary the terms
+
+- an update to a particular condition ended up changing additional conditions.
+
+QC103936
+
+=== Section: Relationships with the LRBA lender
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/relationships-with-the-lrba-lender
+
+# Relationships with the LRBA lender
+
+Understanding whether the relationship between loan and lender creates any compliance issues under superannuation law.
+Last updated 16 September 2025
+
+## Genuine borrowing to acquire an asset
+
+You must keep appropriate documentation, such as a written loan agreement, that shows you have made a genuine borrowing to acquire an asset. This is especially the case where the lender is a related party.
+
+If you don't keep this documentation, the amount provided by the related party might be considered to be a contribution received by the SMSF. This could lead to significant tax consequences if it results in a contributions cap being exceeded.
+
+## Borrowing from a related party
+
+While you can borrow from a related party, you must ensure that the:
+
+- terms and ongoing operation of the loan are consistent with what you would get from a lender who's not a related party
+
+- lender doesn't charge the fund more than an arm's length rate of interest under the arrangement
+
+- SMSF trustee can demonstrate that the SMSF wasn't paying more than an arm's-length rate of interest to a related party.
+
+The calculation of a rate that represents an arm's-length rate of interest needs to be based on reasonably objective and supportable data. For example, this could be the Reserve Bank of Australia's Indicator Lending Rates for a similar borrowing.
+
+Paying a member or relative of a member an excessive rate of interest also contravenes the prohibition on SMSF trustees giving financial assistance to members or their relatives using the resources of the SMSF.
+
+Additionally, you must continue to comply with other legislative requirements such as:
+
+- meeting the sole purpose test
+
+- correctly declaring income from investments
+
+- complying with existing investment restrictions.
+
+For more information on borrowing from a related party, see:
+
+- Self Managed Superannuation Funds Ruling SMSFR 2010/1 Self-Managed Superannuation Funds: the application of subsection 66(1) of the Superannuation Industry (Supervision) Act 1993 to the acquisition of an asset by a self-managed superannuation fund from a related party
+
+- Law Companion Ruling LCR 2021/2 Non-arm's length income – expenditure incurred under a non-arm's length arrangement
+
+- Self Managed Superannuation Funds Ruling SMSFR 2008/1 Self-Managed Superannuation Funds: giving financial assistance using the resources of a self-managed superannuation fund to a member or relative of a member that is prohibited for the purposes of paragraph 65(1)(b) of the Superannuation Industry (Supervision) Act 1993
+
+- Taxation Determination TD 2016/16 Income tax: will the ordinary or statutory income of a self-managed superannuation fund be non-arm's length income under subsection 295-550(1) of the Income Tax Assessment Act 1997 (ITAA 1997) when the parties to a scheme have entered into a limited recourse borrowing arrangement on terms which are not at arm's length?
+
+- Practical Compliance Guidelines PCG 2016/5 Income tax – arm’s length terms for Limited Recourse Borrowing Arrangements established by self-managed superannuation funds
+
+### Related parties on-lending money at a higher interest rate
+
+On-lending is where a lender has borrowed money from another lender for the purpose of providing you a loan.
+
+A related party can on-lend money to the SMSF under an LRBA at a higher rate of interest provided the:
+
+- LRBA to the SMSF by the related party is appropriately documented
+
+- SMSF isn't charged higher than an arm's-length rate of interest for borrowing
+
+- arrangement under which the SMSF borrows from meets the requirements of super law.
+
+If you entered an LRBA from 7 July 2010, the related party lender must not use the asset your SMSF is acquiring through the LRBA as security for their borrowing.
+
+## Loan repayments on behalf of the holding trust
+
+In most situations, an SMSF will enter an LRBA loan with the lender directly. However, in very specific circumstances, an SMSF may maintain the borrowing of another party, such as the holding trust, where the SMSF assumes all the obligations for the borrowing.
+
+The arrangement complying with super laws will depend on whether the:
+
+- SMSF has properly assumed the borrowing obligations of the other party
+
+- rights of the lender (or any other person) against the SMSF trustee under the arrangement is limited to only the acquirable asset.
+
+There is also a potential risk of consequential breaches of the in-house asset rule and acquisition from a related party rule if the arrangement isn't protected by the LRBA exception.
+
+So if your fund has entered into or is considering entering into a borrowing arrangement where it hasn't directly borrowed the money, we strongly recommend you seek advice from an SMSF professional, or contact us for SMSF specific advice.
+
+## Offset accounts
+
+A deposit facility offered by an Authorised Deposit-taking Institution (ADI) that is an offset account notionally reduces the loan balance of a mortgage, resulting in a reduction of interest calculated against the loan. Genuine offset accounts offered by an ADI are allowed as it's not considered a borrowing or charge over the fund’s assets.
+
+Offset accounts offered by non-ADI lenders are not considered bank deposits. So due diligence should be taken when considering this type of arrangement.
+
+## Drawdowns
+
+A drawdown is where an amount of money under the LRBA is released to you, rather than the full amount.
+
+Drawdowns are allowed in certain circumstances. For example, it may be allowable where the:
+
+- additional borrowings are applied in maintaining or repairing the asset held under the LRBA
+
+- drawdowns are provided for under the terms of the original LRBA.
+
+However, they may result in a new borrowing arrangement.
+
+The terms of an LRBA may allow multiple drawdowns. Each drawdown must be reviewed by the trustee to determine whether the borrowing meets the requirements of super law applying to the arrangement.
+
+A contravention occurs if a drawdown doesn't meet the requirements of super law.
+
+### Drawdowns from a credit facility
+
+If your LRBA is with a loan facility or similar arrangement, each drawdown you make will result in a separate borrowing. This is even if there are provisions for redraws arising from earlier repayments.
+
+### Drawdowns to make capital improvements
+
+For real property held by the holding trust in an LRBA, an SMSF trustee is allowed to drawdown to make capital improvements under the arrangement if it was entered between 24 September 2007 and 6 July 2010.
+
+Drawdowns for capital improvements are not allowed for LRBAs entered into on or after 7 July 2010.
+
+SMSF trustees must not attach an existing fund asset to the real property or otherwise subject an existing fund asset to a charge under the arrangement.
+
+## Lender's recourse and charging the asset acquired
+
+An SMSF must grant the lender a right of recourse to the asset at the same time the SMSF acquires the beneficial interest in the asset.
+
+In these circumstances, granting a right won't contravene the existing prohibition in the law against giving a charge over a fund asset. This is provided the arrangement complies with all the conditions of super law.
+
+## Related party providing personal guarantees
+
+A related party of your SMSF can provide a personal guarantee to a lender, but certain rules of recourse available apply depending on when the LRBA was entered.
+
+### Arrangements entered from 7 July 2010
+
+A related party can provide a personal guarantee to a lender in an LRBA. However, their recourse must be limited to the asset under the arrangement and not any other assets held by the SMSF.
+
+### Arrangements entered between 24 September 2007 and 6 July 2010
+
+In the event of a default on the borrowing, the recourse of the lender against the SMSF trustees must be limited to the asset that is being acquired under the arrangement.
+
+To provide additional security to the lender, a related party may put up their own assets as a guarantee.
+
+While a related party doesn't have to waive their general rights of recourse, they should carefully consider the risk to the assets of an SMSF that an unlimited guarantee might represent.
+
+### Personal guarantees and contributions to the SMSF
+
+If a guarantor makes a payment to the lender, it will be considered a contribution to the SMSF if:
+
+- it satisfies a liability of the SMSF, and
+
+- the guarantor foregoes their right of indemnity against the SMSF or is prevented from enforcing that right.
+
+This might happen if the guarantor paid the borrowing and the acquirable asset was transferred to the SMSF trustee under the arrangement.
+
+There is no contribution if the:
+
+- SMSF trustee has exercised a right to walk away from the arrangement and has no further liability or right to the asset, and
+
+- lender still exercises a right to call on the guarantee for a shortfall after disposal of the original asset.
+
+## Using asset under LRBA as security
+
+### Arrangements entered from 7 July 2010
+
+You can't use the acquired asset as security other than for the LRBA.
+
+### Arrangements entered between 24 September 2007 and 6 July 2010
+
+There may be limited circumstances where the use of the asset under an LRBA can be used as security and doesn't contravene super law.
+
+SMSF trustees must consider general contravention rules, such as:
+
+- all the SMSF trustees' dealings in the arrangement must meet the arm's-length requirements
+
+- no member or relative of a member can be financially assisted by the SMSF trustee using the resources of the SMSF
+
+- the maintenance of the SMSF must meet the sole purpose test.
+
+QC103937
+
+=== Section: Rules on assets under LRBA
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/rules-on-assets-under-lrba
+
+# Rules on assets under LRBA
+
+SMSF trustees must consider how superannuation law applies to the asset held by the holding trust under the LRBA.
+Last updated 3 August 2026
+
+## Acquiring assets from a related party
+
+The restrictions on acquiring assets from related parties apply to limited recourse borrowing arrangements (LRBAs).
+
+Exceptions are provided in the rules against the acquisition of assets from related parties, such as those allowing for the market value acquisition of listed securities or business real property.
+
+For more information on the acquisition of an asset by a SMSF from a related party, see SMSFR 2010/1 Self-Managed Superannuation Funds: the application of subsection 66(1) of the Superannuation Industry (Supervision) Act 1993 to the acquisition of an asset by a self-managed super fund from a related party.
+
+## Assets held on trust for the SMSF
+
+While the holding trust is a related trust, the SMSF can acquire legal ownership of the asset from the holding trust once the LRBA has been repaid without breaching super laws.
+
+## Existing fund assets
+
+An SMSF trustee is not allowed to put an existing fund asset into an LRBA.
+
+The money borrowed must be used to acquire a new asset or replacement asset. This means that investments under shareholder application or cash extraction arrangements are not allowed. The giving of a charge over an existing asset of the fund, as would generally occur under such arrangements, would result in a contravention of super law.
+
+An SMSF is also not allowed to borrow under an LRBA to improve an existing fund asset, such as building a house on vacant land owned by the SMSF.
+
+## Cash representing borrowed money or a deposit
+
+Under super law, cash representing borrowed money or a deposit can be transferred to the holding trust depending on when the arrangement was entered.
+
+### Arrangements entered from 7 July 2010
+
+Borrowed money can be transferred to the holding trust if it is for the purpose of acquiring the asset that the SMSF is permitted to acquire. However, the acquirable asset must not be money.
+
+The holding trust can operate a cash account for an arrangement provided the cash account is not part of the acquirable asset. This means it is acceptable for a cash account to deal with income and expenses. It would not be acceptable to operate a cash account as a trading account for investment purposes.
+
+### Arrangements entered between 24 September 2007 and 6 July 2010
+
+Borrowed money can be transferred to the holding trust if the asset purchased using that money is an asset that the SMSF is permitted to acquire.
+
+## Using an LRBA to acquire real property
+
+The rules on borrowing under an LRBA to acquire real property will depend on when you entered into the arrangement.
+
+### Arrangements entered into on or after 10 August 2026
+
+Changes to the definition of acquirable asset restricts funds from entering into LRBAs for real property, unless the property meets the definition of business real property. However, these changes do not apply where a binding contract for the acquisition of a property is exchanged before 10 August 2026 (even if the contract is settled or the LRBA is entered into after this date).
+
+For more information on the definition of business real property, see SMSFR 2009/1 Self-Managed Superannuation Funds: business real property for the purpose of the Superannuation Industry (Supervision) Act 1993.
+
+## Using an LRBA to buy blue-chip shares
+
+The rules on borrowing under an LRBA to buy shares from large, reputable companies will depend on when you entered the arrangement.
+
+### Arrangements entered from 7 July 2010
+
+Separate arrangements must be used for shares in different companies or different classes of shares in a company. You cannot acquire a portfolio of shares in different companies under a single LRBA.
+
+### Arrangements entered between 24 September 2007 and 6 July 2010
+
+More than one asset may be acquired under a particular arrangement. The assets acquired do not need to be all the same form or type.
+
+## Using an LRBA to purchase exchange traded options
+
+The rules on borrowing under an LRBA to buy exchange traded options over shares will depend on when you entered the arrangement.
+
+### Arrangements entered from 7 July 2010
+
+SMSFs can use an LRBA to purchase exchange traded options over shares. However, the arrangement must be ended at or before the time the options are replaced by another asset (such as cash or shares). The conversion of an option to another asset is not a permitted replacement asset within an LRBA.
+
+### Arrangements entered between 24 September 2007 and 6 July 2010
+
+SMSFs can use an LRBA to purchase exchange traded options over shares. If it is permitted under the terms of the arrangement, the options may be exercised on behalf of the SMSF trustee while still within the LRBA.
+
+## Assets bought and sold on behalf of the investor
+
+The rules on assets bought and sold on behalf of the investor within the holding trust on an LBRA will depend on when you entered the arrangement.
+
+### Arrangements entered from 7 July 2010
+
+Assets cannot be bought and sold on behalf of the investor.
+
+Super law applying to these arrangements restricts replacement of the asset (or collection of identical assets) within an arrangement to circumstances specifically listed in the law.
+
+It is not permitted for a portfolio of assets to be managed within an LRBA.
+
+### Arrangements between 24 September 2007 and 6 July 2010
+
+Assets can be bought and sold on behalf of the investor.
+
+The replacement assets will take the place of the original asset in the arrangement. All other aspects of the arrangement must continue to meet the requirements of super law.
+
+The replacement asset is not limited to any particular type of asset but must be an asset that the SMSF trustee is not prohibited from acquiring.
+
+## Retaining shares issued under a dividend reinvestment plan
+
+The rules on retaining shares issued under a dividend reinvestment plan will depend on when you entered the arrangement.
+
+### Arrangements entered from 7 July 2010
+
+Shares issued under a dividend reinvestment plan cannot be retained in the arrangement.
+
+For an arrangement over a collection of shares, if additional or bonus shares are issued they cannot be added to the collection as that is not a permitted replacement asset.
+
+If the arrangement is to continue, the additional shares need to be transferred out of the arrangement – for example, in a similar way that a cash dividend might be.
+
+### Arrangements entered between 24 September 2007 and 6 July 2010
+
+Shares issued under a dividend reinvestment plan can be retained in the arrangement.
+
+The new portfolio will take the place of the original asset in the arrangement. All other aspects of the arrangement must continue to meet the requirements of super law.
+
+## Acquiring more than one real property title
+
+The rules on acquiring more than one real property title under an LRBA will depend on when you entered the arrangement.
+
+### Arrangements entered into on or after 10 August 2026
+
+From 10 August 2026, a collection of assets treated as a single asset that are real property must meet the definition of business real property.
+
+### Arrangements entered from 7 July 2010
+
+Multiple real property titles cannot be acquired under a single LRBA. However, acquisition under a single LRBA may be possible if it is reasonable to conclude that what is being acquired is distinctly identifiable as a single asset.
+
+'Distinctly identifiable' means a collection of assets that are identifiable, have the same market value as each other and are treated as a single asset that is bought and sold together. Real property on separate titles is not allowed even if the properties are substantially the same.
+
+For more information on relevant factors in determining a single asset, see paragraphs 12 and 13 of SMSFR 2012/1 Self-Managed Superannuation Funds: limited recourse borrowing arrangements – application of key concepts.
+
+### Arrangements entered between 24 September 2007 and 6 July 2010
+
+An SMSF trustee can acquire more than one real property title under a single LRBA.
+QC103938
+
+=== Section: In-house asset rules for LRBAs
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/in-house-asset-rules-for-lrbas
+
+# In-house asset rules for LRBAs
+
+Certain exceptions apply to the in-house asset rules for LRBAs, as the holding trust is a related party.
+Published 2 April 2025
+
+## Exception while borrowing is in place
+
+The interest of the self-managed super fund (SMSF) in the holding trust represents an investment in that trust for the purposes of the in-house asset rules. However, the in-house asset rules have an exception to ensure that the SMSF's investment in the holding trust is not an in-house asset. This is provided all the following conditions are met:
+
+- The holding trust is part of an arrangement that meets all the requirements of superannuation law in connection with a borrowing by the SMSF.
+
+- The only property of the trust under the arrangement is the acquirable asset.
+
+- The asset held by the holding trust would not be an in-house asset of the SMSF if the SMSF owned the asset directly.
+
+## Exception before and after borrowing
+
+There is a legislative instrument that provides an exception to the definition of an ‘in-house asset’ at the beginning of an LRBA where a borrowing has not yet begun and the holding trust does not yet hold the acquirable asset, provided it is reasonable to expect that the borrowing will occur and the related trust will hold the acquirable asset.
+
+For further information about this legislative instrument, see SPR 2014/1 - Explanatory statement Superannuation Industry (Supervision) Act 1993 (Limited Recourse Borrowing Arrangements – In-house Asset Exclusion) Determination 2014.
+
+## In-house assets and related party leases
+
+When property held by the holding trust is leased to a related party of the SMSF, the SMSF's interest in the holding trust is an in-house asset. An exception applies if the leased asset would not be an in-house asset of the SMSF if it were owned by the SMSF directly, such as business real property.
+
+For real property that is being leased by the holding trust while the borrowing is paid off, the existence of the lease would not prevent the fund from being subject to an in-house asset exemption.
+
+## Additional guidance in the Legal database
+
+For more information on in-house asset rules and LRBAs, see:
+
+- Self Managed Superannuation Funds Ruling SMSFR 2009/4 Self-Managed Superannuation Funds: the meaning of 'asset', 'loan', 'investment in', 'lease' and 'lease arrangement' in the definition of an 'in-house asset' in the Superannuation Industry (Supervision) Act 1993
+
+- Self Managed Superannuation Funds Ruling SMSFR 2009/1 Self-Managed Superannuation Funds: business real property for the purposes of the Superannuation Industry (Supervision) Act 1993.
+
+QC103939
+
+=== Section: LRBAs and total superannuation balance
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/lrbas-and-total-superannuation-balance
+
+# LRBAs and total superannuation balance
+
+How to work out a member's share of the outstanding balance of an LRBA for their total superannuation balance.
+Published 2 April 2025
+
+## LRBA amount for a member's total superannuation balance
+
+Your members' total superannuation balance (TSB) is the total value of all their interests in all super funds.
+
+If your SMSF has a limited recourse borrowing arrangement (LRBA), the member's share of the outstanding balance of the LRBA is included in their TSB if the:
+
+- lender is a related party or an associate of the SMSF
+
+- member has met a condition of release with no cashing restriction.
+
+This rule applies if the LRBA was entered into by the fund:
+
+- from 1 July 2018, or
+
+- before 1 July 2018 and is refinanced from 1 July 2018, unless the following apply
+
+- the new borrowing is secured by the same asset or assets as the old borrowing
+
+- the refinanced amount is the same or less than the existing LRBA.
+
+The member's share of the outstanding balance of an intermediary LRBA is also included in their TSB. An intermediary LRBA is where the loan is entered into by the trustee of the separate asset holding trust.
+
+If your SMSF has an LRBA and a member that meet one of the above conditions, the fund must report the proportion of the outstanding balance of the LRBA amount at 30 June in that member‘s information section of the SMSF annual return and include it in the member's TSB.
+
+### LRBA loan is between the SMSF and an associate
+
+An associate of the SMSF is any fund member of the SMSF, as well as the associates of those entities.
+
+Where the adjustment applies because the loan is with an associate of the fund, all members whose interests are supported by the assets the LRBA relates to will have their TSB adjusted.
+
+### Meeting a condition of release with no cashing restriction
+
+The conditions of release with no cashing restrictions include:
+
+- retirement
+
+- terminal medical condition
+
+- permanent incapacity
+
+- being 65 years old.
+
+You only need to report the proportion of the outstanding balance or the LRBA amount for a member who has met a no cashing restriction condition of release.
+
+## Outstanding LRBA amount included in your TSB
+
+Your member's LRBA amount that counts towards their TSB is a proportion of the total outstanding balance of the LRBA based on their share of the super interests supported by the LRBA.
+
+### Example: working out the LRBA amount included in a member’s TSB
+
+Kevin is 65 years old and is a member of an SMSF with an outstanding LRBA as of 30 June 2023.
+
+Kevin is calculating his TSB for 30 June 2023 and needs to know his share of the outstanding LRBA amount to include in the calculation of his total super balance.
+
+Kevin's account balance on 30 June is $400,000 which is 75% supported by the assets that secure the LRBA.
+
+The SMSF’s total outstanding balance of the LRBA on 30 June 2023 is $200,000 and the total fund assets that are supported by the assets that secure the LRBA is $800,000.
+
+Kevin works out his TSB LRBA amount on 30 June 2023 as:
+
+- $200,000 (the outstanding LRBA balance)
+
+- × ($400,000 × 75%) (the value of Kevin’s interests supported by the assets that secure the LRBA)
+
+- ÷ $800,000 (the value of the fund's interests supported by the assets that secure the LRBA)
+
+= $75,000.
+
+Kevin’s SMSF will report $75,000 as the TSB LRBA amount for Kevin in the member section of the SMSF annual return for the 2022–23 financial year.
+
+End of example
+QC103940
+
+=== Section: Changes to limited recourse borrowing arrangements
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/changes-to-limited-recourse-borrowing-arrangements
+
+# Changes to limited recourse borrowing arrangements
+
+Information about changes to the limited recourse borrowing arrangements (LRBA) law, effective from 10 August 2026.
+Published 28 July 2026
+
+## Limited recourse borrowing arrangements changes
+
+Limited recourse borrowing arrangements (LRBAs) entered into on or after 10 August 2026 to purchase real property, can only be used to acquire business real property.
+
+There are no changes to:
+
+- how LRBAs operate
+
+- any other exceptions to the general prohibition on borrowing by self-managed super funds (SMSFs).
+
+For further information, see Self-Managed Superannuation Funds Ruling SMSFR 2012/1 Self-Managed Superannuation Funds: limited recourse borrowing arrangements - application of key concepts.
+
+## LRBAs are not banned
+
+Limited recourse borrowing arrangements (LRBAs) are not banned.
+
+SMSFs can still borrow or maintain a borrowing under an LRBA to acquire an asset. However, the changes restrict real property assets to business real property.
+
+## The LRBA law changes apply to all lenders
+
+The changes apply where the arrangement is an LRBA, regardless of whether the lender is a bank, non-bank lender or related party. The identity of the lender does not determine whether the real property must be business real property.
+
+## Business real property
+
+Business real property generally means land and buildings used wholly and exclusively in a business.
+
+Real property used in a primary production business and containing a dwelling for private or domestic purposes can still meet the requirements of being used wholly and exclusively in a business (and therefore be business real property) if:
+
+- any dwelling used for private or domestic purposes is in an area of land no more than 2 hectares, and
+
+- the main use of the whole property is not for domestic or private purposes.
+
+For detailed information, examples and our view on business real property, see Self-Managed Superannuation Funds Ruling SMSFR 2009/1 Self-Managed Superannuation Funds: business real property for the purposes of the Superannuation Industry (Supervision) Act 1993.
+
+## Existing LRBAs for real property
+
+The changes do not apply if an SMSF:
+
+- has already entered into an LRBA to finance a real property acquisition before 10 August 2026
+
+- maintains or refinances that LRBA on or after 10 August 2026.
+
+This means that if the asset already financed under the LRBA is real property, it does not need to be business real property.
+
+We consider refinancing an LRBA to mean entering into a new loan contract for the same asset, with the same or a new lender.
+
+## SMSFs acquiring real property under an LRBA before 10 August
+
+The changes do not apply if an SMSF exchanges a binding contract to acquire real property before 10 August 2026. This applies even if the contract is settled or the LRBA is entered into on or after 10 August 2026.
+
+This means that if the acquisition contract is for real property, it does not need to be business real property.
+
+In general, later variations of the contract will not change this. However, if a contract is changed significantly and the fundamental terms no longer exist, it may be considered that a new arrangement has begun.
+
+### Example: acquiring real property before 10 August
+
+An SMSF exchanges a binding off-the-plan contract to acquire real property that is not business real property before 10 August 2026. Finance is approved after 10 August 2026, and settlement occurs 12 months later.
+
+The changes do not apply to this acquisition as the SMSF exchanges a binding contract before 10 August 2026. It does not matter that the contract is settled or the LRBA is entered into on or after 10 August 2026.
+
+End of example
+
+## Real property assets must be business real property when entering an LRBA
+
+From 10 August 2026, the real property asset must be business real property at the time the LRBA is entered into. That is, the asset must be wholly and exclusively used in one or more businesses at the time of the LRBA.
+
+If the asset does not meet this rule, the SMSF has breached the law against borrowing and compliance action may apply.
+
+For further information, see Self-Managed Superannuation Funds Ruling SMSFR 2009/1 Self-Managed Superannuation Funds: business real property for the purposes of the Superannuation Industry (Supervision) Act 1993.
+
+## Real property assets must remain business real property for the entire life of the LRBA
+
+The real property asset must continue to be business real property for the entire life of the LRBA. This means the asset must be wholly and exclusively used in one or more businesses for the duration of the LRBA.
+
+If the asset does not meet these rules, the SMSF has breached the law against borrowing and compliance action may apply.
+
+## If business real property financed under an LRBA stops being business real property
+
+If a real property asset stops being business real property during the LRBA, then the SMSF fails to maintain the LRBA according to the rules. The SMSF has breached the law against borrowing and compliance action may apply.
+
+If the property is land on which commercial premises are leased, the property will not stop being business real property only because the owner is looking for a new tenant. However, if the owner abandons plans to lease the property, the property will no longer be business real property.
+
+For detailed information, examples and our view on business real property, see Self-Managed Superannuation Funds Ruling SMSFR 2009/1 Self-Managed Superannuation Funds: business real property for the purposes of the Superannuation Industry (Supervision) Act 1993.
+
+## Investing in residential real property under an LRBA
+
+If the residential real property meets the definition of business real property, these can be acquired and financed under an LRBA. The residential real property will need to be business real property at the time the LRBA is entered into and throughout the life of the LRBA.
+
+Alternatively, an SMSF can still invest in residential real property that is not business real property (provided it meets all other regulatory rules), but it can't be financed under an LRBA.
+
+For more information, see What are the SMSF investment restrictions?
+QC107811

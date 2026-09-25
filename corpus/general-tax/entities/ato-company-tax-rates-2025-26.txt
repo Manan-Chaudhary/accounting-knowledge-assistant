@@ -1,0 +1,91 @@
+Title: Company tax rates 2025-26
+Publisher: Australian Taxation Office
+Document type: rates and thresholds
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/tax-rates-and-codes/company-tax-rates/tax-rates-2025-26
+Retrieved: 2026-09-25
+Topic: general-tax/entities
+---
+
+# Tax rates 2025–26
+
+The following rates of tax apply to companies for the 2025–26 income year.
+Last updated 24 June 2026
+
+## Companies
+
+Income category | Rate (%)
+Base rate entities | 25
+Otherwise | 30
+
+Note 1: This includes corporate limited partnerships, strata title bodies corporate, trustees of corporate unit trusts and public trading trusts.
+
+## Global Minimum Tax (GMT)
+
+Income category | Top-up tax Rate (%)
+In-scope multinational enterprise groups (MNEs) | 0-15
+
+Note 2: The GMT applies to in-scope MNEs. Certain entities of an MNE group are excluded from the operation of the Australian global and domestic minimum tax (known as GloBE excluded entities). The top-up tax is applied to MNEs where their effective tax rate drops below the 15% threshold in a jurisdiction. The top-up tax rate applied to each MNE can vary but must result in the group having an effective tax rate of 15% in a jurisdiction.
+
+## Life insurance companies
+
+Income category | Rate (%)
+Ordinary class of taxable income | 30
+Complying superannuation class of taxable income | 15
+Additional tax on no-tax file number (TFN) contributions income where the company is a retirement savings account (RSA) provider | 32
+
+## RSA providers other than life insurance providers
+
+Income category | Rate (%)
+RSA component of taxable income | 15
+Additional tax on no-TFN contributions income | 32
+Standard component of taxable income: Base rate entity | 25
+Standard component of taxable income: Otherwise | 30
+
+## Pooled development funds
+
+Income category | Rate (%)
+Small and medium sized enterprises income component | 15
+Unregulated investment component | 25
+The amount that exceeds the PDF component: Base rate entity | 25
+The amount that exceeds the PDF component: Otherwise | 30
+
+Note 3: For tax rates where a company either starts or ceases to be a PDF during the income year, refer to Appendix 4 of the Company tax return instructions.
+
+## Credit unions
+
+Income category | Rate (%)
+Small credit unions – under $50,000: Base rate entities | 25
+Small credit unions – under $50,000: Otherwise | 30
+Medium credit unions – $50,000 to $149,999: Base rate entities | 37.5
+Medium credit unions – $50,000 to $149,999: Otherwise | 45
+Large credit unions – $150,000 and over: Base rate entities | 25
+Large credit unions – $150,000 and over: Otherwise | 30
+
+Note 4: Small credit unions are taxed on all their taxable income but note the treatment of mutual interest. Interest derived by small credit unions is exempt from tax if both:
+
+- the credit union is an approved credit union
+
+- the interest is paid to the credit union by its non-company members in respect of loans it made to those members.
+
+Credit unions with a notional taxable income of at least $50,000 but less than $150,000 are taxed on their taxable income above $49,999. Credit unions with a notional taxable income of $150,000 or more are taxed on all their taxable income. A credit union's notional taxable income is defined in subsection 6H(5) of the Income Tax Assessment Act 1936 (ITAA 1936).
+
+## Not-for-profit companies
+
+Income category | Rate (%)
+Taxable income: $0–$416 | Nil
+Taxable income: $417–$915 | 55
+Taxable income: $916 and above | 30
+
+Note 5: Not-for-profit companies with a taxable income of between $417 and $915 are taxed on their taxable income above $416. Not-for-profit companies with a taxable income above $915 are taxed on all their taxable income.
+
+## Not-for-profit companies that are base rate entities
+
+Income category | Rate (%)
+Taxable income: $0–$416 | Nil
+Taxable income: $417–$762 | 55
+Taxable income: $763 and above | 25
+
+Note 6: For the 2025–26 income year, not-for-profit companies that are base rate entities with a taxable income of between $417 and $762 are taxed on their taxable income above $416.
+QC17534

@@ -1,0 +1,297 @@
+Title: PCG 2017/13 - Division 7A: PS LA 2010/4 sub-trust arrangements maturing in or after the 2016-17 income year
+Publisher: Australian Taxation Office
+Document type: practical compliance guideline
+Authority tier: 1
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/law/view/document?DocID=COG%2FPCG201713%2FNAT%2FATO%2F00001
+Retrieved: 2026-09-25
+Topic: general-tax/division-7a
+---
+
+# Practical Compliance Guideline
+
+## PCG 2017/13
+
+### Division 7A - PS LA 2010/4 sub-trust arrangements maturing in or after the 2016-17 income year
+
+- This guideline is being reviewed as a result of a recent court decision. Refer to Decision impact statement Commissioner of Taxation v Bendel [2026] HCA 18 (Published 26 June 2026).
+
+This document incorporates revisions made since original publication. View its history and amending notices, if applicable.
+
+Table of Contents | Paragraph
+What this Guideline is about | 1
+When this Guideline applies | 2
+Background - Division 7A and UPEs | 3
+Administrative guidance in PS LA 2010/4 | 8
+Obligation to repay the principal of the loan, entered into under either investment Option 1 or investment Option 2, is not met at the end of the loan term in the relevant income year | 11
+Application of section 109R to complying loans entered into after maturity of sub-trust arrangements | 20
+
+Relying on this Guideline This Practical Compliance Guideline sets out a practical administration approach to assist taxpayers in complying with relevant tax laws applicable to sub-trust arrangements entered into in respect of trust entitlements arising prior to 1 July 2022. Provided you follow this Guideline in good faith, the Commissioner will administer the law in accordance with this approach. Our view in Taxation Determination TD 2022/11 Income tax: Division 7A: when will an unpaid present entitlement or amount held on sub-trust become the provision of 'financial accommodation'? differs from the views in Taxation Ruling TR 2010/3 Income tax: Division 7A loans: trust entitlements and the administrative approach in Law Administration Practice Statement PS LA 2010/4 Division 7A: trust entitlements. TR 2010/3 and PS LA 2010/4 have been withdrawn but will continue to apply to trust entitlements arising before 1 July 2022. TD 2022/11 applies to trust entitlements arising on or after 1 July 2022.
+
+What this Guideline is about
+
+1. This Guideline applies to a private company (or trustee[1]) beneficiary of a trust and sub-trust where the trustee:
+
+•
+has, in accordance with Law Administration Practice Statement PS LA 2010/4 Division 7A: trust entitlements (now withdrawn), validly adopted either investment Option 1[2] or investment Option 2[3] to place funds representing a UPE under a sub-trust arrangement on a 7-year or 10-year interest-only loan respectively with the main trust, and
+
+•
+does not repay the principal of the respective 7-year or 10-year interest-only loan when it matures in the 2016-17 income year[4] or a later income year.[4A]
+
+When this Guideline applies
+
+2. This Guideline only applies where a UPE:
+
+•
+arose on or before 30 June 2022[4B], and
+
+•
+has been dealt with in accordance with either investment Option 1 or investment Option 2, as described in paragraph 1 of this Guideline.
+
+Background - Division 7A and UPEs
+
+3. Division 7A of Part III of the Income Tax Assessment Act 1936 contains integrity provisions that aim to prevent tax-free distributions of private company profits to shareholders and their associates.
+
+3A. All legislative references in this Guideline are to the Income Tax Assessment Act 1936.
+
+4. Broadly speaking, it does this by deeming a private company to have paid a dividend[6] to a shareholder, or shareholder's associate, if it makes a loan to the shareholder or associate and that loan is not repaid in full or put on complying terms[7] before the private company's lodgment day.[8]
+
+5. For the purposes of Division 7A, a 'loan' includes the provision of credit or any other form of financial accommodation.[9]
+
+6. Taxation Ruling TR 2010/3 Income tax: Division 7A loans: trust entitlements (now withdrawn) contains the Commissioner's former view of how Division 7A applies where a private company beneficiary has, or had, a present entitlement to an amount of income from an associated trust that is part of the same family group as the private company.
+
+7. Relevantly, TR 2010/3 stated that a UPE that has not been satisfied from a trust to a private company beneficiary in the same family group is the provision of financial accommodation and therefore a 'loan' where:
+
+•
+the trustee continues to use the funds representing the UPE for trust purposes, and
+
+•
+the company does not call for either
+
+-
+payment of the UPE, or
+
+-
+the investment of the funds for the company's sole benefit (rather than their use for the benefit of the trust).[10]
+
+7A. On 13 July 2022, the Commissioner issued Taxation Determination TD 2022/11 Income tax: Division 7A: when will an unpaid present entitlement or amount held on sub-trust become the provision of 'financial accommodation'?. This Determination describes when a private company beneficiary made presently entitled to income of a trust provides financial accommodation. It replaces both TR 2010/3 and PS LA 2010/4 in respect of trust entitlements arising on or after 1 July 2022.
+
+7B. Taxpayers will be able to continue to rely on both TR 2010/3 and PS LA 2010/4 for trust entitlements arising on or before 30 June 2022.
+
+Administrative guidance in PS LA 2010/4
+
+8. PS LA 2010/4 provides guidance on the administrative aspects of TR 2010/3, including where the UPE funds remain intermingled with funds of the trust but are claimed to be held on sub-trust for the sole benefit of the private company beneficiary.
+
+9. For arrangements in respect of which it continues to apply, PS LA 2010/4 states that the Commissioner will consider that the UPE funds in the sub-trust are held for the sole benefit of the private company beneficiary if they are lent to the main trust under either a 7-year interest-only loan or under a 10-year interest-only loan with the principal of the respective loan repayable at the end of the 7-year interest-only loan (investment Option 1) or at the end of the 10-year interest-only loan (investment Option 2).[11]
+
+10. A trustee adopting either investment Option 1 or investment Option 2 must document the terms of the investment agreement and the investment agreement must be legally binding. The terms of the investment must include the obligation to repay the principal of the loan at the end of the term.[12]
+
+Obligation to repay the principal of the loan, entered into under either investment Option 1 or investment Option 2, is not met at the end of the loan term in the relevant income year
+
+11. Those trustees who adopted investment Option 1 or investment Option 2 will, under the terms of the investment agreement, be obligated to repay the principal of the loan in the 2016-17 or a subsequent income year, whichever is applicable. PS LA 2010/4 makes it clear that to comply with either investment Option 1 or investment Option 2, the trustee
+must
+actually repay the principal of the loan at the end of the loan term and meet this term of the investment agreement.[15]
+
+12. The Commissioner maintains the clear expectation that this term of the respective investment agreements be met and that the principal of the loan, entered into under either investment Option 1 or investment Option 2, must be repaid at the end of the loan term.
+
+13. If the trustee fails to meet this term of the investment agreement, when an investment Option 1 or Option 2 matures, any unpaid principal of the loan will be treated by the Commissioner as the provision of financial accommodation and therefore a Division 7A loan.
+
+14. If all, or part, of the principal of the loan is not repaid on or before the date of maturity, the Commissioner will accept that a 7-year loan on complying terms in accordance with section 109N may be put in place between the sub-trust and the private company beneficiary prior to the private company's lodgment day. This will provide a further period for the amount to be repaid with periodic payments of both principal and interest.
+
+15. However, if such a 7-year loan on complying terms in accordance with section 109N is not put in place between the sub-trust and the private company beneficiary prior to the private company's lodgment day, a deemed dividend will arise at the end of the income year in which the loan matures (to the extent that it remains unpaid).
+
+16. The following tables outline the key dates of which the relevant parties to sub-trust arrangements under this Guideline (where the investment Option 1 or Option 2 is not repaid by the relevant due date) must take note.
+
+The following table outlines the key dates that the relevant parties must note where the investment Option 1 is not repaid by the
+due date
+in the relevant income year.
+
+Table 1: investment Option 1 not repaid on maturity
+
+Private company becomes presently entitled to an amount from an associated trust on ... | 30 June 2010 | 30 June 2011 | 30 June 2012 | 30 June 2013 | 30 June 2014 | 30 June 2015 | 30 June 2016 | 30 June 2017 | 30 June 2018 | 30 June 2019 | 30 June 2020 | 30 June 2021 | 30 June 2022
+The trustee must put the UPE on a sub-trust using investment Option 1 by ... [a] | 15 May 2011 | 15 May 2012 | 15 May 2013 | 15 May 2014 | 15 May 2015 | 15 May 2016 | 15 May 2017 | 15 May 2018 | 15 May 2019 | 15 May 2020 | 15 May 2021 | 15 May 2022 | 15 May 2023
+Liability arises to pay interest to the trustee of the sub-trust on ... [b] | 30 June 2012 | 30 June 2012 | 30 June 2013 | 30 June 2014 | 30 June 2015 | 30 June 2016 | 30 June 2017 | 30 June 2018 | 30 June 2019 | 30 June 2020 | 30 June 2021 | 30 June 2022 | 30 June 2023
+Repayment of principal of the loan and final interest must be made by this date. Failure to repay the principal by this date amounts to the provision of financial accommodation and therefore a Division 7A loan. | 14 May 2018 | 14 May 2019 | 14 May 2020 | 14 May 2021 | 14 May 2022 | 14 May 2023 | 14 May 2024 | 14 May 2025 | 14 May 2026 | 14 May 2027 | 14 May 2028 | 14 May 2029 | 14 May 2030
+The trustee of the sub-trust must enter into a 7-year complying loan agreement before the private company's lodgment day. [c] Failure to put a loan agreement in place before this date results in a deemed dividend. [d] | 15 May 2019 | 15 May 2020 | 15 May 2021 | 15 May 2022 | 15 May 2023 | 15 May 2024 | 15 May 2025 | 15 May 2026 | 15 May 2027 | 15 May 2028 | 15 May 2029 | 15 May 2030 | 15 May 2031
+Liability to make the first minimum yearly repayment to private company under the 7-year complying loan arises on ... | 30 June 2019 | 30 June 2020 | 30 June 2021 | 30 June 2022 | 30 June 2023 | 30 June 2024 | 30 June 2025 | 30 June 2026 | 30 June 2027 | 30 June 2028 | 30 June 2029 | 30 June 2030 | 30 June 2031
+
+The following table outlines the key dates that the relevant parties must note where the investment Option 2 is not repaid by the
+due date
+in the relevant income year.
+
+Table 2: investment Option 2 not repaid on maturity
+
+Private company becomes presently entitled to an amount from an associated trust on ... | 30 June 2010 | 30 June 2011 | 30 June 2012 | 30 June 2013 | 30 June 2014 | 30 June 2015 | 30 June 2016 | 30 June 2017 | 30 June 2018 | 30 June 2019 | 30 June 2020 | 30 June 2021 | 30 June 2022
+The trustee must put the UPE on a sub-trust using investment Option 2 by...a | 15 May 2011 | 15 May 2012 | 15 May 2013 | 15 May 2014 | 15 May 2015 | 15 May 2016 | 15 May 2017 | 15 May 2018 | 15 May 2019 | 15 May 2020 | 15 May 2021 | 15 May 2022 | 15 May 2023
+Liability arises to pay interest to the trustee of the sub-trust on ...b | 30 June 2012 | 30 June 2012 | 30 June 2013 | 30 June 2014 | 30 June 2015 | 30 June 2016 | 30 June 2017 | 30 June 2018 | 30 June 2019 | 30 June 2020 | 30 June 2021 | 30 June 2022 | 30 June 2023
+Repayment of principal of the loan and final interest must be made by this date. Failure to repay the principal by this date amounts to the provision of financial accommodation and therefore a Division 7A loan. | 14 May 2021 | 14 May 2022 | 14 May 2023 | 14 May 2024 | 14 May 2025 | 14 May 2026 | 14 May 2027 | 14 May 2028 | 14 May 2029 | 14 May 2030 | 14 May 2031 | 14 May 2032 | 14 May 2033
+The trustee of the sub-trust must enter into a 7-year complying loan agreement before the private company's lodgment day.c Failure to put a loan agreement in place before this date results in a deemed dividend.d | 15 May 2022 | 15 May 2023 | 15 May 2024 | 15 May 2025 | 15 May 2026 | 15 May 2027 | 15 May 2028 | 15 May 2029 | 15 May 2030 | 15 May 2031 | 15 May 2032 | 15 May 2033 | 15 May 2034
+Liability to make the first minimum yearly repayment to private company under the 7-year complying loan arises on ... | 30 June 2022 | 30 June 2023 | 30 June 2024 | 30 June 2025 | 30 June 2026 | 30 June 2027 | 30 June 2028 | 30 June 2029 | 30 June 2030 | 30 June 2031 | 30 June 2032 | 30 June 2033 | 30 June 2034
+
+17. [Omitted.]
+
+18. The Commissioner will not accept that the rolling over of all or part of either the investment Option 1 or the investment Option 2 that is not repaid into a further investment option described in PS LA 2010/4 will prevent the provision of financial accommodation to which Division 7A may apply. Consequently, the approach in PS LA 2010/4 will cease in respect of existing (original) sub-trust arrangements at the time either the investment Option 1 or the investment Option 2 matures.
+
+19. Where the facts and circumstances indicate that there has never been an intention to repay the principal of the loan at the end of either the 7-year interest-only loan or the 10-year interest-only loan, the sub-trust arrangement was not entered into in accordance with PS LA 2010/4 and this may lead the Commissioner to consider that the purported arrangement was a sham, and/or that there was fraud or evasion. In these circumstances, the Commissioner may go back beyond the standard period of review[16] and deem a dividend in the income year in which the provision of financial accommodation originally arose.
+
+Application of section 109R to complying loans entered into after maturity of sub-trust arrangements
+
+20. Section 109R can apply in some circumstances to not treat a payment as a repayment of a loan for Division 7A purposes.
+
+21. The Commissioner will not seek to apply section 109R to the principal of a loan under a sub-trust arrangement that is not repaid and is the subject of a 7-year loan on complying terms under section 109N in accordance with this Guideline.
+
+
+Commissioner of Taxation
+
+19 July 2017
+
+### Amendment history
+
+Date of amendment | Part | Comment
+10 August 2022 | Preamble. Various. | Updates were made throughout the Guideline due to the publication of TD 2022/11 and the withdrawal of TR 2010/3 and PS LA 2010/4. Other updates made to style of the Guideline that do not otherwise affect the content or principles of the Guideline.
+7 June 2022 | Title and preamble. Content updates to paragraphs 1, 2, 4, 13, 15, 17, 18, 19 and 21. Added paragraphs 7A and 7B. Timelines in a table format have been added at paragraph 16. Various. | These amendments extend the application of this Guideline to sub-trust arrangements maturing in the 2021-22 or a later income year. Other updates made to style of the Guideline that do not otherwise affect the content or principles of the Guideline.
+30 June 2021 | Paragraphs 1, 2, 9, 10, 11, 12, 13, 16, 17 and 18. Additional timelines added at paragraphs 16 and 17. | These amendments extend the application of this Guideline to sub-trust arrangements maturing in the 2020-21 income year (including investment Option 2). Various other amendments made to layout and style of Guideline.
+27 June 2019 | Paragraphs 1, 2, 11, 13 and 16. | These amendments extend the application of this Guideline to sub-trust arrangements maturing in the 2019-20 income year.
+15 August 2018 | Paragraphs 1, 2, 11, 13 and 16. Additional timeline added at paragraph 16. | These amendments extend the application of this Guideline to sub-trust arrangements maturing in the 2018-19 income year.
+
+©
+AUSTRALIAN TAXATION OFFICE FOR THE COMMONWEALTH OF AUSTRALIA
+
+You are free to copy, adapt, modify, transmit and distribute this material as you wish (but not in any way that suggests the ATO or the Commonwealth endorses you or any of your services or products).
+
+
+[1]
+
+It is acknowledged that sub-trust arrangements may be entered into as a result of an unpaid present entitlement (UPE) between a trust and a private company, as well as a UPE that arises between two trusts. The latter is addressed in paragraphs 117 and 118 of PS LA 2010/4. Any reference in this Guideline to a private company beneficiary should also include a reference to a trustee beneficiary who has validly adopted investment Option 1 or investment Option 2 in accordance with PS LA 2010/4.
+
+[2]
+
+See paragraphs 62 to 73 of PS LA 2010/4.
+
+[3]
+
+See paragraphs 74 to 85 of PS LA 2010/4.
+
+[4]
+
+It is likely that those using investment Option 1 for UPEs arising between 16 December 2009 and 30 June 2010 will have entered into the sub-trust arrangement in the 2010-11 income year and, therefore, the principal of the loan will not be due to be repaid until sometime in the 2017-18 income year. However, the Commissioner has been made aware that some private companies entered into the sub-trust arrangement in the 2009-10 income year and, therefore, the principal of the loan will be due to be repaid in the 2016-17 income year.
+
+[4A]
+
+The last possible UPEs that can be put on a sub-trust arrangement and investment Option 1 or investment Option 2 as described in PS LA 2010/4 are those that arise in the 2021-22 income year. If a UPE that has been created in the 2021-22 income year is dealt with in accordance with investment Option 1 in the 2022-23 income year, the sub-trust arrangement will mature in the 2029-30 income year. If the UPE is dealt with in accordance with investment Option 2 in the 2022-23 income year, the sub-trust arrangement will mature in the 2032-33 income year.
+
+[4B]
+
+For the avoidance of doubt, this Guideline will apply to sub-trust arrangements commenced on or after 1 July 2022 in respect of a trust entitlement arising before that date, provided the conditions in PS LA 2010/4 and any other conditions described in this Guideline are satisfied.
+
+[5]
+
+[Omitted.]
+
+[6]
+
+Section 109D.
+
+[7]
+
+Section 109N contains the requirements for a loan to be on complying terms for the purposes of Division 7A.
+
+[8]
+
+'Lodgment day' is defined in subsection 109D(6) to mean the earlier of the due or actual date of lodgment of the private company's return of income for the year of income.
+
+[9]
+
+Subsection 109D(3).
+
+[10]
+
+See paragraphs 19 to 26 of TR 2010/3.
+
+[11]
+
+See paragraph 58 of PS LA 2010/4. Alternatively, the funds may be lent to the main trust under an investment in a specific income producing asset or investment with the UPE repayable upon the disposal of the asset or investment (Option 3). This Guideline does not apply to Option 3.
+
+[12]
+
+See paragraphs 64 and 65 of PS LA 2010/4 (investment Option 1) and paragraphs 76 and 77 of PS LA 2010/4 (investment Option 2).
+
+[13]
+
+[Omitted.]
+
+[14]
+
+[Omitted.]
+
+[15]
+
+See the table in paragraph 61 of PS LA 2010/4.
+
+[16]
+
+See section 170, which provides the period within which the Commissioner may amend an assessment. Table item 5 of subsection 170(1) states '[t]he Commissioner may amend an assessment at any time if he or she is of the opinion there has been fraud or evasion'.
+
+[a]
+
+Date may be different depending on the lodgment day of the main trust's tax return.
+
+[b]
+
+Date may be different if the main trust has an approved substituted accounting period.
+
+[c]
+
+Date may be different depending on the lodgment day of the private company's tax return.
+
+[d]
+
+The deemed dividend arises at the end of the income year in which the loan matures and trustee of the sub-trust fails to enter into a complying loan agreement before the private company's lodgment date.
+
+###
+
+ATO references:
+File 1-BQE1QD6
+
+ISSN: 2209-1297
+
+Business Line:
+PW
+
+Related Rulings/Determinations:
+
+TR 2010/3
+
+TD 2022/D1
+
+Legislative References:
+
+ITAA 1936 109D
+
+ITAA 1936 109D(3)
+
+ITAA 1936 109D(6)
+
+ITAA 1936 109N
+
+ITAA 1936 109R
+
+Other References:
+
+PS LA 2010/4
+
+PCG 2017/13 history
+
+| Date: | Version: | Change:
+| 19 July 2017 | Original guideline |
+| 15 August 2018 | Updated guideline |
+| 27 June 2019 | Updated guideline |
+| 30 June 2021 | Updated guideline |
+| 7 June 2022 | Updated guideline |
+You are here → | 10 August 2022 | Updated guideline |
+
+Copyright notice
+
+© Australian Taxation Office for the Commonwealth of Australia
+
+You are free to copy, adapt, modify, transmit and distribute material on this website as you wish (but not in any way that suggests the ATO or the Commonwealth endorses you or any of your services or products).

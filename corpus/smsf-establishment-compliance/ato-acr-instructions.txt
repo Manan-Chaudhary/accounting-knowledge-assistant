@@ -1,0 +1,896 @@
+Title: Auditor/actuary contravention report instructions
+Publisher: Australian Taxation Office
+Document type: form and instructions
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions
+Retrieved: 2026-09-25
+Topic: smsf-establishment-compliance
+---
+
+=== Section: Completing the auditor contravention report
+Source URL: https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions
+
+# Completing the auditor contravention report
+
+Work out how to complete an Auditor/actuary contravention report (NAT 11239) including reporting criteria and examples.
+Last updated 11 March 2025
+
+## Lodge your auditor contravention report
+
+Lodge your auditor contravention reports electronically using Online services for business.
+
+## Reporting contraventions
+
+Apply reporting criteria to work out the contraventions of the SISA and SISR that need to be reported.
+
+## Reporting criteria
+
+These tests set out what contraventions you must report.
+
+## How to complete the ACR form
+
+Guidance notes on how to complete the questions found in the form.
+
+## Addendum for financial years impacted by COVID-19
+
+Financial impacts of COVID-19 on SMSF trustees.
+
+## More information
+
+Guidance notes to help complete the Auditor actuary contravention report.
+QC17603
+
+=== Section: Reporting contraventions
+Source URL: https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions/reporting-contraventions
+
+# Reporting contraventions
+
+Apply reporting criteria to work out the contraventions of the SISA and SISR that need to be reported.
+Last updated 11 March 2025
+
+## Apply reporting criteria
+
+As an approved SMSF auditor or actuary, you must apply reporting criteria to work out the contraventions of the SISA and SISR that need to be reported in the approved form. You may also report other important information using this form.
+
+## Reporting contraventions resulting from events
+
+You must report contraventions and other matters resulting from an event. An 'event' is an action or inaction by the trustees that may lead, or has led, to one or more contraventions.
+
+When you prepare this report, describe the event and choose the relevant provisions from the list of reportable sections and regulations of the SISA and SISR that have been breached by the trustees. You can use the ACR to report contraventions for multiple events.
+
+## When to report contraventions
+
+You must lodge a report within 28 days of completing the audit if, in the normal course of conducting the audit, you form the opinion that a contravention of the SISA or SISR may have occurred, may be occurring or may occur either:
+
+- during the financial year being audited
+
+- before or after the financial year being audited.
+
+The contravention must meet the reporting criteria.
+
+## Reporting contraventions where an audit engagement is terminated
+
+Where you identify a contravention while doing an audit, but the engagement is terminated before the audit is finalised, you still have an obligation to report a contravention to both the trustee and to us if it meets the reporting criteria.
+
+Reporting obligations exist from the time you are appointed by the SMSF trustees to do the annual audit of the fund’s operations. They don't cease because an audit engagement is terminated early. This applies provided your opinion is formed during, or in connection with, performing your audit functions and regardless of whether the engagement is terminated by the trustees or the auditor.
+
+When lodging the ACR you may also want to provide any additional concerns in Section G of the form. For example, if your services have been terminated because you identified a reportable contravention.
+QC17603
+
+=== Section: Reporting criteria
+Source URL: https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions/reporting-criteria
+
+# Reporting criteria
+
+These tests set out what contraventions you must report.
+Last updated 11 March 2025
+
+## Contraventions to report
+
+Work through each test and, where applicable, report the sections and regulations listed in tables 1A and 1B. For the 2019–20, 2020–21 and 2021–22 financial years, you also need to consider instructions in the Addendum for financial years impacted by COVID-19. These instructions relate to rental, loan repayment and in-house asset relief, market valuations and early release of super due to COVID-19.
+
+You must always comply with prescribed auditing and assurance standards.
+
+You must report contraventions that meet the reporting criteria. You can also report contraventions that do not meet the reporting criteria if, in your professional judgment, the regulator should be aware of the contravention.
+
+## Test 1: Fund definition test
+
+Where the fund fails to meet the definition of an SMSF under section 17A of the SISA, you can report this event in Section E.
+
+Failing to meet the definition of an SMSF can result in a contravention of the SISA which may result in the fund losing its complying status. You should report this to us because, as the regulator of these funds, we may be able to assist the trustees in avoiding serious consequences if they want their fund to remain a complying SMSF.
+
+Where you identify a contravention of section 126K of the SISA (disqualified persons not to be trustees or directors of corporate trustees), report this event in Section E.
+
+You need to report this to us as contraventions of section 126K are serious. The removal of a trustee or director of a corporate trustee to rectify the contravention may impact on whether a fund meets the definition of an SMSF under section 17A of the SISA.
+
+Go on to test 2.
+
+## Test 2: New fund test
+
+As at the end of the financial year, if the SMSF is less than 15 months old and there are contraventions, you need to identify if any single contravention has exceeded $2,000. If this is the case, you report all contraventions of the sections and regulations listed in tables 1A and 1B, regardless of the financial thresholds. You apply no further tests.
+
+If this is not the case, go to test 3.
+
+The 15 months is measured from the establishment date of the fund. A fund is generally established on the date it first holds any assets.
+
+## Test 3: Trustee behaviour test
+
+You must report a contravention of a section or regulation listed in tables 1A and 1B where the trustees have previously received advice of a contravention and after receiving this advice, they breached the same section or regulation, even if it doesn't meet the reporting threshold test. For example, you may establish that the trustees received advice of a contravention previously from reviewing the fund's prior year working papers.
+
+Go to test 4.
+
+## Test 4: Trustee behaviour test
+
+You must report a contravention of a section or regulation listed in tables 1A and 1B where an identified contravention from a previous financial year hasn't been rectified at the time of the current audit.
+
+Go to test 5.
+
+## Test 5: Trustee behaviour test
+
+Statutory time period refers to periods prescribed in the SISA and SISR.
+
+The reportable sections and regulations that have a statutory time period are listed in tables 1A and 1B.
+
+If the trustees fail to meet a statutory time period by more than 14 days, then these contraventions are reported as per the sections and regulations listed in tables 1A and 1B.
+
+Go to test 6.
+
+## Test 6: Financial threshold test
+
+Where the value of all contraventions is more the 5% of the value of the fund's total assets, identified contraventions are reported as per the sections and regulations in tables 1A and 1B.
+
+Any additional information needs to be reported in accordance with auditing and assurance standards and your professional judgment.
+
+If this doesn't apply, go to test 7.
+
+### Example: financial threshold test
+
+An SMSF has $250,000 in total assets, including an asset acquired through a related party for $25,000. This acquisition contravened section 66 because the asset wasn't one of the exceptions from the general prohibition on acquiring assets from a related party.
+
+The value of the contravention is 10% of the value of the fund’s total assets. The contravention must be reported because it is greater than 5% of the fund's total assets.
+
+End of example
+
+In relation to test 6, if section 83 in-house assets (prohibition on further acquisition) is contravened, then the contravention value is the amount over the statutory 5% limit.
+
+For example, if the market value ratio of a fund's in-house assets is 7%, then the contravention value is 2% of the fund's assets (7% minus 5% limit). The contravention value is not greater than 5% of the value of the fund's total assets.
+
+## Test 7: Financial threshold test
+
+If the value of all contraventions of a section or regulation listed in tables 1A and 1B is more than $30,000, all identified contraventions are reported.
+
+Any additional information needs to be reported in accordance with the auditing and assurance standards and your professional judgment.
+
+## Professional judgment
+
+In some situations, a contravention may have occurred in the fund, but you might be unable to determine the value of the contravention.
+
+For example, you may not have sufficient appropriate audit evidence to determine whether the assets of the fund have been valued at market value. This means a regulation 8.02B contravention may have occurred.
+
+In this case you may use your professional judgment to determine whether you think the value of the contravention could meet the financial threshold tests and where appropriate, report an event at Section E of the form. If you are unsure whether this would constitute a reportable contravention, you can provide this information at Section G.
+
+A specific scenario where you may use your professional judgment in deciding whether to lodge an ACR, is in relation to market value contraventions for assets held by service organisations. ASA 402 is relevant in determining the audit procedures required for this type of asset [Regulation 8.02B of the Super Industry (Supervision) Regulations 1994].
+
+If after performing the audit procedures you conclude that the risk of a Regulation 8.02B contravention is low, but you are unable to obtain sufficient appropriate audit evidence in accordance with ASA 402, you may use your professional judgment to determine if an ACR is required.
+
+The risk may be considered low if the modification of Part B of the IAR is solely by virtue of a modification of Part A, due to the inability to obtain sufficient appropriate audit evidence over the rights and obligations assertion of investments managed by a service organisation, leading to the inability to ensure the assets have been reported at market value.
+
+If you have qualified Part B of the IAR for a Regulation 8.02B contravention that otherwise meets the reporting criteria and do not lodge an ACR, your audit file should clearly explain the procedures performed and evidence relied on to conclude the risk of a contravention is low.
+
+We also encourage you to report contraventions and other information that you think will help us perform our function as the regulator of SMSFs at Section G of the form. To decide if you should report contraventions and other important facts, even if they don't meet any of the tests, apply both:
+
+- the auditing and assurance standards
+
+- your professional judgment.
+
+Before you complete this section, consider if you consent (under paragraph 14ZZW(2)(e) of the Taxation Administration Act 1953 for the purposes of the tax whistleblower legislation), to disclosing to the Commissioner of Taxation your identity (if required) when using this information in administering any taxation laws.
+
+To keep your identity confidential, make a disclosure by completing the tip-off form. Alternatively, find the form in the Contact us section of the ATO app or phone in your tip-off on 1800 060 062.
+QC17603
+
+=== Section: How to complete the ACR form
+Source URL: https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions/how-to-complete-the-report
+
+# How to complete the ACR form
+
+Guidance notes on how to complete the questions found in the form.
+Last updated 19 January 2026
+
+## Instructions
+
+The following instructions explain how to complete the ACR questions found in the ACR form.
+
+Mandatory questions are indicated with an *.
+
+Questions asking for information about an event must be answered for every event that you report.
+
+For more information about lodging ACRs and ACAs online, see Approved SMSF auditors in Online services for business.
+
+## Section A: Report information
+
+### *Question 1
+
+This report applies to the financial year ending 30 June.
+
+Provide the financial year of the audit that the report applies to.
+
+Each report relates to the specified financial year only. If you are conducting audits of more than one financial year, report the contraventions you identify during the audit of each financial year in a separate report.
+
+### *Question 2
+
+This report is new or revised.
+
+Place an X in one applicable box only.
+
+A report is either:
+
+- new – if it is the first time you are lodging a report for the events
+
+- revised – if it is lodged to correct or change information previously reported on a new report or earlier revised report.
+
+To revise a previously lodged report, you must re-report all the information (not just the items you want to revise).
+
+The revised report replaces the previous report.
+
+## Section B: Fund information
+
+### *Question 3
+
+Name of self-managed superannuation fund (SMSF).
+
+Provide the full name of the SMSF as it appears on the fund’s trust deed.
+
+### *Question 4
+
+Australian business number (ABN) and/or tax file number (TFN).
+
+Provide the SMSF’s ABN and/or TFN. You must also provide these details at the top of page 3 on the form.
+
+We are authorised by the Taxation Administration Act 1953 to request the provision of TFNs. We will use the TFN to identify the entity in our records. It is not an offence not to provide the TFN.
+
+Taxation law authorises us to collect information and disclose it to other government agencies.
+
+This question must be answered with either the TFN or the ABN of the SMSF.
+
+### *Question 5
+
+What was the value of the fund’s total assets at the end of the year of audit?
+
+Provide the value of the SMSF’s total assets as shown in their financial statements at the end of the financial year of audit.
+
+Use whole dollars only.
+
+## Section C: Audit firm information
+
+### *Question 6
+
+Auditing firm details.
+
+Provide:
+
+- the name and ABN of the firm you work for
+
+- your own ABN if you are a sole practitioner.
+
+## Section D: Auditor information
+
+### *Question 7
+
+Auditor's details.
+
+Provide your details as the auditor or actuary lodging the ACR.
+
+For your phone number, print the 10-digit phone number, including the area code, and leave no spaces.
+
+Make sure the address you provide is the most appropriate address to receive mail from us.
+
+You must report your name, at least one contact number and your postal address.
+
+## Section E: Contraventions
+
+Questions marked with an * are mandatory for each event that is reported except where otherwise stated (refer to Questions 12, 15 and 17).
+
+A contravention is either an:
+
+- action prohibited under the SISA and SISR
+
+- inaction that results in the trustee not meeting their obligations under the SISA and SISR.
+
+Only contraventions of the sections and regulations listed in tables 1A and 1B should be reported here.
+
+If you are concerned about a contravention or continued contravention of a section or regulation that is not listed in tables 1A and 1B, you may report that information at Section G.
+
+An event is something that may lead, or has led, to one or more contraventions. If an event leads to a contravention of more than one section or regulation, you should list each contravention that relates to the event.
+
+Don't report unrelated contraventions as a single event.
+
+### Example: an event leading to contravention of more than one section
+
+An SMSF borrows money that is used to purchase a home from a member (the loan is not a limited recourse borrowing arrangement and the home is not business real property).
+
+This event results in several contraventions of the SISA, including section 66 (acquisition of assets) and section 67 (borrowing). The auditor reports this as one event and lists each contravention on the form for that event.
+
+End of example
+
+We rely on complete reporting from SMSF auditors to understand fund compliance year to year. Complete reporting requires auditors to report contraventions in the year they occur and in all following years that the contravention remains unrectified. This includes where the auditor is aware that we have advised the trustees that we would take no further action, at that time, in relation to the contravention.
+
+While no further action may be appropriate in one year, if we receive information that a contravention remains unrectified in following years, we may choose to take a different compliance approach with that fund.
+
+### Example: an existing contravention that was previously reported and can be rectified, but has not been
+
+Roger is an SMSF auditor engaged to audit the McAlister SMSF. The McAlister SMSF has a single member and a corporate trustee, McAlister SMSF Pty Ltd. The company also operates a separate business.
+
+Roger identifies during the 2020–21 financial year audit that the bank account used by the fund is recorded as held in the name of the company, but not 'as trustee for' the fund. However, it has also been used for some business transactions.
+
+Based on the evidence, Roger decides there is a contravention of regulation 4.09A of the Superannuation Industry (Supervision) Regulations 1994. The fact that the bank account is not recorded in the name of the company 'as trustee for' the fund doesn't itself mean there is a contravention. However, the corporate trustee is not keeping its assets separate to, and distinguishable from, the assets held by the company in its non-trustee company.
+
+Roger reports the contravention to the ATO in an ACR, and to the corporate trustee in the SMSF Independent Auditor's Report. He advises the trustee to take steps to correct the separation of assets contravention by:
+
+- arranging with the bank to have the name of the account changed to McAlister SMSF Pty Ltd as trustee for the McAlister SMSF, and
+
+- ensuring the fund's bank account is used solely for the purposes of the SMSF.
+
+During the 2021–22 financial year audit, Roger identifies that the fund trustee has not made any arrangements to correct the issue. The company continued to use the fund's bank account for some of its business transactions. This is a continuing contravention that has previously been reported, but can be rectified, so Roger is required to report the contravention again for the 2021–22 year.
+
+End of example
+
+We accept that some contraventions only occur at a point in time and don’t continue in future years. You should report these contraventions in the year they occur (or when you first become aware of them) but not in subsequent years. Examples of contraventions that should be reported in the year they occur and not in subsequent years (unless repeated) include contraventions of sections 66, 103 and 104A of the SISA.
+
+Section 103 and section 66 contraventions are unable to be rectified, so these should always be reported as unrectified.
+
+Reporting section 104A contraventions – trustee declarations:
+
+- If an auditor has no evidence that an existing or new trustee client signed a trustee declaration within 21 days of appointment, the auditor should lodge an ACR reporting an unrectified section 104A contravention unless they are aware that one has already been lodged for that contravention.
+
+- If the trustee signs a new trustee declaration before the auditor lodges the ACR, the auditor can report the section 104A contravention as one that is rectified.
+
+- If the auditor has previously verified evidence that a trustee declaration was signed by the trustee within 21 days of appointment, but the trustee is unable to provide a copy to the auditor for their audit file for the current audit year, the auditor should get the trustee to sign a new one. The new declaration can act as a valid replacement for the previous once such that an ACR is not required.
+
+You should report all the following in the current financial year:
+
+- contraventions from previous financial years that can be rectified but have not been
+
+- contraventions that have recurred
+
+- contraventions that have otherwise not been reported previously.
+
+### Example: an existing contravention that was previously reported but can't be rectified
+
+Gillian is the SMSF auditor for the Smith SMSF. In the 2019–20 financial year audit, Gillian identified that minutes of trustee meetings hadn't been kept. Gillian reported the section 103 contravention in the 2019–20 ACR. Since then, the trustees have retained all minutes of meetings.
+
+Gillian is auditing the 2020–21 year. She knows there is a contravention of section 103 because, even though the trustees kept the minutes of meetings for 2020–21, they have not retained minutes of meetings for the last 10 years.
+
+Because this contravention can't be rectified and it was previously reported in the 2019–20 ACR, it doesn't have to be reported again.
+
+End of example
+
+### *Question 8
+
+Did the event commence before the audit period?
+
+Place an X in the applicable box.
+
+### *Question 9
+
+Start date of event.
+
+Provide the date the event started.
+
+This may be in an earlier financial year than the one being audited. If the event started in an earlier financial year and you are unable to identify the start date, leave this blank.
+
+#### Example: start date of event
+
+An SMSF borrowed money in an earlier financial year and the money hasn't been paid back, so the breach has not been rectified by the trustees. The auditor provides the date in the earlier financial year that the fund borrowed money.
+
+End of example
+
+### *Question 10
+
+Describe the event, including any mitigating factors.
+
+Provide details of the event, including any mitigating information that may help us work out what compliance action we should take.
+
+You can report up to 6 separate events on one ACR.
+
+### *Question 11
+
+Have all the contraventions been fully rectified or do the trustees have a plan to fully rectify all of them?
+
+Place an X in the applicable box.
+
+### *Question 12
+
+What is the estimated completion date, or if fully rectified, when was this completed?
+
+Provide the final date the contraventions were fully rectified or the estimated rectification date.
+
+This question must be answered for every event that you report where it applies. Leave this blank if you can't estimate a date. For example, where there is no plan to rectify the contravention.
+
+### *Question 13
+
+Describe any steps taken to rectify the contraventions or any planned steps to rectify the contraventions.
+
+Provide details of the steps taken to rectify the contravention and any planned action to rectify the contravention. Include details of when it is expected the contraventions will be rectified.
+
+### *Question 14
+
+What sections/regulations have been, or may be, contravened?
+
+Provide the sections or regulations for the event. Copy each one exactly as it appears in tables 1A and 1B.
+
+For each event, you must enter at least one section or regulation – don't repeat the same section or regulation for any one event.
+
+Where the event results in, or may result in, more than one contravention, list each section or regulation on a separate line and complete the information required for questions 14 to 17.
+
+Contraventions of sections and regulations not listed in tables 1A and 1B may be reported at Section G.
+
+Section | Section title | Does a statutory time period apply?
+S17A | SMSF definition | No
+S35C(2) | Trustee to provide documents to the auditor | Yes. Trustees must ensure that requested relevant documents are given to the auditor within 14 days of the request being made.
+S62 | Sole purpose test | No
+S65 | Lending or providing financial assistance to members or their relatives | No
+S66 | Acquisition of assets from related parties | No
+S67 | Borrowing by the fund | Yes. For borrowing exceptions only. A temporary borrowing to pay beneficiaries or to make a super surcharge payment must not exceed 90 days. A temporary borrowing to cover settlement of securities transactions must not exceed 7 days.
+S82 | In-house assets – exceeding in-house assets ratio | Yes. Market value ratio for the 2000–01 year of income and later years of income. If it exceeds 5%, the trustee must prepare and carry out a written plan to reduce the market value ratio to 5% or less before the end of the following year of income.
+S83 | In-house assets – prohibition on further acquisition | No
+S84 | In-house asset rules must be complied with | No
+S85 | In-house assets – prohibition of avoidance schemes | No
+S103 | Minutes and records | Yes. Trustees must retain minutes of all meetings and records of all decisions made for at least 10 years.
+S104A | Trustee declaration | Yes. A trustee declaration in the approved form must be signed within 21 days of becoming a trustee (or a director of a corporate trustee) of an SMSF.
+S109 | Investments to be maintained on an arm’s length basis | No
+S126K | Disqualified persons not to be trustees | Yes. Trustees must immediately tell us in writing if a trustee is or becomes a disqualified person.
+
+Regulation | Regulation title | Does a statutory time period apply?
+R4.09 | Investment strategy | No
+R4.09A | Separation of assets | No
+R5.08 | Minimum benefits | No
+R6.17 | Restriction on payment of benefits | No
+R7.04 | Acceptance of contributions | Yes. Returning contributions to members within 30 days – for example, where no TFN is quoted.
+R8.02B (Assets to be valued at market value for the 2012–13 and later income years) | Valuation of assets | No
+R13.14 | Charges over assets of the fund | No
+R13.18AA (From 1 July 2016, all investments in collectables and personal use assets must comply with these rules, regardless of when they were acquired.) | Investment in collectables and personal use assets | Yes. Collectables and personal-use assets need to be insured within 7 days of the date of acquisition by the SMSF.
+
+### *Question 15
+
+What is the maximum value of the contravention?
+
+Provide the maximum dollar amount of the contravention. Use whole dollars only.
+
+This question should only be left blank for contraventions of section 17A, subsection 35C(2), section 62, section 85, section 103, section 104A, section 126K and regulation 4.09. You must answer this question for all contraventions of other sections and regulations.
+
+There will be a contravention of regulation 8.02B of the SISR where no evidence or insufficient appropriate evidence is provided to support the market value of assets listed in the fund’s financial statements (for example, unlisted shares or units).
+
+You must use your professional judgment to determine whether the contravention is reportable because it meets the financial threshold tests.
+
+If you're unsure whether this would constitute a reportable contravention, you may provide information about the issue at Section G of the form. Otherwise, you should report the contravention as an event at Section E and record the maximum value of the contravention as the value of the asset listed in the financial statements.
+
+You should also provide details in the event description field describing the nature of the asset, and why the market value can't be determined.
+
+#### Example: maximum value of the contravention
+
+A fund contravenes section 65 by lending money to a member of the fund. The auditor reports the highest value of the loan (including unpaid interest) that was outstanding at any time during the year.
+
+End of example
+
+### *Question 16
+
+Has the contravention been fully rectified?
+
+Place an X in the applicable box.
+
+Answer ‘Yes’ only if you have confirmed the contravention has been fully rectified.
+
+Answer ‘No’ if the contravention has not been fully rectified, even if it is in the process of being rectified.
+
+#### Example: reporting rectified contraventions
+
+Mia is the auditor for the Connolly SMSF. She identified that during the 2018–19 financial year, the Connolly SMSF had loaned money to a member. At the time Mia conducted the audit, the loan had been repaid in full with interest.
+
+As the contravention met a reporting test, Mia reports the loan in a 2018–19 ACR as fully rectified.
+
+End of example
+
+### *Question 17
+
+What is the outstanding value to be rectified (last known)?
+
+Provide the outstanding value to be rectified if you have answered ‘No’ to question 16. Use whole dollars only.
+
+This question should only be left blank for contraventions of section 17A, subsection 35C(2), section 62, section 85, section 103, section 104A, section 126K and regulation 4.09. You must answer this question for all contraventions of other sections and regulations.
+
+#### Example: outstanding value to be rectified
+
+A fund lent $200,000 to a fund member; the member repaid $150,000, plus interest. The auditor reports that the outstanding value to be rectified is $50,000, plus any unpaid interest.
+
+End of example
+
+#### Example: applying the reporting tests
+
+Leon established an SMSF in 2019.
+
+Sian audits Leon’s SMSF for the 2021–22 financial year in November 2022 and identifies the following.
+
+On 16 June 2022, Leon borrowed $10,000 from his SMSF’s bank account to pay his personal expenses. Leon thought it was allowable because the fund wasn’t using the money and he drafted a loan agreement. He gave no thought to paying interest for the loan.
+
+The fund has $420,000 in assets. It has a rental unit $300,000, unlisted shares in an unrelated private company $100,000, cash $10,000 and a loan of $10,000.
+
+Sian identifies the following contraventions:
+
+- a loan of $10,000, contravening section 65 – lending or providing financial assistance to members or their relatives
+
+- financial assistance of $458 (calculated using reasonable market rates from the date the money is taken out until 30 June) for failing to account for interest, contravening section 65 – lending or providing financial assistance to members or their relatives
+
+- the investment is not at arm’s length because interest wasn't considered for the loan, contravening section 109 – investments to be maintained on an arm’s-length basis.
+
+Sian tells Leon of the issues and explains the contraventions must be rectified by repaying the $10,000, plus interest. Leon assures Sian he will do this by the end of December 2022. This is the first time Leon has contravened the SISA and SISR.
+
+Sian uses the following tests to decide whether she should report the contravention.
+
+Test 1 – Did the fund fail to meet the definition of an SMSF?
+
+No.
+
+Test 2 – As at the end of the financial year, is the SMSF less than 15 months old and did the value of any single contravention of a section or regulation listed in tables 1A or 1B exceed $2,000?
+
+No. Leon established his SMSF in 2019, so it is older than 15 months.
+
+Test 3 – Have the trustees previously received advice of a contravention that they have breached again?
+
+No.
+
+Test 4 – Is there an identified contravention from a previous year that has not been rectified at the time this audit is being conducted?
+
+No.
+
+Test 5 – Did the trustees fail to meet a statutory time period by more than 14 days?
+
+Not applicable – there is no specified time period for these contraventions.
+
+Test 6 – Was the total value of all contraventions greater than 5% of the value of the fund’s total assets?
+
+The contravention value is calculated as follows.
+
+Section | Value
+Section 65 – $10,000 loan, plus interest amount $458 | $10,458
+Section 109 – interest | $458
+Maximum value of all contraventions | $10,916
+
+The percentage value of the contraventions is $10,916 ÷ $420,000 = 2.59% (less than 5% threshold).
+
+In this example, there was only one event. If there was more than one event, you add the values of each event to give the total percentage of the contraventions.
+
+Test 7 – Was the total value of all contraventions greater than $30,000?
+
+The contravention total value is $10,916, which is less than $30,000.
+
+In this example there was only one event. If there was more than one event, you add the values of each event to calculate the total value of the contraventions.
+
+As none of the reporting criteria were met, Sian is not required to report this contravention. She applies the Auditing and assurance standards and her professional judgment and decides not to report the contravention because Leon has assured her the contravention will be rectified by the end of December 2022.
+
+However, she qualifies the Independent auditor's report and details the contraventions and the required rectification actions in the management letter she provides to Leon at the completion of the audit.
+
+End of example
+
+#### Example: completing Section E of the report
+
+During the next audit, for the 2022–23 financial year, Sian finds that Leon has not repaid the $10,000. Interest is calculated at $1,458 (calculated using reasonable market rates from the date the money is taken out until 30 June or date of repayment). She doesn't identify any other contraventions.
+
+Sian applies the tests to decide whether she should report the contravention.
+
+Test 1 – Did the fund fail to meet the definition of an SMSF?
+
+No.
+
+Test 2 – As at the end of the financial year, is the SMSF less than 15 months old and did the value of any single contravention of a section or regulation listed in tables 1A or 1B exceed $2,000?
+
+No. Leon established his SMSF in 2019, so it is older than 15 months.
+
+Test 3 – Have the trustees previously received advice of a contravention that they have breached again?
+
+No. Sian did not identify any repeated contraventions previously advised to the trustees.
+
+Test 4 – Is there an identified contravention from a previous year that has not been rectified at the time this audit is being conducted?
+
+Yes. Leon had been advised of the breach by the auditor in the previous year and had not taken any steps to repay the loan.
+
+- Leon failed to repay the $10,000 he borrowed during the previous year, contravening section 65 – lending or providing financial assistance to members.
+
+- Leon failed to pay interest on the borrowing, contravening section 65 – lending or providing financial assistance to members.
+
+- Leon failed to take steps to recover the outstanding interest on the borrowing, contravening section 109 – investments to be maintained on an arm’s-length basis.
+
+Each of these contraventions must be reported.
+
+Because all the contraventions identified meet reporting test 4, Sian must report all the contraventions. (As Sian didn't identify any further contraventions, she doesn't need to apply the remaining tests.)
+
+Sian completes Section E of the contravention report for the 2022–23 year by including text as follows.
+
+Event one
+
+Question 8: Did the event commence before the audit period? Place an X in the Yes box.
+
+Question 9: Start date of event. Enter 16/06/2022
+
+Question 10: Describe the event, including any mitigating factors. Add text 'Leon borrowed $10,000 from the fund bank account to pay his sole trading business creditors. Trustee/s have not rectified this contravention from the previous year where this was identified and communicated to the fund.'
+
+Question 11: Have all the contraventions been fully rectified or do the trustees have a plan to fully rectify all of them? Place an X in the No box.
+
+Question 12: What is the estimated completion date, or if fully rectified, when was this completed? Leave this blank.
+
+Question 13: Describe any steps taken to rectify the contraventions or any planned steps to rectify the contraventions. Add text 'None'.
+
+Question 14: What sections/regulations have been, or may be, contravened? Enter s65 on the first line and s109 on the second line.
+
+Question 15: What is the maximum value of the contravention? Enter 11,458 on the first line and 1,458 on the second line.
+
+Question 16: Has the contravention been fully rectified? Place an X in the No box, on the first 2 lines.
+
+Question 17: What is the outstanding value to be rectified (last known)? Enter 11,458 on the first line and 1,458 on the second line.
+
+Example: completing Section E of the report for multiple events
+
+During the 2023–24 financial year audit conducted at the end of November, Sian finds:
+
+- Leon had repaid the $10,000 plus interest as previously agreed
+
+- on 27 January 2024, Leon borrowed $5,000 from the fund to pay a personal expense, again with the intention to repay the money to the fund
+
+- Leon used a residential unit the fund owned for 3 weeks over the Christmas period (25 December 2023–14 January 2024) and paid a commercial rental amount to the fund in advance
+
+- the fund has $520,000 in assets (rental unit $400,000, unlisted shares in an unrelated private company $100,000, cash $15,000, loan $5,000).
+
+Sian had also made a written request on 16 September 2024 for some bank statements and evidence of the value of the unlisted shares. Leon took 2 months to provide the bank statements and has not provided any evidence to support the market value of the shares.
+
+Sian identifies the following contraventions.
+
+- A loan of $5,000, contravening section 65 – lending or providing financial assistance to members or their relatives.
+
+- Financial assistance of $416 (calculated using reasonable market rates from the date the money is taken out until 30 June) for failing to account for interest, contravening section 65 – lending or providing financial assistance to members or their relatives.
+
+- The investment is not at arm’s length because interest was not considered for the loan, contravening section 109 – investments to be maintained on an arm’s length basis.
+
+- Use of the rental unit causes it to become an in-house asset, taking the in-house asset ratio above 5%, contravening section 83 – in-house asset – prohibition on further acquisition.
+
+- Trustee failed to take reasonable steps to ensure the in-house asset provisions were complied with, contravening section 84 – in-house assets – reasonable steps.
+
+- Failing to provide requested bank statement and evidence of the value of the unlisted shares within 14 days, contravening subsection 35C(2) – trustee to provide documents to the auditor.
+
+- The unlisted shares in the unrelated private company of $100,000 are listed in the financial statements at cost – the value of the unlisted shares could not be verified as being reported at market value contravening regulation 8.02B.
+
+Sian tells Leon of the contraventions and explains that he must repay the $5,000, plus interest. Leon immediately repays $2,000 and the outstanding interest (calculated using reasonable market rates) but requires more time to repay the remaining amount. Leon decides to sell a business asset to obtain funds to repay the remaining $3,000. Settlement is due to take place in mid-January 2025. Sian calculates the interest for this period.
+
+Sian can't determine the value of the contravention relating to the unlisted shares but in her professional judgment, thinks the understatement for this event could be greater than 5% of the value of the fund's total assets and greater than $30,000.
+
+Sian uses the following tests to decide whether she should report the contraventions.
+
+Test 1 – Did the fund fail to meet the definition of an SMSF?
+
+No.
+
+Test 2 – As at the end of the financial year, is the SMSF less than 15 months old and did the value of any single contravention of a section or regulation listed in tables 1A or 1B exceed $2,000?
+
+No. Leon established his SMSF in 2019, so it is older than 15 months.
+
+Test 3 – Have the trustees previously received advice of a contravention that they have breached again?
+
+Yes. The same contravention occurred in the previous 2 years and the auditor advised Leon.
+
+This must be reported.
+
+Failing to account for interest (section 65 – financial assistance):
+
+- The same contravention occurred in the previous 2 years.
+
+- The contravention value to be reported is $5,453 (loan of $5,000 plus interest paid $416 plus interest payable $37).
+
+Failing to account for interest (section 109 – non-arm’s length):
+
+- The same contravention occurred in the previous 2 years.
+
+- The contravention value to be reported is $453 (interest paid $416 plus interest payable $37).
+
+Test 4 – Is there an identified contravention from a previous year that has not been rectified at the time this audit is being conducted?
+
+No.
+
+Test 5 – Did the trustees fail to meet a statutory time period by more than 14 days?
+
+Yes. Failure to provide documents – subsection 35C(2) – trustee to provide documents to the auditor.
+
+Test 6 – Was the total value of all contraventions greater than 5% of the value of the fund’s total assets?
+
+Yes. Use of rental unit causes it to become an in-house asset, contravening section 83 in-house assets – prohibition on further acquisition.
+
+- The market value of the rental unit is $400,000.
+
+- The in-house ratio is calculated at 76.92% ($400,000 ÷ $520,000) which is over the statutory 5% limit.
+
+- The allowable in-house assets amount is $26,000 (5% × $520,000).
+
+- The maximum value of the contravention is $374,000 ($400,000 – $26,000).
+
+The total value of all contraventions is calculated as follows.
+
+Section | Value
+Section 65 – lending or providing financial assistance to members | $5,453
+Section 109 – investments to be maintained at an arm’s length basis | $453
+Section 83 – in-house assets – prohibition on further acquisition | $374,000
+Section 84 – in-house assets – reasonable steps | $374,000
+Regulation 8.02B – asset must be valued at market value | $100,000
+Total value of all contraventions | $853,906
+
+As the total value of all contraventions is greater than 5% of the value of the fund’s total assets ($853,906 ÷ $520,000 = 164.21%) all identified contraventions must be reported – Sian doesn't need to apply test 7.
+
+The value of the unlisted shares cannot be verified and so the maximum value of the contravention must be reported on the form as $100,000. As the total value of the contravention is greater than 5% of the value of the fund’s total assets of $520,000, the identified contravention must be reported – Sian doesn't need to apply test 7.
+
+Sian completes Section E of the contravention report for the 2023–24 year by including text as follows:
+
+Event one
+
+Question 8: Did the event commence before the audit period? Place an X in the No box.
+
+Question 9: Start date of event. Enter 27/01/2024.
+
+Question 10: Describe the event, including any mitigating factors. Add text 'Leon borrowed $5,000 from the fund bank account to pay his sole trading business creditors. He has previously been advised that this is not allowed.'
+
+Question 11: Have all the contraventions been fully rectified or do the trustees have a plan to fully rectify all of them? Place an X in the Yes box.
+
+Question 12: What is the estimated completion date, or if fully rectified, when was this completed? Enter 15/01/2025.
+
+Question 13: Describe any steps taken to rectify the contraventions or any planned steps to rectify the contraventions. Add text 'Leon has repaid $2,000 plus interest to the fund. He is selling one of his business assets to provide the money to repay the remainder including interest.'
+
+Question 14: What sections/regulations have been, or may be, contravened? Enter s65 on the first line and s109 on the second line.
+
+Question 15: What is the maximum value of the contravention? Enter 5,453 on the first line and 453 on the second line.
+
+Question 16: Has the contravention been fully rectified? Place an X in the No box, on the first 2 lines.
+
+Question 17: What is the outstanding value to be rectified (last known)? Enter 3,037 on the first line and 37 on the second line.
+
+Event 2
+
+Question 8: Did the event commence before the audit period? Place an X in the No box.
+
+Question 9: Start date of event. Enter 25/12/2023.
+
+Question 10: Describe the event, including any mitigating factors. Add text 'Leon used the fund's rental unit over Christmas. Leon paid rent commensurate with rents in the resort for units which are under management. Leon is now aware this use is not allowed and has sub-let the unit to the resort management company.'
+
+Question 11: Have all the contraventions been fully rectified or do the trustees have a plan to fully rectify all of them? Place an X in the Yes box.
+
+Question 12: What is the estimated completion date, or if fully rectified, when was this completed? Enter 14/01/2024.
+
+Question 13: Describe any steps taken to rectify the contraventions or any planned steps to rectify the contraventions. Add text 'Leon used the property for 3 weeks and had vacated 14 January.'
+
+Question 14: What sections/regulations have been, or may be, contravened? Enter s83 on the first line and s84 on the second line.
+
+Question 15: What is the maximum value of the contravention? Enter 374,000 on the first 2 lines.
+
+Question 16: Has the contravention been fully rectified? Place an X in the Yes box, on the first 2 lines.
+
+Question 17: What is the outstanding value to be rectified (last known)? Leave this blank.
+
+Event 3
+
+Question 8: Did the event commence before the audit period? Place an X in the No box.
+
+Question 9: Start date of event. Enter 16/09/2024.
+
+Question 10: Describe the event, including any mitigating factors. Add text 'Request in writing made for documents required to verify accounts. Leon took 2 months to provide documents because he was away and could not be contacted.'
+
+Question 11: Have all the contraventions been fully rectified or do the trustees have a plan to fully rectify all of them? Place an X in the Yes box.
+
+Question 12: What is the estimated completion date, or if fully rectified, when was this completed? Enter 16/11/2024.
+
+Question 13: Describe any steps taken to rectify the contraventions or any planned steps to rectify the contraventions. Add text 'Documents were provided by the client when he returned and became aware of the request.'
+
+Question 14: What sections/regulations have been, or may be, contravened? Enter s35C(2).
+
+Question 15: What is the maximum value of the contravention? Leave this blank.
+
+Question 16: Has the contravention been fully rectified? Place an X in the Yes box.
+
+Question 17: What is the outstanding value to be rectified (last known)? Leave this blank.
+
+Event 4
+
+Question 8: Did the event commence before the audit period? Place an X in the No box.
+
+Question 9: Start date of event. Enter 01/07/2023.
+
+Question 10: Describe the event, including any mitigating factors. Add text 'The fund assets include unlisted shares with a reported value of $100,000. Leon has not provided documents to prove the market value of the unlisted shares. Although the estimated value of the contravention is unknown, it is considered to be greater than $30,000.'
+
+Question 11: Have all the contraventions been fully rectified or do the trustees have a plan to fully rectify all of them? Place an X in the No box.
+
+Question 12: What is the estimated completion date, or if fully rectified, when was this completed? Leave this blank.
+
+Question 13: Describe any steps taken to rectify the contraventions or any planned steps to rectify the contraventions. Add text 'Leon has provided unaudited financial statements with the unlisted shares valued at cost. Following the recent sale of shares in the company to an unrelated party, Leon is in the process of obtaining sales data to support the market value of the unlisted shares.'
+
+Note: Signed unaudited financial statements for the private company will usually list the shares at cost and can't be used to verify their market value. Signed financial statements however may be used to assess the private company's ability to continue as a going concern.
+
+Question 14: What sections/regulations have been, or may be, contravened? Enter R8.02B.
+
+Question 15: What is the maximum value of the contravention? Enter 100,000.
+
+Question 16: Has the contravention been fully rectified? Place an X in the No box.
+
+Question 17: What is the outstanding value to be rectified (last known)? Leave this blank.
+
+End of example
+
+## Section F: Financial position
+
+### Question 18
+
+While performing your duties, did you form the opinion that the SMSF’s financial position is, or may become, unsatisfactory?
+
+Place an X in the applicable box.
+
+If you answer ‘Yes’, explain why you formed that opinion.
+
+Where possible, clarify if the unsatisfactory position is due to a regulatory breach or other circumstances.
+
+If the unsatisfactory position is due to breaches of the sections and regulations listed in tables 1A and 1B, you need to assess if these should be reported at Section E: Contraventions.
+
+To determine if the financial position of the fund is unsatisfactory:
+
+If the SMSF is an accumulation fund, its financial position is unsatisfactory if, in the opinion of the auditor, either the:
+
+- fund's assets are inadequate to cover the aggregate benefit accounts of the fund members, or
+
+- value of fund assets is inadequate to cover the value of the fund's liabilities in respect of benefits accrued to fund members.
+
+If the SMSF is a defined benefit fund, the test is whether the value of fund assets is inadequate to cover the value of the fund's liabilities in respect of benefits vested in the fund members.
+
+The likelihood of the value of fund assets being inadequate must be based on the reasonable expectation of an actuary on whose advice the auditor has relied in relation to the matter.
+
+## Section G: Other regulatory information
+
+### Question 19
+
+This section allows you to report any other concerns, in addition to the events and contraventions you have already reported about either the fund or the trustees where you believe these will help us in performing our functions as the regulator of SMSFs.
+
+Don't use this section if you have no compliance issues or other relevant issues of concern to report.
+
+Don't use this section for reporting a contravention of section 35D (fund has failed to lodge its annual return by the due date) as we are able to detect these contraventions. Information related to an event or contravention listed in Table 1A or 1B (such as subsection 35C(2)) must be reported at Section E: Contraventions. This information should not be included here.
+
+If you want to provide more information, place an X in the Yes box.
+
+Before you complete this section, consider if you consent (under paragraph 14ZZW(2)(e) of the Taxation Administration Act 1953 for the purposes of the tax whistleblower legislation), to disclosing to the Commissioner of Taxation your identity (if required) when using this information in administering any taxation laws.
+
+If you would like to keep your identity confidential, place an X in the No box and don't enter the additional information into Section G of the ACR. You can make a disclosure by completing the tip-off form. Alternatively, find the form in the Contact us section of the ATO app or phone in your tip-off on 1800 060 062.
+
+If you consent to the Commissioner disclosing your identity (if required) when using this information in administering any taxation laws, place an X in the Yes box and enter the additional information, explaining why you formed that opinion.
+
+Examples of things you may consider reporting in Section G include:
+
+- recurring contraventions of non-reportable sections or regulations
+
+- questionable conduct of trustee, tax agent, or administrator during engagement, such as undue pressure or influence to provide an unqualified audit report
+
+- concerns you have resulting from a trustee failing to cooperate with you or terminating your engagement, for example, where an audit engagement was terminated because a contravention was identified
+
+- questionable conduct of a previous SMSF auditor, including where previous contraventions were not identified.
+
+We encourage you to report this type of conduct to us at Section G so we can consider whether any compliance action needs to be taken against the fund.
+
+If you are providing information about breaches of the sections and regulations listed in table 1A and 1B, you need to assess if these should be reported at Section E: Contraventions.
+
+## Section H: Auditor/actuary declaration
+
+Provide your SMSF auditor number (SAN).
+
+Your SAN was issued to you by the Australian Securities & Investments Commission (ASIC) when you become a registered SMSF auditor.
+
+SMSF auditors must be registered with ASIC to be able to conduct audits of SMSFs and provide their SAN on any audit documents.
+
+Sign and date the Auditor/actuary declaration. By signing the declaration, you are stating that:
+
+- you are qualified to conduct an audit
+
+- you were appointed by the trustees to conduct an audit of their fund
+
+- the information provided in the report is accurate and complete.
+
+You must complete the declaration.
+QC17603

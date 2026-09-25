@@ -1,0 +1,565 @@
+Title: Fringe benefits tax
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax
+Retrieved: 2026-09-25
+Topic: general-tax/fbt
+---
+
+=== Section: Fringe benefits tax (FBT)
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax
+
+# Fringe benefits tax (FBT)
+
+How employers, not-for-profits and government organisations calculate, manage and report fringe benefits tax.
+
+## How fringe benefits tax works
+
+An overview of FBT. Find out how FBT applies, what you need to do as an employer, and what deductions you can claim.
+
+## Types of fringe benefits
+
+Find out which benefits are subject to fringe benefits tax (FBT) and how to work out the taxable value of the benefits.
+
+## Exemptions, concessions and other ways to reduce FBT
+
+Find out what FBT exemptions and concessions you can use. Reduce your FBT through alternatives such as cash bonuses.
+
+## FBT concessions for not-for-profit organisations
+
+How benefits provided to employees of not-for-profit organisations are treated for fringe benefits tax (FBT) purposes.
+
+## Salary sacrificing
+
+How salary sacrificing works for employers, including effective arrangements and what can be salary sacrificed.
+
+## Calculating your FBT
+
+Work out the FBT to pay, including applying the type 1 or type 2 gross-up rate and the FBT rate.
+
+## FBT registration, lodgment, payment and reporting
+
+Registering for FBT, keeping records, getting employee declarations, lodging your FBT return and paying FBT.
+
+## Government organisations and FBT
+
+How to manage FBT in government organisations. State and territory governments can devolve FBT to departmental level.
+
+## Fringe benefits tax could be attached to staff perks
+
+Rewarding your team with perks can be good business. Understanding the fringe benefits tax (FBT) implications is too.
+QC71121
+
+=== Section: How fringe benefits tax works
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/how-fringe-benefits-tax-works
+
+# How fringe benefits tax works
+
+An overview of FBT. Find out how FBT applies, what you need to do as an employer, and what deductions you can claim.
+Last updated 17 July 2024
+
+## What is fringe benefits tax?
+
+Fringe benefits tax (FBT) is a tax paid by employers on certain benefits provided to their employees, or to their employees’ family or other associates.
+
+FBT is separate to income tax. It's calculated on the taxable value of the fringe benefit.
+
+As an employer, you must self-assess your FBT liability for the FBT year (1 April to 31 March). If you have an FBT liability, you must lodge an FBT return and pay the FBT you owe.
+
+## What is a fringe benefit?
+
+A fringe benefit is like a payment to an employee, but in a different form to salary or wages.
+
+There are different types of fringe benefits. Examples include:
+
+- allowing an employee to use a work car for private purposes
+
+- car parking
+
+- paying an employee's gym membership
+
+- providing entertainment by way of free tickets to concerts
+
+- reimbursing an expense incurred by an employee, such as school fees
+
+- giving an employee a discounted loan
+
+- giving benefits under a salary sacrifice arrangement with an employee.
+
+The following are not fringe benefits:
+
+- salary and wages
+
+- employer contributions to complying super funds
+
+- shares or rights provided under approved employee share acquisition schemes
+
+- employment termination payments (including, for example, the gift or sale at a discount of a company car to an employee on termination)
+
+- payments deemed to be dividends under Division 7A
+
+- benefits provided to volunteers and contractors
+
+- exempt benefits, such as certain benefits provided by religious institutions to their religious practitioners.
+
+## Who receives fringe benefits?
+
+FBT applies to fringe benefits provided to your employees, or to your employees' families or other associates.
+
+For FBT purposes, an employee includes a:
+
+- current, future or past employee
+
+- director of a company
+
+- beneficiary of a trust who works in the business.
+
+If you're a sole trader or a partner in a partnership, you are not an employee. Benefits you provide to yourself are not subject to FBT.
+
+Your clients are not employees. Benefits you provide to clients, such as entertainment, are not subject to FBT.
+
+## Who pays FBT?
+
+The employer pays FBT.
+
+This is the case even if the benefit is provided by a third party under an arrangement with the employer.
+
+## How much FBT do you pay?
+
+To work out how much FBT to pay, you 'gross-up' the taxable value of the benefits you've provided. This is equivalent to the gross income your employees would have to earn, at the highest marginal tax rate (including the Medicare levy), to buy the benefits themselves.
+
+The FBT you pay is 47% of this 'grossed-up' value of the fringe benefits.
+
+### Example: FBT on a gym membership
+
+Jenni runs a small consulting firm. She provides her employee, Anton, with a gym membership that costs $1,100 (including $100 GST).
+
+This is a fringe benefit. Jenni works out the FBT as follows:
+
+Taxable value of the benefit ($1,100)
+
+× the gross-up rate (for a GST-inclusive fringe benefit the rate is 2.0802)
+
+× the FBT rate (47%)
+
+= FBT of $1,075.46.
+
+Jenni must prepare and lodge an annual FBT return, and pay her FBT liability.
+
+She may also need to calculate and report Anton's reportable fringe benefits amount in his end-of-year payment information.
+
+As the gym membership is subject to FBT, Jenni can claim:
+
+- an income tax deduction and GST credit for the cost of the gym membership
+
+- an income tax deduction for the FBT paid.
+
+End of example
+
+## Can you claim deductions and GST credits?
+
+As an employer, you can claim:
+
+- an income tax deduction and GST credits for the cost of providing fringe benefits
+
+- if you can claim GST credits, you claim the GST-exclusive amount as an income tax deduction
+
+- if you can't claim GST credits, you claim the full amount as an income tax deduction
+
+- an income tax deduction for the FBT you are required to pay.
+
+## What do you need to do?
+
+As an employer, you need to:
+
+- Identify the types of fringe benefits you provide.
+
+- Check for FBT concessions and ways you can reduce FBT.
+
+- Some benefits are exempt from FBT, such as work-related items.
+
+- You can reduce your FBT liability by using alternatives to fringe benefits or providing benefits that are eligible for a concession.
+
+- If you're a not-for-profit employer, you may be eligible for an exemption or rebate for not-for-profit organisations.
+
+- Work out the taxable value of fringe benefits you provide.
+
+- Calculate your FBT liability.
+
+- Keep records, including employee declarations where needed.
+
+- Lodge an FBT return and pay the FBT you owe.
+
+- Report each employee's fringe benefits in their end-of-year payment information, if required.
+
+## FBT – a guide for employers
+
+Fringe benefits tax – a guide for employers is an additional resource to help you meet your FBT obligations as an employer. It explains:
+
+- FBT and your responsibilities as an employer
+
+- how to identify and value each type of benefit, and what concessions are available
+
+- the meaning of terms used throughout the guide.
+
+We link to the guide throughout our web content to provide more comprehensive information on a topic, where required.
+
+Authorised by the Australian Government, Canberra.
+QC71122
+
+=== Section: Types of fringe benefits
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/types-of-fringe-benefits
+
+# Types of fringe benefits
+
+Find out which benefits are subject to fringe benefits tax (FBT) and how to work out the taxable value of the benefits.
+
+## Benefits quick reference
+
+Use this list of common benefits to quickly find the information you need about FBT.
+
+## FBT on cars, other vehicles, parking and tolls
+
+How FBT applies to cars, other motor vehicles, electric cars, car leasing, car parking and road tolls.
+
+## Entertainment-related fringe benefits
+
+Work out if FBT applies to food, drink or recreation, and any associated travel or accommodation.
+
+## Expense payment fringe benefits
+
+Check if you provide expense payment fringe benefits to your employees, and calculate the taxable value of the benefits.
+
+## Loan and debt waiver fringe benefits
+
+Find out if FBT applies when you lend money to an employee or forgive their debt, and how much you pay.
+
+## Accommodation and location related fringe benefits
+
+FBT on housing, board or living-away-from-home allowance, and concessions for remote or overseas areas and relocations.
+
+## Property fringe benefits
+
+What to do if you give your employees property fringe benefits, such as physical goods, real estate or shares.
+
+## Residual fringe benefits
+
+Check if you provide residual fringe benefits to your employees, and calculate the taxable value of the benefits.
+QC71123
+
+=== Section: Exemptions, concessions and other ways to reduce FBT
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/exemptions-concessions-and-other-ways-to-reduce-fbt
+
+# Exemptions, concessions and other ways to reduce FBT
+
+Find out what FBT exemptions and concessions you can use. Reduce your FBT through alternatives such as cash bonuses.
+
+## Reducing your FBT liability
+
+How to reduce your FBT by using alternatives to fully taxable fringe benefits or providing concessional benefits.
+
+## Work-related items exempt from FBT
+
+Check which work-related items are exempt from FBT, such as portable electronic devices and tools of trade.
+
+## Minor benefits exemption
+
+Work out if you can apply the minor benefits exemption to a benefit.
+
+## Taxi, ride-sourcing and public transport exemptions
+
+Travel by your employees in taxis to or from the workplace, or on public transport you operate, may be exempt from FBT.
+
+## Emergency assistance
+
+FBT exemptions for emergency assistance including first aid, emergency supplies and temporary repairs.
+
+## Retraining and reskilling exemption
+
+Check if you can claim an FBT exemption for retraining and reskilling redundant employees, redeployment or job seeking.
+
+## Contributions to approved worker entitlement funds
+
+Check if contributions for employee long service leave, sick leave or redundancy payments are exempt from FBT.
+QC71156
+
+=== Section: Salary sacrificing
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/salary-sacrificing
+
+# Salary sacrificing
+
+How salary sacrificing works for employers, including effective arrangements and what can be salary sacrificed.
+Last updated 11 August 2026
+
+## What is salary sacrificing?
+
+Salary sacrificing is a formal arrangement between you (the employer) and your employee. Your employee agrees to forgo part of their salary or wages in return for benefits of a similar value, such as more super or a car.
+
+Salary sacrificing is sometimes called salary packaging.
+
+Under an effective salary sacrifice arrangement:
+
+- the employee pays less income tax on their reduced salary or wages
+
+- you, as the employer, may have to pay fringe benefits tax (FBT) on the fringe benefits you provide
+
+- salary-sacrificed super contributions are classified as employer super contributions that are taxed in the super fund (instead of being employee super contributions from after-tax income).
+
+## Effective salary sacrifice arrangement
+
+To reduce an employee's assessable income through salary sacrificing, the arrangement must be considered 'effective'. Otherwise, the benefits are treated as assessable income received by the employee.
+
+To have an effective salary sacrifice arrangement, you should:
+
+- enter the arrangement before your employee performs the work
+
+- have an agreement between you and your employee (usually in writing)
+
+- make sure the employee can't access the sacrificed salary.
+
+If you have an effective salary sacrifice arrangement with your employee, there may be implications for:
+
+- your FBT obligations
+
+- the employee's assessable income
+
+- GST credits you can claim
+
+- the payment of employee contributions
+
+- reporting PAYG withholding through Single Touch Payroll or on your employee’s payment summary.
+
+For more information on the implications of an effective salary sacrificing arrangement for employers, see FBT Guide: 1.8 Salary sacrifice.
+
+## Benefits you can salary sacrifice
+
+You can provide any type of benefit to your employee through a salary sacrifice arrangement. Benefits are generally treated as fringe benefits, exempt benefits or employer super contributions.
+
+### Fringe benefits
+
+Some benefits are fringe benefits. You may have to pay FBT on the value of these benefits provided to your employee. Common fringe benefits include:
+
+- cars
+
+- goods
+
+- shares
+
+- payment of the employee's expenses such as loan repayments, school fees and childcare costs.
+
+#### Exempt work-related benefits
+
+You don't pay FBT on exempt benefits, such as the following work-related items:
+
+- a portable electronic device
+
+- computer software
+
+- protective clothing
+
+- a tool of trade.
+
+Currently, the exemption is limited to one item per employee per FBT year for items that have the same or substantially identical function. However, this limitation does not apply if you're a small business. A small business is a business with an aggregated turnover of less than $50 million in an income year that starts or ends in the relevant FBT year.
+
+Changes from 1 April 2027
+
+Work-related items provided through a salary sacrifice arrangement will no longer be exempt and will be subject to FBT.
+
+There will no longer be a one-item limit per employee per FBT year for items that have the same or substantially identical function (if they are not salary sacrificed).
+
+### Superannuation
+
+Salary sacrificed super contributions under an effective salary sacrifice arrangement are considered employer contributions. These are not fringe benefits if the contributions are made to a complying super fund.
+
+Salary sacrificed super contributions don't:
+
+- reduce the ordinary time earnings or qualifying earnings that you use to calculate your employee's super entitlement
+
+- count towards the super guarantee contributions that you need to make for your employee.
+
+This means the salary sacrificed super contributions are additional to the super you would have paid for your employee without the arrangement.
+
+Any super contributions made for the benefit of an associate, such as the employee's partner, are treated as a fringe benefit. The same applies to any contributions paid to a non-complying super fund.
+
+For more information about salary sacrifice and the tax implications for employers, see:
+
+- FBT Guide: 1.8 Salary sacrifice
+
+- Taxation Ruling TR 2001/10 Income tax: fringe benefits tax and superannuation guarantee: salary sacrifice arrangements.
+
+## Reporting salary sacrifice benefits
+
+You may have to report certain reportable fringe benefits through Single Touch Payroll or on your employee’s payment summary.
+QC71171
+
+=== Section: Calculating your FBT
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/calculating-your-fbt
+
+# Calculating your FBT
+
+Work out the FBT to pay, including applying the type 1 or type 2 gross-up rate and the FBT rate.
+Last updated 12 January 2023
+
+## What you need to do
+
+As an employer, you must self-assess the amount of fringe benefits tax (FBT) you have to pay.
+
+To work out how much FBT you have to pay, you 'gross-up' the taxable value of the benefits you've provided. This reflects the gross salary your employees would have to earn, at the highest marginal tax rate (including Medicare levy), to buy the benefits themselves.
+
+The FBT you owe is the grossed-up amount multiplied by the FBT rate.
+
+You pay this amount to us by the date your FBT return is due, which is generally 21 May.
+
+## How to calculate FBT – business and government
+
+Use the steps below if you are a:
+
+- business
+
+- government organisation
+
+- not-for-profit organisation that is not exempt from FBT and not eligible for the FBT rebate.
+
+### Step 1: Work out the taxable value of each fringe benefit
+
+- How you work out the taxable value of a fringe benefit varies according to the type of benefit.
+
+- If the cost of the fringe benefit included GST, include this in the taxable value.
+
+- If you provided car fringe benefits, you can use the FBT car calculator to work out the taxable value of those benefits.
+
+FBT car calculator
+
+### Step 2: Add up fringe benefits from step 1 that included GST
+
+- These are fringe benefits for which you can claim a GST credit.
+
+- Include both reportable and any non-reportable benefits.
+
+### Step 3: Multiply the step 2 amount by the higher gross-up rate
+
+- The higher (type 1) gross-up rate is 2.0802.
+
+- You can claim GST credits for these fringe benefits. The higher rate takes this into account.
+
+- This rate applies for all FBT years since the FBT year ending 31 March 2019. For gross-up rates in earlier years, see Fringe benefits tax – historical rates and thresholds.
+
+### Step 4: Add up the fringe benefits from step 1 that did not include GST
+
+- These are benefits that were either GST-free or input taxed.
+
+- Include both reportable and any non-reportable benefits.
+
+### Step 5: Multiply the step 4 amount by the lower gross-up rate
+
+- The lower (type 2) gross-up rate is 1.8868.
+
+- This rate applies for all FBT years since the FBT year ending 31 March 2019. For gross-up rates in earlier years, see Fringe benefits tax – historical rates and thresholds.
+
+### Step 6: Add up the amounts from steps 3 and 5
+
+- This is your total fringe benefits taxable amount.
+
+### Step 7: Multiply the step 6 amount by the FBT rate
+
+- The FBT rate is 47%.
+
+- This rate applies for all FBT years since the FBT year ending 31 March 2019. For rates in earlier years, see Fringe benefits tax – historical rates and thresholds.
+
+- The amount you have worked out is the total FBT amount you have to pay when you lodge your FBT return.
+
+Start of example
+Example: calculating how much FBT you have to pay
+
+MantCo has 2 employees, Marta and Anthony. Using steps 1–7 above, MantCo calculates its FBT liability as follows.
+
+- MantCo works out the taxable value of the fringe benefits it provided to its employees:
+
+- A car fringe benefit for Marta with a taxable value of $7,700, including GST.
+
+- A car fringe benefit for Anthony with a taxable value of $6,600, including GST.
+
+- School fees for Anthony's daughter with a taxable value of $6,000. The school fees are GST-free.
+
+- Restaurant meals for both Marta and Anthony, with a taxable value of $2,200, including GST. Meals are not reportable benefits, so MantCo does not need to allocate the taxable value of the meals to the individual employees.
+
+
+
+- The total taxable value of the fringe benefits that included GST is:
+$7,700 (car) + $6,600 (car) + $2,200 (meals) = $16,500.
+
+- MantCo uses the type 1 rate to gross up the fringe benefits that included GST:
+$16,500 × 2.0802 = $34,323 (rounded to the nearest dollar).
+
+- The total taxable value of the fringe benefits that did not include GST is:
+$6,000 (school fees).
+
+- MantCo uses the type 2 rate to gross up the fringe benefits that did not include GST:
+$6,000 × 1.8868 = $11,321 (rounded to the nearest dollar).
+
+- The total fringe benefits taxable amount is:
+$34,323 + $11,321 = $45,644
+
+- MantCo uses the FBT rate to calculate the total FBT it must pay:
+$45,644 × 47% = $21,452.68.
+
+End of example
+
+## How to calculate FBT – for FBT-exempt and rebatable not-for-profit organisations
+
+There are additional steps in the FBT calculation if you are a not-for-profit organisation that is exempt from FBT or eligible for the FBT rebate.
+
+This is because the benefits you provide to your employees are exempt or rebatable, up to a capping threshold for each employee.
+
+Use the calculator to work out the FBT payable for the fringe benefits you provide to each of your employees.
+
+Not-for-profit FBT calculator
+
+### FBT-exempt employers – calculate FBT manually
+
+For FBT-exempt employers, fringe benefits you provide to an employee are exempt from FBT, up to a capping threshold. Any fringe benefits in excess of the capping threshold do not qualify for this exemption.
+
+To manually calculate your FBT exempt and non-exempt amounts, see FBT guide: 6.10 Calculating the FBT exemption.
+
+### Rebatable employers – calculate FBT manually
+
+For rebatable employers, you apply a rebate to the grossed-up value of fringe benefits you provide to an employee, up to a capping threshold. Any fringe benefits in excess of the capping threshold do not qualify for the rebate.
+
+To manually calculate your FBT amounts and rebate, see FBT guide: 6.11 Calculating the FBT rebate.
+
+Work out the FBT to pay, including applying the type 1 or type 2 gross-up rate and the FBT rate.
+QC71172
+
+=== Section: FBT registration, lodgment, payment and reporting
+Source URL: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/fbt-registration-lodgment-payment-and-reporting
+
+# FBT registration, lodgment, payment and reporting
+
+Registering for FBT, keeping records, getting employee declarations, lodging your FBT return and paying FBT.
+
+## Registering for FBT
+
+Find out if you need to register for FBT and how to register.
+
+## Record keeping for FBT
+
+Check which records to keep for fringe benefits tax (FBT) purposes and how long to keep them.
+
+## Employee declarations
+
+Why, when and how to get an employee declaration, and how long to keep it in your records.
+
+## Lodging your FBT return and paying
+
+How to lodge an FBT return, the due date for lodging and paying, and what to do if you pay by quarterly instalments.
+
+## What attracts our attention
+
+To provide transparency, we publish the main FBT issues that attract our attention, and how we check compliance.
+
+## Reportable fringe benefits
+
+Work out which fringe benefits to report in employees' income information, and calculate the reportable amount.
+QC71173

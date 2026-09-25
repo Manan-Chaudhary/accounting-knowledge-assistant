@@ -1,0 +1,302 @@
+Title: Non-concessional contributions cap
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/non-concessional-contributions-cap
+Retrieved: 2026-09-25
+Topic: smsf-contributions
+---
+
+# Non-concessional contributions cap
+
+Keep track of your non-concessional (after-tax) contributions, which are not taxed unless you exceed the cap.
+Last updated 7 May 2026
+
+## About the non-concessional contributions cap
+
+The non-concessional contributions cap is the maximum amount of after-tax contributions you can contribute to your super each year without contributions being subject to extra tax.
+
+From 1 July 2026, the non-concessional contributions cap is $130,000. This is now reviewed annually to remain in line with average weekly ordinary time earnings (AWOTE). If you contribute more, you may have to pay extra tax.
+
+Financial year | Non-concessional cap
+2026–27 | $130,000
+2025–26 | $120,000
+2024–25 | $120,000
+2023–24 | $110,000
+2022–23 | $110,000
+2021–22 | $110,000
+2020–21 | $100,000
+2019–20 | $100,000
+2018–19 | $100,000
+2017–18 | $100,000
+2016–17 | $180,000
+2015–16 | $180,000
+2014–15 | $180,000
+2013–14 | $150,000
+
+If you make contributions above the annual non-concessional contributions cap you may be eligible to automatically access future year caps. This is known as the bring-forward arrangement. It allows you to make extra non-concessional contributions without having to pay extra tax, if you meet certain eligibility conditions.
+
+If your total super balance is equal to or more than the general transfer balance cap ($1.7 million from 2021–22, $1.9 million from 2023–24, $2 million from 2025–26, $2.1 million from 2026-27) at the end of the previous financial year, your non-concessional contributions cap is nil ($0) for the current financial year.
+
+## Keeping track of your non-concessional contributions
+
+You can keep track of your non-concessional contributions by using ATO online services. Select Super, then Information, then Non-concessional contributions.
+
+Log in to ATO online services
+
+### Understand your contributions cap and the transactions that affect it
+
+It is important to understand the contributions cap and any transactions that may occur by considering the following:
+
+- Be aware of your non-concessional contributions cap, including your eligibility for the bring-forward arrangement.
+
+- Be aware of your total super balance.
+
+- Keep track of the amount of non-concessional contributions you, your employer, or others make on your behalf.
+
+- If you have more than one job, or pay money into more than one super fund, include all your contributions when working out your annual contributions. The total of all non-concessional contributions made to all your funds during a financial year count towards your non-concessional contributions cap.
+
+- If you go over the concessional contributions cap, your excess concessional contributions will count towards your non-concessional contributions cap unless you release them from your super fund.
+
+- Any amount you withdraw and re-contribute to your super fund is counted as a new non-concessional contribution, unless an income tax deduction has been claimed and allowed for this amount or it is a re-contribution of COVID-19 early release superannuation amount.
+
+- Your eligibility to bring forward the next 2 years of contributions is based on your age on 1 July of the first financial year and your total super balance on 30 June of the previous financial year.
+
+### Be aware of the timing of contributions
+
+It is important to understand the timings of your contributions by considering the following:
+
+- Keep track of your non-concessional contributions and when they were received by your super fund. Contributions count towards a cap in the year your super fund receives them.
+
+- Make sure your fund receives all your contributions by 30 June, if that is intended.
+
+- If someone else (such as a financial planner, accountant or employer) makes contributions on your behalf, check that they make the contributions in time to be received in your fund by the end of the financial year if that is intended.
+
+- If you make contributions by BPAY®, internet transfer or similar at the end of the financial year, check the terms and conditions of your financial institution and allow for any possible delays.
+
+- Check if your contributions are held in another account or by another institution before they are received by your fund, as this can cause delays.
+
+- If the law requires a prescribed form to be provided before or when the contribution is made, then your super fund has received it on time.
+
+## Bring-forward arrangement
+
+Your non-concessional contributions cap can be changed if you're eligible for the bring-forward arrangement.
+
+This allows you to bring forward the equivalent of 1 or 2 years of your annual cap from future years. This means you can make contributions up to 2 or 3 times the annual cap amount in the first year of the bring-forward period. Any amount of the bring-forward cap that's unused in the first year can be used in the remaining 1 or 2 years.
+
+Eligibility for the bring-forward arrangement depends on your age and your total super balance. Apart from these criteria, there are age-related and other restrictions on the types of non-concessional contributions your fund may be able to accept.
+
+### Age eligibility
+
+#### For the 2022–23 and later financial years
+
+If you're under 75 years of age at any time in a financial year, you're eligible to use the bring-forward arrangement in that financial year, subject to the age-related and other restrictions on the types of non-concessional contributions your fund may be able to accept.
+
+If you're 75 years or older for all of the financial year, you're not eligible to use the bring-forward arrangement in that financial year.
+
+#### For the 2020–21 and 2021–22 financial years
+
+If you were under 67 years of age at any time in a financial year, you were eligible to use the bring-forward arrangement in that financial year.
+
+If you were 67 years or older for all of the financial year, you were not eligible to access the bring-forward arrangement in that financial year.
+
+#### For the 2008–09 to 2019–20 financial years
+
+If you were under 65 years of age at any time in a financial year, you were eligible to use the bring-forward arrangement in that financial year.
+
+If you are 65 years or older for all of the financial year, you were not eligible to use the bring-forward arrangement in that financial year.
+
+### Total super balance determines bring-forward cap
+
+The amount of the non-concessional contributions cap you can bring forward depends on your total super balance (TSB):
+
+- From 1 July 2026, if your TSB on 30 June of the previous financial year was less than $1.84 million – you can contribute 3 times the annual non-concessional contributions cap over 3 years (that is, $390,000). For example, in the 2026–27 financial year, if your TSB on 30 June 2026 was less than $1.84 million, you can contribute 3 times the annual non-concessional contributions cap over 3 years (that is, $390,000).
+
+- If your TSB on 30 June of the previous financial year was $1.84 million or above but less than $1.97 million – you can contribute 2 times the annual cap over 2 years (that is, $260,000).
+
+- If your TSB on 30 June of the previous financial year was $1.97 million or above – you can't bring forward any amount, but you can make a current year contribution of up to $130,000.
+
+These limits are based on the non-concessional contributions cap being $130,000 from 1 July 2026 and the general transfer balance cap being $2.1 million.
+
+Once you trigger the bring-forward arrangement:
+
+- any indexation to the non-concessional contributions cap for the bring-forward period doesn’t apply to you. The bring-forward cap amount is based on the cap in the first year of the period.
+
+- For example, if the non-concessional contributions cap in the second and third year of a bring-forward period changed to $140,000 due to indexation, your non-concessional cap will still be $390,000 ($130,000 × 3 years) and not $410,000 ($130,000 + $140,000 + $140,000).
+
+- your non-concessional contributions over the next 1 or 2 years can't be more than the sum of your increased bring-forward non-concessional contributions cap amount minus the non-concessional contributions made in the year the bring-forward was triggered.
+
+- For example, if you used your total increased bring-forward cap in the first year, you would have a nil cap for the next 2 years.
+
+- For 2017–18 onwards, the remaining cap amount for the second or third year of a bring-forward arrangement is reduced to nil for a financial year if your total super balance is greater than or equal to the general transfer balance cap at the end of 30 June of the previous financial year.
+
+Note: To make sure you don't accidentally trigger the bring-forward arrangement, you will need to account for all your non-concessional contributions made to all your super funds. Unreleased excess concessional contributions also count towards the non-concessional contributions cap.
+
+The following tables summarise the bring-forward caps that apply in the first year of the bring forward period depending on the total super balance.
+
+Total super balance on 30 June of previous year | Non-concessional contributions cap for the first year | Bring-forward period
+Less than $1.84 million | $390,000 | 3 years
+$1.84 million to less than $1.97 million | $260,000 | 2 years
+$1.97 million to less than $2.1 million | $130,000 | No bring-forward period, general non-concessional contributions cap applies
+$2.1 million or more | nil | Not applicable
+
+Total super balance on 30 June of previous year | Non-concessional contributions cap for the first year | Bring-forward period
+Less than $1.76 million | $360,000 | 3 years
+$1.76 million to less than $1.88 million | $240,000 | 2 years
+$1.88 million to less than $2 million | $120,000 | No bring-forward period, general non-concessional contributions cap applies
+$2 million or more | nil | Not applicable
+
+Total super balance on 30 June of previous year | Non-concessional contributions cap for the first year | Bring-forward period
+Less than $1.66 million | $360,000 | 3 years
+$1.66 million to less than $1.78 million | $240,000 | 2 years
+$1.78 million to less than $1.9 million | $120,000 | No bring-forward period, general non-concessional contributions cap applies
+$1.9 million or more | nil | Not applicable
+
+Total super balance on 30 June of previous year | Non-concessional contributions cap for the first year | Bring-forward period
+Less than $1.68 million | $330,000 | 3 years
+$1.68 million to less than $1.79 million | $220,000 | 2 years
+$1.79 million to less than $1.9 million | $110,000 | No bring-forward period, general non-concessional contributions cap applies
+$1.9 million or more | nil | Not applicable
+
+Total super balance on 30 June of previous year | Non-concessional contributions cap for the first year | Bring-forward period
+Less than $1.48 million | $330,000 | 3 years
+$1.48 million to less than $1.59 million | $220,000 | 2 years
+$1.59 million to less than $1.7 million | $110,000 | No bring-forward period, general non-concessional contributions cap applies
+$1.7 million or more | nil | Not applicable
+
+### How to view your bring-forward arrangement
+
+If you are considering making a large contribution, you should first check your ATO online services account to see if you've already triggered a bring-forward arrangement. Select Super, then Information, then Bring-forward arrangement.
+
+Log in to ATO online services
+
+Be aware that the latest information may not be available in ATO online services due to the reporting timeframes of funds, especially SMSFs. You can check with your super fund to get the most up to date information.
+
+### Transitional period
+
+If you triggered the bring-forward arrangement in 2015–16 or 2016–17, but you did not fully use your remaining bring-forward balance before 1 July 2017, transitional arrangements apply. This means that the maximum bring-forward amount available to you reflects the reduced annual non-concessional contributions caps.
+
+If the bring-forward arrangement was triggered in:
+
+- 2015–16, the transitional cap was $460,000 ($180,000 for 2015–16, $180,000 for 2016–17 and $100,000 for 2017–18).
+
+- 2016–17, the transitional cap was $380,000 ($180,000 for 2016–17, $100,000 for 2017–18 and $100,000 for 2018–19).
+
+For 2017–18 and 2018–19, the remaining cap amount for the second and third years of a bring-forward arrangement was reduced to nil for a financial year if your total super balance was equal to or more than the general transfer balance cap on 30 June of the previous financial year.
+
+3-year bring-forward cap amounts | 2014–15 to 2016–17 | 2015–16 to 2017–18 | 2016–17 to 2018–19
+Range | $0 to $540,000 | $0 to $460,000 | $0 to $380,000
+
+If, before 1 July 2017, you made non-concessional contributions of more than the transitional cap but less than $540,000, you will not have exceeded your non-concessional bring-forward cap. However, you couldn't have contributed any further non-concessional contributions under the bring-forward arrangement in remaining years.
+
+If, after 1 July 2017, you made non-concessional contributions that are more than your transitional cap, you will have exceeded your non-concessional contributions bring-forward cap.
+
+## Exceeding your non-concessional contributions cap
+
+If you exceed your non-concessional contributions cap:
+
+- we will send you a determination explaining your options
+
+- you must lodge a tax return for that year. If you can't lodge your tax return by the due date, and you don't want us to issue a determination before you lodge, you'll need to request a lodgment deferral
+
+- we will issue your super fund with an authority to release funds depending on which option you have chosen
+
+- you may need to pay extra tax.
+
+We determine if you exceeded your non-concessional contributions cap based on your age and information reported by your super fund. We also look at any tax returns you've lodged.
+
+You should not apply to your super fund to release money because you exceeded your cap. Wait until we have sent you your determination letter and you have selected your option for how the excess will be treated. We will then send your fund a release authority.
+
+### Your options if you exceed the cap
+
+You have 60 days to choose one of the 2 options for paying your tax when you receive our determination letter.
+
+You can't change your election decision once you make it.
+
+If you believe the excess non-concessional contributions determination is wrong, see Getting advice or correcting a mistake if you think we got it wrong.
+
+### Instructions to complete your election to release ENCC
+
+You can choose your preferred option and make your election through ATO online services by logging into myGovExternal Link, selecting your Australian Taxation Office linked service and then select Super, then Manage, then Non-concessional election.
+
+Log in to ATO online services
+
+If you don't have a myGov account, create one and link it to the ATO. You can also ask your tax agent to do it for you.
+
+You should check if we have already started or completed the release process before making an election. You can check your election history using ATO online services (select Super, then Non-concessional election).
+
+### Option 1 – release the excess from your super funds
+
+You can release all your excess non-concessional contributions plus 85% of your associated earnings from your super funds.
+
+If you do, we will amend your income tax assessment to include:
+
+- your associated earnings in your taxable income
+
+- a non-refundable tax offset of 15% of the associated earnings.
+
+We will:
+
+- ask your super fund to release excess amounts and associated earnings to us within 10 business days
+
+- amend your income tax assessment and issue an amended notice of assessment
+
+- use the released amount to pay your tax and any other Australian Government debts owing
+
+- refund the balance to you.
+
+If a fund cannot release all or part of the elected amount, we will let you know. You will have another 60 days to choose another fund.
+
+If your only super interest is in a defined benefit fund that can't release the amount, you can make an election for option 2.
+
+We will then:
+
+- send you an ENCC tax assessment, with the excess non-concessional contributions taxed at the highest marginal tax rate plus Medicare Levy
+
+- issue your super fund with a release authority to pay the ENCC tax liability amount to us within 10 business days
+
+- amend your income tax assessment to remove or reduce the associated earnings.
+
+If your fund is unable to release some or all the amount, you will need to pay the liability from your own sources.
+
+If you have no money left in super (including income streams or defined benefit interests) we will:
+
+- send you a letter telling you that you don't need to release any amount
+
+- still include the associated earnings in your income tax assessment.
+
+#### Associated earnings
+
+Associated earnings are an approximate amount earned from excess contributions while they were in your super fund.
+
+We calculate associated earnings using 3 elements:
+
+- your excess non-concessional contributions (ENCC)
+
+- the associated earnings rate – the average of the general interest charge rates for the 4 quarters of the financial year in which you made ENCC. This proxy rate may be more or less than the earnings rate applied by your super fund
+
+- the associated earnings period – from 1 July of the financial year in which you made the ENCCs through to the date of the original ENCC determination letter.
+
+We apply the associated earnings rate to the ENCC amount on a daily compounding basis for the length of the associated earnings period.
+
+We do not have discretion to change the associated earnings rate or period.
+
+### Option 2 – don't release the excess amount and pay excess non-concessional contributions tax
+
+If you elect to leave the ENCC in your super fund, you will receive an ENCC tax assessment. The excess amount is taxed at the highest marginal tax rate plus Medicare levy (currently 47%).
+
+We will:
+
+- send you an ENCC tax assessment
+
+- issue your super fund with a release authority to pay the ENCC tax liability amount to us within 10 business days.
+
+If your only fund is a defined benefit fund which is unable or unwilling to release this amount, you will need to pay us the amount yourself.
+
+### If you don't make an election request within 60 days of receiving your ENCC determination
+
+If we don't receive your election, we will apply option 1 (release the excess).
+
+However, if your only super interest is in a defined benefits fund, we will apply option 2 (don't release the excess and pay ENCC tax).
+QC73087

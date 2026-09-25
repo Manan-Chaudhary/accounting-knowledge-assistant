@@ -1,0 +1,1906 @@
+{
+  "aasb-1056": {
+    "id": "aasb-1056",
+    "title": "AASB 1056 Superannuation Entities (compiled December 2023)",
+    "publisher": "Australian Accounting Standards Board",
+    "doc_type": "accounting standard",
+    "tier": 3,
+    "category": "accounting-standards",
+    "use_cases": [
+      "UC7",
+      "GEN-REPORTING"
+    ],
+    "kind": "html",
+    "url": "https://www.aasb.gov.au/admin/file/content105/c9/AASB1056_12-23.pdf",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "accounting-standards/aasb-1056.pdf",
+        "bytes": 660720,
+        "resolved_url": "https://www.aasb.gov.au/admin/file/content105/c9/AASB1056_12-23.pdf",
+        "chars": 235226,
+        "chunks": 131
+      }
+    ]
+  },
+  "aasb-1060": {
+    "id": "aasb-1060",
+    "title": "AASB 1060 General Purpose Financial Statements - Simplified Disclosures (compiled August 2025)",
+    "publisher": "Australian Accounting Standards Board",
+    "doc_type": "accounting standard",
+    "tier": 3,
+    "category": "accounting-standards",
+    "use_cases": [
+      "GEN-REPORTING"
+    ],
+    "kind": "html",
+    "url": "https://standards.aasb.gov.au/sites/default/files/2026-03/AASB1060_03-20_COMPaug25_01-26.pdf",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "accounting-standards/aasb-1060.pdf",
+        "bytes": 815871,
+        "resolved_url": "https://standards.aasb.gov.au/sites/default/files/2026-03/AASB1060_03-20_COMPaug25_01-26.pdf",
+        "chars": 361277,
+        "chunks": 201
+      }
+    ]
+  },
+  "apesb-apes-110": {
+    "id": "apesb-apes-110",
+    "title": "APES 110 Code of Ethics for Professional Accountants (including Independence Standards)",
+    "publisher": "Accounting Professional & Ethical Standards Board",
+    "doc_type": "professional standard",
+    "tier": 2,
+    "category": "professional-standards",
+    "use_cases": [
+      "GEN-PRAC",
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://apesb.org.au/wp-content/uploads/2023/12/Compiled_APES_110_Jun_23.pdf",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "professional-standards/apesb-apes-110.pdf",
+        "bytes": 3470618,
+        "resolved_url": "https://apesb.org.au/wp-content/uploads/2023/12/Compiled_APES_110_Jun_23.pdf",
+        "chars": 663536,
+        "chunks": 369
+      }
+    ]
+  },
+  "apesb-apes-220": {
+    "id": "apesb-apes-220",
+    "title": "APES 220 Taxation Services",
+    "publisher": "Accounting Professional & Ethical Standards Board",
+    "doc_type": "professional standard",
+    "tier": 2,
+    "category": "professional-standards",
+    "use_cases": [
+      "GEN-PRAC"
+    ],
+    "kind": "html",
+    "url": "https://apesb.org.au/wp-content/uploads/2025/01/APES_220_Jan_2025.pdf",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "professional-standards/apesb-apes-220.pdf",
+        "bytes": 556318,
+        "resolved_url": "https://apesb.org.au/wp-content/uploads/2025/01/APES_220_Jan_2025.pdf",
+        "chars": 33482,
+        "chunks": 19
+      }
+    ]
+  },
+  "apesb-apes-305": {
+    "id": "apesb-apes-305",
+    "title": "APES 305 Terms of Engagement",
+    "publisher": "Accounting Professional & Ethical Standards Board",
+    "doc_type": "professional standard",
+    "tier": 2,
+    "category": "professional-standards",
+    "use_cases": [
+      "GEN-PRAC",
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://apesb.org.au/wp-content/uploads/2024/09/APES_305_Sept_2024.pdf",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "professional-standards/apesb-apes-305.pdf",
+        "bytes": 710073,
+        "resolved_url": "https://apesb.org.au/wp-content/uploads/2024/09/APES_305_Sept_2024.pdf",
+        "chars": 20664,
+        "chunks": 12
+      }
+    ]
+  },
+  "apesb-apes-320": {
+    "id": "apesb-apes-320",
+    "title": "APES 320 Quality Management for Firms that provide Non-Assurance Services",
+    "publisher": "Accounting Professional & Ethical Standards Board",
+    "doc_type": "professional standard",
+    "tier": 2,
+    "category": "professional-standards",
+    "use_cases": [
+      "GEN-PRAC"
+    ],
+    "kind": "html",
+    "url": "https://apesb.org.au/wp-content/uploads/2022/02/APES_320_reissued_Feb_2022.pdf",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "professional-standards/apesb-apes-320.pdf",
+        "bytes": 696931,
+        "resolved_url": "https://apesb.org.au/wp-content/uploads/2022/02/APES_320_reissued_Feb_2022.pdf",
+        "chars": 80228,
+        "chunks": 45
+      }
+    ]
+  },
+  "asic-smsf-auditors": {
+    "id": "asic-smsf-auditors",
+    "title": "Self-managed superannuation fund (SMSF) auditors",
+    "publisher": "Australian Securities and Investments Commission",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-establishment-compliance",
+    "use_cases": [
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://www.asic.gov.au/for-finance-professionals/self-managed-superannuation-fund-smsf-auditors",
+    "allow_redirect": true,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-establishment-compliance/asic-smsf-auditors.txt",
+        "bytes": 2005,
+        "resolved_url": "https://www.asic.gov.au/for-finance-professionals/self-managed-superannuation-fund-smsf-auditors",
+        "page_title": "Self-managed superannuation fund (SMSF) auditors | ASIC",
+        "chars": 2003,
+        "chunks": 2
+      }
+    ]
+  },
+  "ato-acr-instructions": {
+    "id": "ato-acr-instructions",
+    "title": "Auditor/actuary contravention report instructions",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "form and instructions",
+    "tier": 2,
+    "category": "smsf-establishment-compliance",
+    "use_cases": [
+      "UC1",
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions/reporting-contraventions",
+      "https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions/reporting-criteria",
+      "https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions/how-to-complete-the-report"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-establishment-compliance/ato-acr-instructions.txt",
+        "bytes": 54286,
+        "resolved_url": "https://www.ato.gov.au/forms-and-instructions/auditor-actuary-contravention-report-instructions",
+        "page_title": "Auditor/actuary contravention report instructions",
+        "chars": 54058,
+        "chunks": 30
+      }
+    ]
+  },
+  "ato-agent-lodgment-program": {
+    "id": "ato-agent-lodgment-program",
+    "title": "Registered agent lodgment program",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "program schedule",
+    "tier": 2,
+    "category": "professional-standards",
+    "use_cases": [
+      "GEN-PRAC",
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/about-the-lodgment-program",
+      "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-by-month",
+      "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-for-tax-returns-by-client-type",
+      "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program/due-dates-by-obligation-type"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "professional-standards/ato-agent-lodgment-program.txt",
+        "bytes": 8143,
+        "resolved_url": "https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/registered-agent-lodgment-program",
+        "page_title": "Registered agent lodgment program",
+        "chars": 8133,
+        "chunks": 5
+      }
+    ]
+  },
+  "ato-bas": {
+    "id": "ato-bas",
+    "title": "Business activity statements (BAS)",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/gst-bas",
+    "use_cases": [
+      "GEN-GST"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/how-to-lodge-your-bas",
+      "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas",
+      "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/fixing-bas-mistakes-or-making-adjustments",
+      "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/goods-and-services-tax-gst",
+      "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding",
+      "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/payg-instalments"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/gst-bas/ato-bas.txt",
+        "bytes": 26829,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas",
+        "page_title": "Business activity statements (BAS)",
+        "chars": 26783,
+        "chunks": 15
+      }
+    ]
+  },
+  "ato-cgt-discount": {
+    "id": "ato-cgt-discount",
+    "title": "CGT discount",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/cgt",
+    "use_cases": [
+      "GEN-CGT"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/cgt/ato-cgt-discount.txt",
+        "bytes": 5166,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount",
+        "page_title": "CGT discount | Australian Taxation Office",
+        "chars": 5152,
+        "chunks": 3
+      }
+    ]
+  },
+  "ato-company-tax-rates-2025-26": {
+    "id": "ato-company-tax-rates-2025-26",
+    "title": "Company tax rates 2025-26",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "rates and thresholds",
+    "tier": 2,
+    "category": "general-tax/entities",
+    "use_cases": [
+      "GEN-COMPANY"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rates/tax-rates-2025-26",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/entities/ato-company-tax-rates-2025-26.txt",
+        "bytes": 4193,
+        "resolved_url": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rates/tax-rates-2025-26",
+        "page_title": "Tax rates 2025\u201326 | Australian Taxation Office",
+        "chars": 4165,
+        "chunks": 3
+      }
+    ]
+  },
+  "ato-concessional-cap": {
+    "id": "ato-concessional-cap",
+    "title": "Concessional contributions cap",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-contributions",
+    "use_cases": [
+      "UC3"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/concessional-contributions-cap",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-contributions/ato-concessional-cap.txt",
+        "bytes": 13811,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/concessional-contributions-cap",
+        "page_title": "Concessional contributions cap | Australian Taxation Office",
+        "chars": 13769,
+        "chunks": 8
+      }
+    ]
+  },
+  "ato-conditions-of-release": {
+    "id": "ato-conditions-of-release",
+    "title": "Conditions of release",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-pensions-tbc",
+    "use_cases": [
+      "UC4"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-and-super-professionals/for-superannuation-professionals/apra-regulated-funds/paying-benefits/releasing-benefits/conditions-of-release",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-pensions-tbc/ato-conditions-of-release.txt",
+        "bytes": 8183,
+        "resolved_url": "https://www.ato.gov.au/tax-and-super-professionals/for-superannuation-professionals/apra-regulated-funds/paying-benefits/releasing-benefits/conditions-of-release",
+        "page_title": "Conditions of release | Australian Taxation Office",
+        "chars": 8157,
+        "chunks": 5
+      }
+    ]
+  },
+  "ato-contributions-caps-table": {
+    "id": "ato-contributions-caps-table",
+    "title": "Key super rates and thresholds - Contributions caps",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "rates and thresholds",
+    "tier": 2,
+    "category": "smsf-contributions",
+    "use_cases": [
+      "UC3"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/contributions-caps",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-contributions/ato-contributions-caps-table.txt",
+        "bytes": 16060,
+        "resolved_url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/contributions-caps",
+        "page_title": "Contributions caps | Australian Taxation Office",
+        "chars": 15710,
+        "chunks": 9
+      }
+    ]
+  },
+  "ato-death-of-smsf-member": {
+    "id": "ato-death-of-smsf-member",
+    "title": "Death of an SMSF member",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-pensions-tbc",
+    "use_cases": [
+      "UC4",
+      "GEN-ESTATE"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/paying-smsf-benefits/death-of-an-smsf-member",
+    "sections": [
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/superannuation-death-benefits"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-pensions-tbc/ato-death-of-smsf-member.txt",
+        "bytes": 37699,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/paying-smsf-benefits/death-of-an-smsf-member",
+        "page_title": "Death of an SMSF member",
+        "chars": 37603,
+        "chunks": 21
+      }
+    ]
+  },
+  "ato-deceased-estates": {
+    "id": "ato-deceased-estates",
+    "title": "Deceased estates",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/estates",
+    "use_cases": [
+      "GEN-ESTATE"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/deceased-estates",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/individuals-and-families/deceased-estates/doing-a-final-tax-return-for-the-deceased-person",
+      "https://www.ato.gov.au/individuals-and-families/deceased-estates/doing-trust-tax-returns-for-the-deceased-estate",
+      "https://www.ato.gov.au/individuals-and-families/deceased-estates/if-you-are-a-beneficiary-of-a-deceased-estate"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/estates/ato-deceased-estates.txt",
+        "bytes": 12723,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/deceased-estates",
+        "page_title": "Deceased estates",
+        "chars": 12697,
+        "chunks": 7
+      }
+    ]
+  },
+  "ato-division-293": {
+    "id": "ato-division-293",
+    "title": "Division 293 tax on concessional contributions by high-income earners",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-contributions",
+    "use_cases": [
+      "UC3",
+      "UC6"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-293-tax-on-concessional-contributions-by-high-income-earners",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-contributions/ato-division-293.txt",
+        "bytes": 19671,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-293-tax-on-concessional-contributions-by-high-income-earners",
+        "page_title": "Division 293 tax on concessional contributions by high-income earners | Australian Taxation Office",
+        "chars": 19633,
+        "chunks": 11
+      }
+    ]
+  },
+  "ato-division-296-smsf": {
+    "id": "ato-division-296-smsf",
+    "title": "About Division 296 tax for SMSFs",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-div296",
+    "use_cases": [
+      "UC6"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-div296/ato-division-296-smsf.txt",
+        "bytes": 6128,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/about-division-296-tax-for-smsfs",
+        "page_title": "About Division 296 tax for SMSFs | Australian Taxation Office",
+        "chars": 6098,
+        "chunks": 4
+      }
+    ]
+  },
+  "ato-division-296-tax": {
+    "id": "ato-division-296-tax",
+    "title": "Division 296 tax",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-div296",
+    "use_cases": [
+      "UC6"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/division-296-tax-on-large-super-balances",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/how-division-296-tax-is-calculated",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/paying-division-296-tax",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/division-296-tax-excluded-interests",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/division-296-tax-for-defined-benefit-interests-and-other-prescribed-interests"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-div296/ato-division-296-tax.txt",
+        "bytes": 50087,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax",
+        "page_title": "Division 296 tax",
+        "chars": 49864,
+        "chunks": 28
+      }
+    ]
+  },
+  "ato-division-7a": {
+    "id": "ato-division-7a",
+    "title": "Private company benefits - Division 7A dividends",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/division-7a",
+    "use_cases": [
+      "GEN-DIV7A"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends",
+    "sections": [
+      "https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/entities-and-taxpayers-affected",
+      "https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/payments-and-other-benefits-affected",
+      "https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/related-tax-issues",
+      "https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/managing-division-7a-risks-and-corrective-action"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/division-7a/ato-division-7a.txt",
+        "bytes": 17450,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends",
+        "page_title": "Private company benefits - Division 7A dividends",
+        "chars": 17434,
+        "chunks": 10
+      }
+    ]
+  },
+  "ato-division-7a-benchmark-rate": {
+    "id": "ato-division-7a-benchmark-rate",
+    "title": "Division 7A - benchmark interest rate",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "rates and thresholds",
+    "tier": 2,
+    "category": "general-tax/division-7a",
+    "use_cases": [
+      "GEN-DIV7A"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-rates-and-codes/division-7a-benchmark-interest-rate",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/division-7a/ato-division-7a-benchmark-rate.txt",
+        "bytes": 3860,
+        "resolved_url": "https://www.ato.gov.au/tax-rates-and-codes/division-7a-benchmark-interest-rate",
+        "page_title": "Division 7A \u2013 benchmark interest rate | Australian Taxation Office",
+        "chars": 3850,
+        "chunks": 3
+      }
+    ]
+  },
+  "ato-fbt-overview": {
+    "id": "ato-fbt-overview",
+    "title": "Fringe benefits tax",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/fbt",
+    "use_cases": [
+      "GEN-FBT"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/how-fringe-benefits-tax-works",
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/types-of-fringe-benefits",
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/exemptions-concessions-and-other-ways-to-reduce-fbt",
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/salary-sacrificing",
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/calculating-your-fbt",
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/fbt-registration-lodgment-payment-and-reporting"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/fbt/ato-fbt-overview.txt",
+        "bytes": 22825,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax",
+        "page_title": "Fringe benefits tax",
+        "chars": 22792,
+        "chunks": 13
+      }
+    ]
+  },
+  "ato-fbt-rates": {
+    "id": "ato-fbt-rates",
+    "title": "Fringe benefits tax - rates and thresholds",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "rates and thresholds",
+    "tier": 2,
+    "category": "general-tax/fbt",
+    "use_cases": [
+      "GEN-FBT"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-rates-and-codes/fringe-benefits-tax-rates-and-thresholds",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/fbt/ato-fbt-rates.txt",
+        "bytes": 10978,
+        "resolved_url": "https://www.ato.gov.au/tax-rates-and-codes/fringe-benefits-tax-rates-and-thresholds",
+        "page_title": "Fringe benefits tax - rates and thresholds | Australian Taxation Office",
+        "chars": 10950,
+        "chunks": 6
+      }
+    ]
+  },
+  "ato-how-smsfs-are-taxed": {
+    "id": "ato-how-smsfs-are-taxed",
+    "title": "How SMSFs are taxed",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-compliance",
+    "use_cases": [
+      "UC1"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/how-smsfs-are-taxed",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-compliance/ato-how-smsfs-are-taxed.txt",
+        "bytes": 9716,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/how-smsfs-are-taxed",
+        "page_title": "How SMSFs are taxed | Australian Taxation Office",
+        "chars": 9694,
+        "chunks": 6
+      }
+    ]
+  },
+  "ato-individual-tax-rates": {
+    "id": "ato-individual-tax-rates",
+    "title": "Tax rates - Australian residents",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "rates and thresholds",
+    "tier": 2,
+    "category": "general-tax/entities",
+    "use_cases": [
+      "GEN-INDIV"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/entities/ato-individual-tax-rates.txt",
+        "bytes": 16618,
+        "resolved_url": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+        "page_title": "Tax rates \u2013 Australian resident | Australian Taxation Office",
+        "chars": 16224,
+        "chunks": 9
+      }
+    ]
+  },
+  "ato-instant-asset-write-off": {
+    "id": "ato-instant-asset-write-off",
+    "title": "Instant asset write-off for eligible businesses",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/entities",
+    "use_cases": [
+      "GEN-SB"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business/instant-asset-write-off",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/entities/ato-instant-asset-write-off.txt",
+        "bytes": 11931,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business/instant-asset-write-off",
+        "page_title": "Instant asset write-off for eligible businesses | Australian Taxation Office",
+        "chars": 11889,
+        "chunks": 7
+      }
+    ]
+  },
+  "ato-lcr-2021-2": {
+    "id": "ato-lcr-2021-2",
+    "title": "LCR 2021/2 - Non-arm's length income: expenditure incurred under a non-arm's length arrangement",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "law companion ruling",
+    "tier": 1,
+    "category": "smsf-compliance",
+    "use_cases": [
+      "UC1"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=COG%2FLCR20212%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-compliance/ato-lcr-2021-2.txt",
+        "bytes": 64122,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=COG%2FLCR20212%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "LCR 2021/2 | Legal database",
+        "chars": 63824,
+        "chunks": 36
+      }
+    ]
+  },
+  "ato-non-concessional-cap": {
+    "id": "ato-non-concessional-cap",
+    "title": "Non-concessional contributions cap",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-contributions",
+    "use_cases": [
+      "UC3"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/non-concessional-contributions-cap",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-contributions/ato-non-concessional-cap.txt",
+        "bytes": 19452,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/non-concessional-contributions-cap",
+        "page_title": "Non-concessional contributions cap | Australian Taxation Office",
+        "chars": 19348,
+        "chunks": 11
+      }
+    ]
+  },
+  "ato-payday-super": {
+    "id": "ato-payday-super",
+    "title": "Payday Super for employers",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/payroll-super",
+    "use_cases": [
+      "GEN-PAYROLL",
+      "UC3"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/about-payday-super",
+    "sections": [
+      "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday",
+      "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/missed-or-late-payday-super-payments",
+      "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/payday-super-how-to-manage-super-during-the-changeover"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/payroll-super/ato-payday-super.txt",
+        "bytes": 28050,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/about-payday-super",
+        "page_title": "Payday Super for employers",
+        "chars": 28012,
+        "chunks": 16
+      }
+    ]
+  },
+  "ato-payments-from-super": {
+    "id": "ato-payments-from-super",
+    "title": "Key super rates and thresholds - Payments from super",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "rates and thresholds",
+    "tier": 2,
+    "category": "smsf-pensions-tbc",
+    "use_cases": [
+      "UC4"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/payments-from-super",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-pensions-tbc/ato-payments-from-super.txt",
+        "bytes": 12917,
+        "resolved_url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/payments-from-super",
+        "page_title": "Payments from super | Australian Taxation Office",
+        "chars": 12661,
+        "chunks": 7
+      }
+    ]
+  },
+  "ato-pcg-2016-5": {
+    "id": "ato-pcg-2016-5",
+    "title": "PCG 2016/5 - Arm's length terms for limited recourse borrowing arrangements established by SMSFs",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "practical compliance guideline",
+    "tier": 1,
+    "category": "smsf-property-lrba",
+    "use_cases": [
+      "UC2"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=COG%2FPCG20165%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-property-lrba/ato-pcg-2016-5.txt",
+        "bytes": 27932,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=COG%2FPCG20165%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "PCG 2016/5 | Legal database",
+        "chars": 27856,
+        "chunks": 16
+      }
+    ]
+  },
+  "ato-pcg-2017-13": {
+    "id": "ato-pcg-2017-13",
+    "title": "PCG 2017/13 - Division 7A: PS LA 2010/4 sub-trust arrangements maturing in or after the 2016-17 income year",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "practical compliance guideline",
+    "tier": 1,
+    "category": "general-tax/division-7a",
+    "use_cases": [
+      "GEN-DIV7A"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=COG%2FPCG201713%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/division-7a/ato-pcg-2017-13.txt",
+        "bytes": 21312,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=COG%2FPCG201713%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "PCG 2017/13 | Legal database",
+        "chars": 21294,
+        "chunks": 12
+      }
+    ]
+  },
+  "ato-record-keeping-business": {
+    "id": "ato-record-keeping-business",
+    "title": "Record keeping for business",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/entities",
+    "use_cases": [
+      "GEN-PRAC"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business",
+      "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/detailed-business-record-keeping-requirements"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/entities/ato-record-keeping-business.txt",
+        "bytes": 9900,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business",
+        "page_title": "Record keeping for business",
+        "chars": 9888,
+        "chunks": 6
+      }
+    ]
+  },
+  "ato-registering-for-gst": {
+    "id": "ato-registering-for-gst",
+    "title": "Registering for GST",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/gst-bas",
+    "use_cases": [
+      "GEN-GST"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/gst-bas/ato-registering-for-gst.txt",
+        "bytes": 7484,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+        "page_title": "Registering for GST | Australian Taxation Office",
+        "chars": 7468,
+        "chunks": 5
+      }
+    ]
+  },
+  "ato-residency-tests": {
+    "id": "ato-residency-tests",
+    "title": "Residency tests",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/residency",
+    "use_cases": [
+      "GEN-RES",
+      "UC5"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/residency-tests",
+    "sections": [
+      "https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/residency-tests/residency-the-resides-test",
+      "https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/residency-tests/residency-the-domicile-test",
+      "https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/residency-tests/residency-the-183-day-test",
+      "https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/residency-tests/residency-the-superannuation-test",
+      "https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/residency-tests/australian-and-foreign-resident-examples"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/residency/ato-residency-tests.txt",
+        "bytes": 32797,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/residency-tests",
+        "page_title": "Residency tests",
+        "chars": 32685,
+        "chunks": 19
+      }
+    ]
+  },
+  "ato-sar-2026-instructions": {
+    "id": "ato-sar-2026-instructions",
+    "title": "Instructions to complete your SMSF annual return 2026",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "form and instructions",
+    "tier": 2,
+    "category": "smsf-establishment-compliance",
+    "use_cases": [
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026",
+    "sections": [
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-a-smsf-information-items-1-to-10",
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-b-income-item-11",
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-c-deductions-and-non-deductible-expenses-item-12",
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-d-income-tax-calculation-statement-item-13",
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-e-losses-item-14",
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/sections-f-and-g-member-and-supplementary-member-information",
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-h-assets-and-liabilities-items-15-and-16",
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-i-taxation-of-financial-arrangements-item-17",
+      "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026/section-j-and-k-other-information-and-declarations"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-establishment-compliance/ato-sar-2026-instructions.txt",
+        "bytes": 322888,
+        "resolved_url": "https://www.ato.gov.au/forms-and-instructions/self-managed-superannuation-fund-annual-return-2026-instructions/instructions-to-complete-your-smsf-annual-return-2026",
+        "page_title": "Instructions to complete your SMSF annual return 2026",
+        "chars": 320668,
+        "chunks": 179
+      }
+    ]
+  },
+  "ato-sb-cgt-concessions": {
+    "id": "ato-sb-cgt-concessions",
+    "title": "Small business CGT concessions",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/cgt",
+    "use_cases": [
+      "GEN-CGT",
+      "UC3"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-15-year-exemption",
+      "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-50-percent-active-asset-reduction",
+      "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-retirement-exemption",
+      "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-roll-over"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/cgt/ato-sb-cgt-concessions.txt",
+        "bytes": 41712,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions",
+        "page_title": "Small business CGT concessions",
+        "chars": 41667,
+        "chunks": 24
+      }
+    ]
+  },
+  "ato-sb-cgt-eligibility": {
+    "id": "ato-sb-cgt-eligibility",
+    "title": "CGT concessions eligibility overview",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/cgt",
+    "use_cases": [
+      "GEN-CGT"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-cgt-concessions-eligibility-conditions/cgt-concessions-eligibility-overview",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/cgt/ato-sb-cgt-eligibility.txt",
+        "bytes": 8483,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/small-business-cgt-concessions/small-business-cgt-concessions-eligibility-conditions/cgt-concessions-eligibility-overview",
+        "page_title": "CGT concessions eligibility overview | Australian Taxation Office",
+        "chars": 8475,
+        "chunks": 5
+      }
+    ]
+  },
+  "ato-sg-rate": {
+    "id": "ato-sg-rate",
+    "title": "Key super rates and thresholds - Super guarantee",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "rates and thresholds",
+    "tier": 2,
+    "category": "general-tax/payroll-super",
+    "use_cases": [
+      "GEN-PAYROLL"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/payroll-super/ato-sg-rate.txt",
+        "bytes": 3817,
+        "resolved_url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee",
+        "page_title": "Super guarantee | Australian Taxation Office",
+        "chars": 3759,
+        "chunks": 2
+      }
+    ]
+  },
+  "ato-small-business-concessions": {
+    "id": "ato-small-business-concessions",
+    "title": "Concessions for eligible businesses",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/entities",
+    "use_cases": [
+      "GEN-SB"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/concessions",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/entities/ato-small-business-concessions.txt",
+        "bytes": 3378,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/concessions",
+        "page_title": "Concessions for eligible businesses | Australian Taxation Office",
+        "chars": 3374,
+        "chunks": 2
+      }
+    ]
+  },
+  "ato-smsf-auditor-requirements": {
+    "id": "ato-smsf-auditor-requirements",
+    "title": "SMSF auditor professional requirements",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-establishment-compliance",
+    "use_cases": [
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-and-super-professionals/for-superannuation-professionals/smsf-auditors/smsf-auditor-professional-requirements",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-establishment-compliance/ato-smsf-auditor-requirements.txt",
+        "bytes": 2181,
+        "resolved_url": "https://www.ato.gov.au/tax-and-super-professionals/for-superannuation-professionals/smsf-auditors/smsf-auditor-professional-requirements",
+        "page_title": "SMSF auditor professional requirements | Australian Taxation Office",
+        "chars": 2177,
+        "chunks": 2
+      }
+    ]
+  },
+  "ato-smsf-australian-super-fund": {
+    "id": "ato-smsf-australian-super-fund",
+    "title": "Check your SMSF is an Australian super fund",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-residency",
+    "use_cases": [
+      "UC5"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/check-your-smsf-is-an-australian-super-fund",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-residency/ato-smsf-australian-super-fund.txt",
+        "bytes": 3375,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/check-your-smsf-is-an-australian-super-fund",
+        "page_title": "Check your SMSF is an Australian super fund | Australian Taxation Office",
+        "chars": 3373,
+        "chunks": 2
+      }
+    ]
+  },
+  "ato-smsf-income-stream-rules": {
+    "id": "ato-smsf-income-stream-rules",
+    "title": "Income stream (pension) rules and payments",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-pensions-tbc",
+    "use_cases": [
+      "UC4"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/paying-smsf-benefits/income-stream-pension-rules-and-payments",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-pensions-tbc/ato-smsf-income-stream-rules.txt",
+        "bytes": 18878,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/paying-smsf-benefits/income-stream-pension-rules-and-payments",
+        "page_title": "Income stream (pension) rules and payments | Australian Taxation Office",
+        "chars": 18786,
+        "chunks": 11
+      }
+    ]
+  },
+  "ato-smsf-investment-requirements": {
+    "id": "ato-smsf-investment-requirements",
+    "title": "SMSF investment requirements",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-compliance",
+    "use_cases": [
+      "UC1"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/smsf-investment-requirements",
+    "sections": [
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/create-your-smsf-investment-strategy",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/ownership-of-smsf-investments",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-regulation-and-compliance/smsf-compliance/our-smsf-non-compliance-actions"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-compliance/ato-smsf-investment-requirements.txt",
+        "bytes": 27966,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/smsf-investment-requirements",
+        "page_title": "SMSF investment requirements",
+        "chars": 27904,
+        "chunks": 16
+      }
+    ]
+  },
+  "ato-smsf-investment-restrictions": {
+    "id": "ato-smsf-investment-restrictions",
+    "title": "What are the SMSF investment restrictions?",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-compliance",
+    "use_cases": [
+      "UC1"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/what-are-the-smsf-investment-restrictions",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-compliance/ato-smsf-investment-restrictions.txt",
+        "bytes": 11078,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/what-are-the-smsf-investment-restrictions",
+        "page_title": "What are the SMSF investment restrictions? | Australian Taxation Office",
+        "chars": 11068,
+        "chunks": 7
+      }
+    ]
+  },
+  "ato-smsf-lrba": {
+    "id": "ato-smsf-lrba",
+    "title": "Limited recourse borrowing arrangements",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-property-lrba",
+    "use_cases": [
+      "UC2"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements",
+    "sections": [
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/about-lrbas",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/rules-for-entering-an-lrba",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/relationships-with-the-lrba-lender",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/rules-on-assets-under-lrba",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/in-house-asset-rules-for-lrbas",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/lrbas-and-total-superannuation-balance",
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/changes-to-limited-recourse-borrowing-arrangements"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-property-lrba/ato-smsf-lrba.txt",
+        "bytes": 45633,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements",
+        "page_title": "Limited recourse borrowing arrangements",
+        "chars": 45594,
+        "chunks": 26
+      }
+    ]
+  },
+  "ato-smsf-tbar-when-to-lodge": {
+    "id": "ato-smsf-tbar-when-to-lodge",
+    "title": "When to lodge a transfer balance account report for SMSFs",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-pensions-tbc",
+    "use_cases": [
+      "UC4"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/when-to-lodge-a-transfer-balance-account-report-for-smsfs",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-pensions-tbc/ato-smsf-tbar-when-to-lodge.txt",
+        "bytes": 11117,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-administration-and-reporting/when-to-lodge-a-transfer-balance-account-report-for-smsfs",
+        "page_title": "When to lodge a transfer balance account report for SMSFs | Australian Taxation Office",
+        "chars": 11099,
+        "chunks": 7
+      }
+    ]
+  },
+  "ato-smsf-trust-deed": {
+    "id": "ato-smsf-trust-deed",
+    "title": "Create the SMSF trust deed",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-establishment-compliance",
+    "use_cases": [
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/create-the-smsf-trust-deed",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-establishment-compliance/ato-smsf-trust-deed.txt",
+        "bytes": 2793,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/create-the-smsf-trust-deed",
+        "page_title": "Create the SMSF trust deed | Australian Taxation Office",
+        "chars": 2781,
+        "chunks": 2
+      }
+    ]
+  },
+  "ato-smsf-trustee-obligations": {
+    "id": "ato-smsf-trustee-obligations",
+    "title": "Your obligations as an SMSF trustee",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "smsf-establishment-compliance",
+    "use_cases": [
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/before-you-start-an-smsf/your-obligations-as-an-smsf-trustee",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-establishment-compliance/ato-smsf-trustee-obligations.txt",
+        "bytes": 7815,
+        "resolved_url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/before-you-start-an-smsf/your-obligations-as-an-smsf-trustee",
+        "page_title": "Your obligations as an SMSF trustee | Australian Taxation Office",
+        "chars": 7811,
+        "chunks": 5
+      }
+    ]
+  },
+  "ato-smsfr-2008-2": {
+    "id": "ato-smsfr-2008-2",
+    "title": "SMSFR 2008/2 - Sole purpose test and benefits other than retirement, employment termination or death benefits",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "smsf-compliance",
+    "use_cases": [
+      "UC1"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20082%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-compliance/ato-smsfr-2008-2.txt",
+        "bytes": 76075,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=SFR%2FSMSFR20082%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "SMSFR 2008/2 | Legal database",
+        "chars": 76024,
+        "chunks": 43
+      }
+    ]
+  },
+  "ato-smsfr-2009-1": {
+    "id": "ato-smsfr-2009-1",
+    "title": "SMSFR 2009/1 - Business real property for the purposes of the SIS Act",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "smsf-property-lrba",
+    "use_cases": [
+      "UC1",
+      "UC2"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20091%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-property-lrba/ato-smsfr-2009-1.txt",
+        "bytes": 169373,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=SFR%2FSMSFR20091%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "SMSFR 2009/1 | Legal database",
+        "chars": 169199,
+        "chunks": 94
+      }
+    ]
+  },
+  "ato-smsfr-2009-2": {
+    "id": "ato-smsfr-2009-2",
+    "title": "SMSFR 2009/2 - Meaning of 'borrow money' or 'maintain an existing borrowing of money'",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "smsf-property-lrba",
+    "use_cases": [
+      "UC2"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20092%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-property-lrba/ato-smsfr-2009-2.txt",
+        "bytes": 59320,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=SFR%2FSMSFR20092%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "SMSFR 2009/2 | Legal database",
+        "chars": 59231,
+        "chunks": 33
+      }
+    ]
+  },
+  "ato-smsfr-2010-1": {
+    "id": "ato-smsfr-2010-1",
+    "title": "SMSFR 2010/1 - Acquisition of an asset by an SMSF from a related party (s66 SIS Act)",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "smsf-compliance",
+    "use_cases": [
+      "UC1"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20101%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-compliance/ato-smsfr-2010-1.txt",
+        "bytes": 95384,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=SFR%2FSMSFR20101%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "SMSFR 2010/1 | Legal database",
+        "chars": 95277,
+        "chunks": 53
+      }
+    ]
+  },
+  "ato-smsfr-2012-1": {
+    "id": "ato-smsfr-2012-1",
+    "title": "SMSFR 2012/1 - Limited recourse borrowing arrangements: application of key concepts",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "smsf-property-lrba",
+    "use_cases": [
+      "UC2"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20121%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-property-lrba/ato-smsfr-2012-1.txt",
+        "bytes": 83106,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=SFR%2FSMSFR20121%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "SMSFR 2012/1 | Legal database",
+        "chars": 83003,
+        "chunks": 47
+      }
+    ]
+  },
+  "ato-stp": {
+    "id": "ato-stp",
+    "title": "Single Touch Payroll",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/payroll-super",
+    "use_cases": [
+      "GEN-PAYROLL"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/what-is-stp",
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/expanding-single-touch-payroll-phase-2",
+      "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/how-to-report-single-touch-payroll-data"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/payroll-super/ato-stp.txt",
+        "bytes": 18964,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll",
+        "page_title": "Single Touch Payroll",
+        "chars": 18938,
+        "chunks": 11
+      }
+    ]
+  },
+  "ato-td-2022-11": {
+    "id": "ato-td-2022-11",
+    "title": "TD 2022/11 - Division 7A: when will an unpaid present entitlement or amount held on sub-trust become the provision of financial accommodation?",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "determination",
+    "tier": 1,
+    "category": "general-tax/division-7a",
+    "use_cases": [
+      "GEN-DIV7A",
+      "GEN-TRUST"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=TXD%2FTD202211%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/division-7a/ato-td-2022-11.txt",
+        "bytes": 68089,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=TXD%2FTD202211%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "TD 2022/11 | Legal database",
+        "chars": 68001,
+        "chunks": 38
+      }
+    ]
+  },
+  "ato-tr-2010-1": {
+    "id": "ato-tr-2010-1",
+    "title": "TR 2010/1 - Income tax: superannuation contributions",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "smsf-contributions",
+    "use_cases": [
+      "UC3"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=TXR%2FTR20101%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-contributions/ato-tr-2010-1.txt",
+        "bytes": 145537,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=TXR%2FTR20101%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "TR 2010/1 | Legal database",
+        "chars": 145259,
+        "chunks": 81
+      }
+    ]
+  },
+  "ato-tr-2018-5": {
+    "id": "ato-tr-2018-5",
+    "title": "TR 2018/5 - Income tax: central management and control test of residency",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "general-tax/residency",
+    "use_cases": [
+      "GEN-RES",
+      "UC5"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=TXR%2FTR20185%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/residency/ato-tr-2018-5.txt",
+        "bytes": 30911,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=TXR%2FTR20185%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "TR 2018/5 | Legal database",
+        "chars": 30851,
+        "chunks": 18
+      }
+    ]
+  },
+  "ato-tr-2021-1": {
+    "id": "ato-tr-2021-1",
+    "title": "TR 2021/1 - Income tax: when are deductions allowed for employees' transport expenses?",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "general-tax/entities",
+    "use_cases": [
+      "GEN-INDIV"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=TXR%2FTR20211%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/entities/ato-tr-2021-1.txt",
+        "bytes": 67817,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=TXR%2FTR20211%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "TR 2021/1 | Legal database",
+        "chars": 67662,
+        "chunks": 38
+      }
+    ]
+  },
+  "ato-tr-2023-1": {
+    "id": "ato-tr-2023-1",
+    "title": "TR 2023/1 - Income tax: residency tests for individuals",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "ruling",
+    "tier": 1,
+    "category": "general-tax/residency",
+    "use_cases": [
+      "GEN-RES",
+      "UC5"
+    ],
+    "kind": "ruling",
+    "url": "https://www.ato.gov.au/law/view/document?DocID=TXR%2FTR20231%2FNAT%2FATO%2F00001",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/residency/ato-tr-2023-1.txt",
+        "bytes": 88692,
+        "resolved_url": "https://www.ato.gov.au/law/view/print?DocID=TXR%2FTR20231%2FNAT%2FATO%2F00001&PiT=99991231235958",
+        "page_title": "TR 2023/1 | Legal database",
+        "chars": 88617,
+        "chunks": 50
+      }
+    ]
+  },
+  "ato-transfer-balance-cap": {
+    "id": "ato-transfer-balance-cap",
+    "title": "Key super rates and thresholds - Transfer balance cap",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "rates and thresholds",
+    "tier": 2,
+    "category": "smsf-pensions-tbc",
+    "use_cases": [
+      "UC4"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/transfer-balance-cap",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/retirement-withdrawal-lump-sum-or-income-stream/transfer-balance-account"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-pensions-tbc/ato-transfer-balance-cap.txt",
+        "bytes": 32909,
+        "resolved_url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/transfer-balance-cap",
+        "page_title": "Key super rates and thresholds - Transfer balance cap",
+        "chars": 32763,
+        "chunks": 19
+      }
+    ]
+  },
+  "ato-trustee-declaration": {
+    "id": "ato-trustee-declaration",
+    "title": "Trustee declaration",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "form and instructions",
+    "tier": 2,
+    "category": "smsf-establishment-compliance",
+    "use_cases": [
+      "UC7"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/forms-and-instructions/trustee-declaration",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "smsf-establishment-compliance/ato-trustee-declaration.txt",
+        "bytes": 2413,
+        "resolved_url": "https://www.ato.gov.au/forms-and-instructions/trustee-declaration",
+        "page_title": "Trustee declaration | Australian Taxation Office",
+        "chars": 2411,
+        "chunks": 2
+      }
+    ]
+  },
+  "ato-trusts-trustees-beneficiaries": {
+    "id": "ato-trusts-trustees-beneficiaries",
+    "title": "Trusts, trustees and beneficiaries",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/entities",
+    "use_cases": [
+      "GEN-TRUST"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-trustees-and-beneficiaries",
+    "min_chars": 300,
+    "sections": [
+      "https://www.ato.gov.au/businesses-and-organisations/trusts/trust-income-losses-and-capital-gains/trust-income",
+      "https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-trustees-and-beneficiaries/trust-vesting"
+    ],
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/entities/ato-trusts-trustees-beneficiaries.txt",
+        "bytes": 13668,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/trusts/trusts-trustees-and-beneficiaries",
+        "page_title": "Trusts, trustees and beneficiaries",
+        "chars": 13658,
+        "chunks": 8
+      }
+    ]
+  },
+  "ato-work-out-if-you-pay-super": {
+    "id": "ato-work-out-if-you-pay-super",
+    "title": "Work out if you have to pay super",
+    "publisher": "Australian Taxation Office",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "general-tax/payroll-super",
+    "use_cases": [
+      "GEN-PAYROLL"
+    ],
+    "kind": "html",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super",
+    "min_chars": 300,
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "general-tax/payroll-super/ato-work-out-if-you-pay-super.txt",
+        "bytes": 8296,
+        "resolved_url": "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super",
+        "page_title": "Work out if you have to pay super | Australian Taxation Office",
+        "chars": 8263,
+        "chunks": 5
+      }
+    ]
+  },
+  "leg-sg-administration-act-1992": {
+    "id": "leg-sg-administration-act-1992",
+    "title": "Superannuation Guarantee (Administration) Act 1992 (latest compilation)",
+    "publisher": "Federal Register of Legislation (Commonwealth of Australia)",
+    "doc_type": "legislation",
+    "tier": 1,
+    "category": "legislation",
+    "use_cases": [
+      "GEN-PAYROLL",
+      "UC3"
+    ],
+    "kind": "legislation",
+    "url": "C2004A04402",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "legislation/leg-sg-administration-act-1992.pdf",
+        "bytes": 768231,
+        "resolved_url": "https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/pdf",
+        "chars": 229053,
+        "chunks": 128
+      }
+    ]
+  },
+  "leg-sis-act-1993": {
+    "id": "leg-sis-act-1993",
+    "title": "Superannuation Industry (Supervision) Act 1993 (latest compilation)",
+    "publisher": "Federal Register of Legislation (Commonwealth of Australia)",
+    "doc_type": "legislation",
+    "tier": 1,
+    "category": "legislation",
+    "use_cases": [
+      "UC1",
+      "UC2",
+      "UC4",
+      "UC5",
+      "UC7"
+    ],
+    "kind": "legislation",
+    "url": "C2004A04633",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "legislation/leg-sis-act-1993_vol1.pdf",
+        "bytes": 1698648,
+        "resolved_url": "https://www.legislation.gov.au/C2004A04633/2026-08-10/2026-08-10/text/original/pdf/1",
+        "chars": 768737,
+        "chunks": 427
+      },
+      {
+        "path": "legislation/leg-sis-act-1993_vol2.pdf",
+        "bytes": 1681964,
+        "resolved_url": "https://www.legislation.gov.au/C2004A04633/2026-08-10/2026-08-10/text/original/pdf/2",
+        "chars": 665835,
+        "chunks": 370
+      }
+    ]
+  },
+  "leg-sis-regulations-1994": {
+    "id": "leg-sis-regulations-1994",
+    "title": "Superannuation Industry (Supervision) Regulations 1994 (latest compilation)",
+    "publisher": "Federal Register of Legislation (Commonwealth of Australia)",
+    "doc_type": "regulation",
+    "tier": 1,
+    "category": "legislation",
+    "use_cases": [
+      "UC1",
+      "UC3",
+      "UC4",
+      "UC7"
+    ],
+    "kind": "legislation",
+    "url": "F1996B00580",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "legislation/leg-sis-regulations-1994_vol1.pdf",
+        "bytes": 808270,
+        "resolved_url": "https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/original/pdf/1",
+        "chars": 209266,
+        "chunks": 117
+      },
+      {
+        "path": "legislation/leg-sis-regulations-1994_vol2.pdf",
+        "bytes": 1831118,
+        "resolved_url": "https://www.legislation.gov.au/F1996B00580/2026-07-01/2026-07-01/text/original/pdf/2",
+        "chars": 895206,
+        "chunks": 498
+      }
+    ]
+  },
+  "leg-tas-code-determination-2024": {
+    "id": "leg-tas-code-determination-2024",
+    "title": "Tax Agent Services (Code of Professional Conduct) Determination 2024",
+    "publisher": "Federal Register of Legislation (Commonwealth of Australia)",
+    "doc_type": "legislative instrument",
+    "tier": 1,
+    "category": "legislation",
+    "use_cases": [
+      "GEN-PRAC"
+    ],
+    "kind": "legislation",
+    "url": "F2024L00849",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "legislation/leg-tas-code-determination-2024.pdf",
+        "bytes": 310722,
+        "resolved_url": "https://www.legislation.gov.au/F2024L00849/2025-02-25/2025-02-25/text/original/pdf",
+        "chars": 34926,
+        "chunks": 20
+      }
+    ]
+  },
+  "leg-tax-agent-services-act-2009": {
+    "id": "leg-tax-agent-services-act-2009",
+    "title": "Tax Agent Services Act 2009 (latest compilation)",
+    "publisher": "Federal Register of Legislation (Commonwealth of Australia)",
+    "doc_type": "legislation",
+    "tier": 1,
+    "category": "legislation",
+    "use_cases": [
+      "GEN-PRAC"
+    ],
+    "kind": "legislation",
+    "url": "C2009A00013",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "legislation/leg-tax-agent-services-act-2009.pdf",
+        "bytes": 543223,
+        "resolved_url": "https://www.legislation.gov.au/C2009A00013/2025-02-21/2025-02-21/text/original/pdf",
+        "chars": 187611,
+        "chunks": 105
+      }
+    ]
+  },
+  "tpb-code-of-professional-conduct": {
+    "id": "tpb-code-of-professional-conduct",
+    "title": "Code of Professional Conduct",
+    "publisher": "Tax Practitioners Board",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "professional-standards",
+    "use_cases": [
+      "GEN-PRAC"
+    ],
+    "kind": "html",
+    "url": "https://www.tpb.gov.au/code-professional-conduct",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "professional-standards/tpb-code-of-professional-conduct.txt",
+        "bytes": 5995,
+        "resolved_url": "https://www.tpb.gov.au/code-professional-conduct",
+        "page_title": "Code of Professional Conduct | Tax Practitioners Board",
+        "chars": 5979,
+        "chunks": 4
+      }
+    ]
+  },
+  "tpb-gs-01-2010": {
+    "id": "tpb-gs-01-2010",
+    "title": "TPB(GS) 01/2010 Code of Professional Conduct",
+    "publisher": "Tax Practitioners Board",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "professional-standards",
+    "use_cases": [
+      "GEN-PRAC"
+    ],
+    "kind": "html",
+    "url": "https://www.tpb.gov.au/sites/default/files/2026-04/TPB(GS)%2001_2010_Code%20of%20Professional%20Conduct_2.pdf",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "professional-standards/tpb-gs-01-2010.pdf",
+        "bytes": 1412076,
+        "resolved_url": "https://www.tpb.gov.au/sites/default/files/2026-04/TPB(GS)%2001_2010_Code%20of%20Professional%20Conduct_2.pdf",
+        "chars": 229433,
+        "chunks": 128
+      }
+    ]
+  },
+  "tpb-gs-55-2026-ai": {
+    "id": "tpb-gs-55-2026-ai",
+    "title": "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct",
+    "publisher": "Tax Practitioners Board",
+    "doc_type": "guidance",
+    "tier": 2,
+    "category": "professional-standards",
+    "use_cases": [
+      "GEN-PRAC"
+    ],
+    "kind": "html",
+    "url": "https://www.tpb.gov.au/sites/default/files/2026-07/TPB(GS)%2055_2026_%20The%20use%20of%20Artificial%20Intelligence%20and%20the%20Code%20of%20Professional%20Conduct_0.pdf",
+    "retrieved": "2026-09-25",
+    "files": [
+      {
+        "path": "professional-standards/tpb-gs-55-2026-ai.pdf",
+        "bytes": 609619,
+        "resolved_url": "https://www.tpb.gov.au/sites/default/files/2026-07/TPB(GS)%2055_2026_%20The%20use%20of%20Artificial%20Intelligence%20and%20the%20Code%20of%20Professional%20Conduct_0.pdf",
+        "chars": 23229,
+        "chunks": 13
+      }
+    ]
+  }
+}

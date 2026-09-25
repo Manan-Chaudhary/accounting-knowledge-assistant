@@ -1,0 +1,613 @@
+Title: SMSF investment requirements
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/smsf-investment-requirements
+Retrieved: 2026-09-25
+Topic: smsf-compliance
+---
+
+=== Section: SMSF investment requirements
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/smsf-investment-requirements
+
+# SMSF investment requirements
+
+About SMSF investment requirements, including the sole purpose test, and additional support.
+Published 2 April 2025
+
+## About SMSF investing
+
+Investments you make for your self-managed super fund (SMSF) must be in accordance with your fund's trust deed and superannuation laws.
+
+Super laws require you to prepare an investment strategy for your SMSF, which is your plan for making, holding and realising assets. It should set out why and how you’ve chosen assets to meet your fund's investment objectives and members' retirement goals.
+
+There are investment requirements that trustees must follow. Your investments must:
+
+- meet the sole purpose test
+
+- be made on a commercial arm's length basis and always reflect true market value
+
+- show clear legal ownership by the fund
+
+- meet specific restrictions on investments.
+
+### Sole purpose test
+
+Any investment your SMSF makes needs to be made and maintained for the sole purpose of providing retirement benefits to your members, or to pay death benefits if a member dies before retirement.
+
+A contravention of one or more of the super laws may indicate that there has been a breach of the sole purpose test. This can include if you or a related party obtains more than an incidental personal financial benefit when making investments, for example:
+
+- if the asset provides a pre-retirement benefit to a related party, such as holidaying in your SMSF investment property
+
+- if you or a related party receive a personal reward when investing your fund's assets in a particular investment group
+
+- if the fund invests in collectables such as art or wine, and a trustee, member or related party displays or stores these assets in their private residence.
+
+A contravention will occur if your investments do not meet the sole purpose test. This means your SMSF will not be eligible for tax concessions and the trustees of the SMSF could face a range of compliance actions such as penalties.
+
+## Additional support
+
+You need financial and legal knowledge and skills to manage your SMSF investments.
+
+Before making any decisions about investments, consider getting help from a licensed financial advisor or SMSF professional.
+
+You can also request SMSF specific advice to understand how superannuation law applies to a particular transaction or arrangement.
+QC103934
+
+=== Section: Create your SMSF investment strategy
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/create-your-smsf-investment-strategy
+
+# Create your SMSF investment strategy
+
+Understand SMSF investment requirements and creating your fund's investment strategy.
+Last updated 2 April 2025
+
+## SMSF investments
+
+Before your self-managed super fund (SMSF) starts making investments, you must understand the investment requirements and have an investment strategy that reflects them.
+
+Your investments must:
+
+- be permitted by your fund’s trust deed and in accordance with superannuation laws
+
+- show clear legal ownership by the fund
+
+- be made on a commercial arm's length basis and always reflect true market value
+
+- meet the sole purpose test.
+
+Sole purpose means your fund is set up and maintained for the sole purpose of providing retirement benefits to your members, or to pay death benefits to members' beneficiaries.
+
+## Investment restrictions
+
+While there are some exceptions, generally restrictions on investments mean:
+
+- you can't acquire assets from, or lend money to, fund members or other related parties
+
+- your fund can't borrow money.
+
+If your investments breach super laws, we can take compliance action against you. Depending on the severity of the breach, we may apply penalties and potentially disqualify you as trustee.
+
+## Investment strategy
+
+Super laws require that you:
+
+- prepare and implement an investment strategy for your SMSF
+
+- put into practice and review the strategy regularly.
+
+Your investment strategy is your plan for making, holding and realising assets consistent with your investment objectives and retirement goals. It should set out why and how you’ve chosen your investments to meet these goals.
+
+A licensed financial adviserExternal Link can help you prepare the strategy, but you are responsible for managing the investments in:
+
+- the best financial interests of the SMSF's members
+
+- accordance with the law.
+
+Take care if you're using a standard investment strategy template as they:
+
+- may not meet superannuation rules
+
+- must be appropriately tailored to your fund’s circumstances
+
+- must be reviewed regularly as required by super laws.
+
+## What to include in the strategy
+
+Your SMSF investment strategy should be in writing and tailored specifically to your fund's circumstances. It should not be a repeat of the legislation.
+
+It should explain how your investments meet each member’s retirement objectives. You should consider factors such as their:
+
+- age
+
+- employment status
+
+- retirement needs (which influence the risk appetite).
+
+There is no prescribed format. Every investment strategy needs to consider the particular circumstances of the SMSF and its members. For instance, it should consider:
+
+- risk and the likely return from your fund’s investments, to maximise member returns
+
+- composition and diversity of your fund’s investments, and the risks of inadequate diversification
+
+- liquidity of the fund’s assets (how easily they can be converted to cash to meet fund expenses and pay member benefits)
+
+- whether to hold insurance cover (such as life, permanent or temporary incapacity insurance) for each SMSF member.
+
+When formulating your investment strategy, it is not a valid approach to just specify investment ranges of 0 to 100% for each class of investment. You also need to state:
+
+- how you plan to invest your super
+
+- why you require broad ranges to achieve your investment strategy requirements.
+
+The percentage or dollar allocation of the fund’s assets invested in each asset class should support achieving your retirement goals.
+
+If you choose not to use allocated portions or percentages in your strategy, you must list material assets and why investing in those assets will achieve your retirement goals.
+
+For general information on how to plan, choose and track investments see moneysmart.gov.auExternal Link.
+
+Media: SMSF - Investment strategy
+
+https://tv.ato.gov.au/ato-tv/media?v=bd1bdiubfshbrrExternal Link (Duration: 2:30)
+
+### Member insurance cover
+
+Your SMSF can consider providing insurance for a member for an event that is consistent with one of these conditions of release of the member's super:
+
+- death
+
+- terminal medical condition
+
+- permanent or temporary incapacity (causing the member to cease working).
+
+SMSFs generally cannot provide trauma insurance for their members as this does not meet the sole purpose test and is not consistent with one of the conditions of release.
+
+To meet the sole purpose test, the following conditions must be met:
+
+- Any benefits payable under the policy must be paid to the SMSF.
+
+- Those benefits will become part of the assets of the SMSF at least until such time as the relevant member satisfies a condition of release.
+
+- The policy was not acquired to secure some other benefit for another person, such as a member or member's relative.
+
+## Risks with investing all your savings in one asset
+
+While you can choose to invest all your retirement savings in one asset or asset class, having a diverse portfolio will spread your investment risks.
+
+Investing most of your retirement savings in one asset or asset class can lead to concentration risk. In this situation, your strategy should document:
+
+- that you considered the risks associated with a lack of diversification
+
+- how you think the investment will still meet your fund’s investment objectives, including investment returns and cash flow requirements.
+
+Asset concentration risk is higher for leveraged SMSFs, such as where the trustee has used a limited recourse borrowing arrangement to acquire the asset. This can expose you to a loss in your retirement savings if the asset declines in value. It could also trigger a forced asset sale if loan rules are breached.
+
+You and the other trustees need to be aware of any legal risks that may result from investing in one asset class. Super laws require you to invest in accordance with the best financial interest of all members.
+
+## Reviewing your strategy
+
+You should regularly review your investment strategy to ensure it continues to meet the current and future needs of your members.
+
+Certain significant events should also prompt you to review your strategy, such as:
+
+- a market correction
+
+- when a new member joins or departs the fund
+
+- when a member starts receiving a pension (because you need to ensure the fund can meet minimum pension payments).
+
+Review your strategy at least annually and document that you have undertaken this review and any decisions made. You could do this as part of the annual trustee meeting minutes.
+
+Provide the evidence of a review to your auditor to show you've regularly reviewed and, where necessary, revised your investment strategy.
+
+## If your strategy isn't compliant
+
+Each year your SMSF is required to be audited by an SMSF auditor. If your auditor identifies that you have breached the investment strategy requirements, then you must fix the breach.
+
+If your strategy failed to adequately address some of the factors mentioned above, such as the risk of inadequate diversification, fix this by attaching a:
+
+- signed and dated addendum to the strategy
+
+- trustee minute that adequately addresses the requirements.
+
+Show this to your auditor before the audit is finalised.
+
+If you failed to invest in accordance with your strategy, revise it to ensure it reflects your fund’s investments and how they will meet your retirement objectives. Then make sure you regularly review and adhere to your new strategy in the future.
+
+Your auditor needs to lodge an auditor contravention report (ACR) notifying us of the breach if it meets the ACR reporting criteria.
+QC23320
+
+=== Section: Ownership of SMSF investments
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/ownership-of-smsf-investments
+
+# Ownership of SMSF investments
+
+Recording your SMSF as the owner of its assets and when you need to update ownership documentation
+Last updated 2 April 2025
+
+Media: SMSF - Separation of assets
+
+https://tv.ato.gov.au/media/bd1bdiubfi6z96External Link (Duration: 2:20)
+
+## Who to record as the owner of assets
+
+Your self-managed super fund (SMSF) must be the legal owner of all fund assets.
+
+Investments must be held separately from any personal or business assets.
+
+By keeping the ownership separate, you are:
+
+- protecting the assets from creditors
+
+- preventing disputes over proof of ownership.
+
+Insurance should also be in the name of the SMSF.
+
+## Recording SMSF ownership
+
+Depending on your SMSF's structure, where possible, fund assets should be held in the name of either:
+
+- the individual trustees 'as trustees for' the fund – for example, 'Micah and Grace Tari as trustees for the Tari Family Super Fund'
+
+- the corporate trustee 'as trustee for' the fund – for example, 'ABC Pty Ltd as trustee for the Tari Family Super Fund'.
+
+### Assets that can't be held in the SMSF's name
+
+Some state and territory laws may prevent your SMSF from holding assets using the fund's name.
+
+If assets can't be held in the SMSF's name, fund ownership must be clearly established. You can do this by either:
+
+- executing a caveat
+
+- creating an instrument or declaration of trust.
+
+Trustees should seek legal advice about how they can do this.
+
+If possible, documents such as sale agreements should be executed in the name of the trustees 'as trustees for' the SMSF.
+
+If other situations prevent holding assets in the SMSF's name, such as share trading accounts that don't allow multiple trustees to be listed, document the names of all individual trustees in your fund's records as owners of the shares.
+
+### If trustees join or leave the SMSF
+
+If an individual trustee joins or leaves your SMSF, you must change the names on the ownership documents for each fund asset. Document this change in your records, along with clear evidence to support the SMSF's ownership of the asset.
+
+If you have a corporate trustee structure and there is a change in directors, you don't need to change the names on the SMSF's ownership documents. This is because the corporate trustee of the SMSF has not changed.
+
+### Limited recourse borrowing arrangements
+
+If your fund uses a limited recourse borrowing arrangement (LRBA) to purchase an asset, the asset is held in a separate trust outside of the SMSF to ensure the other fund assets are protected if the loan defaults.
+
+If the asset is:
+
+- currently under an LRBA, the holding trust must be listed as the owner
+
+- no longer under an LRBA, the SMSF must be listed as the owner.
+
+QC23322
+
+=== Section: Our SMSF non-compliance actions
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-regulation-and-compliance/smsf-compliance/our-smsf-non-compliance-actions
+
+# Our SMSF non-compliance actions
+
+The actions we can take if self-managed super fund (SMSF) trustees don't comply with super laws.
+Last updated 12 February 2026
+
+## Encouraging compliance
+
+We focus on encouraging trustees to comply with superannuation laws by helping them understand their obligations. We do this with a range of support products, including:
+
+- online guidance
+
+- help and support for SMSFs – including SMSF specific advice
+
+- SMSF early engagement and voluntary disclosure service
+
+- SMSF lifecycle publications and education modules
+
+- SMSF newsroom
+
+- Media centre for SMSF media releases and executive speeches.
+
+There are occasions when stronger responses are required.
+
+## If you've breached the law
+
+Your auditor will report certain breaches of super law to us and you. This is called a contravention.
+
+It's important you rectify any contraventions as soon as possible.
+
+Use the SMSF early engagement and voluntary disclosure service to voluntarily disclose any regulatory contraventions that remain unrectified. Your actions will be taken into account and may reduce any penalties.
+
+Trustees can be personally fined for breaching some super laws. This can often be thousands of dollars. In very serious cases, you can be disqualified from being a trustee, which means you can never be a trustee again.
+
+If the breach is serious enough, your fund can be made non-complying and could lose almost half of its assets in tax.
+
+If you decide to wind up your SMSF following a contravention this won't stop compliance action.
+
+The compliance measures we apply will depend on the actions of the trustees and the type of contravention.
+
+## How we make our decisions
+
+To ensure a fair and reasonable outcome in each case, decisions are made according to the statements and principles set out in our:
+
+- Charter, which requires that taxpayers be treated fairly and reasonably.
+
+- Compliance model, which helps in understanding the factors and attitudes that motivate a taxpayer to comply or not comply with the law.
+
+- Good decision-making model, which requires that the decision is legal, ethical, equitable, overt, sensible, timely, and in accordance with the principles of natural justice.
+
+We also consider the following trustee and member actions:
+
+- Was it an intentional contravention?
+
+- When did you inform us?
+
+- What efforts did you make to try and fix the contravention?
+
+Media: What happens if your fund breaches the law?
+
+https://tv.ato.gov.au/ato-tv/media?v=bd1bdiub8cjgsnExternal Link (Duration: 2:27)
+
+## Enforceable undertaking
+
+A trustee may initiate an undertaking to rectify a contravention. The undertaking must be sent to us in writing. We will decide whether to accept it. If accepted, we will enforce the outcome of the undertaking.
+
+The undertaking should include:
+
+- a commitment to stop the behaviour that led to the contravention
+
+- what action will be taken to rectify the contravention
+
+- the timeframe to rectify the contravention
+
+- how and when the trustee will report the contravention has been rectified
+
+- the strategies to prevent the contravention from recurring.
+
+We will consider the following when deciding if we will accept the undertaking:
+
+- the compliance history of the trustee
+
+- the nature of the contravention
+
+- whether the contravention can be rectified, and when and how this will be done
+
+- whether the contravention had criminal consequences.
+
+We will write to the trustee and advise if the undertaking has been accepted or not.
+
+We may take further action if the SMSF trustee substantially fails to comply with the terms of the undertaking.
+
+Find out more about the factors that may be considered when deciding whether to accept a written undertaking, the form that written undertaking should take, and the options for enforcing the written undertaking should it be breached, at PS LA 2006/18 Self-managed superannuation funds – enforceable undertakings.
+
+## Rectification direction
+
+We may give a trustee or a director of a corporate trustee a written direction to rectify a contravention of super laws.
+
+A rectification direction requires a person to:
+
+- undertake specified action to rectify the contravention within a specified time
+
+- show proof of compliance with the direction.
+
+Rectification generally involves putting in place managerial or administrative arrangements that could reasonably be expected to ensure those or similar contraventions do not occur again.
+
+A person who fails to comply with the direction commits an offence of strict liability.
+
+This can also lead to the:
+
+- trustee or director being disqualified
+
+- fund’s complying status being removed, which may result in the fund having significant tax penalties.
+
+A trustee may request us to vary the direction. The request must:
+
+- be made in writing on or before the period specified in the direction
+
+- be signed and dated
+
+- set out the reasons for the request.
+
+A trustee may also object to our decision to:
+
+- give a rectification direction
+
+- refuse to vary a rectification direction.
+
+## Education direction
+
+We may give an education direction to a person if they breach the Superannuation Industry (Supervision) Act 1993 (SISA) or Superannuation Industry (Supervision) Regulations 1994 (SISR).
+
+An education direction is a written notice that tells a person to complete an approved SMSF trustee education course within a set period and give us proof they completed it.
+
+After completing the course, the person must also sign (or re-sign) a Trustee declaration (NAT 71089) form within 21 days. This confirms they understand their duties and obligations as an SMSF trustee.
+
+## Administrative penalties
+
+We may impose administrative penalties if your fund fails to meet its obligations under the superannuation law. You cannot pay or reimburse these penalties from the fund’s assets.
+
+We impose the penalties on:
+
+- current or former individual trustees, and
+
+- directors of corporate trustees, who share joint and several liability for the penalties.
+
+Individual trustees and directors of corporate trustees must pay an administrative penalty if they make a false and misleading statement or breach the following provisions of the SISA or the SISR:
+
+Contraventions – 60 penalty units
+
+- subsection 65(1): lending SMSF funds to members and relatives
+
+- subsection 67(1): borrowings
+
+- subsection 84(1): in-house assets
+
+- subsection 106(1): duty to notify of significant adverse events
+
+Contraventions – 20 penalty units
+
+- subsection 34(1): operating standards
+
+- subsection 106A(1): duty to notify of change in status of entity
+
+Contraventions – 10 penalty units
+
+- subsection 35B(1): accounts and statements
+
+- subsection 103(1): duty to keep minutes
+
+- subsection 103(2): duty to keep minutes of meetings
+
+- subsection 103(2A): retention of copy of section 71E election
+
+- subsection 104(1): duty to keep records of changes of trustees
+
+- subsection 104A(2): declaration of recognition of obligations and responsibilities
+
+- subsection 105(1): duty to keep and retain member or beneficiary reports
+
+Contraventions – 5 penalty units
+
+- subsection 124(1): written appointment of investment managers
+
+- subsection 160(4): education direction
+
+- subsection 254(1): information to be given to the regulator
+
+- subsection 347A(5): participation in the regulator’s statistical program
+
+Decisions on remission of penalties in full or part will depend on the circumstances of each case.
+
+Find out more about when and who is liable for administrative penalties and remission considerations in PS LA 2020/3 Self-managed superannuation funds – administrative penalties imposed under subsection 166(1) of SISA.
+
+## Raising income tax assessments
+
+If a member has illegally accessed their super without meeting a condition of release, the accessed amount will be included in their assessable income, even if they repay it to the fund later. This means the member may have to pay:
+
+- additional income tax
+
+- tax shortfall penalties
+
+- interest.
+
+This is in addition to any administrative penalties and potential disqualification.
+
+## Notice of non-compliance
+
+Serious contraventions of super laws may result in an SMSF being issued with a notice of non-compliance. In this case, the fund remains non-compliant until they receive a notice of compliance.
+
+Making a fund non-complying can have a significant financial impact on the SMSF because:
+
+- it does not qualify for concessional tax rates so its assessable income is taxed at the highest marginal tax rate, which is currently 45 %
+
+- in the year it becomes non-complying, it includes in its assessable income an amount equal to the market value of the fund's total assets less any contributions the fund has received that are not part of the taxable income of the fund
+
+- the fund will be listed as non-complying on Super Fund Lookup and will no longer be eligible to receive a rollover and employer contributions will not qualify as superannuation guarantee payments.
+
+We'll consider the following when deciding whether to issue a notice of non-compliance:
+
+- the tax consequences and financial impact of making an SMSF non-complying
+
+- the seriousness of the contravention, including the
+
+- trustee’s behaviour
+
+- effect the contravention has on the SMSF’s assets
+
+- number and duration of contraventions
+
+- all other relevant circumstances, including
+
+- if the trustee has rectified the contravention
+
+- the trustee's level of skill and knowledge
+
+- the compliance history of the fund
+
+- the events that led to the contravention.
+
+For more on what we consider when deciding whether to issue a notice of non-compliance, see PS LA 2006/19 Self-managed superannuation funds – notice of non-compliance.
+
+## Disqualification of a trustee
+
+We may disqualify an individual from acting as a trustee or director of a corporate trustee if they've contravened super laws. We can also disqualify an individual if we're concerned about their actions or suitability to be a trustee.
+
+When deciding whether to disqualify a trustee, we consider how:
+
+- serious the contraventions are
+
+- many contraventions have occurred
+
+- likely it is they will continue to be non-compliant.
+
+An individual may be disqualified as an SMSF trustee for not being a ‘fit and proper person’. How we determine this is covered in the PS LA 2006/17 Self-managed superannuation funds - disqualification of individuals to prohibit them from acting as a trustee of a self-managed superannuation fund. Personal character is considered along with the circumstances surrounding any contraventions.
+
+We will write to disqualified trustees detailing our decision. This information is published in the Federal Register of LegislationExternal Link as a notifiable instrument. Disqualifications were previously published in the Government Notices GazetteExternal Link.
+
+Individuals who have been disqualified from being an SMSF trustee can apply to have the decision reviewed.
+
+You can check our Disqualified Trustees RegisterExternal Link to see if an individual has previously been disqualified by us.
+
+The register:
+
+- provides publicly available information from the Federal Register of Legislation and the Government Notices Gazette
+
+- has search functionality to help you determine if a potential trustee has been disqualified
+
+- is updated quarterly no earlier than one month after the end of the quarter to allow trustees to seek a review of their disqualification before their names are added to the register
+
+- includes all individuals who have been disqualified by us since 2012, when the information was first published electronically.
+
+When an individual is notified they have been disqualified as a trustee or director of the corporate trustee, they must remove themselves from this role.
+
+It is an offence to continue to act as a trustee or director of the corporate trustee if you have been disqualified. Further penalties may apply.
+
+For more information about what we consider when making a decision about disqualification, see PS LA 2006/17 Self-managed superannuation funds – disqualification of individuals to prohibit them from acting as a trustee of a self-managed superannuation fund.
+
+## Freezing SMSF assets
+
+We may give a trustee a notice to freeze an SMSF’s assets. This can occur where it appears that conduct by the trustees or a third party such as an investment manager is likely to have a significant negative impact on the beneficiaries' interests. This is particularly important when the preservation of benefits is at risk.
+
+The notice may direct that assets are not:
+
+- acquired
+
+- disposed of
+
+- dealt with in any particular way.
+
+We may also give a similar written notice to a person other than a trustee who has possession, custody or control of an asset of the fund.
+
+## Civil and criminal penalties
+
+We may apply through the courts for civil or criminal penalties to be imposed.
+
+Civil and criminal penalties apply where SMSF trustees have contravened provisions concerning:
+
+- the sole-purpose test
+
+- lending to members
+
+- the borrowing rules
+
+- the in-house asset rules
+
+- prohibition of avoidance schemes
+
+- duty to notify the regulator of significant adverse events
+
+- arm's-length rules for an investment
+
+- promotion of illegal early release schemes.
+
+Before instigating civil or criminal prosecution, we will consider the:
+
+- severity of the contravention
+
+- circumstances that led to it
+
+- actions of the individuals involved.
+
+QC42478

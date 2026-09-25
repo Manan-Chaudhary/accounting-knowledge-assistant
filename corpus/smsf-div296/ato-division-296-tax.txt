@@ -1,0 +1,837 @@
+Title: Division 296 tax
+Publisher: Australian Taxation Office
+Document type: guidance
+Authority tier: 2
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax
+Retrieved: 2026-09-25
+Topic: smsf-div296
+---
+
+=== Section: Division 296 tax
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax
+
+# Division 296 tax
+
+If your total super balance is over the large super balance threshold (LSBT) you may have to pay Division 296 tax.
+
+## Division 296 tax on large super balances
+
+If you have a large super balance, check whether Division 296 tax applies to you.
+
+## How Division 296 tax is calculated
+
+How we calculate your Division 296 tax.
+
+## Division 296 tax for defined benefit interests and other prescribed interests
+
+Understand how Division 296 tax applies to individuals with defined benefit interests and other prescribed interests.
+
+## Paying Division 296 tax
+
+When your Division 296 tax is due and how to pay.
+
+## Division 296 tax excluded interests
+
+What super earnings are excluded from Division 296 tax.
+
+## Division 296 tax refund for former temporary residents
+
+How former temporary residents apply for a Division 296 tax refund or a debt release.
+QC107621
+
+=== Section: Division 296 tax on large super balances
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/division-296-tax-on-large-super-balances
+
+# Division 296 tax on large super balances
+
+If you have a large super balance, check whether Division 296 tax applies to you.
+Last updated 29 June 2026
+
+## About Division 296 tax
+
+From 1 July 2026, Division 296 tax will reduce the tax concessions available to individuals through their super. Division 296 tax can generally be paid from the individual’s super fund(s).
+
+Division 296 tax applies at a rate of 15% to your taxable super earnings. Broadly, this is a portion of the earnings on all your super interests determined by the extent that your total super balance (TSB) exceeds the large super balance threshold (LSBT).
+
+An additional rate of 10% will also apply to your very large super balance earnings component. Broadly, this is a portion of the earnings on all your super interests, determined by the extent that your TSB exceeds the very large super balance threshold (VLSBT).
+
+For the 2026–27 income year, the LSBT is $3 million and the VLSBT is $10 million. Both thresholds may increase due to indexation in future years.
+
+For the 2026–27 income year for Division 296 to apply, your TSB at the end of that income year must be greater than the LSBT. For subsequent income years, it will apply if either your TSB just before the start of the income year or at the end of the year exceeds these thresholds.
+
+The LSBT and the VLSBT will be indexed incrementally in line with the consumer price index:
+
+- LSBT is indexed in $150,000 increments.
+
+- VLSBT is indexed in $500,000 increments.
+
+Limited recourse borrowing arrangements (LRBA) amounts are disregarded when calculating your TSB for Division 296 tax purposes.
+
+## How will you know if you need to pay
+
+Each super fund in which you have a super interest, or that holds interests that support certain super income streams you receive, will calculate your relevant super earnings in relation to that interest or super income stream. Once your super funds report your relevant super earning, we will calculate your Division 296 tax amount and issue you a Division 296 tax notice of assessment.
+
+Division 296 tax is generally due and payable 84 days after we issue you a Division 296 tax notice of assessment. You can pay this tax yourself or elect (within 60 days after we issue you a Division 296 tax notice of assessment) to release money from one or more of your super funds to pay the liability. If you don't pay the debt on time, and don't elect to have money released from a super fund, the Commissioner of Taxation may ask one of your funds to release an amount of your super to pay the debt on your behalf.
+
+If you have a defined benefit interest and have not yet taken an end benefit, any Division 296 tax that relates to that interest will be deferred until a later date. If you don't pay your Division 296 tax by the due date, interest will be applied on the amount of Division 296 tax you owe. You can choose to voluntarily pay your deferred Division 296 tax liability before it is due to avoid interest being applied.
+
+If you lodge your tax return using myTax, your Division 296 tax notice of assessment will be sent to your myGov Inbox. If you want your notice of assessment to go to your tax agent instead, ask them to update your communication preferences.
+
+Division 296 tax assessments for the 2026–27 income year will begin issuing in the later half of the 2027–28 income year.
+
+See how and when to pay Division 296 tax.
+
+## Individuals excepted from Division 296 tax
+
+You are excepted from paying Division 296 tax if you:
+
+- are a child recipient of a super income stream at any time during the income year
+
+- are an individual who has received a structured settlement contribution made to you as a payment for a personal injury, in the income year, or any earlier income year, or
+
+- die in the 2026–27 income year.
+
+## Super earnings excluded from Division 296 tax
+
+There are rules for specific super earnings excluded from Division 296 tax, for:
+
+- State higher level office holders and their reversionary pension recipients
+
+- Commonwealth justices and judges and their reversionary pension recipients
+
+- Territory Supreme Court judges and their reversionary pension recipients
+
+- individuals with super interests in foreign super funds
+
+- individuals with super interests in non-complying super plans.
+
+For more information, see Excluded interests.
+
+## Other specific rules for Division 296 tax
+
+Specific rules apply to Division 296 tax for:
+
+- individuals with defined benefit interests and other prescribed interests
+
+- temporary residents who depart Australia.
+
+## Further guidance
+
+For more information, refer to the regulationsExternal Link and the following relevant legislation:
+
+- Superannuation (Building a Stronger and Fairer Super System) Imposition Act 2026 – Federal Register of LegislationExternal Link
+
+- Treasury Laws Amendment (Building a Stronger and Fairer Super System) Act 2026 – Federal Register of LegislationExternal Link
+
+QC107622
+
+=== Section: How Division 296 tax is calculated
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/how-division-296-tax-is-calculated
+
+# How Division 296 tax is calculated
+
+How we calculate your Division 296 tax.
+Last updated 29 June 2026
+
+## What is your total super balance for Division 296 tax
+
+Your total super balance (TSB) is the sum of the TSB values of all your Australian super interests, and any super interests supporting a super income stream of which you are a retirement phase recipient due to someone else's death. It also includes super interests you hold notionally due to a family law split.
+
+While limited recourse borrowing arrangements (LRBA) amounts are sometimes included in your TSB, they are never included in your TSB for Division 296 purposes.
+
+Your TSB is based on information reported to us by your super fund(s). If you have a question about the reported TSB value of a super interest included in your TSB, you will need to contact the relevant super fund.
+
+## How your total super balance is used to calculate Division 296 tax
+
+Division 296 tax applies to the portion of your taxable super earnings that relates to the part of your TSB that is greater than the large super balance threshold (LSBT), either:
+
+- just before the start of that income year
+
+- at the end of that income year.
+
+If your TSB at these times doesn’t exceed the LSBT, you won't have taxable super earnings. You won't be subject to Division 296 tax for that income year.
+
+Transitional provisions apply for the 2026–27 income year. For that income year, when determining whether you may be subject to Division 296 tax, we only consider whether your TSB at 30 June 2027 is greater than the LSBT.
+
+### Example 1: TSB less than $3 million
+
+Kenny has one super interest that has a TSB value of $150,000 at the end of 30 June 2027, which is his TSB for Division 296 tax purposes.
+
+At the end of 30 June 2028, the TSB value of Kenny's interest in the fund increases to $170,000. The ATO calculates his TSB at that time to be $170,000.
+
+Assuming the LSBT is not indexed, it will be $3 million for the 30 June 2028 income year. As his TSB at the end of the income year (30 June 2028) and just before the start of the income year (30 June 2027) are both less than the LSBT for that income year, Kenny won’t be assessed for Division 296 tax for the 2027–28 income year.
+
+End of example
+
+### Example 2: TSB greater than $3 million just before the start of the 2026–27 income year
+
+Mary has one super interest that has a TSB value of $3,150,000 at the end of 30 June 2026, which is her TSB for Division 296 tax purposes.
+
+At the end of 30 June 2027, the TSB value of her interest in the fund decreases to $2,950,000.
+
+Transitional arrangements apply for the 2026–27 year so that Division 296 tax liability for that income year is determined solely by reference to Mary's TSB at the end of the income year. As her TSB at the end of the 2026–27 income year is not more than the LSBT, Mary won't be assessed for Division 296 tax for that year.
+
+End of example
+
+### Example 3: TSB greater than $3 million just before the start of the current income year but not at the end of the current income year
+
+Eliza has one super interest that has a TSB value of $3,150,000 at the end of 30 June 2027, which is her TSB for Division 296 tax purposes.
+
+At the end of 30 June 2028, the TSB value of her interest in the fund decreases to $2,950,000 which is her TSB for Division 296 tax purposes. Her total super earnings for the income year are greater than nil.
+
+As Eliza's TSB just before the current income year is greater than the LSBT and her total super earnings are greater than nil, Eliza will have taxable super earnings for the income year and will be assessed for Division 296 tax for the 2027–28 income year.
+
+End of example
+
+### Example 4: balance in super fund less than LSBT just before the start and at the end of income year
+
+Garrick has 2 super interests, each in a separate super fund. At the end of 30 June 2027, the TSB value of his interest in the Let Me Retire Super Fund is $1,000,000 and in the Money Savings Super Fund is $1,850,000. The ATO calculates his TSB at that time to be $2,850,000.
+
+During the 2027–28 income year the following occurred in relation to Garrick's interest in the Let Me Retire Super Fund:
+
+- on 18 September 2027 the value of his interest increases to $2,600,000 because he receives insurance proceeds, and
+
+- Garrick withdraws $1,550,000 from his interest.
+
+At the end of 30 June 2028, the TSB value of Garrick's interest in Let Me Retire Super Fund is $1,050,000 and in Money Savings Super Fund is $1,900,000. The ATO calculates his TSB at that time to be $2,950,000.
+
+Garrick's total super earnings for the year are greater than nil.
+
+Partway through the year, Garrick's TSB would have been higher than the LSBT because of the insurance proceeds paid into the Let Me Retire Super Fund. However, as his TSB at the end of the year, and his TSB just before the start of the income year, are below the LSBT, he will not have taxable super earnings and will not be assessed for Division 296 tax for the 2027–28 income year.
+
+End of example
+
+## How Division 296 tax is calculated when you die
+
+If you die during an income year and your TSB just before the start of that income year is over the LSBT, you will be assessed on any amount of super earnings for the interest until the earlier of either:
+
+- all death benefits have been paid or distributed from the interest
+
+- a death benefit income stream has commenced to be paid from the interest.
+
+The earnings for your super interests will be included in your Division 296 tax calculation for the income year in which you die, even if they relate to a later income year. Your super fund will report your relevant super earnings to us for each income year after your death. Your Division 296 tax assessment for the year in which you die will be amended to include those earnings as they are reported.
+
+After you die, the TSB value of your interests will be nil for Division 296 purposes. This ensures any taxable super earnings are determined using the proportion your TSB exceeded the LSBT at the start of the income year.
+
+There are specific rules which apply to determine relevant super earnings in the income year you die for any defined benefit interest you have that is not in the retirement phase, and certain interests prescribed by the regulations.
+
+Transitional arrangements apply for the 2026–27 income year. Consequently, if you die in the 2026–27 income year you will never be liable to pay Division 296 tax.
+
+### Example 1: death in the 2026–27 income year
+
+Alex has a TSB of $4,200,000 at the end of 30 June 2026.
+
+Alex dies on 15 February 2027. As Alex died during the 2026–27 income year, he is not subject to Division 296 tax.
+
+End of example
+
+### Example 2: super interest not paid out in year of death
+
+Dawn has a super interest in an SMSF. Her TSB value of that interest at the end of 30 June 2027 is $4,000,000, which is her TSB for Division 296 tax purposes.
+
+Dawn dies on 15 February 2028. Her TSB at the end of the 2027–28 income year, and for subsequent income years, is considered to be nil for Division 296 tax purposes.
+
+Dawn's interest in her SMSF is not paid out in full until the 2028–29 income year as it has taken some time for her estate to be settled.
+
+Dawn's SMSF reports relevant super earnings attributable to her interest in the fund to the ATO for both the 2027–28 and 2028–29 income years.
+
+As Dawn's TSB just before the start of the income year in which she dies (2027–28) is over the LSBT and she had an interest in her SMSF for the 2027–28 income year and 2028–29 income year, any relevant super earnings in those income years will be included in a Division 296 tax assessment for the 2027–28 income year (year of death).
+
+Her fund will have to report the relevant super earnings to the ATO for each of those years. Her 2027–28 Division 296 tax assessment will be issued and amended to include earnings in future years. Any assessment forms part of Dawn's final tax affairs and may be paid from Dawn's superannuation interest or estate.
+
+End of example
+
+### Example 3: TSB less than LSBT just before the income year you die
+
+Jack has a Division 296 TSB of $2,500,000 at the end of 30 June 2028. Jack dies on 10 August 2028. As Jack is deceased, his Division 296 TSB at any time after his death is nil.
+
+When determining if Jack is liable for Division 296 tax, the ATO will look at his TSB just before the start of the year of death (at the end of 30 June 2028). Jack's TSB at that time is under the LSBT so Jack will not have taxable super earnings and will not be assessed for Division 296 tax for the 2028-29 income year.
+
+End of example
+
+## How your fund calculates your relevant super earnings
+
+Your total super earnings for an income year that will be subject to Division 296 tax is made up of your relevant super earnings from each of your super interests (not including excluded earnings). This includes super interests that you receive a super income stream from as a reversionary beneficiary or hold notionally due to a family law split.
+
+Most super funds will use a general attribution rule to calculate your relevant super earnings. They will do this by calculating their Division 296 fund earnings and then attributing your share of those earnings to your super interest(s) in the fund. The fund will then report your relevant super earnings to the ATO. We will use this information to calculate your total super earnings and Division 296 tax.
+
+For defined benefit interests not in retirement phase and certain prescribed interests, your relevant super earnings will be calculated based on a change in the TSB value of the super interest in accordance with a specific formula under the law.
+
+### Your super fund's role
+
+Your super fund(s) (including SMSFs that you have an interest in) play a critical role in ensuring we have the information we need to correctly calculate your Division 296 tax liability. Your super fund(s) will need to complete specific calculations under the law and report your relevant super earnings to us.
+
+For funds that are not an SMSF, we will ask them for this information. SMSFs will report this information to us via the Self-managed superannuation fund annual return.
+
+If you are a member of a SMSF and you think the combined value of your super interests will be greater than the LSBT, you should let your SMSF know, or ensure the necessary steps are taken to calculate your relevant earnings for the income year.
+
+We are currently drafting a law companion ruling that will support your fund with calculating their Division 296 fund earnings and members' relevant super earnings. In the meantime, for more information, refer to About Division 296 tax for APRA funds and About Division 296 tax for SMSFs.
+
+## Taxable super earnings
+
+Your taxable super earnings for an income year is the proportion of your total super earnings attributable to that part of your TSB exceeding the LSBT for an income year. We may also need to determine the proportion of your total super earnings attributable to the part of your TSB exceeding the very large super balance threshold (VLSBT).
+
+First we need to identify your Division 296 TSB reference amount which is, for the:
+
+- 2026–27 income year, your TSB at the end of that income year
+
+- 2027–28 income year onwards, the greater of your TSB just before the start of that income year, and your TSB at the end of that year.
+
+Remember, if your fund has any limited recourse borrowing arrangements (LRBA), these amounts are excluded from when determining your TSB for Division 296 tax purposes.
+
+To calculate the proportion of your TSB that exceeds the LSBT and VLSBT, the following formulas are used (rounded to 2 decimal places):
+
+Proportion over LSBT
+
+[(Your total super balance reference amount − the large super threshold for the year) ÷ your total super balance reference amount] × 100
+
+Proportion over VLSBT
+
+[(Your total super balance reference amount − the very large super threshold for the year) ÷ your total super balance reference amount] × 100
+
+Once we determine the percentage of your TSB reference amount that is over each of the relevant thresholds, we multiply these by your total super earnings for the year to assess how much of your super earnings are taxable. Your total super earnings are generally the total of the relevant super earnings your fund(s) have reported to us.
+
+### Example 1: total super earnings
+
+Leanne has interests in 3 super funds in the 2026–27 income year. Leanne's TSB at the end of 30 June 2027 exceeds the LSBT. Her super funds report the following relevant earnings attributable to Leanne for the income year:
+
+- Obi-Wan my retirement SMSF – $20,000
+
+- Super Wookie defined benefit fund – $5,000
+
+- Ewok lots of super APRA fund – $3,500.
+
+Leanne's total super earnings for the 2026–27 income year are $28,500.
+
+End of example
+
+### Example 2: taxable super earnings
+
+For the 2026–27 income year, Leanne's TSB reference amount is $3,500,000. Based on the previous example, her total super earnings for this income year are $28,500. Her taxable super earnings for the 2026–27 income year are $4,072.65, as follows:
+
+($3,500,000 − $3,000,000) ÷ $3,500,000 × 100 = 14.29%
+
+$28,500 × 14.29% = $4,072.65.
+
+End of example
+
+## Calculating Division 296 tax
+
+Your Division 296 tax liability is calculated as:
+
+- 15% tax on the total super earnings that relate to the percent of your TSB reference amount over the LSBT
+
+- an additional 10% tax on total super earnings that relate to the percent of your TSB reference amount over the VLSBT.
+
+### Example 1: Division 296 tax
+
+For the 2026–27 income year, Leanne's Division 296 tax liability is $610.90, calculated as:
+
+$4,072.65 × 5% = $610.90
+
+End of example
+
+### Example 2: Division 296 calculation – 2026–27 income year
+
+Jordan has one super interest with a TSB of $4,000,000 on 30 June 2027. This exceeds the LSBT of $3,000,000 for the 2026–27 income year. The ATO calculates his TSB reference amount at that time as $4,000,000, which will be used to determine the proportion of the TSB that exceeds the LSBT.
+
+Jordan's super fund calculates his relevant super earnings that are attributable to his super interest as $100,000 and reports this amount to the ATO. As Jordan has no other super interests, this amount will also be his total super earnings.
+
+As Jordan's TSB at the end of the 2026–27 income year is greater than the LSBT, and his total super earnings are greater than nil, he will have taxable super earnings for Division 296 tax purposes.
+
+The proportion of Jordan's TSB above the LSBT is 25%, calculated as:
+
+((TSB reference amount − LSBT) ÷ TSB reference amount) × 100
+
+(($4 million − $3 million) ÷ $4 million) × 100.
+
+Jordan's taxable super earnings is $25,000, calculated as:
+
+Total super earnings × proportion of TSB above LSBT
+
+$100,000 × 25% = $25,000.
+
+Jordon's Division 296 tax liability is $3,750, calculated as:
+
+Taxable super earnings × 15%
+
+$25,000 × 0.15 = $3,750.
+
+End of example
+
+### Example 3: Division 296 tax calculation – 2027–28 income year onwards
+
+Andrew is a member of an SMSF and does not have an interest in any other fund. The TSB value of the interest in the SMSF on 30 June 2027 is $3,900,000. Andrew's TSB at that time is $3,900,000. During the 2027–28 income year, the value of his interest is reduced due to a decrease in the value of the SMSF's assets. In addition, Andrew has met a condition of release and takes a lump sum payment from his SMSF. The TSB value of his interest in the SMSF on 30 June 2028 is $2,920,000. Andrew's TSB at that time is $2,920,000.
+
+Andrew's SMSF has reported that his relevant super earnings for the 2027–28 income year are $227,000. As this is his only super interest, this will be his total super earnings for the year for Division 296 tax purposes.
+
+From the 2027–28 income year onwards, the greater of the TSB just before the start of the year and at the end of the year is used to determine if Andrew's TSB exceeds the LSBT. In this instance Andrew's TSB just before the start of the current year is the greater and exceeds the LSBT.
+
+As Andrew's TSB is greater than the LSBT and his total super earnings are greater than nil, he will have taxable super earnings for Division 296 tax purposes.
+
+Andrew's TSB reference amount is $3,900,000 which will be used to determine the proportion of his TSB that is over the LSBT.
+
+The proportion of Andrew's TSB above the LSBT is 23.08%, calculated as:
+
+((TSB reference amount − LSBT) ÷ TSB reference amount) × 100
+
+(($3,900,000 − $ 3,000,000) ÷ $3,900,000) × 100.
+
+Andrew's taxable super earnings are $52,391.60, calculated as:
+
+Total super earnings × proportion above threshold
+
+$227,000 × 23,08% = $52,391.60.
+
+Andrew's Division 296 tax liability is $7,858.74, calculated as:
+
+Taxable super earnings × 15%
+
+$52,391.60 × 0.15 = $7,858.74.
+
+End of example
+
+### Example 4: Division 296 tax calculation for TSB exceeding the VLSBT
+
+Kelly has 2 interests in her super fund. The total super balance between both of her interests is $12,000,000 on 30 June 2027.
+
+Kelly's super fund reports that her relevant super earnings attributable to her interests for the 2026–27 income year totals $500,000. As she does not have any other interests, this will be her total super earnings for the year.
+
+As Kelly's TSB at the end of the 2026–27 income year is greater than the LSBT and her total super earnings is greater than nil, Kelly will have taxable super earnings for Division 296 tax purposes. In addition, as her TSB exceeds the VLSBT Kelly will have a very large superannuation balance earnings component.
+
+Kelly's TSB reference amount is $12,000,000 which will be used to determine the proportion of her TSB that is over the LSBT and VLSBT.
+
+The proportion of Kelly's TSB above the LSBT is 75%, calculated as:
+
+TSB reference amount − LSBT ÷ TSB reference amount × 100
+
+(($12 million − $3 million) ÷ $12 million) × 100.
+
+The proportion of Kelly’s TSB above the VLSBT is 16.67%, calculated as:
+
+TSB reference amount − VLSBT ÷ TSB reference amount × 100
+
+(($12 million − $10 million) ÷ $12 million) × 100.
+
+Kelly’s Division 296 tax comprises the following 2 parts:
+
+- For the proportion above the LSBT, her taxable super earnings are $375,000, calculated as
+
+- Total super earnings x proportion above the LSBT
+
+$500,000 × 75%.
+
+As her TSB exceeds the VLSBT she will also have a VLSB component of $83,350, calculated as
+
+Total super earnings × proportion above the VLSBT
+
+$500,000 × 16.67%.
+
+Kellie's Division 296 tax is calculated as:
+
+$375,000 × 15% = $56,250
+
+$83,350 × 10% = $8,335.
+
+Kelly's Division 296 tax liability for the 2026–27 income year will be $64,585, calculated as:
+
+($56,250 + $8,335).
+
+End of example
+QC107623
+
+=== Section: Paying Division 296 tax
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/paying-division-296-tax
+
+# Paying Division 296 tax
+
+When your Division 296 tax is due and how to pay.
+Last updated 29 June 2026
+
+## When your Division 296 tax liability payment is due
+
+Payment of Division 296 tax is due 84 days from the date of your Division 296 tax notice of assessment. This is excluding amounts attributable to a defined benefit interest that are not in retirement phase which are deferred to a Division 296 tax deferred account. See Division 296 tax for defined benefit members.
+
+If the Division 296 tax liability is not paid by the due date, general interest charge will accrue.
+
+If there is an amendment to your notice of assessment that increases the amount of Division 296 tax, you will be given 84 days from the date of the notice of amended assessment to pay any additional tax payable. Shortfall interest charge may also apply. The due and payable date of your original Division 296 tax assessment will not change.
+
+## How to pay Division 296 tax
+
+You can pay your Division 296 tax:
+
+- with your own money – see how to pay
+
+- by releasing money from super – see Releasing money from super for a Division 296 tax liability, or
+
+- a combination of these.
+
+Paying Division 296 tax by the due date means you will avoid paying interest.
+
+Payment of Division 296 tax is not deductible.
+
+If your Division 296 tax has been deferred, you can still pay this voluntarily and avoid any annual interest. See How to voluntarily pay your deferred Division 296 tax.
+
+## Releasing money from super for a Division 296 tax liability
+
+If you choose to pay all or part of your Division 296 tax liability by releasing money from super, you will need to elect to do this via ATO online services through myGov or ask your tax agent to do this for you.
+
+Information on how to elect to release money from super will be detailed in your Division 296 tax notice of assessment. You have up to 60 days from the date of the notice to make your election.
+
+The 60-day period is solely for deciding whether to release money from your super. It doesn't change the due date for payment of your Division 296 tax liability. Even if you elect to release money from super, your liability must be paid by the due date on your notice of assessment to avoid general interest charge.
+
+Once the election is submitted, we will send a release authority to your nominated super fund(s) to pay us the amount you have specified. The money received from your fund(s) is then used to pay your outstanding Division 296 tax liability. If the money received from your fund is more than the Division 296 tax liability, any remaining amount will be used to pay other tax debts and Australian Government debts before any balance is refunded to you.
+
+Note: Once you have made an election to release money, it cannot be withdrawn or reversed.
+
+## If you don't pay your Division 296 tax
+
+If you don't pay your Division 296 tax due and payable amount by the due date, we may issue your super fund(s) with an authority to release funds to pay your Division 296 tax.
+
+General interest charge (GIC) will apply to your Division 296 tax debt until it is paid in full.
+
+## Incorrect Division 296 tax assessment
+
+If you believe your Division 296 tax assessment is incorrect, we recommend you first speak with your super fund(s) to confirm the amounts they have reported to us that we used to calculate your Division 296 tax. If your fund's reporting is incorrect, they will need to amend their reporting before your Division 296 tax assessment can be amended.
+
+If you still disagree with your assessment, you can lodge an objection if you believe either:
+
+• your Division 296 tax has been calculated incorrectly
+
+• Division 296 tax may have been applied to your account in error.
+QC107625
+
+=== Section: Division 296 tax excluded interests
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/division-296-tax-excluded-interests
+
+# Division 296 tax excluded interests
+
+What super earnings are excluded from Division 296 tax.
+Last updated 29 June 2026
+
+## When Division 296 tax does not apply to super earnings
+
+Division 296 tax will not apply to earnings from a super interest in any of the following:
+
+- constitutionally protected funds held by a current or former State higher level office holder, both for the current or former office holder and any person receiving a retirement phase super income stream from the interest after their death
+
+- a super fund established under the Judges Pensions Act 1968 held by a current or former Justice of the High Court or judge or justice of a Court created by Parliament both for the current or former office holder and any person receiving a retirement phase super income stream from the interest after their death
+
+- a super fund established under the Judges Pensions Act 1968 as it applies under the Supreme Court Act 1933 (ACT) held by either a current or former Chief Justice or Judge of the Supreme Court of the Australian Capital Territory or any person receiving a retirement phase super income stream from the interest after their death
+
+- a super fund established under the Supreme Court (Judges Pensions) Act 1980 (NT) held by either a current or former Chief Justice or Judge of the Supreme Court of the Northern Territory or any person receiving a retirement phase super income stream from the interest after their death
+
+- a non-complying Australian fund for the income year.
+
+These super interests are referred to as 'excluded interests'. Earnings from these interests are taken to be nil for the purposes of Division 296 tax.
+
+Earnings will also be nil for an income stream that is a pension payable under section 123 of the Federal Circuit and Family Court of Australia Act 2021.
+
+### Excluded earnings counted in your total super balance
+
+Although earnings from excluded interests are not subject to Division 296 tax, the values of these interests are still counted in your total super balance (TSB) when determining whether your TSB exceeds the large super balance threshold (LSBT) and very large super balance threshold (VLSBT). If your TSB does exceed the LSBT, Division 296 tax is imposed only on the earnings from super interests that are not excluded.
+
+## Constitutionally protected funds
+
+Constitutionally protected funds (CPFs) are untaxed super funds that don't pay income tax on contributions or earnings they receive.
+
+Some state governments operate CPFs for their employees, such as West State Super and Gold State Super in Western Australia and Triple S in South Australia.
+
+Funds created for members of the judiciary are also often CPFs. Contact your super fund to find out if it is a CPF.
+
+## State higher level office holders (SHLOHs)
+
+Division 296 tax is not imposed on earnings from super interests in CPFs held by individuals who are or have ever been SHLOHs.
+
+You will also not have Division 296 tax imposed on earnings from an interest included in your TSB if all the following apply:
+
+- You become the retirement phase recipient of a super income stream because of a member's death.
+
+- An interest of the member was excluded from paying Division 296 tax as they were a SHLOH.
+
+- The super income stream is paid from the member's excluded interest.
+
+You’re a SHLOH if you are any of the following:
+
+- the Governor of a State
+
+- a member of staff of the Governor of a State
+
+- a Minister of the Government of a State
+
+- a member of the staff of a Minister of the Government of a State
+
+- a member of the Parliament of a State
+
+- the Clerk of a house of the Parliament of a State
+
+- a deputy Clerk of a house of the Parliament of a State or an office holder of the Parliament of a State of equivalent seniority
+
+- the head of a Department of the Parliament of a State or an office holder of the Parliament of a State of equivalent seniority
+
+- the head of a Department of the Public Service of a State or a statutory office holder of equivalent seniority, including a statutory office holder who is the head of an instrumentality or agency of a State
+
+- the head of a body, including an office or a commission, within a Department of the Public Service of a State if the body has either
+
+- the general administration of an Act of the State under a statute
+
+- a distinct statutory function that is critical to the constitutional functioning of the State
+
+- an office holder within a Department of the Public Service of a State if the office holder has either
+
+- the general administration of an Act of the State under a statute
+
+- a distinct statutory function that is critical to the constitutional functioning of the State
+
+- a head or deputy head of a body, including an office or a commission of a State if the body has a predominant legal function that is critical to the constitutional functioning of the State
+
+- the Solicitor-General of a State
+
+- a judge, justice or magistrate of the court of a State
+
+- a member of a tribunal of a State, or a commissioner of a commission of a State, who exercises judicial power of a State
+
+- a commissioner, deputy commissioner or assistant commissioner of a police force of a State, or an officer of equivalent rank of a police force of a State.
+
+## Commonwealth justices and judges
+
+Division 296 tax is not imposed on earnings from interests in a fund that is established under the Judges Pensions Act 1968, where before or at any time during the year you were or are, either a:
+
+- Justice of the High Court
+
+- Justice or judge of a court created by Parliament.
+
+You will also not have Division 296 tax imposed on earnings from an interest included in your TSB if all the following apply:
+
+- You become the retirement phase recipient of a super income stream because of a member's death.
+
+- An interest of the member was excluded from paying Division 296 tax as it was an interest in a fund established under the Judges Pensions Act 1968.
+
+- The super income stream is paid from the member's excluded interest.
+
+## ACT and NT Supreme Court judges
+
+Division 296 tax is not imposed on earnings from super interests held by a current or former judge or justice of the Supreme Court of the Australian Capital Territory in a super fund established under the Judge's Pensions Act 1968 as it applies under the Supreme Court Act 1933 (ACT).
+
+Division 296 tax is not imposed on earnings from super interests held by a current or former judge or justice of the Supreme Court of the Northern Territory in a super fund established under the Supreme Court (Judge's Pensions) Act 1980 (NT).
+
+You will also not have Division 296 tax imposed on earnings from an interest included in your TSB if all the following apply:
+
+- You become the retirement phase recipient of a super income stream because of a member's death.
+
+- An interest of the member was excluded from paying Division 296 tax as it was an interest in a fund established under either the Judges Pensions Act 1968 as it applies under the Supreme Court Act 1933 (ACT) or the Supreme Court (Judge's Pensions) Act 1980 (NT).
+
+- The super income stream is paid from the member's excluded interest.
+
+## Federal Circuit and Family Court of Australia
+
+If you have an income stream that is a pension payable under section 123 of the Federal Circuit and Family Court of Australia Act 2021, super earnings from that interest will be excluded from the calculation of super earnings for the purposes of Division 296 tax.
+
+## Non-complying super funds
+
+If you hold an interest in an Australian super fund that is non-complying at the end of the year, super earnings from that interest will be excluded from the calculation of total super earnings for the purposes of Division 296 tax.
+
+You will also not have Division 296 tax imposed on earnings from an interest included in your TSB if all the following apply:
+
+- You become the retirement phase recipient of a super income stream because of a member's death.
+
+- An interest of the member was in a non-complying super fund at the end of the year.
+
+- The super income stream is paid from the member's excluded interest.
+
+### Example: excluded interests
+
+George is a Justice of the High Court. He has an interest in the fund established by the Judges Pension Act 1968 with a balance of $9 million and an accumulation interest in a separate super fund with a balance of $2 million at the end of 30 June 2027. George's accumulation interest has $130,000 of total super earnings for 2026–27.
+
+The earnings from George's interest in the fund established by the Judges Pension Act 1968 are not subject to Division 296 tax. However, the value of this interest is still counted towards his TSB when determining whether his TSB exceeds the LSBT or VLSBT.
+
+#### Calculating George's Division 296 tax
+
+Calculate the proportion of TSB above LSBT and VLSBT thresholds:
+
+- The proportion of George's TSB above the LSBT threshold of $3 million is 72.73%.
+
+(($11 million − $3 million) ÷ $11 million).
+
+- The proportion of George's TSB above the VLSBT of $10 million is 9.09%
+
+(($11 million - $10 million) ÷ $11 million).
+
+Calculate George's taxable super earnings. We only use the earnings from the super interest that is not excluded.
+
+George's Division 296 tax comprises the following 2 parts:
+
+For the proportion above the $3 million threshold, he has taxable super earnings calculated as $94,549
+
+- (72.73% of $130,000).
+
+- For the proportion above $10 million, George also has a VLSBT component calculated as $11,817
+
+- (9.09% of $130,000).
+
+Calculating Division 296 tax:
+
+$94,549 × 0.15 = $14,182.35
+
+$11,817 × 0.10 = $1,181.70.
+
+George's Division 296 tax liability for the 2026–27 income year will be $15,364.05, calculated as ($14,183.35 + $1,181.70).
+
+End of example
+QC107626
+
+=== Section: Division 296 tax for defined benefit interests and other prescribed interests
+Source URL: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/division-296-tax/division-296-tax-for-defined-benefit-interests-and-other-prescribed-interests
+
+# Division 296 tax for defined benefit interests and other prescribed interests
+
+Understand how Division 296 tax applies to individuals with defined benefit interests and other prescribed interests.
+Last updated 29 June 2026
+
+## How your super fund calculates your relevant super earnings
+
+If you have defined benefit interests that are not in retirement phase and other super interests as prescribed by the regulations, your fund will calculate your relevant super earnings based on a change in the TSB value of the super interest. The calculation is performed in accordance with a specific formula under the law, taking into consideration certain contributions and withdrawals that occur during the income year.
+
+For more information, see About Division 296 tax for APRA funds.
+
+## Deferred Division 296 tax debt
+
+You generally can’t use super from your defined benefit interests to immediately pay your Division 296 tax debt. If your Division 296 tax relates to a defined benefit interest and no end benefit has been paid from that interest yet, your Division 296 tax will be automatically deferred until an end benefit is payable from that interest. We will tell you how much of your Division 296 tax for an income year has been deferred to a Division 296 deferred debt account when we issue your notice of assessment.
+
+To work out how much of your Division 296 tax for a defined benefit interest is deferred, we use the following calculation:
+
+Division 296 tax for the year × (your relevant super earnings for the year for the defined benefit interest ÷ your total super earnings for the year)
+
+For information on how to pay, see Paying your Division 296 tax deferred debt.
+
+## Division 296 tax deferred debt account
+
+When your Division 296 tax liability in relation to a super interest is deferred, we establish a Division 296 tax deferred debt account for that interest.
+
+We will create a separate debt account for each defined benefit interest you hold. Interest is calculated and applied annually. You will receive a statement of account for each debt account whenever the account balance changes, allowing you to keep track of your deferred debt.
+
+## Paying your Division 296 tax deferred debt
+
+Defined benefit interests typically restrict you from accessing your super to pay the tax. If you have a defined benefit interest and an end benefit has not been paid from that interest, any Division 296 tax that relates to that interest will be automatically deferred.
+
+The deferred Division 296 tax debt becomes due and payable at the end of 21 days after the day on which an end benefit is paid from that defined benefit interest. This will apply separately to each defined benefit interest you have.
+
+However, you can choose to pay your deferred Division 296 tax debt at any time (to avoid or minimise interest). You can do this by either:
+
+- paying the amount using your own money at any time
+
+- electing to release money from another super interest within the prescribed time limit.
+
+If you choose to release money from another super fund, you must make this election within 60 days of the date of your Division 296 tax notice of assessment.
+
+See further information on Paying Division 296 tax.
+
+### Example: defined benefit interest and accumulation account
+
+Gina has 3 super interests – an interest in Retiring Today SMSF and 2 defined benefit interests in Defined Super Fund and DB Super Fund.
+
+Gina has a TSB of $5,000,000 on 30 June 2027. Her defined benefit interests have TSB values of $1.5 million and $2.5 million respectively. Her relevant super earnings from Defined Super fund is $37,000 and DB Super Fund is $19,000 and from Retiring Today SMSF is $10,000, making her total super earnings for the 2026–27 income year to be $66,000.
+
+As Gina's TSB at the end of the 2026–27 income year is greater than the LSBT and her total super earnings is greater than nil, she will have taxable super earnings for Division 296 tax purposes.
+
+Gina's TSB reference amount is $5,000,000 which will be used to determine the proportion of her TSB that is over the LSBT.
+
+The proportion of Gina's TSB above the LSBT is 40%, calculated as:
+
+- ((TSB reference amount − LSBT) ÷ TSB reference amount) × 100
+
+- (($5,000,000 − $ 3,000,000) ÷ $5,000,000) × 100.
+
+Gina's taxable super earnings are $26,400, calculated as:
+
+- Total super earnings × proportion of TSB above the LSBT
+
+$66,000 × 40% = $26,400.
+
+Gina's Division 296 tax is $3,960, calculated as:
+
+- Taxable super earnings × 15%
+
+$26,400 × 0.15 = $3,960.
+
+The amount of Gina's Division 296 tax that is deferred is $3,360, calculated as:
+
+- Division 296 tax for the year × (defined benefit relevant earnings for the year for the super interest ÷ total super earnings for the year).
+
+Deferred Division 296 tax relating to Gina's interest in Defined Super Fund is $2,220, calculated as:
+
+- $3,960 × ($37,000 ÷ $66,000) = $2,220.
+
+Deferred 296 tax relating to Gina's interest in DB Super Fund is $1,140, calculated as:
+
+- $3,960 × ($19,000 ÷ $66,000) = $1,140.
+
+Gina has a Division 296 tax due and payable amount of $600 that relates to her interest in Retiring Today SMSF. This will need to be paid within 84 days from the date of the Division 296 tax notice of assessment.
+
+In addition to paying the due and payable amount Gina can choose to pay her deferred Division 296 tax debt. She can pay either:
+
+- with her own money at any time
+
+- by electing to release money from her SMSF. (This must be done within 60 days from the date of the Division 296 tax notice of assessment).
+
+End of example
+
+## End of year interest
+
+Deferred Division 296 tax debts not paid by 30 June each year will incur end of year interest. This interest will be calculated on the account balance (including interest from previous years) at the long-term bond rate for that financial year.
+
+By voluntarily paying your deferred Division 296 tax by 30 June each year, you can avoid incurring end of year interest.
+
+## How to voluntarily pay your deferred Division 296 tax
+
+You can voluntarily pay deferred Division 296 tax liabilities either:
+
+- with your own money – see how to pay
+
+- by releasing money from one or more of your other super interests.
+
+Most defined benefit funds cannot release amounts for you, so check with your fund before electing via ATO online services. You may have other super funds from which you can release money. If you want to pay your deferred Division 296 tax debt by releasing from your other super interest(s), you need to elect to do this within 60 days from the date of your Division 296 tax assessment.
+
+### Taking an end benefit
+
+If you have a deferred Division 296 tax debt, you must pay this amount within 21 days after the end benefit becomes payable from the interests that the deferred Division 296 tax debt account is for.
+
+An end benefit is generally the first super benefit to become payable from the interest. This may occur due to retirement, resignation, death, disability, or reaching a scheme-specific maximum age. Fund specific rules apply in relation to when an end benefit can be paid.
+
+The following super benefits are not end benefits:
+
+- rollovers to a successor fund (when 2 or more super funds merge)
+
+- severe financial hardship payments
+
+- funds released on compassionate grounds
+
+- family law super payments
+
+- amounts otherwise prescribed by legislative instrument.
+
+If you plan to pay your deferred Division 296 tax debt out of your defined benefit super account when taking an end benefit, discuss this with your fund as soon as possible. This will allow them to consider this amount when finalising your retirement plan.
+
+When you request a super benefit that is an end benefit from your super fund, and you have a deferred Division 296 tax debt account attributable to that account, your fund will advise us of your request via an end benefit notice.
+
+Your fund must provide the end benefit notice to us within 14 days of the earlier of the date the:
+
+- fund receives a request to pay the end benefit
+
+- end benefit becomes payable.
+
+Once we have processed the end benefit notice, we will issue you a debt account discharge liability notice. This notice will provide details of the amount you need to pay and instructions on how to make the payment. It will include a release authority you can give to your defined benefit fund so that they can release money to pay your Division 296 deferred debt.
+
+### Paying your debt account discharge liability
+
+You can pay the debt liability, either:
+
+- with your own money – see how to pay
+
+- by using the release authority issued with the debt account discharge liability notice, to pay the debt out of your super account.
+
+You can only give the release authority to the defined benefit fund in which you have the interest that the deferred debt was attributed to.
+
+Payment is due 21 days after the day your end benefit becomes payable. Interest will accrue if it isn't paid by the due date.
+QC107624

@@ -1,0 +1,2456 @@
+Title: SMSFR 2009/1 - Business real property for the purposes of the SIS Act
+Publisher: Australian Taxation Office
+Document type: ruling
+Authority tier: 1
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20091%2FNAT%2FATO%2F00001
+Retrieved: 2026-09-25
+Topic: smsf-property-lrba
+---
+
+# Self Managed Superannuation Funds Ruling
+
+## SMSFR 2009/1
+
+### Self Managed Superannuation Funds: business real property for the purposes of the Superannuation Industry (Supervision) Act 1993
+
+- Please note that the
+PDF version
+is the authorised consolidated version of this ruling and amending notices.
+
+There is a Compendium for this document:
+SMSFR 2009/1EC
+.
+
+Legislative changes to limited recourse borrowing arrangements commence on 10 August. We are currently reviewing and updating this Ruling. For more information on these changes, see Limited Recourse Borrowing Arrangement (LRBA) Provisions
+
+This document incorporates revisions made since original publication. View its history and amending notices, if applicable.
+
+Contents | Para
+What this Ruling is about | 1
+Ruling | 4
+Funds to which the Ruling applies | 40
+Date of effect | 41
+Appendix 1: |
+Explanation | 42
+Appendix 2: |
+Examples | 230
+Appendix 3: |
+Detailed contents list | 371
+
+Preamble
+This publication represents the Commissioner's view about the way in which provisions of the Superannuation Industry (Supervision) Act 1993 , or regulations under that Act, apply to superannuation funds that the Commissioner regulates: principally self managed superannuation funds. Self Managed Superannuation Funds Rulings (whether draft or final) are not legally binding on the Commissioner. However, if the Commissioner later takes the view that the law applies less favourably to you than this ruling indicates, the fact that you acted in accordance with this ruling would be a relevant factor in your favour in the Commissioner's exercise of any discretion as to what action to take in response to a breach of that law. The Commissioner may, having regard to all the circumstances, decide that it is appropriate to take no action in response to the breach. [ Note: This is a consolidated version of this document. Refer to the Legal database (ato.gov.au/law) to check its currency and to view the details of all changes.]
+
+### What this Ruling is about
+
+1. This Ruling explains the meaning and application of the term business real property in relation to self managed superannuation funds (SMSFs) for the purposes of the Superannuation Industry (Supervision) Act 1993 (SISA)[1] and the Superannuation Industry (Supervision) Regulations (SISR).
+
+2. The term business real property[2] is defined in subsection 66(5) and is used in concessional rules dealing with whether SMSF trustees or investment managers can acquire assets from, invest in, or enter lease arrangements with or in relation to related parties.
+
+3. This Ruling does not provide the Commissioner's views on how SISA or SISR provisions, other than paragraphs 66(2)(b) and 71(1)(g) of the SISA and regulations 13.22B, 13.22C and 13.22D of the SISR insofar as these provisions are affected by the definition of business real property, apply to any arrangement discussed in the Ruling.
+
+### Ruling
+
+The meaning of business real property
+
+4. The definition of business real property is in subsection 66(5):
+
+business real property, in relation to an entity, means:
+
+(a)
+any freehold or leasehold interest of the entity in real property; or
+
+(b)
+any interest of the entity in Crown land, other than a leasehold interest, being an interest that is capable of assignment or transfer; or
+
+(c)
+if another class of interest in relation to real property is prescribed by the regulations for the purposes of this paragraph - any interest belonging to that class that is held by the entity;
+
+where the real property is used wholly and exclusively in one or more businesses (whether carried on by the entity or not), but does not include any interest held in the capacity of beneficiary of a trust estate.
+
+5. Accordingly, two basic conditions must be satisfied before an SMSF, or any other entity related to or dealing with an SMSF, can be said to hold business real property:
+
+•
+the SMSF or the other entity must hold an eligible interest in real property; that is an interest identified in paragraph (a), (b) or (c) of the business real property definition (see paragraphs 9 to 19 of this Ruling); and
+
+•
+the underlying land must satisfy the business use test in the definition, which requires the real property to be 'used wholly and exclusively in one or more businesses' carried on by an entity (see paragraphs 20 to 39 of this Ruling).
+
+6. Business real property is treated concessionally under the SISA. For example:
+
+•
+business real property of a related party of an SMSF acquired at market value by an SMSF trustee or investment manager does not contravene the prohibition on related party asset acquisitions in subsection 66(1);[3] and
+
+•
+real property that is leased by an SMSF trustee to a related party, or is the subject of an enforceable lease arrangement between an SMSF trustee and a related party, is not an in-house asset of the SMSF under Part 8 if the interest held in the property by the SMSF is business real property of the SMSF.[4]
+
+The entity to which the definition applies
+
+7. The business real property definition is applied with a particular entity in mind. This entity, referred to here as the 'relevant entity', will be an SMSF or a related party of an SMSF. The relevant entity will vary according to the dealing that takes place and the SISA or SISR provisions that apply. It is important to ensure that the definition applies to the correct entity, as set out below:[5]
+
+•
+the business real property definition applies to the
+related party from which the interest is acquired
+if the SMSF or a related party is acquiring an interest in real property from another related party;[6] or
+
+•
+the business real property definition applies to the
+entity that is granting the rights under the lease or the lease arrangement (that is the lessor or the landlord
+) if the SMSF or a related party is leasing real property to another related party, or the real property is the subject of an enforceable lease arrangement between such parties.[7]
+
+8. Once the relevant entity is identified, it is possible to determine whether the two basic conditions set out in paragraph 5 of this Ruling are satisfied in relation to that entity.
+
+Condition 1: the entity holds an eligible interest in the property
+
+9. Not all interests in real property held by a relevant entity are eligible to be treated as business real property. Only those interests covered by paragraphs (a) to (c) of the business real property definition are eligible. Those interests include:
+
+•
+freehold interests in real property;
+
+•
+leasehold interests in real property; and
+
+•
+interests in Crown land that can be assigned or transferred.
+
+10. The terms used to describe these interests take their ordinary meanings in the context of the business real property definition.
+
+Freehold and leasehold interests in real property
+
+11. 'Real property' refers to land, which can generally be identified by reference to titles held over particular parcels of land.
+
+12. As a matter of property law, any building or other thing that is a fixture attached to the land forms part of that real property.
+
+13. In ordinary terms, a 'freehold interest' in real property entitles the interest holder to ownership of the property. Such an interest entitles the entity holding it to exclusive possession of the property for an indefinite period of time.
+
+14. It is possible for an entity to co-own real property with other entities and still hold a freehold interest in the property. In these circumstances, each co-owner will hold a freehold interest in the real property. Similarly, an entity may hold a freehold interest in property that is strata titled.[8]
+
+15. A 'leasehold interest' in real property conveys a right on the part of the entity holding the interest to exclusively possess the property for a period of time that is either pre-determined or capable of being determined. A leasehold interest may apply to all of the land that is subject to a particular title, or only a defined part of such land.
+
+16. Other more limited rights of possession, occupation or use over real property may be granted to an entity. These rights are not a freehold or leasehold interest in the property and therefore cannot give rise to business real property for the entity unless they satisfy paragraphs (b) or (c) of the business real property definition.
+
+Assignable or transferable interests in Crown land
+
+17. 'Crown land' is land vested in the Commonwealth, a State or a Territory of Australia. Crown land is one form of 'real property' as ordinarily understood. Accordingly, an entity holding a leasehold interest in Crown land will hold an eligible interest under paragraph (a) of the business real property definition.[9]
+
+18. Commonwealth, State or Territory legislation, as applicable, governs the administration of, and dealings with Crown land. Therefore, the question of whether an interest held in Crown land is assignable or transferable is determined by or under these laws.
+
+Exclusion of interests held as a trust beneficiary
+
+19. If any of the interests identified in paragraph 9 of this Ruling are held by the relevant entity as a beneficiary of a trust estate, the interest cannot be business real property of that entity. An interest is held in the capacity of a beneficiary of a trust estate if it is subject to a trust administered for the benefit of the entity.
+
+Condition 2: connection between property use and a business
+
+20. Once it is established that the relevant entity holds an eligible interest in the real property, that interest can only be business real property if the underlying land satisfies the business use test in the definition. The business use test requires the real property be
+used wholly and exclusively in one or more businesses
+, whether or not that business or those businesses are carried on by the relevant entity.
+
+21. The character of the real property's use determines whether the business use test is satisfied. This will depend on questions of fact and degree. A holistic assessment of all facts and circumstances relating to the use of the property is made when working out whether the test is satisfied.
+
+22. The status of an interest in real property as business real property must also be determined at a particular point in time. For example, under paragraph 66(2)(b), the question must be considered at the time when an SMSF acquires an eligible interest in real property from a related party. Nevertheless, the holistic assessment of all facts and circumstances relating to the property's use, referred to in paragraph 21, extends to the periods surrounding the point in time at which the status of the interest is being considered. In determining whether the business use test is satisfied or not, any changes in the use of the real property must be of a substantive and enduring nature.
+
+Use of real property
+
+23. In the Commissioner's view, the subject of the business use test is the
+underlying land
+, as opposed to any interest held by the relevant entity in the real property that may become business real property. In other words, it is the use of the land itself that must be considered.
+
+24. However, the business use test need only be applied to the underlying land that is the subject of the interest held by the relevant entity. For example, an owner of land may grant a lease over part of that land. In these circumstances, the lessee holds a leasehold interest in the land and therefore holds an eligible interest. If the business real property definition is being applied to the lessee, the business use test need only concern that part of the land that is subject to the lease.
+
+25. It is also the Commissioner's view that the hallmark of
+use
+of property that is considered under the business use test is any activities, operations or actions occurring on the land in question. Any and all such use of the property must meet the requirement under the business use test that the real property be used 'wholly and exclusively' in one or more businesses. Land upon which activities, operations or actions occur can be contrasted with land that is idle or dormant and is therefore not being used.
+
+26. The Commissioner considers that the mere granting of rights in relation to land, even in return for a fee (for example, rent) does not involve use of land for these purposes. Therefore, an owner of land does not use real property for the purposes of the business real property definition if the owner grants a lease to another entity in respect of the land. Nevertheless, it is most likely that the granting of such rights will lead to activities, operations or actions occurring on the land at some point. Any such activities, operations or actions carried on by the persons to whom the rights are granted are tested against the business use test in the business real property definition.
+
+The 'wholly and exclusively' threshold
+
+27. Any and all uses of the property are tested against the requirement that the property be used
+wholly and exclusively
+in one or more businesses. This requires an assessment of whether the property in its entirety is used in one or more businesses to the exclusion of any other types of use of the property.
+
+28. By its nature the 'wholly and exclusively' threshold is an onerous one to meet. It suggests an entire or complete use of the land for the purposes of one or more businesses. However, it is the Commissioner's view that a common sense approach accommodates some departure from a literal application of the test.
+
+29. On their own, the 'wholly' and 'exclusively' elements of the test involve similar but not identical requirements. 'Wholly' suggests that the entire area of the property should meet the business use requirement. 'Exclusively' suggests that the property is required to meet the business use requirement to the exclusion of any other uses. As the test requires whole and exclusive use, it is necessary, in the Commissioner's view, to give both aspects of the test some meaning.
+
+30. If the property that is the subject of the test is used to an appreciable degree or extent, the fact that a part of the real property is not used at all will not result in failure to meet the 'wholly and exclusively' test. In these circumstances, it is necessary to consider whether that part of the real property actually in use is used in one or more businesses to the exclusion of any other uses.
+
+31. A minor, insignificant or trifling non-business use of the property can also be accommodated under the 'wholly and exclusively' threshold.
+
+32. Consistent with this approach, there is a special rule in the law dealing with the application of the 'wholly and exclusively' threshold to primary production businesses.[10] This special rule ensures that the threshold can be met where a part of the real property on which the business is carried on contains a residential dwelling. The 'wholly and exclusively' threshold will be met if:
+
+•
+the area containing the dwelling and used primarily for domestic or private purposes does not exceed 2 hectares; and
+
+•
+the domestic or private use is not the predominant use of the property.
+
+Nature of connection required between use and a business
+
+33. The link required by the business use test between the use of the property and one or more businesses is that the use be
+in
+any such business or businesses. The Commissioner considers that use of property that is
+incidental and relevant
+to a business, or is
+occasioned by
+a business, establishes the connection required by the test. Alternatively, that connection can be found if the purpose of the property's use, determined objectively, is in one or more businesses.
+
+34. Where an entity uses property directly in a business that it carries on, the connection between the use of the property and a business will be readily established. In these circumstances, the evident purpose of the activities, operations or actions occurring on the land stamp the property's use with a business character.
+
+35. However, it is also possible that property may be used by one entity in a way that is incidental and relevant to a business carried on by another entity. This will be so even if the purpose of the entity using the property is of a non-business nature. For example, the use of property by a hotel guest for his or her private purposes remains incidental and relevant to the underlying business carried on by the hotel operator. Similarly, the use of property by a residential tenant is incidental and relevant to any property investment business carried on by the landlord.
+
+36. An interest held in real property will not lose its status as business real property of an entity if that entity is itself not carrying on any business that establishes the connection required between use of the property and a business. For example, an owner of land that leases out commercial premises to a business will hold business real property provided the use of the land is 'wholly and exclusively' in one or more businesses. This is so even if the owner of the land is not itself carrying on a property investment business.
+
+Business
+
+37. The matter of what activities constitute a
+business
+or a
+primary production business
+is defined for the purposes of the business real property definition. These definitions are substantially identical to those employed for these terms under the income tax law. The Commissioner's views expressed for these purposes, in particular in Taxation Ruling TR 97/11 [11] and Superannuation Guarantee Ruling SGR 2005/1,[12] are equally applicable in these circumstances.
+
+38. Under the business use test, use of land is most easily connected with a business where the entity carrying on the business is the user of the land. However, as noted in paragraph 35 of this Ruling, use of the land can also be connected with a business carried on by an entity that allows that use of the land, even if the activities, operations or actions occurring do not inherently have a business character. In these cases, the business to which the use of the land is connected is a property investment business under which rights to use the land are granted to others (often by way of lease). The views expressed in Taxation Ruling IT 2423 [13] are relevant in determining whether this type of property investment business is being carried on.
+
+39. When acquiring and leasing real property, an SMSF trustee engages in property investment activity. However, the Commissioner considers that it would be rare for an SMSF to meet the conditions necessary to establish a property investment business. Courts have generally been reluctant to find an investment business being carried on by a trust with fund-like obligations. This has been so even in the case of large superannuation funds that invest on a considerable scale.
+
+### Funds to which the Ruling applies
+
+40. This Ruling applies to SMSFs[14] and former SMSFs[15]. References in the Ruling to SMSFs extend to former SMSFs unless otherwise indicated. However, it should be noted that concessions provided in relation to business real property in paragraphs 66(2)(b) and 71(1)(g) of the SISA and Division 13.3A of the SISR only apply to funds with no more than the maximum number of allowable members.[15A] Accordingly, these concessions will not apply to a former SMSF with more than the maximum number of allowable members.
+
+### Date of effect
+
+41. This Ruling applies both before and after its date of issue. However, the Ruling does not apply to taxpayers to the extent that it conflicts with the terms of settlement of a dispute agreed to before the date of issue of the Ruling.
+
+Commissioner of Taxation
+
+28 January 2009
+
+### Appendix 1 - Explanation
+
+This Appendix is provided as information to help you understand how the Commissioner's view has been reached.
+
+Examples illustrating business real property principles
+
+42. As noted on a number of occasions in this Ruling, the application of the business real property definition will depend on the facts and circumstances of each case. Some readers may find it more beneficial to first read the examples provided in Appendix 2 (see paragraphs 230 to 370 of this Ruling) to understand how the principles expressed in this Ruling apply to different cases.
+
+Background
+
+43. The scope of business real property is relevant in determining whether an SMSF trustee or investment manager has contravened investment restrictions in the SISA, in particular:
+
+•
+the prohibition on an SMSF trustee or investment manager intentionally acquiring assets from a related party - section 66; and
+
+•
+the rules that limit the level of in-house assets[16] that can be held by an SMSF and prohibit the acquisition of assets by an SMSF trustee beyond this level - Part 8.
+
+44. The broad purpose of these investment restrictions is to ensure that concessionally taxed superannuation is used only for retirement income purposes and not, for example, as a source of pre-retirement finance for members. These restrictions are also designed to limit risks that arise from investments associated with the SMSF that involve related parties of the SMSF.
+
+45. More specifically, the prohibition on the acquisition of certain assets from related parties in section 66 is designed to prevent SMSF members and other related parties of an SMSF disposing of assets to the SMSF to obtain cash benefits.[17]
+
+46. It has also been recognised that the purpose of the in-house asset rules in Part 8 'is to ensure that excessive investment by a fund in [a related party's] business [in which members may be employed] does not, in the event of the failure of that business, mean that [members] lose both their jobs and also their superannuation entitlements'.[18]
+
+47. These restrictions are complemented by other rules in the SISA and SISR which particularly apply to dealings with members, their relatives and other related parties[19] of the SMSF. For example:
+
+•
+A trustee is prohibited from maintaining an SMSF for any purpose other than for the provision of retirement and certain related benefits (referred to as the sole purpose test) - section 62. All of the activities of maintaining an SMSF are subject to this test.
+
+•
+An SMSF trustee or investment manager is prohibited from lending money, or providing any other financial assistance using the resources of the SMSF, to a member of the SMSF or relative of a member of the SMSF - section 65.
+
+•
+Except in specified circumstances, an SMSF trustee is prohibited from borrowing - section 67.
+
+•
+Subject to exceptions in relation to certain derivatives contracts, an SMSF trustee cannot recognise or in any way sanction an assignment of a superannuation interest or a charge over or in relation to a member's benefits or an SMSF asset - regulations 13.12, 13.13 and 13.14 of the SISR.
+
+•
+All SMSF investments must be with parties who are at arm's length or if the parties are not at arm's length the dealings must be conducted on arm's length terms and conditions - section 109.
+
+48. For the reasons outlined in paragraphs 45 and 46 of this Ruling, section 66 and Part 8 would ordinarily prohibit or limit the ability of an SMSF to acquire assets from, invest in or enter lease arrangements with a related party of the SMSF.
+
+49. The exclusions from the operation of the restrictions in section 66 and Part 8 provided to certain assets, investments and arrangements involving business real property recognise that premises upon which a business is undertaken have an underlying value independent of the business itself.[20] Thus, the risks that would otherwise be associated with related party dealings are moderated where the dealings involve the acquisition of assets, the making of investments or the entering of arrangements in relation to real property that is an asset of or used in a business.
+
+Contraventions - audit requirements and consequences
+
+50. SMSF trustees are required to appoint an approved auditor to audit the financial accounts and statements of the fund each year.[21] When conducting an audit, the approved auditor is also required to conduct a compliance audit to ensure the SMSF has complied with the SISA and SISR. There is an approved form for notifying the Tax Office of contraventions.[22]
+
+51. Contravention or involvement in a contravention attracts both civil and criminal consequences and places at risk the SMSF's status as a complying superannuation fund under the SISA.[23]
+
+Legislation
+
+'Business real property' and related definitions
+
+52. The definition of business real property is in subsection 66(5):
+
+business real property, in relation to an entity, means:
+
+(a)
+any freehold or leasehold interest of the entity in real property; or
+
+(b)
+any interest of the entity in Crown land, other than a leasehold interest, being an interest that is capable of assignment or transfer; or
+
+(c)
+if another class of interest in relation to real property is prescribed by the regulations for the purposes of this paragraph - any interest belonging to that class that is held by the entity;
+
+where the real property is used wholly and exclusively in one or more businesses (whether carried on by the entity or not), but does not include any interest held in the capacity of beneficiary of a trust estate.
+
+53. The terms entity and business used in the business real property definition also have defined meanings.
+
+54. Entity is defined in subsection 10(1) to mean an individual, a body corporate, a partnership, or a trust.
+
+55. The definition of business found in subsection 66(5) states:
+
+business
+includes any profession, trade, employment, vocation or calling carried on for the purposes of profit, including:
+
+(a)
+the carrying on of primary production; and
+
+(b)
+the provision of professional services;
+
+but does not include occupation as an employee.
+
+56. Subsection 66(6) specifically provides for the following application of the business use test in the business real property definition:
+
+For the purposes of the definition of business real property in subsection (5), real property used in one or more primary production businesses does not cease to be used wholly and exclusively in that business or those businesses only because:
+
+(a)
+an area of the real property, not exceeding 2 hectares, contains a dwelling used primarily for domestic or private purposes; and
+
+(b)
+the area is also used primarily for domestic or private purposes;
+
+provided that the use for domestic or private purposes referred to in paragraphs (a) and (b) is not the predominant use of the real property.
+
+57. Subsection 66(5) of the SISA provides that primary production business in subsection 66(6) of the SISA takes its meaning from the definition of that term in section 995-1 of the Income Tax Assessment Act 1997 (ITAA 1997):
+
+primary production business
+: you carry on a
+primary production business
+if you carry on a business of:
+
+(a)
+cultivating or propagating plants, fungi or their products or parts (including seeds, spores, bulbs and similar things), in any physical environment; or
+
+(b)
+maintaining animals for the purpose of selling them or their bodily produce (including natural increase); or
+
+(c)
+manufacturing dairy produce from raw material that you produced; or
+
+(d)
+conducting operations relating directly to taking or catching fish, turtles, dugong, bêche-de-mer, crustaceans or aquatic molluscs; or
+
+(e)
+conducting operations relating directly to taking or culturing pearls or pearl shell; or
+
+(f)
+planting or tending trees in a plantation or forest that are intended to be felled; or
+
+(g)
+felling trees in a plantation or forest; or
+
+(h)
+transporting trees, or parts of trees, that you felled in a plantation or forest to the place:
+
+(i)
+where they are first to be milled or processed; or
+
+(ii)
+from which they are to be transported to the place where they are first to be milled or processed.
+
+SISA provisions that refer to 'business real property' as defined
+
+Acquisition of assets from related parties - section 66
+
+58. Subsection 66(1) prohibits a trustee or investment manager of an SMSF from intentionally acquiring assets from a related party of the SMSF. However, paragraph 66(2)(b) excludes the acquisition of business real property from a related party at market value from this prohibition.
+
+In-house asset rules - Part 8 of the SISA and Division 13.3A of the SISR
+
+59. Subsection 71(1) provides for the meaning of in-house asset for the purposes of Part 8. Assets included within the definition are:
+
+•
+a loan to a related party of an SMSF;
+
+•
+an investment in a related party of an SMSF;
+
+•
+an investment in a related trust of an SMSF; and
+
+•
+an asset subject to a lease or lease arrangement between the trustee of an SMSF and a related party of that SMSF.
+
+60. Paragraphs 71(1)(a) to 71(1)(j) then exclude certain assets of an SMSF from being in-house assets, in particular:
+
+•
+business real property of the SMSF that is subject to a lease or to a lease arrangement enforceable by legal proceedings between the SMSF trustee and a related party of the SMSF - paragraph 71(1)(g); or
+
+•
+an investment made by an SMSF in a related company or unit trust, where, amongst other things, that company or trust satisfies conditions in relation to the assets it holds and lease arrangements it enters into. Under those conditions, the company or unit trust may in broad terms hold assets or enter lease arrangements in relation to business real property - paragraph 71(1)(j) of the SISA and Division 13.3A of the SISR.
+
+Elements of the business real property definition
+
+61. A number of inter-related elements of the business real property definition can be identified for the purpose of analysing its meaning and application. Each of these elements are discussed in further detail below:
+
+•
+
+Entity
+: the business real property definition applies to an identified entity - see paragraphs 62 and 63 of this Ruling;
+
+•
+
+Interest in real property
+: that entity must hold an eligible interest in real property (that is, an interest described in paragraphs (a), (b) or (c) of the business real property definition that is not an interest held in the capacity of beneficiary of a trust estate) - see paragraphs 64 to 112 of this Ruling;
+
+•
+
+Business
+: there must be a business associated with the real property in respect of which the entity holds the eligible interest, even if it is not carried on by the entity - see paragraphs 113 to 135 of this Ruling; and
+
+•
+
+The business use test
+: the real property must be 'used wholly and exclusively' in one or more such businesses - see paragraphs 136 to 229 of this Ruling.
+
+Entity to which the definition applies
+
+62. The opening words of the definition of business real property identify that the term will apply in relation to 'an entity'. The entity to which the definition applies can be worked out from the context of the term's use. For example:
+
+•
+Paragraph 66(2)(b) refers to business real property of a 'related party' of an SMSF. Therefore, the entity to which the definition applies for the purposes of paragraph 66(2)(b) is the related party.
+
+•
+In contrast, paragraph 71(1)(g) refers to business real property of the 'fund'. Therefore, the entity to which the definition applies in paragraph 71(1)(g) is the SMSF.
+
+63. The identity of the entity to which the business real property definition applies will be important in determining whether an eligible interest in real property is held for the purposes of the definition.
+
+Interest in real property
+
+64. For a parcel of real property to qualify as business real property, the entity to which the definition applies must hold a specified interest in it. These interests are:
+
+•
+a freehold or leasehold interest in real property - paragraph (a) of the business real property definition;
+
+•
+an interest (other than a leasehold interest) in Crown land that is capable of assignment or transfer - paragraph (b) of the business real property definition; or
+
+•
+any class of interest in relation to real property prescribed in the SISR for the purposes of the definition - paragraph (c) of the business real property definition.
+
+65. However, if an interest in real property is held by the entity to which the definition applies in the capacity of a beneficiary of a trust estate, the real property is not business real property.
+
+66. As at the date of issue of this Ruling, there are no classes of interest that have been prescribed by the SISR under paragraph (c) of the business real property definition.
+
+67. To determine whether an eligible interest in real property is held under paragraph (a) or (b) of the business real property definition, it is necessary to consider:
+
+•
+What is 'real property'?
+
+•
+What is 'Crown land'?
+
+•
+What is a 'freehold interest' in real property?
+
+•
+What is a 'leasehold interest' in real property?
+
+•
+What is 'an interest that is capable of assignment or transfer' in Crown land?
+
+•
+When will an entity hold an interest in the capacity of a beneficiary of a trust estate?
+
+•
+Does a share in a company confer an interest in real property held by the company?
+
+What is 'real property'?
+
+Ordinary meaning
+
+68. The term 'real property' is not defined in the SISA and so takes its ordinary meaning, as follows:[24]
+
+tangible and immovable property such as land and houses, buildings or any such structures on the land, and any rights attached to the ownership of the land, such as mineral rights (but excluding leasehold interests).
+
+69. In a legal context, 'real property' is defined as:[25]
+
+Land and interests in land.
+
+70. Butterworths Australian Legal Dictionary also notes that:[26]
+
+...Nowadays, leasehold interests are treated for most purposes as real property.
+
+71. In the Commissioner's view, 'real property' as it is used in the business real property definition is land and fixtures attached to the land, such as buildings.
+
+72. It is noted that paragraphs (a) to (c) of the business real property definition distinguish between the underlying land and bundles of rights associated with it.
+
+73. Therefore, unlike the meanings of 'real property' just discussed, the term 'real property' as it is used in the business real property definition does not contemplate interests in land. It is also noted that the business real property definition expressly includes leasehold interests in real property as an eligible class of interest, so nothing turns on whether leasehold interests are considered 'real property' under the ordinary meaning of the term.
+
+Fixtures forming part of the land
+
+74. To properly apply the tests in the business real property definition, it is important to identify those fixtures attached to the land that will also constitute 'real property'.
+
+75. Whether a building or other thing is part of the land is a question of fact. Two tests are applied in determining this question:
+
+•
+the degree of annexation test; and
+
+•
+the object of annexation test.
+
+76. The degree of annexation test considers whether the building or other thing is attached to the land other than by its own weight. If it is, then the building or other thing is considered, at first instance, to be part of the land. Conversely, if it is only attached to the land by its own weight it is assumed, at first instance, that the building or other thing does not form part of the land.[27]
+
+77. Even where a building or other thing has been affixed to the land, it is necessary to consider the object of annexation test - that is, whether the object and purpose of the affixation was for the better enjoyment of the building or other thing itself, or for the better enjoyment of the freehold.[28] A building or other thing is not a fixture[29] and therefore does not form part of the land where it was affixed to the land for the benefit of the building or chattel itself or was only affixed temporarily.
+
+78. In Metal Manufactures Ltd v. Federal Commissioner of Taxation,[30] Emmett J stated that the object of annexation test is to be resolved by reference to objective circumstances and not by reference to the subjective intention of those who affixed them. Although no single factor alone will be determinative, His Honour listed the following factors that are to be taken into account when considering the object of the annexation:[31]
+
+•
+whether removal would destroy the attached property;
+
+•
+whether the cost of removal would exceed the value of the attached property;
+
+•
+whether removal would occasion significant damage to the land or buildings to which the property is attached;
+
+•
+whether the attachment was for the better enjoyment of the property or for the better enjoyment of the land and buildings to which it was attached;
+
+•
+the nature of the property itself;
+
+•
+the contemplated use of the property;
+
+•
+the period of time for which the property was to be in position; and
+
+•
+the function to be served by the annexation of the property.
+
+79. Therefore, buildings that are demountable are not fixtures and do not form part of the 'real property'. In contrast, if a building was originally demountable but is no longer practically demountable, it becomes a fixture and forms part of the real property. Indicators that a building is no longer practically demountable include its attachment to permanent foundations and connections of water and electricity.
+
+80. Where a building or other thing is a fixture, ownership rights or other rights, such as those under a leasehold interest, go hand-in-hand with comparable rights over the land. For example, if an SMSF acquires a freehold interest in land, this will include the building or other things affixed to that land. On the other hand, if a building or other thing is not a fixture, it is an asset separate to the land. Accordingly, rights in relation to the building or other thing cannot be business real property and therefore cannot attract concessional treatment under the SISA.
+
+81. However, whether or not a building or other thing is a fixture will not impact on whether its use is taken into account under the business use test.[32] This is because the use of the building or other thing will still amount to use of the land on which it stands, regardless of whether it is a fixture.
+
+When do crops form part of land?
+
+82. It is a well established legal principle that the question of whether crops form part of the land on which they are stand is determined by whether the crops are categorised as fructus naturales or fructus industriales.[33] Crops that are fructus naturales form part of the land on which they stand until they are severed. Crops that are fructus industriales do not form part of the land, even while they are attached to the land.
+
+83. It is a question of fact whether a crop is fructus naturales or fructus industriales. While fructus naturales originally meant produce that occurs naturally, without human cultivation, such as grass,[34] the term now includes some planted trees and planted crops.[35] On this basis, fruiting trees are considered part of the land on which they stand.
+
+84. Fructus industriales refers to agricultural produce and crops resulting from cultivation of the land.[36] On this basis, most annual crops are not considered part of the land on which they stand.
+
+What is 'Crown land'?
+
+85. 'Crown land' is land which is vested in the Commonwealth, a State or a Territory of Australia that is subject to the provisions on administration and dealings set out in the relevant statute in each jurisdiction. 'Crown land' does not include any estate or interest that the Commonwealth has granted to any person.[37]
+
+86. The term 'Crown land' is normally reserved for land that is governed by a group of statutes collectively referred to as Crown land statutes. Each Australian State and Territory has one or more of these statutes.[38]
+
+87. In the Commissioner's view, 'Crown land' is real property for the purposes of the business real property definition. A leasehold interest in 'Crown land' is therefore an eligible interest under paragraph (a) of the business real property definition, despite the exclusion of such interests under paragraph (b) of the business real property definition.
+
+What is a 'freehold interest' in real property?
+
+Ordinary meaning
+
+88. In broad terms, a 'freehold interest' in real property conveys ownership of the property. A 'freehold interest' entitles the owner to exclusive possession for an indefinite period of time.
+
+89. In Australia, ownership of real property is derived from registration of title.[39] Such an interest in real property is registered in the State or Territory in which the land is located.
+
+Co-ownership
+
+90. It is possible for two or more separate parties to have a legal interest in the same piece of real property by virtue of being registered as co-owners. Co-ownership of property occurs where two or more persons share an interest in land.
+
+91. There are two predominant types of co-ownership that currently exist in Australia. These are 'joint tenancy' and 'tenants in common'. The use of the word tenant in this context does not imply a leasehold interest, but instead is an indication of the way in which a freehold interest is held.[40] These types of co-ownership provide the owners of the property with different rights depending upon which form of ownership exists.
+
+92. Joint tenants jointly own the same property. A joint tenant has a right to the whole property but does not have a right to an individual share of the property. When one joint tenant dies, the surviving joint tenant becomes the sole owner of the property (known as survivorship). This type of ownership is not considered appropriate for SMSFs due to the lack of a separate share of an asset attributable to the SMSF.
+
+93. Tenants in common jointly own a property, but unlike joint tenancy, each of the tenants is entitled to their distinct share of the property:[41]
+
+Each tenant in common has a separate and individual title to the property, limited according to the estate or term granted to or acquired by the tenant.
+
+94. A tenant in common can deal with their share of the property in any way that they see fit. They are not restricted in their dealings with the individual shares and may grant interests over the share or encumber it in any way, provided this does not interfere with or diminish the rights that the other tenants would otherwise have. There can be uneven interests in property owned by tenants in common, the shares of the property must always be shown on the registry, and the shares must add up to one.
+
+95. For the purposes of the business real property definition, an eligible freehold interest in real property may be a partial interest in the real property, such as an interest held as a tenant in common.
+
+Strata title
+
+96. A freehold interest in real property may also be held under strata title, whereby parcels of land are divided amongst holders with unit entitlements. The land is divided either into lots only or into lots with an area or areas of common property.
+
+97. In the second of these cases, owners of a freehold interest in property that is the subject of strata title hold two interests. The first interest held is the legal title of the registered portion of the building and land. The second interest is an equitable interest in the common property. Legal title in the common property vests in the strata corporation, which holds this property on trust for the unit owners.[42]
+
+What is a 'leasehold interest' in real property?
+
+98. The defining feature of a 'leasehold interest' in real property is a right to exclusively possess land for a period of time that is either predetermined or capable of being determined.[43] On the expiration of the interest, the right to exclusive possession reverts to the holder of the freehold interest in the real property.
+
+99. A grant of a right of possession that is less than exclusive possession will result in the arrangement not being characterised as a leasehold interest. The substance of the arrangement and the behaviour of the parties will determine if an arrangement gives rise to a leasehold interest.[44]
+
+100. In this context, provisions of the SISA refer to business real property subject to a lease or a lease arrangement where the arrangement is enforceable by legal proceedings.[45] The Commissioner's view is that, for the relevant right to exclusive possession to be properly established, a 'leasehold interest' must be conferred by a lease or a legally binding lease arrangement.
+
+101. In contrast to a freehold interest in real property, a 'leasehold interest' is granted to the lessee for a determinable period of time. It is also possible that a leasehold interest can be granted over part of a parcel of land.
+
+102. Given the nature of a freehold interest discussed above,[46] the right to exclusive possession embodied in a 'leasehold interest' in real property must ultimately be derived from a holder of the freehold interest. However, it is possible for a holder of a 'leasehold interest' to confer their rights of exclusive possession to another entity, for example under a sub-lease or by way of assignment of the leasehold interest. Derivative leasehold interests of this type will be a 'leasehold interest' for the purpose of the business real property definition provided that the interest embodies the defining right to exclusive possession of the real property and is legally enforceable.
+
+What is 'an interest that is capable of assignment or transfer' in Crown land?
+
+103. To be an eligible interest for the purposes of the business real property definition, an interest in Crown land that is not a leasehold interest, must be capable of being assigned or transferred.
+
+104. For an interest to be assigned or transferred, all rights and liabilities that exist under the interest must be capable of being transferred to another party.
+
+105. To determine whether a right or interest in Crown land is capable of being assigned or transferred, it is necessary to examine the instrument that gave rise to the interest. This is because interests granted in Crown land are created through statutes that specify the nature and extent of the interest.[47] Examples of interests in Crown land that may be capable of assignment or transfer, depending on the relevant legislation, include pastoral, agricultural and mining leases.[48]
+
+When will an entity hold an interest in the capacity of a beneficiary of a trust estate?
+
+106. A trustee of a trust holds legal title of trust property, which may include real property, and deals with that property for the benefit of the trust's beneficiaries. A beneficiary of a trust can benefit from trust property in different ways depending on the terms of the trust deed that defines a beneficiary's interest in a trust estate.
+
+107. An interest held by a beneficiary may not confer equitable proprietary rights in the trust property. For example, the terms of a trust deed may only give a beneficiary interests in the income of the trust, or in the case of a discretionary trust, a beneficiary will ordinarily only hold rights which relate to the proper administration of the trust by the trustee. The nature of these interests and rights held by beneficiaries will not give them any interests in the underlying property held by the trust estate. For the purposes of the business real property definition, these interests are treated in similar way to share held in a company.[49] The beneficiary does not hold an eligible interest in real property under the definition.
+
+108. In contrast, if the trust deed invests a beneficiary of the trust with a proprietary interest in the entirety of the trust assets, that beneficiary will also have a proprietary interest in each of those assets.[50] In these circumstances, although a beneficiary may hold an eligible interest in real property held by the trust, the exclusion in the business real property definition of interests held as beneficiaries of a trust estate will operate.
+
+Does a share in a company confer an interest in real property held by the company?
+
+109. A share is personal property which represents an interest of a shareholder in the capital stock of a company.[51]
+
+110. Accordingly, a share in a company does not confer rights to the shareholder in assets owned by the company.[52] Instead, a share confers a right to a proportion of the share capital of the company. Therefore, owning shares in a company that in turn holds an eligible interest in real property does not thereby confer that interest to the shareholder. As a result, a shareholder does not hold business real property by reason of holding the share.[53]
+
+Real property held under company title
+
+111. When property is held under company title, it is the company that holds the eligible interest in real property. When an entity purchases shares in a company that owns the property under company title, the entity may become entitled, by reason of their shareholding, to occupy or possess part of the premises held by the company.
+
+112. However, the owner of the property remains the company. The shareholder's right of possession to part of the premises by virtue of their shareholding in the company is not an eligible interest in the real property for the purposes of the business real property definition. Accordingly, the shareholder does not hold business real property by reason of holding the shares.
+
+Business
+
+Definition of 'business' in subsection 66(5)
+
+113. Subsection 66(5) contains a definition of 'business' for the purposes of the business real property definition:
+
+business
+includes any profession, trade, employment, vocation or calling carried on for the purposes of profit, including:
+
+(a)
+the carrying on of primary production; and
+
+(b)
+the provision of professional services;
+
+but does not include occupation as an employee.
+
+114. The definition of 'business' under subsection 66(5) is an inclusive one and enlarges the ordinary meaning of the term.[54] In addition to activities that are businesses in the ordinary sense of the word, the definition covers any profession, trade, employment, vocation or calling carried on for the purposes of profit.
+
+'Business' as ordinarily understood
+
+115. There are no absolute tests of what is a 'business' in the ordinary sense of the word. In Evans v. Federal Commissioner of Taxation, Hill J stated:[55]
+
+The question of whether a particular activity constitutes a business is often a difficult one involving as it does questions of fact and degree. Although both parties referred me to comments made in decided cases, each of the cases depends upon its own facts and in the ultimate is unhelpful in the resolution of some other and different fact situation.
+
+There is no one factor that is decisive of whether a particular activity constitutes a business. As Jessel M.R. said in the famous dictum in Ericksen v. Last (1881) 8 Q.B. 414 at p. 416:
+
+There is not, I think, any principle of law which lays down what carrying on trade is. There are a multitude of things which together make up the carrying on of trade.
+
+Profit motive (but see cf. I.R. Commrs v. Incorporated Council of Law Reporting (1888) 22 Q.B. 279), scale of activity, whether ordinary commercial principles are applied characteristic of the line of business in which the venture is carried on (I.R. Commrs v. Livingston (1927) 11 T.C. 538), repetition and a permanent character, continuity (Hope v. Bathurst City Council 80 ATC 4386 at p. 4390; (1980) 144 C.L.R. 1 at p. 9; Ferguson v. F.C. of T. 79 ATC 4261 at p. 4264), and system (Newton v. Pyke (1908) 25 T.L.R. 127) are all indicia to be considered as a whole, although the absence of any one will not necessarily result in the conclusion that no business is carried on.
+
+116. Once the various relevant factors are considered and balanced, it is a question of fact and degree in each case whether activities constitute the carrying on of a business. Whether an entity is carrying on a business and the nature of that business involves a consideration of the activities in which that entity is involved.[56]
+
+117. Without limiting those that may be relevant, the factors that indicate that a business is being carried on include:
+
+•
+the keeping of business records separate to personal records;
+
+•
+the size of the operation and the extent of capital investment involved;
+
+•
+whether activities are conducted continuously and systematically rather than on an ad hoc basis;
+
+•
+the engagement of employees;
+
+•
+a purpose and intention to carry on business;
+
+•
+a level of repetition and regularity of activities constituting the business;
+
+•
+whether activities are carried on in a similar manner to other like businesses;
+
+•
+whether activities are planned, organised and carried on in businesslike manner;
+
+•
+the scale and permanency of operations; and
+
+•
+the existence of a business plan.
+
+118. Paragraphs 23 to 93 of Taxation Ruling TR 97/11 provide further guidance on the ordinary meaning of 'business' and the application of relevant factors in determining whether a business exists. The principles expressed in these paragraphs are applicable for the purposes of this Ruling.
+
+Not for profit enterprises
+
+119. As stated at paragraph 114 of this Ruling, the definition of 'business' in subsection 66(5) is an inclusive definition intended to enlarge the ordinary meaning of the defined term. While the definition of 'business' under subsection 66(5) includes any profession, trade employment, vocation or calling carried on for the purposes of profit, the Commissioner considers that the question of whether a business as ordinarily understood is in existence remains one of fact and degree requiring the consideration of all the ordinary indicators of business as outlined at paragraph 117 of this Ruling. Thus an activity that is not designed or carried out for the primary or specific purpose of profit may still, after consideration of all relevant factors, be regarded as a business for the purpose of subsection 66(5).
+
+120. In the case of a not for profit enterprise, it is typically a requirement that the entity's stated purpose is something other than to produce profit. However, if the activity otherwise satisfies the ordinary indicators of a business, a not for profit enterprise may still be classified as a 'business' for the purposes of subsection 66(5).
+
+Relevance of the entity carrying on the business
+
+121. The business real property definition specifically provides that the business in which the real property is used need not be carried on by the entity to which the definition applies (that is, the entity that holds the eligible interest in the real property). As a consequence, the entity to which the definition applies need not be carrying on a business for the real property in question to be business real property. This will be particularly relevant where the business real property definition applies to an SMSF, which ordinarily would not be conducting a business of any type.
+
+122. It is not the case that a trustee of a superannuation fund cannot ever be said to be carrying on a business. The basic principles set out in paragraphs 115 to 118 of this Ruling continue to apply. However, the fact that the activities are carried out in the capacity of a fund trustee is also an important and relevant consideration. In Federal Commissioner of Taxation v. Radnor Pty Ltd, Hill J said:[57]
+
+It could never be conclusive of the question whether a business is carried on by a taxpayer that the taxpayer is a trustee. The taxpayer in Official Receiver in Bankruptcy (Fox's Estate) v. FC of T (1956) 11 ATD 119; (1956) 96 CLR 370, for example, was a trustee, but on the facts of that case was engaged in a business or profit-making scheme. But that is not to say that the fact that a taxpayer is a trustee with fiduciary duties to his beneficiaries is irrelevant to the process of characterisation involved in determining whether his activities involve a business.
+
+123. A superannuation fund is also a trust bound by the ordinary principles of trust law. Even if the basic principles at paragraphs 115 to 118 of this Ruling are ostensibly met, a trustee cannot carry on a business unless expressly authorised to do so by the trustee instrument or by statute[58] and the activities required in order to carry on the business are not prohibited by relevant trust law, including the SISA.[59]
+
+124. Further, the duties of an SMSF trustee include:
+
+•
+ensuring the fund meets the conditions of the 'sole purpose test' in section 62;
+
+•
+investing the assets of the fund in accordance with the investment strategy;[60] and
+
+•
+maintaining members' minimum benefits in the fund.[61]
+
+125. Investment activities conducted by an SMSF trustee form part of the duties of the trustee. SMSF trustees may invest in property but in order for these activities to be considered a business, the activities would need to be distinguished from the usual investment activities of a trustee.
+
+126. Otherwise, the views set out in Taxation Ruling IT 2423 are relevant in determining whether a property investment business is being carried on.
+
+127. Overall, the Commissioner considers that in the case of an SMSF investing in property, it would be unusual for the business indicators to be met to such a degree to distinguish the activities of the fund from the normal investment duties of a trustee.
+
+'Primary production business'
+
+128. The 'carrying on of primary production' is specifically included in paragraph (a) of the definition of 'business' in subsection 66(5). The Commissioner considers that this paragraph will be satisfied if the definition of 'primary production business' in subsection 66(5) is met. 'Primary production business' is defined as having the same meaning as in the ITAA 1997.
+
+129. Taxation Ruling TR 97/11 sets out the Commissioner's view on the meaning of the term 'primary production business' in the ITAA 1997. The views expressed in that Ruling apply equally here in determining whether a 'primary production business' is being carried on.
+
+130. It is noted that subsection 66(6) specifically allows for certain domestic or private use of real property for the purposes of applying the 'wholly and exclusively' test to real property used in one or more primary production business.[62]
+
+Provision of professional services
+
+131. The 'provision of professional services' is specifically included in paragraph (b) of the definition of 'business' in subsection 66(5). The Commissioner considers that this paragraph will be satisfied where a person holds out to the public that they are qualified to practice a profession and does in fact provide services in a business that would normally be associated with the practice of that profession.
+
+132. The provision of professional services includes the independent provision of scientific, literary, artistic, educational or teaching services as well as those services provided by physicians, lawyers, engineers, architects, dentists and accountants.[63]
+
+Employee
+
+133. The definition of 'business' in subsection 66(5) specifically excludes occupation as an employee.
+
+134. Employee is defined in section 15A of the SISA. The meaning is the same as the definition in section 12 of the Superannuation Guarantee (Administration) Act 1992 (SGAA 1992), apart from some exceptions that are not relevant for present purposes.
+
+135. The Commissioner's views on the meaning of 'employee' for the purposes of the SGAA 1992 are set out in Superannuation Guarantee Ruling SGR 2005/1. The principles set out in that Ruling are applicable here.
+
+The business use test - 'used wholly and exclusively in one or more businesses'
+
+Nature of the business use test
+
+136. For an eligible interest held by an entity in real property to be business real property, the definition requires a connection to be established between the real property and one or more businesses. The test establishing this connection is that the real property must be 'used wholly and exclusively in' one or more businesses.
+
+137. Three elements of the business use test are discussed separately below. These elements are:
+
+•
+what is 'use' of real property;
+
+•
+when is use of real property 'in' a business; and
+
+•
+what limitations does the 'wholly and exclusively' threshold impose on the business use test.
+
+138. While the test can be dissected into these various elements, it can only be properly applied by considering the phrase 'used wholly and exclusively in' as a whole. This is because the elements of the test closely interact with one another when applied to a given set of facts. For example, the meaning of 'used' in this context is influenced by the 'wholly and exclusively' threshold.
+
+139. The preferred interpretation of the business use test, including the meaning of the terms contained within it, is found by assessing the overall operation of the test against the outcomes that the business real property definition was intended to deliver.
+
+What is 'use' of real property?
+
+Distinguishing physical and non-physical use of property
+
+140. 'Use' takes its ordinary contextual meaning in the business real property definition. English dictionaries define the word to mean:
+
+to employ for some purpose; put into service; turn to account;[64]
+
+cause to act or serve for a purpose; bring into service; avail oneself of.[65]
+
+141. In a legal context, the word 'use' has been defined in the following way in relation to real property:
+
+possession and use of land to derive income or other benefits.[66]
+
+142. The Commissioner's view is that the meaning of 'use' in the business real property definition must, at a minimum, contemplate any activities that are actually happening on the relevant property. Therefore, the hallmark of use of property that is considered under the business use test is any activities, operations or actions occurring on the land in question. Such use is referred to here as
+physical use
+of the real property.
+
+143. For example, the operation of a petrol station or a retail store by an entity on or within premises constructed on real property for those purposes clearly involves physical use of that property. In both of these simple cases, the physical use of the real property is evidently connected with an underlying business purpose. Therefore, the use of the property in these cases is in one or more businesses for the purposes of the business real property definition.
+
+144. A more contentious question is whether 'use' extends to deployment of real property by an entity without that entity carrying on activities, operations or actions on that land. An entity is normally free to exploit certain interests it holds in property to generate income or gains. Often this will be done by granting permission to another entity to use the property, typically by way of granting a lease or licence over the property to that other entity. Any such deployment by the first entity is referred to in this Ruling as
+non-physical use
+of the property.
+
+145. Thus, an entity holding an interest in real property that enables it to possess or occupy that property may exercise its rights to:
+
+•
+physically use the property;
+
+•
+enable another entity to physically use the property by granting rights of possession or occupation to that entity, thereby using the property in a non-physical way; or
+
+•
+both physically and non-physically use the property.[67]
+
+Only physical use considered in the business real property definition
+
+146. Based on the definitions cited at paragraphs 140 and 141 of this Ruling, it is possible that the concept of 'use' of real property will contemplate non-physical use. However, this will only be the case if the context and purpose of the law supports this interpretation.
+
+147. The courts have regularly recognised that the scope of the term 'use' in a given circumstance is heavily influenced by the context in which it appears:
+
+The word 'used' is, of course, a word of wide import and its meaning in any particular case will depend to a great extent on the context in which it is employed.[68]
+
+148. The context in this case includes the purpose underlying the employment of the term in the business real property definition.
+
+149. Such an approach accords with the contemporary approach to statutory interpretation reflected in the High Court decision in CIC Insurance Ltd v. Bankstown Football Club Ltd:[69]
+
+...the modern approach to statutory interpretation (a) insists that the context be considered in the first instance, not merely at some later stage when ambiguity might be thought to arise, and (b) uses 'context' in its widest sense to include things such as the existing state of the law and the mischief which, by legitimate means such as those just mentioned, one may discern the statute was intended to remedy.
+
+150. It is the Commissioner's view that a contextual and purposive examination of the employment of 'use' in the business real property definition indicates that it was intended to take a narrower meaning, limited to physical use of real property.
+
+151. This view is supported by:
+
+•
+applying the business use test to a basic business real property case identified by the extrinsic materials;
+
+•
+analysing the immediate statutory context of the business real property definition as a whole; and
+
+•
+relying on judicial consideration of similar provisions.
+
+Application to a basic business real property case
+
+152. Extrinsic materials supporting the introduction of the business real property definition in its current form identify a basic case to which the definition is intended to unambiguously apply. This case involves the sale and leaseback of small business premises to an SMSF from a related party of the SMSF where the only use of the premises is in the related party's business. The business conducted by the related party would continue uninterrupted in these circumstances.[70]
+
+153. In this case, Parliament's intent is that the real property, which incorporates the small business premises constructed upon it, is business real property of the related party both before and after the sale and leaseback transaction. Once the freehold interest in the real property is acquired by the SMSF, it is also Parliament's intent that the real property is business real property of the fund. The business use of the real property that allows Parliament's intent to be realised in this case is the physical use of the property by the related party in its business.
+
+154. If the meaning of 'use' in the business real property definition extended to non-physical use of the real property, the SMSF's deployment of the property after it acquired the freehold interest would need to be taken into account under the business use test. Any such non-physical use by the SMSF is unlikely to be in a business.[71] In these circumstances, the real property could no longer be considered to be used 'wholly and exclusively' in one or more businesses. Such an outcome is contrary to Parliament's intent.
+
+155. This scenario illustrates how the different elements of the business use test interact with one another and thereby influence the interpretation of the definition. Here, a narrower interpretation of the meaning of 'use' more readily enables the 'wholly and exclusively' threshold to be met.
+
+Immediate statutory context
+
+156. Numerous cases have considered the scope of the term 'use' as it applies to real property. Many of these cases have arisen in a land tax or rating context.[72] In line with what is set out at paragraph 147 of this Ruling, a consistent feature of the cases has been a careful analysis of the drafting of the statutory provision or provisions in which the term 'use' appears.[73] While a number of these cases have interpreted 'use' of real property in a way that extends to non-physical use, the relevant statutory contexts for those cases are in many respects different to the business real property definition.
+
+157. Three related aspects of the business real property definition indicates that 'use' in this context is limited to physical use.
+
+158. First, the business use test takes account of all uses of the real property by any entity. It is not limited to a particular use of the property by a single entity. This is reflected in the test envisaging that the property may be used in more than one business. It follows that if 'use' extends to non-physical use, all such uses of a given property must be tested against the 'wholly and exclusively' threshold.
+
+159. The Commissioner considers that this approach would limit the application of the business real property definition in a way that Parliament did not intend. The basic business real property case outlined at paragraphs 152 to 155 of this Ruling supports this view.
+
+160. Secondly, the test in the business real property definition explicitly recognises that the business or businesses in which the real property is used need not be carried on by the entity to which the definition applies. This indicates that the drafting of the definition contemplated the possibility that an entity to which the definition applies may allow other entities to use the property in the absence of the first entity carrying on a business in relation to the property. Thus, the words of the definition envisage that real property may still be 'wholly and exclusively' used in one or more businesses in these circumstances. For this proposition to hold, it must follow that 'use' of real property only contemplates physical use. This is of particular relevance to an SMSF, which rarely carries on a business of any type[74] and so usually can only use real property in a non-physical way.
+
+161. Finally, the business real property definition on its terms tests the use of the underlying land, in contrast to the use of a proprietary interest of an entity in the real property. This distinction is apparent in the drafting of paragraphs (a), (b) and (c) of the business real property definition, which identify particular interests in real property that must be held by an entity before that entity can claim the real property to be business real property.[75] In contrast, the business use test only refers to 'the real property'. This drafting approach more naturally contemplates the physical use of the relevant parcel of land by any entity.
+
+Judicial consideration of similar provisions
+
+162. One judicial decision where the immediate statutory context for the employment of 'use' was very similar to the business real property definition was Cordinup Resorts Pty Ltd & Ors v. Terana Holdings Pty Ltd (Cordinup).[76] At issue was whether land subject to a purchase contract between the parties was 'Australian rural land' for the purposes of the Foreign Acquisitions and Takeovers Act 1975.[77] That Act defines 'Australian rural land' to be 'land situated in Australia that is used wholly and exclusively for carrying on a business of primary production'.
+
+163. A Full Court of the Western Australian Supreme Court found that 'use' in this context was limited to physical use. Kennedy J held:[78]
+
+It is, I think, the physical use of the land which is relevant and the fact that the land is being
+'
+used' by the respondent to generate rental income is immaterial
+, provided that the user (or users) of the land is (or are) carrying on a business of primary production. The fact that there may be more than one person carrying on a business on the land would not appear to be significant - see s23(b) of the Acts Interpretation Act 1901 (Cth) (emphasis added).
+
+164. Similarly, Murray J stated:[79]
+
+...a court is required to focus upon the character of the use of the land rather than the nature or purpose of the activity of the owner of the land, or indeed any other person who may be involved in its use. So, it is use of the land by anyone which is covered by the definition, if of the character described.
+
+No need for human presence for physical use to occur
+
+165. It is not necessary that there be a human presence on the land before there is use of that land. Activities, operations or actions can occur on land without any human being present on the land. Grazing land used for primary production is a familiar case in point. The operation of wind turbines or mobile telephone or communication towers would equally involve use of land for these purposes.
+
+166. The conduct of such activities, operations or actions on the land would, however, require human intervention at some point. In the examples just considered, that intervention would involve the herding of the grazing stock on the land or the construction and maintenance of the wind turbines or towers.
+
+167. Further, any activities, operations or actions occurring on the land will typically involve persons or entities exercising their legal rights in relation to the land. These rights most commonly involve the ability to possess or occupy land because the person or entity owns the land or leases the land from somebody else. Other rights granted in relation to the land may also enable activities, operations or actions to occur (for example, the granting of a contractual licence).
+
+Circumstances where physical use of land follows an entity's non-physical use
+
+168. As noted at paragraph 144 of this Ruling, non-physical use of real property involves an entity turning an interest it holds in property to account to derive income or gains. This is most commonly achieved by enabling other entities to possess or occupy the land for their own purposes in return for a fee or other consideration. For example, in the case of a leasehold interest granted over property, the consideration will be reflected in the payment of rent.
+
+169. In these circumstances, the mere fact that an entity uses the property in a non-physical way does not prevent the business real property definition from being met. Only the physical uses of the property, including those uses by other entities as a consequence of the non-physical deployment of the land, need be assessed under the business use test.
+
+Use of residential property
+
+170. An owner of residential property often leases the property to a residential tenant. In these circumstances, it is only the tenant's physical use of the property[80] that is assessed under the business real property definition. Even though this use of the property is ostensibly for a non-business purpose of the tenant, it remains possible for that use to be connected to a property investment business carried on by the owner.[81]
+
+Land development cases
+
+171. Land purchased for development purposes typically requires entities to physically use land to realise the development plans. Such physical use regularly takes place in the context of a business.
+
+172. It is also the case that land development can take place outside a land development business as an investment activity. Such land development activity would not meet the business requirement of the business real property definition.
+
+173. Subject to the application of the 'wholly and exclusively' threshold,[82] land in the process of being developed as part of a land development business could therefore meet the terms of the business real property definition.
+
+Vacant land
+
+174. Vacant land may be business real property where the property is being used in a business. There is no need for buildings or premises to be constructed on the real property for a business to be carried out. The key is that there must be use of land - that is, there are activities, operations or actions occurring on the land.
+
+175. For example, vacant land that is used as car park may be business real property if the car park is run as a business. In this case, allowing drivers (under the terms of a contractual licence), to bring their vehicles onto the land is use of the property that enables the business use test to be applied.
+
+When is use of real property 'in' a business?
+
+Nature of the connection required between use and a business
+
+176. Under the business use test, the necessary connection between the use of real property and one or more businesses is reflected by the word 'in'. That is, the relevant real property must be used in one or more businesses for the business real property definition to be satisfied.
+
+177. In this respect, the business use test in the business real property definition is similar to the tests contained in the general income tax deductibility provision[83] and in the core GST provisions dealing with input tax credit entitlements.[84]
+
+178. The test in the general income tax deductibility provision has been the subject of considerable judicial authority. The following statement is often cited as capturing the essence of what is required under that nexus test:[85]
+
+For expenditure to form an allowable deduction as an outgoing incurred
+in
+gaining or producing the assessable income it must be
+incidental and relevant
+to that end. The words 'incurred in gaining or producing the assessable income' mean in the course of gaining or producing such income...In brief substance, it is
+both sufficient and necessary that the occasion
+of the loss or outgoing should be found in whatever is productive of the assessable income... (emphasis added).
+
+179. Alternative words should not be substituted for those employed in the legislation to give effect to the statutory intent. Nevertheless, by analogy, the Commissioner considers that use of real property which is incidental and relevant to a business, or identifying a business as the occasion of the property's use, is a starting point in determining whether the business use test is met.
+
+180. It has also been widely recognised that purpose is relevant to the nexus test under the general income tax deductibility provision.[86] In Magna Alloys and Research Pty Ltd v. Federal Commissioner of Taxation, Brennan J held that:[87]
+
+The relationship between what the expenditure is for and the taxpayer's undertaking or business determines objectively the purpose of the expenditure. In cases to which a reference to purpose is required or appropriate, objective purpose will be found to be an element in determining whether expenditure is incurred
+in
+gaining or producing assessable income or
+in
+carrying on business. If the purpose of incurring expenditure is not the gaining or producing of assessable income or the carrying on of a business, the expenditure cannot be said to be 'incidental and relevant' to gaining or producing assessable income or carrying on business;...; nor can the undertaking or business be seen to be 'the occasion of' the expenditure (emphasis not added).
+
+181. Adapting Brennan J's words to the context of the business real property definition, here a relationship is to be established between what the use of the property is for (that is the objective purpose of the use) and one or more businesses.
+
+182. The importance of considering the purpose of the property's use is also supported by reading the business real property definition together with the safe harbour rule provided for in subsection 66(6).[88] That subsection refers to areas of the real property being used for domestic or private purposes, in contrast to business purposes. This supports a view that it is physical use for or that is incidental and relevant to a business purpose that is the subject of the business use test in the definition.[89]
+
+Direct use of property by an entity carrying on a business
+
+183. Paragraph 143 of this Ruling sets out some examples where the use of the property by an entity is directly connected with a business carried on by the same entity. The business use test applies in a straight-forward manner in these circumstances. The necessary connection between the use of the property and a business is readily made out.
+
+184. In some cases, the direct use of property in the carrying on of a business may appear, in isolation, to have a non-business purpose but nevertheless be incidental and relevant to that business. Examples would include:
+
+•
+permitting employees to park their cars on business premises;
+
+•
+allowing or requiring a security guard to sleep on business premises; and
+
+•
+allowing or requiring managers or employees to reside at the business premises where 24 hour 'on call' service is contemplated by the activities of the business, such as in the case of a hotel or a motel.
+
+Use of property by customers of a retail business
+
+185. There are other circumstances where the apparent purpose of the use of property is of a non-business character. This will typically occur where the user of the property is not directly connected to the entity that is carrying on the underlying businesses. These cases can be contrasted with the examples that were just considered. Nevertheless, such use of the property in these circumstances remains incidental and relevant to the carrying on of a business on that property. Despite the apparent purpose of the property's use in these cases, it may still qualify as use that is 'in one or more businesses'.
+
+186. An extension of the examples discussed at paragraph 143 of this Ruling illustrates this point. Customers of a business conducted at particular premises, such as a petrol station or a retail store, may enter the real property to deal with the business. Many dealings of the customers in these cases are for non-business purposes, in particular for private or domestic purposes. However, it is clear that any use of the property occasioned by the customers in these circumstances is incidental and relevant to the underlying business.
+
+Use of property by guests of a commercial accommodation business
+
+187. The application of the business use test in this manner does not require the entity carrying on the business to be the predominant user of the property. For example, the use of property by guests accommodated in hotels, motels and similar types of commercial short-term accommodation is incidental and relevant to the underlying business being carried on.
+
+188. Once again, the purpose of the guests in these circumstances will regularly be of a non-business nature. The necessary connection between the use of the property and a business is reflected in the nature of the business itself. The principal activity of the business involves the granting of rights to guests in relation to the property, ordinarily in the form of a licence to occupy the premises. Therefore, the use of the property is incidental and relevant to, or is occasioned by, the business.
+
+Use of property by a residential tenant where the property is held in an investment business
+
+189. These principles also readily extend to residential property that is held within a property investment business. However, there are two important factual prerequisites that need to be recognised in this context.
+
+190. First, the activities associated with the letting of the residential property must have a business character. The principles referred to earlier in the Ruling regarding the establishment of a business[90] apply here. However, it is widely recognised that the leasing of residential property can often involve investment activities carried out other than by way of business. This issue is particularly relevant where an SMSF trustee leases residential property.[91]
+
+191. Secondly, it is necessary that any such property investment business incorporate the activity of leasing the property, and thereby allowing its use by others.
+
+192. In the absence of a property investment business being carried on by an entity that allows other entities to use the property for their own purposes, there will be no relevant connection between the use of the property and a business. Therefore, other than in these particular circumstances, residential property is not business real property of any entity.
+
+Short term accommodation
+
+193. Other forms of short term accommodation, such as serviced apartments, may be provided on a similar basis to hotel accommodation. Where an entity carries on a business of granting rights of use to guests through its own interests in the property, the property may similarly meet the business use test by virtue of the guests' use of the premises being incidental and relevant to the business.
+
+194. In contrast, where an entity deals with accommodation by way of agency or a management agreement entered into with the entity that grants the rights of use to guests, the Commissioner considers that the business use test will only be met if the entity granting the rights of use in relation to the property is carrying on a business. The ultimate source of the rights remains the entity granting the rights, even if this is facilitated by an agent or management entity. In this context, the operation of the business use test depends on whether the activities of granting the rights of use involve carrying on a business.
+
+Physical use other than in a business
+
+195. For the purposes of the business real property definition, any use of property that does not have a direct business purpose and is not otherwise incidental and relevant to a business involves use of real property other than in one or more businesses. Such uses of the property are likely to lead to the 'wholly and exclusively' threshold in the business use test not being met
+
+What limitations does the 'wholly and exclusively' threshold impose on the business use test?
+
+General principles
+
+196. To satisfy the business real property definition, the real property in question must be used 'wholly and exclusively' in one or more businesses. These words require an examination of the character of all relevant uses of the real property in question to determine whether the property is used in one or more businesses to the exclusion of any other uses.
+
+197. Determining whether the 'wholly and exclusively' threshold is met involves an assessment and balancing of all the circumstances of each case. In a comparable context, it has been said that the matter of whether a threshold criterion of this nature is satisfied is one of fact and degree.[92]
+
+198. In the context of the business real property definition, the words 'wholly' and 'exclusively' have similar meanings but are not exactly synonymous. The word 'wholly' looks to whether the entire area of the property in question is used in one or more businesses. In contrast, 'exclusively' looks to whether the business use of the property is to the exclusion of any other use.
+
+199. On this basis, it is possible for real property to be wholly but not exclusively used in one or more businesses. This would occur where an entire area of real property is concurrently used for different purposes. Equally, it is possible for real property to be exclusively but not wholly used in one or more businesses. This would occur where not all of the real property is used but its only use by any entity is in one or more businesses.
+
+200. The principal similarity between the concepts of 'wholly' and 'exclusively' is that they both are tests requiring entire fulfilment. They do not, on a literal interpretation, allow for exceptions.
+
+201. Accordingly, of its nature, the 'wholly and exclusively' threshold is an onerous one. Nevertheless, there is a question whether Parliament's intention is served by an interpretation of the threshold that allows for no departure whatsoever from a whole and exclusive use of the real property in one or more businesses.
+
+202. The choice of the phrase 'wholly and exclusively' in the business real property definition was a deliberate one. In contrast, the original definition, as introduced in Bill form,[93] used the words 'wholly or exclusively'.
+
+203. This leaves open the issue of whether two separate conditions need to be satisfied in relation to the use of the property (that is the property must be used must be both 'wholly' and 'exclusively' in one or more businesses) or whether the phrase is a composite one expressing a single condition:
+
+Acts frequently impose an obligation on a person or prohibit certain conduct by means of a provision that comprises two phrases connected with the word 'and'. Examples would be 'complete and furnish a return'; 'set into motion and drive a car while intoxicated'. The problem that arises is whether two types of conduct are being referred to or only one... If one part of the provision taken by itself imposes an unreasonable obligation on a person, the provision will be construed as if it were [one requirement]. If the two parts can each reasonably stand on their own, they will be construed separately. [94]
+
+204. It is the Commissioner's view that the term 'wholly and exclusively' is a single test, which seeks to identify the use of the property in a business in contrast to any other type of use, rather than imposing two separate obligations that are required to be tested individually. In particular, the suggestion that the word 'wholly' requires the entire area of the real property in question to be used in one or more businesses would impose an unreasonable obligation in some circumstances. This is particularly so in cases where parts of a particular area of real property are incapable of any physical use.
+
+205. A similar issue was considered in some detail by Murray J in Cordinup.[95] The observations made by His Honour in the following passages from the case were in the context of considering the status of 1,826 hectares of land for the purposes of the 'Australian rural land' definition in the Foreign Acquisitions and Takeovers Act 1975. Of this total, 360 hectares of the land was used in commercial forestry operations that met the primary production business use test in that definition. The remaining parts of the land were virgin bush, pine forest or cleared grazing land upon which stock were agisted.
+
+206. In analysing whether the land was used wholly and exclusively for carrying on a business of primary production, Murray J observed:[96]
+
+I am not attracted to the proposition that the word 'wholly' refers to the area of the land in question which is used, so that if any, even relatively small, part of the land was not used for the business of primary production, it would inevitably be held not to be wholly so used. I do not see the word 'exclusively' as serving a different function to preclude the land being described as Australian rural land if the purpose for which the whole of the land is used may not be entirely or completely described as the business of primary production because there is some other minor or ancillary element of purpose in the use...
+
+The phrase 'wholly and exclusively' is a composite phrase satisfied by the conclusion of fact that so far as it is put to any use, the land is used for a purpose which may be described as the carrying on of a business of 'primary production', having regard to the meaning given to that term, and only for the carrying on of such a business. That conclusion will not be precluded by finding that part of the land is not used at all, provided it is used to some appreciable degree, and it will not be precluded by finding that the use of the land includes other types of purpose than primary production, provided any such use is properly to be regarded as ancillary or incidental to the use of the land for the business of primary production.
+
+207. Murray J's observations highlight the possibility that, in the context of the business real property definition, a property can continue to meet the requirements of the 'wholly and exclusively' test where part of the property is not used at all.
+
+208. The approach set out by Murray J in Cordinup is preferred by the Commissioner in applying the business real property definition to the facts of a given case. For these purposes, it is useful to distinguish those cases where some part of the property is not used at all (
+partial no use cases
+) from those cases where property is used in one or more businesses but is also used other than in one or more businesses (
+dual use cases
+).
+
+Partial no use cases - use to an appreciable degree or extent
+
+209. No prescriptive test applies in determining how much of a property must be used for it not to fail the 'wholly and exclusively' test. The question is one of degree. Adopting the words used by Murray J in Cordinup,[97] the Commissioner will consider the 'wholly and exclusively' test to be met when part of the property is not used at all provided that the property is used in the stipulated way to some appreciable degree or extent.
+
+210. For example, consider the case of property upon which a factory is constructed. The factory is solely used to manufacture goods for the purposes of a business. There is some room for expansion, but for the time being that space is not used in any way. The property does not fail the 'wholly and exclusively' test in these circumstances and will therefore satisfy the business use test.
+
+211. It is only where the area used in business is so small that it would not be considered an appreciable part of the land that questions will be raised about whether the property meets the threshold.
+
+Dual use cases - application of the 'de minimus' principle
+
+212. In contrast to cases where parts of a property are not used at all, the 'wholly and exclusively' test is more likely to be failed where the property, either in part or as a whole, is simultaneously used other than in one or more businesses.
+
+213. At paragraphs 176 to 182 of this Ruling, the nature of the connection required between the use of the property and one or more businesses is discussed. There it is identified that use that is incidental and relevant to a business will qualify for the purposes of the business use test. Some examples of use that appear to be for a non-business purpose, but are nevertheless incidental and relevant to a business are provided. These cases do not require any flexibility in the interpretation of the 'wholly and exclusively' test. This is because these uses of the property qualify for the purposes of the business real property definition.
+
+214. This is to be contrasted with use of property that does not qualify under the business real property definition because it is considered not to be in one or more businesses. Nevertheless, even in these cases, the Commissioner considers that applying the 'wholly and exclusively' test rigidly without allowing for any non-business use may lead to unintended outcomes in some circumstances.
+
+215. It is the Commissioner's view that the de minimus principle of statutory interpretation will apply to the 'wholly and exclusively' threshold in the business real property definition. This principle will accommodate non-business use of the property that is relatively minor or trifling.
+
+216. The de minimus principle is a rule of construction that imports the idea that 'the law does not pay heed to trifling matters'. In a leading Australian decision on the application of the principle, Hill J stated:[98]
+
+The principle has been applied, either expressly or by implication, in a wide variety of situations where a trivial failure to comply with a specific condition has been ignored.
+
+217. An example of the potential application of the de minimus principle would be where an employee temporarily stores some personal items on factory premises in a way that does not interfere with the business operating on the premises.
+
+Subsection 66(6) safe harbour - Application of the 'wholly and exclusively' test to primary production businesses
+
+218. Subsection 66(6) specifically addresses the application of the 'wholly and exclusively' test to real property used in a primary production business on which there is a dwelling and/or area of the land used primarily for domestic or private purposes. Where the area used primarily for domestic or private purposes does not exceed 2 hectares, and the use of the property for domestic or private purposes is not considered to be the predominant use of the property, the real property is still considered to be used 'wholly and exclusively' in a primary production business. A property meeting these conditions will therefore be regarded as business real property for the purposes of section 66.[99]
+
+219. It is the Commissioner's view that the safe harbour provided for in subsection 66(6) in relation to primary production land is reflective of the overall policy intention of the business use test. For the avoidance of doubt, subsection 66(6) ensures an application of the incidental and relevant use principle and/or the de minimus principle to primary production land.
+
+220. The existence of subsection 66(6) does not preclude the application of either of those principles to primary production land where the exception does not apply. For example, primary production land where the area used primarily for domestic or private use exceeds 2 hectares may still meet the definition of business real property applying the incidental and relevant use principle and/or the de minimus principle principles.
+
+221. Neither does the existence of subsection 66(6) preclude the application of either of those principles to real property used in businesses other than a primary production business.
+
+222. Subsection 66(6) requires that the domestic or private use is not the predominant use of the real property. Predominant use refers to the ruling, prevailing or most influential use of the property.[100]
+
+223. In the context of a primary production business, if more than half of the real property is used for domestic or private purposes, the real property will ordinarily not meet the requirement under subsection 66(6). Special circumstances associated with the nature of the primary production business would be required to establish that the domestic or private use is not the most influential use of the property. In this situation the real property would similarly fail the general requirement in the business real property definition that the property is used wholly and exclusively in one or more businesses.
+
+How to apply the business use test at a point in time
+
+224. The status of an eligible interest held by an entity in real property as business real property is determined at a particular point in time. For example, the business real property exception in paragraph 66(2)(b) is concerned with the status of a property at a time when the SMSF acquires an eligible interest in the property from a related party of the SMSF. Similarly, the application of the business real property exception in the in-house asset rules is relevant at the end of each income year or when an SMSF trustee enters into a lease or lease arrangement in respect of the property.
+
+225. However, this does not mean that the business use test in the business real property definition can only take into account the use of the property at the precise time at which the definition is being applied. The Commissioner considers that a broader analysis is appropriate when applying the business use test, which accounts for all of the circumstances associated with the use of the property surrounding the time at which the business real property definition is applied.
+
+226. Adopting this wider perspective better ensures that the status of property under the business real property definition does not regularly change on account of transient or peculiar changes in circumstance.
+
+Temporarily vacant commercial land
+
+227. Land on which commercial premises are constructed is often leased to a business. In circumstances where one business vacates the premises at the end of a lease and the freehold interest holder is looking for a new tenant or negotiating with another business, the real property will remain business real property of the freehold interest holder. This is despite the temporary absence of any use of the land.
+
+228. However, if the freehold interest holder abandons plans to lease the property, the property will no longer be business real property.
+
+Temporary business use of land at time of acquisition
+
+229. In contrast, the Commissioner will not consider property to be business real property where the property is merely used in a business at a time when its status as business real property is relevant for SISA purposes. For example, if land is used in a business for a short period of time coinciding with the acquisition of the property by the SMSF from a related party, but is otherwise used for non-business purposes, the business use test will not be met. All circumstances relating to the period surrounding the acquisition is relevant for the purposes of the business use test.
+
+### Appendix 2 - Examples
+
+This Appendix is provided as information to help you understand how the Commissioner's view has been reached.
+
+230. The examples in this Appendix are designed to illustrate the application of the business real property definition to a range of factual situations.
+
+231. Other provisions of the SISA and SISR may apply to the facts given in an example. Any such provisions that are mentioned are provided as a guide only. There may also be additional provisions that apply that have not been mentioned.
+
+Example 1: Primary production business with private residence - case 1
+
+232. The Harrison Vineyard is owned and managed by Peter and Denise Harrison who are members of the Harrison SMSF.[101]
+
+233. The property has 10 hectares planted out with vines and on half a hectare of the property they have built a private residence in which they live.
+
+234. The vineyard business has a grape supply agreement with a local winery for the next 5 years. This agreement forms the basis of a business of primary production that is being conducted on the property.
+
+235. The Harrison SMSF acquires the property (not including the grape supply agreement) from Peter and Denise at its market value. Peter and Denise then lease the property from the SMSF.
+
+236. The property is business real property of both the Harrison SMSF after it acquires the property and of Peter and Denise at all times. At all relevant times, the Harrison SMSF and Peter and Denise hold either a freehold interest in the land or a leasehold interest in the land. The use of the private residence is permitted under the specific application of the 'wholly and exclusively' test in subsection 66(6). Therefore, the property is used wholly and exclusively in Peter and Denise's business at all times.
+
+237. Accordingly:
+
+•
+the acquisition of property by the Harrison SMSF from Peter and Denise does not contravene the related party asset acquisition rule in section 66; and
+
+•
+the freehold interest in the property is not an in-house asset of the Harrison SMSF under Part 8.
+
+238. The vines form part of the real property.
+
+Example 2: Primary production business - annual crop
+
+239. Daniel is a grain farmer with 200 hectares to be harvested. His son Jonathan is a member and trustee of an SMSF. Jonathan's SMSF wants to acquire the farm and lease it back to Daniel until he retires.
+
+240. At the time the acquisition is to take place the land has a grain crop half grown.
+
+241. The crop is not included in the acquisition and remains the property of Daniel. The market value of the business real property does not include the crop.
+
+Example 3: Primary production business with private residence - case 2
+
+242. Lesley-Anne owns and operates a cattle farm of 40 hectares. She breeds cattle in a primary production business. Lesley-Anne lives on the property and has built a large home. She is also a keen gardener and maintains a large hedge maze and ornamental lake and garden. The total area of the property that she uses for private or domestic purposes is about 3 hectares.
+
+243. Lesley-Anne is a member of the Jasper SMSF. She wants to sell the property to the trustee of the Jasper SMSF at market value.
+
+244. Because Lesley-Anne uses more than 2 hectares for private and domestic purposes, the subsection 66(6) exception will not apply.
+
+245. In this case, the non-business use of the property is not entirely incidental and relevant to the underlying primary production business, nor is it minor or trifling. Therefore, as the property is not used wholly and exclusively in a business, it is not business real property of Lesley-Anne. Any acquisition of the freehold interest in the land by the Jasper SMSF will contravene the related party asset acquisition rule in section 66.
+
+Example 4: Primary production business with multiple dwellings
+
+246. Sean and Danielle lease their dairy farm from their SMSF, the S&D SMSF. They live on the property.
+
+247. They have decided the farm is getting too much for them to manage so have subleased part of their property to an unrelated party. A second house has been built on the property to accommodate the new farmer.
+
+248. The total area of land used for private or domestic purposes is still under two hectares and not the predominant use of the land. Therefore the property will be considered to be used wholly and exclusively in a primary production business under subsection 66(6).
+
+Example 5: Mr Peters' poultry farm - unused paddocks
+
+249. Mr Peters operates a poultry farm. His business is run from a property on which 4 large poultry sheds are constructed. The property also consists of 2 paddocks that are unused. Mr Peters sometimes considers building more poultry sheds on the unused land but is yet to pursue any definitive plans to this end.
+
+250. Mr Peters is a member of the Nest Egg SMSF. Mr Peters wants to sell and lease back the property on which his poultry farm is located at market value to the Nest Egg SMSF.
+
+251. The property is business real property of Mr Peters. In this case, the property is used to an appreciable degree in the primary production business of Mr Peters. The property therefore satisfies the 'wholly and exclusively' threshold under the business use test. Accordingly, the farm can be sold at market value to Nest Egg SMSF without contravening the related party asset acquisition rule in section 66. The farm will not be an in-house asset of the Nest Egg SMSF when it is leased back to Mr Peters.
+
+Example 6: Incidental use of the poultry farm by a voluntary organisation
+
+252. Assume the same facts as Example 5 of this Ruling.
+
+253. Mr Peters is also a keen hobby gardener and is president of the Enthusiastic Gardeners Organisation (EGO). As part of his role with EGO, he moves the chicken manure from his poultry sheds to compost heaps until the waste has broken down and is suitable for domestic gardening. Once the chicken manure has decomposed sufficiently, EGO removes it from his farm free of charge.
+
+254. The farm is still business real property of Mr Peters. Although the composting of the chicken manure in this way reflects Mr Peters' personal involvement with EGO, the removal of chicken manure, being a waste product of a poultry farm, is incidental and relevant to Mr Peters' business.
+
+Example 7: Temporary agistment on otherwise vacant land
+
+255. Nicole Chisholm owns 50 hectares of vacant pastoral land that has been bequeathed to her under a will of a deceased relative.
+
+256. During a drought, she allows a friend who conducts a primary production business to graze cows on the land in return for a fee that reflects market value.
+
+257. The arrangement is temporary and continues for the remainder of the drought, a period of 6 months. Nicole has not previously rented the land and has no intention of renting the land to anyone in the future.
+
+258. During this period, Nicole reviews her investment strategy and decides that the land would be a suitable investment for the Nicole Chisholm SMSF.
+
+259. While a business is using the land at the time of considering the proposed sale, a wider analysis of the use of the property around that time reveals that the land is not 'wholly and exclusively' used in a business at that time. The business use is only transitory. Accordingly, Nicole's interest in the land is not business real property, meaning any acquisition of that interest by the SMSF would contravene the related party asset acquisition rule in section 66.
+
+Example 8: Vacant land - case 2
+
+260. Andrew and Carolyn own a vacant block of land zoned for business use. Their son, Flynn, lives close to the vacant block. With Andrew and Carolyn's consent, most nights of the week Flynn parks trucks and other machinery that he uses in his business on the vacant block. He has no lease and makes no payment to Andrew and Carolyn for the use of the land.
+
+261. Andrew and Carolyn want to contribute the vacant block to their SMSF as an in specie contribution.
+
+262. The vacant block is an eligible interest in real property but is not used wholly and exclusively in a business. The zoning of the block for business use does not impact on this conclusion. As the property is not business real property, the in specie contribution will contravene the related party asset acquisition rule in section 66.
+
+Example 9: Vacant land - case 3
+
+263. Brendan and Millie own three blocks of land adjacent to each other. Their factory and retail outlet is located on one block, another block contains the car park for the business, and the third block is vacant.
+
+264. Brendan and Millie want their SMSF to acquire the three blocks. They then want their business to lease back blocks one and two with the third block as an investment in the fund.
+
+265. The first and second blocks are business real property as they are used wholly and exclusively in the business. The third block has no business use and is not business real property. Acquisition of the third block by the fund would contravene the related party asset acquisition rule in section 66.
+
+Example 10: Water Licence - not an eligible interest in real property
+
+266. The Buckley family own a farm that consists of an appreciable area of land on which the family company conducts a primary production business. The family company also owns a water access licence entitling it to draw a specified amount of water from a nearby waterway for irrigation purposes.
+
+267. Irwin Buckley, a trustee of the Buckley SMSF, proposes that the SMSF purchase the farm and the water licence at market value and lease them back to the family company.
+
+268. The freehold interest in the farm is business real property at all times. Assuming the proposed acquisition takes place at market value; the farm may be purchased by the SMSF and leased back to the family company without contravening the related party asset acquisition rule or the in-house asset rules.
+
+269. However, the water access licence is not an eligible interest in real property. It therefore cannot be business real property of any entity. To the extent that the proposed transaction will involve the sale of the rights under the licence and the granting back of those rights to the family company, the related party asset acquisition rule in section 66 will be breached and the licence will be an in-house asset of the SMSF.
+
+Example 11: Fishing Licence - not an eligible interest in real property
+
+270. Andersen's Seafood is the employer sponsor of the Andersen Family SMSF. Andersen's Seafood holds a commercial fishing licence issued by a State Government.
+
+271. Rochelle Andersen, who is the SMSF trustee, wishes to acquire the licence from Andersen's Seafood.
+
+272. A commercial fishing licence is not an eligible interest in real property and therefore cannot be business real property of any entity. The proposed acquisition of the licence will breach the related party asset acquisition rule in section 66.
+
+Example 12: Leasehold interest in real property with non-severable interest in an afforestation arrangement attached
+
+273. Kelly Hepburn holds an interest in an afforestation arrangement that she would like to transfer to the Hepburn SMSF, of which Kelly is the sole member and a director of the corporate trustee.
+
+274. The interest in the afforestation arrangement comprises of Kelly's leasehold interest in the land and a contractual agreement with a forestry plantation management company, whose parent company owns the land. Under the contractual arrangements, the management company manages the real property, including the planting of the trees, their maintenance and their eventual harvest and sale. The leasehold interest in the real property cannot be assigned separately from the contractual agreement with the management company.
+
+275. Kelly's leasehold interest and the contractual agreement are separate assets. The contractual agreement is not business real property as it is not an eligible interest in real property. To the extent that the proposed arrangement involves the Hepburn SMSF acquiring the rights under the contractual agreement from Kelly, it will contravene the related party asset acquisition rule in section 66.
+
+Example 13: Letting holiday flats - no business
+
+276. Ms Hend owns 2 holiday flats, which she lets for short-term accommodation at a popular holiday destination. Ms Hend and her partner manage and maintain the flats, which includes cleaning and repairing the flats, and financial tasks such as banking.
+
+277. Ms Hend and her partner set up the Hend SMSF and both become members of the fund. They propose that the Hend SMSF acquire the flats from Ms Hend.
+
+278. The elements of repetition and continuity of acts and transactions indicate the possibility of there being a rental property investment business being carried on. However, the scale of the operation is such that it is not considered to be a business. As there is no business conducted in respect of the premises, the property is not business real property. Any sale of the flats to the Hend SMSF would contravene the related party asset acquisition rule in section 66.
+
+Example 14: Residential property held in a property investment business
+
+279. Mr Wood owns 20 residential units that are leased to long-term residents. Mr Wood manages and maintains the flats on a full time basis living on the income generated from the leases. The units are not mortgaged.
+
+280. Mr Wood would like his SMSF to acquire some of the units rather than sell the units to a non-related party.
+
+281. The scale of the operation together with the elements of repetition and purpose indicate that Mr Wood is carrying on a property investment business.
+
+282. Even though the tenants use the properties for their own private or domestic purposes, this use remains incidental and relevant to Mr Wood's property investment business. Consequently, Mr Wood's interest in the property on which the units are built is business real property. Provided the acquisition takes place at market value, the units may be acquired by the SMSF without contravening the related party asset acquisition rule in section 66.
+
+Example 15: Agency - no relevant business use
+
+283. Ms Harrington owns 10 residential units that are leased to long term residents. Ms Harrington uses the services of an agent to manage the premises.
+
+284. Ms Harrington would like her SMSF to acquire some of the units rather than sell the units to a non-related party.
+
+285. The units are not business real property as they are not used wholly and exclusively in a business. Ms Harrington does not carry on a property investment business as she uses an agent to manage the properties. The premises are not used in the agent's business, which is to provide services to Ms Harrington.
+
+Example 16: Motel with manager's residence
+
+286. The Bruce family company owns and operates the Highway Motel. The company is a related party of the Bruce SMSF.
+
+287. The trustee for the Bruce SMSF wants to purchase the motel.
+
+288. The Bruce family company employs Nadia as the manager of the motel. Nadia lives on site and is expected to make all decisions in relation to the day to day management of the motel.
+
+289. The real property on which the motel is located is used in a business. The fact that the manager's residence is part of the motel is incidental and relevant to that business. Additionally, the use of the property by the guests for non-business purposes does not cause the business use test to be failed as this use is clearly an inherent part of the business.
+
+290. The real property is therefore used wholly and exclusively in the motel business, making the company's interest in the land business real property. The proposed acquisition of the motel by the Bruce SMSF will not contravene the related party asset acquisition rule in section 66.
+
+Example 17: Bed and breakfast - case 1 - no business
+
+291. The Ngo family own their large family home. During the school holidays, they allow guests to stay on a bed and breakfast basis. Three of the bedrooms are used for guests, while the members of the family use the remaining rooms.
+
+292. The scale of this operation is not sufficient to establish the existence of a business. The property is therefore not business real property of any entity.
+
+Example 18: Bed and breakfast - case 2 - business
+
+293. Dean Lamont owns a house with 5 bedrooms and 2 living areas. He uses one of the bedrooms himself. The other four bedrooms are let year-round as part of a bed and breakfast business. One living area is set aside for the exclusive use of guests. Breakfast is included in the room cost and other meals are available by arrangement.
+
+294. Dean advertises his rooms with Worldwide B&B Internet bookings agency. Dean has a business plan, pays tax, and has three permanent part time employees. The business has operated since Dean acquired the house 17 years ago.
+
+295. In this case, a business is being carried on. Dean's non-business use of the property is incidental and relevant to that business. Accordingly, the property is used wholly and exclusively in the business and is business real property.
+
+Example 19: Strata titled hotel complex
+
+296. Mr Chou owns a studio apartment in a strata titled hotel complex. The contract for purchase includes a requirement that the unit is leased for fifteen years to Xin Pty Ltd, hotel business, with rent paid to Mr Chou based on occupancy of the complex. The contract specifies that the freehold owner has no right to reside in the unit during the time it is leased to Xin Pty Ltd.
+
+297. Mr Chou wishes to sell the unit to his SMSF.
+
+298. The real property is used wholly and exclusively in Xin Pty Ltd's hotel business and is business real property of Mr Chou for the purposes of acquisition. However, if Mr Chou or a related party of the SMSF intended to stay in the unit at any time, there may be in-house asset implications.[102]
+
+Example 20: Management company
+
+299. Penny and Julie purchased a serviced apartment in a large block of similar units. The contract for sale requires that Penny and Julie make the unit available exclusively for short term stays using the services of a management company nominated by the developer of the complex. Earnings from the unit are returned to Penny and Julie by the management company after fees and reimbursements have been deducted.
+
+300. Penny as trustee for PD SMSF would like to acquire the apartment as an investment.
+
+301. The apartment is not business real property of Penny and is not a permitted acquisition under section 66. Penny does not carry on a property investment business. The use of the apartment by guests does not have a nexus to the management company's business as this use involves the exercise of rights granted by Penny and Julie, not the management company.
+
+Example 21: Doctor's surgery in residential premises
+
+302. Dr Mary owns a house used exclusively by her medical practice.
+
+303. Dr Mary is a member of the Yianni SMSF. Dr Mary, in her capacity as trustee of the SMSF, wants to acquire the house for market value and then lease it back so the medical practice can continue to operate from the house.
+
+304. Although the house was built to be residential premises, it is not used as such. The real property is used wholly and exclusively in Dr Mary's medical practice business. For the purposes of the related party asset acquisition rule in section 66, the property is business real property of Dr Mary. Once acquired by the Yianni SMSF, it is also business real property of the fund and is therefore not an in-house asset of the SMSF.
+
+Example 22: Shop co-located with an uninhabitable residence
+
+305. Therese Ireland owns a shop with a residence on the same title. Therese is considering selling the land to her SMSF, the Greystones SMSF.
+
+306. The shopfront is used by Therese to operate her hairdressing salon. Prior to the death of the occupant a year earlier, the residence had been rented out for 15 years.
+
+307. It is discovered that the residence is not fit for habitation: walls are unsafe, the kitchen is not functional and the stairs are not stable. On this basis, Therese is considering renovating the residence in a way that will enable an extension of the salon.
+
+308. While the whole of the premises is not used in the business, the premises are used in a business to an appreciable degree. While there had been recent continuous non-business use, this use has permanently ceased. As a consequence, Therese may sell the land to the Greystones SMSF without contravening the related party asset acquisition rule in section 66.
+
+Example 23: Mechanic - home garage
+
+309. Stuart Japes is a member and trustee of Japes SMSF. Stuart is also a mechanic who works from his home garage and employs two of his friends (both of whom are not members of Japes SMSF) as mechanics.
+
+310. Stuart wishes to sell the block of land on which his house and garage are constructed to the Japes SMSF.
+
+311. While the property is real property and a business is operating on the property, the property is also partly used as a residential property. The residential use of the property is not incidental and relevant to Stuart's business. That use is also not of a minor or trifling nature. The property is not business real property of Stuart. As a result, he cannot sell the land to his SMSF without the SMSF contravening the related party asset acquisition rule in section 66.
+
+Example 24: Inner city design studio
+
+312. Lisa owns double story premises from which she runs a design business in the inner suburbs of Sydney. During business hours Lisa and her employees use the ground floor as their public consultation area. They use the top floor as a lunch room and meeting area.
+
+313. Lisa travels often. She finds herself in Sydney for only about two weeks in every month. During non-working hours, when she is in Sydney, Lisa uses the top floor as her primary residence. She cooks meals in the kitchenette and sleeps on a futon that doubles as a couch during the day. She stores clothes and other personal effects in a wardrobe and small cupboard in one corner of the room.
+
+314. Lisa is a member of the Gus SMSF. Lisa wants to sell the premises to the trustee of the Gus SMSF at market value.
+
+315. The property is not business real property of Lisa. Although the premises are primarily used in her business, Lisa's regular use of the top floor as a residence is not incidental and relevant to the business and is more than a trifling use. Acquisition of the premises by the Gus SMSF will breach the related party asset acquisition rule in section 66.
+
+Example 25: Storage of personal items - case 1
+
+316. Louisa Dee owns commercial premises, which she uses as the office for her business. The office has an empty room, which is not utilised by Louisa or her staff in the day-to-day running of the business. Instead, Louisa and her staff store office equipment and miscellaneous personal items in the empty room on a temporary basis from time to time.
+
+317. Louisa is a member of Dee SMSF. Louisa as trustee of Dee SMSF wishes to acquire the commercial premises.
+
+318. The non-business use of the empty room on the premises is a minor or trifling matter. Accordingly, the property remains used wholly and exclusively in Louisa's business. The Dee SMSF may acquire the freehold interest in the property without contravening the related party asset acquisition rule in section 66.
+
+Example 26: Storage of personal items - case 2
+
+319. Evelyn King owns a warehouse that she rents to an importing business. Evelyn has many personal items that she does not have space to store at home and comes to an agreement with her lessee at the start of the lease to retain a part of the warehouse, occupying 10% of the area of the land, for use as her private storage space. Evelyn is not charged for the space nor does the rent reflect her use of it.
+
+320. Evelyn is a member of the King SMSF. As trustee of the King SMSF, she wishes to have the warehouse sold to the SMSF.
+
+321. While Evelyn holds an eligible interest in the real property, and the property is used in a business, Evelyn's use of a significant part of the warehouse for her own private purposes means that the property is not used wholly and exclusively in that business. Her non-business use of the premises is not incidental and relevant to the business that uses the property, nor is it minor or trifling. The warehouse is not business real property of Evelyn.
+
+Example 27: Shares in a company that owns business real property
+
+322. Jasmin Bee owns shares in an unlisted company, WD Pty Ltd.
+
+323. Jasmin is a trustee and member of Bee SMSF. The Bee SMSF would like to acquire the shares in WD Pty Ltd that Jasmin currently holds. WD Pty Ltd is not a related party of the Bee SMSF.
+
+324. As the shares only confer on Jasmin an interest to the share capital of the company rather than an eligible interest in any of the company's underlying assets, the shares are not business real property. Therefore, the related party asset acquisition rule in section 66 will be breached if the Bee SMSF acquires the shares in the company.[103]
+
+Example 28: Units in a unit trust - not an eligible interest in real property
+
+325. The Chelsea Unit Trust invests in commercial rental properties. Zach holds 50% of the units in the unit trust. The trust deed of the Chelsea Unit Trust gives unit holders a fixed entitlement to the income provided by the trust.
+
+326. Zach is a member of the Blue SMSF. He decides to transfer the units in the unit trust to the fund.
+
+327. The units in the unit trust cannot be transferred to the Blue SMSF by Zach without contravening the related party asset acquisition rule in section 66. If the entitlement Zach has is to the units in the trust he does not have an eligible interest in real property but rather he has an interest in the trust. If the entitlement Zach has is to the assets of the fund, the exception in the business real property definition described in paragraph 108 will apply and the property will not be business real property.
+
+Example 29: Commercial unit held under company title
+
+328. March Pty Ltd owns a building which consists of 10 commercial units. Two years ago Adrian decided that he wished to purchase one of the units. As the unit is under company title, he purchased shares in March Pty Ltd which gave Adrian exclusive possession of a specific unit.
+
+329. Adrian is trustee and member of FM SMSF. As trustee he decides to acquire the right to exclusive possession in the unit by purchasing shares in March Pty Ltd.
+
+330. Although the shares give Adrian a right to occupy a defined area of the building owned by the company he does not have an eligible interest in the unit and the acquisition will contravene the related party asset acquisition rule in section 66.
+
+Example 30: Instalment warrant over real property
+
+331. MB Bank is an investment bank that markets the MB Warrant, an instalment warrant arrangement over selected commercial real properties. MB Warrants are not listed on any stock exchange.
+
+332. Under the arrangement, investors in MB Warrants pay a first instalment and borrow the remaining amount required to obtain a beneficial interest over the underlying real property under the arrangement. The MB Bank executes a mortgage and establishes a security trust over the property to secure the borrowing made by the investor. The trustee of the security trust, Custodians Pty Ltd, holds the legal title to the real property on trust for the investor. The terms of the arrangement enable investors to transfer their warrant to a third party. Aaron acquires a MB Warrant from the MB Bank.
+
+333. As trustee of the security trust, Custodians Pty Ltd leases the commercial premises over which Aaron's MB Warrant is placed to C&C Pty Ltd, a company that makes widgets.
+
+334. Aaron is a member of the Superkaz SMSF. The trustee of the Superkaz SMSF would like to acquire Aaron's warrant, at market value.
+
+335. The interest Aaron holds in the underlying property is that of a beneficiary of the security trust established under the warrant. Such an interest is excluded from being business real property of Aaron. The Superkaz SMSF cannot acquire the warrant from Aaron without breaching the related party asset acquisition rule in section 66.
+
+Example 31: Lease of commercial retail premises
+
+336. The Colin Family SMSF owns real property upon which is constructed a multi-story commercial retail outlet.
+
+337. The trustee of the Colin Family SMSF enters into an agreement with Damien's Designs Pty Ltd to grant exclusive possession of the ground floor of the building. Damien's Designs Pty Ltd is given keys to lock and secure the premises and employees of the company enter and exit the premises at their discretion. Damien's Designs Pty Ltd has its employees move stock and equipment into the ground floor and the company begins trading. Every month Damien's Designs Pty Ltd pays rent to the trustee of the Colin Family SMSF.
+
+338. Here, the Colin Family SMSF has granted a lease of the ground floor of the premises to Damien's Designs Pty Ltd.
+
+339. As a consequence of Damien's Designs Pty Ltd's use of the property, the business use test is satisfied.
+
+340. Therefore, Damien's Designs Pty Ltd holds a leasehold interest in the property, which is business real property of the company.
+
+341. The Colin Family SMSF's freehold interest in the property is also business real property of the fund. In the event that Damien's Designs Pty Ltd is a related party of the SMSF, the freehold interest held by the SMSF is not an in-house asset of the fund because of the exception in paragraph 71(1)(g).
+
+Example 32: Indoor market
+
+342. The Jenny Family SMSF owns property from which it runs an indoor market.
+
+343. The trustee of the Jenny Family SMSF enters into an agreement with Natalia, trading as Natalia's Knick-Knacks, to allow her to set up a stall on the premises. Many other small traders set up stalls in the same room and each have entered into similar agreements with the trustee of the Jenny Family SMSF. Employees of Natalia's Knick-Knacks are allowed onto the premises during specific times of the day and the trustee of the Jenny Family SMSF secures the premises at the end of each day. Natalia pays a daily fee to be allowed to trade on the premises.
+
+344. The Jenny Family SMSF has granted a licence to Natalia to allow her to trade on the premises.
+
+345. As a consequence of Natalia's and the other small traders use of the property, the business use test is satisfied. The Jenny Family SMSF's freehold interest in the property is business real property of the fund. In the event that Natalia or any other of the traders are a related party of the Jenny Family SMSF and the licences are considered to be 'lease arrangements',[104] the freehold interest held by the SMSF in the real property is not an in-house asset of the fund because of the exception in paragraph 71(1)(g).
+
+346. However, the rights granted to Natalia are not business real property as she does not hold a freehold or a leasehold interest in the property.
+
+Example 33: Substance over form in determining the nature of an interest in real property
+
+347. Assume the same facts as for Example 32 of this Ruling.
+
+348. The Jenny Family SMSF gives Natalia of Natalia's Knick-Knacks a hand written document titled 'Conditions of your lease'. This document describes the daily payments that Natalia is to make as 'rent'.
+
+349. The Jenny Family SMSF has still granted a licence to Natalia. The name of the agreement and description of the payment are only factors that indicate what rights have been granted. The substance of the arrangement will be more determinative of its nature.
+
+350. Here, the Jenny Family SMSF has not granted exclusive possession over a part of the property to Natalia. Instead, it has granted a licence to be present on the premises.
+
+351. Therefore the same consequences identified in Example 32 of this Ruling apply here.
+
+Example 34: Subleasing - case 1
+
+352. Caleb's Constructions Pty Ltd, the owner of a factory, grants a lease to Martin Industries Pty Ltd for exclusive possession of the premises.
+
+353. The lease is for a period of 6 years. There are no terms in the agreement preventing sublease or assignment. Martin Industries occupies the premises for 1 year. At this time, Martin Industries grants exclusive possession of the premises to Tilla's Trucks Pty Ltd for a period of 3 years. At the end of the 3 year period, Martin Industries occupies the premises for the remaining 2 years. Both Martin Industries and Tilla's Trucks conduct a business from the factory premises.
+
+354. The arrangement between Martin Industries and Tilla's Trucks is a sublease of the property. This is because Martin Industries has disposed of less than its full interest in the property by granting Tilla's Trucks a right to exclusive possession of the premises for only some of the remaining time that it was entitled to possession under the lease.
+
+355. As a consequence of the use of the property by Martin Industries and Tilla's Trucks', the business use test is satisfied. At all relevant times, the freehold interest in the property held by Caleb's Constructions and the leasehold interests in the property held by Martin Industries and Tilla's Trucks are business real property of each of those entities. In addition, Caleb's Constructions Pty Ltd's freehold interest is business real property. Note that Tilla's Trucks' leasehold interest is only its business real property for the 3 year period that the company holds that interest.
+
+Example 35: Subleasing - case 2
+
+356. Bruce, the owner of a double-story riverside property suitable for office or residential accommodation, grants a lease to Alexander's Accountants.
+
+357. The agreement is for a period of 5 years. There are no terms in the agreement preventing sublease or assignment. Alexander's Accountants occupies the entire premises for 2 years. After 2 years, Alexander's Accountants grant exclusive possession of the top floor of the premises to the Penny family. The Penny family live on the top floor of the premises for the remaining term of the lease.
+
+358. This is another example of a sublease arrangement. Alexander's Accountants, has disposed of less than its full interest in the property by granting rights to exclusive possession over a portion of the area to which it was entitled to exclusive possession under the lease.[105]
+
+359. As a consequence of Alexander's Accountants' use of the property, the business use test is met until the Penny family move in. After that time, the property is not used wholly and exclusively in one or more businesses, unless the facts support the conclusion that a property investment business is being carried on.
+
+360. Alexander's Accountants' leasehold interest and Bruce's freehold interest in the property is business real property of both entities for the first 2 years. Once the Penny family move in under the sublease, each of these interests is no longer business real property for the remaining 3 years of the lease.
+
+Example 36: Assigned lease
+
+361. James, the owner of a parcel of real property, agrees to grant exclusive possession of the premises to Lorraine.
+
+362. The agreement is for a period of 4 years. There are no terms in the agreement preventing sublease or assignment. Lorraine runs a dancing business as a sole trader from the premises. Lorraine occupies the premises for 2 years and then agrees to grant her right to exclusive possession of the premises to Karen for the remaining 2 years. Karen runs a drama business as a sole trader from the premises for those remaining 2 years.
+
+363. Here, the leasehold interest in the property has been assigned to Karen. Therefore, Lorraine has disposed of the whole of her leasehold interest in the real property to Karen.
+
+364. As a consequence of Lorraine's and Karen's continuous use of the property in their respective businesses, the business use test is satisfied during the entire period of the lease.
+
+365. Therefore, both Lorraine and Karen's leasehold interests are business real property for the 2 year period in which they respectively hold those interests. James' freehold interest is business real property throughout the entire period of the lease.
+
+Example 37: Land development
+
+366. Trevor is a land developer whose business involves purchasing land for development, obtaining council approvals, hiring contractors, building, selling.
+
+367. Trevor purchases land for development and obtains approval to build seven units on the land.
+
+368. Trevor is a member and trustee of an SMSF. As trustee of his SMSF he wishes to purchase one of the units.
+
+369. Taking into account the use of the property in Trevor's land development business at the time surrounding the purchase, the units will meet the requirements of the business use test if purchased:
+
+•
+off the plan[106] before any activity occurs on the land;
+
+•
+after construction has commenced;
+
+•
+after the selected unit reaches lockup;
+
+•
+after all units have been completely finished but the landscaping is in progress;
+
+•
+after the entire development has been completed and the units are being actively marketed;
+
+•
+after the units have been completed for 2 years and the remaining units have been sold but one unit remains and was rented to an unrelated party at market rates; and
+
+•
+one unit used as a display home.
+
+370. At each stage above, the units are being used wholly and exclusively in Trevor's land development business and will therefore meet the requirement of the business real property definition. In circumstances where the unit is purchased shortly before or after development activities are undertaken on the land, the application of the broader approach to the 'wholly and exclusively' test[107] ensures that the business use test is met. However, the presence of additional facts such as private use of the unit, an indefinite hold on development activities or the failure to pay market value may change the outcome because of the 'wholly and exclusively' test and may give rise to other regulatory issues.
+
+### Appendix 3 - Detailed contents list
+
+371. The following is a detailed contents list for this Ruling:
+
+| Paragraph
+What this Ruling is about | 1
+Ruling | 4
+The meaning of business real property | 4
+The entity to which the definition applies | 7
+Condition 1: the entity holds an eligible interest in the property | 9
+Freehold and leasehold interests in real property | 11
+Assignable or transferable interests in Crown land | 17
+Exclusion of interests held as a trust beneficiary | 19
+Condition 2: connection between property use and a business | 20
+Use of real property | 23
+The ' wholly and exclusively' threshold | 27
+Nature of connection required between use and a business | 33
+Business | 37
+Funds to which the Ruling applies | 40
+Date of effect | 41
+Appendix 1 - Explanation | 42
+Examples illustrating business real property principles | 42
+Background | 43
+Contraventions - audit requirements and consequences | 50
+Legislation | 52
+'Business real property' and related definitions | 52
+SISA provisions that refer to ' business real property' as defined | 58
+Acquisition of assets from related parties - section 66 | 58
+In-house asset rules - Part 8 of the SISA and Division 13.3A of the SISR | 59
+Elements of the business real property definition | 61
+Entity to which the definition applies | 62
+Interest in real property | 64
+What is ' real property' ? | 68
+Ordinary meaning | 68
+Fixtures forming part of the land | 74
+When do crops form part of land? | 82
+What is ' Crown land' ? | 85
+What is a ' freehold interest' in real property ? | 88
+Ordinary meaning | 88
+Co-ownership | 90
+Strata title | 96
+What is a ' leasehold interest' in real property ? | 98
+What is ' an interest that is capable of assignment or transfer' in Crown land ? | 103
+When will an entity hold an interest in the capacity of a beneficiary of a trust estate ? | 106
+Does a share in a company confer an interest in real property held by the company ? | 109
+Real property held under company title | 111
+Business | 113
+Definition of ' business' in subsection 66(5 ) | 113
+' Business' as ordinarily understood | 115
+Not for profit enterprises | 119
+Relevance of the entity carrying on the business | 121
+' Primary production business' | 128
+Provision of professional services | 131
+Employee | 133
+The business use test - 'used wholly and exclusively in one or more businesses' | 136
+Nature of the business use test | 136
+What is ' use' of real property ? | 140
+Distinguishing physical and non-physical use of property | 140
+Only physical use considered in the business real property definition | 146
+Application to a basic business real property case | 152
+Immediate statutory context | 156
+Judicial consideration of similar provisions | 162
+No need for human presence for physical use to occur | 165
+Physical use of land generally follows an entity's non-physical use | 168
+Use of residential property | 170
+Land development cases | 171
+Vacant land | 174
+When is use of real property ' in' a business ? | 176
+Nature of the connection required between use and a business | 176
+Direct use of property by an entity carrying on a business | 183
+Use of property by customers of a retail business | 185
+Use of property by guests of a commercial accommodation business | 187
+Use of property by a residential tenant where the property is held in an investment business | 189
+Short term accommodation | 193
+Physical use other than in a business | 195
+What limitations does the ' wholly and exclusively' threshold impose on the business use test ? | 196
+General principles | 196
+Partial no use cases - use to an appreciable degree or extent | 209
+Dual use cases - application of the 'de minimus' principle | 212
+Subsection 66(6) safe harbour - Application of the 'wholly and exclusively' test to primary production businesses | 218
+How to apply the business use test at a point in time | 224
+Temporarily vacant commercial land | 227
+Temporary business use of land at time of acquisition | 229
+Appendix 2 - Examples | 230
+Example 1: Primary production business with private residence - case 1 | 232
+Example 2: Primary production business - annual crop | 239
+Example 3: Primary production business with private residence - case 2 | 242
+Example 4: Primary production business with multiple dwellings | 246
+Example 5: Mr Peters' poultry farm - unused paddocks | 249
+Example 6: Incidental use of the poultry farm by a voluntary organisation | 252
+Example 7: Temporary agistment on otherwise vacant land | 255
+Example 8: Vacant land - case 2 | 260
+Example 9: Vacant land - case 3 | 263
+Example 10: Water Licence - not an eligible interest in real property | 266
+Example 11: Fishing Licence - not an eligible interest in real property | 270
+Example 12: Leasehold interest in real property with non-severable interest in an afforestation arrangement attached | 273
+Example 13: Letting holiday flats - no business | 276
+Example 14: Residential property held in a property investment business | 279
+Example 15: Agency - no relevant business use | 283
+Example 16: Motel with manager's residence | 286
+Example 17: Bed and breakfast - case 1 - no business | 291
+Example 18: Bed and breakfast - case 2 - business | 293
+Example 19: Strata titled hotel complex | 296
+Example 20: Management company | 299
+Example 21: Doctor's surgery in residential premises | 302
+Example 22: Shop co-located with an uninhabitable residence | 305
+Example 23: Mechanic - home garage | 309
+Example 24: Inner city design studio | 312
+Example 25: Storage of personal items - case 1 | 316
+Example 26: Storage of personal items - case 2 | 319
+Example 27: Shares in a company that owns business real property | 322
+Example 28: Units in a unit trust - not an eligible interest in real property | 325
+Example 29: Commercial unit held under company title | 328
+Example 30: Instalment warrant over real property | 331
+Example 31: Lease of commercial retail premises | 336
+Example 32: Indoor market | 342
+Example 33: Substance over form in determining the nature of an interest in real property | 347
+Example 34: Subleasing - case 1 | 352
+Example 35: Subleasing - case 2 | 356
+Example 36: Assigned lease | 361
+Example 37: Land development | 366
+Appendix 3 - Detailed contents list | 371
+
+#### Footnotes
+
+[1]
+
+All legislative references in this Ruling are to the SISA unless otherwise indicated.
+
+[2]
+
+All references to business real property are as defined in subsection 66(5).
+
+[3]
+
+Paragraph 66(2)(b).
+
+[4]
+
+Paragraph 71(1)(g).
+
+[5]
+
+Under Division 13.3A of the SISR, it may be necessary to consider whether an interest in real property held by a company or unit trust in which the SMSF has invested is business real property of the company or trust. For these rules to have an effect, the company or trust in these cases will be a related party or a related trust of the SMSF.
+
+[6]
+
+This is relevant to the application of section 66 of the SISA and Division 13.3A of the SISR.
+
+[7]
+
+This is relevant to the application of Part 8 of the SISA (in particular section 71) and Division 13.3A of the SISR.
+
+[8]
+
+Strata titled land is divided into unit-based lots with each unit being held by a particular entity. Any entity holding a unit is a freehold interest holder. Strata titled land may also comprise an area or areas of common property in which the unit holders have a shared interest.
+
+[9]
+
+It is not possible for an entity other than an Australian government entity to hold a freehold interest in Crown land, as that interest is, in effect, owned by the Commonwealth, a State or a Territory.
+
+[10]
+
+In relation to what is a 'primary production business', see paragraph 37 of this Ruling.
+
+[11]
+
+TR 97/11 Income tax: am I carrying on a business of primary production?
+
+[12]
+
+SGR 2005/1 Superannuation Guarantee: who is an employee? Occupation as an employee is specifically excluded from the definition of 'business' in subsection 66(5).
+
+[13]
+
+IT 2423 Withholding tax: whether rental income constitutes proceeds of business - permanent establishment - deduction for interest.
+
+[14]
+
+As defined in section 17A.
+
+[15]
+
+A former SMSF is a fund that has ceased being an SMSF and has not appointed a registrable superannuation entity (RSE) licensee as trustee - see subsection 10(4).
+
+[15A]
+
+Treasury Laws Amendment (Self Managed Superannuation Funds) Act 2021 increased the maximum number of allowable members from 4 to 6 from 1 July 2021.
+
+[16]
+
+In-house assets generally are loans made to a related party of the SMSF, an investment in a related party of the SMSF, an investment in a related trust of the SMSF, or an asset of the SMSF that is subject to a lease or lease arrangement between the trustee of the SMSF and a related party of the SMSF - see subsection 71(1).
+
+[17]
+
+Ninth Report of the Senate Select Committee on Superannuation Supervision Bills, October 1993.
+
+[18]
+
+Case 73/96 96 ATC 653 at 661, relying on the second reading speech for Taxation Laws Amendment Bill (No. 2) 1985, which introduced a predecessor of the current in-house asset rules in Part 8, as extracted at page 658 of the decision.
+
+[19]
+
+The term 'related party' is defined in subsection 10(1).
+
+[20]
+
+Explanatory Memorandum to the Superannuation Legislation Amendment Bill (No. 4) 1999, pp. 7-8.
+
+[21]
+
+See section 35C.
+
+[22]
+
+See section 129.
+
+[23]
+
+See subsection 42A(5) in relation to SMSFs. The status of a fund as complying or non-complying for SISA purposes will also have consequences for the fund under the income tax law and other parts of the superannuation law.
+
+[24]
+
+The Macquarie Dictionary, 2001, rev. 3rd edn., The Macquarie Library Pty Ltd, NSW, p. 1577.
+
+[25]
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney, p.981.
+
+[26]
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney, p.981.
+
+[27]
+
+Metal Manufactures Ltd v. Federal Commissioner of Taxation [1999] FCA 1712 at paragraph 166; 99 ATC 5229 at 5262; (1999) 43 ATR 375 at 411.
+
+[28]
+
+Reid v. Smith (1905) 3 CLR 656; [1905] HCA 54.
+
+[29]
+
+Westpac Banking Corporation v. Rabaiov [1991] ANZ ConvR 560; (1991) V ConvR 54-412.
+
+[30]
+
+[1999] FCA 1712 at paragraph 164; 99 ATC 5229 at 5261; (1999) 43 ATR 375 at 410-411.
+
+[31]
+
+[1999] FCA 1712 at paragraph 165; 99 ATC 5229 at 5262; (1999) 43 ATR 375 at 411.
+
+[32]
+
+The business use test is described in more detail at paragraphs 136 to 139 of this Ruling.
+
+[33]
+
+Jowitt's Dictionary of English Law, 2nd edn, 1977, Sweet & Maxwell, London, Volume 1, p. 838.
+
+[34]
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney, p.507.
+
+[35]
+
+Marshall v. Green (1875) 1 CPD 35
+
+[36]
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney, p.506.
+
+[37]
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney, p.309.
+
+[38]
+
+The primary statutes governing Crown land in Australia are as follows: Commonwealth: Lands Acquisition Act 1989; ACT: Land (Planning and Environment) Act 1991; NT: Crown Lands Act 1992; NSW: Crown Lands Act 1989 and Western Lands Act 1901; QLD: Land Act 1994; SA: Crown Lands Act 1929 and Pastoral Land Management and Conservation Act 1989; TAS: Crown Lands Act 1976; VIC: Land Act 1958; WA: Land Administration Act 1997.
+
+[39]
+
+Breskvar v. Wall (1971) 126 CLR 376.
+
+[40]
+
+Bradbrook AJ, et. al., 2002, Australian Real Property Law, 3rd edn, Thompson, Sydney, p. 339.
+
+[41]
+
+Nullagine Investments Pty Ltd v. Western Australian Club Inc (1993) 177 CLR 635 at 643 per Brennan J.
+
+[42]
+
+Bradbrook AJ, et. al., 2002, Australian Real Property Law, 3rd edn, Thompson, Sydney, pp. 512, 516.
+
+[43]
+
+Radaich v. Smith (1959) 101 CLR 209.
+
+[44]
+
+Robert John Pty Ltd v. Fostar's Shoes Pty Ltd [1963] NSWR 419; [1963] SR (NSW) 260; (1962) 80 WN (NSW) 408; Chelsea Investments Pty Ltd v. Federal Commissioner of Taxation (1966) 115 CLR 1 per Windeyer J at 221-222.
+
+[45]
+
+See paragraph 71(1)(g) of the SISA and paragraphs 13.22B(2)(b), 13.22B(2)(c), 13.22C(2)(b), 13.22C(2)(c) and 13.22D(1)(e) to (h) of the SISR.
+
+[46]
+
+See paragraph 88 of this Ruling.
+
+[47]
+
+See paragraph 86 of this Ruling and the accompanying footnote for a list of Crown land statutes. This is not an exhaustive list of all State and Territory legislation that can give rise to, or grant, an interest in Crown land capable of assignment of transfer.
+
+[48]
+
+While referred to as leases, these interests ordinarily do not amount to a leasehold interest in Crown land.
+
+[49]
+
+See paragraphs 109 to 112 of this Ruling.
+
+[50]
+
+Costa & Duppe Properties Pty Ltd v. Duppe [1986] VR 90 at 96 per Brooking J.
+
+[51]
+
+Archibald Howie Pty Ltd v. Commissioner of Stamp Duties (NSW) (1948) 77 CLR 143.
+
+[52]
+
+Salomon v. A Salomon and Co Ltd [1897] AC 22; [1895-99] All ER Rep 33.
+
+[53]
+
+This position is supported by Division 13.3A of the SISR, which is drafted on the basis that only the company, and not the shareholder, would hold an eligible interest in real property for the purposes of the business real property definition.
+
+[54]
+
+It is a convention of statutory interpretation that a definition utilising the word 'includes' is not intended to be exhaustive and is used as a tool to illustrate and avoid possible uncertainty in borderline cases. For example, see the observations of Lord Selborne LC in Robinson v. Local Board of Barton-Eccles (1883) 8 App Case 798 at 801.
+
+[55]
+
+89 ATC 4540 at 4554-4555; (1989) 20 ATR 922 at 939.
+
+[56]
+
+Lilyvale Hotel Pty Ltd v. Commissioner of Taxation [2008] FCA 1031 at paragraph 62 per Stone J.
+
+[57]
+
+91 ATC 4689 at 4699; (1991) 22 ATR 344 at 355.
+
+[58]
+
+Kirkman v. Booth (1848) 11 Beav 273. See also Federal Commissioner of Taxation v. Radnor Pty Ltd 91 ATC 4689 at 4691; (1991) 22 ATR 344 at 346 per Gummow J.
+
+[59]
+
+In this context an SMSF may be precluded from undertaking activities that are not expressly prohibited by the application of the relevant law. For example, a common feature of a business is maintaining a borrowing. In an SMSF this would be a contravention of the borrowing prohibitions in section 67, unless one of the exceptions in that section apply.
+
+[60]
+
+Paragraph 52(2)(f) of the SISA and regulation 4.09 of the SISR.
+
+[61]
+
+Regulation 5.08 of the SISR.
+
+[62]
+
+See further paragraphs 218 to 223 of this Ruling.
+
+[63]
+
+This list has been complied with reference to the OECD Model Convention on Income and on Capital, 1977, Chapter III, Article 14.
+
+[64]
+
+The Macquarie Dictionary, 2001, rev. 3rd edn., The Macquarie Library Pty Ltd, NSW, p. 2068.
+
+[65]
+
+The Australian Oxford Dictionary, 1999, 2nd edn, Oxford University Press, Melbourne, p. 1423.
+
+[66]
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney, p. 1233.
+
+[67]
+
+In this final case, the entity would grant rights to another entity that are not inconsistent with the first entity maintaining some capacity to itself actively use the property. For example, an entity holding a freehold interest in real property may grant a leasehold interest to another entity over a defined part of the parcel, which enables the freehold interest holder to continue actively using the rest of the parcel if it so desires.
+
+[68]
+
+Newcastle City Council v. Royal Newcastle Hospital (1957) 96 CLR 493 at 515 per Taylor J. See also Ryde Municipal Council v. Macquarie University (1978) 139 CLR 633 at 637 per Gibbs ACJ and McDermott Industries (Australia) Pty Ltd v. Commissioner of Taxation [2004] FCA 1044 at paragraph 55; 2004 ATC 4823 at 4832; (2004) 56 ATR 592 at 603 per RD Nicholson J, where His Honour stated that the term was limited to its active sense if 'the context and purpose of the [double tax agreement] negate...the passive sense of the word 'used''.
+
+[69]
+
+(1997) 187 CLR 384 at 408 per Brennan CJ, Dawson, Toohey and Gummow JJ.
+
+[70]
+
+Report on the Superannuation Legislation Amendment Bill (No 4) 1999, Senate Select Committee on Superannuation and Financial Services, November 1999, paragraph 2.25.
+
+[71]
+
+See paragraphs 121 to 127 of this Ruling.
+
+[72]
+
+For example, see the cases discussed in Ryde Municipal Council v. Macquarie University (1978) 139 CLR 633 at 640-643 per Gibbs ACJ and at 651-653 per Stephen J; and in Cordinup Resorts Pty Ltd & Ors v. Terana Holdings Pty Ltd (1997) 143 FLR 18 at 27-29 per Murray J.
+
+[73]
+
+See Ryde Municipal Council v. Macquarie University (1978) 139 CLR 633 at 636-637 and 643 per Gibbs ACJ and at 646-647 per Stephen J.
+
+[74]
+
+See paragraphs 121 to 127 of this Ruling.
+
+[75]
+
+See paragraphs 72 and 73 of this Ruling.
+
+[76]
+
+(1997) 143 FLR 18.
+
+[77]
+
+Not unlike the SISA, this Act prohibited the acquisition of land by certain entities (in this case foreign companies) unless certain conditions were satisfied. Principal amongst these conditions was the approval from the Treasurer for the acquisition. However, such approval was not required where the land in question was Australian rural land.
+
+[78]
+
+(1997) 143 FLR 18 at 20.
+
+[79]
+
+(1997) 143 FLR 18 at 29.
+
+[80]
+
+In addition to any other physical use of the property.
+
+[81]
+
+See further paragraphs 189 to 192 of this Ruling.
+
+[82]
+
+Employing a broad analysis when applying the 'wholly and exclusively' threshold, as set out at paragraph 22 and explained further at paragraphs 224 to 226 of this Ruling, is particularly important in this context.
+
+[83]
+
+Section 8-1 of the ITAA 1997; see in particular paragraph 8-1(1)(b). Note that the statutory test in section 8-1 relates to the incurrence of a loss or outgoing rather than the use of real property. The analogy being drawn here is that it is necessary to establish a nexus to a business.
+
+[84]
+
+Paragraph 11-5(a) and 11-15 of the A New Tax System (Goods and Services) Tax Act 1999, see in particular subsection 11-15(1). Note that the statutory test in these provisions relates to the acquisition of a thing rather than the use of real property. The analogy being drawn here is that the test requires a nexus to an enterprise for the purposes of these provisions, which in the context is sufficiently similar to a test which requires a nexus to a business.
+
+[85]
+
+Ronpibon Tin NL v. Federal Commissioner of Taxation (1949) 78 CLR 47 at 56.
+
+[86]
+
+See Macquarie Finance Ltd v. Commissioner of Taxation [2005] FCAFC 205 at paragraph 92 per French J, discussing the extract from Ronpibon Tin extracted at paragraph 171.
+
+[87]
+
+80 ATC 4542 at 4551-4552; (1980) 11 ATR 276 at 287.
+
+[88]
+
+See further paragraphs 218 to 223 of this Ruling.
+
+[89]
+
+Subsection 66(6) identifies certain use of real property in a primary production business that is 'primarily for domestic or private purposes' as not disqualifying the real property from being business real property In broad terms, this is intended to ensure that a farmhouse built on farming land for the residential purposes of those working on the land will not cause the business real property test to be failed.
+
+[90]
+
+See paragraphs 115 to 118 of this Ruling.
+
+[91]
+
+See paragraphs 121 to 127 of this Ruling.
+
+[92]
+
+Lizzio v. Ryde Municipal Council (1983) 155 CLR 211 at 216-217 per Gibbs CJ.
+
+[93]
+
+Superannuation Industry (Supervision) Bill 1993. In the course of the Bill's passage, the expression was changed to 'wholly and exclusively'.
+
+[94]
+
+Pearce D C and Geddes R S, Statutory Interpretation in Australia, 6th edn., Butterworths, Sydney, 2006, paragraph [4.35], p.147. The expression of a single idea in two words connected with an 'and' is known as a 'hendiadys' - see Huddleston R and Pullum G K, Cambridge Grammar of the English Language, Cambridge University Press, 2002.
+
+[95]
+
+(1997) 143 FLR 18.
+
+[96]
+
+(1997) 143 FLR 18 at 28-29.
+
+[97]
+
+See paragraph 206 of this Ruling.
+
+[98]
+
+Farnell Electronic Components Pty Ltd v. Collector of Customs (1996) 72 FCR 125 at 128.
+
+[99]
+
+It should be noted that this concession came into effect 11 August 1999 and is only available for transactions after this date.
+
+[100]
+
+Hart and Another v. Commissioner of Taxation [2002] FCAFC 222; (2002) 121 FCR 206; 2002 ATC 4608; (2002) 50 ATR 369 at paragraph 52 per Hill J relying on the High Court decision in Federal Commissioner of Taxation v. Spotless Services Ltd (1996) 186 CLR 404 at 416.
+
+[101]
+
+Because they are members of the SMSF, Peter and Denise are related parties of the SMSF.
+
+[102]
+
+See subsection 71(2).
+
+[103]
+
+As the shares are not listed securities, the exception to the related party asset acquisition prohibition in paragraph 66(2)(a) will also not apply. It is possible that Division 13.3A of the SISR may apply to the shares, in which case the exception in subsection 66(2A) would apply.
+
+[104]
+
+See definition in subsection 10(1). This Ruling does not deal with the scope of the 'lease arrangement' definition.
+
+[105]
+
+This is a sublease rather than an assignment of the leasehold interest because only part of the property that Alexander's Accountants was granted exclusive possession of was subject to the agreement between Alexander's Accountants and the Penny Family. If the entire property was subject to the agreement between Alexander's Accountants and the Penny Family, this would have been an assignment of the leasehold interest, as is the case in Example 36 of this Ruling.
+
+[106]
+
+This refers to premises that are purchased before construction.
+
+[107]
+
+See paragraph 225 of this Ruling.
+
+Previously Issued as:
+
+SMSFR 2008/D3
+
+### References
+
+ATO references:
+
+NO 2007/4905
+
+ISSN: 1835-2138
+
+Related Rulings/Determinations:
+
+IT 2423
+
+TR 97/11
+
+SGR 2005/1
+
+Business Line:
+SEO
+
+Legislative References:
+
+SISA 1993
+
+SISA 1993 10(1)
+
+SISA 1993 10(4)
+
+SISA 1993 15A
+
+SISA 1993 17A
+
+SISA 1993 35C
+
+SISA 1993 42A(5)
+
+SISA 1993 52(2)(f)
+
+SISA 1993 62
+
+SISA 1993 65
+
+SISA 1993 66
+
+SISA 1993 66(1)
+
+SISA 1993 66(2)(a)
+
+SISA 1993 66(2)(b)
+
+SISA 1993 66(2A)
+
+SISA 1993 66(5)
+
+SISA 1993 66(6)
+
+SISA 1993 67
+
+SISA 1993 Pt 8
+
+SISA 1993 71
+
+SISA 1993 71(1)
+
+SISA 1993 71(1)(a)
+
+SISA 1993 71(1)(b)
+
+SISA 1993 71(1)(c)
+
+SISA 1993 71(1)(d)
+
+SISA 1993 71(1)(e)
+
+SISA 1993 71(1)(f)
+
+SISA 1993 71(1)(g)
+
+SISA 1993 71(1)(h)
+
+SISA 1993 71(1)(i)
+
+SISA 1993 71(1)(j)
+
+SISA 1993 71(2)
+
+SISA 1993 109
+
+SISA 1993 129
+
+SISR 1994
+
+SISR 1994 4.09
+
+SISR 1994 5.08
+
+SISR 1994 13.12
+
+SISR 1994 13.13
+
+SISR 1994 13.14
+
+SISR 1994 Div 13.3A
+
+SISR 1994 Div 13.22B
+
+SISR 1994 13.22B(2)(b)
+
+SISR 1994 13.22B(2)(c)
+
+SISR 1994 Div 13.22C
+
+SISR 1994 13.22C(2)(b)
+
+SISR 1994 13.22C(2)(c)
+
+SISR 1994 Div 13.22D
+
+SISR 1994 13.22D(1)(e)
+
+SISR 1994 13.22D(1)(f)
+
+SISR 1994 13.22D(1)(g)
+
+SISR 1994 13.22D(1)(h)
+
+ITAA 1997
+
+ITAA 1997 8-1
+
+ITAA 1997 8-1(1)(b)
+
+ITAA 1997 995-1
+
+A New Tax System (Goods and Services) Tax Act 1999 11-5(a)
+
+A New Tax System (Goods and Services) Tax Act 1999 11-15
+
+A New Tax System (Goods and Services) Tax Act 1999 11-15(1)
+
+SGAA 1992
+
+SGAA 1992 12
+
+Foreign Acquisitions and Takeovers Act 1975
+
+Acts Interpretation Act 1901
+
+Lands Acquisition Act 1989
+
+Land (Planning and Environment) Act 1991 (ACT)
+
+Crown Lands Act 1992 (NT)
+
+Crown Lands Act 1989 (NSW)
+
+Western Lands Act 1901 (NSW)
+
+Land Act 1994 (QLD)
+
+Crown Lands Act 1929 (SA)
+
+Pastoral Land Management and Conservation Act 1989 (SA)
+
+Crown Lands Act 1976 (TAS)
+
+Land Act 1958 (VIC)
+
+Land Administration Act 1997 (WA)
+
+Case References:
+
+Archibald Howie Pty Ltd v. Commissioner of Stamp Duties (NSW)
+
+(1948) 77 CLR 143
+
+[1948] 2 ALR 489
+
+Breskvar v. Wall
+
+(1971) 126 CLR 376
+
+[1972] ALR 205
+
+(1971) 46 ALJR 68
+
+Case 73/96
+
+96 ATC 653
+
+Chelsea Investments Pty Ltd v. Federal Commissioner of Taxation
+
+(1966) 115 CLR 1
+
+39 ALJR 501
+
+CIC Insurance Ltd v. Bankstown Football Club Ltd
+
+(1997) 187 CLR 384
+
+[1997] HCA 2
+
+Cordinup Resorts Pty Ltd & Ors v. Terana Holdings Pty Ltd
+
+(1997) 143 FLR 18
+
+[1998] ANZ ConvR 489
+
+Costa & Duppe Properties Pty Ltd v. Duppe
+
+[1986] VR 90
+
+(1985) V ConvR 54-176
+
+Ericksen v. Last
+
+(1881) 8 QB 414
+
+Evans v. Federal Commissioner of Taxation
+
+89 ATC 4540
+
+(1989) 20 ATR 922
+
+Farnell Electronic Components Pty Ltd v. Collector of Customs
+
+(1996) 72 FCR 125
+
+Federal Commissioner of Taxation v. Radnor Pty Ltd
+
+91 ATC 4689
+
+(1991) 22 ATR 344
+
+Federal Commissioner of Taxation v. Spotless Services Ltd
+
+(1996) 186 CLR 404
+
+[1996] HCA 34
+
+96 ATC 5201
+
+(1996) 34 ATR 183
+
+Ferguson v. Federal Commissioner of Taxation
+
+79 ATC 4261
+
+(1979) 9 ATR 873
+
+Hart and Another v. Commissioner of Taxation
+
+[2002] FCAFC 222
+
+(2002) 121 FCR 206
+
+2002 ATC 4608
+
+(2002) 50 ATR 369
+
+Hope v. Bathurst City Council
+
+(1980) 144 CLR 1
+
+80 ATC 4386
+
+(1981) 12 ATR 231
+
+Inland Revenue Commissioners v. Incorporated Council of Law Reporting
+
+(1888) 22 QB 279
+
+Inland Revenue Commissioners v. Livingston
+
+(1927) 11 TC 538
+
+Kirkman v. Booth
+
+(1848) 11 Beav 273
+
+(1848) 50 ER 821
+
+Lilyvale Hotel Pty Ltd v. Commissioner of Taxation
+
+[2008] FCA 1031
+
+2008 ATC 20-038
+
+Lizzio v. Ryde Municipal Council
+
+(1983) 155 CLR 211
+
+Macquarie Finance Ltd v. Commissioner of Taxation
+
+[2005] FCAFC 205
+
+(2005) 146 FCR 77
+
+2005 ATC 4829
+
+(2005) 61 ATR 1
+
+Magna Alloys & Research Pty. Ltd. v. Federal Commissioner of Taxation
+
+80 ATC 4542
+
+(1980) 11 ATR 276
+
+Marshall v. Green
+
+(1875) 1 CPD 35
+
+McDermott Industries (Australia) Pty Ltd v. Commissioner of Taxation
+
+[2004] FCA 1044
+
+2004 ATC 4823
+
+(2004) 56 ATR 592
+
+Metal Manufactures Ltd v. Federal Commissioner of Taxation
+
+[1999] FCA 1712
+
+99 ATC 5229
+
+(1999) 43 ATR 375
+
+Council of the City of Newcastle v. Royal Newcastle Hospital
+
+(1957) 96 CLR 493
+
+Newton v. Pyke
+
+(1908) 25 TLR 127
+
+Nullagine Investments Pty Ltd v. The Western Australian Club Inc
+
+(1993) 177 CLR 635
+
+[1993] HCA 45
+
+Official Receiver in Bankruptcy (Fox's Estate) v. Federal Commissioner of Taxation
+
+(1956) 96 CLR 370
+
+(1956) 11 ATD 119
+
+Radaich v. Smith
+
+(1959) 101 CLR 209
+
+[1959] HCA 45
+
+Reid v. Smith
+
+(1905) 3 CLR 656
+
+[1905] HCA 54
+
+Robert John Pty Ltd v. Fostar's Shoes Pty Ltd
+
+[1963] NSWR 419
+
+[1963] SR (NSW) 260
+
+(1962) 80 WN (NSW) 408
+
+Robinson v. Local Board of Barton-Eccles
+
+(1883) 8 App Case 798
+
+Ronpibon Tin NL v. Federal Commissioner of Taxation
+
+(1949) 78 CLR 47
+
+Ryde Municipal Council v. Macquarie University
+
+(1978) 139 CLR 633
+
+[1978] HCA 58
+
+Salomon v. A Salomon and Co Ltd
+
+[1897] AC 22
+
+[1895-99] All ER Rep 33
+
+Westpac Banking Corporation v. Rabaiov
+
+[1991] ANZ ConvR 560
+
+(1991) V ConvR 54-412
+
+Other References:
+
+Bradbrook AJ, MacCallum SV & Moore AP, 2002, Australian Real Property Law, 3rd edition, Pyrmont, Thomson Lawbook Co, Sydney
+
+Butterworths Australian Legal Dictionary, 1997, Butterworths, Sydney
+
+Explanatory Memorandum to the Superannuation Legislation Amendment Bill (No. 4) 1999
+
+Jowitt's Dictionary of English Law, 2nd edn, 1977, Sweet & Maxwell, London, Volume 1
+
+Ninth Report of the Senate Select Committee on Superannuation Supervision Bills, October 1993
+
+OECD Model Convention on Income and on Capital, 1977
+
+Pearce D C and R S Geddes, Statutory Interpretation in Australia, 6th edn., Butterworths, Sydney, 2006
+
+Report on the Superannuation Legislation Amendment Bill (No. 4) 1999, Senate Select Committee on Superannuation and Financial Services, November 1999
+
+Rodney Huddleston and Geoffrey K. Pullum, Cambridge Grammar of the English Language, Cambridge University Press, 2002
+
+Second Reading speech for Taxation Laws Amendment Bill (No. 2) 1985
+
+Superannuation Industry (Supervision) Bill 1993
+
+The Australian Oxford Dictionary, 1999, 2nd edn, Oxford University Press, Melbourne
+
+The Macquarie Dictionary, 2001, rev. 3rd edn., The Macquarie Library Pty Ltd, NSW
+
+SMSFR 2009/1 history
+
+| Date: | Version: | Change:
+| 28 January 2009 | Original ruling |
+You are here → | 15 November 2023 | Consolidated ruling | Addendum
+
+Copyright notice
+
+© Australian Taxation Office for the Commonwealth of Australia
+
+You are free to copy, adapt, modify, transmit and distribute material on this website as you wish (but not in any way that suggests the ATO or the Commonwealth endorses you or any of your services or products).

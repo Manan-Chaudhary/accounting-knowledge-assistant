@@ -1,0 +1,1612 @@
+Title: SMSFR 2010/1 - Acquisition of an asset by an SMSF from a related party (s66 SIS Act)
+Publisher: Australian Taxation Office
+Document type: ruling
+Authority tier: 1
+Corpus: A (authority)
+Source URL: https://www.ato.gov.au/law/view/document?DocID=SFR%2FSMSFR20101%2FNAT%2FATO%2F00001
+Retrieved: 2026-09-25
+Topic: smsf-compliance
+---
+
+# Self Managed Superannuation Funds Ruling
+
+## SMSFR 2010/1
+
+### Self Managed Superannuation Funds: the application of subsection 66(1) of the Superannuation Industry (Supervision) Act 1993 to the acquisition of an asset by a self managed superannuation fund from a related party
+
+- Please note that the
+PDF version
+is the authorised consolidated version of this ruling and amending notices.
+
+There is a Compendium for this document:
+SMSFR 2010/1EC
+.
+
+This document incorporates revisions made since original publication. View its history and amending notices, if applicable.
+
+Contents | Para
+What this Ruling is about | 1
+Ruling | 5
+Funds to which the Ruling applies | 47
+Date of effect | 48
+Appendix 1: Examples | 49
+Appendix 2: Explanation | 77
+Appendix 3: Detailed contents list | 175
+
+Preamble
+This publication represents the Commissioner's view about the way in which provisions of the Superannuation Industry (Supervision) Act 1993 , or regulations under that Act, apply to superannuation funds that the Commissioner regulates: principally self managed superannuation funds. Self Managed Superannuation Funds Rulings (whether draft or final) are not legally binding on the Commissioner. However, if the Commissioner later takes the view that the law applies less favourably to you than this ruling indicates, the fact that you acted in accordance with this ruling would be a relevant factor in your favour in the Commissioner's exercise of any discretion as to what action to take in response to a breach of that law. The Commissioner may, having regard to all the circumstances, decide that it is appropriate to take no action in response to the breach. [ Note: This is a consolidated version of this document. Refer to the Legal database (ato.gov.au/law) to check its currency and to view the details of all changes.]
+
+### What this Ruling is about
+
+1. This Ruling explains whether an asset is intentionally acquired by a trustee or investment manager of a self managed superannuation fund (SMSF) from a related party of the SMSF for the purposes of subsection 66(1) of the Superannuation Industry (Supervision) Act 1993 (SISA).[1]
+
+2. Subsection 66(1) prohibits a trustee or investment manager from intentionally acquiring assets (other than money) from a related party of the SMSF. However, subsections 66(2) and (2A) provide for exceptions to this prohibition. If an exception applies to the acquisition of an asset, a trustee or investment manager can acquire the asset from a related party without contravening subsection 66(1). This Ruling explains certain requirements of these exceptions.
+
+3. Subsection 66(3) prohibits a person from participating in a scheme[2] with the intention that an acquisition would avoid the application of subsection 66(1) to the SMSF. This Ruling does not discuss in any detail the prohibition of avoidance schemes under subsection 66(3).
+
+4. Further, this Ruling does not provide the Commissioner's views on:
+
+•
+whether an asset acquired is a contribution[3] to the SMSF or how to work out the market value[4]of the asset acquired; or
+
+•
+how other SISA and Superannuation Industry (Supervision) Regulations 1994 (SISR) provisions apply to any of the arrangements discussed in this Ruling.[5]
+
+### Ruling
+
+5. A trustee or investment manager of an SMSF contravenes subsection 66(1) if the trustee or investment manager intentionally acquires an asset (other than money) from a related party[6] of the SMSF and an exception[7] does not apply to that acquisition. It does not matter if the asset is acquired from the related party for their own benefit as a member of the SMSF or for the benefit of some other person who is a member of the SMSF.
+
+6. If a trustee or investment manager acquires an asset from an unrelated party subsection 66(1) is not contravened even if the acquisition is made for the benefit of a member. However, it should be noted that subsection 66(3) prohibits a person from entering into, commencing to carry out, or carrying out, a scheme with the intention that:
+
+•
+the scheme would result or be likely to result in the acquisition of an asset by a trustee or investment manager from a person who has a connection (whether direct or indirect) with a related party of the SMSF; and
+
+•
+the acquisition would avoid the application of subsection 66(1) to the SMSF.[8]
+
+7. For the purposes of subsection 66(1) this Ruling explains:
+
+•
+the scope of the phrase 'acquire an asset' including:
+
+-
+characterising what is acquired;
+
+-
+the acceptance of money by a trustee or investment manager; and
+
+•
+a trustee or investment manager intentionally acquiring an asset from a related party including:
+
+-
+whether it is the trustee or the investment manager or both that acquires the asset;
+
+-
+whether the asset is acquired from a related party; and
+
+-
+whether the asset is intentionally acquired.
+
+This Ruling also explains certain requirements of the exceptions in subsections 66(2) and (2A).
+
+The scope of the phrase 'acquire an asset'
+
+8. To contravene subsection 66(1) a trustee or investment manager must 'acquire an asset'.
+
+9. The term 'asset' is defined in subsection 10(1) to mean 'any form of property' and includes money whether Australian currency or foreign currency. However, as the phrase 'acquire an asset' is defined in subsection 66(5) to not include accepting money, the acceptance of money cannot result in a contravention of subsection 66(1).
+
+10. The term property is not defined in the SISA and therefore takes on its ordinary meaning. It is the Commissioner's view that the phrase 'any form of property' has a very wide meaning. It includes every type of right,[9] interest or thing of value that is legally capable of ownership and encompasses both real property and personal property. While assignability is generally a characteristic of a proprietary right it is not in all cases an essential characteristic.[10]
+
+11. Real property consists of land and interests in land, including for example, an easement.[11] Personal property includes all forms of property other than real property and includes tangible personal property such as gold bullion and intangible personal property that can be enforced by legal or equitable action such as a debt or an interest in a trust fund respectively.[12]
+
+12. Other examples of assets include: a freehold interest in land; rights arising under a contract; an option to acquire something; a boat; machinery; shares in a company; units in a unit trust; a promissory note; a mining exploration license; a mining lease; patents; trademarks; copyright.
+
+13. The phrase 'acquire an asset' in subsection 66(1) encompasses not only the purchase of an asset by a trustee or investment manager but also the acquisition of an asset if the SMSF does not provide any consideration. For example, accepting a contribution[13] of an asset, assets gained through improvements made to SMSF property, receiving an in specie trust distribution or receiving an in specie payment of income, profit or gain.
+
+14. An asset is acquired whether it is an asset that exists prior to its transfer or assignment to the SMSF or it is an asset (for example, rights[14] under a contract) that upon its creation is acquired by the trustee or investment manager.
+
+15. An asset is also acquired for the purposes of subsection 66(1) if consideration given for the asset is less than the asset's market value. For example, it is a part purchase, part contribution, of the asset.[15]
+
+16. The phrase also encompasses the acquisition of an asset at the time of settlement of the SMSF.
+
+Characterising what is acquired
+
+17. In analysing whether there has been an acquisition of an asset by a trustee or investment manager, and the nature of that asset, the Commissioner takes a holistic approach to determine the substance of the transaction.[16]
+
+Performance of a service
+
+18. If a trustee or investment manager enters into a contract with a related party entitling the SMSF to the performance of a service by the related party, the performance of that service is the substance of the transaction and not any rights that the SMSF might also acquire to have that service performed. Therefore, the acquisition of the performance of a service does not contravene subsection 66(1).
+
+19. If goods or materials that are insignificant in value and function are provided to an SMSF as part of a service it is the Commissioner's view that it remains the performance of a service only. If, however, goods or materials are provided to the SMSF that are not insignificant in value and function there is an acquisition of assets (being the goods or materials). See Examples 5 and 6 (paragraphs 57 to 60), Appendix 1 of this Ruling.
+
+Acquisition of rights or some other asset
+
+20. If a trustee or investment manager enters into a contract to purchase an asset from a related party, the substance of the transaction is generally the acquisition of that asset and not any rights that may also arise under the contract. It is the asset that is acquired even if the agreement is subject to conditions such as obtaining finance, a building inspection report or a 'cooling off' period. The acquisition of the asset contravenes subsection 66(1) unless an exception (for example, the business real property exception) applies.
+
+21. If, however, a trustee or investment manager enters into an agreement (it may be in the form of an option agreement) with a related party that gives the trustee or investment manager the right to acquire an asset (the underlying asset) at a fixed price at some future point in time, but does not obligate the trustee or investment manager to acquire the underlying asset, the substance of the transaction is the acquisition of that right or option (an asset) from the related party and not the acquisition of the underlying asset. If the underlying asset is later acquired from the related party, this is the acquisition of an additional asset by the trustee or investment manager.
+
+22. The acquisition of the right or option contravenes subsection 66(1) unless an exception applies.[17] The acquisition of the underlying asset contravenes subsection 66(1) unless an exception applies.
+
+The acceptance of money by a trustee or investment manager
+
+23. If a trustee or investment manager accepts money from a related party subsection 66(1) is not contravened.[18]
+
+24. In the Commissioner's view, a trustee or investment manager accepts money from a related party if the substance of the transaction is to directly transfer funds held by the related party to the SMSF.
+
+25. It is therefore the Commissioner's view that there is no contravention of subsection 66(1) if funds are transferred by a related party to a trustee or investment manager in one of the following ways:
+
+•
+the related party makes a cash payment (either in Australian currency or foreign currency) to the trustee or investment manager;
+
+•
+the related party makes an electronic transfer of funds from the related party's account to an SMSF account;
+
+•
+the related party gives the trustee or investment manager a money order or bank cheque on which payment is made to the trustee or investment manager;
+
+•
+the related party gives the trustee or investment manager a personal cheque that is presented and honoured with cash (or its electronic equivalent);
+
+•
+the related party (as maker) issues a promissory note[19] payable at face value to the trustee or investment manager and it is honoured with cash (or its electronic equivalent).
+
+26. If a trustee or investment manager accepts a cheque or promissory note that is ultimately not honoured, or is not presented (if a cheque), or for which a demand is not made (if a promissory note), the trustee or investment manager has not accepted money as there has been no transfer of funds to the SMSF. It is also the Commissioner's view that in such cases the trustee or investment manager is unlikely to have acquired an asset and, if no asset is acquired, there is no contravention of subsection 66(1).
+
+27. As a caution, it should be noted that accepting a promissory note may give rise to other compliance issues under the SISA or SISR. For example, if accepting a promissory note from a member or relative of a member (as maker of that note) means there is an amount owing by that member or relative to the SMSF section 65 may be contravened.[20]
+
+Collectable banknotes or coins; trade dollars or barter credits
+
+28. It is the Commissioner's view that collectable banknotes or coins,[21] or trade dollars or barter credits, are not money for the purposes of section 66. The acquisition of collectable banknotes or coins, or trade dollars or barter credits, is the acquisition of an asset other than money. The acquisition of such assets by a trustee or investment manager from a related party contravenes subsection 66(1).[22]
+
+Monetary payments to third parties to extinguish a liability of the SMSF
+
+29. It is the Commissioner's view that a monetary payment that is made by a related party of an SMSF to a third party to extinguish a liability the SMSF has with that third party does not contravene subsection 66(1).[23]
+
+A trustee or investment manager intentionally acquiring an asset from a related party
+
+30. Subsection 66(1) is only contravened if an asset, (other than money or an asset covered by an exception in subsection 66(2) or (2A)), is intentionally acquired by a trustee or investment manager from a related party.[24]
+
+Whether it is the trustee or the investment manager or both that acquires the asset
+
+31. Whether it is the trustee or the investment manager or both who acquires the asset is not determined by who acquires ownership of the asset as this, as a matter of law, is always the trustee(s) of the SMSF. Rather it is a practical enquiry as to who, in the particular circumstances of the case, can be said to have accepted or obtained the asset for the SMSF.
+
+Whether the asset is acquired from a related party
+
+32. Once it is determined that an asset is acquired by a trustee or investment manager it is necessary to determine if the asset is acquired from a related party.[25]
+
+33. Depending upon the asset in question, the ways in which an asset can be acquired by a trustee or investment manager from a related party include:
+
+•
+the trustee or investment manager acquires legal title or an equitable or beneficial interest from the related party; or
+
+•
+the related party creates rights in or, assigns, transfers or surrenders rights to, the trustee or investment manager under a contract.[26]
+
+Whether the asset is intentionally acquired
+
+34. A trustee or investment manager may mean to acquire an asset from a related party if the trustee or investment manager acquires an asset and is aware that the party from whom the asset is acquired is a related party of the SMSF.
+
+35. Circumstances that indicate that the trustee or investment manager means to acquire an asset from a related party include, but are not limited to, the following:
+
+•
+the SMSF is a small closely held fund such that the trustee or investment manager knows of the relationship between the SMSF and the person or entity from whom the asset is acquired;
+
+•
+the trustee or investment manager has had previous dealings with the person or entity from whom the asset is acquired; or
+
+•
+the nature of the asset is such that it is likely to be acquired from a related party of the SMSF. For example, shares in a closely held family company.
+
+Certain requirements of the exceptions in subsections 66(2) and (2A) explained
+
+36. Exceptions to the prohibition in subsection 66(1) are provided for in subsections 66(2) and (2A).[27] An exception in either subsection 66(2) or (2A) can apply to the acquisition of an asset whether or not consideration is given for the acquisition of that asset.[28] If an exception applies, the acquisition of the asset from a related party does not contravene subsection 66(1).
+
+Asset 'acquired at market value'
+
+37. For certain exceptions to apply to an acquisition of an asset, the asset must be 'acquired at market value'.[29]
+
+38. If the asset is purchased by the SMSF and the consideration paid for the asset is equal to the asset's market value, the market value requirement is satisfied.
+
+39. However, if either no consideration is given for the asset, or the consideration given is less than the asset's market value, the Commissioner accepts that the market value requirement can nonetheless be satisfied. If the asset is wholly or partly a contribution and is treated by the SMSF as a contribution equal to the asset's market value to the extent that consideration was not given for it, the market value requirement is satisfied.
+
+40. In the case of an in specie distribution to the SMSF, the market value requirement is satisfied if it is treated by the SMSF as a distribution equal to the market value of the asset.
+
+41. It is the asset's market value at the time when it is acquired. The asset is acquired when the (trustee(s) of the) SMSF becomes the owner of the asset.
+
+Listed securities - paragraph 66(2)(a)
+
+42. Examples of listed securities for the purposes of paragraph 66(2)(a) include shares, units, bonds, debentures, options, interests in managed investment schemes or other securities listed on the Australian Securities Exchange.[30]
+
+Certain in-house assets - subparagraph 66(2A)(a)(i)
+
+43. It is the Commissioner's view that the phrase:
+
+'the acquisition of the asset constitutes an investment that is an in-house asset of the fund within the meaning of subsection 71(1)', in subparagraph 66(2A)(a)(i) refers to those assets that are investments in a related party, or a related trust, of the SMSF. This means that if a trustee or investment manager acquires an investment in a related party of the SMSF, or an investment in a related trust of the SMSF, the acquisition of that investment asset will not contravene subsection 66(1) (providing the market value requirement in paragraph 66(2A)(b), and the in-house asset limit requirement in paragraph 66(2A)(c) are also met).[31]
+
+44. However, the exception in subparagraph 66(2A)(a)(i) does not apply if an asset that is leased to a related party prior to its acquisition is acquired and upon its acquisition the trustee(s) of the SMSF effectively takes over as lessor. It also does not apply to the acquisition of an asset that is immediately leased to a related party by the SMSF upon its acquisition.
+
+Paragraph 66(2A)(c) and the acquisition of assets under subparagraphs 66(2A)(a)(ii) to (iv) that are not in-house assets
+
+45. If the acquisition is of an asset covered by subparagraphs 66(2A)(a)(ii) to (iv) (that is, the asset is excluded from being an in-house asset), the acquisition of the asset cannot cause an SMSF to exceed the 5% permitted level of in-house assets. It therefore follows that paragraph 66(2A)(c) is satisfied with respect to the acquisition of such assets. The acquisition must, however, meet the market value requirement in paragraph 66(2A)(b).
+
+Acquisition of an interest in real property that is held as tenants in common with a related party
+
+46. A trustee or investment manager who acquires an interest in real property from a related party, which results in the trustee and a related party holding the property as tenants in common, does not contravene subsection 66(1) if the business real property exception in paragraph 66(2)(b) applies.
+
+### Funds to which the Ruling applies
+
+47. This Ruling applies to SMSFs[32] and former SMSFs.[33] References in the Ruling to SMSFs include former SMSFs unless otherwise indicated.
+
+### Date of effect
+
+48. This Ruling applies both before and after its date of issue. However, the Ruling does not apply to taxpayers to the extent that it conflicts with the terms of settlement of a dispute agreed to before the date of issue of the Ruling.
+
+Commissioner of Taxation
+
+25 February 2010
+
+### Appendix 1 - Examples
+
+This Appendix is provided as information to help you understand how the Commissioner's view has been reached.
+
+49. The following examples in this Appendix illustrate the application of subsection 66(1) only. No inferences should be drawn about the application of other SISA or SISR provisions to the examples, or whether a contribution has been made for the purposes of the SISA, SISR or any other taxation law.
+
+50. To determine if and when a contribution is made for income tax purposes, refer to Taxation Ruling TR 2010/1 Income tax: superannuation contributions.
+
+Example no. | Paragraph no. | Example topic
+1 | Paragraph 51 | Acquisition of a post-dated personal cheque
+2 | Paragraph 52 | Acquisition of a promissory note
+3 | Paragraphs 53 and 54 | Acquisition of collectable banknotes and coins
+4 | Paragraphs 55 and 56 | Acquisition of trade dollars
+5 | Paragraphs 57 and 58 | Performance of a service - goods insignificant in value and function
+6 | Paragraphs 59 and 60 | Performance of a service - goods not insignificant in value and function
+7 | Paragraph 61 | Improvements made to an SMSF property
+8 | Paragraphs 62 and 63 | Acquisition of listed shares
+9 | Paragraphs 64 and 65 | Acquisition of listed units in a unit trust
+10 | Paragraphs 66 to 68 | Acquisition of fixtures forming part of land that is business real property
+11 | Paragraphs 69 and 70 | Acquisition of an asset not forming part of land that is business real property
+12 | Paragraphs 71 to 73 | Acquisition of shares in a company that is a related party
+13 | Paragraphs 74 to 76 | Acquisition of units in a related unit trust
+
+Example 1 - acquisition of a post-dated personal cheque
+
+51. Alex, a member and trustee of the M.M. SMSF, gives the trustee of the SMSF a personal cheque that is post-dated by two months. The cheque is banked two months later and the SMSF's account is subsequently credited with the funds. As the substance of the transaction is to directly transfer funds from the member to the SMSF there is no contravention of subsection 66(1).
+
+Example 2 - acquisition of a promissory note
+
+52. Joan, a member and trustee of the T.A. SMSF, gives a promissory note to the trustee of the SMSF. Joan is the maker of the note which is for $20,000 and payable on demand. The SMSF makes a demand and upon making the demand funds are electronically transferred to the SMSF by Joan. As the substance of the transaction is to directly transfer funds from the member to the SMSF there is no contravention of subsection 66(1).
+
+Example 3 - acquisition of collectable banknotes and coins
+
+53. Edward is a member and trustee of the H.H. SMSF. Edward has been collecting banknotes and coins for a number of years and now owns a large and valuable collection. The banknotes and coins have a market value which exceeds their face value. Edward contributes the banknotes and coins to the SMSF.
+
+54. The acquisition of collectable banknotes and coins by the trustee or investment manager of the H.H. SMSF is the acquisition of an asset other than money. A trustee or investment manager of the H.H. SMSF contravenes subsection 66(1) by accepting the banknotes and coins.
+
+Example 4 - acquisition of trade dollars
+
+55. Walter is a member and trustee of the P.V. SMSF. Walter is also a member of a barter exchange and currently holds an amount of trade dollars which are exchanged for goods and services within the barter exchange. Walter contributes his trade dollars to the P.V. SMSF.
+
+56. The acquisition of trade dollars by a trustee or investment manager of the P.V. SMSF is the acquisition of an asset other than money. A trustee or investment manager of the P.V. SMSF contravenes subsection 66(1) by accepting the trade dollars.
+
+Example 5 - performance of a service - goods insignificant in value and function
+
+57. The following examples illustrate the performance of a service for the SMSF along with the provision of goods of insignificant value and function.
+
+(a)
+A member of an SMSF fixes taps in rental properties owned by the SMSF by replacing the tap washers. As the tap washers are insignificant in value and function the substance of the transaction is the performance of a service.
+
+(b)
+A relative of a member of an SMSF is contracted to provide accountancy services to the SMSF.[34] As part of that service a disk containing SMSF records is produced and provided to the SMSF. As the disk is insignificant in value and function the substance of the transaction is the performance of a service.
+
+58. Subsection 66(1) is not contravened in either of the above circumstances.
+
+Example 6 - performance of a service - goods not insignificant in value and function
+
+59. The following examples illustrate the performance of a service for the SMSF along with the provision of assets that are not insignificant in value and function.
+
+(a)
+A member of an SMSF buys and installs ducted air-conditioning in a rental property owned by the SMSF. An asset is acquired as the ducted air-conditioning components are not insignificant in value and function.
+
+(b)
+A member of an SMSF buys all necessary building materials and builds a house in situ on land owned by the SMSF. The member does some of the building work and also pays contractors to do some of the building work. A service is performed for the SMSF and assets are acquired from the member as the building materials are not insignificant in value and function.
+
+60. Subsection 66(1) is contravened in each of the above circumstances.
+
+Example 7 - improvements made to an SMSF property
+
+61. The following examples illustrate the acquisition of an asset if a related party lessee makes improvements to an SMSF property.
+
+(a)
+A member of an SMSF leases a shop owned by the SMSF and installs display cabinets to the value of $5,000. The lease agreement requires the member to make this improvement and the display cabinets are a landlord fixture. An asset is acquired as the display cabinets are not insignificant in value and function. Subsection 66(1) is contravened in this circumstance.
+
+(b)
+A member of an SMSF leases SMSF property and retains the right to remove office partitioning at the end of the lease term. If the member subsequently removes the office partitioning an asset has not been acquired by the SMSF. If the office partitioning is not removed, a trustee or investment manager acquires an asset (assuming it is of value at the end of the lease term) for the purposes of subsection 66(1). However, depending upon the circumstances it may not have been intentionally acquired by a trustee or investment manager.
+
+Example 8 - acquisition of listed shares
+
+62. Nadia, a member and trustee of the Aidan SMSF, owns shares in a company which is listed on the Australian Securities Exchange. Nadia wants to contribute her shares to the SMSF and so transfers the shares to the SMSF for no consideration. The shares are listed securities as defined in subsection 66(5).
+
+63. A trustee or investment manager of the Aidan SMSF can acquire the shares without contravening subsection 66(1), if the shares are treated by the SMSF as a contribution equal to the shares' market value at the time when the shares are acquired.[35] The shares are acquired when the (trustee(s) of the) SMSF becomes the owner of the shares.
+
+Example 9 - acquisition of listed units in a unit trust
+
+64. Pina, a member and trustee of the Syd SMSF, owns units in a unit trust which is listed on the Australian Securities Exchange. Pina sells the units to the SMSF. Market value consideration is paid for the units. The units are listed securities as defined in subsection 66(5).
+
+65. A trustee or investment manager of the Syd SMSF does not contravene subsection 66(1) by purchasing the units from Pina as they are listed securities and the market value requirement is satisfied.[36]
+
+Example 10 - acquisition of fixtures forming part of land that is business real property
+
+66. Adam is a member and a trustee of the AAA SMSF. Adam owns a commercial property consisting of land and a factory where he operates his business. Adam sells this property to the AAA SMSF. Market value consideration is paid for the property.
+
+67. The SMSF acquires the freehold interest in the land, which includes the factory and other things that are fixtures on that land. The freehold interest in the land satisfies the definition of business real property.[37]
+
+68. As it is the acquisition of business real property and market value consideration is paid, the acquisition does not contravene subsection 66(1) provided the SMSF has no more than the maximum number of allowable members.[38]
+
+Example 11 - acquisition of an asset not forming part of land that is business real property
+
+69. Following on from Example 10, assume Adam also had a demountable building on site that was used as a temporary office and was not a fixture. As the demountable building is not a fixture it is not part of the land and therefore is not business real property.[39]
+
+70. If Adam also sold the demountable building to the AAA SMSF it is a separate acquisition. As no exception applies to the acquisition of the demountable building its acquisition by a trustee or investment manager contravenes subsection 66(1).
+
+Example 12 - acquisition of shares in a company that is a related party
+
+71. Michael and Catherine are members and trustees of the J.J. SMSF. They each hold 500 shares in an unlisted company that is a related party of the SMSF.
+
+72. Catherine wants to contribute her 500 shares to the SMSF and so transfers the shares to the SMSF for no consideration. As the shares constitute investments in a related party of the SMSF the shares satisfy the requirement in subparagraph 66(2A)(a)(i).
+
+73. A trustee or investment manager of the J.J. SMSF can acquire the shares without contravening subsection 66(1) if the other requirements of subsection 66(2A) are satisfied. That is, the shares are treated by the SMSF as a contribution equal to the shares' market value at the time when the shares are acquired and the acquisition of the shares does not cause the SMSF to exceed the 5% permitted level of in-house assets. The shares are acquired when the (trustee(s) of the) SMSF becomes the owner of the shares.
+
+Example 13 - acquisition of units in a related unit trust
+
+74. Audrey is a member and a trustee of the Jones SMSF. Audrey holds 1,000 units in a unit trust that is a related trust of the SMSF and is not a widely held unit trust.
+
+75. Audrey sells 200 units to the Jones SMSF. Market value consideration is paid for the units. As the units constitute investments in a related trust the units satisfy the requirement in subparagraph 66(2A)(a)(i).
+
+76. A trustee or investment manager of the Jones SMSF can acquire the units without contravening subsection 66(1) if the other requirements of subsection 66(2A) are satisfied. The market value requirement in paragraph 66(2A)(b) is satisfied as the units are acquired for market value consideration. Therefore, provided the acquisition of the units does not cause the SMSF to exceed the 5% permitted level of in-house assets the requirement in paragraph 66(2A)(c) is also satisfied and the units can be purchased without contravening subsection 66(1).
+
+### Appendix 2 - Explanation
+
+This Appendix is provided as information to help you understand how the Commissioner's view has been reached.
+
+Background
+
+77. Investment rules such as subsection 66(1) support the Government's retirement income policy objectives by ensuring that concessionally taxed superannuation is used only for retirement income purposes and not, for example, as a source of pre-retirement finance for members.
+
+78. The opening comments of Mr Pooley,[40] then Commissioner of the Insurance and Superannuation Commission (ISC),[41] at the Senate Select Committee on Superannuation concerning the introduction of the SIS legislation, provide insight into the policy intent of the provision:
+
+Clause 62 [enacted as section 66] of the SIS bill prohibits a trustee or investment manager from intentionally acquiring an asset from a member or relative of a member. There is also an anti-avoidance provision relating to the acquisition of assets through schemes that are designed to stop circumvention of the intent of the provisions. This clause is intended to prohibit members selling their private assets to their fund in order to obtain cash or contributing in specie assets which do not necessarily increase members' retirement income. It should be noted that clause 62 does not preclude cash contributions.
+
+The above transactions are not consistent with the government's aim of giving tax concessions to superannuation to increase retirement income. For example, where a member's or relative's assets is sold to the fund to release cash from the funds this often avoids the intent of the preservation requirements through swapping an illiquid asset outside of the fund, say an investment property or the member's house, for cash in the fund which need not be used for retirement income purposes. The second example is: where a contribution of the member's or relatives in specie asset is made to move an asset into the concessionally taxed superannuation environment, the transaction may not result in an increase in overall retirement income.[42]
+
+79. Mr Pooley's comments indicate an intention that subsection 66(1) would generally apply to prohibit both the purchase of assets by the fund from a related party[43] and the contribution of assets to the fund by a related party.
+
+80. The prohibition under subsection 66(1) is complemented by other rules in the SISA and the SISR which apply to dealings with members, their relatives and other related parties of the SMSF. For example:
+
+•
+a trustee is prohibited from maintaining an SMSF for any purpose other than for the provision of retirement and certain related benefits (referred to as the sole purpose test) - section 62. All of the activities of maintaining an SMSF are subject to this test;[44]
+
+•
+an SMSF trustee or investment manager is prohibited from lending money, or providing any other financial assistance using the resources of the SMSF, to a member of the SMSF or relative of a member of the SMSF - section 65;[45]
+
+•
+subject to exceptions (for example in relation to certain derivative contracts), an SMSF trustee cannot recognise, or in any way sanction, an assignment of a superannuation interest or a charge over or in relation to a member's benefits or an SMSF asset - regulations 13.12, 13.13 and 13.14 of the SISR;
+
+•
+subject to specific exceptions, an SMSF trustee is prohibited from borrowing or maintaining an existing borrowing of money - section 67;[46]
+
+•
+all SMSF investment dealings must be at arm's length or must be conducted on arm's length terms and conditions - section 109; and
+
+•
+subject to some transitional provisions and specific exceptions, an SMSF trustee is prohibited from acquiring or maintaining in-house assets[47] that have a total market value in excess of 5% of the total market value of all SMSF assets - Part 8, in particular Division 3 of that Part.
+
+Contraventions - audit requirements and consequences
+
+81. SMSF trustees are required to appoint an approved auditor to audit the financial accounts and statements of the SMSF each year.[48] When conducting an audit, the approved auditor is also required to conduct a compliance audit to ensure the SMSF has complied with the SISA and the SISR. There is an approved form[49] for notifying the ATO of contraventions.[50]
+
+82. Contravention of subsection 66(1) or (3) is an offence punishable on conviction by imprisonment for a term not exceeding one year.[51] Contravention places at risk the status of the SMSF as a complying superannuation fund under the SISA.[52]
+
+Legislative context
+
+83. Subsection 66(1) provides that:
+
+Subject to subsection (2), a trustee or an investment manager of a regulated superannuation fund must not intentionally acquire an asset from a related party of the fund.
+
+84. Subsection 66(5) defines the phrase 'acquire an asset' such that it 'does not include accept money'.
+
+85. Subsections 66(2) and (2A) provide for exceptions to the prohibition in subsection 66(1). The prohibition against acquiring an asset from a related party of the SMSF does not apply if the asset is:
+
+•
+a listed security[53] acquired at market value - paragraph 66(2)(a). For example, shares, units, bonds, debentures, options, interests in managed investment schemes or other securities listed on the Australian Securities Exchange;[54]
+
+•
+business real property[55] of the related party that is acquired by the SMSF at market value and the SMSF[56] has no more than the maximum number of members - paragraph 66(2)(b);
+
+•
+acquired by the SMSF under a merger between SMSFs - paragraph 66(2)(c);
+
+•
+an asset that the Regulator,[57] by legislative instrument, determines may be acquired by an SMSF - paragraph 66(2)(d);[58]
+
+•
+an investment in a related party of the SMSF, or an investment in a related trust of the SMSF that is acquired at market value and its acquisition does not result in the level of in-house assets of the SMSF exceeding the 5% market value ratio set out in Part 8 - subparagraph 66(2A)(a)(i) and paragraphs 66(2A)(b) and (c);
+
+•
+an investment in a related party of the SMSF, or an investment in a related trust of the SMSF that is acquired at market value and would be an in-house asset of the SMSF but for the operation of the transitional rules in Subdivision D of Part 8 - subparagraph 66(2A)(a)(ii) and paragraph 66(2A)(b);
+
+•
+a life insurance policy issued by a life insurance company that is acquired at market value from a related party other than a member, or a relative of a member, of the SMSF - subparagraph 66(2A)(a)(iii) and paragraph 66(2A)(b). For example, a life insurance policy acquired from a standard employer-sponsor; and
+
+•
+an asset referred to in paragraphs 71(1)(b), (c), (d), (e), (f), (h) or (j) that is acquired at market value -subparagraph 66(2A)(a)(iv) and paragraph 66(2A)(b). For example, units in a widely held unit trust (see paragraph 71(1)(h)).
+
+Explanation
+
+86. Subsection 66(1) is contravened if a trustee or investment manager of an SMSF intentionally acquires an asset (other than money) from a related party and an exception in subsection 66(2) or (2A)[59] does not apply to the acquisition of that asset.
+
+87. The following issues, which are relevant to the application of subsection 66(1), are discussed below:
+
+•
+the scope of the phrase 'acquire an asset' including:
+
+-
+the meaning of 'asset';
+
+-
+the meaning of 'acquire';
+
+-
+characterising the transaction as the acquisition of an asset;
+
+-
+the acceptance of money by a trustee or investment manager.
+
+•
+a trustee or investment manager intentionally acquiring an asset from a related party including:
+
+-
+whether it is the trustee or the investment manager or both that acquires the asset;
+
+-
+whether the asset is acquired from a related party;
+
+-
+whether the asset is intentionally acquired; and
+
+•
+certain requirements of the exceptions in subsections 66(2) and (2A).
+
+The scope of the phrase 'acquire an asset'
+
+88. In order to contravene subsection 66(1) a trustee or investment manager must 'acquire an asset'.
+
+89. However, as the phrase 'acquire an asset' is defined in subsection 66(5) to not include accepting money, the acceptance of money (which is discussed at paragraphs 121 to 135 of this Ruling) cannot result in a contravention of subsection 66(1).
+
+The meaning of 'asset'
+
+90. The term 'asset' is defined in subsection 10(1) to mean 'any form of property' and includes money whether Australian currency or foreign currency. Leaving aside money, (the acquisition of which cannot contravene subsection 66(1)), it is necessary to consider what else is an asset.
+
+91. It is implicit that 'asset'[60] refers to something of economic value and thus 'any form of property' refers to property that has economic value. This also accords with the meaning that has been ascribed to 'property' being '[a]ny type of right (that is, a claim recognised by law), interest, or thing which is legally capable of ownership, and which has a value...'.[61]
+
+92. Halsbury's Laws of Australia explains:
+
+'Property' means every species of valuable right and interest including real and personal property, incorporeal hereditaments such as rents and services, rights of way, rights of profit or use in land of another and choses in action, but does not potentially include mere personal licences which are not assignable: Minister for the Army v. Dalziel (1944) 68 CLR 261 at 290; [1944] ALR 89; (1944) 17 ALJ 405 per Starke J. 'Property' may denote the right of a person or an object itself: Pacific Film Laboratories Pty Ltd v. Cmr of Taxation (Cth) (1970) 121 CLR 154 at 168; 44 ALJR 376 per Windeyer J.[62]
+
+93. In The Smelting Company of Australia Limited v. The Commissioners of Inland Revenue[63] Pollock B, in determining whether a license was property in a stamp duty context, described the word 'property' as one of 'very general meaning and comprehensiveness'.
+
+94. Similarly in Jones v. Skinner[64] Lord Langdale M.R. states:
+
+...it is well known, that the word 'property' is the most comprehensive of all the terms which can be used, inasmuch as it is indicative and descriptive of every possible interest which the party can have.
+
+95. A right or interest is also capable of being property even if the transfer of it can only be accomplished with the consent of some person or authority.[65]
+
+96. It is the Commissioner's view that the phrase 'any form of property' has a very wide meaning. It includes every type of right, interest or thing of value that is legally capable of ownership and encompasses both real property and personal property. While assignability is generally a characteristic of a proprietary right it is not in all cases an essential characteristic.[66]
+
+97. Real property consists of land and interests in land, including for example an easement.[67] Personal property includes all forms of property other than real property and includes tangible personal property such as gold bullion and intangible personal property that can be enforced by legal or equitable action such as a debt or an interest in a trust fund respectively.[68]
+
+98. Other examples of assets include: a freehold interest in land; rights arising under a contract; an option to acquire something; a boat; machinery; shares in a company; units in a unit trust; a promissory note; a mining exploration license; a mining lease; patents; trademarks; copyright.
+
+99. To avoid any doubt personal rights such as the right to work or the right to vote are not assets for the purposes of section 66.
+
+The meaning of 'acquire'
+
+100. The term 'acquire' is not defined and so takes its ordinary meaning.
+
+101. In Lock v. FCT,[69] Goldberg J attributed 'acquire' with a wide meaning in the context of section 66:
+
+In the context in which it appears in subss 66(1) and (3), the expression 'acquire' means 'obtain' or 'gain' or 'receive' and 'acquisition' has a corresponding meaning. The expression 'acquire' is a word of common usage and does not have a technical meaning. The Oxford English Dictionary, 2nd ed (1989), defines 'acquire' as meaning:
+
+1
+To gain, obtain, or get as one's own, to gain the ownership of (by one's own exertions or qualities).
+
+2
+To receive or get as one's own (without reference to the manner), to come into possession of.
+
+102. In Allina Pty Ltd v. FC of T[70] the Full Federal Court considered the ordinary meaning of 'acquire' in the context of paragraph 160ZH(9)(a) of the Income Tax Assessment Act 1936 and said (emphasis added):
+
+'to acquire', according to its ordinary and natural meaning, connotes in our view to obtain, gain or get something. The first meaning given in the Oxford English Dictionary, 2nd ed (1989), is:
+
+'1. To gain, obtain or get as one's own, to gain the ownership of (by one's own exertions or qualities).'
+
+The second meaning is:
+
+'2. To receive, or get as one's own (without reference to the manner), to come into possession of.'
+
+The Macquarie Dictionary gives a similar definition. There must be something in existence that can be obtained or gained;
+but the word is apt to encompass the case where one person creates an asset which at the same time comes into the possession of or is obtained by another person.
+
+103. In the Commissioner's view 'acquire' encompasses the acquisition of an existing asset or the acquisition of an asset that is created and at the same time comes into the possession of, or is obtained by, a trustee or investment manager (for example, rights[71] acquired under a contract).
+
+Purchase of an asset
+
+104. It is clear that subsection 66(1) can apply to the purchase of an asset by a trustee or investment manager from a related party.
+
+In specie contributions
+
+105. Taking into account the wide meaning of the term 'acquire' in the context of subsection 66(1), it is the Commissioner's view that the phrase 'acquire an asset' encompasses the trustee or investment manager accepting a contribution of an asset.
+
+106. That subsection 66(1) was also intended to apply to contributions of assets by a related party can be inferred from the explanation in the Supplementary Explanatory Memorandum (EM),[72] which explains the definition of 'acquire an asset' (emphasis added):
+
+Clause 62 Acquisition of assets from members of regulated superannuation funds prohibited
+
+Subclause (4) is amended to make it clear that to 'acquire an asset' does not include
+accepting contributions
+in the form of cash or other money.
+
+107. The Commissioner's view is also consistent with the explanation given by Mr Pooley at the Senate Select Committee on Superannuation (see extract at paragraph 78 of this Ruling), that subsection 66(1) was intended to remedy the mischief of members or relatives[73] contributing assets that did not result in an increase in overall retirement income into the concessionally taxed superannuation environment.
+
+Part purchase, part contribution of an asset
+
+108. An asset is also acquired by a trustee or investment manager for the purposes of subsection 66(1) if the consideration paid for the asset is less than the asset's market value. For example, if it is a part purchase, part contribution, of an asset.
+
+Other ways in which an asset may be acquired
+
+109. In the Commissioner's view, the phrase 'acquire an asset' can also encompass:
+
+•
+a trustee or investment manager receiving an in specie payment of income, profit or gain;
+
+•
+a trustee or investment manager receiving an in specie distribution from a trust of which the SMSF is a beneficiary;
+
+•
+the granting or assignment of rights to the trustee or investment manager;
+
+•
+assets gained through improvements made to SMSF property;
+
+•
+the settlement of an asset causing the SMSF to come into existence.
+
+Characterising the transaction as the acquisition of an asset
+
+110. When considering the application of subsection 66(1) to a transaction between a trustee or investment manager and a related party, issues may arise as to whether it is the acquisition of an asset or, what is the relevant asset, particularly if services or rights under a contract arise.
+
+111. In the Commissioner's view, it is appropriate to characterise the acquisition by considering the substance of the transaction rather than taking an overly legalistic approach to the transaction. This approach is consistent with subsection 66(1) which recognises that an investment manager of an SMSF can acquire an asset in contravention of the provision even though legal title to the asset is, as a matter of law, always acquired by the trustee(s) of the SMSF.
+
+112. An enquiry into the substance of a transaction also ensures that the exceptions that allow a trustee or investment manager to acquire certain assets (for example, listed securities or business real property) without contravening subsection 66(1) are not defeated by unduly focussing on any rights acquired.
+
+113. It is therefore necessary to take a holistic approach to the transaction to determine objectively what it is that the trustee or investment manager is actually acquiring. If, for example, something is being purchased by a trustee or investment manager, a relevant question is what is the trustee or investment manager paying money to acquire. While many transactions involve rights, an acquisition is of rights only if the substance of the transaction is rights.
+
+Performance of a service
+
+114. If a trustee or investment manager enters into a contract with a related party which entitles the SMSF to the performance of a service by the related party, the substance of the transaction is the performance of that service. Although the trustee or investment manager has undoubtedly acquired rights to have that service performed the acquisition of those rights is not the substance of the transaction. Therefore, the acquisition of the performance of a service does not contravene subsection 66(1).
+
+115. If goods or materials that are insignificant in value and function are provided to an SMSF as part of a service it is the Commissioner's view that it remains the performance of a service only. If, however, goods or materials are provided to the SMSF that are not insignificant in value and function there is an acquisition of assets (being the goods or materials).
+
+116. See Examples 5 and 6 (paragraphs 57 to 60), Appendix 1 of this Ruling.
+
+Acquisition of rights or some other asset
+
+117. If a trustee or investment manager enters into a contract to purchase an asset, for example, business real property of a related party, the substance of what the trustee or investment manager is purchasing from the related party is that business real property and not any contractual rights. That the contract may be subject to conditions such as obtaining finance, a building inspection report or a 'cooling off' period does not alter the fact that the substance of the transaction is the acquisition of that business real property. The acquisition of business real property does not contravene subsection 66(1) if the other requirements in the exception in paragraph 66(2)(b) are satisfied. That is, the fund has no more than the maximum number of[74] members and the business real property is acquired at market value.
+
+118. A trustee or investment manager may, however, enter into an agreement with a related party that gives the trustee or investment manager a right to acquire an asset (the underlying asset), such as business real property, at a fixed price at some future point in time but does not obligate the trustee or investment manager to acquire the underlying asset. The agreement may take the form of, for example, an option agreement.
+
+119. What the trustee or investment manager has sought to acquire is merely the right or option to acquire the underlying asset. A decision to acquire, or not acquire, the underlying asset is to be made at some later point in time. In this case the substance of the transaction is the acquisition of the right or option and not the acquisition of the underlying asset. If the underlying asset is subsequently acquired this is a separate acquisition.
+
+120. The acquisition of the right or option contravenes subsection 66(1) unless an exception applies.[75] The acquisition of the underlying asset from the related party contravenes subsection 66(1) unless an exception (for example, the business real property exception) applies.
+
+The acceptance of money by a trustee or investment manager
+
+121. Subsection 66(1) is not contravened if a trustee or investment manager accepts money from a related party.
+
+122. The term 'money' is not defined in the SISA and therefore takes its ordinary meaning.
+
+123. Case law indicates that the meaning of the term 'money' or 'moneys' depends upon the context in which it appears.[76] The Courts have variously stated that money is a medium of exchange and not an object of exchange;[77] and that money can be transferred by media such as electronic transfer.[78] Money can also refer to negotiable instruments such as bills of exchange and promissory notes.[79]
+
+124. In determining the meaning of 'money' in the SISA context the Commissioner adopts the contemporary approach to statutory interpretation[80] taking into account the context and the policy objectives and mischief[81] that the statute is intended to remedy. As has been noted by the Federal Court,[82] the object of the SISA is to make provision for the prudent management of regulated superannuation funds (such as SMSFs), and a superannuation fund is a fund that has the sole purpose of providing real monetary benefits, or benefits of a monetary value, to members on retirement, death or other cessation of employment.[83]
+
+125. In the Commissioner's view, it is consistent with the provision and SISA context that 'accepting money', for the purposes of the exception to 'acquire an asset' in subsection 66(5), contemplates an actual increase in the funds held by an SMSF.
+
+126. Consistent with the explanation above at paragraphs 110 to 113 of this Ruling, it is appropriate to focus on the substance of the transaction and whether funds have been transferred by the related party to the SMSF as opposed to focusing on the means by which the funds are transferred.
+
+127. It is therefore the Commissioner's view that there is no contravention of subsection 66(1) if funds are transferred by a related party to a trustee or investment manager in one of the following ways:
+
+•
+the related party makes a cash payment (either in Australian currency or foreign currency) to the trustee or investment manager;
+
+•
+the related party makes an electronic transfer of funds from the related party's account to an SMSF account;
+
+•
+the related party gives the trustee or investment manager a money order or bank cheque on which payment is made to the trustee or investment manager;
+
+•
+the related party gives the trustee or investment manager a personal cheque that is presented and honoured with cash (or its electronic equivalent);
+
+•
+the related party (as maker) issues a promissory note[84] payable at face value to the trustee or investment manager and it is honoured with cash (or its electronic equivalent).
+
+128. If a trustee or investment manager accepts a cheque or promissory note that is ultimately not honoured, or is not presented (if a cheque), or for which a demand is not made (if a promissory note), the trustee or investment manager has not accepted money as there has been no transfer of funds to the SMSF. It is also the Commissioner's view that in such cases the trustee or investment manager is unlikely to have acquired any other type of asset and, if no asset is acquired, there is no contravention of subsection 66(1).
+
+129. As a caution, it should be noted that accepting a promissory note may give rise to other compliance issues under the SISA or SISR. For example, if accepting a promissory note from a member or relative of a member (as maker of that note) means there is an amount owing by that member or relative to the SMSF section 65 may be contravened.[85]
+
+Collectable banknotes or coins
+
+130. There is a distinction between money used as legal tender, whether Australian currency or foreign currency, and money that has a value greater than its face value, such as collectable banknotes or coins.[86] It is the Commissioner's view that collectable banknotes or coins are objects (assets) in their own right and are not money in its usual sense.
+
+131. Therefore, the acquisition of collectable banknotes or coins by the trustee or investment manager from a related party contravenes subsection 66(1).
+
+Trade dollars or barter credits
+
+132. The Commissioner considers trade dollars or barter credits are assets other than money. Trade dollars or barter credits can generally only be exchanged for goods and services. As such, they are not unconditional, nor convertible to cash, and have no assigned monetary value. In addition, credit units arising from barter and counter trade transactions are not acceptable forms of payment for parties external to the bartering arrangements.
+
+133. Therefore, the acquisition of trade dollars or barter credits by the trustee or investment manager from a related party contravenes subsection 66(1).
+
+Monetary payments to third parties to extinguish a liability of the SMSF
+
+134. A monetary payment may be made by a related party of an SMSF to a third party to extinguish a liability the SMSF has with that third party. This does not contravene subsection 66(1). Although the monetary payment of a debt owed by the SMSF confers a financial or monetary advantage on the SMSF it does not result in an acquisition of an asset by the SMSF.[87]
+
+135. Even if the monetary payment could be regarded as acquired because it was constructively received by the SMSF, it is the acquisition of money and its acquisition could not in any case contravene subsection 66(1).
+
+A trustee or investment manager intentionally acquiring an asset from a related party
+
+136. Subsection 66(1) is only contravened if an asset (other than money or an asset covered by an exception in subsection 66(2) or (2A)) is intentionally acquired by a trustee or investment manager from a related party.[88]
+
+Whether it is the trustee or the investment manager or both that acquires the asset
+
+137. Whether it is the trustee or the investment manager or both who acquires an asset is not determined by who acquires legal ownership of the asset as this, as a matter of law, is always the trustee(s) of the SMSF. Rather it is a practical enquiry as to who, in the particular circumstances of the case, can be said to have accepted or obtained the asset for the SMSF.
+
+Whether the asset is acquired from a related party
+
+138. A 'related party' of an SMSF is:
+
+•
+a member of the SMSF;
+
+•
+a standard employer-sponsor of the SMSF; or
+
+•
+a Part 8 associate of either a member or standard employer-sponsor.
+
+Standard employer-sponsor of an SMSF
+
+139. A standard employer-sponsor of an SMSF is an employer who contributes (or would contribute) to an SMSF for the benefit of a member, wholly or partly under an arrangement between the employer and the trustee of the SMSF. It does not include an employer who contributes (or would contribute) to the SMSF only under an arrangement with the employee/member.[89]
+
+Part 8 associate of a member or a standard employer-sponsor
+
+140. The definition of 'Part 8 associate' in subsection 10(1) refers to the meaning given by Subdivision B of Division 1 of Part 8. The term is defined with reference to individuals, companies, and partnerships in sections 70B, 70C and 70D respectively.
+
+The asset is acquired from a related party
+
+141. As subsection 66(1) is only contravened if an asset is acquired from a related party, an issue may arise as to whether the asset was acquired from a related party or an unrelated party. If an asset is acquired from an unrelated party subsection 66(1) is not contravened even if the asset is acquired for the benefit of a member.
+
+142. Depending upon the asset in question, the ways in which an asset can be acquired by a trustee or investment manager from a related party include:
+
+•
+the trustee or investment manager acquires legal title or an equitable or beneficial interest from the related party; or
+
+•
+the related party creates rights in or, assigns, transfers or surrenders rights to, the trustee or investment manager under a contract.
+
+Whether the asset is intentionally acquired
+
+143. Subsection 66(1) expressly refers to intention in that it states that a trustee or investment manager must not intentionally acquire an asset from a related party. Subsection 66(4) makes a contravention of subsection 66(1) (and also subsection 66(3)) an offence for which the person is punishable on conviction by imprisonment for up to one year.[90]
+
+144. A trustee or investment manager may mean[91] to acquire an asset from a related party if the trustee or investment manager acquires an asset and is aware that the party from whom the asset is acquired is a related party of the SMSF.
+
+145. Circumstances that indicate that the trustee or investment manager means to acquire an asset from a related party include, but are not limited to, the following:
+
+•
+the SMSF is a small closely held fund such that the trustee or investment manager knows of the relationship between the SMSF and the person or entity from whom the asset is acquired;
+
+•
+the trustee or investment manager has had previous dealings with the person or entity from whom the asset is acquired;
+
+•
+the nature of the asset is such that it is likely to be acquired from a related party of the SMSF. For example, shares in a closely held family company.
+
+Certain requirements of the exceptions in subsections 66(2) and (2A) explained
+
+146. Certain assets can be intentionally acquired by a trustee or investment manager from a related party of the SMSF without contravening subsection 66(1). Subsection 66(1) does not apply to the acquisition of an asset if an exception in either subsection 66(2) or (2A) is satisfied.[92]
+
+147. As the exceptions in paragraphs 66(2)(a) and (b) and subsection 66(2A) require that the asset is acquired at market value, and subsection 66(2A) also requires that the acquisition of the asset constitutes an investment, an issue arises as to whether the exceptions can apply to the acquisition of an asset if the SMSF does not provide any consideration, for example, if the asset is a contribution to the SMSF.
+
+148. Taking into account the Government's retirement income policy and the mischief[93] that subsection 66(1) is intended to remedy, it would be anomalous if an SMSF could purchase an asset specified in an exception from a related party without contravening subsection 66(1) but accepting a contribution of that asset would contravene subsection 66(1). It is therefore the Commissioner's view that the exceptions can apply to the acquisition of an asset whether or not the SMSF provides consideration for that asset.
+
+Asset 'acquired at market value'
+
+149. For an exception in paragraph 66(2)(a) or (b), or an exception in subsection 66(2A), to apply to an acquisition of an asset, the asset must be acquired at market value.
+
+150. 'Market value' is defined in subsection 10(1) to mean:
+
+...the amount that a willing buyer of the asset could reasonably be expected to pay to acquire the asset from a willing seller if the following assumptions were made:
+
+(a)
+that the buyer and the seller dealt with each other at arm's length in relation to the sale;
+
+(b)
+that the sale occurred after proper marketing of the asset;
+
+(c)
+that the buyer and the seller acted knowledgeably and prudentially in relation to the sale.
+
+151. The market value requirement ensures that an excepted asset cannot be purchased by an SMSF for an amount greater than its market value as a means of extracting cash from the SMSF.[94] Therefore, if an asset is purchased by the SMSF and the consideration paid for the asset is equal to the asset's market value, the market value requirement is satisfied.
+
+152. If an asset is acquired for no consideration or for consideration less than its market value, it is the Commissioner's view that the market value requirement ensures that the acquisition of the asset is correctly reflected at its market value. Therefore, if the SMSF pays no consideration, or pays consideration that is less than the asset's market value, the market value requirement is satisfied if the asset is treated by the SMSF as an acquisition equal to the asset's market value to the extent that consideration was not given for it. For example, if business real property (with a market value of $200,000) is purchased by a trustee for $100,000 and the trustee treats the difference as a contribution of $100,000, the market value requirement is satisfied.
+
+153. In the case of an in specie distribution to the SMSF, the market value requirement is considered satisfied if it is treated by the SMSF as a distribution equal to the market value of the asset.
+
+154. It is the asset's market value at the time when it is acquired. The asset is acquired when the (trustee(s) of the) SMSF becomes the owner of the asset.
+
+Listed securities - paragraph 66(2)(a)
+
+155. Paragraph 66(2)(a) provides that subsection 66(1) does not prohibit the acquisition of an asset from a related party of an SMSF if the asset is a listed security acquired at market value.
+
+156. Subsection 66(5) defines 'listed security' as a security listed for quotation in the official list of:
+
+(a)
+a licensed market within the meaning of section 761A of the Corporations Act 2001 (Corporations Act);
+
+(b)
+an approved stock exchange within the meaning of section 470 of the Income Tax Assessment Act 1936 (ITAA 1936); or
+
+(c)
+a market exempted under section 791C of the Corporations Act.
+
+157. The Encyclopaedic Australian Legal Dictionary (LexisNexis) describes a 'security' as (emphasis added):
+
+A document issued by a government, semi-government body, statutory body, or public company in return for funds invested for a specified purpose by purchasers. Such securities are marketable. They include
+bonds, debentures, shares, units and interests in managed investment schemes
+...
+
+A licensed market or a market exempted from the licensing requirement
+
+158. Section 761A of the Corporations Act defines a 'licensed market' to mean:
+
+a financial market the operation of which is authorised by an Australian market licence.
+
+159. The meaning of a 'financial market' is set out in section 767A of the Corporations Act and, broadly, is a facility through which transactions involving financial products, including securities, are made. Under section 791A of the Corporations Act there is a general requirement for a person operating a financial market to be the holder of an Australian market license to operate legally as a financial market in Australia unless exempted under section 791C[95] of the Corporations Act from the licensing requirement. An example of a holder of an Australian market license is ASX Limited (formerly Australian Stock Exchange Limited and now operating under the brand Australian Securities Exchange).
+
+160. Therefore, examples of listed securities for the purposes of paragraph 66(2)(a) include shares, units bonds, debentures, options, interests in managed investment schemes or other securities that are listed on the Australian Securities Exchange.
+
+An approved stock exchange
+
+161. To determine whether a stock exchange is an approved stock exchange for the purposes of section 470 of the ITAA 1936 it is necessary to refer to Regulation 152I of the Income Tax Regulations 1936 and consequently Schedule 12 to the Regulations which lists approved stock exchanges for the purposes of section 470 of the ITAA 1936.
+
+162. Accordingly, an 'approved stock exchange' for the purpose of section 470 of the ITAA 1936 includes domestic stock exchanges such as the Australian Stock Exchange Limited, the Bendigo Stock Exchange Limited and the National Stock Exchange of Australia Limited, and also stock exchanges from many other countries, for example, the New York Stock Exchange and the London Stock Exchange.
+
+Certain in-house assets - subparagraph 66(2A)(a)(i)
+
+163. Subparagraph 66(2A)(a)(i) provides that subsection 66(1) does not prohibit the acquisition of an asset from a related party of the SMSF if the acquisition of the asset constitutes an investment that is an in-house asset within the meaning of subsection 71(1) and paragraphs 66(2A)(b) and (c) are satisfied.
+
+164. It is the Commissioner's view that the phrase:
+
+the acquisition of the asset constitutes an investment that is an in-house asset of the fund within the meaning of subsection 71(1)
+
+refers to those assets that are investments in a related party, or related trust, of the SMSF. This means that if a trustee or investment manager acquires an investment in a related party of the SMSF, or an investment in a related trust of the SMSF, the acquisition of that investment asset will not contravene subsection 66(1) (providing the requirements in paragraphs 66(2A)(b) and (c) are also met).[96]
+
+165. However, the exception in subparagraph 66(2A)(a)(i) does not apply if an asset that is leased to a related party prior to its acquisition is acquired and upon its acquisition the trustee(s) of the SMSF effectively takes over as lessor. It also does not apply to the acquisition of an asset that is immediately leased to a related party by the SMSF upon its acquisition.
+
+Alternative view
+
+166. The alternative view is that the exception in subparagraph 66(2A)(a)(i) applies more broadly to encompass assets subject to a lease or lease arrangement with a related party.
+
+167. This view could potentially allow a trustee or investment manager to acquire any asset that the SMSF effectively becomes the lessor of upon its acquisition if the lessee is a related party, so long as the acquisition did not result in the level of in-house assets exceeding the level permitted by Part 8 (that is, 5%). As leases expire or are terminated the trustee or investment manager could continually acquire assets of any type from a related party so long as the asset is subject to a lease or lease arrangement with a related party.
+
+168. It is informative that the only exception for the acquisition of real property from a related party is that provided for by paragraph 66(2)(b), namely business real property. To take a broader view of subparagraph 66(2A)(a)(i) may mean that any real property could be acquired from a related party so long as it was leased to a related party and did not exceed the 5% limit. The Commissioner does not consider that the section could have been intended to operate in that way.
+
+169. The view in the Ruling is consistent with the policy intent of subsection 66(1), which is to limit the types of assets that can be acquired by a trustee or investment manager from a related party to ensure both the accumulation and preservation of retirement savings income.[97]
+
+Paragraph 66(2A)(c) and the acquisition of assets under subparagraphs 66(2A)(a)(ii) to (iv) that are not in-house assets
+
+170. Paragraph 66(2A)(c) requires that the acquisition of an asset must not result in the level of in-house assets of the SMSF exceeding the 5% in-house asset limit permitted by Part 8.
+
+171. If the acquisition is of an asset covered by subparagraphs 66(2A)(a)(ii) to (iv) (that is, the asset is excluded from being an in-house asset), the acquisition of the asset cannot cause an SMSF to exceed the 5% permitted level of in-house assets. It therefore follows that paragraph 66(2A)(c) is satisfied with respect to the acquisition of such assets. The acquisition must, however, meet the market value requirement in paragraph 66(2A)(b).
+
+Acquisition of an interest in real property that is held as tenants in common with a related party
+
+172. There may be some doubt as to the operation of the exception provisions in the case of an acquisition of an asset consisting of an interest in real property that results in the trustee and a related party holding the property as tenants in common. This doubt arises because the absence of a reference to paragraph 71(1)(i) in subparagraph 66(2A)(a)(iv) may imply that the exceptions to subsection 66(1) do not apply at all to this type of acquisition. The Commissioner does not take this view.
+
+173. It is the Commissioner's view that a trustee or investment manager who acquires an interest in real property from a related party, which results in the trustee and a related party holding the property as tenants in common, does not contravene subsection 66(1) if the business real property exception in paragraph 66(2)(b) applies.
+
+174. However, if the interest acquired in real property is not an interest in business real property of the related party, the trustee or investment manager contravenes subsection 66(1) by acquiring the interest as there are no other exceptions that are relevant.
+
+### Appendix 3 - Detailed contents list
+
+175. The following is a detailed contents list for this Ruling:
+
+| Paragraph
+What this Ruling is about | 1
+Ruling | 5
+The scope of the phrase 'acquire an asset' | 8
+Characterising what is acquired | 17
+Performance of a service | 18
+Acquisition of rights or some other asset | 20
+The acceptance of money by a trustee or investment manager | 23
+Collectable banknotes or coins; trade dollars or barter credits | 28
+Monetary payments to third parties to extinguish a liability of the SMSF | 29
+A trustee or investment manager intentionally acquiring an asset from a related party | 30
+Whether it is the trustee or the investment manager or both that acquires the asset | 31
+Whether the asset is acquired from a related party | 32
+Whether the asset is intentionally acquired | 34
+Certain requirements of the exceptions in subsections 66(2) and (2A) explained | 36
+Asset 'acquired at market value' | 37
+Listed securities - paragraph 66(2)(a) | 42
+Certain in-house assets - subparagraph 66(2A)(a)(i) | 43
+Paragraph 66(2A)(c) and the acquisition of assets under subparagraphs 66(2A)(a)(ii) to (iv) that are not in-house assets | 45
+Acquisition of an interest in real property that is held as tenants in common with a related party | 46
+Funds to which the Ruling applies | 47
+Date of effect | 48
+Appendix 1 - Examples | 49
+Example 1 - acquisition of a post-dated personal cheque | 51
+Example 2 - acquisition of a promissory note | 52
+Example 3 - acquisition of collectable banknotes and coins | 53
+Example 4 - acquisition of trade dollars | 55
+Example 5 - performance of a service - goods insignificant in value and function | 57
+Example 6 - performance of a service - goods not insignificant in value and function | 59
+Example 7 - improvements made to an SMSF property | 61
+Example 8 - acquisition of listed shares | 62
+Example 9 - acquisition of listed units in a unit trust | 64
+Example 10 - acquisition of fixtures forming part of land that is business real property | 66
+Example 11 - acquisition of an asset not forming part of land that is business real property | 69
+Example 12 - acquisition of shares in a company that is a related party | 71
+Example 13 - acquisition of units in a related unit trust | 74
+Appendix 2 - Explanation | 77
+Background | 77
+Contraventions - audit requirements and consequences | 81
+Legislative context | 83
+Explanation | 86
+The scope of the phrase 'acquire an asset' | 88
+The meaning of 'asset' | 90
+The meaning of 'acquire' | 100
+Purchase of an asset | 104
+In specie contributions | 105
+Part purchase, part contribution of an asset | 108
+Other ways in which an asset may be acquired | 109
+Characterising the transaction as the acquisition of an asset | 110
+Performance of a service | 114
+Acquisition of rights or some other asset | 117
+The acceptance of money by a trustee or investment manager | 121
+Collectable banknotes or coins | 130
+Trade dollars or barter credits | 132
+Monetary payments to third parties to extinguish a liability of the SMSF | 134
+A trustee or investment manager intentionally acquiring an asset from a related party | 136
+Whether it is the trustee or the investment manager or both that acquires the asset | 137
+Whether the asset is acquired from a related party | 138
+Standard employer-sponsor of an SMSF | 139
+Part 8 associate of a member or a standard employer-sponsor | 140
+The asset is acquired from a related party | 141
+Whether the asset is intentionally acquired | 143
+Certain requirements of the exceptions in subsections 66(2) and (2A) explained | 146
+Asset 'acquired at market value' | 149
+Listed securities - paragraph 66(2)(a) | 155
+A licensed market or a market exempted from the licensing requirement | 158
+An approved stock exchange | 161
+Certain in-house assets - subparagraph 66(2A)(a)(i ) | 163
+Alternative view | 166
+Paragraph 66(2A)(c) and the acquisition of assets under subparagraphs 66(2A)(a)(ii) to (iv) that are not in-house assets | 170
+Acquisition of an interest in real property that is held as tenants in common with a related party | 172
+Appendix 3 - Detailed contents list | 175
+
+#### Footnotes
+
+[1]
+
+All legislative references in this Ruling are to the SISA unless otherwise indicated.
+
+[2]
+
+As defined in subsection 66(5).
+
+[3]
+
+To determine if an asset acquired is a contribution refer to Taxation Ruling TR 2010/1 Income tax: superannuation contributions.
+
+[4]
+
+For guidance in determining market value refer to - Market valuation for tax purposes (NAT 72508) available on the ATO website www.ato.gov.au.
+
+[5]
+
+Other provisions of the SISA and SISR that complement the prohibition in subsection 66(1) are outlined in paragraph 80 of this Ruling.
+
+[6]
+
+As defined in subsection 10(1).
+
+[7]
+
+Exceptions are provided for under subsections 66(2) and (2A) and are listed at paragraph 85 of this Ruling.
+
+[8]
+
+Whether there is a contravention of subsection 66(3) is considered having regard to all the circumstances surrounding the transactions as a whole: Lock v. FCT [2003] FCA 309 at [74]-[75].
+
+[9]
+
+It does not, however, include personal rights for example, the right to vote or the right to work.
+
+[10]
+
+See, for example, National Trustees Executors and Agency Co of Australasia Ltd v. FCT (1954) 91 CLR 540 at 583 (Kitto J).
+
+[11]
+
+Halsbury's Laws of Australia [315-1]; [355-10]; [355-12000] (LexisNexis).
+
+[12]
+
+Halsbury's Laws of Australia [315-1]; [315-10]; [315-15]; [315-40] (LexisNexis).
+
+[13]
+
+See also Taxation Ruling TR 2010/1 Income tax: superannuation contributions.
+
+[14]
+
+As to whether the acquisition of rights is the substance of the transaction see paragraphs 17 to 22 of this Ruling.
+
+[15]
+
+For further explanation on how an asset may be acquired see paragraphs 100 to 109 of this Ruling.
+
+[16]
+
+For further explanation see paragraphs 110 to 120 of this Ruling.
+
+[17]
+
+The exception in paragraph 66(2)(a) applies to the acquisition of an option if it is a listed security acquired at market value.
+
+[18]
+
+See explanation at paragraph 9 of this Ruling.
+
+[19]
+
+A promissory note that is issued by an unrelated third party at a discount from face value to raise finance is in the nature of a debt instrument. Typically such notes are traded on secondary markets. If a trustee or investment manager acquires such a promissory note from a related party the acquisition results in a contravention of subsection 66(1) on the basis that it is an asset but not the acceptance of money and there is no other relevant exception.
+
+[20]
+
+See further SMSFR 2008/1 Self Managed Superannuation Funds: giving financial assistance using the resources of a self managed superannuation fund to a member or relative of a member that is prohibited for the purposes of paragraph 65(1)(b) of the Superannuation Industry (Supervision) Act 1993.
+
+[21]
+
+Whether Australian or foreign banknotes or coins.
+
+[22]
+
+For further explanation see paragraphs 130 to 133 of this Ruling.
+
+[23]
+
+For further explanation see paragraphs 134 and 135 of this Ruling.
+
+[24]
+
+Even if subsection 66(1) is not contravened it may be necessary to consider subsection 66(3) as mentioned in paragraph 6 of this Ruling.
+
+[25]
+
+This term is further explained at paragraphs 138 to 142 of this Ruling.
+
+[26]
+
+As to whether the acquisition of rights is the substance of the transaction see paragraphs 17 to 22 of this Ruling.
+
+[27]
+
+See paragraph 85 of this Ruling for a summary of the exceptions.
+
+[28]
+
+For further explanation see paragraphs 147 and 148 of this Ruling.
+
+[29]
+
+Paragraphs 66(2)(a) and (b) and paragraph 66(2A)(b).
+
+[30]
+
+There are many other stock exchanges on which a security can be listed. This exception is further explained at paragraphs 155 to 162 of this Ruling.
+
+[31]
+
+A similar approach is also applicable to the exception covered by subparagraph 66(2A)(a)(ii).
+
+[32]
+
+As defined in section 17A.
+
+[33]
+
+A former SMSF is a fund that has ceased being a SMSF and has not appointed a registrable superannuation entity (RSE) licensee as trustee - see subsection 10(4).
+
+[34]
+
+For paragraph 65(1)(b) implications see Example 4 (paragraphs 105 to 107) of SMSFR 2008/1 Self Managed Superannuation Funds: giving financial assistance using the resources of a self managed superannuation fund to a member or relative of a member that is prohibited for the purposes of paragraph 65(1)(b) of the Superannuation Industry (Supervision) Act 1993.
+
+[35]
+
+Paragraph 66(2)(a).
+
+[36]
+
+Paragraph 66(2)(a).
+
+[37]
+
+See paragraphs 74 to 81 of SMSFR 2009/1 Self Managed Superannuation Funds: business real property for the purposes of the Superannuation Industry (Supervision) Act 1993.
+
+[38]
+
+Paragraph 66(2)(b). A former SMSF will not qualify for this exception if it has more than the maximum number of allowable members. From 1 July 2021 the maximum number of members increased from 4 to 6. See Treasury Laws Amendment (Self Managed Superannuation Funds) Act 2021.
+
+[39]
+
+See paragraphs 74 to 81 of SMSFR 2009/1 Self Managed Superannuation Funds: business real property for the purposes of the Superannuation Industry (Supervision) Act 1993.
+
+[40]
+
+Mr Pooley (along with Senator Sherry) attended the Senate Select Committee as a government representative: see the Chairman's comment to this effect at page 211 of the Senate Select Committee on Superannuation Hansard, Public Hearings Thursday 23 September and Friday 24 September 1993.
+
+[41]
+
+Now the Australian Prudential Regulation Authority (APRA).
+
+[42]
+
+Senate Select Committee on Superannuation Hansard, Public Hearings Thursday 23 September and Friday 24 September 1993, pp 174-175.
+
+[43]
+
+When enacted the provision only prohibited the acquisition of assets from a member of the fund or a relative of a member of the fund. The provision was later amended to prohibit the acquisition of assets from a related party (as defined in subsection 10(1)) of the fund.
+
+[44]
+
+See SMSFR 2008/2 Self Managed Superannuation Funds: the application of the sole purpose test in section 62 of the Superannuation Industry (Supervision) Act 1993 to the provision of benefits other than retirement, employment termination or death benefits.
+
+[45]
+
+See SMSFR 2008/1 Self Managed Superannuation Funds: giving financial assistance using the resources of a self managed superannuation fund to a member or relative of a member that is prohibited for the purposes of paragraph 65(1)(b) of the Superannuation Industry (Supervision) Act 1993.
+
+[46]
+
+See SMSFR 2009/2 Self Managed Superannuation Funds: the meaning of 'borrow money' or 'maintain an existing borrowing of money' for the purposes of section 67 of the Superannuation Industry (Supervision) Act 1993.
+
+[47]
+
+'In-house asset' is defined in section 71 and, subject to specific exceptions, is a loan to, or an investment in, a related party of the fund, or an investment in a related trust of the fund, or an asset of the fund subject to a lease or lease arrangement with a related party of the fund. For further explanation see SMSFR 2009/4 Self managed Superannuation Funds: the meaning of 'asset', 'loan', investment in', 'lease' and 'lease arrangement' in the definition of an 'in-house asset' in the Superannuation Industry (Supervision) Act 1993.
+
+[48]
+
+Section 35C.
+
+[49]
+
+Section 11A.
+
+[50]
+
+Section 129 requires an auditor of an SMSF to report contraventions immediately after forming the opinion that it is likely that a contravention may have occurred, may be occurring or may occur in relation to the SMSF.
+
+[51]
+
+Subsection 66(4).
+
+[52]
+
+See subsection 42A(5) in relation to SMSFs. The status of an SMSF as complying or non-complying for SISA purposes will also have consequences for the SMSF under the income tax law and other parts of the superannuation law. Also see Law Administration Practice Statements; PS LA 2006/17, PS LA 2006/18 and PS LA 2006/19.
+
+[53]
+
+As defined in subsection 66(5).
+
+[54]
+
+For further explanation see paragraphs 155 to 162 of this Ruling.
+
+[55]
+
+As defined in subsection 66(5). For an explanation of business real property see SMSFR 2009/1 Self Managed Superannuation Funds: business real property for the purposes of the Superannuation Industry (Supervision) Act 1993.
+
+[56]
+
+A former SMSF will not qualify for this exception if it had more than 4 members prior to 1 July 2021 or more than 6 members on or after that date.
+
+[57]
+
+The Commissioner of Taxation is the Regulator of Part 7 to the extent that the Part relates to SMSFs - paragraph 6(1)(e).
+
+[58]
+
+See SPR 2006/MB1 Self Managed Superannuation Funds (Assets Acquired on Marriage Breakdown) Determination 2006 which issued under paragraph 66(2)(d).
+
+[59]
+
+See paragraph 85 of this Ruling for a summary of the exceptions.
+
+[60]
+
+The Encyclopaedic Australian Legal Dictionary (LexisNexis) defines 'asset' as '[a]n item, whether tangible or intangible, having economic value to its owner which, if not already in the form of money, can be converted into money to the owner's benefit'.
+
+[61]
+
+Encyclopaedic Australian Legal Dictionary (LexisNexis).
+
+[62]
+
+See Note 1 to paragraph [315-1] Halsbury's Laws of Australia (LexisNexis).
+
+[63]
+
+[1896] 2 QB 179 at 183.
+
+[64]
+
+(1835) 5 LJ Ch 87 at 90.
+
+[65]
+
+Kelly v. Kelly (1990) 92 ALR 74 at 78.
+
+[66]
+
+See, for example, National Trustees Executors and Agency Co of Australasia Ltd v. FCT (1954) 91 CLR 540 at 583 (Kitto J).
+
+[67]
+
+Halsbury's Laws of Australia [315-1]; [355-10]; [355-12000] (LexisNexis).
+
+[68]
+
+Halsbury's Laws of Australia [315-1]; [315-10]; [315-15]; [315-40] (LexisNexis).
+
+[69]
+
+[2003] FCA 309 at [42].
+
+[70]
+
+(1991) 99 ALR 295 at 301.
+
+[71]
+
+As to whether the acquisition of rights is the substance of the transaction see paragraphs 110 to 120.
+
+[72]
+
+See paragraph 17 of the Supplementary Explanatory Memorandum Amendments and New Clauses to be Moved on Behalf of the Government accompanying the Superannuation Industry (Supervision) Bill 1993 which was enacted as the SISA. Note clause 62 was enacted as section 66 and subclause (4) of clause 62 as subsection 66(5).
+
+[73]
+
+Section 66 was subsequently amended with the effect that it applies more broadly to prohibit an SMSF acquiring assets from a 'related party'.
+
+[74]
+
+A former SMSF will not qualify for this exception if it had more than 4 members prior to 1 July 2021 or more than 6 members on or after that date.
+
+[75]
+
+The exception in paragraph 66(2)(a) applies to the acquisition of an option if it is a listed security acquired at market value.
+
+[76]
+
+Re Clark and Official Trustee in Bankruptcy (1998) 50 ALD 291 at 293.
+
+[77]
+
+See, for example, Health Insurance Commission v. Peverill (1994) 119 ALR 675, at 692 (Dawson J).
+
+[78]
+
+Sykes and Others v. Reserve Bank of Australia (1997) 151 ALR 579 at 594.
+
+[79]
+
+See the meaning of 'money' in the Encyclopaedic Australian Legal Dictionary (LexisNexis).
+
+[80]
+
+As expressed in CIC Insurance Ltd v. Bankstown Football Club Ltd (1997) 187 CLR 384 at 408 per Brennan CJ, Dawson, Toohey and Gummow JJ.
+
+[81]
+
+See paragraph 78 of this Ruling and the mischief that subsection 66(1) was intended to remedy as explained by Mr Pooley at the Senate Select Committee on Superannuation public hearings.
+
+[82]
+
+DFC of T (Superannuation) v. Fitzgeralds & Anor [2007] FCA 1602, [41].
+
+[83]
+
+Scott v. Commissioner of Taxation (No 2) (1966) 40 ALJR 265 at 272 per Windeyer J; Mahony v. Commissioner of Taxation (1967) 41 ALJR 232 at 232 per Kitto J; Walstern v. Federal Commissioner of Taxation [2003] FCA 1428 at paragraphs 53 and 54; (2003) 138 FCR 1 at 15-16.
+
+[84]
+
+A promissory note that is issued by an unrelated third party at a discount from face value to raise finance is in the nature of a debt instrument. Typically such notes are traded on secondary markets. If a trustee or investment manager acquires such a promissory note from a related party the acquisition results in a contravention of subsection 66(1) on the basis that it is an asset but not the acceptance of money and there is no other relevant exception.
+
+[85]
+
+See further SMSFR 2008/1 Self Managed Superannuation Funds: giving financial assistance using the resources of a self managed superannuation fund to a member or relative of a member that is prohibited for the purposes of paragraph 65(1)(b) of the Superannuation Industry (Supervision) Act 1993.
+
+[86]
+
+See, for example, Moss v. Hancock [1899] 2 QB 111, per Darling J at 116; Cusack v. Federal Commissioner of Taxation (2002) 120 FCR 520; [2002] FCA 1012; 2002 ATC 4676; 50 ATR 443.
+
+[87]
+
+Health Insurance Commission v. Peverill (1994) 119 ALR 675, at 691; Mutual Pools and Staff Pty Ltd v. Commonwealth of Australia (1994) 119 ALR 577.
+
+[88]
+
+Even if subsection 66(1) is not contravened it may be necessary to consider subsection 66(3) as mentioned in paragraph 6 of this Ruling.
+
+[89]
+
+Subsection 16(2).
+
+[90]
+
+Section 9A provides that Chapter 2 (except Part 2.5) of the Criminal Code applies to all offences against the SISA.
+
+[91]
+
+A person has intention with respect to conduct if he or she means to engage in that conduct: subsection 5.2(1) of the Criminal Code.
+
+[92]
+
+See paragraph 85 of this Ruling for a summary of the exceptions.
+
+[93]
+
+See paragraph 78 of this Ruling and the mischief that subsection 66(1) was intended to remedy as explained by Mr Pooley at the Senate Select Committee on Superannuation public hearings.
+
+[94]
+
+Paragraph 65(1)(b) and section 109 may also apply to such a transaction.
+
+[95]
+
+See the 'Register of entities under the Corporations (Low Volume Financial Markets) Exemption Notice 2003' available at www.asic.gov.au.
+
+[96]
+
+A similar approach is also applicable to the exception covered by subparagraph 66(2A)(a)(ii).
+
+[97]
+
+See paragraph 78 of this Ruling.
+
+SMSFR 2008/D2
+
+### References
+
+ATO references:
+
+NO 1-1PEO4SM
+
+ISSN: 1835-2138
+
+Related Rulings/Determinations:
+
+TR 2010/1
+
+SMSFR 2008/1
+
+SMSFR 2008/2
+
+SMSFR 2009/1
+
+SMSFR 2009/2
+
+SMSFR 2009/4
+
+SPR 2006/MB1
+
+Business Line:
+SEO
+
+Legislative References:
+
+Corporations Act 761A
+
+Corporations Act 767A
+
+Corporations Act 791A
+
+Corporations Act 791C
+
+Criminal Code Act 1995 Sch 1
+
+Criminal Code Act 1995 Ch 2
+
+Criminal Code Act 1995 5.2(1)
+
+ITAA 1936 470
+
+Income Tax Regulations 1936 Reg 152I
+
+Income Tax Regulations 1936 Sch 12
+
+SISA 6(1)(e)
+
+SISA 9A
+
+SISA 10(1)
+
+SISA 10(4)
+
+SISA 11A
+
+SISA 16(2)
+
+SISA 17A
+
+SISA 35C
+
+SISA 42A(5)
+
+SISA 62
+
+SISA 65
+
+SISA 65(1)(b)
+
+SISA 66
+
+SISA 66(1)
+
+SISA 66(2)
+
+SISA 66(2)(a)
+
+SISA 66(2)(b)
+
+SISA 66(2)(c)
+
+SISA 66(2)(d)
+
+SISA 66(2A)
+
+SISA 66(2A)(a)
+
+SISA 66(2A)(a)(i)
+
+SISA 66(2A)(a)(ii)
+
+SISA 66(2A)(a)(iii)
+
+SISA 66(2A)(a)(iv)
+
+SISA 66(2A)(b)
+
+SISA 66(2A)(c)
+
+SISA 66(3)
+
+SISA 66(4)
+
+SISA 66(5)
+
+SISA 67
+
+SISA Pt 8
+
+SISA Pt 8 Div 1 Subdiv B
+
+SISA Pt 8 Div 1 Subdiv D
+
+SISA Pt 8 Div 3
+
+SISA 70B
+
+SISA 70C
+
+SISA 70D
+
+SISA 71
+
+SISA 71(1)
+
+SISA 71(1)(b)
+
+SISA 71(1)(c)
+
+SISA 71(1)(d)
+
+SISA 71(1)(e)
+
+SISA 71(1)(f)
+
+SISA 71(1)(h)
+
+SISA 71(1)(i)
+
+SISA 71(1)(j)
+
+SISA 109
+
+SISA 129
+
+SISR Reg 13.12
+
+SISR Reg 13.13
+
+SISR Reg 13.14
+
+Case References:
+
+Allina Pty Ltd v. FC of T
+
+(1991) 28 FCR 203
+
+99 ALR 295
+
+91 ATC 4195
+
+21 ATR 1320
+
+CIC Insurance Ltd v. Bankstown Football Club Ltd
+
+(1997) 187 CLR 384
+
+[1997] HCA 2
+
+Cusack v. Federal Commissioner of Taxation
+
+(2002) 120 FCR 520
+
+[2002] FCA 1012
+
+2002 ATC 4676
+
+(2002) 50 ATR 443
+
+DFC of T (Superannuation) v. Fitzgeralds & Anor
+
+[2007] FCA 1602
+
+2007 ATC 5105
+
+69 ATR 834
+
+Health Insurance Commission v. Peverill
+
+(1994) 179 CLR 226
+
+119 ALR 675
+
+Jones v. Skinner
+
+(1835) 5 LJ Ch 87
+
+Kelly v. Kelly
+
+(1990) 92 ALR 74
+
+64 ALJR 234
+
+Lock v. FCT
+
+(2003) 129 FCR 1
+
+[2003] FCA 309
+
+(2003) 52 ATR 575
+
+Mahony v. Commissioner of Taxation
+
+(1967) 41 ALJR 232
+
+(1967) 14 ATD 519
+
+Minister for the Army v. Dalziel
+
+(1944) 68 CLR 261
+
+[1944] ALR 89
+
+(1944) 17 ALJ 405
+
+Moss v. Hancock
+
+[1899] 2 QB 111
+
+Mutual Pools and Staff Pty Ltd v. Commonwealth of Australia
+
+(1994) 179 CLR 155
+
+[1994] HCA 9
+
+(1994) 119 ALR 577
+
+94 ATC 4103
+
+27 ATR 357
+
+National Trustees Executors and Agency Co of Australasia Ltd v. FCT
+
+(1954) 91 CLR 540
+
+[1954] HCA 71
+
+Pacific Film Laboratories Pty Ltd v. Commissioner of Taxation (Cth)
+
+(1970) 121 CLR 154
+
+44 ALJR 376
+
+70 ATC 4104
+
+1 ATR 771
+
+Re Clark and Official Trustee in Bankruptcy
+
+(1998) 50 ALD 291
+
+Scott v. Commissioner of Taxation (No 2)
+
+(1966) 40 ALJR 265
+
+117 CLR 514
+
+Sykes and Others v. Reserve Bank of Australia
+
+(1997) 151 ALR 579
+
+The Smelting Company of Australia Ltd v. The Commissioners of Inland Revenue
+
+[1896] 2 QB 179
+
+Walstern v. Federal Commissioner of Taxation
+
+[2003] FCA 1428
+
+(2003) 138 FCR 1
+
+2003 ATC 5076
+
+54 ATR 423
+
+Other References:
+
+Halsbury's Laws of Australia, LexisNexis
+
+LexisNexis Encyclopaedic Australian Legal Dictionary http://www.lexisnexis.com/au/legal
+
+Market valuation for tax purposes - NAT 72508.
+
+PS LA 2006/17
+
+PS LA 2006/18
+
+PS LA 2006/19
+
+Senate Select Committee on Superannuation Hansard, Public Hearings Wednesday 22 - Friday 24 September 1993
+
+Supplementary Explanatory Memorandum to the Superannuation Industry (Supervision) Bill 1993
+
+SMSFR 2010/1 history
+
+| Date: | Version: | Change:
+| 25 February 2010 | Original ruling |
+You are here → | 15 November 2023 | Consolidated ruling | Addendum
+
+Copyright notice
+
+© Australian Taxation Office for the Commonwealth of Australia
+
+You are free to copy, adapt, modify, transmit and distribute material on this website as you wish (but not in any way that suggests the ATO or the Commonwealth endorses you or any of your services or products).
