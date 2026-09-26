@@ -4,6 +4,7 @@ from typing import Any, Generator, Optional
 from openai import OpenAI, AsyncOpenAI
 
 from app.config import settings
+from app.rag.retriever import retrieve_context
 
 logger = logging.getLogger(__name__)
 
@@ -142,7 +143,7 @@ def _resolve_proxy_settings(
 
 def generate_response(
     query: str,
-    context: str = "No additional context provided.",
+    context: Optional[str] = None,
     model: Optional[str] = None,
     system_prompt: str = SYSTEM_PROMPT_TEMPLATE,
     temperature: float = 0.2,
@@ -164,6 +165,9 @@ def generate_response(
         api_base=api_base,
         api_key=api_key,
     )
+
+    if context is None:
+        context = retrieve_context(query)
 
     user_prompt = get_formatted_prompt(
         query=query,
