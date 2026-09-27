@@ -17,6 +17,7 @@ class Settings:
     # LiteLLM Proxy / Unified LLM Interface
     LITELLM_API_BASE: str = os.getenv("LITELLM_API_BASE", "")  # e.g., "http://localhost:4000" or deployed proxy URL
     LITELLM_API_KEY: str = os.getenv("LITELLM_API_KEY", "")    # Virtual key or master key
+    LITELLM_MASTER_KEY: str = os.getenv("LITELLM_MASTER_KEY", "")
     LITELLM_MODEL: str = os.getenv("LITELLM_MODEL", "gemini/gemini-2-5-flash")
     LITELLM_FALLBACK_MODELS: list[str] = _csv_env("LITELLM_FALLBACK_MODELS", "gemini/gemini-2.5-flash")
 
