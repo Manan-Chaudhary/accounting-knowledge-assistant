@@ -258,6 +258,24 @@ pytest tests/db/test_env.py -v
 - `-s`: Print stdout messages (useful for viewing embedding dimensions and table lists)
 - `-k <pattern>`: Run tests matching a keyword (e.g. `pytest -k "connection"`)
 
+### Running evaluations
+
+The evaluation harness (`app/evaluation/harness.py`) runs each case in `benchmarks/questions.jsonl` through retrieval and generation, then scores retrieval (source hit, recall@k, MRR), citations (present, valid), refusal behaviour and latency. It calls providers directly through LiteLLM, so it needs `SUPABASE_DB_URL` (the synchronous URL) plus `GEMINI_API_KEY` or `GROQ_API_KEY` in `.env`.
+
+**Run one model, with an optional LLM judge and a report:**
+```bash
+python -m scripts.run_evaluation --model gemini/gemini-3.8-flash --judge gemini/gemini-3.8-flash --output benchmarks/results/gemini-3.8-flash.jsonl --report benchmarks/reports/gemini-3.8-flash.md
+```
+
+**Compare several runs in one report:**
+```bash
+python -m scripts.evaluation_report benchmarks/results/a.jsonl benchmarks/results/b.jsonl --output benchmarks/reports/comparison.md --title "Model comparison"
+```
+
+Add `--rescore` to recompute the deterministic metrics from the saved answers first (it updates the result files in place). Groq's free tier allows 8,000 tokens per minute, so a 22-case run with a Groq judge takes about 12 minutes; the harness waits out rate limits using the provider's retry hint.
+
+Metric definitions and how they map to `docs/EVALUATION.md` are in that document's section 4.1. The harness unit tests (`tests/evaluation/`) mock retrieval and generation, so they run without a database or API key.
+
 ### Troubleshooting
 
 **"Module not found: app"**

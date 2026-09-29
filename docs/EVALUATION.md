@@ -178,6 +178,25 @@ Not covered above because they are not per-answer correctness checks - they are 
 
 Coherence and role adherence only apply to multi-turn sessions and therefore need a small set of scripted multi-turn seed conversations in `benchmarks/questions.jsonl` (a `session_id` grouping several turns), not just the single-turn seeds in section 3. Latency and cost are not judged - they come straight off the MLflow trace span timings and token counts, the same way `citation_resolves` is deterministic rather than judged.
 
+### 4.1 What the harness implements today
+
+Added 2026-09-29 (Sprint 2 week 3). `app/evaluation/harness.py` scores each case, and `scripts/evaluation_report.py` aggregates runs into a markdown report. `--rescore` recomputes the deterministic metrics from saved answers, so a scoring change can be applied to earlier runs without calling the model again. The first full run is `benchmarks/reports/groq-gpt-oss-120b_2026-09-29.md`. The mapping to the metrics above:
+
+| Harness metric | Metric above | How it is computed | Gap to the full definition |
+|---|---|---|---|
+| `expected_source_hit` | Recall@10 | Any expected source file among the top-k retrieved files (k defaults to 6) | Source-file level, not chunk level; k is 6, not 10 |
+| `recall_at_k` | Recall@10 | Share of a case's `expected_sources` retrieved | Same |
+| `reciprocal_rank`, averaged to MRR | MRR | 1 / rank of the first retrieved chunk from an expected source | None |
+| `top1_source_hit` | Context precision | Is the top-ranked chunk from an expected source | Proxy only |
+| `citation_valid` | Citation resolution | Every `[n]` marker maps to a retrieved chunk | No URL liveness check yet |
+| `citation_format_standard` | Citation resolution | Citations use `[n]` rather than another marker style (for example `【6】`), which the chat UI would not render as a citation | None |
+| `refused`, `refusal_correct`, report-level refusal recall and precision | Refusal recall, refusal precision | Regex over the refusal templates in `PROMPTS.md` section 2, compared with `must_refuse` | Pattern-based; a judged `refusal_correct` should replace it |
+| `judge.correctness` (1-5) | Correctness | LLM judge against `expected_answer`, only when `--judge` is passed | Judge not yet validated against human labels (section 5) |
+| `judge.faithfulness` (1-5) | Faithfulness / groundedness | LLM judge against the retrieved context | Whole-answer score, not per-claim |
+| `latency_ms`, report P50/P95 | P50 / P95 latency | Wall-clock retrieval plus generation | Timed in the harness, not from a trace, and includes any provider retry or rate-limit wait, so free-tier runs overstate model latency |
+
+Not yet implemented: temporal precision, corpus routing and attribution, citation support, stale-premise correction as its own score (C3 cases are covered by the judge's correctness score), income-year scoping, and cost per query. The test set in `benchmarks/questions.jsonl` is limited to the four documents currently indexed in Supabase plus must-refuse and out-of-corpus cases; the SMSF questions in `benchmarks/questions.md` move into it as Corpus A grows.
+
 ## 5. LLM-as-judge
 
 **MLflow 3 GenAI evaluation** is the recommended harness - it unifies tracing, evaluation, and production monitoring rather than requiring a separate stack, and the same traces power the `/testing` page and production monitoring.
