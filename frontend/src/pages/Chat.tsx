@@ -199,7 +199,7 @@ export function Chat() {
   const { messages } = useChatMessages()
   const { sendMessage } = useChatInteract()
   const [draft, setDraft] = useState('')
-  const [selectedModel, setSelectedModel] = useState('gemini-3-8-flash')
+  const [selectedModel, setSelectedModel] = useState('groq-gpt-oss-120b')
 
   useEffect(() => {
     let unmounted = false

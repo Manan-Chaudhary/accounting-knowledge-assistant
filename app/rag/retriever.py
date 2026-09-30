@@ -11,7 +11,7 @@ from app.rag.embedder import embed_text
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_TOP_K = 6
+DEFAULT_TOP_K = 3
 
 
 @dataclass(frozen=True)
