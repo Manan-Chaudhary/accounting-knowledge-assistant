@@ -67,7 +67,10 @@ async def upload_document(file: UploadFile = File(...)):
         document_id = document["id"]
 
         # 3. Trigger n8n document-processing workflow
-        n8n_url = "http://n8n:5678/webhook/process-document"
+        n8n_url = os.getenv(
+            "N8N_WEBHOOK_URL",
+            "http://n8n:5678/webhook/process-document",
+        )
 
         async with httpx.AsyncClient(timeout=10.0) as client:
             n8n_response = await client.post(
