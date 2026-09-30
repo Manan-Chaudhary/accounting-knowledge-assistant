@@ -85,12 +85,11 @@ accounting-knowledge-assistant/
 │
 ├── tests/                  # Test scripts for database, embeddings, and connections
 │
-├── templates/              # Jinja2 templates — only login.html remains (real pages are React now)
-├── static/                 # Shared CSS (static/css/style.css, still used by templates/login.html)
+├── static/                 # Static fallback assets and styles
 ├── docs/                   # See the documentation table above
-│
+├── n8n/                    # Automated ingestion workflows
 ├── .env.example            # Documents every required env var, no real values
-├── Dockerfile
+├── docker-compose.yml      # Multi-service container orchestration
 ├── requirements.txt        # Pinned dependencies (Chainlit, pgvector, sentence-transformers)
 └── README.md
 ```
@@ -98,7 +97,7 @@ accounting-knowledge-assistant/
 ### Layer overview
 
 - **`frontend/`** — the React SPA. Owns every page except the prototype login screen; built with `npm run build` and served same-origin by FastAPI (see `app/main.py`'s catch-all route) so the chat session cookie stays same-origin per `docs/LOGIN-PAGE-REQUIREMENTS.md`.
-- **`routes/`** — HTTP handlers. `upload.py` and `auth.py` still serve real HTML/JSON; `home.py`/`testing.py` are retired stubs kept only so their routers stay importable. No business logic lives here directly — delegates to `services/`/`rag/`.
+- **`routes/`** — FastAPI backend routers handling authentication, document ingestion, and testing integration endpoints.No business logic lives here directly — delegates to `services/`/`rag/`.
 - **`chainlit/`** — the chat interface. `on_message` is where a user's question enters the RAG pipeline via `rag/`.
 - **`services/`** — logic that isn't HTTP- or chat-specific: document lifecycle and file storage. Keeps `routes/` from growing bloated handlers.
 - **`rag/`** — the pipeline itself, split by responsibility (embed → retrieve → generate) so each piece can be tested and swapped independently. `retriever.py` is the highest-value file in the repo: retrieval, not generation, is where RAG systems actually fail.
@@ -146,27 +145,25 @@ cp .env.example .env
 
 Required variables:
 ```bash
-# Database
-SUPABASE_DB_URL=postgresql://postgres:[password]@db.[project-ref].supabase.co:5432/postgres
+# Database connections
+SUPABASE_DB_URL=postgresql+psycopg2://postgres:[password]@[host]:5432/postgres
+CHAINLIT_DATABASE_URL=postgresql+asyncpg://postgres:[password]@[host]:5432/postgres
+SUPABASE_URL=https://<project-ref>.supabase.co
+SUPABASE_KEY=sb_secret_your_key_here
 
-# Embedding model
-HF_TOKEN=hf_your_token_here
-
-# LiteLLM Proxy / Unified LLM (Recommended)
-LITELLM_MASTER_KEY=sk-master-key-here
-LITELLM_API_BASE=http://localhost:4000
-LITELLM_API_KEY=sk-master-key-here
-LITELLM_MODEL=groq/openai/gpt-oss-120b
-LITELLM_FALLBACK_MODELS=gemini/gemini-2.5-flash
-
-# Provider API keys (loaded by LiteLLM Proxy)
-GROQ_API_KEY=your_groq_key
+# LLM Providers & LiteLLM Proxy
 GEMINI_API_KEY=your_gemini_key
+GROQ_API_KEY=your_groq_key
 OPENROUTER_API_KEY=your_openrouter_key
-OPENAI_API_KEY=your_openai_key
-```
+LITELLM_MASTER_KEY=sk-master-key-here
+LITELLM_API_BASE=http://alfa_focus_litellm:4000/
 
-See [`.env.example`](.env.example) for all variables and [`docs/DATABASE.md`](docs/DATABASE.md) for database setup.
+# Authentication & Session Security
+SESSION_SECRET=your_32_byte_session_secret
+CHAINLIT_AUTH_SECRET=your_chainlit_auth_secret
+CORS_ORIGINS=http://localhost:5173
+
+See .env.example for all variables and docs/DATABASE.md for database setup.
 
 ### Running the Application
 
@@ -218,12 +215,12 @@ docker compose down
 
 | Endpoint | URL | Description |
 |---|---|---|
-| Web Application (SPA) | `http://localhost:8000/home` | React SPA dashboard (Home) |
+| Web Application (SPA) | `http://localhost:8000/` | React SPA dashboard (Home) |
+| Sign In Portal | `http://localhost:8000/login` | Authentication portal |
+| Assistant Chat Interface | `http://localhost:8000/chat` | Integrated Chainlit chat assistant |
 | Document Management | `http://localhost:8000/docs` | Document upload and status management (React) |
-| Sign In | `http://localhost:8000/login` | Authentication portal |
 | Evaluation Suite | `http://localhost:8000/testing` | Benchmark testing runner |
-| Chat Interface | `http://localhost:8000/assistant` | Integrated Chainlit chat assistant |
-| API Docs | `http://localhost:8000/docs` (API) | FastAPI Swagger UI |
+| API Docs (Swagger UI) | `http://localhost:8000/docs` (API) | FastAPI OpenAPI documentation (Dev mode only) |
 | n8n Workflow Editor | `http://localhost:5678` | n8n automation console |
 
 For LAN access, replace `localhost` with your machine's local IP address.
@@ -287,6 +284,12 @@ Two additional rules for this project:
 - **A prompt change is a behaviour change.** Edit [`docs/PROMPTS.md`](docs/PROMPTS.md) and `generator.py` in the same PR, re-run the benchmark, and put the before/after per-class scores in the PR description.
 - **A schema change touches two files.** `models.py` and `schema.sql` must stay mirrored.
 
+## Development Guidelines
+
+1. **Root-Level Message Persistence**: In `app/chainlit/chainlit_app.py`, always ensure assistant messages are created with `parent_id=None` (`cl.Message(content=..., parent_id=None)`). This guarantees that step elements are saved as root conversational bubbles rather than orphan child items.
+2. **Database Schema Synchronization**: Any structural updates in Supabase must be kept strictly consistent across `app/db/models.py` and `app/db/schema.sql`.
+3. **Environment Security**: Never commit real credentials to GitHub. Always update `.env.example` with empty keys when adding new environment configurations.
+
 ## Known gaps in the scaffold
 
 Tracked here so nobody assumes they work:
@@ -304,47 +307,43 @@ n8n runs as a separate service alongside the FastAPI/Chainlit application using 
 
 To initialise and run the shared workflow in a fresh local environment:
 
-1. **Start the containers**:
-   ```bash
-   docker compose up --build
+  1. **Start the containers**:
+     ```bash
+     docker compose up --build
+     ```
 
-### Start the environment
+  2. **Open n8n**:
+     Navigate to `http://localhost:5678` in your browser. (Complete the one-time owner setup if prompted).
 
-```bash
-docker compose up --build
-```
-Open n8n:
-Navigate to http://localhost:5678 in your browser. (Complete the one-time owner setup if prompted).
+  Import the shared workflow:
 
-Import the shared workflow:
+  In the n8n left navigation bar, go to Workflows.
 
-In the n8n left navigation bar, go to Workflows.
+  Click the Add Workflow button (or the three dots menu ... in the top right).
 
-Click the Add Workflow button (or the three dots menu ... in the top right).
+  Select Import from File.
 
-Select Import from File.
+  Choose the exported file from the repository:
 
-Choose the exported file from the repository:
+  n8n/workflows/fastapi-connectivity-test.json
 
-n8n/workflows/fastapi-connectivity-test.json
+  Execute and Verify:
 
-Execute and Verify:
+  Click Save and ensure the workflow is active.
 
-Click Save and ensure the workflow is active.
+  Click Test step or trigger the webhook to verify the connection between n8n and FastAPI.
 
-Click Test step or trigger the webhook to verify the connection between n8n and FastAPI.
+  Confirm that the execution log returns the expected JSON response:
 
-Confirm that the execution log returns the expected JSON response:
+  {
+    "status": "ok",
+    "message": "FastAPI successfully reached from n8n"
+  }
 
-{
-  "status": "ok",
-  "message": "FastAPI successfully reached from n8n"
-}
+  Services:
 
-Services:
-
-- FastAPI / Chainlit: `http://localhost:8000`
-- n8n editor: `http://localhost:5678`
+  - FastAPI / Chainlit: `http://localhost:8000`
+  - n8n editor: `http://localhost:5678`
 
 ### FastAPI connectivity test
 
