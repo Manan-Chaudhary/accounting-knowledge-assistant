@@ -32,10 +32,8 @@ async def header_auth_callback(headers) -> Optional[cl.User]:
         logger.warning("user_from_request_headers error: %s", e)
 
     if not user:
-        user = cl.User(
-            identifier="jackliu0165@gmail.com",
-            metadata={"role": "team", "provider": "fallback"}
-        )
+        logger.warning("Chainlit authentication failed: no authenticated FastAPI session.")
+        return None
 
     if db_url:
         try:
