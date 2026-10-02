@@ -30,6 +30,7 @@ REFUSAL_PATTERNS = [
     r"(could|can) ?(not|n't|n’t) (find|locate)",
     r"can(no|'|’)t (confirm|verify)",
     r"(unable|not able) to (locate|confirm|verify|find|provide)",
+    r"can(no|'|’)t (provide|state|give|share)",
     r"no (supporting|relevant) (source|authority)",
     r"(do|does) not (appear|contain)[^.]{0,60}(context|sources)",
     r"not (going|able) to answer",
@@ -472,8 +473,13 @@ def run_suite(
     model: str = DEFAULT_MODEL,
     top_k: int = DEFAULT_TOP_K,
     judge_model: str | None = None,
+    resume: bool = False,
 ) -> list[dict[str, Any]]:
-    """Run all evaluation cases and save each result incrementally."""
+    """Run all evaluation cases and save each result incrementally.
+
+    With resume=True, cases already saved without an error are kept and only
+    the missing or failed ones are run.
+    """
 
     cases = load_cases(questions_path)
 
@@ -484,10 +490,25 @@ def run_suite(
     output = Path(output_path)
     output.parent.mkdir(parents=True, exist_ok=True)
 
-    # Start a fresh result file for this run.
-    output.write_text("", encoding="utf-8")
+    done: dict[str, dict[str, Any]] = {}
+    if resume and output.exists():
+        for line in output.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                saved = json.loads(line)
+                if not saved.get("error"):
+                    done[saved["id"]] = saved
+
+    # Rewrite the file with only the kept results; a fresh run keeps none.
+    with output.open("w", encoding="utf-8") as file:
+        for saved in done.values():
+            file.write(json.dumps(saved, ensure_ascii=False) + "\n")
 
     for index, case in enumerate(cases, start=1):
+        if case["id"] in done:
+            print(f"[{index}/{len(cases)}] Skipping {case['id']} (already saved)")
+            results.append(done[case["id"]])
+            continue
+
         print(
             f"[{index}/{len(cases)}] Running "
             f"{case['id']}: {case['question']}"

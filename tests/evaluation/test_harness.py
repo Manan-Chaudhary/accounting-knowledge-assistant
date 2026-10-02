@@ -147,6 +147,7 @@ def test_is_refusal_matches_prompt_templates():
         "so I am not going to answer it."
     )
     assert harness.is_refusal("That figure is specific to the member.")
+    assert harness.is_refusal("I cannot provide this member's personal transfer balance cap.")
     assert not harness.is_refusal("For 2026-27 the cap is $2.1 million [1].")
 
 
@@ -247,6 +248,48 @@ def test_run_suite_records_provider_failure(monkeypatch, tmp_path):
     assert results[0]["metrics"]["provider_available"] is False
     assert results[0]["run_id"]
     assert len(output.read_text(encoding="utf-8").splitlines()) == 1
+
+
+def test_run_suite_resume_keeps_saved_and_retries_failed(monkeypatch, tmp_path):
+    import json
+
+    questions = tmp_path / "cases.jsonl"
+    questions.write_text(
+        '{"id": "A", "question": "Q?"}\n'
+        '{"id": "B", "question": "Q?"}\n'
+        '{"id": "C", "question": "Q?"}\n',
+        encoding="utf-8",
+    )
+    output = tmp_path / "results.jsonl"
+    output.write_text(
+        json.dumps({"id": "A", "answer": "kept"}) + "\n"
+        + json.dumps({"id": "B", "error": "quota"}) + "\n",
+        encoding="utf-8",
+    )
+
+    ran = []
+
+    def fake_run_case(case, **kwargs):
+        ran.append(case["id"])
+        return {
+            "id": case["id"],
+            "answer": "new",
+            "latency_ms": 1,
+            "metrics": {
+                "expected_source_hit": None,
+                "citation_valid": None,
+                "refusal_correct": None,
+            },
+        }
+
+    monkeypatch.setattr(harness, "run_case", fake_run_case)
+
+    results = harness.run_suite(questions, output, model="m", resume=True)
+
+    assert ran == ["B", "C"]
+    assert [r["id"] for r in results] == ["A", "B", "C"]
+    assert results[0]["answer"] == "kept"
+    assert len(output.read_text(encoding="utf-8").splitlines()) == 3
 
 
 def test_api_key_follows_model_prefix(monkeypatch):

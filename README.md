@@ -274,7 +274,11 @@ python -m scripts.evaluation_report benchmarks/results/a.jsonl benchmarks/result
 
 Add `--rescore` to recompute the deterministic metrics from the saved answers first (it updates the result files in place). Groq's free tier allows 8,000 tokens per minute, so a 22-case run with a Groq judge takes about 12 minutes; the harness waits out rate limits using the provider's retry hint.
 
-Metric definitions and how they map to `docs/EVALUATION.md` are in that document's section 4.1. The harness unit tests (`tests/evaluation/`) mock retrieval and generation, so they run without a database or API key.
+Each case is saved as it finishes. If a run is interrupted (laptop closed, quota hit), repeat the same command with `--resume`: cases already saved without an error are kept, and only the missing or failed ones are run. Without `--resume`, the output file is overwritten.
+
+`SUPABASE_DB_URL` must use a synchronous driver (`postgresql+psycopg2://`). The asyncpg URL used for Chainlit makes every retrieval fail with `MissingGreenlet`.
+
+Metric definitions and how they map to `docs/EVALUATION.md` are in that document's section 4.1. Results so far (three Groq models, 22 cases) are in section 4.2 and `benchmarks/reports/comparison_2026-10-01.md`. The harness unit tests (`tests/evaluation/`) mock retrieval and generation, so they run without a database or API key.
 
 ### Troubleshooting
 

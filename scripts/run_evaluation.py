@@ -46,6 +46,12 @@ def main():
         help="Write a markdown report for this run to the given path.",
     )
 
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Keep cases already saved in --output and run only the missing or failed ones.",
+    )
+
     args = parser.parse_args()
 
     results = run_suite(
@@ -54,6 +60,7 @@ def main():
         model=args.model,
         top_k=args.top_k,
         judge_model=args.judge,
+        resume=args.resume,
     )
 
     print()
