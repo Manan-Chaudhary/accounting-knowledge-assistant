@@ -183,6 +183,7 @@ def generate_response(
     client = OpenAI(
         base_url=resolved_base,
         api_key=resolved_key,
+        max_retries=10,
     )
 
     try:

@@ -126,7 +126,7 @@ async def on_message(message: cl.Message):
         reply_text = await cl.make_async(generate_response)(
             message.content,
             model=selected_model,
-            timeout=45,
+            timeout=120,
             max_tokens=1200,
         )
 
