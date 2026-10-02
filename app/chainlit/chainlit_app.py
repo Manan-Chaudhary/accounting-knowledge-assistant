@@ -32,10 +32,8 @@ async def header_auth_callback(headers) -> Optional[cl.User]:
         logger.warning("user_from_request_headers error: %s", e)
 
     if not user:
-        user = cl.User(
-            identifier="jackliu0165@gmail.com",
-            metadata={"role": "team", "provider": "fallback"}
-        )
+        logger.warning("No authenticated session resolved from headers.")
+        return None
 
     if db_url:
         try:
@@ -109,27 +107,26 @@ async def on_chat_resume(thread: ThreadDict):
 
 @cl.on_message
 async def on_message(message: cl.Message):
+    """Store messages, maintain conversation context, and feed to generator."""
     history: List[Dict[str, str]] = cl.user_session.get(CHAT_HISTORY_KEY, [])
     history.append({"role": "user", "content": message.content})
 
-   
     settings = cl.user_session.get("settings") or {}
     selected_model = settings.get("Model", "gemini-3-8-flash")
-    logger.info("Generating response with model: %s", selected_model)
 
     try:
         reply_text = await cl.make_async(generate_response)(
-            message.content,
+            query=message.content,
+            history=history,  
             model=selected_model,
         )
 
         history.append({"role": "assistant", "content": reply_text})
         cl.user_session.set(CHAT_HISTORY_KEY, history)
 
-        
         msg = cl.Message(content=reply_text, parent_id=None)
         await msg.send()
 
     except Exception as e:
         logger.exception("generate_response error: %s", e)
-        await cl.Message(content=f"⚠️ error message: {str(e)}", parent_id=None).send()
+        await cl.Message(content=f"error message: {str(e)}", parent_id=None).send()
