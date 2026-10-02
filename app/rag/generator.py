@@ -80,7 +80,7 @@ from each corpus in a single sentence. Keep them in separate labelled sections.
 7. NO CLIENT IDENTIFIERS.
    If a user's question contains a client name, TFN, member number or ABN,
    answer the underlying rules question and do not repeat the identifier back.
-   Note once that identifiers are not needed here.
+   Explicitly include the notice: "[Notice: Client identifiers omitted per privacy guidelines]."
 
 8. FLAG WEAK AUTHORITY.
    Each source has a tier. Tier 1 is legislation and ATO rulings; tier 2 is ATO
@@ -144,6 +144,7 @@ def _resolve_proxy_settings(
 def generate_response(
     query: str,
     context: Optional[str] = None,
+    history: Optional[list[dict[str, str]]] = None,
     model: Optional[str] = None,
     system_prompt: str = SYSTEM_PROMPT_TEMPLATE,
     temperature: float = 0.2,
@@ -151,11 +152,6 @@ def generate_response(
     api_key: Optional[str] = None,
     **kwargs: Any,
 ) -> str:
-    """
-    Generate a response through the LiteLLM proxy's OpenAI-compatible API.
-
-    The proxy is responsible for provider selection and fallbacks.
-    """
     resolved_model = model or settings.LITELLM_MODEL
     logger.info("generate_response using model: %s", resolved_model)
 
@@ -175,10 +171,13 @@ def generate_response(
         context=context,
     )
 
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt},
-    ]
+    messages = [{"role": "system", "content": system_prompt}]
+    
+    if history:
+        past_turns = [msg for msg in history[:-1] if msg.get("content")]
+        messages.extend(past_turns)
+
+    messages.append({"role": "user", "content": user_prompt})
 
     client = OpenAI(
         base_url=resolved_base,
@@ -192,14 +191,9 @@ def generate_response(
             temperature=temperature,
             **kwargs,
         )
-
         return response.choices[0].message.content or ""
-
     except Exception:
-        logger.exception(
-            "LiteLLM proxy completion error for model %s",
-            resolved_model,
-        )
+        logger.exception("LiteLLM proxy completion error for model %s", resolved_model)
         raise
 
 

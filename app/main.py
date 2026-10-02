@@ -17,6 +17,10 @@ from app.routes.testing import router as testing_router
 from app.routes.home import router as home_router
 from app.routes.integration import router as integration_router
 
+from app.routes.chat_history import router as chat_history_router
+
+
+
 logger = logging.getLogger(__name__)
 
 FRONTEND_DIST = "frontend/dist"
@@ -95,7 +99,7 @@ app.include_router(upload_router)
 app.include_router(testing_router)
 # app.include_router(home_router)
 app.include_router(integration_router)
-
+app.include_router(chat_history_router)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 if settings.CHAINLIT_AUTH_SECRET:

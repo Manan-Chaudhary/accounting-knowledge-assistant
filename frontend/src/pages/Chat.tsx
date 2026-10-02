@@ -1,6 +1,7 @@
 import { useChatData, useChatInteract, useChatMessages, useChatSession } from '@chainlit/react-client'
 import { type FormEvent, useEffect, useState } from 'react'
 import { Layout } from '../components/Layout'
+import { useSearchParams } from 'react-router-dom'
 
 // --- Assistant message parsing -------------------------------------------
 //
@@ -24,7 +25,6 @@ import { Layout } from '../components/Layout'
 // as a plain labelled paragraph (e.g. "Legal position"). Content with no
 // headings at all just renders as plain text, so this is backwards
 // compatible with the current backend.
-
 type ContentBlock =
   | { kind: 'paragraph'; title: string | null; text: string }
   | { kind: 'callout'; title: string; text: string }
@@ -81,7 +81,6 @@ function parseAssistantContent(raw: string): ContentBlock[] {
 }
 
 function sourceButtonLabel(label: string): string {
-  // "ATO · Concessional contributions cap" -> "Open ATO"
   const firstSegment = label.split(/[·|-]/)[0].trim()
   return `Open ${firstSegment || 'link'}`
 }
@@ -138,9 +137,7 @@ function getCleanMessages(messages: any[]): any[] {
 }
 
 function AssistantCard({ content }: { content: string }) {
-  if (!content || !content.trim()) {
-    return null
-  }
+  if (!content || !content.trim()) return null
 
   const { badge, content: body } = extractBadge(content)
   const blocks = parseAssistantContent(body)
@@ -194,37 +191,48 @@ function AssistantCard({ content }: { content: string }) {
 }
 
 export function Chat() {
-  const { connect, disconnect, session } = useChatSession()
+  const [searchParams] = useSearchParams()
+  const threadId = searchParams.get('threadId') || undefined
+
+  const { connect, disconnect } = useChatSession()
   const { connected, loading, error, disabled } = useChatData()
   const { messages } = useChatMessages()
   const { sendMessage } = useChatInteract()
+
+  // 关键：存放从数据库抓取回来的历史消息状态
+  const [historyMessages, setHistoryMessages] = useState<any[]>([])
   const [draft, setDraft] = useState('')
   const [selectedModel, setSelectedModel] = useState('gemini-3-8-flash')
 
   useEffect(() => {
     let unmounted = false
-    if (session) return
 
-    // Exchange the FastAPI aka_session cookie for a Chainlit access_token JWT
-    // cookie before the socket connects. Chainlit's header_auth_callback reads
-    // the aka_session cookie from the request headers on this call and responds
-    // by setting its own HttpOnly access_token cookie. The WebSocket upgrade
-    // that follows then presents that cookie to authenticate itself.
+    // 1. 如果当前 URL 带有 threadId，主动去数据库拉取以前的对话记录
+    if (threadId) {
+      fetch(`/api/chat/threads/${threadId}/messages`, { credentials: 'include' })
+        .then((res) => (res.ok ? res.json() : []))
+        .then((data) => {
+          if (!unmounted) {
+            setHistoryMessages(data)
+          }
+        })
+        .catch((err) => console.error('Failed to load thread messages:', err))
+    } else {
+      setHistoryMessages([])
+    }
+
+    // 2. 鉴权并重连 WebSocket
     fetch('/chat/auth/header', {
       method: 'POST',
       credentials: 'include',
     })
       .then((res) => {
-        if (!res.ok) {
-          console.error('Chainlit header auth failed:', res.status)
-        }
+        if (!res.ok) console.error('Chainlit header auth failed:', res.status)
       })
-      .catch((err) => {
-        console.error('Chainlit header auth error:', err)
-      })
+      .catch((err) => console.error('Chainlit header auth error:', err))
       .finally(() => {
         if (!unmounted) {
-          connect({ userEnv: {} })
+          connect({ userEnv: {}, threadId })
         }
       })
 
@@ -232,15 +240,13 @@ export function Chat() {
       unmounted = true
       disconnect()
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [threadId])
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault()
     const content = draft.trim()
     if (!content) return
-    console.log('=== SENDING MESSAGE ===')
-    console.log('=== SELECTED MODEL ===', selectedModel)
+
     sendMessage(
       {
         id: crypto.randomUUID(),
@@ -257,7 +263,8 @@ export function Chat() {
     setDraft('')
   }
 
-  const allMessages = getCleanMessages(messages)
+  // 关键：将数据库取回的历史消息与本次连接产生的新消息合并展示
+  const allMessages = getCleanMessages([...historyMessages, ...messages])
 
   return (
     <Layout badge="Capstone Prototype">
