@@ -178,6 +178,56 @@ Not covered above because they are not per-answer correctness checks - they are 
 
 Coherence and role adherence only apply to multi-turn sessions and therefore need a small set of scripted multi-turn seed conversations in `benchmarks/questions.jsonl` (a `session_id` grouping several turns), not just the single-turn seeds in section 3. Latency and cost are not judged - they come straight off the MLflow trace span timings and token counts, the same way `citation_resolves` is deterministic rather than judged.
 
+### 4.1 What the harness implements today
+
+Added 2026-09-29 (Sprint 2 week 3). `app/evaluation/harness.py` scores each case, and `scripts/evaluation_report.py` aggregates runs into a markdown report. `--rescore` recomputes the deterministic metrics from saved answers, so a scoring change can be applied to earlier runs without calling the model again. The first full run is `benchmarks/reports/groq-gpt-oss-120b_2026-09-29.md`. The mapping to the metrics above:
+
+| Harness metric | Metric above | How it is computed | Gap to the full definition |
+|---|---|---|---|
+| `expected_source_hit` | Recall@10 | Any expected source file among the top-k retrieved files (k defaults to 6) | Source-file level, not chunk level; k is 6, not 10 |
+| `recall_at_k` | Recall@10 | Share of a case's `expected_sources` retrieved | Same |
+| `reciprocal_rank`, averaged to MRR | MRR | 1 / rank of the first retrieved chunk from an expected source | None |
+| `top1_source_hit` | Context precision | Is the top-ranked chunk from an expected source | Proxy only |
+| `citation_valid` | Citation resolution | Every `[n]` marker maps to a retrieved chunk | No URL liveness check yet |
+| `citation_format_standard` | Citation resolution | Citations use `[n]` rather than another marker style (for example `【6】`), which the chat UI would not render as a citation | None |
+| `refused`, `refusal_correct`, report-level refusal recall and precision | Refusal recall, refusal precision | Regex over the refusal templates in `PROMPTS.md` section 2, compared with `must_refuse` | Pattern-based; a judged `refusal_correct` should replace it |
+| `judge.correctness` (1-5) | Correctness | LLM judge against `expected_answer`, only when `--judge` is passed | Judge not yet validated against human labels (section 5) |
+| `judge.faithfulness` (1-5) | Faithfulness / groundedness | LLM judge against the retrieved context | Whole-answer score, not per-claim |
+| `latency_ms`, report P50/P95 | P50 / P95 latency | Wall-clock retrieval plus generation | Timed in the harness, not from a trace, and includes any provider retry or rate-limit wait, so free-tier runs overstate model latency |
+
+Not yet implemented: temporal precision, corpus routing and attribution, citation support, stale-premise correction as its own score (C3 cases are covered by the judge's correctness score), income-year scoping, and cost per query. The test set in `benchmarks/questions.jsonl` is limited to the four documents currently indexed in Supabase plus must-refuse and out-of-corpus cases; the SMSF questions in `benchmarks/questions.md` move into it as Corpus A grows.
+
+### 4.2 Model runs to date (2026-10-01)
+
+Three models ran the same 22 cases with the same retrieval (top 6) and the same judge, `groq/openai/gpt-oss-120b`. All tables are in `benchmarks/reports/comparison_2026-10-01.md`; each run also has its own report and result file under `benchmarks/`. Scores below were recomputed with `--rescore` on 2026-10-01 after the refusal fix described at the end of this section.
+
+| Metric | gpt-oss-120b | qwen3.8-27b | gpt-oss-20b |
+|---|---|---|---|
+| Source hit / MRR | 100% / 0.96 | 100% / 0.96 | 100% / 0.96 |
+| Citation valid | 94% | 85% | 94% |
+| Citation format `[n]` | 88% | 100% | 69% |
+| Refusal recall / precision | 100% / 86% | 100% / 100% | 83% / 83% |
+| Judge correctness / faithfulness (1-5) | 4.38 / 4.69 | 4.19 / 4.38 | 4.38 / 4.12 |
+| P50 / P95 latency | 30.0s / 44.8s | 32.0s / 152.1s | 29.4s / 36.2s |
+
+What the runs show, checked against the raw answers in the result files:
+
+- **Retrieval does not separate the models.** It is identical because it does not depend on the model. Every difference above is in generation.
+- **Citation discipline is the real difference.** qwen always uses `[n]` but cites passages that were not retrieved in three answers (EVAL-007 `[7]`, EVAL-014 `[16]`, EVAL-015 `[7]`). gpt-oss-20b uses a non-standard marker such as `【2】` in about a third of answers, which the chat UI would not render as a citation.
+- **EVAL-015 (stale FBT premise):** qwen corrected the rate to 47% but multiplied wrongly and stated $475.82. The correct figure from its own inputs ($1,100 x 2.0802 x 47%) is $1,075.46.
+- **EVAL-008 fails on all three models.** The two gpt-oss models decline, and qwen answers with a wrong figure. The judge noted that the retrieved context does not contain the turnover threshold, so check the corpus before blaming the models.
+- **EVAL-020 (fabricated TR 2024/8):** all three models declined to confirm it.
+- **EVAL-021:** gpt-oss-20b is scored as a missed refusal. On reading, it did not confirm the determination and said companies cannot use the discount, which the case's `expected_outcome` allows. The score stays as it is because refusal scoring is pattern-based (section 4.1), so gpt-oss-20b's refusal recall of 83% is understated.
+
+Limits on these numbers:
+
+- 22 cases, mostly CGT and FBT. A one-case difference moves a rate by about 4 points, so only large gaps mean anything.
+- gpt-oss-120b is both a candidate and the judge, so its judged scores are self-judged. The judge is not validated against human labels (section 5).
+- Latency includes provider rate-limit waits on the Groq free tier, so P95 mostly measures throttling, not the model. qwen's 152s is the clearest case.
+- **Gemini 3.8 Flash was not compared.** Its free tier allows 20 requests per day for that model. The attempt on 2026-10-01 recorded 503 and 429 errors on 7 of the first 9 cases and was discarded. Re-run it with `--resume` after the quota resets or with a paid key.
+
+Scoring fix made on 2026-10-01: `is_refusal` did not match "I cannot provide...", so a correct qwen refusal on EVAL-017 was scored as a miss and its refusal recall read 83%. The wording is now matched and covered by a test. The gpt-oss-120b results were unchanged by the fix.
+
 ## 5. LLM-as-judge
 
 **MLflow 3 GenAI evaluation** is the recommended harness - it unifies tracing, evaluation, and production monitoring rather than requiring a separate stack, and the same traces power the `/testing` page and production monitoring.
