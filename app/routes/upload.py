@@ -5,7 +5,7 @@ from fastapi import APIRouter, UploadFile, File, HTTPException
 from supabase import create_client, Client
 import httpx
 
-router = APIRouter()
+router = APIRouter(prefix="/api")
 
 # /upload (GET, HTML) is now served by the React app
 # (frontend/src/pages/Documents.tsx), retired here once the React page was
@@ -107,6 +107,114 @@ def get_document_status(document_id: int):
         if not res.data:
             raise HTTPException(status_code=404, detail="Document not found")
         return res.data[0]
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+@router.delete("/documents/{document_id}")
+def delete_document(document_id: int):
+    try:
+        supabase = get_supabase_client()
+        bucket_name = os.getenv("SUPABASE_BUCKET", "documents")
+
+        # Find the document first so we know its storage path.
+        res = (
+            supabase
+            .table("documents")
+            .select("id, storage_path")
+            .eq("id", document_id)
+            .execute()
+        )
+
+        if not res.data:
+            raise HTTPException(status_code=404, detail="Document not found")
+
+        document = res.data[0]
+        storage_path = document.get("storage_path")
+
+        # Delete the stored file from Supabase Storage.
+        if storage_path:
+            supabase.storage.from_(bucket_name).remove([storage_path])
+
+        # Delete the document record from the database.
+        delete_res = (
+            supabase
+            .table("documents")
+            .delete()
+            .eq("id", document_id)
+            .execute()
+        )
+
+        if not delete_res.data:
+            raise HTTPException(
+                status_code=404,
+                detail="Document could not be deleted"
+            )
+
+        return {
+            "status": "ok",
+            "message": "Document deleted"
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+@router.post("/documents/{document_id}/retry")
+async def retry_document(document_id: int):
+    try:
+        supabase = get_supabase_client()
+
+        # Find the document.
+        res = (
+            supabase
+            .table("documents")
+            .select("*")
+            .eq("id", document_id)
+            .execute()
+        )
+
+        if not res.data:
+            raise HTTPException(
+                status_code=404,
+                detail="Document not found"
+            )
+
+        document = res.data[0]
+
+        # Ready documents cannot be retried.
+        if (document.get("status") or "").lower() == "ready":
+            raise HTTPException(
+                status_code=400,
+                detail="Ready documents cannot be retried"
+            )
+
+        # Set the document back to pending before processing.
+        update_res = (
+            supabase
+            .table("documents")
+            .update({"status": "pending"})
+            .eq("id", document_id)
+            .execute()
+        )
+
+        if not update_res.data:
+            raise HTTPException(
+                status_code=500,
+                detail="Failed to reset document status"
+            )
+
+        # Trigger n8n again.
+        await trigger_document_processing(document_id)
+
+        return {
+            "status": "ok",
+            "message": "Document processing restarted",
+            "document": update_res.data[0]
+        }
+
     except HTTPException:
         raise
     except Exception as e:
