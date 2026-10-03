@@ -22,7 +22,7 @@ export function Documents() {
 
   const fetchDocuments = async () => {
     try {
-      const response = await fetch('/documents')
+      const response = await fetch('/api/documents')
       if (!response.ok) throw new Error('Failed to retrieve documents')
       const data = await response.json()
       setDocuments(data.documents || [])
@@ -42,7 +42,7 @@ export function Documents() {
 
     setUploading(true)
     try {
-      const response = await fetch('/upload', { method: 'POST', body: formData })
+      const response = await fetch('/api/upload', { method: 'POST', body: formData })
       if (!response.ok) {
         const error = await response.json()
         throw new Error(error.detail || 'Upload failed')
@@ -64,6 +64,54 @@ export function Documents() {
     }
   }
 
+  const handleDelete = async (id: number) => {
+    const confirmed = window.confirm(
+      'Are you sure you want to delete this document?'
+    )
+
+    if (!confirmed) return
+
+    try {
+      const response = await fetch(`/api/documents/${id}`, {
+        method: 'DELETE',
+      })
+
+      if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.detail || 'Delete failed')
+      }
+
+      setDocuments((current) =>
+        current.filter((doc) => doc.id !== id)
+      )
+    } catch (err) {
+      window.alert(
+        'Delete error: ' +
+        (err instanceof Error ? err.message : String(err))
+      )
+    }
+  }
+
+  const handleRetry = async (id: number) => {
+    try {
+      const response = await fetch(`/api/documents/${id}/retry`, {
+        method: 'POST',
+      })
+
+      if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.detail || 'Retry failed')
+      }
+
+      await fetchDocuments()
+    } catch (err) {
+      window.alert(
+        'Retry error: ' +
+        (err instanceof Error ? err.message : String(err))
+      )
+    }
+  }
+
   const filtered = documents.filter((doc) => {
     const q = query.toLowerCase().trim()
     if (!q) return true
@@ -76,7 +124,9 @@ export function Documents() {
   return (
     <Layout badge="Capstone Prototype">
       <h1 className="page-title">Documents</h1>
-      <p className="page-subtitle">Upload documents for use within the system.</p>
+      <p className="page-subtitle">
+        Upload documents for use within the system.
+      </p>
 
       <div
         className="upload-zone"
@@ -97,12 +147,24 @@ export function Documents() {
           style={{ display: 'none' }}
           accept=".pdf,.docx,.txt"
           onChange={(e) => {
-            if (e.target.files?.length) uploadFile(e.target.files[0])
+            if (e.target.files?.length) {
+              uploadFile(e.target.files[0])
+            }
           }}
         />
-        <div className="upload-icon"><i className="fas fa-cloud-upload-alt" /></div>
-        <div className="upload-title">Drag and drop files here</div>
-        <div className="upload-desc">or select files from your computer</div>
+
+        <div className="upload-icon">
+          <i className="fas fa-cloud-upload-alt" />
+        </div>
+
+        <div className="upload-title">
+          Drag and drop files here
+        </div>
+
+        <div className="upload-desc">
+          or select files from your computer
+        </div>
+
         <button
           className="browse-btn"
           type="button"
@@ -111,13 +173,18 @@ export function Documents() {
         >
           {uploading ? 'Uploading...' : 'Browse Files'}
         </button>
-        <div className="file-types">Supported file types: PDF · DOCX · TXT</div>
+
+        <div className="file-types">
+          Supported file types: PDF · DOCX · TXT
+        </div>
       </div>
 
       <div className="list-header">
         <h2 className="list-title">Uploaded Documents</h2>
+
         <div className="search-box">
           <i className="fas fa-search search-icon" />
+
           <input
             type="text"
             placeholder="Search documents"
@@ -135,27 +202,47 @@ export function Documents() {
               <th>TYPE</th>
               <th>UPLOAD DATE</th>
               <th>STATUS</th>
-              <th></th>
+              <th>ACTIONS</th>
             </tr>
           </thead>
+
           <tbody>
             {loadError && (
               <tr>
-                <td colSpan={5} style={{ textAlign: 'center', color: '#e11d48', padding: 20 }}>
+                <td
+                  colSpan={5}
+                  style={{
+                    textAlign: 'center',
+                    color: '#e11d48',
+                    padding: 20,
+                  }}
+                >
                   Failed to load documents: {loadError}
                 </td>
               </tr>
             )}
+
             {!loadError && filtered.length === 0 && (
               <tr>
-                <td colSpan={5} style={{ textAlign: 'center', padding: 24, color: '#888' }}>
+                <td
+                  colSpan={5}
+                  style={{
+                    textAlign: 'center',
+                    padding: 24,
+                    color: '#888',
+                  }}
+                >
                   No documents found.
                 </td>
               </tr>
             )}
+
             {!loadError &&
               filtered.map((doc) => {
-                const ext = doc.filename ? doc.filename.split('.').pop()!.toUpperCase() : 'FILE'
+                const ext = doc.filename
+                  ? doc.filename.split('.').pop()!.toUpperCase()
+                  : 'FILE'
+
                 const dateStr = doc.uploaded_at
                   ? new Date(doc.uploaded_at).toLocaleDateString('en-GB', {
                       day: 'numeric',
@@ -163,24 +250,80 @@ export function Documents() {
                       year: 'numeric',
                     })
                   : '-'
+
                 const status = (doc.status || 'pending').toLowerCase()
+
                 const iconClass = ext === 'DOCX' ? 'docx' : ''
+
+                // A ready document must not be retryable.
+                const canRetry = status !== 'ready'
 
                 return (
                   <tr key={doc.id}>
                     <td>
                       <div className="file-info">
-                        <div className={`file-icon ${iconClass}`}>{ext}</div>
+                        <div className={`file-icon ${iconClass}`}>
+                          {ext}
+                        </div>
+
                         <div>
-                          <div className="file-name">{doc.filename}</div>
-                          <span className="file-sub">{doc.source_label || 'Uploaded document'}</span>
+                          <div className="file-name">
+                            {doc.filename}
+                          </div>
+
+                          <span className="file-sub">
+                            {doc.source_label || 'Uploaded document'}
+                          </span>
                         </div>
                       </div>
                     </td>
+
                     <td>{ext}</td>
+
                     <td>{dateStr}</td>
-                    <td><span className={`status-badge ${status}`}>{doc.status || 'pending'}</span></td>
-                    <td><button className="action-btn"><i className="fas fa-ellipsis-h" /></button></td>
+
+                    <td>
+                      <span className={`status-badge ${status}`}>
+                        {doc.status || 'pending'}
+                      </span>
+                    </td>
+
+                    <td>
+                      <div
+                        style={{
+                          display: 'flex',
+                          gap: '8px',
+                          alignItems: 'center',
+                        }}
+                      >
+                        <button
+                          type="button"
+                          className="action-btn"
+                          title="Delete document"
+                          onClick={() => handleDelete(doc.id)}
+                        >
+                          <i className="fas fa-trash" />
+                        </button>
+
+                        <button
+                          type="button"
+                          className="action-btn"
+                          title={
+                            canRetry
+                              ? 'Retry document processing'
+                              : 'Ready documents cannot be retried'
+                          }
+                          disabled={!canRetry}
+                          onClick={() => handleRetry(doc.id)}
+                          style={{
+                            opacity: canRetry ? 1 : 0.4,
+                            cursor: canRetry ? 'pointer' : 'not-allowed',
+                          }}
+                        >
+                          <i className="fas fa-redo" />
+                        </button>
+                      </div>
+                    </td>
                   </tr>
                 )
               })}

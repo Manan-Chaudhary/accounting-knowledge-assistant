@@ -36,8 +36,6 @@ export default defineConfig({
   server: {
     proxy: {
       '/chat': { target: FASTAPI_DEV_TARGET, ws: true, changeOrigin: true },
-      '/upload': { target: FASTAPI_DEV_TARGET, changeOrigin: true },
-      '/documents': { target: FASTAPI_DEV_TARGET, changeOrigin: true },
       '/api': { target: FASTAPI_DEV_TARGET, changeOrigin: true },
     },
   },
