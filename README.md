@@ -97,7 +97,7 @@ accounting-knowledge-assistant/
 ### Layer overview
 
 - **`frontend/`** — the React SPA. Owns every page except the prototype login screen; built with `npm run build` and served same-origin by FastAPI (see `app/main.py`'s catch-all route) so the chat session cookie stays same-origin per `docs/LOGIN-PAGE-REQUIREMENTS.md`.
-- **`routes/`** — FastAPI backend routers handling authentication, document ingestion, and testing integration endpoints.No business logic lives here directly — delegates to `services/`/`rag/`.
+- **`routes/`** — FastAPI backend routers handling authentication, document ingestion, and testing integration endpoints. No business logic lives here directly — delegates to `services/`/`rag/`.
 - **`chainlit/`** — the chat interface. `on_message` is where a user's question enters the RAG pipeline via `rag/`.
 - **`services/`** — logic that isn't HTTP- or chat-specific: document lifecycle and file storage. Keeps `routes/` from growing bloated handlers.
 - **`rag/`** — the pipeline itself, split by responsibility (embed → retrieve → generate) so each piece can be tested and swapped independently. `retriever.py` is the highest-value file in the repo: retrieval, not generation, is where RAG systems actually fail.
