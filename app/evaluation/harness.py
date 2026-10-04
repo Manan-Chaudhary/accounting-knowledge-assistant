@@ -12,11 +12,23 @@ from litellm.exceptions import RateLimitError, ServiceUnavailableError
 from app.config import settings
 
 from app.rag.generator import SYSTEM_PROMPT_TEMPLATE, get_formatted_prompt
-from app.rag.retriever import format_retrieved_context, retrieve
+from app.rag.retriever import (
+    format_retrieved_context,
+    retrieve_dense,
+    retrieve_hybrid,
+    retrieve_keyword,
+)
 
 
 DEFAULT_MODEL = "gemini/gemini-3.8-flash"
 DEFAULT_TOP_K = 6
+DEFAULT_RETRIEVAL_STRATEGY = "hybrid"
+
+RETRIEVAL_STRATEGIES = {
+    "dense",
+    "keyword",
+    "hybrid",
+}
 
 RETRYABLE_ERRORS = (ServiceUnavailableError, RateLimitError)
 
@@ -225,17 +237,26 @@ def judge_answer(
             temperature=0,
         )
     except RETRYABLE_ERRORS as exc:
-        return {"judge_model": judge_model, "error": f"judge unavailable: {exc}"}
+        return {
+            "judge_model": judge_model,
+            "error": f"judge unavailable: {exc}",
+        }
 
     match = re.search(r"\{.*\}", raw, re.DOTALL)
 
     if not match:
-        return {"judge_model": judge_model, "error": "no JSON in judge output"}
+        return {
+            "judge_model": judge_model,
+            "error": "no JSON in judge output",
+        }
 
     try:
         scores = json.loads(match.group(0))
     except json.JSONDecodeError:
-        return {"judge_model": judge_model, "error": "invalid JSON in judge output"}
+        return {
+            "judge_model": judge_model,
+            "error": "invalid JSON in judge output",
+        }
 
     return {
         "judge_model": judge_model,
@@ -249,7 +270,10 @@ def retrieval_metrics(
     expected_sources: list[str],
     retrieved_files: list[str],
 ) -> dict[str, Any]:
-    """Source-level retrieval metrics. All None when the case has no expected source."""
+    """Source-level retrieval metrics.
+
+    All values are None when the case has no expected source.
+    """
 
     if not expected_sources:
         return {
@@ -273,32 +297,69 @@ def retrieval_metrics(
 
     return {
         "expected_source_hit": bool(found),
-        "top1_source_hit": bool(retrieved_files) and retrieved_files[0] in expected,
-        "recall_at_k": round(len(found) / len(expected), 4),
-        "reciprocal_rank": round(1 / first_rank, 4) if first_rank else 0.0,
+        "top1_source_hit": (
+            bool(retrieved_files)
+            and retrieved_files[0] in expected
+        ),
+        "recall_at_k": round(
+            len(found) / len(expected),
+            4,
+        ),
+        "reciprocal_rank": (
+            round(1 / first_rank, 4)
+            if first_rank
+            else 0.0
+        ),
     }
 
 
-def citation_metrics(answer: str, chunk_count: int) -> dict[str, Any]:
-    """Check that every citation marker points at a retrieved chunk and uses the [n] format."""
+def citation_metrics(
+    answer: str,
+    chunk_count: int,
+) -> dict[str, Any]:
+    """Check that every citation marker points at a retrieved chunk."""
 
-    standard = [int(n) for n in CITATION_PATTERN.findall(answer)]
-    nonstandard = [int(n) for n in NONSTANDARD_CITATION_PATTERN.findall(answer)]
+    standard = [
+        int(n)
+        for n in CITATION_PATTERN.findall(answer)
+    ]
+
+    nonstandard = [
+        int(n)
+        for n in NONSTANDARD_CITATION_PATTERN.findall(answer)
+    ]
+
     markers = standard + nonstandard
-    invalid = sorted({n for n in markers if n < 1 or n > chunk_count})
+
+    invalid = sorted(
+        {
+            n
+            for n in markers
+            if n < 1 or n > chunk_count
+        }
+    )
 
     return {
         "citation_present": bool(markers),
-        "citation_valid": (not invalid) if markers else None,
-        "citation_format_standard": (not nonstandard) if markers else None,
+        "citation_valid": (
+            (not invalid)
+            if markers
+            else None
+        ),
+        "citation_format_standard": (
+            (not nonstandard)
+            if markers
+            else None
+        ),
         "invalid_citations": invalid,
     }
 
 
 def rescore(result: dict[str, Any]) -> dict[str, Any]:
-    """Recompute the deterministic metrics of a stored result from its saved answer.
+    """Recompute deterministic metrics from a stored result.
 
-    Lets scoring changes be applied to earlier runs without calling the model again.
+    This allows scoring changes to be applied to earlier runs
+    without calling the model again.
     """
 
     if result.get("status", "ok") != "ok":
@@ -309,10 +370,19 @@ def rescore(result: dict[str, Any]) -> dict[str, Any]:
 
     result["metrics"].update(
         {
-            **retrieval_metrics(expected_sources_for(result), result["retrieved_files"]),
-            **citation_metrics(answer, len(result["retrieved_files"])),
+            **retrieval_metrics(
+                expected_sources_for(result),
+                result["retrieved_files"],
+            ),
+            **citation_metrics(
+                answer,
+                len(result["retrieved_files"]),
+            ),
             "refused": refused,
-            "refusal_correct": refused == bool(result.get("must_refuse")),
+            "refusal_correct": (
+                refused
+                == bool(result.get("must_refuse"))
+            ),
         }
     )
 
@@ -320,7 +390,43 @@ def rescore(result: dict[str, Any]) -> dict[str, Any]:
 
 
 def is_refusal(answer: str) -> bool:
-    return bool(REFUSAL_REGEX.search(answer or ""))
+    return bool(
+        REFUSAL_REGEX.search(answer or "")
+    )
+
+
+def retrieve_for_strategy(
+    query: str,
+    top_k: int,
+    strategy: str,
+):
+    """Run the requested RAG retrieval strategy."""
+
+    strategy = strategy.lower().strip()
+
+    if strategy not in RETRIEVAL_STRATEGIES:
+        raise ValueError(
+            f"Unknown retrieval strategy '{strategy}'. "
+            f"Expected one of: "
+            f"{', '.join(sorted(RETRIEVAL_STRATEGIES))}"
+        )
+
+    if strategy == "dense":
+        return retrieve_dense(
+            query=query,
+            top_k=top_k,
+        )
+
+    if strategy == "keyword":
+        return retrieve_keyword(
+            query=query,
+            top_k=top_k,
+        )
+
+    return retrieve_hybrid(
+        query=query,
+        top_k=top_k,
+    )
 
 
 def run_case(
@@ -328,6 +434,7 @@ def run_case(
     model: str = DEFAULT_MODEL,
     top_k: int = DEFAULT_TOP_K,
     judge_model: str | None = None,
+    retrieval_strategy: str = DEFAULT_RETRIEVAL_STRATEGY,
 ) -> dict[str, Any]:
     """Run one evaluation case through retrieval and generation."""
 
@@ -337,9 +444,10 @@ def run_case(
 
     retrieval_start = time.perf_counter()
 
-    chunks = retrieve(
+    chunks = retrieve_for_strategy(
         query=question,
         top_k=top_k,
+        strategy=retrieval_strategy,
     )
 
     retrieval_latency_ms = round(
@@ -360,22 +468,37 @@ def run_case(
         (time.perf_counter() - generation_start) * 1000
     )
 
-    retrieved_files = [chunk.filename for chunk in chunks]
+    retrieved_files = [
+        chunk.filename
+        for chunk in chunks
+    ]
 
     refused = is_refusal(answer)
 
     metrics = {
         "answer_returned": bool(answer.strip()),
-        **retrieval_metrics(expected_sources, retrieved_files),
-        **citation_metrics(answer, len(chunks)),
+        **retrieval_metrics(
+            expected_sources,
+            retrieved_files,
+        ),
+        **citation_metrics(
+            answer,
+            len(chunks),
+        ),
         "refused": refused,
-        "refusal_correct": refused == must_refuse,
+        "refusal_correct": (
+            refused == must_refuse
+        ),
         "provider_available": True,
     }
 
     judge = None
 
-    if judge_model and case.get("expected_answer") and answer.strip():
+    if (
+        judge_model
+        and case.get("expected_answer")
+        and answer.strip()
+    ):
         judge = judge_answer(
             question=question,
             expected_answer=case["expected_answer"],
@@ -384,18 +507,26 @@ def run_case(
             judge_model=judge_model,
         )
 
-    retrieved_chunks = [
-        {
-            "chunk_id": chunk.chunk_id,
-            "document_id": chunk.document_id,
-            "chunk_index": chunk.chunk_index,
-            "filename": chunk.filename,
-            "source_label": chunk.source_label,
-            "similarity": round(chunk.similarity, 4),
-            "content_preview": chunk.content[:400],
-        }
-        for chunk in chunks
-    ]
+    retrieved_chunks = []
+
+    for chunk in chunks:
+        similarity = chunk.similarity
+
+        retrieved_chunks.append(
+            {
+                "chunk_id": chunk.chunk_id,
+                "document_id": chunk.document_id,
+                "chunk_index": chunk.chunk_index,
+                "filename": chunk.filename,
+                "source_label": chunk.source_label,
+                "similarity": (
+                    round(similarity, 4)
+                    if similarity is not None
+                    else None
+                ),
+                "content_preview": chunk.content[:400],
+            }
+        )
 
     return {
         "id": case["id"],
@@ -408,10 +539,12 @@ def run_case(
         "expected_answer": case.get("expected_answer"),
         "must_refuse": must_refuse,
         "model_name": model,
+        "retrieval_strategy": retrieval_strategy,
         "top_k": top_k,
         "model_answer": answer,
         "retrieved_chunk_ids": [
-            chunk.chunk_id for chunk in chunks
+            chunk.chunk_id
+            for chunk in chunks
         ],
         "retrieved_files": retrieved_files,
         "retrieved_chunks": retrieved_chunks,
@@ -420,10 +553,13 @@ def run_case(
         "retrieval_latency_ms": retrieval_latency_ms,
         "generation_latency_ms": generation_latency_ms,
         "latency_ms": (
-            retrieval_latency_ms + generation_latency_ms
+            retrieval_latency_ms
+            + generation_latency_ms
         ),
         "status": "ok",
-        "created_at": datetime.now(timezone.utc).isoformat(),
+        "created_at": datetime.now(
+            timezone.utc
+        ).isoformat(),
     }
 
 
@@ -431,9 +567,10 @@ def failed_case_result(
     case: dict[str, Any],
     model: str,
     top_k: int,
+    retrieval_strategy: str,
     error: Exception,
 ) -> dict[str, Any]:
-    """Result record for a case the provider could not answer after retries."""
+    """Result record for a case the provider could not answer."""
 
     return {
         "id": case["id"],
@@ -444,8 +581,11 @@ def failed_case_result(
         "expected_sources": expected_sources_for(case),
         "expected_outcome": case.get("expected_outcome"),
         "expected_answer": case.get("expected_answer"),
-        "must_refuse": bool(case.get("must_refuse", False)),
+        "must_refuse": bool(
+            case.get("must_refuse", False)
+        ),
         "model_name": model,
+        "retrieval_strategy": retrieval_strategy,
         "top_k": top_k,
         "model_answer": None,
         "retrieved_chunk_ids": [],
@@ -463,7 +603,9 @@ def failed_case_result(
         "latency_ms": None,
         "status": "provider_unavailable",
         "error": str(error),
-        "created_at": datetime.now(timezone.utc).isoformat(),
+        "created_at": datetime.now(
+            timezone.utc
+        ).isoformat(),
     }
 
 
@@ -474,12 +616,22 @@ def run_suite(
     top_k: int = DEFAULT_TOP_K,
     judge_model: str | None = None,
     resume: bool = False,
+    retrieval_strategy: str = DEFAULT_RETRIEVAL_STRATEGY,
 ) -> list[dict[str, Any]]:
     """Run all evaluation cases and save each result incrementally.
 
-    With resume=True, cases already saved without an error are kept and only
-    the missing or failed ones are run.
+    With resume=True, cases already saved without an error are kept
+    and only missing or failed ones are run.
     """
+
+    if retrieval_strategy.lower().strip() not in RETRIEVAL_STRATEGIES:
+        raise ValueError(
+            f"Unknown retrieval strategy '{retrieval_strategy}'. "
+            f"Expected one of: "
+            f"{', '.join(sorted(RETRIEVAL_STRATEGIES))}"
+        )
+
+    retrieval_strategy = retrieval_strategy.lower().strip()
 
     cases = load_cases(questions_path)
 
@@ -488,30 +640,62 @@ def run_suite(
     results: list[dict[str, Any]] = []
 
     output = Path(output_path)
-    output.parent.mkdir(parents=True, exist_ok=True)
+    output.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     done: dict[str, dict[str, Any]] = {}
+
     if resume and output.exists():
-        for line in output.read_text(encoding="utf-8").splitlines():
+        for line in output.read_text(
+            encoding="utf-8"
+        ).splitlines():
+
             if line.strip():
                 saved = json.loads(line)
+
                 if not saved.get("error"):
                     done[saved["id"]] = saved
 
-    # Rewrite the file with only the kept results; a fresh run keeps none.
-    with output.open("w", encoding="utf-8") as file:
-        for saved in done.values():
-            file.write(json.dumps(saved, ensure_ascii=False) + "\n")
+    # Rewrite the file with only the kept results.
+    # A fresh run keeps none.
+    with output.open(
+        "w",
+        encoding="utf-8",
+    ) as file:
 
-    for index, case in enumerate(cases, start=1):
+        for saved in done.values():
+            file.write(
+                json.dumps(
+                    saved,
+                    ensure_ascii=False,
+                )
+                + "\n"
+            )
+
+    for index, case in enumerate(
+        cases,
+        start=1,
+    ):
         if case["id"] in done:
-            print(f"[{index}/{len(cases)}] Skipping {case['id']} (already saved)")
-            results.append(done[case["id"]])
+            print(
+                f"[{index}/{len(cases)}] "
+                f"Skipping {case['id']} "
+                f"(already saved)"
+            )
+
+            results.append(
+                done[case["id"]]
+            )
+
             continue
 
         print(
             f"[{index}/{len(cases)}] Running "
-            f"{case['id']}: {case['question']}"
+            f"{case['id']} "
+            f"[{retrieval_strategy}]: "
+            f"{case['question']}"
         )
 
         try:
@@ -520,18 +704,29 @@ def run_suite(
                 model=model,
                 top_k=top_k,
                 judge_model=judge_model,
+                retrieval_strategy=retrieval_strategy,
             )
 
             print(
                 "    "
-                f"source_hit={result['metrics']['expected_source_hit']} "
-                f"citation_valid={result['metrics']['citation_valid']} "
-                f"refusal_correct={result['metrics']['refusal_correct']} "
-                f"latency={result['latency_ms']}ms"
+                f"source_hit="
+                f"{result['metrics']['expected_source_hit']} "
+                f"citation_valid="
+                f"{result['metrics']['citation_valid']} "
+                f"refusal_correct="
+                f"{result['metrics']['refusal_correct']} "
+                f"latency="
+                f"{result['latency_ms']}ms"
             )
 
         except RETRYABLE_ERRORS as exc:
-            result = failed_case_result(case, model, top_k, exc)
+            result = failed_case_result(
+                case=case,
+                model=model,
+                top_k=top_k,
+                retrieval_strategy=retrieval_strategy,
+                error=exc,
+            )
 
             print(
                 "    Provider unavailable after retries. "
@@ -543,9 +738,16 @@ def run_suite(
         results.append(result)
 
         # Save immediately so completed cases are never lost.
-        with output.open("a", encoding="utf-8") as file:
+        with output.open(
+            "a",
+            encoding="utf-8",
+        ) as file:
+
             file.write(
-                json.dumps(result, ensure_ascii=False)
+                json.dumps(
+                    result,
+                    ensure_ascii=False,
+                )
                 + "\n"
             )
 

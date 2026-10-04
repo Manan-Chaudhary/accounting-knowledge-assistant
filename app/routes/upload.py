@@ -162,6 +162,22 @@ def delete_document(document_id: int):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
+    
+async def trigger_document_processing(document_id: int):
+    n8n_url = "http://n8n:5678/webhook/process-document"
+
+    async with httpx.AsyncClient(timeout=10.0) as client:
+        n8n_response = await client.post(
+            n8n_url,
+            json={"document_id": document_id}
+        )
+
+    if n8n_response.status_code >= 400:
+        raise ValueError(
+            f"n8n processing trigger failed: "
+            f"{n8n_response.status_code} {n8n_response.text}"
+        )
+
 @router.post("/documents/{document_id}/retry")
 async def retry_document(document_id: int):
     try:
