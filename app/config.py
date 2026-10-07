@@ -27,6 +27,10 @@ class Settings:
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
     GROQ_MODEL: str = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
+    
+        # RAG chunking
+    RAG_CHUNK_SIZE: int = int(os.getenv("RAG_CHUNK_SIZE", "1200"))
+    RAG_CHUNK_OVERLAP: int = int(os.getenv("RAG_CHUNK_OVERLAP", "150"))
 
     # supabase setting
     SUPABASE_URL: str = os.getenv("SUPABASE_URL", "")
