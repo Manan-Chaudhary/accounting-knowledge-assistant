@@ -21,7 +21,7 @@ Delete is the one action on the Documents page that cannot be undone, and it rea
 - Withdrawing a document from search while keeping it (UP-6, and the `withdrawn` state in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 5.1). Section 3 states how delete and withdraw differ; building withdraw is not part of this work.
 - Uploading a new version and marking the old one superseded (UP-5). Section 9 covers only what delete does to versions that already exist.
 - Retry and stuck-job recovery for failed or pending ingestion. That is I-3 in `docs/ITERATION-AND-EXPLORATION.md`.
-- Deleting chat threads (`DELETE /api/threads/{thread_id}` in `app/routes/chat_history.py`). That is governed by SS-17 in [`CHAT-SESSION-REQUIREMENTS.md`](CHAT-SESSION-REQUIREMENTS.md).
+- Deleting chat threads (`DELETE /api/chat/threads/{thread_id}` in `app/routes/chat_history.py`). That is governed by SS-17 in [`CHAT-SESSION-REQUIREMENTS.md`](CHAT-SESSION-REQUIREMENTS.md).
 - Bulk delete and account deletion. Not requested.
 
 ## 2. What exists today
