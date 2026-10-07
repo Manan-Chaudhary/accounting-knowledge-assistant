@@ -3,6 +3,7 @@ from io import BytesIO
 import pymupdf
 from docx import Document as DocxDocument
 from sqlalchemy import delete, select
+from app.rag.chunker import ChunkingConfig, chunk_document
 
 from app.db.database import SessionLocal
 from app.db.models import Document, DocumentChunk
@@ -127,7 +128,14 @@ def process_document(document_id: int) -> dict:
             raise ValueError("No readable text could be extracted from the document")
 
         # 5. Chunk the document
-        chunks = chunk_text(text)
+        chunks = chunk_document(
+            text=text,
+            document_id=document.id,
+            config=ChunkingConfig(
+                chunk_size=settings.RAG_CHUNK_SIZE,
+                chunk_overlap=settings.RAG_CHUNK_OVERLAP,
+            ),
+        )
 
         if not chunks:
             raise ValueError("Document produced no usable chunks")
@@ -141,8 +149,8 @@ def process_document(document_id: int) -> dict:
         db.commit()
 
         # 7. Generate embeddings and save chunks
-        for index, chunk in enumerate(chunks):
-            embedding = embed_text(chunk)
+        for chunk in chunks:
+            embedding = embed_text(chunk.content)
 
             if len(embedding) != 1024:
                 raise ValueError(
@@ -150,9 +158,10 @@ def process_document(document_id: int) -> dict:
                 )
 
             db_chunk = DocumentChunk(
-                document_id=document.id,
-                chunk_index=index,
-                content=chunk,
+                document_id=chunk.document_id,
+                chunk_index=chunk.chunk_index,
+                section_heading=chunk.section_heading,
+                content=chunk.content,
                 embedding=embedding,
             )
 
