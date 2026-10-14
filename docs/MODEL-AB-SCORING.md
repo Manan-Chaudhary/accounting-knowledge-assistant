@@ -18,10 +18,10 @@ R100 will run more than five models and R93 has to recommend one to the client. 
 
 **Out of scope**, with the owner of each:
 
-- Latency targets and the latency measurement method. That is `docs/LATENCY-TARGETS.md` (branch `docs/latency-targets`). This document reuses LT-15 to LT-20, LT-24 and LT-25 and defines no second method.
-- What a correct refusal is and its wording. That is `docs/GROUNDING-AND-REFUSAL-RULES.md` (branch `docs/grounding-refusal-rules`), section 13.4 of which asks R132 for the refusal weights.
-- Which markers count as citations. That is `docs/CITATION-RULES.md` (branch `docs/citation-behaviour-rules`).
-- The harness page gates and how the page shows a comparison. That is `docs/HARNESS-PAGE-REQUIREMENTS.md` (branch `docs/harness-page-requirements`) section 7 and HP-52 to HP-55. This document does not change them.
+- Latency targets and the latency measurement method. That is [`LATENCY-TARGETS.md`](LATENCY-TARGETS.md). This document reuses LT-15 to LT-20, LT-24 and LT-25 and defines no second method.
+- What a correct refusal is and its wording. That is [`GROUNDING-AND-REFUSAL-RULES.md`](GROUNDING-AND-REFUSAL-RULES.md), section 13.4 of which asks R132 for the refusal weights.
+- Which markers count as citations. That is [`CITATION-RULES.md`](CITATION-RULES.md).
+- The harness page gates and how the page shows a comparison. That is [`HARNESS-PAGE-REQUIREMENTS.md`](HARNESS-PAGE-REQUIREMENTS.md) section 7 and HP-52 to HP-55. This document does not change them.
 - Retrieval quality. Retrieval does not depend on the model ([`EVALUATION.md`](EVALUATION.md) section 4.2), so it is a settings check here (AB-6), not a scored dimension.
 
 ## 2. What exists today
@@ -122,7 +122,7 @@ Measured with the method in `docs/LATENCY-TARGETS.md`, not a new one: monotonic 
 
 | ID | P | Requirement |
 |---|---|---|
-| AB-17 | M | The scored measure is generation time of the successful attempt (AB-7), which is S5 plus S6 in LT section 3 for a non-streamed reply. Retrieval time is the same for every model, and its spikes (p95 21.7 s in LT section 4) would swamp the difference, so it is reported, not scored. |
+| AB-17 | M | The scored measure is generation time of the successful attempt (AB-7), which is approximately S5 plus S6 in LT section 3 for a non-streamed reply. It is not exact, because LT times S5 from the proxy call and the harness calls providers directly (section 2, "Model access"). Retrieval time is the same for every model, and its spikes (p95 21.7 s in LT section 4) would swamp the difference, so it is reported, not scored. |
 | AB-18 | M | Per run, take p50 and p95 of that time. Each scores `100 x (30 - x) / (30 - t)` in seconds, capped to 0 to 100: 100 at or under its target t, 0 at or over 30 s. Targets come from the LT stage budgets: p50 t = 3.9 s (LT-11 1.4 s + LT-12 2.5 s) and p95 t = 5.9 s (LT-11 2.4 s + LT-12 3.5 s). 30 s is the LT-6 failure point. The dimension is the mean of the two. The linear scale between target and 30 s is `[ASSUMED]`. The targets inherit the status of their sources: LT-11 is `[ASSUMED]` and unmeasured for any model, and LT section 5.2 calls the stage budgets diagnostic allocations, not pass or fail limits. They are used here only to place models on a common scale. |
 | AB-19 | M | Total time (retrieval plus generation) is reported against the 8 s p95 gate in LT-2, but neither scored nor used to disqualify: the harness does not stream and its runs do not meet the LT-21 test conditions, so the gate verdict stays with R110 under LT-30. One flag is raised, without disqualifying: a model whose successful-attempt generation p95 exceeds 8 s is marked "cannot meet LT-2", since generation alone is then over the total budget and streaming does not change total time (LT-2 rationale). Any recommendation is provisional until Hayden's R110 runs the LT-30 gate on the recommended model as the gating configuration (LT-21, LT-22). A screening run has 48 warm samples, under LT-25's 66, so its latency is indicative; three finalist runs give 144. |
 | AB-20 | S | Time to first token is not measured by the harness, which does not stream. If R110 or R127 measures it for a finalist by the LT method, R93 reports it against LT-1. |
