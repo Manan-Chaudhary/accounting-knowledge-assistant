@@ -5,7 +5,7 @@ Updated 2026-10-07 by Ronith Mugundakumar (Planner R131).
 
 This file has two parts. Part 1 documents the runnable benchmark, `benchmarks/questions.jsonl`, which `app/evaluation/harness.py` loads. Part 2 is the earlier 25-question draft in prose, unchanged, kept because [`docs/GROUNDING-AND-REFUSAL-RULES.md`](../docs/GROUNDING-AND-REFUSAL-RULES.md) section 13.2 refers to its Q16 to Q20.
 
-GROUNDING-AND-REFUSAL-RULES.md (branch `docs/grounding-refusal-rules`) and `docs/HARNESS-PAGE-REQUIREMENTS.md` (branch `docs/harness-page-requirements`) are not on `main` yet.
+GROUNDING-AND-REFUSAL-RULES.md and [`HARNESS-PAGE-REQUIREMENTS.md`](../docs/HARNESS-PAGE-REQUIREMENTS.md) are on `main` (PRs #81 and #79).
 
 ## What changed on 2026-10-07, and why
 
@@ -62,7 +62,7 @@ A changed file has a new content hash, so the harness page will not compare a wh
 
 ### 1.4 Every case
 
-Tags are set against the full 73-document corpus that R128 loads, because R100 runs the set after R128. Year is the `income_year` field. A dash means none.
+Tags are set against the full 73-document corpus in `corpus/manifest.json`, because R100 runs the set after the corpus is loaded. The bulk load has not loaded all of it yet (section 1.6). Year is the `income_year` field. A dash means none.
 
 | ID | Class | Type | Expected behaviour | Expected source: section | Year | GR rule / case | UC |
 |---|---|---|---|---|---|---|---|
@@ -212,15 +212,15 @@ UC-1, UC-2, UC-5 and UC-6 are still below the 5-per-use-case depth Part 2 aims f
 - **EVAL-041** (clarification) has `must_refuse` false and should carry no marker. `case_failures` in `scripts/evaluation_report.py` lists every non-refusal case without a citation as "no citation", so a correct clarification shows as a failure until the report reads `expected_behaviour`.
 - **EVAL-020, EVAL-021 and EVAL-049** (`answered_partial`) have `must_refuse` true. The GR section 9 wording for these cases ("I could not find ...", "Not covered: I could not find ..." or "... is outside the scope ...") already matches `is_refusal` (GR-35). Only a model paraphrase that avoids those phrases would be scored as a missed refusal.
 - **Temporal precision** is not computed by the harness (EVALUATION.md section 4.1). `income_year` is in place for when chunks carry income years.
-- Before R128 loads the corpus, only the CGT and FBT cases can retrieve their expected source. Run the set after R128.
+- **The corpus is only partly loaded.** `docs/corpus_check_report.md` on `main` reports 42 documents in the database against 77 targeted, and `docs/load_log.csv` lists the 35 files the bulk load processed. Checked on 2026-10-14, 17 of the 28 expected source files are not in `load_log.csv`. One of them, `ato-fbt-overview.txt`, was loaded before the bulk load for the first 22 cases. The other 16 leave 14 `answered` or `answered_partial` cases unable to retrieve their expected source: EVAL-023 to EVAL-026, EVAL-029, EVAL-032 to EVAL-034, EVAL-036, EVAL-037, EVAL-042, EVAL-044, EVAL-048 and EVAL-049. Run the full set only after those files are loaded. A run before then measures the load, not the model.
 
 ### 1.7 Who uses this next
 
-- **R100 and R137, Shihong He:** run all 50 cases on each model with identical settings, after R128. Report EVAL-022 and EVAL-041 with the artefacts in section 1.6 rather than as model failures, and check whether any `answered_partial` miss is a paraphrase.
+- **R100 and R137, Shihong He:** run all 50 cases on each model with identical settings, once the source files listed in section 1.6 are loaded. Report EVAL-022 and EVAL-041 with the artefacts in section 1.6 rather than as model failures, and check whether any `answered_partial` miss is a paraphrase.
 - **R141, Zekun Liu:** calibrate the GR-44 threshold on the cases tagged `answered` or `answered_partial`; use the GR-T cases (EVAL-038 to EVAL-043, EVAL-045 to EVAL-047, EVAL-049, EVAL-050) to check the gate and the decline hint (GR-46).
 - **R111, Hayden Nguyen:** the exact-reference cases in section 1.5 are the identifier questions for comparing vector-only, hybrid and reranked retrieval.
 - **R132 and R133, R94, Ronith Mugundakumar:** score refusals against `expected_behaviour`, not only `must_refuse` (GR section 13.4).
-- **Follow-up, not done here:** [`EVALUATION.md`](../docs/EVALUATION.md) section 4.1 still describes the set as limited to four documents, section 4.2 counts 22 cases, and section 3's record example does not list the new fields.
+- **Follow-up, not done here:** [`EVALUATION.md`](../docs/EVALUATION.md) section 4.1 still describes the set as limited to four documents, section 4.2 counts 22 cases, and section 3's record example does not list the new fields. Three documents merged since this set was written still describe the 22-case set: [`LATENCY-TARGETS.md`](../docs/LATENCY-TARGETS.md) LT-23, [`HARNESS-PAGE-REQUIREMENTS.md`](../docs/HARNESS-PAGE-REQUIREMENTS.md) section 2 ("Test sets") and GROUNDING-AND-REFUSAL-RULES.md section 2 ("Benchmark"). Each needs its count updated when this branch merges.
 
 ## Part 2: draft SMSF Q&A (prose, not runnable)
 
