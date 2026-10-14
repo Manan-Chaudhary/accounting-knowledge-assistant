@@ -193,7 +193,7 @@ Resolution, `[ASSUMED]` until the client answers open question 1: the user's del
 
 | ID | P | Requirement |
 |---|---|---|
-| DF-21 | M | Filtering runs in the browser on the list already loaded from `GET /api/documents`. That endpoint returns every document in one response, and R128 loads 73 documents, so no new endpoint is needed and a change applies without a round trip. |
+| DF-21 | M | Filtering runs in the browser on the list already loaded from `GET /api/documents`. That endpoint returns every document in one response, and the full corpus is 73 documents (`corpus/manifest.json`; `docs/corpus_check_report.md` on `main` reports 42 loaded so far), so no new endpoint is needed and a change applies without a round trip. |
 | DF-22 | S | If `GET /api/documents` gains paging, or the list passes `[ASSUMED]` 500 documents, filtering moves to the server with the parameter names in DF-16, so saved URLs keep working. Filtering one page in the browser would hide matches on other pages. |
 
 ### 5.7 Delete, retry and upload while filtered
@@ -225,7 +225,7 @@ Resolution, `[ASSUMED]` until the client answers open question 1: the user's del
 | R104 card: "processed, processing, failed, superseded" | DF-5, DF-6 | "Processed" is the label for the stored value `ready`. "Pending" is added because the state exists. "Superseded" waits for UP-5. |
 | `app/main.py` lines 50-51: any path containing `/chat` skips the auth guard (AU-85); CB-67 applies this to passage endpoints only | CM-20, CM-41 | The new rename route sits outside `/chat` for the same reason, so it gets the guard as well as its own check. The existing routes keep their in-handler checks. |
 | Chainlit's own rename and delete routes | CM-23, CM-33 | Not used by the sidebar. Both are blocked, or made to follow this document, while CM-29 applies. |
-| UP-2 and the `corpus` field in REQUIREMENTS.md section 5.1 | DF-8 to DF-10 | Not in `models.py` or `schema.sql`. Needs a column, capture at upload and a back-fill. R128 describes its 73 documents as official sources, so `[ASSUMED]` they back-fill as "Official source". R129 already expects "source type" to be stored. No Sprint 3 card owns the column (open question 4). |
+| UP-2 and the `corpus` field in REQUIREMENTS.md section 5.1 | DF-8 to DF-10 | Not in `models.py` or `schema.sql`. Needs a column, capture at upload and a back-fill. R128 describes the 73 corpus documents as official sources, so `[ASSUMED]` they back-fill as "Official source". R129 already expects "source type" to be stored. No Sprint 3 card owns the column (open question 4). |
 
 ## 8. Current build against these requirements
 
