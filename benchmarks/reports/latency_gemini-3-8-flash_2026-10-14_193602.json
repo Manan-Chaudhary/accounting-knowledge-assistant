@@ -1,0 +1,141 @@
+{
+  "configuration": {
+    "model_requested": "gemini-3-8-flash",
+    "retrieval_strategy": "hybrid",
+    "final_top_k": 6,
+    "reranker_enabled": false,
+    "streaming_enabled": true,
+    "git_commit": "1888312",
+    "measurement_date": "2026-10-14"
+  },
+  "summary": {
+    "total_samples": 5,
+    "warm_samples": 5,
+    "cold_samples": 0,
+    "success_count": 0,
+    "failure_count": 5,
+    "failure_rate": 100.0
+  },
+  "end_to_end_metrics": {
+    "ttft": {
+      "n": 0,
+      "p50_ms": 0,
+      "p95_ms": 0,
+      "target_p50_ms": 2500,
+      "target_p95_ms": 4500,
+      "p50_pass": true,
+      "p95_pass": true
+    },
+    "total": {
+      "n": 0,
+      "p50_ms": 0,
+      "p95_ms": 0,
+      "target_p50_ms": 5000,
+      "target_p95_ms": 8000,
+      "p50_pass": true,
+      "p95_pass": true
+    }
+  },
+  "stage_breakdown": {
+    "S1_intake": {
+      "n": 0,
+      "p50_ms": 0,
+      "p95_ms": 0,
+      "max_ms": 0,
+      "budget_p50_ms": 50,
+      "budget_p95_ms": 100,
+      "over_budget_count": 0
+    },
+    "S2_embedding": {
+      "n": 0,
+      "p50_ms": 0,
+      "p95_ms": 0,
+      "max_ms": 0,
+      "budget_p50_ms": 450,
+      "budget_p95_ms": 900,
+      "over_budget_count": 0
+    },
+    "S3_retrieval_sql": {
+      "n": 0,
+      "p50_ms": 0,
+      "p95_ms": 0,
+      "max_ms": 0,
+      "budget_p50_ms": 300,
+      "budget_p95_ms": 500,
+      "over_budget_count": 0
+    },
+    "S4_reranking": {
+      "n": 0,
+      "p50_ms": 0,
+      "p95_ms": 0,
+      "max_ms": 0,
+      "budget_p50_ms": 300,
+      "budget_p95_ms": 600,
+      "over_budget_count": 0
+    },
+    "S5_llm_ttft": {
+      "n": 0,
+      "p50_ms": 0,
+      "p95_ms": 0,
+      "max_ms": 0,
+      "budget_p50_ms": 1400,
+      "budget_p95_ms": 2400,
+      "over_budget_count": 0
+    },
+    "S6_generation": {
+      "n": 0,
+      "p50_ms": 0,
+      "p95_ms": 0,
+      "max_ms": 0,
+      "budget_p50_ms": 2500,
+      "budget_p95_ms": 3500,
+      "over_budget_count": 0
+    }
+  },
+  "cold_samples": {},
+  "pass_fail": {
+    "ttft_p50_pass": true,
+    "ttft_p95_pass": true,
+    "total_p50_pass": true,
+    "total_p95_pass": true,
+    "failure_rate_pass": false,
+    "overall_pass": false
+  },
+  "findings": {
+    "slowest_stage": null,
+    "slowest_stage_overrun_ms": 0,
+    "stages_over_budget": []
+  },
+  "failures": [
+    {
+      "request_id": "EVAL-001_1791966948724",
+      "question_id": "EVAL-001",
+      "error": "Connection error.",
+      "elapsed_ms": 4008.321999979671
+    },
+    {
+      "request_id": "EVAL-002_1791966952733",
+      "question_id": "EVAL-002",
+      "error": "Connection error.",
+      "elapsed_ms": 2464.8787920014
+    },
+    {
+      "request_id": "EVAL-003_1791966955197",
+      "question_id": "EVAL-003",
+      "error": "Connection error.",
+      "elapsed_ms": 2321.0529999923892
+    },
+    {
+      "request_id": "EVAL-004_1791966957519",
+      "question_id": "EVAL-004",
+      "error": "Connection error.",
+      "elapsed_ms": 2671.4698750292882
+    },
+    {
+      "request_id": "EVAL-005_1791966960190",
+      "question_id": "EVAL-005",
+      "error": "Connection error.",
+      "elapsed_ms": 2768.7891669920646
+    }
+  ]
+}
