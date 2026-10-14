@@ -263,6 +263,7 @@ The evaluation harness (`app/evaluation/harness.py`) runs each case in `benchmar
 ```bash
 python -m scripts.run_evaluation --model gemini/gemini-3.8-flash --judge gemini/gemini-3.8-flash --output benchmarks/results/gemini-3.8-flash.jsonl --report benchmarks/reports/gemini-3.8-flash.md
 ```
+python -m scripts.run_evaluation --model gemini/gemini-3.8-flash --judge gemini/gemini-3.8-flash --output benchmarks/results/gemini-3.8-flash.jsonl --report benchmarks/reports/gemini-3.8-flash.md
 
 **Compare several runs in one report:**
 ```bash
