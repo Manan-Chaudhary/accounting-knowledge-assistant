@@ -37,3 +37,6 @@ numpy>=2.0.0
 httpx>=0.27.0
 itsdangerous==2.2.0
 
+# reranking
+torch>=1.11.0
+sentence-transformers==5.2.3
