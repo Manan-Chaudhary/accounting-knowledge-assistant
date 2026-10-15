@@ -13,9 +13,10 @@ logger = logging.getLogger(__name__)
 
 
 # Retrieval configuration
-DEFAULT_DENSE_K = 10
-DEFAULT_KEYWORD_K = 10
-DEFAULT_TOP_K = 6
+DEFAULT_DENSE_K = 20
+DEFAULT_KEYWORD_K = 20
+DEFAULT_CANDIDATE_K = 20
+DEFAULT_TOP_K = 5
 RRF_K = 60
 
 
@@ -293,33 +294,39 @@ def reciprocal_rank_fusion(
     return results
 
 
+
 def retrieve_hybrid(
     query: str,
     top_k: int = DEFAULT_TOP_K,
     dense_k: int = DEFAULT_DENSE_K,
     keyword_k: int = DEFAULT_KEYWORD_K,
+    candidate_k: int = DEFAULT_CANDIDATE_K,
 ) -> list[RetrievedChunk]:
     """
-    Strategy 3: hybrid retrieval.
+    Hybrid retrieval followed by lightweight reranking.
 
     Flow:
         query
         -> dense retrieval
         -> keyword retrieval
         -> Reciprocal Rank Fusion
-        -> final top-k chunks
+        -> top candidate_k unique chunks
+        -> cross-encoder reranking
+        -> final top_k chunks
     """
-
     query = _validate_query(query)
 
     if top_k <= 0:
         raise ValueError("top_k must be greater than zero.")
 
-    if dense_k <= 0:
-        raise ValueError("dense_k must be greater than zero.")
+    if dense_k <= 0 or keyword_k <= 0:
+        raise ValueError("dense_k and keyword_k must be positive.")
 
-    if keyword_k <= 0:
-        raise ValueError("keyword_k must be greater than zero.")
+    if candidate_k <= 0:
+        raise ValueError("candidate_k must be greater than zero.")
+
+    if top_k > candidate_k:
+        raise ValueError("top_k cannot exceed candidate_k.")
 
     dense_results = retrieve_dense(
         query=query,
@@ -336,10 +343,27 @@ def retrieve_hybrid(
         keyword_results=keyword_results,
     )
 
-    results = fused_results[:top_k]
+    # Limit the reranker workload to the best RRF candidates.
+    candidates = fused_results[:candidate_k]
+
+    # Import locally to avoid a circular module import:
+    # reranker.py imports RetrievedChunk from this module.
+    from app.rag.reranker import rerank_chunks
+
+    reranked_results = rerank_chunks(
+        query=query,
+        chunks=candidates,
+    )
+
+    results = reranked_results[:top_k]
 
     logger.info(
-        "Hybrid retrieval returned %s chunks",
+        "Hybrid retrieval: %s dense, %s keyword, "
+        "%s fused, %s reranked, %s returned",
+        len(dense_results),
+        len(keyword_results),
+        len(fused_results),
+        len(candidates),
         len(results),
     )
 
