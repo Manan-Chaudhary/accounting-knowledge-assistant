@@ -315,3 +315,15 @@ Note the CI cost problem before it bites: a full LLM-judged benchmark on every P
 - Several golden answers are source-derived by non-experts. Where a figure came from a secondary source, say so in the results table rather than presenting it as verified.
 - The judge is an LLM evaluating an LLM. The kappa figure is the honest bound on how much any of these numbers mean.
 - Corpus B evaluation is contingent on Corpus B existing. If it does not, C5 is reported as unevaluated - not silently dropped, and not padded with invented procedures.
+
+### 4.3 LiteLLM proxy model comparison setup
+
+The evaluation harness supports selecting a generation model through the `--model` argument in `scripts/run_evaluation.py`. For repeatable model comparisons, candidates must be selected using the model aliases configured in `litellm/config.yaml`.
+
+All candidates in a comparison must use the same benchmark questions, retrieval strategy, `top_k`, and judging configuration. Only the generation model should vary between runs.
+
+Before a candidate is included in the comparison, verify that it can return a response through the proxy. Record the configured alias, underlying provider/model, benchmark output, and any errors or fallback events. A run that uses an unintended fallback must not be interpreted as a clean result for the requested candidate.
+
+The React `/testing` page remains a static prototype in this scope. Benchmark execution is performed through the command-line harness; interactive test execution and persistent evaluation results in the UI remain separate work.
+
+**Reproducibility note:** Provider availability, free-tier quotas, and OpenRouter model routing can change. Record the model configuration and run date alongside each comparison.
