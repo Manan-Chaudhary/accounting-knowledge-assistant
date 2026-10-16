@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import time
 import uuid
@@ -20,7 +21,7 @@ from app.rag.retriever import (
 )
 
 
-DEFAULT_MODEL = "gemini/gemini-3.8-flash"
+DEFAULT_MODEL = "gemini-3.8-flash"
 DEFAULT_TOP_K = 6
 DEFAULT_RETRIEVAL_STRATEGY = "hybrid"
 
@@ -153,13 +154,25 @@ def complete_with_retry(
     max_attempts: int = 6,
     **kwargs: Any,
 ) -> str:
-    """Call LiteLLM directly, retrying temporary availability and rate-limit failures."""
+    """Call a configured LiteLLM proxy model alias with retries."""
+
+    proxy_url = os.getenv(
+        "LITELLM_PROXY_URL",
+        "http://localhost:4000",
+    )
+    proxy_key = os.getenv("LITELLM_MASTER_KEY")
+
+    if not proxy_key:
+        raise RuntimeError(
+            "LITELLM_MASTER_KEY is required to call the LiteLLM proxy."
+        )
 
     for attempt in range(1, max_attempts + 1):
         try:
             response = completion(
-                model=model,
-                api_key=api_key_for(model),
+                model=f"litellm_proxy/{model}",
+                api_base=proxy_url,
+                api_key=proxy_key,
                 messages=messages,
                 **kwargs,
             )
