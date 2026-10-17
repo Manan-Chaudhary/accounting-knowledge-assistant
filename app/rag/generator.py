@@ -246,7 +246,7 @@ def generate_response_stream(
         )
         
         print(f"=== REQUESTED MODEL: {resolved_model} ===")
-        print(f"=== ACTUAL LITELLM MODEL: {response.model} ===")
+        #print(f"=== ACTUAL LITELLM MODEL: {response.model} ===")
 
         for chunk in response:
             if not chunk.choices:

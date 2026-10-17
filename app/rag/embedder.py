@@ -16,7 +16,6 @@ def get_embedding_client() -> InferenceClient:
 
 
 def embed_text(text: str) -> list[float]:
-    return [0.0] * 1024
     if not text or not text.strip():
         raise ValueError("Cannot generate an embedding for empty text.")
 
