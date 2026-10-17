@@ -13,9 +13,10 @@ logger = logging.getLogger(__name__)
 
 
 # Retrieval configuration
-DEFAULT_DENSE_K = 10
-DEFAULT_KEYWORD_K = 10
-DEFAULT_TOP_K = 6
+DEFAULT_DENSE_K = 20
+DEFAULT_KEYWORD_K = 20
+DEFAULT_CANDIDATE_K = 20
+DEFAULT_TOP_K = 5
 RRF_K = 60
 
 
@@ -47,7 +48,6 @@ def _validate_query(query: str) -> str:
     """
     Validate and normalise a retrieval query.
     """
-
     if not query or not query.strip():
         raise ValueError("Query cannot be empty.")
 
@@ -58,7 +58,6 @@ def _validate_embedding(embedding: list[float]) -> None:
     """
     Ensure the embedding returned by BGE-M3 has the expected dimension.
     """
-
     if len(embedding) != EMBEDDING_DIM:
         raise ValueError(
             f"Unexpected query embedding dimension: "
@@ -81,7 +80,6 @@ def retrieve_dense(
         -> ready documents only
         -> top-k chunks
     """
-
     query = _validate_query(query)
 
     if top_k <= 0:
@@ -89,21 +87,6 @@ def retrieve_dense(
 
     query_embedding = embed_text(query)
     _validate_embedding(query_embedding)
-    try:
-        query_embedding = embed_text(query)
-    except Exception as e:
-        logger.warning(
-            "Embedding API failed or out of credits (%s). Falling back to empty context.",
-            e,
-        )
-        return []
-
-    if len(query_embedding) != EMBEDDING_DIM:
-        raise ValueError(
-            f"Unexpected query embedding dimension: "
-            f"{len(query_embedding)}. "
-            f"Expected {EMBEDDING_DIM}."
-        )
 
     db = SessionLocal()
 
@@ -152,9 +135,7 @@ def retrieve_dense(
         return results
 
     except Exception:
-        logger.exception(
-            "Failed during dense retrieval"
-        )
+        logger.exception("Failed during dense retrieval")
         raise
 
     finally:
@@ -172,7 +153,6 @@ def retrieve_keyword(
     containing legislation names, section numbers, abbreviations,
     tax terminology, and other specialised phrases.
     """
-
     query = _validate_query(query)
 
     if top_k <= 0:
@@ -181,7 +161,6 @@ def retrieve_keyword(
     db = SessionLocal()
 
     try:
-        # PostgreSQL full-text search expressions.
         search_vector = func.to_tsvector(
             "english",
             DocumentChunk.content,
@@ -240,9 +219,7 @@ def retrieve_keyword(
         return results
 
     except Exception:
-        logger.exception(
-            "Failed during keyword retrieval"
-        )
+        logger.exception("Failed during keyword retrieval")
         raise
 
     finally:
@@ -264,7 +241,6 @@ def reciprocal_rank_fusion(
     RRF contribution:
         1 / (rrf_k + rank)
     """
-
     if rrf_k <= 0:
         raise ValueError("rrf_k must be greater than zero.")
 
@@ -284,8 +260,6 @@ def reciprocal_rank_fusion(
             1.0 / (rrf_k + rank)
         )
 
-        # Prefer the dense result when the same chunk exists in both
-        # result sets because it contains the cosine distance.
         if chunk.chunk_id not in chunks:
             chunks[chunk.chunk_id] = chunk
 
@@ -295,16 +269,9 @@ def reciprocal_rank_fusion(
         reverse=True,
     )
 
-    results = [
-        chunks[chunk_id]
-        for chunk_id in ranked_chunk_ids
-    ]
+    results = [chunks[chunk_id] for chunk_id in ranked_chunk_ids]
 
-    logger.info(
-        "RRF combined %s unique chunks",
-        len(results),
-    )
-
+    logger.info("RRF combined %s unique chunks", len(results))
     return results
 
 
@@ -313,28 +280,33 @@ def retrieve_hybrid(
     top_k: int = DEFAULT_TOP_K,
     dense_k: int = DEFAULT_DENSE_K,
     keyword_k: int = DEFAULT_KEYWORD_K,
+    candidate_k: int = DEFAULT_CANDIDATE_K,
 ) -> list[RetrievedChunk]:
     """
-    Strategy 3: hybrid retrieval.
+    Hybrid retrieval followed by lightweight reranking.
 
     Flow:
         query
         -> dense retrieval
         -> keyword retrieval
         -> Reciprocal Rank Fusion
-        -> final top-k chunks
+        -> top candidate_k unique chunks
+        -> cross-encoder reranking
+        -> final top_k chunks
     """
-
     query = _validate_query(query)
 
     if top_k <= 0:
         raise ValueError("top_k must be greater than zero.")
 
-    if dense_k <= 0:
-        raise ValueError("dense_k must be greater than zero.")
+    if dense_k <= 0 or keyword_k <= 0:
+        raise ValueError("dense_k and keyword_k must be positive.")
 
-    if keyword_k <= 0:
-        raise ValueError("keyword_k must be greater than zero.")
+    if candidate_k <= 0:
+        raise ValueError("candidate_k must be greater than zero.")
+
+    if top_k > candidate_k:
+        raise ValueError("top_k cannot exceed candidate_k.")
 
     dense_results = retrieve_dense(
         query=query,
@@ -351,10 +323,26 @@ def retrieve_hybrid(
         keyword_results=keyword_results,
     )
 
-    results = fused_results[:top_k]
+    # Limit the reranker workload to the best RRF candidates.
+    candidates = fused_results[:candidate_k]
+
+    # Import locally to avoid a circular module import:
+    from app.rag.reranker import rerank_chunks
+
+    reranked_results = rerank_chunks(
+        query=query,
+        chunks=candidates,
+    )
+
+    results = reranked_results[:top_k]
 
     logger.info(
-        "Hybrid retrieval returned %s chunks",
+        "Hybrid retrieval: %s dense, %s keyword, "
+        "%s fused, %s reranked, %s returned",
+        len(dense_results),
+        len(keyword_results),
+        len(fused_results),
+        len(candidates),
         len(results),
     )
 
@@ -374,7 +362,6 @@ def retrieve(
         + RRF
         -> final top-k chunks
     """
-
     return retrieve_hybrid(
         query=query,
         top_k=top_k,
@@ -388,7 +375,6 @@ def format_retrieved_context(
     Format retrieved chunks as numbered source blocks
     for the LLM prompt.
     """
-
     if not chunks:
         return (
             "No relevant document chunks were retrieved for this query. "
@@ -423,13 +409,13 @@ def retrieve_context(
     Retrieve relevant chunks using hybrid retrieval and return
     formatted context ready for the LLM.
     """
-
     chunks = retrieve(
         query=query,
         top_k=top_k,
     )
 
     return format_retrieved_context(chunks)
+
 
 def retrieve_context_and_sources(
     query: str,
