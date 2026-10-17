@@ -19,6 +19,10 @@ export function Documents() {
   const [dragOver, setDragOver] = useState(false)
   const [loadError, setLoadError] = useState<string | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
+  const [deletingId, setDeletingId] = useState<number | null>(null)
+  const [documentToDelete, setDocumentToDelete] = useState<Document | null>(null)
+  const [deleteMessage, setDeleteMessage] = useState<string | null>(null)
+  const [deleteError, setDeleteError] = useState<string | null>(null)
 
   const fetchDocuments = async () => {
     try {
@@ -65,30 +69,34 @@ export function Documents() {
   }
 
   const handleDelete = async (id: number) => {
-    const confirmed = window.confirm(
-      'Are you sure you want to delete this document?'
-    )
+    if (deletingId !== null) return
 
-    if (!confirmed) return
+    setDeletingId(id)
+    setDeleteMessage(null)
+    setDeleteError(null)
 
     try {
       const response = await fetch(`/api/documents/${id}`, {
         method: 'DELETE',
       })
 
+      const data = await response.json().catch(() => ({}))
+
       if (!response.ok) {
-        const error = await response.json()
-        throw new Error(error.detail || 'Delete failed')
+        throw new Error(data.detail || 'Failed to delete document')
       }
 
       setDocuments((current) =>
         current.filter((doc) => doc.id !== id)
       )
+      setDocumentToDelete(null)
+      setDeleteMessage(data.message || 'Document deleted successfully.')
     } catch (err) {
-      window.alert(
-        'Delete error: ' +
-        (err instanceof Error ? err.message : String(err))
+      setDeleteError(
+        err instanceof Error ? err.message : 'Failed to delete document'
       )
+    } finally {
+      setDeletingId(null)
     }
   }
 
@@ -127,6 +135,18 @@ export function Documents() {
       <p className="page-subtitle">
         Upload documents for use within the system.
       </p>
+
+      {deleteMessage && (
+        <div role="status" className="success-message">
+          {deleteMessage}
+        </div>
+      )}
+
+      {deleteError && (
+        <div role="alert" className="error-message">
+          {deleteError}
+        </div>
+      )}
 
       <div
         className="upload-zone"
@@ -300,7 +320,12 @@ export function Documents() {
                           type="button"
                           className="action-btn"
                           title="Delete document"
-                          onClick={() => handleDelete(doc.id)}
+                          disabled={deletingId !== null}
+                          onClick={() => {
+                            setDeleteError(null)
+                            setDeleteMessage(null)
+                            setDocumentToDelete(doc)
+                          }}
                         >
                           <i className="fas fa-trash" />
                         </button>
@@ -330,6 +355,55 @@ export function Documents() {
           </tbody>
         </table>
       </div>
+      {documentToDelete && (
+        <div
+          className="delete-dialog-backdrop"
+          onClick={() => {
+            if (deletingId === null) setDocumentToDelete(null)
+          }}
+        >
+          <div
+            className="delete-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="delete-dialog-title"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2 id="delete-dialog-title">Delete document?</h2>
+
+            <p>
+              Are you sure you want to delete{' '}
+              <strong>{documentToDelete.filename}</strong>?
+            </p>
+
+            <p>
+              This will remove the stored file and its indexed content.
+              This action cannot be undone.
+            </p>
+
+            <div className="delete-dialog-actions">
+              <button
+                type="button"
+                disabled={deletingId !== null}
+                onClick={() => setDocumentToDelete(null)}
+              >
+                Cancel
+              </button>
+
+              <button
+                type="button"
+                className="delete-confirm-btn"
+                disabled={deletingId !== null}
+                onClick={() => handleDelete(documentToDelete.id)}
+              >
+                {deletingId === documentToDelete.id
+                  ? 'Deleting...'
+                  : 'Confirm delete'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </Layout>
   )
 }

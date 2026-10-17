@@ -4,6 +4,9 @@ from datetime import datetime
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from supabase import create_client, Client
 import httpx
+from fastapi import Depends
+from app.auth.deps import require_document_delete_permission
+from app.db.models import AppUser
 
 router = APIRouter(prefix="/api")
 
@@ -113,7 +116,9 @@ def get_document_status(document_id: int):
         raise HTTPException(status_code=500, detail=str(e))
     
 @router.delete("/documents/{document_id}")
-def delete_document(document_id: int):
+def delete_document(
+    document_id: int,
+    current_user: AppUser = Depends(require_document_delete_permission),):
     try:
         supabase = get_supabase_client()
         bucket_name = os.getenv("SUPABASE_BUCKET", "documents")
