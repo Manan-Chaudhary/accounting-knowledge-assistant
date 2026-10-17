@@ -8,9 +8,7 @@ from app.db.database import SessionLocal
 from app.db.models import Document, DocumentChunk, EMBEDDING_DIM
 from app.rag.embedder import embed_text
 
-
 logger = logging.getLogger(__name__)
-
 
 # Retrieval configuration
 DEFAULT_DENSE_K = 20
@@ -260,6 +258,8 @@ def reciprocal_rank_fusion(
             1.0 / (rrf_k + rank)
         )
 
+        # Prefer the dense result when the same chunk exists in both
+        # result sets because it contains the cosine distance.
         if chunk.chunk_id not in chunks:
             chunks[chunk.chunk_id] = chunk
 
@@ -269,9 +269,16 @@ def reciprocal_rank_fusion(
         reverse=True,
     )
 
-    results = [chunks[chunk_id] for chunk_id in ranked_chunk_ids]
+    results = [
+        chunks[chunk_id]
+        for chunk_id in ranked_chunk_ids
+    ]
 
-    logger.info("RRF combined %s unique chunks", len(results))
+    logger.info(
+        "RRF combined %s unique chunks",
+        len(results),
+    )
+
     return results
 
 
@@ -327,6 +334,7 @@ def retrieve_hybrid(
     candidates = fused_results[:candidate_k]
 
     # Import locally to avoid a circular module import:
+    # reranker.py imports RetrievedChunk from this module.
     from app.rag.reranker import rerank_chunks
 
     reranked_results = rerank_chunks(
