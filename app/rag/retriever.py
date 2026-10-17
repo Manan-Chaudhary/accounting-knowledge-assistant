@@ -8,9 +8,7 @@ from app.db.database import SessionLocal
 from app.db.models import Document, DocumentChunk, EMBEDDING_DIM
 from app.rag.embedder import embed_text
 
-
 logger = logging.getLogger(__name__)
-
 
 # Retrieval configuration
 DEFAULT_DENSE_K = 20
@@ -48,7 +46,6 @@ def _validate_query(query: str) -> str:
     """
     Validate and normalise a retrieval query.
     """
-
     if not query or not query.strip():
         raise ValueError("Query cannot be empty.")
 
@@ -59,7 +56,6 @@ def _validate_embedding(embedding: list[float]) -> None:
     """
     Ensure the embedding returned by BGE-M3 has the expected dimension.
     """
-
     if len(embedding) != EMBEDDING_DIM:
         raise ValueError(
             f"Unexpected query embedding dimension: "
@@ -82,7 +78,6 @@ def retrieve_dense(
         -> ready documents only
         -> top-k chunks
     """
-
     query = _validate_query(query)
 
     if top_k <= 0:
@@ -138,9 +133,7 @@ def retrieve_dense(
         return results
 
     except Exception:
-        logger.exception(
-            "Failed during dense retrieval"
-        )
+        logger.exception("Failed during dense retrieval")
         raise
 
     finally:
@@ -158,7 +151,6 @@ def retrieve_keyword(
     containing legislation names, section numbers, abbreviations,
     tax terminology, and other specialised phrases.
     """
-
     query = _validate_query(query)
 
     if top_k <= 0:
@@ -167,7 +159,6 @@ def retrieve_keyword(
     db = SessionLocal()
 
     try:
-        # PostgreSQL full-text search expressions.
         search_vector = func.to_tsvector(
             "english",
             DocumentChunk.content,
@@ -226,9 +217,7 @@ def retrieve_keyword(
         return results
 
     except Exception:
-        logger.exception(
-            "Failed during keyword retrieval"
-        )
+        logger.exception("Failed during keyword retrieval")
         raise
 
     finally:
@@ -250,7 +239,6 @@ def reciprocal_rank_fusion(
     RRF contribution:
         1 / (rrf_k + rank)
     """
-
     if rrf_k <= 0:
         raise ValueError("rrf_k must be greater than zero.")
 
@@ -292,7 +280,6 @@ def reciprocal_rank_fusion(
     )
 
     return results
-
 
 
 def retrieve_hybrid(
@@ -383,7 +370,6 @@ def retrieve(
         + RRF
         -> final top-k chunks
     """
-
     return retrieve_hybrid(
         query=query,
         top_k=top_k,
@@ -397,7 +383,6 @@ def format_retrieved_context(
     Format retrieved chunks as numbered source blocks
     for the LLM prompt.
     """
-
     if not chunks:
         return (
             "No relevant document chunks were retrieved for this query. "
@@ -432,10 +417,35 @@ def retrieve_context(
     Retrieve relevant chunks using hybrid retrieval and return
     formatted context ready for the LLM.
     """
-
     chunks = retrieve(
         query=query,
         top_k=top_k,
     )
 
     return format_retrieved_context(chunks)
+
+
+def retrieve_context_and_sources(
+    query: str,
+    top_k: int = DEFAULT_TOP_K,
+) -> tuple[str, list[dict]]:
+    """
+    Retrieve relevant chunks, returning both formatted context for the LLM
+    and a deduplicated list of structured citation sources for streaming metadata.
+    """
+    chunks = retrieve(query=query, top_k=top_k)
+    context = format_retrieved_context(chunks)
+
+    unique_sources: list[dict] = []
+    seen = set()
+    for chunk in chunks:
+        key = (chunk.source_label, chunk.filename)
+        if key not in seen:
+            seen.add(key)
+            unique_sources.append({
+                "label": chunk.source_label or chunk.filename,
+                "filename": chunk.filename,
+                "document_id": chunk.document_id,
+            })
+
+    return context, unique_sources

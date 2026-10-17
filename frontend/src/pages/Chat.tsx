@@ -1,5 +1,5 @@
-import { useChatData, useChatInteract, useChatMessages, useChatSession } from '@chainlit/react-client'
-import { type FormEvent, useEffect, useState } from 'react'
+import { useChatData, useChatMessages, useChatSession } from '@chainlit/react-client'
+import { type FormEvent, useEffect, useRef, useState } from 'react'
 import { Layout } from '../components/Layout'
 import { useSearchParams } from 'react-router-dom'
 
@@ -191,23 +191,29 @@ function AssistantCard({ content }: { content: string }) {
 }
 
 export function Chat() {
-  const [searchParams] = useSearchParams()
+  const [searchParams, setSearchParams] = useSearchParams()
   const threadId = searchParams.get('threadId') || undefined
 
   const { connect, disconnect } = useChatSession()
-  const { connected, loading, error, disabled } = useChatData()
+  const { connected, disabled } = useChatData()
   const { messages } = useChatMessages()
-  const { sendMessage } = useChatInteract()
 
-  // 关键：存放从数据库抓取回来的历史消息状态
+ 
   const [historyMessages, setHistoryMessages] = useState<any[]>([])
   const [draft, setDraft] = useState('')
   const [selectedModel, setSelectedModel] = useState('gemini-3-8-flash')
 
+  
+  const [localMessages, setLocalMessages] = useState<any[]>([])
+  const [isStreaming, setIsStreaming] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [streamError, setStreamError] = useState<string | null>(null)
+  const abortControllerRef = useRef<AbortController | null>(null)
+
   useEffect(() => {
     let unmounted = false
+    setLocalMessages([])
 
-    // 1. 如果当前 URL 带有 threadId，主动去数据库拉取以前的对话记录
     if (threadId) {
       fetch(`/api/chat/threads/${threadId}/messages`, { credentials: 'include' })
         .then((res) => (res.ok ? res.json() : []))
@@ -221,7 +227,6 @@ export function Chat() {
       setHistoryMessages([])
     }
 
-    // 2. 鉴权并重连 WebSocket
     fetch('/chat/auth/header', {
       method: 'POST',
       credentials: 'include',
@@ -242,29 +247,195 @@ export function Chat() {
     }
   }, [threadId])
 
-  const handleSubmit = (event: FormEvent) => {
-    event.preventDefault()
-    const content = draft.trim()
-    if (!content) return
-
-    sendMessage(
-      {
-        id: crypto.randomUUID(),
-        name: 'user',
-        type: 'user_message',
-        output: content,
-        createdAt: new Date().toISOString(),
-        metadata: {
-          model: selectedModel,
-        },
-      },
-      [],
-    )
-    setDraft('')
+  
+  const handleStopGenerating = () => {
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort()
+      abortControllerRef.current = null
+      setIsStreaming(false)
+      setIsLoading(false)
+    }
   }
 
-  // 关键：将数据库取回的历史消息与本次连接产生的新消息合并展示
-  const allMessages = getCleanMessages([...historyMessages, ...messages])
+ 
+  const handleSubmit = async (event: FormEvent) => {
+    event.preventDefault()
+    const content = draft.trim()
+    if (!content || isStreaming) return
+
+    const userMessage = {
+      id: crypto.randomUUID(),
+      name: 'user',
+      type: 'user_message',
+      output: content,
+      createdAt: new Date().toISOString(),
+    }
+
+    const assistantMsgId = crypto.randomUUID()
+    const placeholderAssistantMessage = {
+      id: assistantMsgId,
+      name: 'Alfa Focus Assistant',
+      type: 'assistant_message',
+      output: '',
+      createdAt: new Date().toISOString(),
+    }
+
+    setLocalMessages((prev) => [...prev, userMessage, placeholderAssistantMessage])
+    setDraft('')
+    setIsLoading(true)
+    setIsStreaming(true)
+    setStreamError(null)
+
+    abortControllerRef.current = new AbortController()
+
+    try {
+      
+      const response = await fetch('/api/chat/stream', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({
+          message: content,
+          model: selectedModel,
+          thread_id: threadId,
+        }),
+        signal: abortControllerRef.current.signal,
+      })
+
+      if (!response.ok) {
+        throw new Error(`Streaming endpoint returned status ${response.status}`)
+      }
+
+      setIsLoading(false) 
+
+      
+      const reader = response.body?.getReader()
+      const decoder = new TextDecoder('utf-8')
+      let accumulatedOutput = ''
+      let buffer = '' 
+
+      if (reader) {
+        while (true) {
+          const { done, value } = await reader.read()
+          if (done) break
+
+          buffer += decoder.decode(value, { stream: true })
+          const lines = buffer.split('\n')
+          buffer = lines.pop() || '' 
+
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const dataStr = line.slice(6).trim()
+              if (dataStr === '[DONE]') break
+
+              try {
+                const parsed = JSON.parse(dataStr)
+                if (parsed.thread_id && !threadId) {
+                  setSearchParams({ threadId: parsed.thread_id }, { replace: true })
+                }
+                if (parsed.token) {
+                  setIsLoading(false) 
+                  accumulatedOutput += parsed.token
+                  setLocalMessages((prev) =>
+                    prev.map((m) =>
+                      m.id === assistantMsgId ? { ...m, output: accumulatedOutput } : m
+                    )
+                  )
+                }
+
+                if (parsed.sources && Array.isArray(parsed.sources)) {
+                  const sourcesMarkdown =
+                    '\n\n### Sources / References\n' +
+                    parsed.sources
+                      .map((s: any) => `- [${s.title || s.filename}](${s.url || '#'})`)
+                      .join('\n')
+                  accumulatedOutput += sourcesMarkdown
+                  setLocalMessages((prev) =>
+                    prev.map((m) =>
+                      m.id === assistantMsgId ? { ...m, output: accumulatedOutput } : m
+                    )
+                  )
+                }
+              } catch {
+                
+                if (!dataStr.startsWith('{')) {
+                  setIsLoading(false)
+                  accumulatedOutput += dataStr
+                  setLocalMessages((prev) =>
+                    prev.map((m) =>
+                      m.id === assistantMsgId ? { ...m, output: accumulatedOutput } : m
+                    )
+                  )
+                }
+              }
+            }
+          }
+        }
+      }
+    } catch (err: any) {
+      if (err.name === 'AbortError') {
+        
+        setLocalMessages((prev) =>
+          prev.map((m) =>
+            m.id === assistantMsgId
+              ? { ...m, output: (m.output || '') + '\n\n*(Generation stopped by user)*' }
+              : m
+          )
+        );
+        return
+      }
+
+      
+      console.warn('Streaming unavailable, falling back to standard endpoint...', err)
+      try {
+        const fallbackRes = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify({
+            message: content,
+            model: selectedModel,
+            thread_id: threadId,
+          }),
+        })
+
+        if (!fallbackRes.ok) throw new Error('Fallback failed')
+        const fallbackData = await fallbackRes.json()
+
+        let fullOutput = fallbackData.output || fallbackData.message || fallbackData.answer || ''
+        if (fallbackData.sources && Array.isArray(fallbackData.sources)) {
+          fullOutput +=
+            '\n\n### Sources / References\n' +
+            fallbackData.sources
+              .map((s: any) => `- [${s.title || s.filename}](${s.url || '#'})`)
+              .join('\n')
+        }
+
+        setLocalMessages((prev) =>
+          prev.map((m) =>
+            m.id === assistantMsgId ? { ...m, output: fullOutput } : m
+          )
+        )
+      } catch (fallbackError) {
+        
+        setStreamError('Failed to generate response. Please try again.')
+        setLocalMessages((prev) =>
+          prev.map((m) =>
+            m.id === assistantMsgId
+              ? { ...m, output: 'Error: Failed to generate response from server.' }
+              : m
+          )
+        )
+      }
+    } finally {
+      setIsLoading(false)
+      setIsStreaming(false)
+      abortControllerRef.current = null
+    }
+  }
+
+ 
+  const allMessages = getCleanMessages([...historyMessages, ...messages, ...localMessages])
 
   return (
     <Layout badge="Capstone Prototype">
@@ -275,8 +446,8 @@ export function Chat() {
         </div>
 
         <div className="chat-status">
-          {error && <span className="chat-status--error">Connection error!</span>}
-          {!error && !connected && <span>Connecting…</span>}
+          {streamError && <span className="chat-status--error">{streamError}</span>}
+          {!streamError && !connected && <span>Connecting…</span>}
         </div>
 
         <div className="chat-messages">
@@ -293,7 +464,7 @@ export function Chat() {
               </div>
             )
           })}
-          {loading && <div className="chat-message chat-message--assistant chat-message--pending">…</div>}
+          {isLoading && <div className="chat-message chat-message--assistant chat-message--pending">…</div>}
         </div>
 
         <div className="chat-model-selector">
@@ -303,6 +474,7 @@ export function Chat() {
             id="model-select"
             value={selectedModel}
             onChange={(event) => setSelectedModel(event.target.value)}
+            disabled={isStreaming}
           >
             <option value="gemini-3-8-flash">Gemini 3.8 Flash</option>
             <option value="groq-gpt-oss-120b">Groq GPT-OSS 120B</option>
@@ -316,11 +488,29 @@ export function Chat() {
             value={draft}
             onChange={(event) => setDraft(event.target.value)}
             placeholder="Ask an Accounting question…"
-            disabled={disabled || !connected}
+            disabled={disabled || isStreaming}
           />
-          <button type="submit" className="chat-composer__send" disabled={disabled || !connected || !draft.trim()}>
-            <i className="fas fa-arrow-right" />
-          </button>
+
+         
+          {isStreaming ? (
+            <button
+              type="button"
+              className="chat-composer__send chat-composer__stop"
+              onClick={handleStopGenerating}
+              title="Stop Generating"
+              style={{ backgroundColor: '#dc2626', color: '#fff' }}
+            >
+              <i className="fas fa-stop" />
+            </button>
+          ) : (
+            <button
+              type="submit"
+              className="chat-composer__send"
+              disabled={disabled || !draft.trim()}
+            >
+              <i className="fas fa-arrow-right" />
+            </button>
+          )}
         </form>
 
         <div className="chat-warning">
