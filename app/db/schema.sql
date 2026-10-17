@@ -18,6 +18,7 @@ create table if not exists document_chunks (
     id serial primary key,
     document_id integer references documents(id) on delete cascade,
     chunk_index integer not null,
+    section_heading text,
     content text not null,
     embedding vector(1024) not null,  -- BGE-M3 output dimension
     unique(document_id, chunk_index)  -- idempotent re-ingestion, no duplicate chunks

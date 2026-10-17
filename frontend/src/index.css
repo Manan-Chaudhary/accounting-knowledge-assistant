@@ -17,3 +17,20 @@ body {
 #root {
   min-height: 100vh;
 }
+
+.success-message,
+.error-message {
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.success-message {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.error-message {
+  background: #fef2f2;
+  color: #991b1b;
+}

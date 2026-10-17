@@ -29,11 +29,14 @@ class Document(Base):
 
 class DocumentChunk(Base):
     __tablename__ = "document_chunks"
-    __table_args__ = (UniqueConstraint("document_id", "chunk_index", name="uq_document_chunk"),)
+    __table_args__ = (
+        UniqueConstraint("document_id", "chunk_index", name="uq_document_chunk"),
+    )
 
     id = Column(Integer, primary_key=True)
     document_id = Column(Integer, ForeignKey("documents.id"), nullable=False)
     chunk_index = Column(Integer, nullable=False)
+    section_heading = Column(String, nullable=True)
     content = Column(Text, nullable=False)
     embedding = Column(Vector(EMBEDDING_DIM), nullable=False)
 

@@ -257,3 +257,81 @@ Done: Collected 73 official documents (75 files, 3,750 chunks) from the ATO, the
 Deliverable: `docs/DOCUMENT-CORPUS.md`, `corpus/` (documents, `sources.json`, `manifest.json`) and `scripts/build_corpus.py`, `validate_corpus.py`, `upload_corpus.py` on branch `docs/sample-accounting-documentation`.
 
 Note for next role: The documents have not been uploaded to Supabase yet. On `main`, the n8n callback gets a 401 from the auth middleware (section 6.1), so that needs a decision and fix first, along with a `.env` holding real Supabase and HF credentials. After that, run `scripts/upload_corpus.py` and confirm every row is `ready`. Please also review the section 6.2 embedding volume before the full load. The Master Document (Team 83) needs updating with this card's handoff.
+
+## Setting Up the n8n Document Ingestion Workflow
+
+### 1. Start the application
+
+From the project root, start the Docker Compose services:
+
+```bash
+docker compose up -d
+```
+
+Open n8n at `http://localhost:5678` and sign in to the configured n8n instance.
+
+### 2. Import the workflow
+
+Import `n8n/Document Ingestion.json` using n8n's **Import from File** option.
+
+The workflow contains two nodes:
+
+* **Webhook:** Receives a POST request at `/webhook/process-document` containing a `document_id`.
+* **HTTP Request:** Calls `POST http://app:8000/api/n8n/process-document/{document_id}` to start document processing in FastAPI.
+
+The hostname `app` refers to the application service within the Docker Compose network. Do not replace it with `localhost` for container-to-container communication.
+
+Save and activate the workflow after configuring its credentials.
+
+### 3. Configure the shared-secret credential
+
+The FastAPI integration endpoint validates requests using the `X-N8N-Secret` header.
+
+In n8n, create a **Header Auth** credential with:
+
+* Header name: `X-N8N-Secret`
+* Header value: the same secret configured as `N8N_SHARED_SECRET` for the FastAPI application.
+
+Select this credential in the workflow's HTTP Request node.
+
+Set `N8N_SHARED_SECRET` in the application's environment configuration. The secret must be available to FastAPI and must not be committed to Git or embedded in the workflow JSON.
+
+If the environment variable changes, recreate the application container so it receives the updated configuration.
+
+### 4. Configure chunking
+
+The FastAPI document-processing service is responsible for text extraction, structure-aware recursive chunking, embedding generation, and database storage. n8n orchestrates the processing request; it does not implement chunking itself.
+
+Configure the chunker through the application's environment variables:
+
+```env
+RAG_CHUNK_SIZE=1200
+RAG_CHUNK_OVERLAP=150
+```
+
+These values are the project's intended defaults. Confirm that the configuration and chunker implementation use them.
+
+The chunking implementation should preserve document identifiers, sequential chunk indexes, section-heading metadata, and relevant structural units such as numbered clauses and tables.
+
+### 5. Test the workflow
+
+Before reprocessing the existing corpus:
+
+1. Confirm that the application and n8n containers are running.
+2. Upload a small test document or use a confirmed test document ID.
+3. Check the n8n execution and FastAPI logs.
+4. Confirm the document reaches `ready` and its chunks and embeddings are stored correctly.
+
+Embedding generation requires a working embedding provider and valid credentials. If Hugging Face inference credits are exhausted, processing can fail even when the n8n workflow and authentication are configured correctly.
+
+### 6. Reprocess existing documents
+
+Reprocessing replaces the existing chunks for each document with newly generated chunks and embeddings. Confirm with the team before running a bulk reprocessing operation against the shared database.
+
+After reprocessing, verify document statuses, chunk metadata, and the absence of duplicate `(document_id, chunk_index)` pairs.
+
+### 7. Credential and deployment notes
+
+n8n credentials are instance-specific. When importing this workflow into a fresh n8n instance, recreate the Header Auth credential and select it in the HTTP Request node.
+
+The workflow JSON is version-controlled in `n8n/Document Ingestion.json`; secrets and credential values must be managed separately.

@@ -29,3 +29,17 @@ def get_current_user(
             detail="Authentication required.",
         )
     return user
+
+def require_document_delete_permission(
+    user: AppUser = Depends(get_current_user),
+) -> AppUser:
+    """Only authorised roles may delete documents."""
+    allowed_roles = {"admin", "staff"}
+
+    if (user.role or "").strip().lower() not in allowed_roles:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You do not have permission to delete documents.",
+        )
+
+    return user

@@ -175,3 +175,26 @@ This context was supplied directly.
 
     assert result == "Explicit context response."
     assert explicit_context in captured["messages"][1]["content"]
+
+
+def test_proxy_settings_fall_back_to_master_key(monkeypatch):
+    monkeypatch.setattr(generator.settings, "LITELLM_API_BASE", "http://proxy.test")
+    monkeypatch.setattr(generator.settings, "LITELLM_API_KEY", "")
+    monkeypatch.setattr(generator.settings, "LITELLM_MASTER_KEY", "master-key")
+
+    base, key = generator._resolve_proxy_settings()
+
+    assert base == "http://proxy.test/v1"
+    assert key == "master-key"
+
+
+def test_proxy_settings_require_a_key(monkeypatch):
+    monkeypatch.setattr(generator.settings, "LITELLM_API_KEY", "")
+    monkeypatch.setattr(generator.settings, "LITELLM_MASTER_KEY", "")
+
+    try:
+        generator._resolve_proxy_settings()
+    except RuntimeError as exc:
+        assert "No LiteLLM proxy API key configured" in str(exc)
+    else:
+        raise AssertionError("Expected RuntimeError when no key is configured")
