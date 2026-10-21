@@ -286,17 +286,24 @@ async def chat_stream_endpoint(
                 logger.warning("Unverified citations flagged: %s", invalid_cites)
 
             
-            unique_sources = {}
-            for c in retrieved_chunks:
-                if c.filename and c.filename not in unique_sources:
-                    unique_sources[c.filename] = {
-                        "title": c.source_label or c.filename,
-                        "filename": c.filename,
-                        "url": f"/static/docs/{c.filename}" if hasattr(c, "filename") else "#"
-                    }
+            
+            sources = [
+                {
+                    "number": number,
+                    "chunk_id": chunk.chunk_id,
+                    "document_id": chunk.document_id,
+                    "chunk_index": chunk.chunk_index,
+                    "content": chunk.content,
+                    "title": chunk.source_label or chunk.filename or "Untitled source",
+                    "filename": chunk.filename or "",
+                    "url": None,
+                }
+                for number, chunk in enumerate(retrieved_chunks, start=1)
+            ]
 
-            yield f"data: {json.dumps({'sources': list(unique_sources.values())})}\n\n"
+            yield f"data: {json.dumps({'sources': sources, default=str})}\n\n"
             yield "data: [DONE]\n\n"
+
 
         except Exception as ge:
             logger.exception("Generator streaming error: %s", ge)
