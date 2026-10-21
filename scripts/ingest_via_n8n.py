@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 logger = logging.getLogger("IngestPipeline")
 
 LOGIN_URL = "http://localhost:8000/api/auth/login"
-UPLOAD_URL = "http://localhost:8000/upload"
+UPLOAD_URL = "http://localhost:8000/api/upload"
 LOG_OUTPUT_PATH = Path("docs/load_log.csv")
 BATCH_SIZE = 4
 COOLDOWN_SECONDS = 4.0

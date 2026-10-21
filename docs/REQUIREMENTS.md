@@ -2,7 +2,24 @@
 
 Team 83 - Alfa Focus Knowledge Assistant. Drafted from the user stories, the client research in [`CLIENT-BRIEF.md`](CLIENT-BRIEF.md), and the domain constraints in [`DOMAIN-PRIMER.md`](DOMAIN-PRIMER.md).
 
-**Status: pre-client-meeting.** Requirements marked `[ASSUMED]` are our inference and need client confirmation before they drive a sprint. They are written broadly on purpose - narrow them once we have met the client, do not invent detail to fill them in.
+**Status: design document; the client was never met.** Requirements marked `[ASSUMED]` stayed assumed and were never confirmed. This file is what was asked for, not what was built. Implementation status, checked against the code on `main`:
+
+| Area | Status |
+|---|---|
+| CH-1, CH-4, CH-6, CH-7, CH-10, CH-15, CH-16 | Partly. Enforced only through the system prompt in `app/rag/generator.py`. Numbered citations are verified in code (`app/rag/grounding.py`), and a gate refuses when retrieval returns nothing or the query matches a personal-advice pattern. Quality is measured on the benchmark, not guaranteed |
+| CH-2, CH-3, CH-5, CH-9, CH-12, CH-14, CH-17 | Not built. No Corpus B documents exist, no digest, no unanswered-question log, no fixed refusal format beyond the two gate messages |
+| UP-1, UP-3, UP-4 | Built. Upload, ingestion via n8n, statuses `pending`/`processing`/`ready`/`failed`, readable `failure_reason`, retry |
+| UP-2, UP-5, UP-7 | Not built. Upload takes only a file; `source_label` is set to the filename; no corpus or effective date is recorded; no versioning or preview |
+| UP-6 | Partly. Documents can be listed and deleted (admin and staff roles); there is no `withdrawn` or `superseded` state |
+| UP-8, DH-5 | Partly. Every route except login, the n8n callback and `/chat` needs a signed-in session, but any signed-in user can upload and `uploaded_by` is stored as the literal `"user"`. `/chat` (Chainlit) is public if `CHAINLIT_AUTH_SECRET` is unset |
+| DI-1 to DI-12 | Mostly built in `process_document` (unique id, state, parse, chunk, embed, reprocess without duplicates, retrieval restricted to `ready`). Chunk metadata is `section_heading` only; there are no `corpus`, `effective_*`, `superseded_by` or `chunk_count` columns |
+| DH-1, DH-3, DH-4, DH-9 | DH-3 (warning under the chat box), DH-4 (prompt rule 7) and DH-9 (`.env`, gitignored) exist. DH-1 is not verified: generation goes through free-tier providers via LiteLLM with no confirmed no-training terms |
+| DH-2, DH-6, DH-7, DH-8, DH-10 | DH-7 partly (chat history is saved). The rest not built; no automated client-identifier detection; security hardening was descoped |
+| EC-1 to EC-12 | Prompt-dependent, not individually tested. Failure messages are shown on provider error, but no EC-level tests exist |
+| NF-3 | Built in part: 50-case benchmark and harness. NF-4 is not enforced (CI does not run tests or the benchmark) |
+| NF-1 | Fails the 8 s P95 target in [`LATENCY-MEASUREMENT-IMPLEMENTATION.md`](LATENCY-MEASUREMENT-IMPLEMENTATION.md) |
+
+Requirements marked `[ASSUMED]` are our inference and need client confirmation before they drive a sprint. They are written broadly on purpose - narrow them once we have met the client, do not invent detail to fill them in.
 
 Priorities are MoSCoW: **M** must have, **S** should have, **C** could have.
 

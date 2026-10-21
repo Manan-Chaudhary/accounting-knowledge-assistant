@@ -14,21 +14,21 @@ This document defines the Git workflow, branch naming conventions, commit messag
 
 ## Branching Strategy
 
-The `main` branch is the protected, stable production branch.
+The `main` branch is the protected, stable branch. There is no production deployment: the project runs locally on Docker Compose, and merging to `main` does not deploy anything. Branch protection itself is a GitHub setting that cannot be verified from the repository.
 
 All development work must be completed on a feature branch created from the latest `main`.
 
 ```
-main         ← production (protected, auto-deploys on push)
+main         ← stable (protected; nothing deploys from it)
   ↑
 feature/*    ← new features (branched from main, PR back to main)
 fix/*        ← bug fixes (branched from main, PR back to main)
-hotfix/*     ← urgent fixes (branched from main, PR back to main)
+test/ docs/ chore/ refactor/  ← other allowed types, same flow
 ```
 
 ## Branch Naming
 
-Branch names must follow this format:
+Branch names must follow this format (enforced on PRs by `.github/workflows/branch-name.yml`: lowercase letters, digits and hyphens only, so names like `feature/{Parsing}` fail the check). `hotfix/` is not an allowed type:
 
 ```
 <type>/<short-description>
@@ -163,8 +163,11 @@ refactor: separate document processing service
 
 The following GitHub Actions checks must pass before merge:
 
-- **Dependencies and Compilation Test** — Ensures all dependencies install and code compiles
-- **Branch and Commit Message Naming Checks** — Validates branch names and commit messages follow conventions
+- **CI** (`.github/workflows/ci.yml`): installs `requirements.txt` on Python 3.13 and runs `python -m compileall app`. It does **not** run pytest; that step is commented out. A green CI therefore says nothing about test results.
+- **Branch Name Check** (`.github/workflows/branch-name.yml`): validates the branch name on PRs.
+- **Commit Message Check** (`.github/workflows/deploy.yml`): despite its filename it deploys nothing. It validates that each non-merge commit subject matches `<type>(optional scope): <description>` on PRs.
+
+There is no deployment or CD workflow. Docker builds use Python 3.11 (`Dockerfile`) while CI and `.env.example` say 3.13.
 
 ## Tagging Milestones
 

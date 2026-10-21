@@ -2,11 +2,11 @@
 
 Team 83, Alfa Focus Knowledge Assistant.
 Drafted 2026-10-07 by Ronith Mugundakumar.
-Surfaces: what the assistant does with a question once retrieval has run, the wording of every non-answer, and the outcome recorded with each turn. Code: `app/rag/generator.py`, `app/rag/retriever.py`, `app/chainlit/chainlit_app.py`, `app/evaluation/harness.py`, and the grounding gate card R141 adds.
+Surfaces: what the assistant does with a question once retrieval has run, the wording of every non-answer, and the outcome recorded with each turn. Code: `app/rag/generator.py`, `app/rag/retriever.py`, `app/chainlit/chainlit_app.py`, `app/evaluation/harness.py`, and `app/rag/grounding.py` (the gate and citation check, wired into `app/routes/chat_history.py`).
 
 Defines when the assistant must answer from sources, when it must say it cannot answer from the approved documents, when it must decline, what it does with out-of-scope and mixed questions, the exact wording of each case, how citations behave in each, where each rule is enforced, and the test cases that check each rule. Requirement IDs are `GR-n` and are stable, per the traceability rule in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 10. New test cases are `GR-Tn`.
 
-**Status: proposed, not built.** No outcome is recorded, no gate exists and no post-generation check runs today (section 2). Requirements marked `[ASSUMED]` need team or client confirmation before they drive a build. The largest are the subject-area boundary (GR-30), the decline for drafting documents for signature (GR-25) and the relevance threshold, which this document deliberately does not set (GR-44).
+**Status: partially implemented.** A minimal gate exists in `app/rag/grounding.py` and runs before generation on the streaming chat path (`POST /api/chat/stream`): it declines personal-advice phrasing (four regex patterns) and returns a fixed no-source refusal when retrieval returns zero chunks, without calling the model. A post-generation check rewrites out-of-range `[n]` markers. Everything else here is not built: the seven-value turn outcome and its storage, relevance threshold (GR-44), income-year defaulting and date in the prompt, scope and mixed-question rules, signing and member-specific declines, clarification, figure and identifier checks, and marker stripping. The gate is not used by the evaluation harness (GR-50). The wording in the gate (`UNANSWERABLE_REFUSAL_MESSAGE`, `PERSONAL_ADVICE_REFUSAL_MESSAGE`) is not the section 9 wording. Requirements marked `[ASSUMED]` need team or client confirmation before they drive a build. The largest are the subject-area boundary (GR-30), the decline for drafting documents for signature (GR-25) and the relevance threshold, which this document deliberately does not set (GR-44).
 
 Priorities are MoSCoW: **M** must, **S** should, **C** could.
 
@@ -23,27 +23,27 @@ The rules already exist in pieces: CH-6 and CH-7 in [`REQUIREMENTS.md`](REQUIREM
 - The failure message for an outage (EC-12). That is I-1 and card R123. GR-22 only says an outage is never shown as a refusal.
 - Prompt injection through uploaded documents. That is exploration E-1. GR-52 states the rule only.
 
-References to `docs/ITERATION-AND-EXPLORATION.md` (branch `docs/sprint3-priorities`), `docs/CITATION-RULES.md` (branch `docs/citation-behaviour-rules`), `docs/HARNESS-PAGE-REQUIREMENTS.md` (branch `docs/harness-page-requirements`) and `docs/LATENCY-TARGETS.md` (branch `docs/latency-targets`) are to files not yet on `main`.
+`docs/CITATION-RULES.md`, `docs/HARNESS-PAGE-REQUIREMENTS.md` and `docs/LATENCY-TARGETS.md` are on `main`. `docs/ITERATION-AND-EXPLORATION.md` (findings F2, F12, items I-1, I-4, E-1, T-n) does not exist on `main`; treat those references, and card numbers such as R94, R119, R131 and R141, as historical planning labels.
 
 ## 2. What exists today
 
 | Component | Current state | Verified in |
 |---|---|---|
-| Prompt rules | Rules 1 to 8 match [`PROMPTS.md`](PROMPTS.md) section 1 except rule 7: the code asks for "[Notice: Client identifiers omitted per privacy guidelines]."; PROMPTS.md says "Note once that identifiers are not needed here." | `app/rag/generator.py` lines 43-89, line 83; [`PROMPTS.md`](PROMPTS.md) line 80 |
-| Refusal templates | In PROMPTS.md section 2 only. No template text is in `app/` or `frontend/src/`. | grep of `app/`, `frontend/src/` for "not going to answer" |
+| Prompt rules | Rules 1 to 8 match [`PROMPTS.md`](PROMPTS.md) section 1 except rule 7: the code asks for "[Notice: Client identifiers omitted per privacy guidelines]."; PROMPTS.md says "Note once that identifiers are not needed here." | `app/rag/generator.py` `SYSTEM_PROMPT_TEMPLATE`; [`PROMPTS.md`](PROMPTS.md) rule 7 |
+| Refusal templates | PROMPTS.md section 2 holds the model-side templates. The gate has two fixed strings of its own (`UNANSWERABLE_REFUSAL_MESSAGE`, `PERSONAL_ADVICE_REFUSAL_MESSAGE`) that differ from them. | `app/rag/grounding.py` |
 | Query understanding prompt | In PROMPTS.md section 3 only. Nothing in `app/` resolves an income year. | grep of `app/` for `income_year` |
-| Date in the prompt | None. The user prompt is `Context`, `Query` and `Answer:`. Rule 3 says "answer for the current income year" but the model is never told the date. | `app/rag/generator.py` lines 93-96 |
-| Empty retrieval | Context becomes an instruction to "State that no supporting source was found." The model is still called. | `app/rag/retriever.py` lines 377-382; `app/rag/generator.py` lines 166-194 |
-| Relevance threshold | None. `retrieve` defaults to `retrieve_hybrid`, which fuses dense and keyword results with RRF and keeps the top `top_k`. The dense half returns the nearest chunks whatever their distance, so the fused list is empty only when no document is `ready`. Keyword hits are fused in without any score floor either. | `app/rag/retriever.py` lines 96-113, 296-366 |
-| Relevance score available | `RetrievedChunk.similarity` is 1 minus cosine distance for dense results and `None` for keyword-only results. | `app/rag/retriever.py` lines 32-43 |
-| Document state | Only `ready` documents are searched. No `superseded`, corpus, tier or income-year field exists. | `app/rag/retriever.py` lines 110, 196; `app/db/models.py` line 22 |
-| Retrieval query | The current message only. Earlier turns go to the model as history but not to retrieval. | `app/chainlit/chainlit_app.py` lines 118-121; `app/rag/generator.py` lines 166-178 |
-| Post-generation checks | None. The model's text is sent as is. On failure the raw exception is shown (finding F2). | `app/chainlit/chainlit_app.py` lines 118-132 |
-| Welcome text | "Ask me any accounting or business question." PROMPTS.md section 4 has a different, scoped text. | `app/chainlit/chainlit_app.py` line 76; [`PROMPTS.md`](PROMPTS.md) lines 169-179 |
-| Harness refusal scoring | One regex over 12 patterns gives `refused`; `refusal_correct` compares it with the boolean `must_refuse`. No-source and decline wording both count as refused. | `app/evaluation/harness.py` lines 41-55, 392-395, 476-491 |
-| Harness generation path | `generate_with_model` sends `SYSTEM_PROMPT_TEMPLATE` and the context straight to the provider. It does not call `generate_response`, so anything added to the chat path is not measured by the benchmark. | `app/evaluation/harness.py` lines 186-210 |
-| Benchmark | 22 cases. Must-refuse: EVAL-017 to EVAL-022. No out-of-scope, clarification, identifier or signing case. `expected_outcome` is prose. | `benchmarks/questions.jsonl` |
-| Turn outcome | Not recorded. CB-68 proposes `answered`, `refused_no_source`, `refused_with_rule`. EV-30 to EV-32 define `no_source`, `refused`, `error` for evaluation records. | `docs/CITATION-RULES.md` CB-68; [`TESTING-PAGE-REQUIREMENTS.md`](TESTING-PAGE-REQUIREMENTS.md) lines 119-122 |
+| Date in the prompt | None. The user prompt is `Context`, `Query` and `Answer:`. Rule 3 says "answer for the current income year" but the model is never told the date. | `app/rag/generator.py` `USER_PROMPT_TEMPLATE` |
+| Empty retrieval | On the streaming chat path the gate returns the fixed no-source refusal and the model is not called. On other paths (Chainlit `/chat`, harness) the context becomes an instruction to "State that no supporting source was found." and the model is still called. | `app/rag/grounding.py` `evaluate_grounding_gate`; `app/rag/retriever.py` `format_retrieved_context` |
+| Relevance threshold | None. `retrieve` defaults to `retrieve_hybrid`: dense + keyword, RRF, then cross-encoder rerank, keeping the top `top_k` (5). The dense half returns the nearest chunks whatever their distance, so the list is empty only when no document is `ready`. The gate's only retrieval test is `MIN_RETRIEVED_CHUNKS = 1`, so in practice it rarely fires. | `app/rag/retriever.py`; `app/rag/reranker.py`; `app/rag/grounding.py` |
+| Relevance score available | `RetrievedChunk.similarity` is 1 minus cosine distance for dense results and `None` for keyword-only results. The cross-encoder reranker also scores chunks, but the gate does not use either score. | `app/rag/retriever.py`; `app/rag/reranker.py` |
+| Document state | Only `ready` documents are searched. No `superseded`, corpus, tier or income-year column exists on documents or chunks (the benchmark has `income_year` per question only). | `app/rag/retriever.py`; `app/db/models.py` |
+| Retrieval query | The current message only. Earlier turns go to the model as history but not to retrieval. | `app/routes/chat_history.py`; `app/rag/generator.py` |
+| Post-generation checks | `verify_and_clean_citations` (range check on plain `[n]`). On the stream, tokens are already sent, so the cleaned text only affects what is saved; out-of-range markers are logged. No outcome classification, figure or identifier check. A streaming error sends the raw exception string in an SSE `error` event; the Chainlit path shows the raw exception. | `app/routes/chat_history.py`; `app/chainlit/chainlit_app.py` |
+| Welcome text | Chainlit welcome: "Ask me any accounting or business question." PROMPTS.md section 4 has a different, scoped text. | `app/chainlit/chainlit_app.py` `start`; [`PROMPTS.md`](PROMPTS.md) section 4 |
+| Harness refusal scoring | One regex (`REFUSAL_REGEX`, `REFUSAL_PATTERNS`) gives `refused`; `refusal_correct` compares it with the boolean `must_refuse`. No-source and decline wording both count as refused. | `app/evaluation/harness.py` `is_refusal`, `run_case` |
+| Harness generation path | `generate_with_model` sends `SYSTEM_PROMPT_TEMPLATE` and the context straight to the provider. It does not call `evaluate_grounding_gate` or `verify_and_clean_citations`, so the gate is not measured by the benchmark. | `app/evaluation/harness.py` `generate_with_model` |
+| Benchmark | 50 cases, 14 with `must_refuse`. Each case now carries `expected_behaviour` (36 `answered`, 6 `declined`, 3 `answered_partial`, 2 `refused_no_source`, 2 `out_of_scope`, 1 `needs_clarification`), `decline_reason` and `required_behaviours`. So section 13.1's tagging is done in the file; the 22-case table in 13.2 and the GR-Tn list in 13.3 describe the earlier set. | `benchmarks/questions.jsonl` |
+| Turn outcome | Not recorded. The gate returns a `status` (`declined`, `unanswerable`) and `reason` in memory only; the stream saves just the text. CB-68 proposes `answered`, `refused_no_source`, `refused_with_rule`. EV-30 to EV-32 define `no_source`, `refused`, `error` for evaluation records. | `docs/CITATION-RULES.md` CB-68; [`TESTING-PAGE-REQUIREMENTS.md`](TESTING-PAGE-REQUIREMENTS.md) EV-30 to EV-32; `app/rag/grounding.py` |
 
 ### 2.1 What the models did on the must-refuse cases
 
@@ -133,7 +133,7 @@ Consistency over eloquence, as [`PROMPTS.md`](PROMPTS.md) section 2 says. Each l
 | ID | P | Requirement |
 |---|---|---|
 | GR-34 | M | Each outcome opens with its lead line from the table below. The identifier notice is always the last line of the response, never the first, so it cannot become the lead. |
-| GR-35 | M | `is_refusal` searches the whole response, not the lead (`app/evaluation/harness.py` lines 392-395). So each refusal lead (no source, decline, out of scope) and each "Not covered:" line matches `REFUSAL_REGEX` anywhere in the response, and the clarification lead and the identifier notice do not. The body of an `answered` or `needs_clarification` response avoids the refusal phrases, such as "I could not find", "outside the scope", "cannot provide" and "not something I can", so it is not scored as a refusal; the prompt says so. This keeps `must_refuse` scoring valid (section 13.1). Checked by GR-T24, and on full answers by the R131 `answered` cases. |
+| GR-35 | M | `is_refusal` searches the whole response, not the lead (`is_refusal` in `app/evaluation/harness.py`). So each refusal lead (no source, decline, out of scope) and each "Not covered:" line matches `REFUSAL_REGEX` anywhere in the response, and the clarification lead and the identifier notice do not. The body of an `answered` or `needs_clarification` response avoids the refusal phrases, such as "I could not find", "outside the scope", "cannot provide" and "not something I can", so it is not scored as a refusal; the prompt says so. This keeps `must_refuse` scoring valid (section 13.1). Checked by GR-T24, and on full answers by the R131 `answered` cases. |
 | GR-36 | S | For `refused_no_source` the server appends "Searched: {n} documents in the knowledge base, most recently added {YYYY-MM-DD}." from the `ready` documents (CH-12). The model cannot know these values, so the PROMPTS.md placeholders `{corpora}` and `{index_date}` are filled this way. `[ASSUMED]` that the latest upload date is an acceptable measure of currency. |
 | GR-37 | S | The next step (CH-13) in a no-source refusal reads: "Suggested next step: check the primary source directly, and ask whoever maintains the knowledge base to add it if it should be covered." `[ASSUMED]` until the client names an owner; open question 3. |
 
@@ -246,7 +246,7 @@ A gate cannot judge intent, and a prompt cannot be trusted to obey itself. Each 
 | ID | P | Requirement |
 |---|---|---|
 | GR-43 | M | The gate runs after retrieval and before the model call. Zero passages, or a best relevance score below the threshold, returns the no-source response and the model is not called. A retrieval exception returns `error` (GR-22). It adds no model call, so `[ASSUMED]` it needs no new stage budget in `docs/LATENCY-TARGETS.md`. |
-| GR-44 | M | The threshold is configuration, not code. This document sets no value. The score is the best `similarity` among the retrieved passages, or the reranker score once R139 lands. `[ASSUMED]` a result set with keyword matches but no dense similarity passes. Zekun calibrates it under R141 on the R131 set after R124 and R128, which both change similarities: the highest value at which no case tagged `answered` or `answered_partial` is gated `[ASSUMED]`. Zekun may use a different calibration rule as a design choice if he records it. The value, the rule and the run they came from go in the PR. Section 2.1 is the only evidence today. |
+| GR-44 | M | The threshold is configuration, not code. This document sets no value. The score is the best `similarity` among the retrieved passages, or the cross-encoder reranker score (the reranker is now built in `app/rag/reranker.py`). `[ASSUMED]` a result set with keyword matches but no dense similarity passes. Zekun calibrates it under R141 on the R131 set after R124 and R128, which both change similarities: the highest value at which no case tagged `answered` or `answered_partial` is gated `[ASSUMED]`. Zekun may use a different calibration rule as a design choice if he records it. The value, the rule and the run they came from go in the PR. Section 2.1 is the only evidence today. |
 | GR-45 | M | The gate never decides decline, scope or clarification. Similarity measures corpus coverage, not intent: EVAL-018's top passage scored 0.4603, and the likely reason (not verified) is that no SMSF material was loaded; if so, it will score higher after R128 without the question becoming any less a request for advice. |
 | GR-46 | S | When the question matches recommendation phrasing ("should I", "should we", "should my client", "should the client", "should this member", "is it better", "do you recommend"), the gate adds one line to the user prompt telling the model that rule 6 applies. It never declines on its own. `[ASSUMED]` phrase list, measured on the R131 decline cases; Zekun (R141) may change it as a design choice. |
 | GR-47 | M | After generation and before the turn is stored or the final stream event is sent, R141 runs, in order: citation matching (CB-23, CB-17), outcome classification (GR-4, GR-5), the CB-47 and GR-39 replacement, marker stripping (GR-38, GR-42), the figure check (GR-40) and the identifier check (GR-48). |
@@ -260,27 +260,27 @@ A gate cannot judge intent, and a prompt cannot be trusted to obey itself. Each 
 
 | Existing text | Conflict | Which wins |
 |---|---|---|
-| PROMPTS.md rule 7 vs `generator.py` line 83 | Two notice wordings | Neither. GR-27 and the section 9 notice replace both (GR-51). |
+| PROMPTS.md rule 7 vs `generator.py` rule 7 | Two notice wordings | Neither. GR-27 and the section 9 notice replace both (GR-51). |
 | PROMPTS.md rule 3: no year means current year | The card lists missing income year as a cannot-answer case | GR-19: default when there is no cue, ask when the question points at another year, refuse when the year is known and uncovered. |
 | REQUIREMENTS.md EC-10: answer and flag | The card says a superseded or outdated source means no answer | GR-13 and GR-14 for year-dependent figures and superseded documents; EC-10 for other rules (GR-15). |
 | CITATION-RULES.md CB-68, CB-59 | `refused_with_rule` covers only declines with a cited rule | GR-1 and GR-41 supersede them. CB-47, CB-58 and CB-60 are confirmed (GR-38, GR-39). |
 | EVALUATION.md C6 seed 26: "decline or heavily qualify" | Leaves the choice open | GR-25: decline. |
 | Harness `must_refuse` and regex | One boolean for four refusal kinds | Kept as the scored field for now (section 13.1). EV-30 and EV-31 win in the long run via GR-6. |
-| `chainlit_app.py` line 76 welcome | Invites "any accounting or business question" | PROMPTS.md section 4 wins (GR-51). |
+| `chainlit_app.py` welcome text | Invites "any accounting or business question" | PROMPTS.md section 4 wins (GR-51). |
 | PROMPTS.md section 7 changelog | Claims a deterministic refusal trigger and 100% privacy compliance | Not relied on. Neither is in the code or a result file (finding F12, E-1). |
 
 ## 13. Test mapping
 
 ### 13.1 Expected-behaviour vocabulary for R131
 
-R131 adds two fields to each case in `benchmarks/questions.jsonl`. The harness reads only `id` and `question` as required (`harness.py` lines 94-102), so both load without code changes.
+R131 adds two fields to each case in `benchmarks/questions.jsonl`. The harness reads only `id` and `question` as required (`load_cases` in `harness.py`), so both load without code changes.
 
 - `expected_behaviour`: one of the GR-1 values except `error`. R131's four terms map as: answer with citation is `answered` or `answered_partial`; ask for clarification is `needs_clarification`; refuse is `refused_no_source` or `declined`; out of scope is `out_of_scope`.
 - `decline_reason` for `declined` cases (GR-2).
 - `required_behaviours`, the list field [`EVALUATION.md`](EVALUATION.md) section 3 already defines. GR adds: `states_income_year`, `corrects_premise`, `no_markers`, `no_unsourced_figure`, `cites_considerations`, `names_where_figure_held`, `gives_next_step`, `no_identifier_echo`, `identifier_notice`, `not_covered_line`.
 - `must_refuse` stays and is derived: true for `refused_no_source`, `declined`, `out_of_scope` and `answered_partial`, false for `answered` and `needs_clarification`. GR-35 makes that consistent with the regex.
 
-`expected_behaviour` depends on the corpus. Tag it against the corpus that will be loaded when the set runs, and say so in `notes`. R128 loads `ato-transfer-balance-cap` ([`DOCUMENT-CORPUS.md`](DOCUMENT-CORPUS.md) line 245), so EVAL-022 changes from `refused_no_source` to `answered`.
+`expected_behaviour` depends on the corpus. Tag it against the corpus that will be loaded when the set runs, and say so in `notes`. R128 loads `ato-transfer-balance-cap` ([`DOCUMENT-CORPUS.md`](DOCUMENT-CORPUS.md)), so EVAL-022 changes from `refused_no_source` to `answered`.
 
 ### 13.2 Existing cases
 
