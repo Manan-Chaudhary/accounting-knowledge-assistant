@@ -1,5 +1,7 @@
 # RAG Design
 
+> **Status: design document, only partly built.** Read the README for what exists. Built: hybrid retrieval (BGE-M3 dense plus Postgres full-text, reciprocal rank fusion, cross-encoder rerank), a grounding gate, `[n]` citation checking, and the system prompt. Not built: the two-corpus split in the schema (no `corpus` column and no Corpus B documents), the section 4 schema (the real tables are in [`DATABASE.md`](DATABASE.md)), temporal filtering and supersession, corpus routing, the agentic multi-hop loop, the query-planning step, the link checker and scheduled re-crawl, and the change digest. Sections 4 to 7 describe the intended design; where they differ from the code, the code and [`DATABASE.md`](DATABASE.md) are right. `[ASSUMED]`: the client never confirmed that Corpus B exists or can be created.
+
 ## 1. What we are building, and what we are not
 
 **Building:** an internal, citation-first question-answering assistant for Alfa Focus staff. Two kinds of question - what does the law require, and how does this firm do it - answered separately and labelled as such, with every claim traceable to a source a human can open.
@@ -27,27 +29,30 @@ In the schema this is one column, `corpus`, on `documents` and `document_chunks`
 
 ## 3. Where each piece lives
 
-The scaffold already has the right seams. This table is the contract between the design and the code - it is the thing to check a PR against.
+This table is the contract between the design and the code. The "Currently" column was updated to the code on `main`.
 
 | Module | Currently | What it owns |
 |---|---|---|
-| `app/routes/upload.py` | stub returning a message | Ingest entry point: accept a document, hand to `document_service`, show status |
-| `app/services/storage_service.py` | empty | Raw file into Supabase Storage, fetch back for parsing |
-| `app/services/document_service.py` | empty | Document lifecycle, **and the chunk contract in section 4** - parsing, structure-aware chunking, metadata extraction |
-| `app/rag/embedder.py` | empty | Text to vector, one place, used by both ingest and query so they can never drift |
-| `app/rag/retriever.py` | empty | **Hybrid search + temporal filter + corpus routing + rerank.** The highest-value file in the repo - see section 5 |
-| `app/rag/generator.py` | empty | Prompt assembly from [`PROMPTS.md`](PROMPTS.md), model call, structured answer, citation validation |
-| `app/chainlit/chainlit_app.py` | placeholder echo | Chat surface: query in, answer with citations out, feedback capture |
-| `app/routes/testing.py` | stub returning a message | **The evaluation surface** - run the benchmark, show results. See [`EVALUATION.md`](EVALUATION.md) section 6 |
-| `app/db/models.py`, `app/db/schema.sql` | empty | The schema in section 4. Keep the two mirrored, as the README already requires |
-| `app/config.py` | empty | Every env var in one place. Each one added must also go in `.env.example` |
+| `app/routes/upload.py` | Implemented | `POST /api/upload`, document list, status, delete, retry. Stores the file, inserts the row, triggers n8n |
+| `app/services/storage_service.py` | Implemented (Supabase client helper) | Raw file into Supabase Storage |
+| `app/services/document_service.py` | Implemented | Document lifecycle (`process_document`): extract, chunk, embed, store. No metadata extraction beyond `section_heading` |
+| `app/rag/embedder.py` | Implemented | BGE-M3 via Hugging Face `InferenceClient`, used for both ingest and query |
+| `app/rag/retriever.py` | Implemented (hybrid + RRF + rerank) | No temporal filter or corpus routing. See section 5 |
+| `app/rag/reranker.py`, `app/rag/grounding.py` | Implemented | Cross-encoder rerank; grounding gate and citation verification |
+| `app/rag/generator.py` | Implemented | Prompt assembly from [`PROMPTS.md`](PROMPTS.md), LiteLLM call (streaming and not). Citation checking is in `grounding.py`, not here |
+| `app/chainlit/chainlit_app.py` | Implemented | Chainlit app for history persistence and auth; the main chat UI is the React `/assistant` page using `/api/chat/stream` |
+| `app/routes/testing.py` | Implemented | The evaluation surface (`/testing`, team role). See [`EVALUATION.md`](EVALUATION.md) |
+| `app/db/models.py`, `app/db/schema.sql` | Implemented, mirrored | Real schema in [`DATABASE.md`](DATABASE.md), not section 4 |
+| `app/config.py` | Implemented | Every env var in one place |
 
-Two notes on things that are missing rather than empty:
+Two notes (updated):
 
-- **`Dockerfile` is empty.** Render deployment cannot work until it exists. Not a docs problem, but it blocks Phase 1 and nothing in CI catches it.
-- **`.github/workflows/deploy.yml` does not deploy.** It contains a commit-message check named `Commit Message Check`. Either rename the file to `commit-message.yml` or make it deploy - as it stands, a reader assumes deployment is wired up when it is not.
+- **The `Dockerfile` exists** (React build stage plus `python:3.11-slim`) and `docker-compose.yml` runs the app, LiteLLM and n8n. There is no hosting: no Render or other deployment was set up.
+- **`.github/workflows/deploy.yml` does not deploy.** It is a commit-message check named `Commit Message Check`, and was not renamed. CI (`ci.yml`) only installs dependencies and compiles; its pytest step is commented out.
 
 ## 4. The chunk contract
+
+*Design, not what is built.* The real schema has no `corpus`, `tier`, `effective_from`, `income_years`, `tsv` or `superseded_by` columns, uses 1024-dimension vectors (BGE-M3, not 1536), integer ids, and an IVFFlat index; keyword search computes `to_tsvector` at query time. See [`DATABASE.md`](DATABASE.md).
 
 The retrieval quality of this system is decided here, not in the model choice. This is the proposed content of `app/db/schema.sql`, and `app/db/models.py` mirrors it.
 
@@ -96,13 +101,15 @@ Four things earn their place:
 - **`tier`.** Drives ranking and the wording of the answer.
 - **`tsv` as a generated column.** The lexical half of hybrid retrieval, maintained by Postgres with no application code and no second system to run. This is why pgvector-on-Supabase was the right call - one query can filter on dates, match keywords, and rank by vector distance together.
 
-**Chunking is structure-aware, not fixed-size.** Legislation splits on section and subsection; ATO pages on heading; checklists on the individual step, because a step is the unit a user acts on. Keep `document_id` so `generator.py` can pull surrounding context when a chunk is ambiguous. Fixed 512-token windows will cut a subsection in half and destroy exactly the precision this domain needs.
+**Chunking is structure-aware, not fixed-size** (built: `app/rag/chunker.py`, headings, numbered clauses and tables, 1200 characters with 150 overlap; see [`CHUNKING-DESIGN.md`](CHUNKING-DESIGN.md)). The detail below is the original design. Legislation splits on section and subsection; ATO pages on heading; checklists on the individual step, because a step is the unit a user acts on. Keep `document_id` so `generator.py` can pull surrounding context when a chunk is ambiguous. Fixed 512-token windows will cut a subsection in half and destroy exactly the precision this domain needs.
 
 **`source_url` is validated at ingest.** A citation that 404s is worse than no citation, because it looks authoritative. Re-check on a schedule, write `url_last_ok`, and alarm on breakage.
 
 **Refresh:** scheduled re-crawl of the ATO SMSF Newsroom and the tracked guidance pages. On change, insert a new `documents` row, set `effective_to` and `superseded_by` on the old one, and **never delete** - the history is what lets the assistant answer questions about prior years. Surface a weekly "what changed" digest to the firm. That digest may end up being the feature they value most, because it addresses the "ever-evolving practices" pain without anyone having to ask a question first.
 
 ## 5. Retrieval - what goes in `retriever.py`
+
+*As built:* dense top 20 plus keyword top 20, fused with RRF (k = 60), best 20 reranked by `cross-encoder/ms-marco-MiniLM-L-6-v2`, top 5 returned (the evaluation harness uses top 6). The temporal filter, corpus routing and agentic loop below are not built.
 
 **Hybrid, always.** Dense embeddings plus Postgres full-text, fused with reciprocal rank fusion, then a cross-encoder rerank over the top ~50 down to a final ~8. The lexical channel is not optional here: "Division 296" and "Division 293" are different taxes with near-identical embeddings, and citation identifiers like `TR 2010/1` or `s 62` are exact tokens. Hybrid-plus-rerank is also the consensus best quality-to-cost point in current practice, so this is a defensible default rather than an exotic choice.
 
@@ -138,6 +145,8 @@ Six behavioural rules, each of which becomes an evaluation check in [`EVALUATION
 **Citation validation runs after generation, in code, before the response is returned.** Every `[n]` must map to a chunk that was actually retrieved, and every URL must be live. This is a deterministic check, not a judgement, and it is the last line of defence against a fabricated ruling.
 
 ## 7. Request path
+
+*Design.* As built, `/api/chat/stream` runs `retrieve` (hybrid + rerank), then `evaluate_grounding_gate`, then `generate_response_stream`, then `verify_and_clean_citations`, and returns sources to the React page. There is no query plan, sufficiency loop or URL liveness check, and sign-in is email and password, not SSO.
 
 ```
 accountant -> /chat (Chainlit, SSO)
@@ -175,15 +184,17 @@ Not deferred - defaulted, with the trigger to revisit named.
 | Embedding model | A current general model, measured against a domain alternative on our own retrieval set | Domain eval says otherwise. Do not assume; measure. `embedder.py` is one file precisely so this is swappable |
 | Generation model | A current frontier model with strong instruction-following | Cost or data-residency rules it out. **Must have contractual no-training terms** - this is a proposal-level commitment, not a code choice |
 | Reranker | Cross-encoder | Latency budget is blown |
-| Auth | Chainlit auth callback + firm SSO | Client mandates otherwise |
-| MLflow | Add to `requirements.txt` for tracing and evaluation | The unit mandates a different harness. See [`EVALUATION.md`](EVALUATION.md) |
+| Auth | Built as email and password sessions owned by FastAPI, shared with Chainlit; no SSO | Client mandates otherwise |
+| MLflow | Not added; the custom harness in `app/evaluation/harness.py` is used instead. See [`EVALUATION.md`](EVALUATION.md) | The unit mandates a different harness |
 
 ## 9. Phasing
 
+*Plan, not history.* In practice the team built a Corpus A slice across 73 documents, the hybrid retriever, the harness and the chat and document UIs. Phases 2 to 4 (Corpus B, agentic multi-hop and freshness, hardening) did not happen.
+
 Sized for a capstone semester, ordered so each phase is independently demonstrable and maps to branches under the naming rules in [`GIT-WORKFLOW.md`](GIT-WORKFLOW.md).
 
-- **Phase 0 - Ground truth.** Client meeting. Confirm the niche, the software, the real question distribution. Get 30-50 real questions from the customer service manager. Nothing is built until this exists.
-- **Phase 1 - Corpus A vertical slice.** One narrow topic - contribution caps and the transfer balance cap - ingested with full temporal metadata. `schema.sql`, `embedder`, hybrid `retriever`, answer contract in `generator`, real answers in `/chat`. Benchmark v1 and the eval harness stand up **in this phase**, not later. A working eval on a narrow slice beats a broad demo with no measurement. Also: fill in the `Dockerfile` and get Render deploying.
+- **Phase 0 - Ground truth.** Client meeting. Confirm the scope of work (a generalist firm with an SMSF line), the software, the real question distribution. Get 30-50 real questions from the customer service manager. Nothing is built until this exists.
+- **Phase 1 - Corpus A vertical slice.** One narrow topic - contribution caps and the transfer balance cap - ingested with full temporal metadata. `schema.sql`, `embedder`, hybrid `retriever`, answer contract in `generator`, real answers in `/chat`. Benchmark v1 and the eval harness stand up **in this phase**, not later. A working eval on a narrow slice beats a broad demo with no measurement. Also (planned): get a hosted deployment working. This did not happen; the Dockerfile exists but nothing is hosted.
 - **Phase 2 - Corpus B.** Interviews, write up firm procedures, ingest through `/upload` with ACLs. Two-corpus answer contract live. This is where the client sees something they cannot buy off the shelf.
 - **Phase 3 - Agentic multi-hop and freshness.** Query planning loop, scheduled re-crawl, supersession handling, the weekly change digest.
 - **Phase 4 - Hardening.** Judge alignment against accountant labels, CI gates, monitoring, handover documentation for a firm with no IT staff.
@@ -200,4 +211,4 @@ If time compresses, cut Phase 3 and keep Phase 2. The two-corpus story is the di
 | Confidentiality blocks the intended model | Rework late | Settle the data-handling question in the proposal, before building |
 | Stale answers in a demo | Fatal credibility loss with this audience | Temporal metadata from day one; supersession is a first-class feature, not a fix |
 | Scope drift toward "chatbot for clients" | Regulatory exposure, and a worse product | The boundary in section 1 is written into the proposal |
-| Empty `Dockerfile`, misnamed `deploy.yml` | Deployment is assumed working and is not | Fix in Phase 1; do not discover it during a demo |
+| No deployment; misnamed `deploy.yml` | Deployment is assumed working and is not | `deploy.yml` is still a commit-message check and nothing is hosted; the next team must decide on hosting |

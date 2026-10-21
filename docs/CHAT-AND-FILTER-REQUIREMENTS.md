@@ -6,7 +6,7 @@ Surfaces: the "Recent Conversations" list in the sidebar (`frontend/src/componen
 
 Defines two small features: renaming and deleting a conversation from the chat history sidebar, and filtering the documents list by processing status and source type. For each it covers where the control appears, validation, confirmation, what is stored or removed, persistence after refresh, empty results, and how a tester checks it. Requirement IDs are `CM-n` for chat rename and delete and `DF-n` for document list filters. Both are stable, per the traceability rule in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 10.
 
-**Status: drafted after a partial first build.** Chat delete already exists on main; rename and filters do not (section 2). Requirements marked `[ASSUMED]` need client or team confirmation. The largest is the interim rule in section 4.1 that a user's delete hides a conversation and keeps its records, because [`CHAT-SESSION-REQUIREMENTS.md`](CHAT-SESSION-REQUIREMENTS.md) SS-17 and SS-44 do not allow a user to erase history before the client sets a retention period.
+**Status: partially implemented.** Chat delete is built and demoed (sidebar trash button, `DELETE /api/chat/threads/{thread_id}`), but it still hard-deletes and still has the ownership defect described after the section 2 table; it uses `window.confirm`, not the in-app dialog the requirements ask for. Chat rename is not built and was descoped. Document list filters (status, source type) are not built and were descoped; the Documents page has only a client-side text search. The requirements in sections 3, 5 and 6 remain the target for the next team. Requirements marked `[ASSUMED]` need client or team confirmation. The largest is the interim rule in section 4.1 that a user's delete hides a conversation and keeps its records, because [`CHAT-SESSION-REQUIREMENTS.md`](CHAT-SESSION-REQUIREMENTS.md) SS-17 and SS-44 do not allow a user to erase history before the client sets a retention period.
 
 Priorities are MoSCoW: **M** must, **S** should, **C** could.
 
@@ -22,29 +22,29 @@ Priorities are MoSCoW: **M** must, **S** should, **C** could.
 - Source chips, stored source lists and the auth rule for endpoints that return passages. [`CITATION-RULES.md`](CITATION-RULES.md), CB-56 and CB-67.
 - Recording the corpus (authority or firm procedure) at upload. UP-2. The source type filter depends on it (section 8).
 - Withdraw and supersede. UP-6 and UP-5.
-- Sharing threads. Off in `.chainlit/config.toml` line 48 (`allow_thread_sharing = false`). Bulk rename or delete. Not requested.
+- Sharing threads. Off in `.chainlit/config.toml` (`allow_thread_sharing = false`). Bulk rename or delete. Not requested.
 
 ## 2. What exists today
 
 | Component | Current state | Verified in |
 |---|---|---|
-| Thread routes | Router prefix `/api/chat`. `GET /api/chat/threads`, `GET /api/chat/threads/{thread_id}/messages`, `DELETE /api/chat/threads/{thread_id}`. No rename route. | `app/routes/chat_history.py` lines 12, 15, 79, 136 |
-| Thread storage | Chainlit's `SQLAlchemyDataLayer` on `CHAINLIT_DATABASE_URL`. Tables `threads`, `steps`, `elements` (and `feedbacks`, which Chainlit's delete also clears). None of these tables is defined in the repo; their schema exists only in the live database and was not checked. | `app/chainlit/chainlit_app.py` lines 18-22; grep of the repo for the table names |
-| Ownership rule | A thread is the user's when `threads."userIdentifier"` equals the session email or `sub`. The list query applies it. The messages route checks it before reading and returns 404 otherwise. | `app/routes/chat_history.py` lines 28-29, 47-48, 93-99 |
-| List | Newest 20 threads by `createdAt`. Name is `threads.name`, else the first user message, else "New Conversation", then cut to 35 characters plus "...". A database error returns an empty list. | `app/routes/chat_history.py` lines 31-51, 64-66, 74-76 |
-| Automatic title | Chainlit writes the first user message of a session into `threads.name`. A resumed thread is marked as already started, so a later message does not rename it. | pinned `chainlit==2.11.1` (`requirements.txt` line 1): `chainlit/emitter.py` lines 237-255, 281-283; `chainlit/socket.py` lines 220-225 |
-| Delete endpoint | Deletes the thread's `steps`, then its `elements` (an error there is swallowed), then the `threads` row where the owner matches, and returns `{"status": "ok"}`. The owner check is only on the last statement. `feedbacks` and element files are not removed. | `app/routes/chat_history.py` lines 136-165 |
-| Delete control | Trash button on every sidebar row, `title="Delete conversation"`. `window.confirm('Are you sure you want to delete this conversation?')`. On success the row is removed without reload; if it was open, the page goes to `/assistant`. On failure, `alert` with fixed text. | `frontend/src/components/Sidebar.tsx` lines 25-51, 124-139 |
+| Thread routes | Router prefix `/api/chat`. `GET /api/chat/threads`, `GET /api/chat/threads/{thread_id}/messages`, `DELETE /api/chat/threads/{thread_id}`, plus `POST /api/chat/stream` and a non-streaming `POST /api/chat`. No rename route. | `app/routes/chat_history.py` |
+| Thread storage | Chainlit's `SQLAlchemyDataLayer` on `CHAINLIT_DATABASE_URL`. Tables `threads`, `steps`, `elements` (and `feedbacks`, which Chainlit's delete also clears). None of these tables is defined in the repo; their schema exists only in the live database and was not checked. | `app/chainlit/chainlit_app.py` (data layer); `app/routes/chat_history.py` (direct SQL on `threads` and `steps`); grep of the repo for the table names |
+| Ownership rule | A thread is the user's when `threads."userIdentifier"` equals the session email or `sub`. The list query applies it. The messages route checks it before reading and returns 404 otherwise. | `app/routes/chat_history.py` (`list_user_threads`, `get_thread_messages`) |
+| List | Newest 20 threads by `createdAt`. Name is `threads.name`, else the first user message, else "New Conversation", then cut to 35 characters plus "...". A database error returns an empty list. | `app/routes/chat_history.py` (`list_user_threads`) |
+| Automatic title | On the Chainlit path, Chainlit writes the first user message of a session into `threads.name`. A resumed thread is marked as already started, so a later message does not rename it. | pinned `chainlit==2.11.1` (`requirements.txt`): `chainlit/emitter.py`; `chainlit/socket.py`. Note the React chat page's stream endpoint does not use Chainlit's emitter: it creates the thread itself, naming it with the first 28 characters of the first message (`chat_stream_endpoint`) |
+| Delete endpoint | Deletes the thread's `steps`, then its `elements` (an error there is swallowed), then the `threads` row where the owner matches, and returns `{"status": "ok"}`. The owner check is only on the last statement. `feedbacks` and element files are not removed. | `app/routes/chat_history.py` (`delete_thread`) |
+| Delete control | Trash button on every sidebar row, `title="Delete conversation"` (no `aria-label`). `window.confirm('Are you sure you want to delete this conversation?')`. On success the row is removed without reload; if it was open, the page goes to `/assistant`. On failure, `alert` with fixed text. Delete hard-deletes rows (no hide marker). | `frontend/src/components/Sidebar.tsx` (`handleDeleteThread`) |
 | Rename control | None. | `frontend/src/components/Sidebar.tsx` |
-| Chainlit's own thread routes | `PUT /project/thread` (rename) and `DELETE /project/thread` (hard delete via `delete_thread`, which removes feedbacks, elements and their files, steps and the thread). Both check the author and return 401, not 404, for someone else's thread. Mounted under `/chat`. Not tested against a running app. | `chainlit/server.py` lines 1148-1170, 1225-1246; `chainlit/data/acl.py` lines 6-19; `chainlit/data/sql_alchemy.py` lines 299-319; `app/main.py` line 118 |
-| Auth on `/chat` paths | The middleware treats any path containing `/chat` as public, so `/api/chat/threads/...` relies on the check inside each handler. | `app/main.py` lines 50-51 |
-| Empty sidebar | "No past sessions yet", shown for no threads and for a failed load alike. | `frontend/src/components/Sidebar.tsx` lines 18-23, 86-89 |
-| Documents list | `GET /api/documents` returns every row of `documents`, newest id first, in one response. No paging, no filter parameters. | `app/routes/upload.py` lines 92-99 |
-| Document fields | `filename`, `source_label`, `storage_path`, `status`, `failure_reason`, `uploaded_by`, `uploaded_at`. No corpus or source type field. Upload copies the filename into `source_label`. | `app/db/models.py` lines 15-25; `app/db/schema.sql` lines 6-15; `app/routes/upload.py` line 54 |
-| Status values | `pending` at upload and retry, `processing`, `ready`, `failed`. Retrieval reads only `ready`. `schema.sql` line 11 omits `processing` from its comment. The n8n workflow writes no status: its only step calls `POST /api/n8n/process-document/{id}`, which runs `process_document`. | `app/routes/upload.py` lines 56, 214; `app/services/document_service.py` lines 109, 165, 186; `app/rag/retriever.py` lines 110, 196; `n8n/Document Ingestion.json` |
-| Documents page | One text search over `filename` and `source_label`. Status shown as the raw value in a badge (CSS has `.processed` and `.uploaded` classes, neither of which is a stored value). TYPE column shows the file extension. One "No documents found." message for both an empty list and no matches. Delete and retry act on `doc.id`. | `frontend/src/pages/Documents.tsx` lines 115-122, 182-195, 225-238, 242-244, 254-289, 299-324; `frontend/src/styles/legacy.css` lines 333, 338 |
+| Chainlit's own thread routes | `PUT /project/thread` (rename) and `DELETE /project/thread` (hard delete via `delete_thread`, which removes feedbacks, elements and their files, steps and the thread). Both check the author and return 401, not 404, for someone else's thread. Mounted under `/chat`. Not tested against a running app. | `chainlit/server.py`; `chainlit/data/acl.py`; `chainlit/data/sql_alchemy.py`; `app/main.py` (`mount_chainlit`) |
+| Auth on `/chat` paths | The middleware treats any path containing `/chat` as public, so `/api/chat/threads/...` relies on the check inside each handler. | `app/main.py` (`enforce_authenticated_access`) |
+| Empty sidebar | "No past sessions yet", shown for no threads and for a failed load alike. | `frontend/src/components/Sidebar.tsx` |
+| Documents list | `GET /api/documents` returns every row of `documents`, newest id first, in one response. No paging, no filter parameters. | `app/routes/upload.py` (`list_documents`) |
+| Document fields | `filename`, `source_label`, `storage_path`, `status`, `failure_reason`, `uploaded_by`, `uploaded_at`. No corpus or source type field. Upload copies the filename into `source_label`. | `app/db/models.py`; `app/db/schema.sql`; `app/routes/upload.py` |
+| Status values | `pending` at upload and retry, `processing`, `ready`, `failed`. Retrieval reads only `ready`. `schema.sql` line 11 omits `processing` from its comment. The n8n workflow writes no status: its only step calls `POST /api/n8n/process-document/{id}`, which runs `process_document`. | `app/routes/upload.py`; `app/services/document_service.py`; `app/rag/retriever.py`; `n8n/Document Ingestion.json` |
+| Documents page | One text search over `filename` and `source_label`. Status shown as the raw value in a badge (CSS has `.processed` and `.uploaded` classes, neither of which is a stored value). TYPE column shows the file extension. One "No documents found." message for both an empty list and no matches. Delete and retry act on `doc.id`. | `frontend/src/pages/Documents.tsx`; `frontend/src/styles/legacy.css` |
 
-The gap that matters most: the delete endpoint removes messages before it checks the owner. A signed-in user who sends `DELETE /api/chat/threads/{id}` for another user's thread id erases that user's messages, keeps their empty thread row, and gets `{"status": "ok"}` back. R98's first check is aimed at exactly this.
+The gap that matters most (still present on `main` as of 2026-10-22): the delete endpoint removes messages before it checks the owner. A signed-in user who sends `DELETE /api/chat/threads/{id}` for another user's thread id erases that user's messages, keeps their empty thread row, and gets `{"status": "ok"}` back. The first check in section 9 is aimed at exactly this.
 
 ## 3. Chat rename
 
@@ -80,9 +80,9 @@ The browser checks for fast feedback. The server checks again and its answer is 
 |---|---|---|
 | CM-13 | M | A saved name is stored in `threads.name` and shows in the sidebar at once, without a page reload. |
 | CM-14 | M | After a refresh, after signing out and in, and on another device, the list shows the saved name. |
-| CM-15 | M | `GET /api/chat/threads` returns the full stored name. The sidebar shortens it for display (it already applies an ellipsis in inline styles, `Sidebar.tsx` lines 108-121) and shows the full name on hover and in the rename field. Today the endpoint cuts names to 35 characters (lines 64-66), so the field would open with a cut name. |
+| CM-15 | M | `GET /api/chat/threads` returns the full stored name. The sidebar shortens it for display (it already applies an ellipsis in inline styles, `Sidebar.tsx`) and shows the full name on hover and in the rename field. Today the endpoint cuts names to 35 characters , so the field would open with a cut name. |
 | CM-16 | M | A conversation that has never been renamed keeps today's automatic title (section 2, "List" and "Automatic title"). |
-| CM-17 | M | Once a user renames a conversation, nothing replaces that name automatically: not reopening it, not sending more messages in it, not a reconnect. If a resume fails, Chainlit treats the next message as the first one and writes it into `threads.name` (`chainlit/emitter.py` lines 281-283), so this needs its own test. |
+| CM-17 | M | Once a user renames a conversation, nothing replaces that name automatically: not reopening it, not sending more messages in it, not a reconnect. If a resume fails, Chainlit treats the next message as the first one and writes it into `threads.name` (`chainlit/emitter.py`), so this needs its own test. |
 | CM-18 | M | Renaming changes only the name. Messages, ownership and `createdAt` are unchanged, so the conversation keeps its place in the list (ordered by `createdAt`, line 49). |
 | CM-19 | S | If one conversation is renamed in two tabs, the last save wins. The other tab shows the stored name after its next refresh. No live sync, consistent with SS-34. |
 
@@ -90,8 +90,8 @@ The browser checks for fast feedback. The server checks again and its answer is 
 
 | ID | P | Requirement |
 |---|---|---|
-| CM-20 | M | Rename is a server endpoint that reads the signed-in user from the session inside its own handler and returns 401 without one. `[ASSUMED]` `PATCH /api/threads/{thread_id}` with body `{"name": "..."}`. The path has no `/chat` because `app/main.py` lines 50-51 let any path containing `/chat` skip the middleware auth guard. Outside `/chat`, this write route gets AU-85 as a second layer on top of the ownership check in CM-21. |
-| CM-21 | M | The endpoint updates the row only where the id matches and the owner is the signed-in user, by the same rule as the messages route (lines 93-99). A thread that does not exist or belongs to someone else returns 404 and is unchanged (SS-36). |
+| CM-20 | M | Rename is a server endpoint that reads the signed-in user from the session inside its own handler and returns 401 without one. `[ASSUMED]` `PATCH /api/threads/{thread_id}` with body `{"name": "..."}`. The path has no `/chat` because `enforce_authenticated_access` in `app/main.py` let any path containing `/chat` skip the middleware auth guard. Outside `/chat`, this write route gets AU-85 as a second layer on top of the ownership check in CM-21. |
+| CM-21 | M | The endpoint updates the row only where the id matches and the owner is the signed-in user, by the same rule as the messages route . A thread that does not exist or belongs to someone else returns 404 and is unchanged (SS-36). |
 | CM-22 | M | The endpoint applies CM-6 to CM-8 itself and returns 422 with the same messages for an invalid name, whatever the browser sent. |
 | CM-23 | M | The sidebar does not call Chainlit's `PUT /chat/project/thread`, and that route is blocked or made to follow CM-21 and CM-22, as CM-33 does for delete. A signed-in user can call it directly: it skips CM-22, including the 100-character limit, and it returns 401 for another user's thread, which confirms the thread exists (contrary to SS-36). |
 | CM-24 | M | If saving fails, the field stays open with the typed text and shows "The name could not be saved. Try again." Raw error text is not shown. On 404 the message is "This conversation no longer exists." and the row is removed. |
@@ -109,7 +109,7 @@ Resolution, `[ASSUMED]` until the client answers open question 1: the user's del
 | ID | P | Requirement |
 |---|---|---|
 | CM-25 | M | The existing delete control stays on each row, with the accessible name "Delete conversation". Activating it does not open the conversation. |
-| CM-26 | M | Delete needs confirmation in an in-app dialog, as DD-11 requires for documents. `window.confirm` (Sidebar line 28) is replaced. No request is sent until the user confirms. |
+| CM-26 | M | Delete needs confirmation in an in-app dialog, as DD-11 requires for documents. `window.confirm` (`Sidebar.tsx`) is replaced. No request is sent until the user confirms. |
 | CM-27 | M | The dialog names the conversation, says it will be removed from the user's list and cannot be opened again, and, while CM-29 applies, says a record is kept. It never says the conversation is permanently erased while it is not, the same honesty rule SS-20 sets for new-chat copy. `[ASSUMED]` wording: title "Delete this conversation?"; body "'{name}' will be removed from your conversations and you will not be able to open it again. Alfa Focus keeps a record of it." |
 | CM-28 | M | Cancel, Escape and closing the dialog send no request and change nothing. Cancel has initial focus. The confirm button reads "Delete conversation", not "OK" or "Yes" (as DD-15). |
 
@@ -128,7 +128,7 @@ Resolution, `[ASSUMED]` until the client answers open question 1: the user's del
 | ID | P | Requirement |
 |---|---|---|
 | CM-34 | M | While the request runs, the row's delete and rename controls are disabled. A second click sends no second request. |
-| CM-35 | M | On success, the row leaves the list without a reload and the message "Conversation deleted." shows. If it was the open conversation, the page moves to a new empty chat at `/assistant`, as today (Sidebar lines 40-43). |
+| CM-35 | M | On success, the row leaves the list without a reload and the message "Conversation deleted." shows. If it was the open conversation, the page moves to a new empty chat at `/assistant`, as today (`Sidebar.tsx`). |
 | CM-36 | M | On failure, the row stays, nothing has changed, and the message is "The conversation could not be deleted. Try again." Raw error text is not shown. |
 | CM-37 | S | On 404 (already deleted in another tab), the message is "This conversation no longer exists." and the row is removed, as DD-42 does for documents. |
 | CM-38 | S | A conversation deleted in one tab and still open in another does not return to the list when a message is sent from the stale tab. The stale tab shows that it no longer exists on its next action or refresh. |
@@ -157,7 +157,7 @@ Resolution, `[ASSUMED]` until the client answers open question 1: the user's del
 
 | ID | P | Requirement |
 |---|---|---|
-| DF-5 | M | Status options and the stored values they match: "Pending" = `pending`, or no status (shown as pending today, `Documents.tsx` line 254); "Processing" = `processing`; "Processed" = `ready`; "Failed" = `failed`; "Deleting" = `deleting` (DD-45), which also covers rows shown as "Delete incomplete" under DD-26; "Superseded" = `superseded`; "Withdrawn" = `withdrawn`. |
+| DF-5 | M | Status options and the stored values they match: "Pending" = `pending`, or no status (shown as pending today, `Documents.tsx`); "Processing" = `processing`; "Processed" = `ready`; "Failed" = `failed`; "Deleting" = `deleting` (DD-45), which also covers rows shown as "Delete incomplete" under DD-26; "Superseded" = `superseded`; "Withdrawn" = `withdrawn`. |
 | DF-6 | M | An option appears only for a status the code can produce. "Superseded" and "Withdrawn" are added when UP-5 and UP-6 create those states, and "Deleting" when DD-45 is built. `[ASSUMED]` |
 | DF-7 | M | Matching ignores case. A row whose status is not listed in DF-5 shows when the status filter is off, and matches an "Other" option that appears only while such a row exists. No row is dropped silently. |
 
@@ -202,7 +202,7 @@ Resolution, `[ASSUMED]` until the client answers open question 1: the user's del
 |---|---|---|
 | DF-23 | M | Delete and retry act on the row's document id, never on its position in the filtered list. Filters never change which actions a row offers; DD-4, DD-6 and DD-30 decide that. |
 | DF-24 | M | When a document is deleted while filters are set (DD-39), the filters stay set, the row leaves the list, and the counts and DF-12 line update. If no row is left, DF-27 shows. |
-| DF-25 | M | After a retry the list reloads (`Documents.tsx` line 106) with the filters still set. If the document's new status no longer matches, it leaves the view and the message "Processing restarted for {filename}." confirms the action. |
+| DF-25 | M | After a retry the list reloads (`Documents.tsx`) with the filters still set. If the document's new status no longer matches, it leaves the view and the message "Processing restarted for {filename}." confirms the action. |
 | DF-26 | S | After an upload the filters stay set. If the new document is hidden by them, the message reads "{filename} uploaded. It is hidden by the current filters." |
 
 ## 6. Empty and error states
@@ -211,9 +211,9 @@ Resolution, `[ASSUMED]` until the client answers open question 1: the user's del
 |---|---|---|---|
 | DF-27 | M | Documents exist but none match the filters and search | The table body says "No documents match these filters." with a "Clear filters" button. The filters stay visible with their values ticked. |
 | DF-28 | M | No documents exist | The table body says "No documents uploaded yet." It never shows the DF-27 text. |
-| DF-29 | M | The list failed to load | The existing load-failure message shows (`Documents.tsx` lines 210-223). Neither DF-27 nor DF-28 shows, and the filters are not applied to a list that did not load. |
+| DF-29 | M | The list failed to load | The existing load-failure message shows (`Documents.tsx`). Neither DF-27 nor DF-28 shows, and the filters are not applied to a list that did not load. |
 | CM-43 | M | The user has no conversations, including after deleting the last one | The sidebar shows its existing "No past sessions yet". |
-| CM-44 | M | The conversation list failed to load | The sidebar says "Your past conversations could not be loaded." and not the CM-43 text (SS-31). Today a database error returns an empty list (lines 74-76), so a failure reads as "no history". |
+| CM-44 | M | The conversation list failed to load | The sidebar says "Your past conversations could not be loaded." and not the CM-43 text (SS-31). Today a database error returns an empty list , so a failure reads as "no history". |
 
 ## 7. Conflicts and dependencies
 
@@ -221,35 +221,35 @@ Resolution, `[ASSUMED]` until the client answers open question 1: the user's del
 |---|---|---|
 | SS-17, SS-44 (M); DH-7; AU-61 | R103 asks for delete including messages; the code erases them | Section 4.1: hide and keep records until the client answers. SS-17 and SS-44 win on stored data. |
 | SS-23 (S), rename | CM-1 to CM-24 | Implements SS-23. No conflict. |
-| `docs/DATABASE.md` line 39: `source_label` is `"law"` or `"firm"` | DF-9 | The code writes the filename there (`upload.py` line 54), so DATABASE.md is out of date. The filter does not read `source_label`. Correcting DATABASE.md is a separate change. |
+| `docs/DATABASE.md` line 39: `source_label` is `"law"` or `"firm"` | DF-9 | The code writes the filename there (`upload.py`), so DATABASE.md is out of date. The filter does not read `source_label`. Correcting DATABASE.md is a separate change. |
 | R104 card: "processed, processing, failed, superseded" | DF-5, DF-6 | "Processed" is the label for the stored value `ready`. "Pending" is added because the state exists. "Superseded" waits for UP-5. |
-| `app/main.py` lines 50-51: any path containing `/chat` skips the auth guard (AU-85); CB-67 applies this to passage endpoints only | CM-20, CM-41 | The new rename route sits outside `/chat` for the same reason, so it gets the guard as well as its own check. The existing routes keep their in-handler checks. |
+| `enforce_authenticated_access` in `app/main.py`: any path containing `/chat` skips the auth guard (AU-85); CB-67 applies this to passage endpoints only | CM-20, CM-41 | The new rename route sits outside `/chat` for the same reason, so it gets the guard as well as its own check. The existing routes keep their in-handler checks. |
 | Chainlit's own rename and delete routes | CM-23, CM-33 | Not used by the sidebar. Both are blocked, or made to follow this document, while CM-29 applies. |
 | UP-2 and the `corpus` field in REQUIREMENTS.md section 5.1 | DF-8 to DF-10 | Not in `models.py` or `schema.sql`. Needs a column, capture at upload and a back-fill. R128 describes the 73 corpus documents as official sources, so `[ASSUMED]` they back-fill as "Official source". R129 already expects "source type" to be stored. No Sprint 3 card owns the column (open question 4). |
 
 ## 8. Current build against these requirements
 
-For R103 and R104 (what to change) and R98 (what fails on today's main).
+For the next team (what to change, and what fails on `main` as of 2026-10-22). Card numbers (R98, R103, R104, R136) are historical planning labels.
 
 | IDs | Today | Change needed |
 |---|---|---|
 | CM-1 to CM-14, CM-19 to CM-24 | Not met. No rename control or route. | Build. |
-| CM-15 | Not met. Names cut to 35 characters. | Return the full name. |
+| CM-15 | Not met. Names cut to 35 characters and the list is limited to 20 threads. | Return the full name. |
 | CM-16 | Met. | Keep. |
 | CM-17, CM-18 | Not testable until rename exists. | Test after reopening a thread. |
-| CM-25 | Partly met. Button with `title` only. | Accessible name. |
+| CM-25 | Partly met. Button with `title` only, no `aria-label`. | Accessible name. |
 | CM-26 to CM-28 | Partly met. `window.confirm` with generic text. | In-app dialog. |
 | CM-29 to CM-31 | Not met. Delete erases steps and elements. | Hide marker; filter it from list, messages and resume. |
 | CM-32 | Not met even as an erase: feedbacks and element files stay. If the `elements` delete fails, Postgres aborts the transaction, so swallowing that error does not let the rest succeed (expected Postgres behaviour, not tested). | Only when open question 1 allows it. |
 | CM-33 | Not met. Chainlit route available. | Block or redirect it, with the rename route (CM-23). |
 | CM-34, CM-37, CM-38 | Not met. | Build. |
-| CM-35, CM-36 | Partly met. Row removed and redirect work; no message. | Messages. |
+| CM-35, CM-36 | Partly met. Row removed and redirect to `/assistant` work (demoed); no "Conversation deleted." message, and failure uses a generic `alert`. | Messages. |
 | CM-39, CM-40 | Not met. Messages removed before the owner check; always `ok`. | Check owner first; 404 otherwise. |
 | CM-42 | Met for list and messages, not for delete. | CM-39. |
 | CM-43 | Met. | Keep. |
-| CM-44 | Not met. | Distinguish failure from empty. |
+| CM-44 | Not met. A database error returns an empty list; the sidebar fetch also treats a non-OK response as empty. | Distinguish failure from empty. |
 | DF-1 to DF-22, DF-24 to DF-28 | Not met. Only a text search exists. | Build. |
-| DF-3 | Partly met. Status shown; source type not. | Add source type. |
+| DF-3 | Partly met. Status shown as a badge; source type not. | Add source type. |
 | DF-23, DF-29 | Met. | Keep. |
 
 ## 9. Test mapping for R98
@@ -285,4 +285,4 @@ Use two `staff` accounts, A and B, and run the chat checks with both. Manan test
 - **R98, Manan Chaudhary (test):** section 9.
 - **Hayden Nguyen (PM):** confirm the interim rule in section 4.1 and answer open questions 3 and 4. Questions 1 and 2 go to the client meeting with [`CLIENT-MEETING-QUESTIONS.md`](CLIENT-MEETING-QUESTIONS.md).
 
-Nothing in sections 3 to 6 is verified against a running system. Section 2 and section 8 are a code reading of main at `e1ec4b0` and of the pinned Chainlit package, not test results.
+Nothing in sections 3 to 6 is verified against a running system, except that chat delete was demoed on its success path. Section 2 and section 8 are a code reading of `main` on 2026-10-22 and of the pinned Chainlit package (not re-checked this time), not test results.

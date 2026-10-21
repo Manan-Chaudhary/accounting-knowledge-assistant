@@ -2,11 +2,11 @@
 
 Team 83, Alfa Focus Knowledge Assistant.
 Drafted 2026-09-14 by Ronith Mugundakumar. Integration approach added 2026-09-15.
-Surfaces: the login screen, and every route in `app/main.py` that must sit behind it.
+Surfaces: the login screen, and every route in `app/main.py` that must sit behind it. Route names in this document predate the React app: `/chat` is now the React page `/assistant` (the Chainlit app is still mounted at `/chat`), `/upload` is now `/documents`, and `/home` and `/testing` are React pages.
 
 Defines what a user provides to sign in, how the system behaves on success and on failure, how a session is created and ended, and what must be true of the whole flow for the access requirements in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 6 to hold. Requirement IDs are `AU-n` and are stable, per the traceability rule in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 10.
 
-**Status: pre-client-meeting.** Requirements marked `[ASSUMED]` need confirmation before they drive a sprint. The biggest one is the authentication method itself: [`CLIENT-BRIEF.md`](CLIENT-BRIEF.md) section 3 assumes single sign-on, and nothing in the research confirms the firm has an identity provider to sign on to. Section 14 sets out what that changes.
+**Status: partially implemented (session login built and demoed); client never met.** Built: a React login page with client validation, a FastAPI login that issues a signed session cookie (bcrypt hashes, `is_active`, roles `staff`/`admin`/`team`), logout that also clears Chainlit cookies, an app-wide auth middleware, Chainlit header auth that reuses the FastAPI session, `/api/auth/me`, a route guard in the React app, and a script to create users (section 2). Not built: lockout and rate limiting (AU-49, AU-50), idle and absolute expiry beyond a fixed 8-hour cookie lifetime (AU-41), authentication event table, password change and reset, account admin UI, no-cache on signed-in pages, "Keep me signed in", and the client questions in section 14, which were never asked. Security hardening was descoped. Requirements marked `[ASSUMED]` need confirmation before they drive a sprint. The biggest one is the authentication method itself: [`CLIENT-BRIEF.md`](CLIENT-BRIEF.md) section 3 assumes single sign-on, and nothing in the research confirms the firm has an identity provider to sign on to. Section 14 sets out what that changes.
 
 The integration approach is not assumed. It was decided on 2026-09-15 and is recorded in section 2.1, because the build cannot begin without it and it does not depend on anything the client tells us.
 
@@ -27,22 +27,26 @@ The login flow is therefore not a feature of the product. It is the precondition
 - Per-document or per-corpus permissions. DH-10 is `C` priority and depends on client policy we have not seen.
 - Any change to what the assistant says once a user is signed in. That is [`PROMPTS.md`](PROMPTS.md) and [`REQUIREMENTS.md`](REQUIREMENTS.md) section 4.
 
-**Relationship to the earlier login work.** A mock-sprint requirements document from week 4, `team-83-login-restyling.md`, fixed a login change as styling-only and listed the behaviours a restyle may not alter: the credential flow, session creation and duration, the post-login redirect, the route guards, and the mapping of error condition to message. That list was written against a login screen that does not exist in this repository, and the document itself is not in this repository either. This document is where those behaviours are defined for the first time; the styling-only boundary applies to changes made after the flow is built, not before.
+**Relationship to the earlier login work.** A mock-sprint requirements document from week 4, `team-83-login-restyling.md`, fixed a login change as styling-only and listed the behaviours a restyle may not alter: the credential flow, session creation and duration, the post-login redirect, the route guards, and the mapping of error condition to message. That list was written against a login screen that does not exist in this repository, and the document itself is not in this repository either. This document is where those behaviours are defined for the first time; the styling-only boundary applies to changes made after the flow is built, not before. `team-83-login-restyling.md` is not in this repository.
 
 ## 2. What exists today
 
-Stated plainly because the gap is the work.
+Checked against `main` on 2026-10-22. This table replaces the one written before the build.
 
 | Component | Current state | Verified in |
 |---|---|---|
-| Login screen | None. `GET /` redirects straight to `/chat`. | `app/main.py` |
-| Credential store | `app_users` holds `id`, `email`, `role`, `created_at`. There is no password field, no status field, and no record of a last sign-in. | `app/db/models.py`, `app/db/schema.sql` |
-| Chat authentication | None registered. Chainlit is public by default and becomes private only when `CHAINLIT_AUTH_SECRET` is defined and an auth callback is added. Neither exists. | `app/chainlit/chainlit_app.py`, `app/config.py`, `.env.example` |
-| Route guards | None. `/home`, `/upload` and `/testing` are served without any check. | `app/main.py`, `app/routes/` |
-| API documentation | `FastAPI()` is constructed with defaults, so `/docs` and `/openapi.json` are public and enumerate every route. `README.md` lists `/docs` as a normal endpoint. | `app/main.py`, `README.md` |
-| Cross-origin policy | `allow_origins = ["*"]`. | `.chainlit/config.toml` line 23 |
+| Login screen | Built. `frontend/src/pages/Login.tsx` at `/login`: email and password (max 254 and 128 characters), show/hide password, client validation (required fields, email format), disabled submit while in flight, password cleared and refocused on failure, redirect after login to the requested page if it is one of `/home`, `/documents`, `/assistant`, `/testing`, else `/assistant`. An already signed-in user is sent to `/assistant`. | `frontend/src/pages/Login.tsx` |
+| Login API | `POST /api/auth/login` validates fields server-side (422), looks up the user by lower-cased email, checks a bcrypt hash, returns one generic message for unknown email or wrong password (401) padded to at least 0.25 s, a distinct message for an inactive account (403), 503 if the database is down. `POST /api/auth/logout` clears the session and Chainlit `access_token` cookies. `GET /api/auth/me` returns the live id, email and role. | `app/routes/auth.py`; `app/auth/passwords.py`; `app/auth/logout_cookies.py` |
+| Credential store | `app_users` holds `id`, `email` (unique), `password_hash` (bcrypt, nullable), `role` (default `staff`), `is_active`, `created_at`. No last sign-in, lock or attempt fields. `role` is free text in the schema; the allowed set `staff`/`admin`/`team` is enforced in code (`ALLOWED_ROLES`, `create_app_user.py`). Accounts are created by `python -m scripts.create_app_user`; no default credentials are seeded. | `app/db/models.py`; `app/auth/__init__.py`; `scripts/create_app_user.py` |
+| Session | Starlette `SessionMiddleware` signed cookie holding user id, email and role; `max_age` = `SESSION_MAX_AGE_SECONDS` (default 8 hours); `same_site="lax"`; `https_only` only when `ENVIRONMENT=production`. A new session is established at login (`session.clear()` first). There is no idle timeout, no separate absolute limit, and no server-side session store, so logout clears the cookie but cannot revoke it. | `app/main.py`; `app/auth/session.py`; `app/config.py` |
+| Route guard (API) | App-wide middleware returns 401 for any unauthenticated `/api/` call and redirects other paths to `/login`. Public: `/login`, `/api/auth/`, `/api/n8n/`, `/static/`, `/assets/`, anything starting with or containing `/chat`, websocket paths, and (outside production) `/docs`, `/redoc`, `/openapi.json`. Note the `/chat` rule makes `/api/chat/stream`, `/api/chat` and `/api/chat/threads/...` bypass the middleware; the thread routes check the session themselves, but the streaming handler falls back to the identifier `anonymous` instead of rejecting a request with no session. | `app/main.py` `enforce_authenticated_access`; `app/routes/chat_history.py` |
+| Route guard (browser) | `RequireAuth` redirects to `/login` (keeping the requested location); `RequireTeam` sends non-`team` users from `/testing` to `/home` with no message. The Testing nav link is shown only to `team`. | `frontend/src/auth/RequireAuth.tsx`; `RequireTeam.tsx`; `frontend/src/components/Sidebar.tsx` |
+| Chat authentication | Built. `CHAINLIT_AUTH_SECRET` is in `app/config.py`; `@cl.header_auth_callback` maps the signed FastAPI session cookie to a Chainlit user, and rejects inactive users or an email that no longer matches the account. In production, startup refuses to mount Chainlit without the secret; in development it only logs a warning and `/chat` stays public. | `app/chainlit/chainlit_app.py`; `app/auth/chainlit_bridge.py`; `app/main.py` |
+| API documentation | `/docs`, `/redoc` and `/openapi.json` are disabled when `ENVIRONMENT=production` and public otherwise. | `app/main.py` |
+| Cross-origin policy | FastAPI CORS uses `CORS_ORIGINS` (default `http://localhost:5173`) with credentials. `.chainlit/config.toml` still has `allow_origins = ["*"]`. | `app/config.py`; `app/main.py`; `.chainlit/config.toml` |
+| Roles in practice | `team` only: `/testing` (server and browser). `admin` and `staff`: document delete. Upload, list and retry have no role check beyond being signed in. | `app/routes/testing.py`; `app/auth/deps.py`; `app/routes/upload.py` |
 
-The two-surface problem in that table is the one to design around rather than discover. The chat interface is a Chainlit application mounted into FastAPI, and the upload and testing pages are ordinary FastAPI routes. Authenticating one does not authenticate the other. A build that adds a Chainlit auth callback and stops there leaves `/upload` open, which satisfies DH-5 for the assistant and breaks UP-8 in the same commit.
+The two-surface problem (original text; it was resolved with the approach in section 2.1) is the one to design around rather than discover. The chat interface is a Chainlit application mounted into FastAPI, and the upload and testing pages are ordinary FastAPI routes. Authenticating one does not authenticate the other. A build that adds a Chainlit auth callback and stops there leaves `/upload` open, which satisfies DH-5 for the assistant and breaks UP-8 in the same commit.
 
 ### 2.1 Decided integration approach
 
@@ -68,7 +72,7 @@ These IDs are numbered from the end of the document rather than inserted here, s
 
 The alternative was to let Chainlit own the login and have FastAPI verify its cookie. It is less work, and it was rejected because the login screen would then be Chainlit's built-in one, configurable only to the extent its settings allow, which is roughly a background image. AU-26 through AU-29 describe redirect and role behaviour that a built-in screen will not provide, and the wireframes in [`VALIDATION.md`](VALIDATION.md) already commit to a signed-in identity and role in the rail. Owning the screen is the reason for the extra work, not an accident of it.
 
-Verify all three mechanisms above against the pinned `chainlit==2.11.0` in `requirements.txt` before building on them. They were read from the current source on the project's main branch, and the cookie name, the chunking behaviour above 3000 characters, and the helper names may differ in the pinned release.
+The approach was built as described (AU-83 to AU-86 met; AU-87 met for the `access_token` cookies). The pinned version in `requirements.txt` is `chainlit==2.11.1`; the Chainlit source mechanisms above were read against a different release and were not re-verified against it.
 
 ## 3. Surfaces behind authentication
 
@@ -88,7 +92,7 @@ AU-3 is the one most likely to be got wrong, because `/testing` is the only rout
 | AU | P | Requirement |
 |---|---|---|
 | AU-7 | M | Every account belongs to exactly one named person. No shared or role accounts, because DH-7 requires the firm to be able to show what the tool said and who acted on it, and a shared login makes that unanswerable. |
-| AU-8 | M | Each account carries a role. The roles in the current schema are `staff` and `admin`. |
+| AU-8 | M | Each account carries a role. The roles in code are `staff`, `admin` and `team` (Team 83 and reviewers, AU-10). |
 | AU-9 | M | `staff` may use the assistant. `admin` may additionally upload, withdraw documents, and manage accounts. `[ASSUMED]` pending client answer on who may upload. |
 | AU-10 | S | Team 83 and validation reviewer accounts are distinguishable from firm accounts, so that EV-49 can be enforced by role rather than by an allowlist of addresses that will not survive handover. |
 
@@ -184,7 +188,7 @@ AU-46 is the requirement the rest of this document hangs on, which is why it is 
 | AU-57 | S | Changing a password ends all other sessions for that account. |
 | AU-58 | C | Multi-factor authentication. Not in the first build, and named here so its absence is a decision rather than an omission. Worth raising with the client, because the material behind this login is the firm's own procedure content. |
 
-AU-52 has a dependency the team will hit on the first day of the build: `CHAINLIT_AUTH_SECRET` does not exist in `.env.example` or `app/config.py`, and Chainlit is public until it does. Adding it is part of this work, not a follow-up.
+AU-52: `CHAINLIT_AUTH_SECRET` is now defined in `.env.example` and `app/config.py` (met). Chainlit is still public in development if it is left empty; production startup refuses to run without it.
 
 ## 11. Account lifecycle
 
@@ -268,4 +272,4 @@ Each blocks or reshapes something above. To go to the meeting alongside the ques
 | Task brief, basic security requirements | AU-48 to AU-58 |
 | Checklist item, record the integration approach | Section 2.1, AU-83 to AU-87 |
 
-Nothing here is verified. These are proposed requirements for a flow that does not exist, and the difference should stay visible in the sprint review. Note also that [`VALIDATION.md`](VALIDATION.md) sections 6 and 8 reference a `TRACEABILITY.md` that is not in the repository; until it is, the `M` requirements above have no verification record anywhere, and the same is true of the access-control requirements they inherit from.
+Only the items in the Status banner and section 2 are built; the rest are proposed requirements and should stay visibly distinct from what exists. The client was never met, so the `[ASSUMED]` items and the section 14 questions are unanswered (password authentication was built on the section 14 default). Note also that [`VALIDATION.md`](VALIDATION.md) sections 6 and 8 reference a `TRACEABILITY.md` that is not in the repository; until it is, the `M` requirements above have no verification record anywhere, and the same is true of the access-control requirements they inherit from.

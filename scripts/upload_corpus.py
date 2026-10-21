@@ -1,4 +1,4 @@
-"""Upload every corpus file through the app's POST /upload endpoint, which stores
+"""Upload every corpus file through the app's POST /api/upload endpoint, which stores
 the file in Supabase Storage, inserts the documents row, and fires the n8n
 process-document webhook. Then poll each document until it is ready or failed.
 
@@ -60,7 +60,7 @@ def main() -> int:
                 continue
             content_type = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
             with path.open("rb") as fh:
-                r = client.post("/upload", files={"file": (path.name, fh, content_type)})
+                r = client.post("/api/upload", files={"file": (path.name, fh, content_type)})
             if r.status_code >= 400:
                 log[key] = {"status": "upload_failed", "detail": r.text[:500]}
                 print(f"FAIL upload {key}: {r.status_code} {r.text[:200]}")
@@ -74,7 +74,7 @@ def main() -> int:
         while pending and time.time() < deadline:
             time.sleep(10)
             for key in list(pending):
-                r = client.get(f"/documents/{log[key]['document_id']}/status")
+                r = client.get(f"/api/documents/{log[key]['document_id']}/status")
                 if r.status_code == 200:
                     log[key]["status"] = r.json()["status"]
                 if log[key]["status"] in ("ready", "failed"):

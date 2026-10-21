@@ -1,8 +1,10 @@
 # Accounting Use Cases for the Chatbot
 
+> **Status: research, `[ASSUMED]`.** The use cases were inferred from public research; Alfa Focus was never met, so none was confirmed. The built system does not special-case any of them: all are served by the same retrieval and prompt, and the 73-document corpus covers all seven (`DOCUMENT-CORPUS.md` section 2). Firm-procedure questions (use case 7's C5) cannot be answered because no Corpus B exists.
+
 Research task: identify specific accounting use cases the assistant should handle, grounded in Alfa Focus's actual service offering rather than accounting generally. Source material: [`CLIENT-BRIEF.md`](CLIENT-BRIEF.md), [`DOMAIN-PRIMER.md`](DOMAIN-PRIMER.md), [`REQUIREMENTS.md`](REQUIREMENTS.md).
 
-**Scoping note:** Alfa Focus is an SMSF-only Chartered Accounting firm (`CLIENT-BRIEF.md` section 2), not a general tax practice - this is not yet confirmed with the client (`REQUIREMENTS.md` open question 1). So of the example themes in the card (small business CGT concessions, inheritance, cross-border/residency, FBT, Division 7A), only the ones that genuinely show up in SMSF work are included below as primary use cases. The others are noted at the bottom as out of scope until the client confirms whether a general tax book exists.
+**Scoping note:** Alfa Focus is a generalist tax and accounting firm that also runs SMSF administration (confirmed by the team, not by the client). These use cases were written when the firm was believed to be SMSF-only, so all seven are SMSF-specific. The themes listed at the bottom are in scope for a generalist firm but have no use case written yet.
 
 Each use case below lists: what it covers, why it fits Alfa Focus, the question themes within it, and the question types (using the C1-C7 classes already defined in [`EVALUATION.md`](EVALUATION.md) section 2) it should be tested with.
 
@@ -42,7 +44,7 @@ Types: C1 (current cap), C2 (date-sensitive - prior year cap, the domain's signa
 
 What it covers: preservation age, conditions of release, general and personal transfer balance cap, TBAR reporting.
 
-Why it fits: directly in the requirements' worked example (`REQUIREMENTS.md` section 6, "can this 63-year-old start a pension") and a good test of the assistant's most important refusal behaviour - stating the general cap while declining to state a member's personal cap, which depends on fund-specific TBAR history it does not hold.
+Why it fits: directly in the worked example used in the benchmark design (`EVALUATION.md` section 3, C4 question 14, "a 63-year-old member ... start an account-based pension") and a good test of the assistant's most important refusal behaviour - stating the general cap while declining to state a member's personal cap, which depends on fund-specific TBAR history it does not hold.
 
 Question themes: eligibility to start a pension, cap figures, why a personal cap can't be answered.
 
@@ -80,19 +82,19 @@ Types: C1 (member limit, auditor independence), C5 (firm-procedure - requires Co
 
 ---
 
-## Noted but out of scope for now
+## In scope for the firm, no use case written yet
 
-These appeared in the card's example list but do not fit a firm the client brief describes as SMSF-only. Confirm against client meeting question 1 (`REQUIREMENTS.md` section 9) before treating them as use cases:
+These appeared in the card's example list. They fit a generalist firm but have no use cases or benchmark questions yet, because the original research assumed an SMSF-only practice:
 
 - **Inheritance / estate planning** - only relevant to the extent it touches death benefits paid from an SMSF (a real SMSF topic - binding death benefit nominations, tax on death benefits to non-dependants). Worth adding as a use case if the client confirms this comes up; not added here to avoid inventing a use case with no evidence behind it.
-- **Fringe Benefits Tax** - an employer-side tax with no direct SMSF angle. Would only be in scope if Alfa Focus runs a general tax/business-services book alongside SMSF work.
-- **Division 7A and corporate distributions** - a private-company tax issue, not an SMSF one. Same condition as FBT above.
+- **Fringe Benefits Tax** - an employer-side tax with no direct SMSF angle. In scope for a generalist firm; no use case written yet.
+- **Division 7A and corporate distributions** - a private-company tax issue, not an SMSF one. In scope for a generalist firm; no use case written yet.
 - **General business transactions** - too broad to be a use case as stated; would need a specific angle (e.g. a business owner's SMSF implications) to be testable.
 
 ## Handoff Notes
 
 Done: Identified 7 SMSF-specific accounting use cases for the chatbot, grounded in Alfa Focus's actual services rather than generic accounting topics, each with question themes and mapped to the existing C1-C7 question-type taxonomy from EVALUATION.md.
 
-Deliverable: `docs/USE-CASES.md` in accounting-knowledge-assistant repo, branch test/smsf-qa-eval-set
+Deliverable: `docs/USE-CASES.md` (merged to `main`)
 
-Note for next role: Four of the card's example themes (inheritance, FBT, Division 7A, general business transactions) are flagged out of scope pending client confirmation of whether Alfa Focus also runs a general tax book - see the last section. Please review the 7 use cases against the client meeting notes once available, and use these as the basis for the next Q&A batch (should give at least 5 definitive pairs per use case).
+Note for next role: Four of the card's example themes (inheritance, FBT, Division 7A, general business transactions) have no use case written because the research assumed an SMSF-only firm; Alfa Focus is a generalist firm, so they should be added - see the last section. Please review the 7 use cases against the client meeting notes once available, and use these as the basis for the next Q&A batch (should give at least 5 definitive pairs per use case).

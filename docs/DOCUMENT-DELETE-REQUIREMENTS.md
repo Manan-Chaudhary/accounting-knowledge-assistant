@@ -6,7 +6,7 @@ Surfaces: the delete action on the Documents page (`frontend/src/pages/Documents
 
 Defines who may delete a document, which documents can be deleted, the confirmation step, exactly what is removed and what is kept, the order of operations, what happens when a step fails part-way, how superseded versions are handled, what happens to past answers that cited the deleted document, and what the user sees afterwards. Requirement IDs are `DD-n` and are stable, per the traceability rule in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 10.
 
-**Status: drafted after a first build.** A delete function was added to main in commit `a50317c` before these requirements existed. Section 2 records what it does today and section 13 maps it against each requirement. Requirements marked `[ASSUMED]` need client or team confirmation before they drive a sprint. The largest is the role: AU-9 gives withdrawal to `admin`, and AU-9 is itself `[ASSUMED]`.
+**Status: partially implemented and demoed.** Delete works end to end for the roles `admin` and `staff` (the server returns 403 to `team`), with an in-app confirmation dialog naming the file and a success or error message. Not built: the `deleting` marker state and ordered, recoverable steps (section 8), the `processing` refusal, stale limits, plain-text errors, hiding the control by role, deletion records, and everything about superseded versions. The role differs from DD-1 (`admin` only): the code allows `admin` and `staff`. Section 2 records what the code does and section 13 maps it against each requirement. Requirements marked `[ASSUMED]` need client or team confirmation before they drive a sprint. The largest is the role: AU-9 gives withdrawal to `admin`, and AU-9 is itself `[ASSUMED]`.
 
 Priorities are MoSCoW: **M** must, **S** should, **C** could.
 
@@ -20,28 +20,28 @@ Delete is the one action on the Documents page that cannot be undone, and it rea
 
 - Withdrawing a document from search while keeping it (UP-6, and the `withdrawn` state in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 5.1). Section 3 states how delete and withdraw differ; building withdraw is not part of this work.
 - Uploading a new version and marking the old one superseded (UP-5). Section 9 covers only what delete does to versions that already exist.
-- Retry and stuck-job recovery for failed or pending ingestion. That is I-3 in `docs/ITERATION-AND-EXPLORATION.md`.
-- Deleting chat threads (`DELETE /api/chat/threads/{thread_id}` in `app/routes/chat_history.py`). That is governed by SS-17 in [`CHAT-SESSION-REQUIREMENTS.md`](CHAT-SESSION-REQUIREMENTS.md).
+- Retry and stuck-job recovery for failed or pending ingestion. That is I-3 in `docs/ITERATION-AND-EXPLORATION.md` (a file that is not on `main`); a retry endpoint exists but no stuck-job recovery.
+- Deleting chat threads (`DELETE /api/chat/threads/{thread_id}` in `app/routes/chat_history.py`, built). That is governed by SS-17 in [`CHAT-SESSION-REQUIREMENTS.md`](CHAT-SESSION-REQUIREMENTS.md).
 - Bulk delete and account deletion. Not requested.
 
 ## 2. What exists today
 
 | Component | Current state | Verified in |
 |---|---|---|
-| Delete endpoint | `DELETE /api/documents/{document_id}`. Selects `id, storage_path` for the id, returns 404 if absent, removes the file from the bucket, then deletes the `documents` row. Returns 404 "Document could not be deleted" if the row delete returns no data, and 500 with `str(e)` on any other exception. | `app/routes/upload.py` lines 115-163 |
-| Order and atomicity | Storage file first, database row second, as two separate calls through the Supabase client. Not atomic. The return value of `storage.from_(bucket).remove([storage_path])` is not checked. | `app/routes/upload.py` lines 136-147 |
+| Delete endpoint | `DELETE /api/documents/{document_id}`, guarded by `require_document_delete_permission`. Selects `id, storage_path` for the id, returns 404 if absent, removes the file from the bucket, then deletes the `documents` row. Returns 404 "Document could not be deleted" if the row delete returns no data, and 500 with `str(e)` on any other exception. | `app/routes/upload.py` (`delete_document`) |
+| Order and atomicity | Storage file first, database row second, as two separate calls through the Supabase client. Not atomic. The return value of `storage.from_(bucket).remove([storage_path])` is not checked. | `app/routes/upload.py` (`delete_document`) |
 | Chunks and embeddings | Not deleted by the endpoint. Removal depends on the foreign key `document_chunks.document_id references documents(id) on delete cascade` in `schema.sql`. Embeddings are a column on `document_chunks`, so there is no separate vector store to clean. `models.py` declares the same foreign key without `ondelete`. Its `cascade="all, delete-orphan"` on the relationship applies only to deletes made through a SQLAlchemy session, not to the Supabase client call the endpoint uses. Whether the live Supabase tables carry the cascade was not checked (no database access for this task). | `app/db/schema.sql` lines 17-24, `app/db/models.py` lines 27, 35 |
-| Role check | None. The router has no auth dependency. The app-wide middleware returns 401 for any `/api/` call without a session, so any signed-in user of any role (`staff`, `admin`, `team`) can delete. | `app/main.py` lines 40-73, `app/routes/upload.py` |
-| Delete control | A trash button on every row, for every status, for every signed-in user. `/documents` is wrapped in `RequireAuth` only. | `frontend/src/pages/Documents.tsx` lines 298-305, `frontend/src/App.tsx` lines 27-34 |
-| Confirmation | Browser `window.confirm('Are you sure you want to delete this document?')`. Does not name the document or say what is removed. | `frontend/src/pages/Documents.tsx` lines 67-72 |
-| After success | The row is filtered out of local state without a reload. No success message. | `frontend/src/pages/Documents.tsx` lines 84-86 |
-| After failure | `window.alert('Delete error: ' + detail)`, where detail can be the raw exception text. No in-progress state; the button stays clickable during the request. | `frontend/src/pages/Documents.tsx` lines 79-92 |
-| Status values | `pending`, `processing`, `ready`, `failed`. Retrieval reads only `ready` documents. | `app/db/models.py` line 22, `app/rag/retriever.py` lines 110, 196 |
-| Ingestion during delete | n8n calls `POST /api/n8n/process-document/{id}`, which runs `process_document`. A missing document raises `ValueError` and returns 404. Chunks are inserted and committed in one block after old chunks are removed. | `n8n/Document Ingestion.json`, `app/routes/integration.py` lines 34-44, `app/services/document_service.py` lines 100-162 |
-| Retry endpoint | `POST /api/documents/{id}/retry` refuses only `ready`; any other status is reset to `pending` and re-triggered. | `app/routes/upload.py` lines 181-232 |
+| Role check | Built, server side. `require_document_delete_permission` (in `app/auth/deps.py`) loads the user from the session and allows roles `admin` and `staff`; any other role (`team`) gets 403 "You do not have permission to delete documents." No session gets 401. | `app/auth/deps.py`; `app/routes/upload.py` |
+| Delete control | A trash button on every row, for every status, shown to every signed-in user regardless of role (no role check in `Documents.tsx`); it is disabled while a delete is running. `/documents` is wrapped in `RequireAuth` only. A `team` user sees the button and gets a 403 message on click. | `frontend/src/pages/Documents.tsx`; `frontend/src/App.tsx` |
+| Confirmation | In-app modal dialog (`role="dialog"`): "Delete document?", names the filename, says the stored file and indexed content will be removed and that this cannot be undone, with Cancel and "Confirm delete". Clicking the backdrop or Cancel sends no request. It does not show the source label, mention past answers (DD-13), or set initial focus on Cancel. | `frontend/src/pages/Documents.tsx` |
+| After success | The row is removed from local state without a reload and a status message shows the server's "Document deleted" text. | `frontend/src/pages/Documents.tsx` |
+| After failure | An inline `role="alert"` error message shows the server's `detail`, which can be raw exception text (`str(e)`) on a 500. While a delete runs the dialog buttons and every trash button are disabled and the confirm button reads "Deleting...". | `frontend/src/pages/Documents.tsx`; `app/routes/upload.py` |
+| Status values | `pending`, `processing`, `ready`, `failed`. Retrieval reads only `ready` documents. | `app/db/models.py`, `app/rag/retriever.py` |
+| Ingestion during delete | n8n calls `POST /api/n8n/process-document/{id}`, which runs `process_document`. A missing document raises `ValueError` and returns 404. Chunks are inserted and committed in one block after old chunks are removed. | `n8n/Document Ingestion.json`, `app/routes/integration.py`, `app/services/document_service.py` |
+| Retry endpoint | `POST /api/documents/{id}/retry` refuses only `ready`; any other status is reset to `pending` and re-triggered. Neither it nor upload has a role check. | `app/routes/upload.py` |
 | Versions and supersession | Not modelled. No `version` or `superseded_by` column. The design in `docs/RAG-DESIGN.md` section 4 proposes `superseded_by` and says refresh must "never delete". | `app/db/models.py`, `app/db/schema.sql`, `docs/RAG-DESIGN.md` |
-| Chat history | Chainlit's `SQLAlchemyDataLayer` persists thread steps. The assistant step holds the answer text only. The context sent to the model includes `Document ID` per source block, but no structured source reference is saved with the turn. | `app/chainlit/chainlit_app.py` lines 18-22, 108-128, `app/rag/retriever.py` lines 369-398 |
-| Uploader identity | `uploaded_by` is written as the literal `"user"`, so "the uploader may delete their own document" cannot be implemented today. | `app/routes/upload.py` line 57 |
+| Chat history | Thread steps are stored in the Chainlit tables (`threads`, `steps`); the stream endpoint inserts them directly. The assistant step holds the answer text only. The sources sent to the page are not saved with the turn. | `app/routes/chat_history.py`, `app/chainlit/chainlit_app.py`, `app/rag/retriever.py` |
+| Uploader identity | `uploaded_by` is written as the literal `"user"`, so "the uploader may delete their own document" cannot be implemented today. | `app/routes/upload.py` |
 | Deletion record | None. Nothing records who deleted what, or when. | `app/db/schema.sql` |
 
 The gap that matters most: if the row delete fails after the file has been removed, the row keeps its `ready` status and its chunks, so retrieval keeps citing a document whose file no longer exists, and the retry button would re-ingest from a missing file.
@@ -102,7 +102,7 @@ Three different actions take a document out of current answers. They must not be
 
 Storage and Postgres cannot be committed together, so the delete runs in a fixed order with a marker state that keeps a half-finished delete out of search and visible on the page.
 
-The row lock in step 1 and the single transaction in step 3 are not available through the Supabase PostgREST client the endpoint uses today (`app/routes/upload.py` lines 118-147). The database steps must move to a SQLAlchemy session from `app/db/database.py`, as `process_document` already uses, or to a Postgres function called over RPC.
+The row lock in step 1 and the single transaction in step 3 are not available through the Supabase PostgREST client the endpoint uses today (`delete_document` in `app/routes/upload.py`). The database steps must move to a SQLAlchemy session from `app/db/database.py`, as `process_document` already uses, or to a Postgres function called over RPC.
 
 1. Lock the row, check role (DD-2) and status (DD-5 to DD-9), remember the current status, set status to `deleting`, commit. Retrieval reads only `ready`, so the document leaves search here.
 2. Remove the file from Storage.
@@ -142,7 +142,7 @@ Past answers are evidence of what the tool said (DH-7). Deleting a source must n
 | DD-36 | M | Where a citation in a retained answer offers a control that opens the source, and that source has been deleted, the control shows "This document was deleted on YYYY-MM-DD" instead of a broken link, an error, or a different document. If no deletion record exists for it (DD-43), the control shows "This document is no longer available" instead. |
 | DD-37 | M | When turns store structured sources (SS-40), the stored source is not a foreign key with `on delete cascade` to `documents`, and it keeps the source label and filename as text, so deleting a document cannot delete or blank any part of chat history. |
 
-Today DD-35 holds by default, because nothing structured links a saved answer to a document. DD-36 and DD-37 become testable when SS-40 and the source-link work (I-4 in `docs/ITERATION-AND-EXPLORATION.md`, finding F13) are built.
+Today DD-35 holds by default, because nothing structured links a saved answer to a document. DD-36 and DD-37 become testable when SS-40 and the source-link work (I-4, finding F13 in `docs/ITERATION-AND-EXPLORATION.md`, which is not on `main`; the chat page now shows citation chips but no viewer, see `CITATION-RULES.md`) are built.
 
 ## 11. What the user sees
 
@@ -170,30 +170,30 @@ No retention period is set for deletion records. Like SS-44, that waits for the 
 
 ## 13. Current build against these requirements
 
-For R138 (what to change) and R142 (what to expect to fail on today's main).
+For the next team (what to change, and what to expect to fail). This table reflects `main` as of 2026-10-22; card numbers elsewhere in this document (R120, R138, R142) are historical planning labels.
 
 | ID | Today | Change needed |
 |---|---|---|
-| DD-1, DD-2 | Not met. Any signed-in role can delete. | Server-side admin check on the endpoint. |
+| DD-1, DD-2 | Partly met. Server-side role check exists and returns 403 to `team`, but it admits `staff` as well as `admin`. | Decide whether `staff` should delete (open question 2); change `allowed_roles` if not. |
 | DD-3 | Met through middleware. | Keep. |
-| DD-4 | Not met. Button shown to all. | Hide by role. |
+| DD-4 | Not met. Button shown to all roles. | Hide by role. |
 | DD-5 to DD-9 | Not met. Any status can be deleted; no lock; no 409. | Status rules and row lock. |
 | DD-10 | Depends on the live FK. With the cascade, `process_document` fails its chunk insert for a deleted id. Not verified. | Confirm FK in each database; add a test. |
-| DD-11 | Partly met. `window.confirm` exists. | In-app dialog. |
-| DD-12, DD-13, DD-15, DD-16 | Not met. Generic text, no filename. | Dialog content. |
-| DD-14 | Partly met. Cancel sends no request, but initial focus cannot be controlled in a `window.confirm` dialog. | Set focus in the new dialog. |
+| DD-11 | Met. In-app dialog; no request until confirmed. | Keep. |
+| DD-12, DD-13, DD-15, DD-16 | DD-12 partly met (filename and removal wording, no source label). DD-13 and DD-16 not met. DD-15 not met (button reads "Confirm delete"). | Dialog content. |
+| DD-14 | Partly met. Cancel and backdrop click send no request; Escape handling and initial focus on Cancel are not implemented. | Add Escape and focus. |
 | DD-17, DD-18 | Met on the success path. | Keep. |
 | DD-19 | Relies on an unverified cascade. | Explicit chunk delete or confirmed cascade. |
 | DD-20 to DD-22 | Expected to be met on the success path; not tested. | R142 test. |
 | DD-23 to DD-28 | Not met. Storage first, row second, no marker state, Storage result unchecked. | Section 8 sequence. |
-| DD-29 | Not met. Raw `str(e)` reaches `window.alert`. | Plain messages, server log. |
+| DD-29 | Not met. Raw `str(e)` reaches the inline error message. | Plain messages, server log. |
 | DD-30 | Not met. Retry accepts any non-`ready` status. | Refuse `deleting`. |
 | DD-31 to DD-34 | Not applicable until UP-5. | None now. |
 | DD-35 | Met by default. | Keep when SS-40 is built. |
 | DD-36, DD-37 | Not applicable until SS-40 and source links exist. | None now. |
-| DD-38 | Not met. | In-progress state. |
-| DD-39 | Partly met. Row removed without reload; no message. | Success message. |
-| DD-40 to DD-42 | Not met. | Messages per case. |
+| DD-38 | Mostly met. Buttons disabled and "Deleting..." shown while a delete runs. | Keep. |
+| DD-39 | Mostly met. Row removed without reload and a success message shows; the message does not name the document. | Name the document. |
+| DD-40 to DD-42 | DD-41 partly met (the 403 text is shown). DD-40 and DD-42 not met. | Messages per case. |
 | DD-43 to DD-47 | Not met. | Data model change. |
 
 ## 14. Test mapping for R142
@@ -225,4 +225,4 @@ Run the happy path and the failure checks with an `admin` test account, and the 
 - **R142, Zekun Liu (test):** section 14. Zekun tests, not Shihong, because Shihong wrote both the current and the planned code. Mark DD-31 to DD-34, DD-36 and DD-37 not applicable and say why.
 - **Client meeting:** section 15, alongside [`CLIENT-MEETING-QUESTIONS.md`](CLIENT-MEETING-QUESTIONS.md).
 
-Nothing in sections 4 to 12 is verified against a running system. These are requirements, and section 13 is a code reading of main at `e1ec4b0`, not a test result.
+Nothing in sections 4 to 12 is verified against a running system. These are requirements, and section 13 is a code reading of `main` on 2026-10-22, not a test result. The delete function was demoed working on the success path.

@@ -2,7 +2,7 @@
 
 Team 83, Alfa Focus Knowledge Assistant.
 Drafted 2026-10-14 by Ronith Mugundakumar (Planner R133, "Write UAT Script").
-Surfaces: the deployed assistant as an accountant uses it: sign in (`/login`), the chat page (`/assistant`), the "Recent Conversations" sidebar, the answer and its sources, and the copy control.
+Surfaces: the assistant as an accountant uses it (it is not deployed; run it locally with Docker Compose at `http://localhost:8000`): sign in (`/login`), the chat page (`/assistant`), the "Recent Conversations" sidebar, the answer and its sources, and the copy control.
 
 This is the script for the user acceptance session that the Planner card "Run UAT Session and Write Up Results" (here, the UAT run card) runs. It has 8 scenarios, each a realistic task an accountant at Alfa Focus would do, with steps, the expected result in plain language, and space to record pass or fail and comments. It ends with open questions on trust and day-to-day usefulness, and an issue log for the UAT run card to prioritise.
 
@@ -10,7 +10,7 @@ The scenarios are written for the participant. The "Checks" and "Traces to" line
 
 Card numbers follow the other documents in this folder, which use row numbers from the 2026-10-07 Planner export. Rows have moved in later exports, so cards that no other document numbers are named instead.
 
-**Status: ready to run, not yet run.** Three scenarios depend on Sprint 3 work that is not on `main` at commit 1888312 (section 3.3). If that work has not shipped by the session, those scenarios are recorded as "Not run" with the reason, not as failures. Anything marked `[ASSUMED]` needs PM or client confirmation before the session.
+**Status: written, NOT RUN.** No UAT session has taken place: no accountant or proxy participant has used the assistant, and every result table below is blank. As of the current `main`, citation chips are plain tooltips (no clickable source viewer), there is no copy-with-citations button and no chat rename, so S2, S7 and the rename half of S8 would be recorded as "Not run" with the reason, not as failures (section 3.3). There is also no deployed URL, so references to a "deployed" URL and demo accounts below mean a local stack with a user from `python -m scripts.create_app_user`. Anything marked `[ASSUMED]` needs PM or client confirmation before the session.
 
 ## 1. Purpose and scope
 
@@ -22,7 +22,7 @@ User acceptance testing answers one question: does the assistant do the job for 
 
 - Document upload, filters and delete on the Documents page. These are admin tasks, tested by R142 (Test Document Delete) and R98, and written up in the admin guide ("Document User and Admin Guides").
 - The evaluation page (`/testing`). Owned by the harness cards (R95, R135) and [`HARNESS-PAGE-REQUIREMENTS.md`](HARNESS-PAGE-REQUIREMENTS.md).
-- Answer accuracy at scale. The 50-case benchmark (`benchmarks/questions.jsonl`, branch `test/expand-benchmark`) measures that. UAT uses a few of its questions so the expected answers are already checked against the corpus.
+- Answer accuracy at scale. The 50-case benchmark (`benchmarks/questions.jsonl`, on `main`) measures that. UAT uses a few of its questions so the expected answers are already checked against the corpus.
 - Latency as a measured target. [`LATENCY-TARGETS.md`](LATENCY-TARGETS.md) and R110 own that. UAT records only whether the wait felt acceptable, plus the LT-6 failure line (no answer after 30 seconds).
 
 ## 2. Who takes part
@@ -43,7 +43,7 @@ The rule from the Planner Instructions card applies: nobody tests their own code
 
 Complete each item on the day, before the participant arrives. Record the values in section 7.
 
-1. Get the deployed URL and a demo account from the PM. Do not use a personal account. `[ASSUMED]` the demo accounts from the "Create Demo Accounts" card (completed 2026-09-23) still work.
+1. Start the stack locally (`docker compose up --build`) and create an account (`python -m scripts.create_app_user`); there is no deployed URL. Do not use a personal account. `[ASSUMED]` the demo accounts from the "Create Demo Accounts" card (completed 2026-09-23) still work.
 2. Record the commit deployed (from the PR merged last before the session), the date, and the model shown in the "AI Model" selector on the chat page. Leave the selector on its default for the whole session.
 3. Open the Documents page and check that these four documents show as ready. Each scenario's expected result depends on one of them. All four are in `docs/load_log.csv` as processed.
 
@@ -71,14 +71,14 @@ A scenario with a wrong answer and an otherwise fine experience is still a Fail.
 
 ### 3.3 Features each scenario needs
 
-Checked against `origin/main` at commit 1888312 on 2026-10-14.
+Checked against `origin/main` at commit 1888312 on 2026-10-14 and re-checked against the current `main` in the front end (`frontend/src/pages/Chat.tsx`, `Sidebar.tsx`): the three missing features are still missing.
 
 | Scenario | Needs | On `main` on 2026-10-14 | If missing on the day |
 |---|---|---|---|
 | S1, S3 to S6 | Sign in, chat, sources listed under the answer | Yes | - |
-| S2 | Clickable citations and source viewer (R105, [`CITATION-RULES.md`](CITATION-RULES.md) section 7) | No. Sources are listed under the answer; there is no viewer. | Run steps 1 to 3 only. Record the rest as Not run. |
+| S2 | Clickable citations and source viewer (R105, [`CITATION-RULES.md`](CITATION-RULES.md) section 7) | No. Citation chips show the source title as a tooltip; sources are listed under the answer; there is no viewer or highlight. | Run steps 1 to 3 only. Record the rest as Not run. |
 | S7 | Copy answer button (R101, CITATION-RULES.md section 11) | No | Not run |
-| S8 | Chat rename (R103) and the confirmation dialog for delete | Delete only, with a browser confirm (`Sidebar.tsx`) | Run the delete steps. Record rename as Not run. |
+| S8 | Chat rename (R103) and the confirmation dialog for delete | Delete only, with a browser `window.confirm` (`Sidebar.tsx`). Rename is not built | Run the delete steps. Record rename as Not run. |
 
 The grounding rules (R141) change the exact wording in S4 to S6. If R141 has not shipped, judge S4 to S6 on meaning (it declines, it does not invent a figure), not on exact wording, and note in Comments that the agreed wording was not yet built.
 
@@ -272,7 +272,7 @@ Read the **Task** aloud. Let the participant follow the **Steps** themselves whe
 - After confirming, the chat leaves the list and a message says it was deleted.
 - The other chats are unchanged.
 
-**Checks:** CM-1, CM-3, CM-13, CM-14, CM-26, CM-27, CM-28, CM-35 in `docs/CHAT-AND-FILTER-REQUIREMENTS.md` (branch `docs/chat-rename-delete-filter-requirements`). Steps 1 to 3 need R103. Steps 4 and 5 run on today's build, which uses a browser confirm box rather than the dialog in CM-26; record what the participant saw.
+**Checks:** CM-1, CM-3, CM-13, CM-14, CM-26, CM-27, CM-28, CM-35 in `docs/CHAT-AND-FILTER-REQUIREMENTS.md` (requirements only; the rename and filter features are not built). Steps 1 to 3 need R103. Steps 4 and 5 run on today's build, which uses a browser confirm box rather than the dialog in CM-26; record what the participant saw.
 **Traces to:** card R103 (Apply Chat Renaming and Delete Functionality).
 
 | Result, rename (steps 1 to 3) | Result, delete (steps 4 and 5) | Comments |
