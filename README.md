@@ -1,8 +1,8 @@
 # Alfa Focus Knowledge Assistant
 
-An internal, citation-first knowledge assistant for **Alfa Focus**, a specialist SMSF administration practice in South Melbourne. Built by Team 83 as the RMIT COSC2408 Programming Project 1 capstone.
+An internal, citation-first knowledge assistant for **Alfa Focus**, a generalist tax and accounting firm in South Melbourne. Built by Team 83 as the RMIT COSC2408 Programming Project 1 capstone.
 
-The problem: Australian superannuation rules change constantly - 1 July 2026 alone brought Division 296, payday super, and an indexed transfer balance cap - and firm-specific procedure lives in senior heads rather than in writing. Accountants lose time re-deriving answers, and two staff can give a referring planner two different answers.
+The problem: Australian tax and superannuation rules change constantly - 1 July 2026 alone brought Division 296, payday super, and an indexed transfer balance cap - and firm-specific procedure lives in senior heads rather than in writing. Accountants lose time re-deriving answers, and two staff can give a referring planner two different answers.
 
 The assistant answers from an approved library of documents (ATO guidance, legislation, TPB and APESB standards) and shows numbered sources with every answer. It assists a registered tax agent; it never signs off.
 
@@ -27,7 +27,7 @@ The README and `docs/` describe the system as built. Files marked *design* are t
 
 | Doc | What it answers |
 |---|---|
-| [`docs/CLIENT-BRIEF.md`](docs/CLIENT-BRIEF.md) | Who Alfa Focus is. **They are an SMSF specialist, not a general tax consultancy** |
+| [`docs/CLIENT-BRIEF.md`](docs/CLIENT-BRIEF.md) | Who Alfa Focus is: a generalist tax and accounting firm, with SMSF administration as one of its service lines |
 | [`docs/DOMAIN-PRIMER.md`](docs/DOMAIN-PRIMER.md) | Australian SMSF practice for a team with no accounting background; the professional-obligation constraints behind the design |
 | [`docs/REQUIREMENTS.md`](docs/REQUIREMENTS.md) | *Design.* Numbered, testable requirements: chatbot behaviour, file upload, data handling, edge cases |
 | [`docs/RAG-DESIGN.md`](docs/RAG-DESIGN.md) | *Design.* The two-corpus split, chunk schema, hybrid and temporal retrieval |
@@ -139,7 +139,7 @@ Fill in every variable in `.env.example`:
 | `SESSION_SECRET`, `CHAINLIT_AUTH_SECRET` | Random secrets. Generate with `python -c "import secrets; print(secrets.token_urlsafe(32))"` |
 | `SESSION_MAX_AGE_SECONDS`, `CORS_ORIGINS` | Session lifetime (default 8 hours) and allowed origins |
 | `N8N_SHARED_SECRET` | Shared secret n8n sends to FastAPI. Must equal the value of the `X-N8N-Secret` Header Auth credential in n8n |
-| `N8N_WEBHOOK_URL` | n8n webhook URL |
+| `N8N_WEBHOOK_URL` | Listed in `.env.example` but not read by any code. The app hardcodes `http://n8n:5678/webhook/process-document` in `app/routes/upload.py` |
 | `RAG_CHUNK_SIZE`, `RAG_CHUNK_OVERLAP` | Chunking settings (1200 and 150) |
 
 `ENVIRONMENT` is optional and defaults to `development`. Set it to `production` to disable the Swagger docs and mark the session cookie HTTPS-only.

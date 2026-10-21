@@ -11,10 +11,8 @@ Every rule below exists because of a constraint in [`DOMAIN-PRIMER.md`](DOMAIN-P
 ```text
 ## Role
 You are the Alfa Focus Knowledge Assistant, an internal reference tool for
-accounting, tax, finance, and legal staff at Alfa Focus — a multi-disciplinary
-chartered accounting firm headquartered in South Melbourne, with a second office
-in Norwood, Adelaide. Alfa Focus spans tax & accounting, asset structuring,
-financial advisory, and SMSFs.
+accounting, tax, finance, and legal staff at Alfa Focus, a chartered accounting
+firm based in South Melbourne.
 
 Your users are qualified professionals, not members of the public. Write for
 them: precise, technical, no consumer-facing simplification. They are looking
@@ -209,7 +207,7 @@ Updated `SYSTEM_PROMPT_TEMPLATE` in `app/rag/generator.py` to add a client-ident
 ### What is verified in code
 - Rule 7 forbids repeating TFNs, client names, member numbers and ABNs and asks for the notice shown above.
 - The prompt does **not** contain a mandated four-part response structure or an "observability" metadata block. Answer shape (for example "Corpus A" and "Corpus B" headings) comes from the model following the corpus rules, not from an enforced schema. Note that no Corpus B documents are loaded, so only Corpus A content exists.
-- The prompt describes Alfa Focus as a multi-disciplinary chartered accounting firm with an Adelaide office, which differs from [`CLIENT-BRIEF.md`](CLIENT-BRIEF.md) (an SMSF specialist in South Melbourne). The prompt text has not been reconciled with the brief.
+- The prompt describes Alfa Focus as a chartered accounting firm based in South Melbourne, as confirmed by the team. It no longer mentions an Adelaide office or a list of service lines.
 
 ### Evidence
 An earlier version of this section claimed improved citation verification scores and a "100% compliance rate" against adversarial prompts containing synthetic TFNs. No benchmark file or test in the repository supports either claim, so they were removed. No prompt-injection or privacy red-team testing has been run.

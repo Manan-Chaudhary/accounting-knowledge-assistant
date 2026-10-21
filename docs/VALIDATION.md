@@ -44,7 +44,7 @@ Round one raised 12 change requests, 5 of which blocked acceptance. All 12 were 
 | CR-8 | UP-8, DH-5 | No signed-in user, no sign out, no visible evidence either page sits behind authentication. | Signed-in user and role shown in the rail on both screens, with a sign out control. |
 | CR-9 | NF-1 | No state between send and answer. | Loading state added, naming what is being checked. |
 | CR-10 | UP-2, UP-8 | Composer attachment icon was a second ingest path that bypassed metadata capture and authorisation. | Removed. Upload is now a single governed path. |
-| CR-11 | Client fidelity | Sample content was general financial accounting. The client is SMSF only. | Recast to SMSF throughout. Product renamed to Alfa Focus SMSF Assistant. |
+| CR-11 | Client fidelity | Sample content was general financial accounting. At the time the client was believed to be SMSF-only; Alfa Focus is in fact a generalist tax and accounting firm. | Recast to SMSF throughout. Product renamed to Alfa Focus SMSF Assistant. |
 | CR-12 | UP-2 | `Type` column held file format, easy to mistake for corpus. | Renamed to `Format`. `Source Type` and `Applies From` added as separate columns. |
 
 ## 2. Chat interface, artboards 01 and 03

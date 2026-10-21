@@ -301,7 +301,7 @@ async def chat_stream_endpoint(
                 for number, chunk in enumerate(retrieved_chunks, start=1)
             ]
 
-            yield f"data: {json.dumps({'sources': sources, default=str})}\n\n"
+            yield f"data: {json.dumps({'sources': sources}, default=str)}\n\n"
             yield "data: [DONE]\n\n"
 
 

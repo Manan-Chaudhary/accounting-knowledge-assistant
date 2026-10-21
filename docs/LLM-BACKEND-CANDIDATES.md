@@ -2,24 +2,24 @@
 
 ## 1. Why this exists
 
-Checklist item: "[LLM BACKEND] - Research best free LLM candidates from LiteLLM model catalog." This document narrows the field for the empirical bake-off the `/testing` page is designed to run (see [`TESTING-PAGE-REQUIREMENTS.md`](TESTING-PAGE-REQUIREMENTS.md) and the multi-model `EvalResult` schema in [`EVALUATION.md`](EVALUATION.md) section 5). It answers the "Generation model" row of the open-decisions table in [`RAG-DESIGN.md`](RAG-DESIGN.md) section 8.
+Checklist item: "[LLM BACKEND] - Research best free LLM candidates from LiteLLM model catalog." This document narrows the field for the empirical bake-off the `/testing` page is designed to run (see [`TESTING-PAGE-REQUIREMENTS.md`](TESTING-PAGE-REQUIREMENTS.md); results are in `benchmarks/reports/` and [`model_evaluation_report.md`](model_evaluation_report.md), not in an `EvalResult` table, which is never written). It answers the "Generation model" row of the open-decisions table in [`RAG-DESIGN.md`](RAG-DESIGN.md) section 8.
 
-**Implementation Status:** LiteLLM is now integrated into `app/rag/generator.py` and `app/config.py`. Calls are unified through `litellm.completion` and `litellm.acompletion`, supporting both a dedicated LiteLLM Proxy endpoint (`LITELLM_API_BASE` + `LITELLM_API_KEY`) and direct provider routing/fallbacks (`LITELLM_MODEL`, `LITELLM_FALLBACK_MODELS`).
+**Implementation Status:** built. `app/rag/generator.py` calls a LiteLLM proxy (a Docker Compose service on port 4000) through the OpenAI-compatible SDK (`OpenAI` / `AsyncOpenAI`, base URL from `LITELLM_API_BASE`, key from `LITELLM_API_KEY` or `LITELLM_MASTER_KEY`), not the `litellm` Python package directly. `litellm/config.yaml` defines four aliases: `gemini-3-8-flash` (`gemini/gemini-3.8-flash`, the default), `groq-gpt-oss-120b`, `openrouter-free` and `free-fallback` (an OpenRouter free model), with fallbacks `gemini-3-8-flash` to `openrouter-free` to `free-fallback`. Cerebras, Mistral, Cohere, GitHub Models and Ollama were researched here but never wired in. The table below is research written before the config and is not updated; it still says `gemini-2.5-flash` where the config uses `gemini-3.8-flash`.
 
 ## 2. Constraints this research is scored against
 
-- **Latency:** P95 end-to-end ≤ 8s ([`EVALUATION.md`](EVALUATION.md) line 176). The retriever design includes a bounded agentic multi-hop loop of up to 3 iterations ([`RAG-DESIGN.md`](RAG-DESIGN.md) sections 5, 7) - if that loop runs to completion, the effective per-call budget is well under 8s, so raw model speed matters more than it would for a single-shot chatbot.
+- **Latency:** P95 end-to-end ≤ 8s ([`EVALUATION.md`](EVALUATION.md) section 4, latency row). The agentic multi-hop loop in [`RAG-DESIGN.md`](RAG-DESIGN.md) was never built, so each answer is a single retrieval and a single generation call. Measured P95 is far above 8s on every model tried (see `benchmarks/reports/`).
 - **No-training / data-residency:** [`RAG-DESIGN.md`](RAG-DESIGN.md) section 8 states the generation model "must have contractual no-training terms" and calls this "a proposal-level commitment, not a code choice."
-- **Cost visibility, free-tier-first:** established pattern in this repo - BGE-M3 embeddings chosen explicitly over OpenAI on cost ([`DATABASE.md`](DATABASE.md) line 110), Supabase free tier chosen deliberately, `cost_usd` tracked per query in the `eval_results` schema.
-- **Context budget:** no hard ceiling is documented. Retrieval returns top-8 reranked chunks (~512 tokens each, so up to ~4K tokens of retrieved context) plus a long, constraint-heavy system prompt plus multi-turn history ([`CHAT-SESSION-REQUIREMENTS.md`](CHAT-SESSION-REQUIREMENTS.md) SS-27, marked `[ASSUMED]`). A few thousand tokens of headroom beyond that is the practical minimum; more is better given the multi-hop design.
+- **Cost visibility, free-tier-first:** established pattern in this repo - BGE-M3 embeddings chosen explicitly over OpenAI on cost ([`DATABASE.md`](DATABASE.md), "Why BGE-M3?"), Supabase free tier chosen deliberately, `cost_usd` tracked per query in the `eval_results` schema.
+- **Context budget:** no hard ceiling is documented. Retrieval returns the top 5 reranked chunks in the chat route (top 6 in the evaluation harness), each about 1200 characters plus a long, constraint-heavy system prompt plus multi-turn history ([`CHAT-SESSION-REQUIREMENTS.md`](CHAT-SESSION-REQUIREMENTS.md) SS-27, marked `[ASSUMED]`). A few thousand tokens of headroom beyond that is the practical minimum; more is better given the multi-hop design.
 - **Domain fit:** SMSF compliance content for a technical accountant audience, strict corpus-separation and citation-or-no-claim rules baked into the system prompt - favors models with strong instruction-following and reliable JSON/function-calling output over raw benchmark scores.
 
 ## 3. Candidates evaluated
 
 | Provider | LiteLLM model string | Free tier limits | Context window | RAG / tool-call fit | Latency | Verdict |
 |---|---|---|---|---|---|---|
-| **Groq** | `groq/openai/gpt-oss-120b` | ~30 RPM / 6-8K TPM / 1,000 RPD, org-level | 131K | Function calling, JSON mode, streaming all supported in LiteLLM | Fastest of all candidates - custom LPU hardware, typically sub-second TTFT | **Primary candidate.** Already the default provider in `generator.py`; re-verify through LiteLLM rather than replace. |
-| **Google Gemini (AI Studio)** | `gemini/gemini-2.5-flash` | 15 RPM / 1,500 RPD / 1M TPM | 1,000,000 | Function calling, JSON mode, streaming, context caching all supported | Fast, not as fast as Groq's LPU | **Primary candidate**, with a caveat - see section 4. Already the fallback provider in `generator.py`. |
+| **Groq** | `groq/openai/gpt-oss-120b` | ~30 RPM / 6-8K TPM / 1,000 RPD, org-level | 131K | Function calling, JSON mode, streaming all supported in LiteLLM | Fastest of all candidates - custom LPU hardware, typically sub-second TTFT | **Primary candidate.** Available as the `groq-gpt-oss-120b` alias; the app default is Gemini (`LITELLM_MODEL`, `gemini-3-8-flash` in the UI). |
+| **Google Gemini (AI Studio)** | `gemini/gemini-2.5-flash` | 15 RPM / 1,500 RPD / 1M TPM | 1,000,000 | Function calling, JSON mode, streaming, context caching all supported | Fast, not as fast as Groq's LPU | **Primary candidate**, with a caveat - see section 4. Configured as `gemini-3-8-flash` on `gemini/gemini-3.8-flash`, the default alias. |
 | **Cerebras** | `cerebras/gpt-oss-120b` | 1M tokens/day, ~30 RPM, 14.4K RPD | **8K on the free tier only** | Same open weights as Groq's copy of gpt-oss-120b; function calling support via LiteLLM not clearly documented | Fastest raw tokens/sec of any candidate | Conditional. 8K context is a real risk once retrieved chunks + system prompt + history are added up - only worth adopting if that's empirically proven sufficient. |
 | **OpenRouter** | `openrouter/<model>:free` | ~20 req/min, 50-1,000 req/day depending on prepaid credit; free catalog rotates week to week | Varies by underlying model (some up to 1M) | Depends entirely on which free model is live | Depends entirely on which free model is live | Not a production default - catalog isn't stable enough. Useful as the harness for the `/testing` page's side-by-side comparison, since one API key reaches many free models. |
 | **Mistral (La Plateforme)** | `mistral/mistral-large-latest` | Free "Experiment" tier existed; a September 2026 pricing change removed the published free API allowance and folded it into paid credit | N/A | N/A | N/A | Deprioritize - terms are currently unstable/unpublished. |
@@ -40,15 +40,17 @@ Groq's own data-use terms for its free tier were not confirmed during this resea
 
 Shortlist to wire through LiteLLM for the `/testing` page's multi-model comparison:
 
-1. `groq/openai/gpt-oss-120b` - already the default, fastest, ample context.
-2. `gemini/gemini-2.5-flash` - already the fallback, largest context by far; confirm the no-training caveat in section 4 before using it beyond eval.
-3. One rotating `openrouter/<model>:free` entry - gives a third, independent data point without committing to a specific model that may not stay free.
+1. `groq/openai/gpt-oss-120b` - fast, ample context.
+2. Gemini (the config uses `gemini/gemini-3.8-flash`) - largest context by far; confirm the no-training caveat in section 4 before using it beyond eval.
+3. One rotating `openrouter` free entry - gives a third, independent data point without committing to a specific model that may not stay free.
+
+What actually happened: the comparison that was run used three Groq models (gpt-oss-120b, qwen3.8-27b, gpt-oss-20b), not this shortlist, and no Gemini versus Groq comparison was completed ([`model_evaluation_report.md`](model_evaluation_report.md)). The no-training question in section 4 is still unresolved.
 
 Do not add Cohere's trial key or unauthenticated GitHub Models to the production shortlist. Keep them only as reference points - Cohere for its citation approach, GitHub Models for quick dev-time comparisons.
 
 ## 6. What this document does not decide
 
-Per [`RAG-DESIGN.md`](RAG-DESIGN.md) section 8's own instruction ("Do not assume; measure"), the actual generation model should be settled by running the three shortlisted candidates against the SMSF eval set through the `EvalResult` scorers (correctness, citation validity, latency, cost per query) once `app/rag/retriever.py` and the LiteLLM wrapper exist. This document narrows the field; it does not pick a winner.
+Per [`RAG-DESIGN.md`](RAG-DESIGN.md) section 8's own instruction ("Do not assume; measure"), the actual generation model should be settled by running the three shortlisted candidates against the SMSF eval set through the `EvalResult` scorers (correctness, citation validity, latency, cost per query) (both now exist). This document narrows the field; it does not pick a winner, and neither has any evaluation so far.
 
 ## Sources
 

@@ -342,7 +342,7 @@ The TFN in GR-T12 is a sequential placeholder, not a real number.
 | # | Question | For | Affects |
 |---|---|---|---|
 | 1 | Should the assistant draft documents such as trustee minutes for internal review, or decline all drafting? ([`CLIENT-MEETING-QUESTIONS.md`](CLIENT-MEETING-QUESTIONS.md) Q11) | Client | GR-25, GR-T13 |
-| 2 | Is the subject area all Australian tax, or SMSF only? | Client | GR-30, GR-T2, GR-T3 |
+| 2 | Which parts of Australian tax beyond SMSF are in scope? (The firm is a generalist.) | Client | GR-30, GR-T2, GR-T3 |
 | 3 | Who should a no-source refusal send the user to? | Client | GR-37 |
 | 4 | What relevance threshold? | Zekun, under R141 | GR-44 |
 | 5 | Should stored user messages also have identifiers removed? | Client, with DH-7 | GR-28 |

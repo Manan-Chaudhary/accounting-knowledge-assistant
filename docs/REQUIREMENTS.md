@@ -268,7 +268,7 @@ Each of these blocks or reshapes a requirement above. Full context and framing i
 
 | # | Question | Affects |
 |---|---|---|
-| 1 | Is the practice SMSF-only, or is there a general tax book alongside it? | Scope, section 1 |
+| 1 | Which general tax and business-services areas beyond SMSF should be covered? (The firm is a generalist; the corpus is SMSF-weighted.) | Scope, section 1 |
 | 2 | Do written procedures exist, or is firm knowledge held in people's heads? | CH-3, UP-2, and the whole firm-procedure corpus |
 | 3 | What is the firm's position on client data and AI tools? | DH-1, DH-8 |
 | 4 | Which SMSF platform is used, and does it have an API? | UP-1, and whether integration is in scope at all |
