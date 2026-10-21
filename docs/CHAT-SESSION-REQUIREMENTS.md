@@ -6,7 +6,7 @@ Surfaces: the Chainlit chat application mounted at `/chat` (`app/chainlit/chainl
 
 Defines how a conversation session is created, maintained, resumed and ended; how chat history is retained and made available; how the assistant behaves when a user starts, continues, resets or ends a conversation; and how prior turns feed into the answer for the current one. Requirement IDs are `SS-n` and are stable, per the traceability rule in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 10.
 
-**Status: pre-client-meeting.** Requirements marked `[ASSUMED]` need confirmation before they drive a sprint. The largest is retention: [`REQUIREMENTS.md`](REQUIREMENTS.md) DH-8 already warns that a retention period invented here could conflict with the firm's own obligations, so none is proposed. Section 10 carries it to the client meeting.
+**Status: partially implemented; client never met.** Built and demoed: saved chat history (threads and steps in Postgres), the sidebar list of recent conversations, reopening a thread with its messages, and chat delete (section 2). Not built: stored source lists per turn (SS-12, SS-40, SS-41), multi-turn context on the React chat path (SS-24 to SS-30, built only on the older Chainlit path), rename (SS-23), search (SS-18), the history-unavailable and unsaved-turn messages (SS-31, SS-32), and a first-class turn record. Delete contradicts SS-17 and SS-44 (see `CHAT-AND-FILTER-REQUIREMENTS.md` section 4.1). The open client questions in section 10 were never put to the client. Requirements marked `[ASSUMED]` need confirmation before they drive a sprint. The largest is retention: [`REQUIREMENTS.md`](REQUIREMENTS.md) DH-8 already warns that a retention period invented here could conflict with the firm's own obligations, so none is proposed. Section 10 carries it to the client meeting.
 
 This document does not cover identity or login. That is [`LOGIN-PAGE-REQUIREMENTS.md`](LOGIN-PAGE-REQUIREMENTS.md), and section 3 states the boundary plainly so the two are never conflated.
 
@@ -14,7 +14,7 @@ Priorities are MoSCoW: **M** must, **S** should, **C** could.
 
 ## 1. Purpose and scope
 
-Two things already exist with nothing behind them. [`REQUIREMENTS.md`](REQUIREMENTS.md) DH-7 requires that "questions and answers are retained so the firm can show what the tool said and what was done with it," and [`VALIDATION.md`](VALIDATION.md) section 2 has already validated a wireframe showing a "recent conversations list in the rail." Neither is implemented: `app/chainlit/chainlit_app.py` has no `cl.user_session` usage anywhere, no persisted history, and `generate_response()` answers every message as if it were the first one in the conversation. This document is where that gap gets defined before it gets built.
+When this was written, two things existed with nothing behind them; history and the list are now built (section 2) but the rest of the gap remains. [`REQUIREMENTS.md`](REQUIREMENTS.md) DH-7 requires that "questions and answers are retained so the firm can show what the tool said and what was done with it," and [`VALIDATION.md`](VALIDATION.md) section 2 has already validated a wireframe showing a "recent conversations list in the rail." At the time neither was implemented: `app/chainlit/chainlit_app.py` had no `cl.user_session` usage, no persisted history, and `generate_response()` answered every message as if it were the first. Section 2 now records what exists.
 
 **In scope:** conversation (thread) creation and lifecycle within an already-authenticated session, persisted chat history and its retrieval and display, new-conversation and reset behaviour, assembling prior turns into context for the current answer, and the error handling specific to conversation state.
 
@@ -27,17 +27,20 @@ Two things already exist with nothing behind them. [`REQUIREMENTS.md`](REQUIREME
 
 ## 2. What exists today
 
-Stated plainly because the gap is the work.
+Checked against `main` on 2026-10-22.
 
 | Component | Current state | Verified in |
 |---|---|---|
-| Conversation state | None. `@cl.on_chat_start` sends a static welcome. No `cl.user_session` is set or read anywhere in the codebase. | `app/chainlit/chainlit_app.py` |
-| Multi-turn context | None. `@cl.on_message` calls `generate_response(message.content)` with a single string; no prior turns are passed in. Every answer is generated as if it were the first message in the thread. | `app/chainlit/chainlit_app.py`, `app/rag/generator.py` |
-| Chat history persistence | None. No `conversations`, `messages`, or `threads` table exists. | `app/db/models.py`, `app/db/schema.sql` |
-| Chainlit's own session config | `session_timeout = 3600` (reconnect grace period), `user_session_timeout = 1296000` (15 days), `confirm_new_chat = true`, `edit_message = true`. Generic Chainlit knobs, not application logic. | `.chainlit/config.toml` |
-| UX expectation | A "recent conversations list in the rail" is already in the validated wireframes. | `VALIDATION.md` §2-3, CR-8 and the DH-7 finding |
+| Conversation state | Chainlit path: `@cl.on_chat_start` sets `cl.user_session` history, `@cl.on_chat_resume` rebuilds it from the stored thread steps. React chat page: the page sends `thread_id` with each message to `POST /api/chat/stream`; the server creates the thread on the first message if it does not exist. | `app/chainlit/chainlit_app.py`; `app/routes/chat_history.py`; `frontend/src/pages/Chat.tsx` |
+| Multi-turn context | Chainlit path (`/chat`): built. `on_message` passes the session `history` to `generate_response`, and the history is rebuilt on resume. React chat path (`/api/chat/stream` and the `POST /api/chat` fallback): **not built**. The endpoints pass only the current message, context and model; `generate_response_stream` takes no history argument. So on the page users actually use, every answer is generated as if it were the first message in the thread. Retrieval also sees only the current message. | `app/chainlit/chainlit_app.py`; `app/routes/chat_history.py`; `app/rag/generator.py` |
+| Chat history persistence | Built. Threads and steps are stored in `threads` and `steps` tables (Chainlit's tables, used by Chainlit's SQLAlchemy data layer on `CHAINLIT_DATABASE_URL`). The stream endpoint inserts the thread (name = first 28 characters of the first message, owner = session email) and a user step, then an assistant step (the cleaned answer, or the refusal text). A failed write is logged and the answer still streams (no user notice, so SS-32 is not met). These tables are not defined in `app/db/models.py` or `schema.sql`. | `app/routes/chat_history.py` |
+| Thread list and reopen | Built. `GET /api/chat/threads` lists the user's newest 20 threads; `GET /api/chat/threads/{id}/messages` returns the thread's user and assistant steps and returns 404 for a thread the user does not own; the sidebar lists threads and the chat page loads a thread from `?threadId=`. The list returns an empty array on a database error, so a failure reads as "no history" (SS-31 not met). | `app/routes/chat_history.py`; `frontend/src/components/Sidebar.tsx`; `frontend/src/pages/Chat.tsx` |
+| Sources in saved turns | Not stored. The sources sent during a live stream are not saved, so a reopened turn has no source list (SS-12, SS-40, SS-41 not met; see `CITATION-RULES.md`). | `app/routes/chat_history.py` |
+| Delete / rename / search | Delete is built and hard-deletes a thread's steps and the thread row (contradicts SS-17 and SS-44; ownership defect noted in `CHAT-AND-FILTER-REQUIREMENTS.md`). Rename and search are not built. | `app/routes/chat_history.py`; `frontend/src/components/Sidebar.tsx` |
+| Chainlit's own session config | `session_timeout = 3600` (reconnect grace period), `user_session_timeout = 1296000` (15 days), `confirm_new_chat = true`, `edit_message = true`. Generic Chainlit knobs. | `.chainlit/config.toml` |
+| UX expectation | A "recent conversations list in the rail" is in the validated wireframes, and now exists in the sidebar. | `VALIDATION.md` sections 2-3, CR-8 and the DH-7 finding; `frontend/src/components/Sidebar.tsx` |
 
-The gap that matters most: the interface has already promised a feature - several retained, revisitable threads - that nothing in the backend can produce, and every answer today is generated with total amnesia of the previous turn even within one open browser tab.
+The gap that matters most now: the React chat page has no multi-turn context, and saved turns hold only text, not the sources the assistant was given, so DH-7's "what the tool said, including what it was told" cannot be answered in full.
 
 ## 3. Conversation session vs auth session
 
@@ -171,4 +174,4 @@ Each blocks or reshapes something above. To go to the meeting alongside the ques
 | Task brief, conversation context requirements | Section 7, SS-24 to SS-30 |
 | Task brief, separate auth session from conversation session and name the owning doc | Section 3, SS-1 to SS-4 |
 
-Nothing here is verified. These are proposed requirements for state that does not exist in the codebase yet, and the difference should stay visible in the sprint review rather than assumed.
+Only the items in the Status banner and section 2 are built. The rest are proposed requirements; the difference should stay visible rather than assumed. The client was never met, so every `[ASSUMED]` and the section 10 questions are unanswered.

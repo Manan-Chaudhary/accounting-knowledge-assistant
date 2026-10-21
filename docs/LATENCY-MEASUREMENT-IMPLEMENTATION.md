@@ -2,7 +2,7 @@
 
 **Task**: R110 - Model Latency Breakdown and Investigation  
 **Date**: 2026-10-14  
-**Status**: Measurement script implemented and running
+**Status**: Measurement script implemented and run three times on 2026-10-14 (5 questions each, EVAL-001 to EVAL-005). The measured P95 was 176.8 s against the 8 s target (fail). See `benchmarks/reports/LATENCY_BREAKDOWN_REPORT_2026-10-14.md`. The runs were taken **without the reranker**: the script does not time it (see S4 below), even though the cross-encoder reranker is implemented in `app/rag/reranker.py` and is part of the live `retrieve_hybrid`.
 
 ## Overview
 
@@ -18,7 +18,7 @@ A complete Python script that:
   - S1: Intake (handler entry to retrieval start)
   - S2: Query embedding (HuggingFace API call)
   - S3: Retrieval SQL (dense + keyword queries + RRF fusion)
-  - S4: Reranking (placeholder - not yet implemented)
+  - S4: Reranking (a placeholder in the script: `rerank_ms` is fixed at 0 and `reranker_enabled` is False. The reranker itself IS implemented in `app/rag/reranker.py` and runs in the live pipeline, so the script's numbers understate real retrieval time)
   - S5: LLM time to first token (proxy call to first content)
   - S6: Generation (remaining tokens after first)
 
@@ -46,7 +46,7 @@ Following LATENCY-TARGETS.md section 6:
 
 - **Timer boundaries**: Uses `time.perf_counter()` for monotonic timing
 - **Test conditions**: 
-  - All 22 questions from `benchmarks/questions.jsonl`
+  - Questions from `benchmarks/questions.jsonl` (now 50 cases; the script runs all of them unless `--limit` is given, and the saved runs used `--limit 5`)
   - Each question as first message of new thread
   - Measurements through localhost:4000 (LiteLLM proxy)
   - Default model: gemini-3-8-flash
@@ -102,7 +102,7 @@ ALTER TABLE document_chunks RENAME COLUMN "section_heading text" TO section_head
 
 **Problem**: `embed_text()` was stubbed to return zero vectors `[0.0] * 1024`
 
-**Solution**: Removed stub to use actual HuggingFace embedding API
+**Solution**: Removed stub to use actual HuggingFace embedding API (`app/rag/embedder.py` now calls BGE-M3 through `InferenceClient`)
 
 ### Docker Network Configuration
 
@@ -119,11 +119,11 @@ Command:
 LITELLM_API_BASE=http://localhost:4000 python scripts/measure_latency.py --model gemini-3-8-flash
 ```
 
-This measures all 22 questions from `benchmarks/questions.jsonl` and will generate:
+This measures every question in `benchmarks/questions.jsonl` (50 cases now; the 14 October runs used `--limit 5`) and generates:
 - `benchmarks/results/latency_gemini-3-8-flash_<timestamp>.jsonl`
 - `benchmarks/reports/latency_gemini-3-8-flash_<timestamp>.json`
 
-## Expected Results
+## Expected Results (written before the runs; see the report for actuals)
 
 Based on preliminary runs and baseline data from LATENCY-TARGETS.md section 4:
 
@@ -140,7 +140,7 @@ From LATENCY-TARGETS.md section 4:
 1. **Embedding spikes**: Warm retrieval p50 was 644ms but p95 was 21,660ms
 2. **LLM TTFT unknown**: Never been measured for Gemini 3.8 Flash
 3. **Rate limiting**: Groq runs showed heavy throttling
-4. **No full-text index**: Keyword retrieval computes `to_tsvector` at query time
+4. **No full-text index**: Keyword retrieval computes `to_tsvector` at query time (still true; no GIN index in `app/db/schema.sql`)
 
 ## Next Steps
 
@@ -179,8 +179,8 @@ Based on likely slowest stages:
 
 1. **Run 3 passes** (66 samples) per LT-25 for statistical validity
 2. **Test other models**: Compare Gemini, Groq, OpenRouter
-3. **Add reranker** (R139) and measure S4 impact
-4. **Implement streaming endpoint** (R127) for production measurements
+3. **Measure the reranker** (S4). The reranker is implemented but this script does not time it. Add timing and re-run
+4. Streaming is implemented (`POST /api/chat/stream`), but the script times its own copy of the pipeline rather than calling that endpoint
 
 ## Usage
 
@@ -189,7 +189,7 @@ Based on likely slowest stages:
 LITELLM_API_BASE=http://localhost:4000 python scripts/measure_latency.py --limit 5
 ```
 
-### Full Measurement (all 22 questions)
+### Full Measurement (all questions in the benchmark file)
 ```bash
 LITELLM_API_BASE=http://localhost:4000 python scripts/measure_latency.py
 ```
@@ -238,4 +238,4 @@ Coverage:
 - `docs/LATENCY-TARGETS.md` - Full specification
 - `benchmarks/questions.jsonl` - Test questions
 - `benchmarks/results/` - Historical baseline data
-- `docs/EVALUATION.md` - 8s P95 gate (line 176)
+- `docs/EVALUATION.md` - 8s P95 gate (the P50 / P95 latency row in section 4)

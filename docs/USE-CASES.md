@@ -1,5 +1,7 @@
 # Accounting Use Cases for the Chatbot
 
+> **Status: research, `[ASSUMED]`.** The use cases were inferred from public research; Alfa Focus was never met, so none was confirmed. The built system does not special-case any of them: all are served by the same retrieval and prompt, and the 73-document corpus covers all seven (`DOCUMENT-CORPUS.md` section 2). Firm-procedure questions (use case 7's C5) cannot be answered because no Corpus B exists.
+
 Research task: identify specific accounting use cases the assistant should handle, grounded in Alfa Focus's actual service offering rather than accounting generally. Source material: [`CLIENT-BRIEF.md`](CLIENT-BRIEF.md), [`DOMAIN-PRIMER.md`](DOMAIN-PRIMER.md), [`REQUIREMENTS.md`](REQUIREMENTS.md).
 
 **Scoping note:** Alfa Focus is an SMSF-only Chartered Accounting firm (`CLIENT-BRIEF.md` section 2), not a general tax practice - this is not yet confirmed with the client (`REQUIREMENTS.md` open question 1). So of the example themes in the card (small business CGT concessions, inheritance, cross-border/residency, FBT, Division 7A), only the ones that genuinely show up in SMSF work are included below as primary use cases. The others are noted at the bottom as out of scope until the client confirms whether a general tax book exists.
@@ -42,7 +44,7 @@ Types: C1 (current cap), C2 (date-sensitive - prior year cap, the domain's signa
 
 What it covers: preservation age, conditions of release, general and personal transfer balance cap, TBAR reporting.
 
-Why it fits: directly in the requirements' worked example (`REQUIREMENTS.md` section 6, "can this 63-year-old start a pension") and a good test of the assistant's most important refusal behaviour - stating the general cap while declining to state a member's personal cap, which depends on fund-specific TBAR history it does not hold.
+Why it fits: directly in the worked example used in the benchmark design (`EVALUATION.md` section 3, C4 question 14, "a 63-year-old member ... start an account-based pension") and a good test of the assistant's most important refusal behaviour - stating the general cap while declining to state a member's personal cap, which depends on fund-specific TBAR history it does not hold.
 
 Question themes: eligibility to start a pension, cap figures, why a personal cap can't be answered.
 
@@ -93,6 +95,6 @@ These appeared in the card's example list but do not fit a firm the client brief
 
 Done: Identified 7 SMSF-specific accounting use cases for the chatbot, grounded in Alfa Focus's actual services rather than generic accounting topics, each with question themes and mapped to the existing C1-C7 question-type taxonomy from EVALUATION.md.
 
-Deliverable: `docs/USE-CASES.md` in accounting-knowledge-assistant repo, branch test/smsf-qa-eval-set
+Deliverable: `docs/USE-CASES.md` (merged to `main`)
 
 Note for next role: Four of the card's example themes (inheritance, FBT, Division 7A, general business transactions) are flagged out of scope pending client confirmation of whether Alfa Focus also runs a general tax book - see the last section. Please review the 7 use cases against the client meeting notes once available, and use these as the basis for the next Q&A batch (should give at least 5 definitive pairs per use case).

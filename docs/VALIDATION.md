@@ -4,6 +4,8 @@ Team 83, Alfa Focus Knowledge Assistant.
 Validated by Ronith Mugundakumar (requirements owner), 2026-08-21.
 Baseline: [`REQUIREMENTS.md`](REQUIREMENTS.md).
 
+> **Historical record (August 2026), about wireframes, not the built system.** The wireframe artboards are not in the repository, and the built UI differs from them in several ways. Not built: the two-step upload with source type and applies-from date (CR-1, UP-2), the `Superseded` status and "upload new version" / "remove from search" menu (CR-4, CR-5, UP-5), the "How Alfa Focus handles it" firm-procedure section (no Corpus B exists), the income-year badge, and the four distinct no-answer states. Built: the client-identifier warning under the chat composer (CR-2, DH-3), signed-in user and role in the sidebar, a document table with statuses `pending`/`processing`/`ready`/`failed` and failure reasons, and recent chats in the sidebar. The section 8 blocker on artboard 04 is resolved in code: the Testing link and card appear only for the `team` role (`frontend/src/components/Sidebar.tsx`, `frontend/src/pages/Home.tsx`) and `/api/testing` rejects other roles. The Home page title still reads "Accounting Knowledge Assistant" rather than the SMSF naming CR-11 asked for. `docs/TRACEABILITY.md`, referred to in section 6, does not exist. Nothing here was validated with Alfa Focus.
+
 ## Scope
 
 Validated the UX wireframe set against every requirement in REQUIREMENTS.md that has a screen surface. Requirements that are behavioural, contractual, or process-level are listed in section 6 and are not judged here.
