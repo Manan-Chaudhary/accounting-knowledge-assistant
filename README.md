@@ -38,6 +38,10 @@ The README and `docs/` describe the system as built. Files marked *design* are t
 | [`docs/DATABASE.md`](docs/DATABASE.md) | PostgreSQL + pgvector setup, BGE-M3 embeddings, schema reference |
 | [`docs/GIT-WORKFLOW.md`](docs/GIT-WORKFLOW.md) | Branch naming, commit format, PR and CI requirements |
 | [`docs/UAT-SCRIPT.md`](docs/UAT-SCRIPT.md) | User acceptance test script (written, not run) |
+| [`docs/USER-GUIDE.md`](docs/USER-GUIDE.md) | Step-by-step guide for accountants: sign in, ask, read citations, manage chats (Word copy: `USER-GUIDE.docx`) |
+| [`docs/ADMIN-GUIDE.md`](docs/ADMIN-GUIDE.md) | Step-by-step guide for administrators: accounts, documents, statuses, the evaluation page (Word copy: `ADMIN-GUIDE.docx`) |
+| [`docs/MODEL-AB-RESULTS.md`](docs/MODEL-AB-RESULTS.md) | Model A/B analysis and recommendation. Interim: no 50-case multi-model run exists yet |
+| [`docs/HANDOVER-BA-SECTIONS.md`](docs/HANDOVER-BA-SECTIONS.md) | The Business Analyst sections of the Handover Document: requirements, user story status, corpus, evaluation, test appendix (Word copy: `HANDOVER-BA-SECTIONS.docx`) |
 | [`docs/CLIENT-MEETING-QUESTIONS.md`](docs/CLIENT-MEETING-QUESTIONS.md) | The 14 questions the next team should put to Alfa Focus first |
 
 ## Design principles
@@ -230,6 +234,8 @@ python -m scripts.evaluation_report benchmarks/results/a.jsonl benchmarks/result
 Latency is measured with `python -m scripts.measure_latency` (see [`docs/LATENCY-MEASUREMENT-IMPLEMENTATION.md`](docs/LATENCY-MEASUREMENT-IMPLEMENTATION.md)). The latest measurement (14 October) found a P95 of 176.8 s, almost all of it waiting for the LLM's first token on free-tier routing. See `benchmarks/reports/LATENCY_BREAKDOWN_REPORT_2026-10-14.md`.
 
 Metric definitions are in [`docs/EVALUATION.md`](docs/EVALUATION.md). The model comparison (three Groq models, 22 cases) is in `benchmarks/reports/comparison_2026-10-01.md`.
+
+To score and rank runs under the A/B rules in [`docs/MODEL-AB-SCORING.md`](docs/MODEL-AB-SCORING.md), run `python -m scripts.ab_analysis <result files> --output benchmarks/reports/ab_analysis.md`. The command, its options and the interim result are in [`docs/MODEL-AB-RESULTS.md`](docs/MODEL-AB-RESULTS.md).
 
 ## Troubleshooting
 
