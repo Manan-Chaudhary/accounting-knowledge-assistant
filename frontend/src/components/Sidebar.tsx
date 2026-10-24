@@ -22,8 +22,54 @@ export function Sidebar() {
       .catch((err) => console.error('Error fetching threads:', err))
   }, [currentThreadId])
 
+  // --- 重命名功能逻辑 ---
+  const handleRenameThread = async (e: MouseEvent, threadId: string, currentName: string) => {
+    e.stopPropagation() // 阻止点击触发会话跳转
+
+    const newName = window.prompt('Enter new conversation title (max 50 chars):', currentName)
+    if (newName === null) {
+      return // 用户点击了取消
+    }
+
+    const trimmed = newName.trim()
+    // 校验 1：不能为空
+    if (!trimmed) {
+      alert('Conversation title cannot be empty.')
+      return
+    }
+
+    // 校验 2：不能超过 50 个字符
+    if (trimmed.length > 50) {
+      alert(`Conversation title cannot exceed 50 characters. (Current: ${trimmed.length})`)
+      return
+    }
+
+    try {
+      const res = await fetch(`/api/chat/threads/${threadId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({ name: trimmed }),
+      })
+
+      if (res.ok) {
+        // 即时更新本地列表显示，无需重新拉取
+        setThreads((prev) =>
+          prev.map((t) => (t.id === threadId ? { ...t, name: trimmed } : t))
+        )
+      } else {
+        const errorData = await res.json().catch(() => ({}))
+        alert(errorData.detail || 'Failed to rename conversation.')
+      }
+    } catch (err) {
+      console.error('Rename error:', err)
+      alert('Network error occurred while renaming conversation.')
+    }
+  }
+
+  // --- 删除功能逻辑 ---
   const handleDeleteThread = async (e: MouseEvent, threadId: string) => {
-    e.stopPropagation() // Prevent triggering conversation navigation
+    e.stopPropagation()
 
     if (!window.confirm('Are you sure you want to delete this conversation?')) {
       return
@@ -37,7 +83,6 @@ export function Sidebar() {
 
       if (res.ok) {
         setThreads((prev) => prev.filter((t) => t.id !== threadId))
-        // If current open thread is deleted, redirect to empty assistant page
         if (currentThreadId === threadId) {
           window.location.href = '/assistant'
         }
@@ -112,6 +157,9 @@ export function Sidebar() {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     whiteSpace: 'nowrap',
+                    flex: 1,
+                    minWidth: 0,
+                    marginRight: '6px',
                   }}
                   title={t.name}
                 >
@@ -121,22 +169,38 @@ export function Sidebar() {
                   </span>
                 </div>
 
-                <button
-                  type="button"
-                  title="Delete conversation"
-                  style={{
-                    background: 'transparent',
-                    border: 'none',
-                    color: '#999',
-                    cursor: 'pointer',
-                    padding: '2px 4px',
-                    marginLeft: '6px',
-                    flexShrink: 0,
-                  }}
-                  onClick={(e) => handleDeleteThread(e, t.id)}
-                >
-                  <i className="fas fa-trash-alt" />
-                </button>
+                {/* 操作按钮区：编辑 + 删除 */}
+                <div style={{ display: 'flex', alignItems: 'center', flexShrink: 0, gap: '4px' }}>
+                  <button
+                    type="button"
+                    title="Rename conversation"
+                    style={{
+                      background: 'transparent',
+                      border: 'none',
+                      color: '#999',
+                      cursor: 'pointer',
+                      padding: '2px 4px',
+                    }}
+                    onClick={(e) => handleRenameThread(e, t.id, t.name)}
+                  >
+                    <i className="fas fa-edit" />
+                  </button>
+
+                  <button
+                    type="button"
+                    title="Delete conversation"
+                    style={{
+                      background: 'transparent',
+                      border: 'none',
+                      color: '#999',
+                      cursor: 'pointer',
+                      padding: '2px 4px',
+                    }}
+                    onClick={(e) => handleDeleteThread(e, t.id)}
+                  >
+                    <i className="fas fa-trash-alt" />
+                  </button>
+                </div>
               </div>
             )
           })

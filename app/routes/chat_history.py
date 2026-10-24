@@ -4,23 +4,39 @@ import logging
 from typing import Any, Dict, List, Optional
 import uuid
 
-from fastapi import APIRouter, Depends, Request, status
+from fastapi import APIRouter, Depends, HTTPException, Request, status
 from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 
-from app.rag.grounding import evaluate_grounding_gate, verify_and_clean_citations
-from app.rag.retriever import retrieve, format_retrieved_context
-
 from app.auth.session import session_user_payload
 from app.db.database import SessionLocal, get_db
 from app.rag.generator import generate_response, generate_response_stream
-from app.rag.retriever import retrieve_context
+from app.rag.grounding import evaluate_grounding_gate, verify_and_clean_citations
+from app.rag.retriever import format_retrieved_context, retrieve, retrieve_context
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/chat", tags=["chat"])
 
+
+# ---------------------------------------------------------------------------
+# Request Models
+# ---------------------------------------------------------------------------
+
+class RenameThreadRequest(BaseModel):
+    name: str
+
+
+class ChatPromptRequest(BaseModel):
+    message: str
+    model: str | None = None
+    thread_id: str | None = None
+
+
+# ---------------------------------------------------------------------------
+# Thread CRUD Endpoints
+# ---------------------------------------------------------------------------
 
 @router.get("/threads")
 def list_user_threads(
@@ -143,6 +159,71 @@ def get_thread_messages(
     return JSONResponse(content=messages)
 
 
+@router.patch("/threads/{thread_id}")
+def rename_thread(
+    thread_id: str,
+    payload: RenameThreadRequest,
+    request: Request,
+    db: Session = Depends(get_db),
+) -> JSONResponse:
+    """
+    Rename a conversation thread with length validation
+    and user ownership enforcement.
+    """
+    user_payload = session_user_payload(request)
+    if not user_payload:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Authentication required.",
+        )
+
+    user_email = user_payload.get("email")
+    user_sub = str(user_payload.get("sub")) if user_payload.get("sub") else None
+
+    new_name = payload.name.strip()
+
+    # 1. 校验：名称不能为空
+    if not new_name:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Conversation title cannot be empty.",
+        )
+
+    # 2. 校验：不能超过 50 个字符
+    if len(new_name) > 50:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Conversation title cannot exceed 50 characters (current length: {len(new_name)}).",
+        )
+
+    # 3. 校验所有权并更新
+    thread = db.execute(
+        text("""
+            SELECT id, "userIdentifier" FROM threads
+            WHERE id = :thread_id AND ("userIdentifier" = :user_email OR "userIdentifier" = :user_sub)
+        """),
+        {"thread_id": thread_id, "user_email": user_email, "user_sub": user_sub},
+    ).fetchone()
+
+    if not thread:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Conversation not found or you do not have permission to modify it.",
+        )
+
+    try:
+        db.execute(
+            text('UPDATE threads SET name = :name WHERE id = :thread_id'),
+            {"name": new_name, "thread_id": thread_id},
+        )
+        db.commit()
+        return JSONResponse(content={"status": "success", "id": thread_id, "name": new_name})
+    except Exception as e:
+        db.rollback()
+        logger.exception("Failed to rename thread: %s", e)
+        raise HTTPException(status_code=500, detail="Database error occurred while renaming.")
+
+
 @router.delete("/threads/{thread_id}")
 def delete_thread(
     thread_id: str,
@@ -175,12 +256,9 @@ def delete_thread(
         return JSONResponse(status_code=500, content={"detail": "Failed to delete"})
 
 
-
-class ChatPromptRequest(BaseModel):
-    message: str
-    model: str | None = None
-    thread_id: str | None = None
-
+# ---------------------------------------------------------------------------
+# Streaming Chat & Fallback Endpoints
+# ---------------------------------------------------------------------------
 
 @router.post("/stream")
 async def chat_stream_endpoint(
@@ -190,7 +268,6 @@ async def chat_stream_endpoint(
     """
     Streaming endpoint integrated with Grounding Gate and sidebar persistence.
     """
-    
     user_payload = session_user_payload(request)
     user_identifier = (
         (user_payload.get("email") or str(user_payload.get("sub")))
@@ -199,7 +276,6 @@ async def chat_stream_endpoint(
     )
     thread_id = payload.thread_id or str(uuid.uuid4())
 
-    
     try:
         with SessionLocal() as db:
             existing_thread = db.execute(
@@ -228,19 +304,15 @@ async def chat_stream_endpoint(
     except Exception as e:
         logger.exception("Failed to persist thread or user step: %s", e)
 
-    
     async def event_generator():
-        
         yield f"data: {json.dumps({'thread_id': thread_id})}\n\n"
 
-        
         retrieved_chunks = []
         try:
             retrieved_chunks = retrieve(payload.message)
         except Exception as e:
             logger.warning("Retrieval failed: %s", e)
 
-        
         gate_block = evaluate_grounding_gate(payload.message, retrieved_chunks)
         if gate_block:
             refusal_text = gate_block["output"]
@@ -251,7 +323,6 @@ async def chat_stream_endpoint(
             yield f"data: {json.dumps({'sources': []})}\n\n"
             yield "data: [DONE]\n\n"
 
-             
             try:
                 with SessionLocal() as db:
                     db.execute(
@@ -266,7 +337,6 @@ async def chat_stream_endpoint(
                 logger.exception("Failed to persist refusal step: %s", e)
             return
 
-        
         context = format_retrieved_context(retrieved_chunks)
         raw_answer = ""
         try:
@@ -278,14 +348,12 @@ async def chat_stream_endpoint(
                 raw_answer += token
                 yield f"data: {json.dumps({'token': token})}\n\n"
 
-            
             cleaned_answer, valid_cites, invalid_cites = verify_and_clean_citations(
                 raw_answer, len(retrieved_chunks)
             )
             if invalid_cites:
                 logger.warning("Unverified citations flagged: %s", invalid_cites)
 
-            
             unique_sources = {}
             for c in retrieved_chunks:
                 if c.filename and c.filename not in unique_sources:
@@ -303,7 +371,6 @@ async def chat_stream_endpoint(
             yield f"data: {json.dumps({'error': str(ge)})}\n\n"
 
         finally:
-           
             final_content = cleaned_answer if 'cleaned_answer' in locals() and cleaned_answer else raw_answer
             if final_content.strip():
                 try:
@@ -319,7 +386,6 @@ async def chat_stream_endpoint(
                 except Exception as e:
                     logger.exception("Failed to persist assistant response step: %s", e)
 
-   
     return StreamingResponse(
         event_generator(),
         media_type="text/event-stream",
