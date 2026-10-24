@@ -1,3 +1,5 @@
+> **Status: implemented.** `app/rag/chunker.py` (`chunk_document`) is the live chunker, called by `process_document` in `app/services/document_service.py` with `RAG_CHUNK_SIZE=1200` and `RAG_CHUNK_OVERLAP=150`, measured in characters, not tokens. The output below is the real output of `python -m scripts.show_chunking` (re-checked: Division 7A still gives 36 chunks). Known quirk visible in the sample: the 150-character overlap is a raw tail slice of the previous chunk, so a chunk can begin mid-word (chunk 1 of document 1 starts "ds"). An older fixed-size helper, `chunk_text` (2000/200), still exists in `document_service.py` and is used only by `scripts/validate_corpus.py`, so the chunk counts in `corpus/manifest.json` do not match the live chunker. No retrieval evaluation has compared chunking settings.
+
 ================================================================================
 DOCUMENT 1: corpus/general-tax/division-7a/ato-division-7a.txt
 ================================================================================

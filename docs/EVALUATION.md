@@ -1,6 +1,8 @@
 # Benchmark and Evaluation Design
 
-The scaffold already anticipated this: `app/routes/testing.py` exists as "LLM testing/evaluation page" and the README plans an `EvalResult` model. This document says what goes in them.
+> **Status.** Sections 1 to 3 and 5 to 9 are the original evaluation *design*. What is built is in sections 4.1 to 4.3: the harness (`app/evaluation/harness.py`), the report script, the 50-case benchmark `benchmarks/questions.jsonl`, and the `/testing` page, which is a real page backed by `app/routes/testing.py` (team role) that starts, polls and stops harness runs. Not built: MLflow (not in `requirements.txt`), the `Guidelines()` scorers, temporal precision, corpus routing and attribution, judge validation against human labels, persisting results to `EvalResult` (the table is never written; results go to JSONL files), and any CI benchmark gate. All saved model-comparison results cover only the first 22 cases.
+
+`app/routes/testing.py` is the evaluation surface and `eval_results` exists in the schema but is unused. This document says what was designed to go in them.
 
 Read [`RAG-DESIGN.md`](RAG-DESIGN.md) section 6 first - each behavioural rule in the answer contract maps to a check below.
 
@@ -36,7 +38,7 @@ C3, C6 and C7 together are 35% of the set and need **no accounting expertise to 
 
 ## 3. Seed benchmark questions
 
-Twenty-eight seeds across the classes. These are drafting stubs: expected answers need verification against the primary source before any of them becomes a golden answer. Where a figure appears, it currently comes from [`DOMAIN-PRIMER.md`](DOMAIN-PRIMER.md) section 4, and **some of those figures are secondary-sourced and must be confirmed against the ATO before use as ground truth.**
+Twenty-eight seeds across the classes (design stage; the runnable benchmark has since grown to 50 cases with different ids and wording, see section 4.1). These are drafting stubs: expected answers need verification against the primary source before any of them becomes a golden answer. Where a figure appears, it currently comes from [`DOMAIN-PRIMER.md`](DOMAIN-PRIMER.md) section 4, and **some of those figures are secondary-sourced and must be confirmed against the ATO before use as ground truth.**
 
 ### C1 - Single-fact lookup
 
@@ -101,11 +103,11 @@ Twenty-eight seeds across the classes. These are drafting stubs: expected answer
 
 Two more to add once the harness runs: a question in the firm's own idiom, and a question with a typo in a key identifier.
 
-**Target size:** 28 seeds now; 80-120 by Phase 2, with at least half drawn from the real question log obtained from the client.
+**Target size:** 28 seeds were the design; the runnable benchmark now has 50 cases (C1 18, C2 7, C3 4, C4 6, C5 1, C6 11, C7 3, so Corpus B class C5 is nearly empty because no firm documents exist). The real question log from the client was never obtained.
 
 ### Where the benchmark lives
 
-`benchmarks/questions.jsonl` at the repo root, one record per line, version-controlled so a change to ground truth shows up in a diff:
+`benchmarks/questions.jsonl` at the repo root, one record per line, version-controlled so a change to ground truth shows up in a diff. The design record below is illustrative; the actual records use ids like `EVAL-001` and fields such as `expected_sources`, `expected_outcome`, `must_refuse`, `question_type`, `expected_behaviour`, `required_behaviours` and `income_year` (see `benchmarks/questions.md`):
 
 ```jsonc
 {
@@ -180,7 +182,7 @@ Coherence and role adherence only apply to multi-turn sessions and therefore nee
 
 ### 4.1 What the harness implements today
 
-Added 2026-09-29 (Sprint 2 week 3). `app/evaluation/harness.py` scores each case, and `scripts/evaluation_report.py` aggregates runs into a markdown report. `--rescore` recomputes the deterministic metrics from saved answers, so a scoring change can be applied to earlier runs without calling the model again. The first full run is `benchmarks/reports/groq-gpt-oss-120b_2026-09-29.md`. The mapping to the metrics above:
+Added 2026-09-29 (Sprint 2 week 3). The harness defaults are model `gemini-3.8-flash`, top-k 6 and `hybrid` retrieval (strategies `dense`, `keyword`, `hybrid` are selectable). Retrieval in `hybrid` includes the cross-encoder rerank. The harness does not run the grounding gate or citation cleaning from `app/rag/grounding.py`. `app/evaluation/harness.py` scores each case, and `scripts/evaluation_report.py` aggregates runs into a markdown report. `--rescore` recomputes the deterministic metrics from saved answers, so a scoring change can be applied to earlier runs without calling the model again. The first full run is `benchmarks/reports/groq-gpt-oss-120b_2026-09-29.md`. The mapping to the metrics above:
 
 | Harness metric | Metric above | How it is computed | Gap to the full definition |
 |---|---|---|---|
@@ -195,7 +197,7 @@ Added 2026-09-29 (Sprint 2 week 3). `app/evaluation/harness.py` scores each case
 | `judge.faithfulness` (1-5) | Faithfulness / groundedness | LLM judge against the retrieved context | Whole-answer score, not per-claim |
 | `latency_ms`, report P50/P95 | P50 / P95 latency | Wall-clock retrieval plus generation | Timed in the harness, not from a trace, and includes any provider retry or rate-limit wait, so free-tier runs overstate model latency |
 
-Not yet implemented: temporal precision, corpus routing and attribution, citation support, stale-premise correction as its own score (C3 cases are covered by the judge's correctness score), income-year scoping, and cost per query. The test set in `benchmarks/questions.jsonl` is limited to the four documents currently indexed in Supabase plus must-refuse and out-of-corpus cases; the SMSF questions in `benchmarks/questions.md` move into it as Corpus A grows.
+Not yet implemented: temporal precision, corpus routing and attribution, citation support, stale-premise correction as its own score (C3 cases are covered by the judge's correctness score), income-year scoping, and cost per query. `benchmarks/questions.jsonl` now holds 50 cases: EVAL-001 to EVAL-022 use four CGT and FBT documents, and EVAL-023 to EVAL-050 (added 2026-10-07) span the 73-document corpus. No saved model-comparison run covers the added 28 cases yet.
 
 ### 4.2 Model runs to date (2026-10-01)
 
@@ -224,7 +226,7 @@ Limits on these numbers:
 - 22 cases, mostly CGT and FBT. A one-case difference moves a rate by about 4 points, so only large gaps mean anything.
 - gpt-oss-120b is both a candidate and the judge, so its judged scores are self-judged. The judge is not validated against human labels (section 5).
 - Latency includes provider rate-limit waits on the Groq free tier, so P95 mostly measures throttling, not the model. qwen's 152s is the clearest case.
-- **Gemini 3.8 Flash was not compared.** Its free tier allows 20 requests per day for that model. The attempt on 2026-10-01 recorded 503 and 429 errors on 7 of the first 9 cases and was discarded. Re-run it with `--resume` after the quota resets or with a paid key.
+- **Gemini 3.8 Flash was not compared in this table.** Its free tier allows 20 requests per day for that model. The attempt on 2026-10-01 recorded 503 and 429 errors on 7 of the first 9 cases and was discarded. Later Gemini runs exist only as retrieval-mode reports (`benchmarks/reports/dense.md`, `keyword.md`, 22 cases, no judge); see [`model_evaluation_report.md`](model_evaluation_report.md). No like-for-like Gemini versus Groq comparison has been run.
 
 Scoring fix made on 2026-10-01: `is_refusal` did not match "I cannot provide...", so a correct qwen refusal on EVAL-017 was scored as a miss and its refusal recall read 83%. The wording is now matched and covered by a test. The gpt-oss-120b results were unchanged by the fix.
 
@@ -232,7 +234,7 @@ Scoring fix made on 2026-10-01: `is_refusal` did not match "I cannot provide..."
 
 **MLflow 3 GenAI evaluation** is the recommended harness - it unifies tracing, evaluation, and production monitoring rather than requiring a separate stack, and the same traces power the `/testing` page and production monitoring.
 
-**It is not in `requirements.txt` yet.** Adding `mlflow` is a `chore/` PR and a proposal-level decision, since it also implies somewhere to put the tracking server. Local file-backed tracking is fine for the capstone.
+**It is not in `requirements.txt` and the harness does not use it.** Adding `mlflow` is a `chore/` PR and a proposal-level decision, since it also implies somewhere to put the tracking server. Local file-backed tracking is fine for the capstone.
 
 ### Built-in scorers
 
@@ -290,11 +292,11 @@ The dangerous/wrong distinction matters: a wrong answer that is obviously wrong 
 - **Capture human labels** - the accountant labelling flow in section 5, which is the only screen a client ever touches during development.
 - **Diff** against the previous run, so a regression is visible without reading two tables.
 
-The results persist to the `EvalResult` model the README already plans. Give it: `run_id`, `question_id`, `answer`, `retrieved_chunk_ids`, per-scorer results, `human_label`, `created_at`. That schema serves both the benchmark run and production trace sampling, which is deliberate - the point of section 7 is that they are the same pipeline.
+(Design; not built.) The results would persist to the `EvalResult` model. Give it: `run_id`, `question_id`, `answer`, `retrieved_chunk_ids`, per-scorer results, `human_label`, `created_at`. That schema serves both the benchmark run and production trace sampling, which is deliberate - the point of section 7 is that they are the same pipeline.
 
 ## 7. When it runs
 
-- **Every PR** - the full benchmark against the CI gates. `ci.yml` already has a commented-out `pytest` step; that is where this hooks in. A regression is a blocked merge, not a note in a standup.
+- **Every PR** - (design; not in place) the full benchmark against the CI gates. `ci.yml` only installs dependencies and runs `compileall`; its `pytest` step is commented out, which is where this would hook in. A regression is a blocked merge, not a note in a standup.
 - **Weekly** - re-validate every `source_url` in the corpus. Public guidance pages move.
 - **On corpus refresh** - re-run C2 and C3 specifically. A refresh that breaks temporal precision is the most likely silent regression in the whole system.
 - **In production** - sample traces continuously with the no-ground-truth scorers (`RetrievalGroundedness`, `RelevanceToQuery`, `Guidelines`), and promote interesting failures into `benchmarks/questions.jsonl`. The best test cases come from real use, and the firm's actual questions will be stranger than ours.
@@ -324,6 +326,6 @@ All candidates in a comparison must use the same benchmark questions, retrieval 
 
 Before a candidate is included in the comparison, verify that it can return a response through the proxy. Record the configured alias, underlying provider/model, benchmark output, and any errors or fallback events. A run that uses an unintended fallback must not be interpreted as a clean result for the requested candidate.
 
-The React `/testing` page remains a static prototype in this scope. Benchmark execution is performed through the command-line harness; interactive test execution and persistent evaluation results in the UI remain separate work.
+The React `/testing` page is no longer a prototype: it starts, polls and stops harness runs through `/api/testing` (team role only). Run output is written to a temp directory on the server, not to the database or `benchmarks/results/`, so results from the page are not persisted. The command-line harness remains the way to produce saved, comparable result files.
 
 **Reproducibility note:** Provider availability, free-tier quotas, and OpenRouter model routing can change. Record the model configuration and run date alongside each comparison.

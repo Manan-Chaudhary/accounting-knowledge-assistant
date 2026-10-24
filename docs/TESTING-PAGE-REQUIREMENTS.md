@@ -2,11 +2,11 @@
 
 Team 83, Alfa Focus Knowledge Assistant.
 Drafted 2026-08-26 by Ronith Mugundakumar.
-Surface: `/testing`, implemented at `app/routes/testing.py`.
+Surface: `/testing` (React page `frontend/src/pages/Testing.tsx`) and its API in `app/routes/testing.py`.
 
 Defines what the evaluation review page must capture. Derived from the metrics in [`EVALUATION.md`](EVALUATION.md) section 4, the judge design in section 5, and the page sketch in section 6. Requirement IDs are `EV-n` and are stable, per the traceability rule in [`REQUIREMENTS.md`](REQUIREMENTS.md) section 10.
 
-**Status: pre-client-meeting.** Requirements marked `[ASSUMED]` need confirmation before they drive a sprint. The reviewer workflow in section 6 assumes an Alfa Focus accountant is available to label, which is unconfirmed. Everything else is derivable from the evaluation design and does not wait on the client.
+**Status: partially implemented (a run-and-summary page, not the review page described here).** Built and demoed: the `/testing` page, restricted to the `team` role on server and browser (EV-49 in part; there is no reviewer role), which starts, polls and stops an evaluation run of the 50-case benchmark against a chosen model (one model per run), and shows aggregate metrics with gate verdicts (EV-41 not built per class; EV-42, EV-44 in part; EV-39 in part, partial runs are labelled and gates marked informational). Not built: stored per-question records (EV-1 to EV-6; runs live in memory and temp files), per-question inspection, side-by-side model comparison (EV-24 to EV-29), human labelling and agreement (EV-21 to EV-23, EV-34 to EV-36), the `no_source`/`refused`/`error` outcome split (EV-30 to EV-33), diff, filter and export (EV-45 to EV-48), and the planned metrics, which the page lists as "Not implemented". See [`HARNESS-PAGE-REQUIREMENTS.md`](HARNESS-PAGE-REQUIREMENTS.md) section 2 for the detail. No accountant labelling was done; the client was never met. Requirements marked `[ASSUMED]` need confirmation before they drive a sprint. The reviewer workflow in section 6 assumes an Alfa Focus accountant is available to label, which is unconfirmed. Everything else is derivable from the evaluation design and does not wait on the client.
 
 Priorities are MoSCoW: **M** must, **S** should, **C** could.
 
@@ -35,7 +35,7 @@ The `EvalResult` model in [`EVALUATION.md`](EVALUATION.md) section 6 needs two f
 
 | EV | P | Requirement |
 |---|---|---|
-| EV-1 | M | One record exists per combination of run, question and model. A run over 28 questions against 3 models produces 84 records, not 28. |
+| EV-1 | M | One record exists per combination of run, question and model. A run over 28 questions against 3 models produces 84 records, not 28 (the benchmark now has 50 questions). |
 | EV-2 | M | Each record stores the run id, question id, question class, model id, the answer text as returned, the ordered list of retrieved chunk ids with their scores, the resolved income year used for the query, the outcome (see section 6), and a created timestamp. |
 | EV-3 | M | Each record stores the full text of every retrieved chunk as it was at run time, not a reference resolved at read time. A chunk that is later re-indexed or superseded must not silently change what a past run appears to have retrieved. |
 | EV-4 | M | Each record stores every scorer verdict as its own field, per section 4, with the scorer version or prompt hash that produced it. |
@@ -176,4 +176,4 @@ Each blocks or reshapes something above. To go to the client meeting alongside t
 | Task brief, edge cases | EV-30 to EV-40 |
 | Task brief, model answer per LLM | EV-1, EV-24 to EV-29 |
 
-Every metric named in [`EVALUATION.md`](EVALUATION.md) section 4 has an input above. Nothing here is verified. These are agreed requirements for a page that does not exist yet, and the difference should stay visible in the sprint review.
+Every metric named in [`EVALUATION.md`](EVALUATION.md) section 4 has an input above. Only the items in the Status banner are built; the rest are requirements for the next team, and the difference should stay visible. Nothing here has been validated with the client.

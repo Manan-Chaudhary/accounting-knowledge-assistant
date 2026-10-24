@@ -364,7 +364,25 @@ async def chat_stream_endpoint(
                     }
 
             yield f"data: {json.dumps({'sources': list(unique_sources.values())})}\n\n"
+            
+            
+            sources = [
+                {
+                    "number": number,
+                    "chunk_id": chunk.chunk_id,
+                    "document_id": chunk.document_id,
+                    "chunk_index": chunk.chunk_index,
+                    "content": chunk.content,
+                    "title": chunk.source_label or chunk.filename or "Untitled source",
+                    "filename": chunk.filename or "",
+                    "url": None,
+                }
+                for number, chunk in enumerate(retrieved_chunks, start=1)
+            ]
+
+            yield f"data: {json.dumps({'sources': sources}, default=str)}\n\n"
             yield "data: [DONE]\n\n"
+
 
         except Exception as ge:
             logger.exception("Generator streaming error: %s", ge)

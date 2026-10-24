@@ -430,22 +430,23 @@ def retrieve_context_and_sources(
     top_k: int = DEFAULT_TOP_K,
 ) -> tuple[str, list[dict]]:
     """
-    Retrieve relevant chunks, returning both formatted context for the LLM
-    and a deduplicated list of structured citation sources for streaming metadata.
+    Retrieve passages once and return both the numbered LLM context
+    and the matching source records for citation resolution.
     """
     chunks = retrieve(query=query, top_k=top_k)
     context = format_retrieved_context(chunks)
 
-    unique_sources: list[dict] = []
-    seen = set()
-    for chunk in chunks:
-        key = (chunk.source_label, chunk.filename)
-        if key not in seen:
-            seen.add(key)
-            unique_sources.append({
-                "label": chunk.source_label or chunk.filename,
-                "filename": chunk.filename,
-                "document_id": chunk.document_id,
-            })
+    sources = [
+        {
+            "number": number,
+            "chunk_id": chunk.chunk_id,
+            "document_id": chunk.document_id,
+            "chunk_index": chunk.chunk_index,
+            "content": chunk.content,
+            "label": chunk.source_label or chunk.filename,
+            "filename": chunk.filename,
+        }
+        for number, chunk in enumerate(chunks, start=1)
+    ]
 
-    return context, unique_sources
+    return context, sources

@@ -1,6 +1,6 @@
 # Client Brief - Alfa Focus
 
-Compiled 2026-08-17 from open-source research only. **No client contact has occurred.** Confidence markers are load-bearing: do not promote a `MEDIUM` or `LOW` line to a statement of fact in the proposal.
+Compiled 2026-08-17 from open-source research only. **No client contact has occurred** (the client was never met by project end, so nothing below was confirmed and every `MEDIUM` and `LOW` line is still unverified). Confidence markers are load-bearing: do not promote a `MEDIUM` or `LOW` line to a statement of fact in the proposal.
 
 Confidence scale:
 - `HIGH` - multiple independent sources, or a government register
@@ -55,7 +55,7 @@ So a meaningful share of the client base is **other professionals**. That has th
 - Volume and repetition are high. B2B outsourcing means the same twenty compliance questions recur across hundreds of funds. That is a very good fit for retrieval, and a very good source of benchmark questions.
 - Answer consistency across staff is a business asset. If two accountants at Alfa Focus give a referring financial planner different answers, the firm loses the referral. **"Consistency" is a stronger business case for this client than "speed"** - worth saying in the proposal, because it is not the pitch they will expect.
 
-`MEDIUM`: **This is a niche, not a generalist practice.** The brief the team was given ("tax consultant") is true but underspecified. Build for SMSF depth, not tax breadth. Confirm at the meeting whether they also run a general tax/business-services book alongside the SMSF work - many firms of this size do, and it would widen the corpus considerably.
+**Alfa Focus is a generalist tax and accounting firm** (confirmed by the team, not by the client). The directory research below found SMSF administration prominently advertised, so SMSF is one major service line, but the firm's work is not limited to it. The corpus is currently weighted towards SMSF material (see `DOCUMENT-CORPUS.md`); general tax and business content is the area to widen next.
 
 ## 3. People
 
@@ -71,7 +71,7 @@ So a meaningful share of the client base is **other professionals**. That has th
 
 Read cautiously, this suggests a **small practice, roughly 5-15 people**, with a service-delivery layer (SMSF accountants) under a principal, plus a client-facing coordination role. If that shape is right, the implications are large:
 
-- There is no IT department. Whatever ships has to be operable by an accountant, not maintained by an engineer. This is the strongest argument for the Chainlit-at-`/chat` approach already in the repo: a chat page behind SSO needs no training.
+- There is no IT department. Whatever ships has to be operable by an accountant, not maintained by an engineer. This is the strongest argument for a plain chat page behind a login that needs no training. The built system is a React chat page (`/assistant`) with email and password sign-in; there is no SSO.
 - There is probably no formal knowledge base to ingest. Firm knowledge lives in senior heads, in email, and in the file notes on individual funds. **Corpus B may have to be created during the project, not merely indexed.** This is the single biggest delivery risk in the whole engagement.
 - A "Customer Service Manager" role suggests inbound client queries are a recognised workload with an owner. That person is the best interview subject for benchmark questions - they see the real question distribution.
 
@@ -85,7 +85,7 @@ Read cautiously, this suggests a **small practice, roughly 5-15 people**, with a
 
 Do not put this in a client-facing document as a criticism. Do use it internally to calibrate:
 
-1. Expect no existing stack to integrate with. The Render + Supabase deployment in this repo is not competing with anything.
+1. Expect no existing stack to integrate with. The Supabase-backed system in this repo is not competing with anything. (It is not deployed: it runs locally on Docker Compose.)
 2. Expect authentication, hosting, and data governance to be *our* problem to specify, because nobody there will specify it for us.
 3. Expect the deliverable that survives is the one an accountant can open and use on day one.
 4. The 2018 blog posts are the only public artefacts of their voice. Thin, but they are a real sample of how the firm explains SMSF concepts.

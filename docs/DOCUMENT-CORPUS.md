@@ -1,5 +1,7 @@
 # Document Corpus (Corpus A - Authority)
 
+> **Status.** The 73-document corpus is built and has been loaded through the app (README, `docs/load_log.csv` records part of the load, 35 files). The chunk counts below were computed by `validate_corpus.py` with the older fixed-size `chunk_text` helper. The live pipeline now uses the structure-aware `chunk_document` (1200 characters, 150 overlap), so the real number of chunks in the database differs; query `document_chunks` for the true count. The `[ASSUMED]` caveat applies: Alfa Focus never confirmed this document list. Corpus B (firm documents) does not exist. Sections 5 and 6 and the handoff notes are kept as history and corrected where they went stale.
+
 Card: [DOCUMENT INGESTION] Gather sample accounting documentation that supports use cases identified (#120).
 
 This is the first set of public authority documents for the knowledge base. It covers Alfa Focus's SMSF service lines (the seven use cases in [`USE-CASES.md`](USE-CASES.md)) and the wider accounting topics accountants at the firm are likely to ask about: Division 7A, FBT, CGT concessions, residency, GST/BAS, payroll and employer super, trusts, deceased estates, financial reporting and professional obligations.
@@ -12,7 +14,7 @@ Retrieved 2026-09-25. All sources are Tier 1-3 as defined in [`DOMAIN-PRIMER.md`
 |---|---|
 | Documents | 73 |
 | Files | 75 (the SIS Act and SIS Regulations are split into two volumes each, as published) |
-| Chunks produced by the ingestion pipeline | 3,750 |
+| Chunks counted by `validate_corpus.py` (legacy `chunk_text`; not the live chunker) | 3,750 |
 | Size on disk | 18.6 MB |
 | Location | [`corpus/`](../corpus/), one folder per topic |
 | Machine-readable list | [`corpus/manifest.json`](../corpus/manifest.json) (source URL, type, tier, use cases, chunk count per file) |
@@ -116,53 +118,44 @@ Topic: ...
 ---
 ```
 
-The header matters because the current `documents` table has no `corpus`, `source_url`, `tier` or `effective_from` columns (see section 6). Until it does, the header in the first chunk and `manifest.json` are the only places this metadata lives.
+The header matters because the `documents` table has no `corpus`, `source_url`, `tier` or `effective_from` columns (see section 6.3; it does have a nullable `source_label`). Until it does, the header in the first chunk and `manifest.json` are the only places this metadata lives.
 
 ## 4. Scripts
 
 | Script | What it does |
 |---|---|
 | [`scripts/build_corpus.py`](../scripts/build_corpus.py) | Downloads everything in `corpus/sources.json` and writes `corpus/manifest.json`. Fails a source if the page redirects elsewhere or yields too little text. For legislation it reads the Federal Register downloads page, so it always gets the latest compilation. `--only <id>` rebuilds one entry. |
-| [`scripts/validate_corpus.py`](../scripts/validate_corpus.py) | Runs every file through the pipeline's own `extract_text` and `chunk_text`, with no Supabase or embedding calls, and records the chunk count per file in the manifest. Last run: 75 files, 3,750 chunks, 0 failures. |
-| [`scripts/upload_corpus.py`](../scripts/upload_corpus.py) | Logs in to the app when credentials are set, POSTs each file to `/upload` (which stores it in Supabase Storage, inserts the `documents` row and calls the n8n webhook), then polls `/documents/{id}/status` until each is `ready` or `failed`. Writes `corpus/upload_log.json` and skips files already `ready`, so it is safe to re-run. `--dry-run` lists what it would send. |
+| [`scripts/validate_corpus.py`](../scripts/validate_corpus.py) | Runs every file through the pipeline's own `extract_text` and `chunk_text`, with no Supabase or embedding calls, and records the chunk count per file in the manifest. Last run: 75 files, 3,750 chunks, 0 failures (counts from the legacy `chunk_text`, not the live `chunk_document`). |
+| [`scripts/upload_corpus.py`](../scripts/upload_corpus.py) | Logs in to the app when credentials are set, POSTs each file to `/api/upload` (which stores it in Supabase Storage, inserts the `documents` row and calls the n8n webhook), then polls `/api/documents/{id}/status` until each is `ready` or `failed`. Writes `corpus/upload_log.json` and skips files already `ready`, so it is safe to re-run. `--dry-run` lists what it would send. |
 
 To add a source, add an entry to `corpus/sources.json`, then run `build_corpus.py --only <id>` and `validate_corpus.py`.
 
 ## 5. Loading into Supabase
 
 1. Fill `.env` with the real `SUPABASE_URL`, `SUPABASE_KEY`, `SUPABASE_DB_URL`, `SUPABASE_BUCKET` and `HF_TOKEN` (plus `SESSION_SECRET` on `main`).
-2. On `main` only, apply the section 6.1 fix first. Without it, no document can reach `ready`.
+2. The section 6.1 problem is fixed on `main`: set `N8N_SHARED_SECRET` in `.env`.
 3. `docker compose up -d app n8n`
-4. Open n8n at `http://localhost:5678`, choose **Import from File**, select [`n8n/Document Ingestion.json`](../n8n/Document%20Ingestion.json), and activate it. The webhook path is `process-document`.
-5. Run `python scripts/upload_corpus.py`. On `main`, where uploads need a login, set `CORPUS_UPLOAD_EMAIL` and `CORPUS_UPLOAD_PASSWORD` first (create the user with `python scripts/create_app_user.py` if needed).
+4. Open n8n at `http://localhost:5678`, choose **Import from File**, select [`n8n/Document Ingestion.json`](../n8n/Document%20Ingestion.json), attach the `X-N8N-Secret` Header Auth credential to its HTTP Request node, and activate it. The webhook path is `process-document`.
+5. Run `python scripts/upload_corpus.py`. Uploads need a login, so set `CORPUS_UPLOAD_EMAIL` and `CORPUS_UPLOAD_PASSWORD` first (create the user with `python -m scripts.create_app_user` if needed).
 6. Check that every entry in `corpus/upload_log.json` is `ready`. In Supabase, `select document_id, count(*) from document_chunks group by 1` should roughly match the chunk counts in the manifest.
 
-Start with `--only ato-division-296-smsf ato-smsf-lrba` to test the full path on two small files before sending all 75.
+Start with `--only ato-division-296-smsf ato-smsf-lrba` to test the full path on two small files before sending all 75 files.
 
 ## 6. Blockers and risks found
 
-### 6.1 The n8n callback is rejected by the auth middleware (blocker once merged)
+### 6.1 The n8n callback was rejected by the auth middleware (fixed)
 
-This branch is based on 9eeeb11, before session auth was added, so the problem does not occur here. It will appear as soon as this work is merged into `main`.
-
-On `main`, `enforce_authenticated_access` in `app/main.py` does not list `/api/n8n/` as public. The n8n HTTP Request node calls `POST /api/n8n/process-document/{id}` with no session cookie, so it gets a 401. This was confirmed with FastAPI's TestClient on `main` at 63da927:
-
-```
-POST /api/n8n/process-document/1 without session -> 401 {"detail":"Authentication required."}
-GET /api/n8n-test without session -> 401 {"detail":"Authentication required."}
-```
-
-So every upload stays `pending`. The fix is small, but it is an auth decision, so it has not been made here. Either allow `/api/n8n/` through the middleware and have n8n send a shared-secret header that the route checks, or have n8n call the processing step some other way. Do not make the route public without a secret, because it would let anyone trigger processing.
+Originally `enforce_authenticated_access` in `app/main.py` did not list `/api/n8n/` as public, so n8n's `POST /api/n8n/process-document/{id}` got a 401 and every upload stayed `pending`. This is fixed on `main`: `/api/n8n/` is exempt from the session middleware, and the route in `app/routes/integration.py` instead requires an `X-N8N-Secret` header matching `N8N_SHARED_SECRET` (constant-time compare; the route returns 401 if the secret is missing or wrong). The route is not public without a secret.
 
 ### 6.2 Embedding volume
 
-Each chunk is one Hugging Face Inference API call (`app/rag/embedder.py`). 3,750 chunks means 3,750 calls, sent one after another inside a single HTTP request from n8n. The SIS Act alone is 797 chunks. Check the HF account's quota before a full load. If the n8n HTTP node times out on the large PDFs, raise its timeout or load the legislation last.
+Each chunk is one Hugging Face Inference API call (`app/rag/embedder.py`). Every chunk is a separate call (no batching), sent one after another inside a single HTTP request from n8n; the legacy count was 3,750. The SIS Act alone is 797 chunks. Check the HF account's quota before a full load. If the n8n HTTP node times out on the large PDFs, raise its timeout or load the legislation last.
 
 To keep the volume manageable, the GST Act 1999 and the FBTAA 1986 (about 1,200 pages together) were left out. ATO guidance covers both topics. Add them to `sources.json` (title IDs `C2004A00446` and `C2004A03280`) if full-text law on those topics is needed.
 
 ### 6.3 Metadata the schema cannot hold yet
 
-`REQUIREMENTS.md` UP-2 and section 5.1 require `corpus`, `effective_from`, `effective_to`, `source_url` and `superseded_by` per document. The current `documents` table has none of these. `manifest.json` has them ready (all these documents are corpus A, and the retrieval date is recorded), so they can be backfilled once the columns exist.
+`REQUIREMENTS.md` UP-2 and section 5.1 require `corpus`, `effective_from`, `effective_to`, `source_url` and `superseded_by` per document. The `documents` table has none of these (still true). `manifest.json` has them ready (all these documents are corpus A, and the retrieval date is recorded), so they can be backfilled once the columns exist.
 
 ### 6.4 Things a reviewer should know
 
@@ -252,11 +245,11 @@ To keep the volume manageable, the GST Act 1999 and the FBTAA 1986 (about 1,200 
 
 ## Handoff Notes
 
-Done: Collected 73 official documents (75 files, 3,750 chunks) from the ATO, the Federal Register of Legislation, APESB, TPB, AASB and ASIC. They cover all seven SMSF use cases plus wider accounting topics, and every file was checked against the pipeline's own extract and chunk code. I also added build, validate and bulk-upload scripts for Supabase via the n8n webhook.
+Done: Collected 73 official documents (75 files) from the ATO, the Federal Register of Legislation, APESB, TPB, AASB and ASIC. They cover all seven SMSF use cases plus wider accounting topics, and every file was checked against the pipeline's extract code. Build, validate and bulk-upload scripts load them into Supabase via the n8n webhook.
 
-Deliverable: `docs/DOCUMENT-CORPUS.md`, `corpus/` (documents, `sources.json`, `manifest.json`) and `scripts/build_corpus.py`, `validate_corpus.py`, `upload_corpus.py` on branch `docs/sample-accounting-documentation`.
+Deliverable: `docs/DOCUMENT-CORPUS.md`, `corpus/` (documents, `sources.json`, `manifest.json`) and `scripts/build_corpus.py`, `validate_corpus.py`, `upload_corpus.py`. These are merged to `main`.
 
-Note for next role: The documents have not been uploaded to Supabase yet. On `main`, the n8n callback gets a 401 from the auth middleware (section 6.1), so that needs a decision and fix first, along with a `.env` holding real Supabase and HF credentials. After that, run `scripts/upload_corpus.py` and confirm every row is `ready`. Please also review the section 6.2 embedding volume before the full load. The Master Document (Team 83) needs updating with this card's handoff.
+Status since handoff: the corpus has been loaded (README). The n8n 401 blocker is fixed (section 6.1). Embedding quota on the free Hugging Face tier remains the practical limit on reloads (section 6.2). Check `docs/load_log.csv` and the database for per-document status rather than relying on the manifest.
 
 ## Setting Up the n8n Document Ingestion Workflow
 
@@ -309,9 +302,9 @@ RAG_CHUNK_SIZE=1200
 RAG_CHUNK_OVERLAP=150
 ```
 
-These values are the project's intended defaults. Confirm that the configuration and chunker implementation use them.
+These are the defaults in `app/config.py` and the chunker (`ChunkingConfig`), and `process_document` passes them through.
 
-The chunking implementation should preserve document identifiers, sequential chunk indexes, section-heading metadata, and relevant structural units such as numbered clauses and tables.
+The chunker (`app/rag/chunker.py`) preserves document identifiers, sequential chunk indexes, section-heading metadata, and relevant structural units such as numbered clauses and tables.
 
 ### 5. Test the workflow
 

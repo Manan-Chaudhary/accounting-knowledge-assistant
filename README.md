@@ -1,415 +1,276 @@
 # Alfa Focus Knowledge Assistant
 
-An internal, citation-first knowledge assistant for **Alfa Focus**, a specialist SMSF administration practice in South Melbourne. Built as the RMIT COSC2408 Programming Project 1 capstone.
+An internal, citation-first knowledge assistant for **Alfa Focus**, a generalist tax and accounting firm in South Melbourne. Built by Team 83 as the RMIT COSC2408 Programming Project 1 capstone.
 
-The problem: Australian superannuation rules change constantly - 1 July 2026 alone brought Division 296, payday super, and an indexed transfer balance cap - and firm-specific procedure lives in senior heads rather than in writing. Accountants lose time re-deriving answers, and two staff can give a referring planner two different answers.
+The problem: Australian tax and superannuation rules change constantly - 1 July 2026 alone brought Division 296, payday super, and an indexed transfer balance cap - and firm-specific procedure lives in senior heads rather than in writing. Accountants lose time re-deriving answers, and two staff can give a referring planner two different answers.
 
-The assistant answers two kinds of question and keeps them strictly separate:
+The assistant answers from an approved library of documents (ATO guidance, legislation, TPB and APESB standards) and shows numbered sources with every answer. It assists a registered tax agent; it never signs off.
 
-- **What does the law require?** Grounded in ATO guidance, rulings, legislation, TPB and APESB, cited to a source you can open.
-- **How does Alfa Focus do this?** Grounded in the firm's own procedures, labelled as firm convention rather than law.
+> **Status: prototype, handed over locally.** The system runs on Docker Compose and is not deployed. The client was never met, so the question set and document list are assumptions (see [`docs/CLIENT-MEETING-QUESTIONS.md`](docs/CLIENT-MEETING-QUESTIONS.md)). It has not been tested with real Alfa Focus users, and security hardening was descoped. Everything in [`docs/CLIENT-BRIEF.md`](docs/CLIENT-BRIEF.md) is open-source research carrying explicit confidence markers. Do not quote a `MEDIUM` or `LOW` fact to the client as settled.
 
-Every answer carries resolvable citations and an explicit income year. It assists a registered tax agent; it never signs off.
+## What it does
 
-> **Status: pre-client-meeting.** The client has not been met. Everything in [`docs/CLIENT-BRIEF.md`](docs/CLIENT-BRIEF.md) is open-source research carrying explicit confidence markers. Do not quote a `MEDIUM` or `LOW` fact to the client as settled.
+- **Chat** (`/assistant`): streamed answers grounded in retrieved documents, numbered sources, saved chat history in a sidebar, chat delete, and a model selector.
+- **Documents** (`/documents`): upload a document, track its ingestion status (`pending`, `processing`, `ready`, `failed`), retry a failed one, delete a document.
+- **Ingestion**: an upload is stored in Supabase Storage, then an n8n workflow calls the FastAPI `process-document` endpoint, which parses, chunks, embeds (BGE-M3) and stores the chunks.
+- **Retrieval**: hybrid search (pgvector dense + Postgres full-text), fused by reciprocal rank fusion, then reranked with a cross-encoder.
+- **Grounding**: a gate refuses to answer when retrieval finds no usable source, and citations in the answer are checked against the retrieved sources.
+- **Sign-in**: FastAPI owns a signed session cookie that Chainlit reuses. Roles are `staff`, `admin` and `team`.
+- **Evaluation** (`/testing`, `team` role only): runs the 50-question benchmark in `benchmarks/questions.jsonl` against a chosen model and scores retrieval, citations and refusals.
+- **Swappable LLM**: all generation goes through a LiteLLM proxy with fallbacks (`litellm/config.yaml`).
+
+Not delivered, so don't assume they work: chat rename, document list filters, feedback buttons, copy-with-citations, document versioning, OCR for scanned PDFs, an unanswered-questions dashboard, and security hardening.
 
 ## Documentation
 
-Read in this order. Each is written to be read on its own, but the design decisions only make sense after the domain primer.
+The README and `docs/` describe the system as built. Files marked *design* are the original requirements and research; read the code and the handover document where they differ.
 
 | Doc | What it answers |
 |---|---|
-| [`docs/CLIENT-BRIEF.md`](docs/CLIENT-BRIEF.md) | Who Alfa Focus actually is. **They are an SMSF specialist, not a general tax consultancy** - read this before assuming scope |
-| [`docs/DOMAIN-PRIMER.md`](docs/DOMAIN-PRIMER.md) | Australian SMSF practice for a team with no accounting background; what is changing in 2026; the professional-obligation constraints that drive the architecture |
-| [`docs/REQUIREMENTS.md`](docs/REQUIREMENTS.md) | Numbered, testable requirements: chatbot behaviour, file upload, data handling, edge cases. What the build is held to |
-| [`docs/RAG-DESIGN.md`](docs/RAG-DESIGN.md) | The two-corpus split, the chunk schema, hybrid + temporal retrieval, and **which file in this repo owns each piece** |
-| [`docs/PROMPTS.md`](docs/PROMPTS.md) | The system prompt, refusal templates, query-understanding prompt. Source of truth for `app/rag/generator.py` |
-| [`docs/EVALUATION.md`](docs/EVALUATION.md) | Benchmark taxonomy, 28 seed questions, metrics and gates, LLM-judge design, what `/testing` must do |
-| [`docs/CLIENT-MEETING-QUESTIONS.md`](docs/CLIENT-MEETING-QUESTIONS.md) | The 14 questions that change the build, ranked |
+| [`docs/CLIENT-BRIEF.md`](docs/CLIENT-BRIEF.md) | Who Alfa Focus is: a generalist tax and accounting firm, with SMSF administration as one of its service lines |
+| [`docs/DOMAIN-PRIMER.md`](docs/DOMAIN-PRIMER.md) | Australian SMSF practice for a team with no accounting background; the professional-obligation constraints behind the design |
+| [`docs/REQUIREMENTS.md`](docs/REQUIREMENTS.md) | *Design.* Numbered, testable requirements: chatbot behaviour, file upload, data handling, edge cases |
+| [`docs/RAG-DESIGN.md`](docs/RAG-DESIGN.md) | *Design.* The two-corpus split, chunk schema, hybrid and temporal retrieval |
+| [`docs/CHUNKING-DESIGN.md`](docs/CHUNKING-DESIGN.md) | How documents are split into chunks |
+| [`docs/PROMPTS.md`](docs/PROMPTS.md) | The system prompt and refusal templates behind `app/rag/generator.py` |
+| [`docs/EVALUATION.md`](docs/EVALUATION.md) | Benchmark taxonomy, metrics, and results of the model comparison |
+| [`docs/DOCUMENT-CORPUS.md`](docs/DOCUMENT-CORPUS.md) | The 73-document corpus and how it was built |
+| [`docs/DATABASE.md`](docs/DATABASE.md) | PostgreSQL + pgvector setup, BGE-M3 embeddings, schema reference |
 | [`docs/GIT-WORKFLOW.md`](docs/GIT-WORKFLOW.md) | Branch naming, commit format, PR and CI requirements |
-| [`docs/DATABASE.md`](docs/DATABASE.md) | PostgreSQL + pgvector setup, BGE-M3 embeddings, schema reference, connection guide |
+| [`docs/UAT-SCRIPT.md`](docs/UAT-SCRIPT.md) | User acceptance test script (written, not run) |
+| [`docs/USER-GUIDE.md`](docs/USER-GUIDE.md) | Step-by-step guide for accountants: sign in, ask, read citations, manage chats (Word copy: `USER-GUIDE.docx`) |
+| [`docs/ADMIN-GUIDE.md`](docs/ADMIN-GUIDE.md) | Step-by-step guide for administrators: accounts, documents, statuses, the evaluation page (Word copy: `ADMIN-GUIDE.docx`) |
+| [`docs/MODEL-AB-RESULTS.md`](docs/MODEL-AB-RESULTS.md) | Model A/B analysis and recommendation. Interim: no 50-case multi-model run exists yet |
+| [`docs/HANDOVER-BA-SECTIONS.md`](docs/HANDOVER-BA-SECTIONS.md) | The Business Analyst sections of the Handover Document: requirements, user story status, corpus, evaluation, test appendix (Word copy: `HANDOVER-BA-SECTIONS.docx`) |
+| [`docs/CLIENT-MEETING-QUESTIONS.md`](docs/CLIENT-MEETING-QUESTIONS.md) | The 14 questions the next team should put to Alfa Focus first |
 
 ## Design principles
 
-These are enforced in code and checked by the evaluation suite, not aspirational:
+1. **No citation, no claim.** If retrieval finds nothing, the assistant refuses rather than guesses.
+2. **Every volatile claim is scoped to an income year.**
+3. **Law and firm practice are never blended in one sentence.**
+4. **No client identifiers, no member-specific figures.** The assistant answers rules questions. Nothing automated enforces this yet: it relies on the system prompt and on users not entering client data.
+5. **Deterministic checks beat judged ones.** Citation validity is checked in code, not by an LLM.
 
-1. **No citation, no claim.** If retrieval finds nothing, the assistant escalates rather than guesses. A confident unsourced answer is the worst possible output for a regulated client.
-2. **Every volatile claim is scoped to an income year.** Undated tax advice is wrong advice.
-3. **Law and firm practice are never blended in one sentence.** Separate labelled sections, attributed per claim.
-4. **No client identifiers, no member-specific figures.** The assistant answers rules questions. Client data stays out by construction.
-5. **Deterministic checks beat judged ones.** Citation resolution is a lookup and an HTTP check, gated at 100% with no exceptions.
+## Architecture
+
+```
+Browser (React SPA)
+   |  same origin, signed session cookie
+   v
+FastAPI (app/main.py, port 8000)
+   |-- /api/auth, /api/chat, /api/upload, /api/documents, /api/testing  (routers)
+   |-- /chat            Chainlit app mounted into FastAPI (history persistence, auth header)
+   |-- everything else  built React SPA (frontend/dist), catch-all, mounted last
+   |
+   |-- RAG pipeline (app/rag): embedder -> retriever (hybrid + rerank) -> grounding gate -> generator
+   |        |-> LiteLLM proxy (port 4000) -> Gemini / Groq / OpenRouter
+   |        |-> Hugging Face Inference API (BGE-M3 embeddings)
+   |-- Supabase: Postgres + pgvector (documents, chunks, users, chat threads) and Storage (raw files)
+   v
+n8n (port 5678): upload webhook -> POST /api/n8n/process-document/{id} (shared-secret header)
+```
 
 ## Project structure
 
 ```
-accounting-knowledge-assistant/
-├── app/
-│ ├── main.py               # Entry point — registers routes, mounts Chainlit at /chat, then the
-│ │                          # built React SPA (frontend/dist) as the catch-all (all mounted LAST)
-│ ├── config.py             # Loads all env vars from one place (.env locally, Render env vars in prod)
-│ │
-│ ├── routes/
-│ │ ├── upload.py           # /upload, /documents — document ingest and listing JSON API
-│ │ ├── testing.py          # (retired: /testing is now served by the React SPA)
-│ │ ├── home.py             # (retired: /home is now served by the React SPA)
-│ │ └── auth.py             # /login — prototype login page (real auth flow is a separate task)
-│ │
-│ ├── chainlit/
-│ │ └── chainlit_app.py     # Chat app: on_chat_start, on_message, auth callback
-│ │
-│ ├── services/
-│ │ ├── document_service.py # Document lifecycle, parsing, structure-aware chunking, metadata
-│ │ └── storage_service.py  # Supabase Storage: upload/fetch raw files
-│ │
-│ ├── rag/
-│ │ ├── embedder.py         # Text → vector embeddings (BGE-M3 via Hugging Face)
-│ │ ├── retriever.py        # Hybrid search: vector
-│ │ └── generator.py        # Prompt assembly + LLM call + citation validation
-│ │
-│ └── db/
-│   ├── database.py         # SQLAlchemy session setup and establishes connection
-│   ├── models.py           # ORM models: Document, DocumentChunk, AppUser, EvalResult
-│   └── schema.sql          # Table definitions — mirrors models.py
-│
-├── frontend/                # React SPA (Vite + TS) — Home, Documents, Testing, Chat, Login
-│ ├── src/
-│ │ ├── pages/               # One component per route (ported 1:1 from the old templates/)
-│ │ ├── components/          # Shared Sidebar/Layout
-│ │ ├── auth/                # AuthProvider/RequireAuth seam for the not-yet-built login flow
-│ │ ├── chainlit/             # ChainlitProvider wiring the chat page to /chat via @chainlit/react-client
-│ │ └── styles/legacy.css    # Ported verbatim from static/css/style.css, plus a small override block
-│ └── dist/                  # `npm run build` output — served by app/main.py in production
-│
-├── benchmarks/
-│   └── questions.jsonl     # Versioned benchmark set — see docs/EVALUATION.md
-│
-├── tests/                  # Test scripts for database, embeddings, and connections
-│
-├── static/                 # Static fallback assets and styles
-├── docs/                   # See the documentation table above
-├── n8n/                    # Automated ingestion workflows
-├── .env.example            # Documents every required env var, no real values
-├── docker-compose.yml      # Multi-service container orchestration
-├── requirements.txt        # Pinned dependencies (Chainlit, pgvector, sentence-transformers)
-└── README.md
+app/
+  main.py                 Entry point. Auth middleware, routers, Chainlit mount, SPA catch-all (last)
+  config.py               All env vars in one place
+  auth/                   Session cookie, password hashing, Chainlit header-auth bridge, role checks
+  routes/
+    auth.py               /api/auth/login, /logout, /me
+    chat_history.py       /api/chat: threads, messages, delete, /stream (SSE), non-streaming fallback
+    upload.py             /api/upload, /api/documents (list, status, delete, retry)
+    integration.py        /api/n8n/process-document/{id}, /api/n8n-test
+    testing.py            /api/testing: start, poll and stop evaluation runs
+    home.py               Retired, no longer registered
+  chainlit/chainlit_app.py  Chainlit app: auth, settings, history resume
+  services/               document_service.py (ingestion), storage_service.py (Supabase Storage)
+  rag/
+    chunker.py            Structure-aware chunking
+    embedder.py           BGE-M3 via Hugging Face
+    retriever.py          Dense + keyword + RRF fusion, then reranker
+    reranker.py           Cross-encoder reranking (sentence-transformers)
+    grounding.py          Grounding gate and citation verification
+    generator.py          Prompt assembly, LLM call (streaming and not), history
+  evaluation/harness.py   Benchmark runner and metrics
+  db/                     SQLAlchemy models and schema.sql (kept mirrored)
+frontend/                 React SPA (Vite + TypeScript): Home, Documents, Chat, Testing, Login
+benchmarks/               questions.jsonl (50 cases), results/, reports/
+corpus/                   73 source documents, manifest.json, sources.json
+scripts/                  Corpus build, upload and validation; evaluation and latency runners; create_app_user
+n8n/                      Document Ingestion.json workflow, workflows/ (connectivity test)
+litellm/config.yaml       Model list, routing and fallbacks
+tests/                    pytest suite (db, rag, evaluation)
+docs/                     See the table above
 ```
 
-### Layer overview
+Key points:
+- `retriever.py` is where answer quality is won or lost. Retrieval, not generation, is where RAG systems usually fail.
+- `models.py` and `schema.sql` mirror each other. Update both when the schema changes.
+- Routers register before the SPA catch-all in `main.py`. Keep it that way or `/api` and `/chat` will be swallowed.
 
-- **`frontend/`** — the React SPA. Owns every page except the prototype login screen; built with `npm run build` and served same-origin by FastAPI (see `app/main.py`'s catch-all route) so the chat session cookie stays same-origin per `docs/LOGIN-PAGE-REQUIREMENTS.md`.
-- **`routes/`** — FastAPI backend routers handling authentication, document ingestion, and testing integration endpoints. No business logic lives here directly — delegates to `services/`/`rag/`.
-- **`chainlit/`** — the chat interface. `on_message` is where a user's question enters the RAG pipeline via `rag/`.
-- **`services/`** — logic that isn't HTTP- or chat-specific: document lifecycle and file storage. Keeps `routes/` from growing bloated handlers.
-- **`rag/`** — the pipeline itself, split by responsibility (embed → retrieve → generate) so each piece can be tested and swapped independently. `retriever.py` is the highest-value file in the repo: retrieval, not generation, is where RAG systems actually fail.
-- **`db/`** — the persistence layer. `models.py` and `schema.sql` mirror each other — update both if the schema changes. The proposed schema is in [`docs/RAG-DESIGN.md`](docs/RAG-DESIGN.md) section 4.
-
-### Database
-
-**Postgres 14+ with pgvector** hosted on **Supabase**. The free tier provides 500MB database storage and 1GB file storage — sufficient for ~1,400 documents with embeddings.
-
-**Why Supabase + pgvector?**
-- Single system for metadata filtering, full-text search, and vector similarity
-- One SQL query can filter by effective dates, match statutory identifiers, and rank by semantic distance
-- No sync lag between separate vector and metadata stores
-- Free tier includes automatic backups and point-in-time recovery
-
-- **Dev**: Local development, seeded with test documents (`SUPABASE_DB_URL` in `.env`)
-
-See [`docs/DATABASE.md`](docs/DATABASE.md) for schema details, connection setup, and BGE-M3 embedding integration.
-
-## Local Development Setup
+## Local setup
 
 ### Prerequisites
 
-- Python 3.13+ (macOS/Linux)
-- Active Supabase project with connection string
-- Hugging Face account with API token
+- Docker Desktop with Compose (the recommended path), or Python 3.13 and Node 22 for running without Docker
+- A Supabase project (Postgres with the `vector` extension enabled, and a Storage bucket named `documents`). Run `app/db/schema.sql` against it; see [`docs/DATABASE.md`](docs/DATABASE.md)
+- A Hugging Face token (BGE-M3 embeddings)
+- At least one LLM key: Gemini, Groq or OpenRouter
 
-### Initial Setup
-
-1. **Create virtual environment and install dependencies:**
-
-```bash
-python3.13 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-2. **Configure environment variables:**
-
-Copy `.env.example` to `.env` and fill in your credentials:
+### Configure
 
 ```bash
 cp .env.example .env
 ```
 
-Required variables:
+Fill in every variable in `.env.example`:
+
+| Variable | What it is |
+|---|---|
+| `SUPABASE_DB_URL` | Sync Postgres URL, `postgresql+psycopg2://...`. Must be psycopg2: the asyncpg URL breaks retrieval |
+| `CHAINLIT_DATABASE_URL` | Async Postgres URL, `postgresql+asyncpg://...`, for Chainlit history |
+| `SUPABASE_URL`, `SUPABASE_KEY`, `SUPABASE_BUCKET` | Supabase project URL, secret key and bucket (default `documents`) |
+| `HF_TOKEN` | Hugging Face token for embeddings |
+| `GEMINI_API_KEY`, `GROQ_API_KEY`, `OPENROUTER_API_KEY` | LLM provider keys |
+| `GEMINI_MODEL`, `GROQ_MODEL` | Default provider model names |
+| `LITELLM_MASTER_KEY`, `LITELLM_API_KEY` | Proxy master key, and the key the app uses to call it (the master key works) |
+| `LITELLM_API_BASE` | `http://alfa_focus_litellm:4000/` in Docker |
+| `LITELLM_MODEL`, `LITELLM_FALLBACK_MODELS` | Default model and fallbacks used by the app |
+| `LITELLM_DATABASE_URL` | Postgres URL for the LiteLLM proxy |
+| `SESSION_SECRET`, `CHAINLIT_AUTH_SECRET` | Random secrets. Generate with `python -c "import secrets; print(secrets.token_urlsafe(32))"` |
+| `SESSION_MAX_AGE_SECONDS`, `CORS_ORIGINS` | Session lifetime (default 8 hours) and allowed origins |
+| `N8N_SHARED_SECRET` | Shared secret n8n sends to FastAPI. Must equal the value of the `X-N8N-Secret` Header Auth credential in n8n |
+| `N8N_WEBHOOK_URL` | Listed in `.env.example` but not read by any code. The app hardcodes `http://n8n:5678/webhook/process-document` in `app/routes/upload.py` |
+| `RAG_CHUNK_SIZE`, `RAG_CHUNK_OVERLAP` | Chunking settings (1200 and 150) |
+
+`ENVIRONMENT` is optional and defaults to `development`. Set it to `production` to disable the Swagger docs and mark the session cookie HTTPS-only.
+
+### Run with Docker Compose
+
 ```bash
-# Database connections
-SUPABASE_DB_URL=postgresql+psycopg2://postgres:[password]@[host]:5432/postgres
-CHAINLIT_DATABASE_URL=postgresql+asyncpg://postgres:[password]@[host]:5432/postgres
-SUPABASE_URL=https://<project-ref>.supabase.co
-SUPABASE_KEY=sb_secret_your_key_here
+docker compose up --build
+```
 
-# LLM Providers & LiteLLM Proxy
-GEMINI_API_KEY=your_gemini_key
-GROQ_API_KEY=your_groq_key
-OPENROUTER_API_KEY=your_openrouter_key
-LITELLM_MASTER_KEY=sk-master-key-here
-LITELLM_API_BASE=http://alfa_focus_litellm:4000/
+This starts the app (8000), the LiteLLM proxy (4000) and n8n (5678). The Docker image builds the React frontend, so no separate frontend build is needed. Code is baked into the image: rebuild with `--build` after changes.
 
-# Authentication & Session Security
-SESSION_SECRET=your_32_byte_session_secret
-CHAINLIT_AUTH_SECRET=your_chainlit_auth_secret
-CORS_ORIGINS=http://localhost:5173
-
-See .env.example for all variables and docs/DATABASE.md for database setup.
-
-### Running the Application
-
-Chainlit is mounted into FastAPI at `/chat` (see `app/main.py`).
-
-#### Option 1: Running Locally (Uvicorn)
-
-**Development (local access only):**
 ```bash
+docker compose up -d --build   # detached
+docker compose logs -f         # logs
+docker compose down            # stop (do not add -v: it deletes the n8n volume)
+```
+
+### Run without Docker
+
+```bash
+python3.13 -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
+(cd frontend && npm ci && npm run build)
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-**LAN access (testing from other devices):**
-```bash
-source .venv/bin/activate
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
+You still need LiteLLM and n8n running (`docker compose up -d litellm n8n`) for chat and ingestion. Note that n8n then reaches the app at `http://app:8000` only inside Compose; use the full Compose stack unless you are adjusting the workflow.
 
-#### Option 2: Running with Docker Compose (Recommended)
+### First run
 
-Docker Compose automatically loads your `.env` file and mounts your local code into the container for live reloading:
+1. **Create a user.** No default credentials exist.
+   ```bash
+   python -m scripts.create_app_user --email you@example.com --password '...' --role team
+   ```
+   Roles: `staff`, `admin`, `team`. Only `team` sees the Testing page. Only `admin` and `staff` can delete documents (`app/auth/deps.py`), so a `team` user cannot.
+2. **Import the ingestion workflow into n8n.** Open `http://localhost:5678`, complete owner setup, choose Import from File, select `n8n/Document Ingestion.json`, then attach a Header Auth credential to its HTTP Request node (name `X-N8N-Secret`, value equal to `N8N_SHARED_SECRET`; the export does not contain credentials). Save and activate the workflow. The webhook path is `process-document`; the app posts to `http://n8n:5678/webhook/process-document`.
+3. **Load the corpus** (optional, needs the app and n8n running):
+   ```bash
+   CORPUS_UPLOAD_EMAIL=you@example.com CORPUS_UPLOAD_PASSWORD='...' python scripts/upload_corpus.py
+   ```
+   It uploads the 73 files and polls each until `ready` or `failed`, resuming from `corpus/upload_log.json`. Embedding quota is limited, so expect it to take a while.
 
-1. **Build and start the application:**
-```bash
-docker compose up --build
+### Verify it worked
 
-# If you have already built the docker image and simply want to start up the container
-docker compose up
-```
+| Page | URL |
+|---|---|
+| Sign in | `http://localhost:8000/login` |
+| Home | `http://localhost:8000/home` |
+| Chat | `http://localhost:8000/assistant` |
+| Documents | `http://localhost:8000/documents` |
+| Evaluation (`team` role) | `http://localhost:8000/testing` |
+| API docs (development only) | `http://localhost:8000/docs` |
+| n8n | `http://localhost:5678` |
 
-2. **Run in background (detached mode):**
-```bash
-docker compose up -d --build
-```
+After signing in, upload a small document, watch it reach `ready`, then ask a question it answers. The answer should stream with a numbered source.
 
-3. **Useful Docker Compose commands:**
-```bash
-# View live container logs
-docker compose logs -f
-
-# Stop and remove containers
-docker compose down
-```
-
-*(Alternatively, you can build and run using raw Docker: `docker build -t alfa-focus-pilot . && docker run -p 8000:8000 --env-file .env alfa-focus-pilot`)*
-
-### Access the Application
-
-| Endpoint | URL | Description |
-|---|---|---|
-| Web Application (SPA) | `http://localhost:8000/` | React SPA dashboard (Home) |
-| Sign In Portal | `http://localhost:8000/login` | Authentication portal |
-| Assistant Chat Interface | `http://localhost:8000/chat` | Integrated Chainlit chat assistant |
-| Document Management | `http://localhost:8000/docs` | Document upload and status management (React) |
-| Evaluation Suite | `http://localhost:8000/testing` | Benchmark testing runner |
-| API Docs (Swagger UI) | `http://localhost:8000/docs` (API) | FastAPI OpenAPI documentation (Dev mode only) |
-| n8n Workflow Editor | `http://localhost:5678` | n8n automation console |
-
-For LAN access, replace `localhost` with your machine's local IP address.
-
-### Testing
-
-The test suite uses `pytest` and verifies database connections, schema existence, Hugging Face embedding generation, and environment configuration.
-
-Make sure your virtual environment is active and `.env` has valid credentials before running tests:
+## Testing
 
 ```bash
 source .venv/bin/activate
-```
-
-**Run all tests:**
-```bash
 pytest -v
 ```
 
-**Run specific test modules:**
-```bash
-pytest tests/db/{TEST FILE} -v
-```
+- `tests/evaluation/`, `tests/rag/` and `tests/test_reranker.py` run without a database or API key where retrieval and generation are mocked.
+- `tests/db/` needs a real `.env` with working Supabase and Hugging Face credentials.
+- CI (`.github/workflows/ci.yml`) installs dependencies and runs `python -m compileall app`. It does not run pytest yet: the step is commented out.
 
-```bash
-# Example: running the env loading tests
-pytest tests/db/test_env.py -v
-```
+## Running evaluations
 
-**Useful pytest flags:**
-- `-v`: Verbose output showing each test status
-- `-s`: Print stdout messages (useful for viewing embedding dimensions and table lists)
-- `-k <pattern>`: Run tests matching a keyword (e.g. `pytest -k "connection"`)
+From the UI: sign in as a `team` user and use `/testing`. From the command line, the harness (`app/evaluation/harness.py`) runs each case in `benchmarks/questions.jsonl` (50 cases) through retrieval and generation, then scores retrieval (source hit, recall@k, MRR), citations (present, valid), refusal behaviour and latency. It needs `SUPABASE_DB_URL` (the synchronous URL) plus `GEMINI_API_KEY` or `GROQ_API_KEY`.
 
-### Running evaluations
-
-The evaluation harness (`app/evaluation/harness.py`) runs each case in `benchmarks/questions.jsonl` through retrieval and generation, then scores retrieval (source hit, recall@k, MRR), citations (present, valid), refusal behaviour and latency. It calls providers directly through LiteLLM, so it needs `SUPABASE_DB_URL` (the synchronous URL) plus `GEMINI_API_KEY` or `GROQ_API_KEY` in `.env`.
-
-**Run one model, with an optional LLM judge and a report:**
 ```bash
 python -m scripts.run_evaluation --model gemini/gemini-3.8-flash --judge gemini/gemini-3.8-flash --output benchmarks/results/gemini-3.8-flash.jsonl --report benchmarks/reports/gemini-3.8-flash.md
 ```
-python -m scripts.run_evaluation --model gemini/gemini-3.8-flash --judge gemini/gemini-3.8-flash --output benchmarks/results/gemini-3.8-flash.jsonl --report benchmarks/reports/gemini-3.8-flash.md
 
-**Compare several runs in one report:**
+Compare several runs in one report:
+
 ```bash
 python -m scripts.evaluation_report benchmarks/results/a.jsonl benchmarks/results/b.jsonl --output benchmarks/reports/comparison.md --title "Model comparison"
 ```
 
-Add `--rescore` to recompute the deterministic metrics from the saved answers first (it updates the result files in place). Groq's free tier allows 8,000 tokens per minute, so a 22-case run with a Groq judge takes about 12 minutes; the harness waits out rate limits using the provider's retry hint.
+- `--rescore` recomputes the deterministic metrics from saved answers (updates the result files in place).
+- `--resume` continues an interrupted run, keeping cases already saved without an error. Without it the output file is overwritten.
+- Groq's free tier allows 8,000 tokens per minute, so a run with a Groq judge is slow; the harness waits out rate limits.
 
-Each case is saved as it finishes. If a run is interrupted (laptop closed, quota hit), repeat the same command with `--resume`: cases already saved without an error are kept, and only the missing or failed ones are run. Without `--resume`, the output file is overwritten.
+Latency is measured with `python -m scripts.measure_latency` (see [`docs/LATENCY-MEASUREMENT-IMPLEMENTATION.md`](docs/LATENCY-MEASUREMENT-IMPLEMENTATION.md)). The latest measurement (14 October) found a P95 of 176.8 s, almost all of it waiting for the LLM's first token on free-tier routing. See `benchmarks/reports/LATENCY_BREAKDOWN_REPORT_2026-10-14.md`.
 
-`SUPABASE_DB_URL` must use a synchronous driver (`postgresql+psycopg2://`). The asyncpg URL used for Chainlit makes every retrieval fail with `MissingGreenlet`.
+Metric definitions are in [`docs/EVALUATION.md`](docs/EVALUATION.md). The model comparison (three Groq models, 22 cases) is in `benchmarks/reports/comparison_2026-10-01.md`.
 
-Metric definitions and how they map to `docs/EVALUATION.md` are in that document's section 4.1. Results so far (three Groq models, 22 cases) are in section 4.2 and `benchmarks/reports/comparison_2026-10-01.md`. The harness unit tests (`tests/evaluation/`) mock retrieval and generation, so they run without a database or API key.
+To score and rank runs under the A/B rules in [`docs/MODEL-AB-SCORING.md`](docs/MODEL-AB-SCORING.md), run `python -m scripts.ab_analysis <result files> --output benchmarks/reports/ab_analysis.md`. The command, its options and the interim result are in [`docs/MODEL-AB-RESULTS.md`](docs/MODEL-AB-RESULTS.md).
 
-### Troubleshooting
+## Troubleshooting
 
-**"Module not found: app"**
-- Ensure you're running from the project root, not inside `app/`
-- Use `python -m` syntax: `python -m app.main` or specify the full module path: `uvicorn app.main:app`
+**Uploads stay `pending`.** n8n is not running, the workflow is not active, or the secret does not match. Check `N8N_SHARED_SECRET` in `.env` against the workflow's header, and the n8n execution log. Failed documents can be retried from the Documents page.
 
-**"uvicorn: command not found"**
-- Activate the virtual environment: `source .venv/bin/activate`
-- Or use the direct path: `./.venv/bin/uvicorn app.main:app --reload`
+**Every retrieval fails with `MissingGreenlet`.** `SUPABASE_DB_URL` is using the asyncpg driver. It must be `postgresql+psycopg2://`.
 
-**Database connection errors**
-- Verify `SUPABASE_DB_URL` in `.env` matches your Supabase dashboard
-- Check that pgvector extension is enabled (see [`docs/DATABASE.md`](docs/DATABASE.md))
-- Supabase pauses inactive projects after 7 days — wake it by visiting the dashboard
+**Database connection errors.** Check `SUPABASE_DB_URL` against the Supabase dashboard, and that the pgvector extension is enabled ([`docs/DATABASE.md`](docs/DATABASE.md)). Supabase pauses inactive free-tier projects after 7 days: wake it from the dashboard.
 
-**Production deployment:**
-- Run Uvicorn behind a reverse proxy (nginx)
-- Use a process manager (systemd, supervisord)
-- Never run as root or bind to privileged ports directly
+**Requests fail or time out.** Free-tier LLM limits and rotating free models are the usual cause. LiteLLM falls back from Gemini to OpenRouter; check `docker compose logs litellm`.
+
+**`/chat` is public.** Chainlit stays unauthenticated if `CHAINLIT_AUTH_SECRET` is not set. Set it in `.env`. In production the app refuses to start without it.
 
 ## Contributing
 
-`main` is protected. Branch, PR, squash merge — see [`docs/GIT-WORKFLOW.md`](docs/GIT-WORKFLOW.md) for the enforced branch and commit naming rules.
+`main` is protected. Branch, PR, squash merge. See [`docs/GIT-WORKFLOW.md`](docs/GIT-WORKFLOW.md) for the enforced branch and commit naming rules.
 
-Two additional rules for this project:
-
-- **A prompt change is a behaviour change.** Edit [`docs/PROMPTS.md`](docs/PROMPTS.md) and `generator.py` in the same PR, re-run the benchmark, and put the before/after per-class scores in the PR description.
+- **A prompt change is a behaviour change.** Edit [`docs/PROMPTS.md`](docs/PROMPTS.md) and `generator.py` in the same PR, re-run the benchmark, and put the before and after scores in the PR description.
 - **A schema change touches two files.** `models.py` and `schema.sql` must stay mirrored.
+- **Assistant messages are created with `parent_id=None`** in `app/chainlit/chainlit_app.py`, so they are saved as root messages rather than orphaned child steps.
+- **Never commit real credentials.** Add new variables to `.env.example` with empty values.
 
-## Development Guidelines
+## Known gaps
 
-1. **Root-Level Message Persistence**: In `app/chainlit/chainlit_app.py`, always ensure assistant messages are created with `parent_id=None` (`cl.Message(content=..., parent_id=None)`). This guarantees that step elements are saved as root conversational bubbles rather than orphan child items.
-2. **Database Schema Synchronization**: Any structural updates in Supabase must be kept strictly consistent across `app/db/models.py` and `app/db/schema.sql`.
-3. **Environment Security**: Never commit real credentials to GitHub. Always update `.env.example` with empty keys when adding new environment configurations.
+- No deployment: there is no hosting, domain or CD. `.github/workflows/deploy.yml` is a commit-message check, not a deploy.
+- CI does not run the tests.
+- Response time fails the 8 s P95 target (see Running evaluations).
+- The reranker, citation chips and grounding gate are in the code but have not been checked with real users. The UAT script was never run.
+- Security hardening was descoped: no prompt-injection testing, no automated client-identifier detection, no threat model.
+- `mlflow` is not in `requirements.txt`; the harness does not use it, although [`docs/EVALUATION.md`](docs/EVALUATION.md) proposes it.
+- The corpus is a set of assumptions: Alfa Focus never confirmed the question set or the document list.
 
-## Known gaps in the scaffold
+## n8n
 
-Tracked here so nobody assumes they work:
+n8n runs beside the app in Docker Compose, with workflow and credential data in the named volume `n8n_data` (it survives `docker compose down` and `up`; `down -v` deletes it).
 
-- `.github/workflows/deploy.yml` does not deploy. It contains a commit-message check. Rename it to `commit-message.yml` or make it deploy.
-- `app/rag/embedder.py` is empty — BGE-M3 embedding implementation pending (see [`docs/DATABASE.md`](docs/DATABASE.md) for integration guide).
-- `app/rag/retriever.py` and `app/rag/generator.py` are incomplete — RAG pipeline scaffolded but not functional.
-- `mlflow` is not in `requirements.txt` — the evaluation design in [`docs/EVALUATION.md`](docs/EVALUATION.md) assumes it.
-- `ci.yml` has a commented-out `pytest` step — that is where the evaluation gates hook in.
-
-## n8n Workflow Automation
-
-n8n runs as a separate service alongside the FastAPI/Chainlit application using Docker Compose.
-### Importing and Running Workflows (Team Reproduction Guide)
-
-To initialise and run the shared workflow in a fresh local environment:
-
-  1. **Start the containers**:
-     ```bash
-     docker compose up --build
-     ```
-
-  2. **Open n8n**:
-     Navigate to `http://localhost:5678` in your browser. (Complete the one-time owner setup if prompted).
-
-  Import the shared workflow:
-
-  In the n8n left navigation bar, go to Workflows.
-
-  Click the Add Workflow button (or the three dots menu ... in the top right).
-
-  Select Import from File.
-
-  Choose the exported file from the repository:
-
-  n8n/workflows/fastapi-connectivity-test.json
-
-  Execute and Verify:
-
-  Click Save and ensure the workflow is active.
-
-  Click Test step or trigger the webhook to verify the connection between n8n and FastAPI.
-
-  Confirm that the execution log returns the expected JSON response:
-
-  {
-    "status": "ok",
-    "message": "FastAPI successfully reached from n8n"
-  }
-
-  Services:
-
-  - FastAPI / Chainlit: `http://localhost:8000`
-  - n8n editor: `http://localhost:5678`
-
-### FastAPI connectivity test
-
-A test workflow named `FastAPI Connectivity Test` verifies communication between n8n and FastAPI.
-
-The workflow contains:
-
-1. A Webhook trigger at `/fastapi-test`
-2. An HTTP Request node that calls `http://app:8000/api/n8n-test`
-
-Docker Compose provides internal DNS, so n8n accesses FastAPI using the service name `app` rather than `localhost`.
-
-Expected response:
-
-```json
-{
-  "status": "ok",
-  "message": "FastAPI successfully reached from n8n"
-}
-```
-
-The exported workflow is stored at:
-
-`n8n/workflows/fastapi-connectivity-test.json`
-
-### n8n persistence
-
-n8n workflow and credential data is persisted using the named Docker volume:
-
-`n8n_data`
-
-Stopping the services with:
-
-```bash
-docker compose down
-```
-
-and restarting with:
-
-```bash
-docker compose up -d
-```
-
-preserves the n8n workflow data.
-
-Do not use `docker compose down -v` unless the n8n volume should intentionally be deleted.
+- **`n8n/Document Ingestion.json`** is the workflow the app depends on. A Webhook node (`process-document`) receives the document id from the app, and an HTTP Request node calls `POST http://app:8000/api/n8n/process-document/{id}` with the `X-N8N-Secret` header (from an n8n Header Auth credential). Inside Compose, n8n reaches the app by service name `app`, not `localhost`.
+- **`n8n/workflows/fastapi-connectivity-test.json`** is a diagnostic: its webhook `/fastapi-test` calls `http://app:8000/api/n8n-test` and should return `{"status": "ok", "message": "FastAPI successfully reached from n8n"}`.

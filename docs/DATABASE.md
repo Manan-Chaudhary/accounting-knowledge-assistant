@@ -1,5 +1,7 @@
 # Database Architecture: PostgreSQL + pgvector + BGE-M3
 
+> **Status: describes the schema and retrieval as implemented.** `app/db/schema.sql` and `app/db/models.py` are the source of truth. The database is a Supabase project; nothing is deployed beyond local Docker Compose.
+
 This document explains the database architecture, vector embedding strategy, and how PostgreSQL with pgvector powers the RAG retrieval pipeline.
 
 ## Overview
@@ -17,7 +19,9 @@ pgvector allows all three operations in a single SQL query with HNSW or IVFFlat 
 
 | Environment | Purpose | Connection |
 |-------------|---------|------------|
-| **Dev** | Local development, seeded with test documents | `SUPABASE_DB_URL` in `.env` |
+| **Dev** | Local development; the only environment (no production deployment exists) | `SUPABASE_DB_URL` in `.env` |
+
+`SUPABASE_DB_URL` must use the synchronous driver, `postgresql+psycopg2://...`. The asyncpg driver breaks retrieval (`MissingGreenlet`). Chainlit history uses a separate async URL, `CHAINLIT_DATABASE_URL`.
 
 ---
 
@@ -36,10 +40,11 @@ Tracks uploaded files and their processing status.
 |--------|------|-------------|
 | `id` | serial | Primary key |
 | `filename` | text | Original filename (e.g., `"TR 2024-1.pdf"`) |
-| `source_label` | text | Corpus identifier: `"law"` or `"firm"` |
+| `source_label` | text | Optional label set at upload (nullable; the corpus loader sets it from the manifest). The `"law"` / `"firm"` split is a design intent, not enforced |
 | `storage_path` | text | Supabase Storage path to raw file |
-| `status` | text | `"pending"` → `"ready"` → `"failed"` |
-| `uploaded_by` | text | Email of uploader (from Chainlit auth) |
+| `status` | text | `pending` → `processing` → `ready`, or `failed` |
+| `failure_reason` | text | Readable error when `status = 'failed'` |
+| `uploaded_by` | text | Email of the signed-in uploader |
 | `uploaded_at` | timestamp | Upload timestamp |
 
 #### `document_chunks`
@@ -50,7 +55,8 @@ Stores text chunks and their vector embeddings. This is the table queried during
 | `id` | serial | Primary key |
 | `document_id` | integer | FK → `documents.id` (cascade delete) |
 | `chunk_index` | integer | 0-based chunk position in document |
-| `content` | text | Raw text content (512-token chunks) |
+| `section_heading` | text | Nearest heading, kept for citations |
+| `content` | text | Chunk text (about 1200 characters with 150 overlap by default; see [`CHUNKING-DESIGN.md`](CHUNKING-DESIGN.md)) |
 | `embedding` | vector(1024) | BGE-M3 embedding |
 
 **Constraints:**
@@ -62,27 +68,29 @@ create index document_chunks_embedding_idx
   on document_chunks using ivfflat (embedding vector_cosine_ops);
 ```
 
-IVFFlat index accelerates cosine similarity search once the table has substantial data. For <10k chunks, pgvector uses exact search (no index needed).
+IVFFlat index accelerates cosine similarity search once the table has substantial data. There is no index on the keyword side: `retrieve_keyword` computes `to_tsvector('english', content)` at query time, which is a sequential scan (fine at this corpus size).
 
 #### `app_users`
-Stores authenticated users (Chainlit OAuth).
+Stores users who sign in with email and password. FastAPI owns the session; Chainlit reuses it.
 
 | Column | Type | Description |
 |--------|------|-------------|
 | `id` | serial | Primary key |
 | `email` | text | Unique email |
-| `role` | text | `"staff"` or `"admin"` |
+| `password_hash` | text | bcrypt hash; null means the account cannot sign in |
+| `role` | text | `staff`, `admin` or `team` |
+| `is_active` | boolean | Inactive users are rejected |
 | `created_at` | timestamp | Account creation |
 
 #### `eval_results`
-Stores benchmark results from `/testing` endpoint.
+Defined in the schema but **not written by any code**: the evaluation harness and `/testing` page keep results in memory and in JSONL files under `benchmarks/results/`.
 
 | Column | Type | Description |
 |--------|------|-------------|
 | `id` | serial | Primary key |
 | `question` | text | Benchmark question |
 | `expected_answer` | text | Ground truth (if available) |
-| `model_name` | text | LLM used (e.g., `"gemini-2.5-flash"`) |
+| `model_name` | text | LLM used (e.g., `"gemini/gemini-3.8-flash"`) |
 | `model_answer` | text | Generated answer |
 | `accuracy_score` | integer | 0-100 quality score |
 | `latency_ms` | integer | Response time |
@@ -99,7 +107,7 @@ Stores benchmark results from `/testing` endpoint.
 
 - **Hugging Face**: `BAAI/bge-m3`
 - **Output dimension**: 1024
-- **Max input tokens**: 8192 (we chunk at 512 for granular retrieval)
+- **Max input tokens**: 8192 (chunks are about 1200 characters, far below that)
 - **Normalization**: L2-normalized by default (cosine similarity = dot product)
 
 ### Why BGE-M3?
@@ -107,7 +115,7 @@ Stores benchmark results from `/testing` endpoint.
 | Criterion | BGE-M3 | Alternatives |
 |-----------|--------|--------------|
 | **Domain fit** | Trained on academic/technical text, strong on statutory language | OpenAI `text-embedding-3-large` optimized for general web text |
-| **Cost** | Free (self-hosted via Hugging Face Inference API) | OpenAI charges $0.13/1M tokens |
+| **Cost** | Hugging Face Inference API (free-tier quota applies) | OpenAI charges $0.13/1M tokens |
 | **Latency** | ~200ms per chunk batch (HF serverless) | ~150ms (OpenAI) |
 | **Dimensionality** | 1024 (fits IVFFlat index) | 3072 (OpenAI large) — 3× storage |
 
@@ -115,13 +123,13 @@ For a regulated domain with technical jargon (SMSF, SIS Act, CGT), a model train
 
 ### Embedding Pipeline
 
-Located in `app/rag/embedder.py` (currently empty — implementation pending).
+Implemented in `app/rag/embedder.py`: `embed_text()` calls `huggingface_hub.InferenceClient.feature_extraction` with `BAAI/bge-m3` (provider `hf-inference`).
 
-**Expected flow:**
-1. Receive chunked text from `app/services/document_service.py`
-2. Call Hugging Face Inference API with `BAAI/bge-m3` model
-3. Batch chunks (max 32 per request) to reduce round trips
-4. Store 1024-dimensional vectors in `document_chunks.embedding`
+**Flow:**
+1. `app/services/document_service.py` `process_document()` downloads the file from Supabase Storage, extracts text and chunks it
+2. Each chunk is embedded with one `embed_text()` call (no batching) and checked to be 1024-dimensional
+3. Old chunks for the document are deleted first, so reprocessing does not duplicate
+4. Chunks are stored in `document_chunks.embedding`, then the document is marked `ready`
 
 **Configuration:**
 ```python
@@ -174,15 +182,10 @@ Run the database test script:
 
 ```bash
 # From project root
-python -m tests.db.test_connection
+pytest tests/db -v
 ```
 
-Expected output:
-```
-✓ Connected to PostgreSQL
-✓ pgvector extension installed
-✓ Tables exist: documents, document_chunks, app_users, eval_results
-```
+`tests/db/` needs a real `.env` with working Supabase and Hugging Face credentials. `test_check_db.py` runs `SELECT 1`; `test_schema.py` checks the schema.
 
 ---
 
@@ -226,6 +229,7 @@ class DocumentChunk(Base):
     id = Column(Integer, primary_key=True)
     document_id = Column(Integer, ForeignKey("documents.id"), nullable=False)
     chunk_index = Column(Integer, nullable=False)
+    section_heading = Column(String, nullable=True)
     content = Column(Text, nullable=False)
     embedding = Column(Vector(EMBEDDING_DIM), nullable=False)
     
@@ -241,22 +245,16 @@ pip install pgvector
 
 ## Retrieval Query Pattern
 
-Located in `app/rag/retriever.py` (implementation pending).
-
-**Expected hybrid retrieval:**
+Implemented in `app/rag/retriever.py` (`retrieve_hybrid`):
 
 1. **Embed query** with BGE-M3
-2. **Vector search** for top 20 candidates:
-   ```sql
-   SELECT id, content, 1 - (embedding <=> :query_embedding) AS score
-   FROM document_chunks
-   ORDER BY embedding <=> :query_embedding
-   LIMIT 20;
-   ```
-3. **Rerank** by recency (if query mentions income year) or exact keyword match
-4. **Return top 5** to generator
+2. **Dense search**: top 20 chunks by cosine distance, joined to `documents` and restricted to `status = 'ready'`
+3. **Keyword search**: top 20 chunks by `ts_rank` on `plainto_tsquery('english', ...)`, same `ready` restriction
+4. **Reciprocal rank fusion** (`RRF_K = 60`) of the two rankings; the best 20 unique chunks become candidates
+5. **Cross-encoder rerank** (`app/rag/reranker.py`, `cross-encoder/ms-marco-MiniLM-L-6-v2` by default, overridable with `RERANKER_MODEL`)
+6. **Return top 5** to the generator
 
-This two-stage approach (recall → rerank) is standard for RAG systems. The vector index retrieves broadly; the reranking stage applies domain-specific filters.
+There is no recency or income-year ranking and no metadata filter: the temporal retrieval described in [`RAG-DESIGN.md`](RAG-DESIGN.md) is not built.
 
 ---
 
@@ -298,7 +296,7 @@ If switching from BGE-M3 (1024-dim) to another model:
    DROP INDEX document_chunks_embedding_idx;
    CREATE INDEX document_chunks_embedding_idx ON document_chunks USING ivfflat (embedding vector_cosine_ops);
    ```
-4. Re-embed all documents (use `app/services/document_service.py` with `force_reembed=True`)
+4. Re-embed all documents: call `process_document(document_id)` in `app/services/document_service.py` for each document (it deletes and rebuilds the chunks), or use the retry button / `POST /api/documents/{id}/retry`
 
 ---
 
@@ -326,10 +324,10 @@ SET ivfflat.probes = 10;  -- Higher = more accurate, slower
 
 ## Security
 
-1. **Never commit `SUPABASE_DB_URL`** — it contains the database password. Keep it in `.env` (gitignored) or Render env vars.
+1. **Never commit `SUPABASE_DB_URL`** — it contains the database password. Keep it in `.env` (gitignored).
 2. **Rotate Supabase passwords** if leaked. Regenerate from Project Settings → Database.
 3. **Enable Row-Level Security (RLS)** on Supabase tables if exposing via PostgREST API (not applicable for this app — direct SQLAlchemy access only).
-4. **Restrict IP access** in Supabase dashboard if using static IP (Render doesn't provide this on free tier).
+4. **Restrict IP access** in Supabase dashboard if the app runs from a static IP (not the case for local Docker Compose).
 
 ---
 
