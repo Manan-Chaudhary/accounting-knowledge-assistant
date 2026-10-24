@@ -201,7 +201,7 @@ The model comparison results in section 4.5 were produced before the full librar
 - **Quality:** an AI judge scores correctness and faithfulness from 1 to 5. The judge has not been checked against human marking, so the scores guide and do not gate.
 - **Time:** wall-clock time per question.
 
-The gates are in `docs/EVALUATION.md` section 4. Citation support, income-year scoping, temporal precision and cost are defined but not measured. The same checks run from the command line (`scripts/run_evaluation.py`, `scripts/evaluation_report.py`) and from the evaluation page, which is for `team` accounts and shows totals but not individual questions.
+The gates are in `docs/EVALUATION.md` section 4. Citation support, income-year scoping, temporal precision and cost are defined but not measured. The same checks run from the command line (`scripts/run_evaluation.py`, `scripts/evaluation_report.py`) and from the evaluation page, which is for `team` accounts. The page shows run totals and a per-question results table. Each question can be expanded to inspect its expected source and outcome, generated answer, retrieved passages, individual scores and failed checks, and failed questions can be filtered. Question details are loaded from the recorded run output, so opening a result does not rerun the benchmark.
 
 **Results to date.**
 

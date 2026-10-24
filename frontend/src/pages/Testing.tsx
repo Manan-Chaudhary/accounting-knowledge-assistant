@@ -63,6 +63,68 @@ type EvaluationRun = {
   summary: RunSummary | null
 }
 
+type EvaluationMetrics = {
+  expected_source_hit?: boolean | null
+  top1_source_hit?: boolean | null
+  recall_at_k?: number | null
+  reciprocal_rank?: number | null
+  citation_present?: boolean | null
+  citation_valid?: boolean | null
+  citation_format_standard?: boolean | null
+  refusal_correct?: boolean | null
+  provider_available?: boolean | null
+  refused?: boolean | null
+}
+
+type RetrievedChunk = {
+  chunk_id: number
+  document_id: number
+  chunk_index: number
+  filename: string
+  source_label: string | null
+  similarity: number | null
+  content_preview: string
+}
+
+type EvaluationJudge = {
+  correctness?: number
+  faithfulness?: number
+  reason?: string
+  error?: string
+} | null
+
+type EvaluationResult = {
+  id: string
+  class: string | null
+  use_case: string | null
+  question: string
+  expected_source: string | null
+  expected_sources: string[]
+  expected_outcome: string | null
+  must_refuse: boolean
+  model_name: string | null
+  retrieval_strategy: string | null
+  top_k: number | null
+  model_answer: string | null
+  retrieved_files: string[]
+  retrieved_chunks: RetrievedChunk[]
+  metrics: EvaluationMetrics
+  judge: EvaluationJudge
+  retrieval_latency_ms: number | null
+  generation_latency_ms: number | null
+  latency_ms: number | null
+  status: string
+  created_at: string | null
+  failures: string[]
+}
+
+type EvaluationResultsResponse = {
+  run_id: string
+  status: string
+  completed: number
+  results: EvaluationResult[]
+}
+
 const TERMINAL = new Set(['completed', 'failed', 'interrupted'])
 
 function readError(payload: unknown, fallback: string): string {
@@ -93,6 +155,32 @@ function statusLabel(status: EvaluationRun['status']): string {
   return 'RUN FAILED'
 }
 
+function formatBooleanMetric(value: boolean | null | undefined): string {
+  if (value === true) return 'PASS'
+  if (value === false) return 'FAIL'
+  return 'N/A'
+}
+
+function formatRatio(value: number | null | undefined): string {
+  if (typeof value !== 'number') return 'N/A'
+  return `${Math.round(value * 100)}%`
+}
+
+function formatDecimal(value: number | null | undefined): string {
+  if (typeof value !== 'number') return 'N/A'
+  return value.toFixed(2)
+}
+
+function formatJudgeScore(value: number | undefined): string {
+  if (typeof value !== 'number') return 'Not run'
+  return `${value.toFixed(1)} / 5`
+}
+
+function formatLatencyMs(value: number | null | undefined): string {
+  if (typeof value !== 'number') return 'N/A'
+  return `${(value / 1000).toFixed(1)}s`
+}
+
 export function Testing() {
   const [config, setConfig] = useState<TestingConfig | null>(null)
   const [configError, setConfigError] = useState<string | null>(null)
@@ -107,6 +195,11 @@ export function Testing() {
   const [run, setRun] = useState<EvaluationRun | null>(null)
   const [starting, setStarting] = useState(false)
   const [actionError, setActionError] = useState<string | null>(null)
+
+  const [results, setResults] = useState<EvaluationResult[]>([])
+  const [resultsError, setResultsError] = useState<string | null>(null)
+  const [resultFilter, setResultFilter] = useState<'all' | 'failed'>('all')
+  const [expandedResultId, setExpandedResultId] = useState<string | null>(null)
 
   const isActive = Boolean(run && !TERMINAL.has(run.status))
 
@@ -226,6 +319,52 @@ export function Testing() {
     }
   }, [activeRunId, activeRunStatus])
 
+  const resultRunId = run?.run_id
+  const completedResultCount = run?.completed ?? 0
+
+  useEffect(() => {
+    if (!resultRunId || completedResultCount === 0) return
+
+    let cancelled = false
+
+    const loadResults = async () => {
+      try {
+        const response = await fetch(
+          `/api/testing/runs/${resultRunId}/results`,
+          { credentials: 'include' },
+        )
+
+        const payload = await response.json().catch(() => ({}))
+
+        if (!response.ok) {
+          throw new Error(
+            readError(payload, 'Could not load per-question evaluation results.'),
+          )
+        }
+
+        if (!cancelled) {
+          const resultPayload = payload as EvaluationResultsResponse
+          setResults(resultPayload.results)
+          setResultsError(null)
+        }
+      } catch (error) {
+        if (!cancelled) {
+          setResultsError(
+            error instanceof Error
+              ? error.message
+              : 'Could not load per-question evaluation results.',
+          )
+        }
+      }
+    }
+
+    void loadResults()
+
+    return () => {
+      cancelled = true
+    }
+  }, [resultRunId, completedResultCount])
+
   const progress = useMemo(() => {
     if (!run || run.total === 0) return 0
     return Math.min(100, Math.round((run.completed / run.total) * 100))
@@ -233,9 +372,26 @@ export function Testing() {
 
   const selectedTestSet = config?.test_sets.find((item) => item.id === testSet)
 
+  const visibleResults = useMemo(
+    () =>
+      resultFilter === 'failed'
+        ? results.filter((result) => result.failures.length > 0)
+        : results,
+    [resultFilter, results],
+  )
+
+  const failedResultCount = useMemo(
+    () => results.filter((result) => result.failures.length > 0).length,
+    [results],
+  )
+
   const handleStart = async () => {
     setStarting(true)
     setActionError(null)
+    setResultsError(null)
+    setResults([])
+    setResultFilter('all')
+    setExpandedResultId(null)
 
     try {
       const response = await fetch('/api/testing/runs', {
@@ -568,8 +724,335 @@ export function Testing() {
           </section>
         )}
 
+        {results.length > 0 && (
+          <section className="eval-card">
+            <div className="eval-card__header eval-results-header">
+              <div>
+                <div className="eval-eyebrow">QUESTION RESULTS</div>
+                <h2>Per-question evaluation</h2>
+                <p className="eval-muted">
+                  Inspect generated answers, retrieved sources and individual scores
+                  from this recorded run.
+                </p>
+              </div>
+
+              <div className="eval-result-filters" aria-label="Result filters">
+                <button
+                  type="button"
+                  className={resultFilter === 'all' ? 'is-active' : ''}
+                  onClick={() => setResultFilter('all')}
+                >
+                  All ({results.length})
+                </button>
+
+                <button
+                  type="button"
+                  className={resultFilter === 'failed' ? 'is-active' : ''}
+                  onClick={() => setResultFilter('failed')}
+                >
+                  Failed ({failedResultCount})
+                </button>
+              </div>
+            </div>
+
+            {resultsError && <div className="error-message">{resultsError}</div>}
+
+            {visibleResults.length === 0 ? (
+              <div className="eval-results-empty">
+                No failed questions in the recorded results.
+              </div>
+            ) : (
+              <div className="eval-results-table-wrap">
+                <table className="eval-results-table">
+                  <thead>
+                    <tr>
+                      <th>Case</th>
+                      <th>Question</th>
+                      <th>Expected source</th>
+                      <th>Expected outcome</th>
+                      <th>Source</th>
+                      <th>Citation</th>
+                      <th>Latency</th>
+                      <th>Result</th>
+                      <th aria-label="Expand" />
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    {visibleResults.map((result) => {
+                      const expanded = expandedResultId === result.id
+                      const failed = result.failures.length > 0
+                      const metrics = result.metrics ?? {}
+
+                      return (
+                        <>
+                          <tr
+                            key={result.id}
+                            className={`eval-result-row ${
+                              failed ? 'eval-result-row--failed' : ''
+                            }`}
+                          >
+                            <td>
+                              <strong>{result.id}</strong>
+                              {result.class && (
+                                <small className="eval-result-class">
+                                  {result.class}
+                                </small>
+                              )}
+                            </td>
+
+                            <td className="eval-result-question">
+                              {result.question}
+                            </td>
+
+                            <td>
+                              {result.expected_sources.length > 0
+                                ? result.expected_sources.join(', ')
+                                : 'None expected'}
+                            </td>
+
+                            <td>
+                              <span
+                                className="eval-result-outcome-text"
+                                title={result.expected_outcome || ''}
+                              >
+                                {result.expected_outcome || 'Not specified'}
+                              </span>
+                            </td>
+
+                            <td>
+                              {formatBooleanMetric(metrics.expected_source_hit)}
+                            </td>
+
+                            <td>
+                              {formatBooleanMetric(metrics.citation_valid)}
+                            </td>
+
+                            <td>{formatLatencyMs(result.latency_ms)}</td>
+
+                            <td>
+                              <span
+                                className={`eval-case-badge ${
+                                  failed
+                                    ? 'eval-case-badge--fail'
+                                    : 'eval-case-badge--pass'
+                                }`}
+                              >
+                                {failed ? 'FAIL' : 'PASS'}
+                              </span>
+                            </td>
+
+                            <td>
+                              <button
+                                type="button"
+                                className="eval-expand-button"
+                                aria-expanded={expanded}
+                                onClick={() =>
+                                  setExpandedResultId(
+                                    expanded ? null : result.id,
+                                  )
+                                }
+                              >
+                                {expanded ? '−' : '+'}
+                              </button>
+                            </td>
+                          </tr>
+
+                          {expanded && (
+                            <tr
+                              key={`${result.id}-details`}
+                              className="eval-result-details-row"
+                            >
+                              <td colSpan={9}>
+                                <div className="eval-result-details">
+                                  {failed && (
+                                    <div className="eval-case-failures">
+                                      <strong>Failed checks</strong>
+                                      <ul>
+                                        {result.failures.map((failure) => (
+                                          <li key={failure}>{failure}</li>
+                                        ))}
+                                      </ul>
+                                    </div>
+                                  )}
+
+                                  <div className="eval-detail-grid">
+                                    <section>
+                                      <div className="eval-eyebrow">
+                                        EXPECTED OUTCOME
+                                      </div>
+                                      <p>
+                                        {result.expected_outcome ||
+                                          'No expected outcome recorded.'}
+                                      </p>
+                                    </section>
+
+                                    <section>
+                                      <div className="eval-eyebrow">
+                                        GENERATED ANSWER
+                                      </div>
+                                      <p className="eval-answer-text">
+                                        {result.model_answer ||
+                                          'No answer was returned.'}
+                                      </p>
+                                    </section>
+                                  </div>
+
+                                  <div className="eval-detail-section">
+                                    <div className="eval-eyebrow">
+                                      RETRIEVED SOURCES
+                                    </div>
+
+                                    {result.retrieved_chunks.length === 0 ? (
+                                      <p className="eval-muted">
+                                        No retrieved chunks recorded.
+                                      </p>
+                                    ) : (
+                                      <div className="eval-source-list">
+                                        {result.retrieved_chunks.map(
+                                          (chunk, index) => (
+                                            <article
+                                              className="eval-source-item"
+                                              key={chunk.chunk_id}
+                                            >
+                                              <div className="eval-source-item__header">
+                                                <strong>
+                                                  {index + 1}.{' '}
+                                                  {chunk.source_label ||
+                                                    chunk.filename}
+                                                </strong>
+                                                <span>
+                                                  Chunk {chunk.chunk_index}
+                                                  {typeof chunk.similarity ===
+                                                  'number'
+                                                    ? ` · similarity ${chunk.similarity.toFixed(2)}`
+                                                    : ''}
+                                                </span>
+                                              </div>
+
+                                              <p>{chunk.content_preview}</p>
+                                            </article>
+                                          ),
+                                        )}
+                                      </div>
+                                    )}
+                                  </div>
+
+                                  <div className="eval-detail-section">
+                                    <div className="eval-eyebrow">SCORES</div>
+
+                                    <div className="eval-case-score-grid">
+                                      <div>
+                                        <span>Expected source hit</span>
+                                        <strong>
+                                          {formatBooleanMetric(
+                                            metrics.expected_source_hit,
+                                          )}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>Recall @ K</span>
+                                        <strong>
+                                          {formatRatio(metrics.recall_at_k)}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>MRR</span>
+                                        <strong>
+                                          {formatDecimal(
+                                            metrics.reciprocal_rank,
+                                          )}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>Citation present</span>
+                                        <strong>
+                                          {formatBooleanMetric(
+                                            metrics.citation_present,
+                                          )}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>Citation valid</span>
+                                        <strong>
+                                          {formatBooleanMetric(
+                                            metrics.citation_valid,
+                                          )}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>Citation format</span>
+                                        <strong>
+                                          {formatBooleanMetric(
+                                            metrics.citation_format_standard,
+                                          )}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>Refusal correct</span>
+                                        <strong>
+                                          {formatBooleanMetric(
+                                            metrics.refusal_correct,
+                                          )}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>Correctness</span>
+                                        <strong>
+                                          {formatJudgeScore(
+                                            result.judge?.correctness,
+                                          )}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>Faithfulness</span>
+                                        <strong>
+                                          {formatJudgeScore(
+                                            result.judge?.faithfulness,
+                                          )}
+                                        </strong>
+                                      </div>
+
+                                      <div>
+                                        <span>Total latency</span>
+                                        <strong>
+                                          {formatLatencyMs(result.latency_ms)}
+                                        </strong>
+                                      </div>
+                                    </div>
+
+                                    {result.judge?.reason && (
+                                      <div className="eval-judge-reason">
+                                        <strong>Judge note:</strong>{' '}
+                                        {result.judge.reason}
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          )}
+                        </>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </section>
+        )}
+
         <div className="eval-scope-note">
-          Detailed per-question result inspection is intentionally outside this Sprint 3 implementation ticket.
+          Question details are loaded from the recorded evaluation output.
+          Opening a result does not rerun the benchmark.
         </div>
       </div>
     </Layout>

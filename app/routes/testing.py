@@ -350,6 +350,35 @@ def _public_run(run: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _public_result(result: dict[str, Any]) -> dict[str, Any]:
+    """Return one evaluation case with its failure reasons."""
+
+    return {
+        "id": result.get("id"),
+        "class": result.get("class"),
+        "use_case": result.get("use_case"),
+        "question": result.get("question"),
+        "expected_source": result.get("expected_source"),
+        "expected_sources": result.get("expected_sources", []),
+        "expected_outcome": result.get("expected_outcome"),
+        "must_refuse": result.get("must_refuse", False),
+        "model_name": result.get("model_name"),
+        "retrieval_strategy": result.get("retrieval_strategy"),
+        "top_k": result.get("top_k"),
+        "model_answer": result.get("model_answer"),
+        "retrieved_files": result.get("retrieved_files", []),
+        "retrieved_chunks": result.get("retrieved_chunks", []),
+        "metrics": result.get("metrics", {}),
+        "judge": result.get("judge"),
+        "retrieval_latency_ms": result.get("retrieval_latency_ms"),
+        "generation_latency_ms": result.get("generation_latency_ms"),
+        "latency_ms": result.get("latency_ms"),
+        "status": result.get("status", "ok"),
+        "created_at": result.get("created_at"),
+        "failures": case_failures(result),
+    }
+
+
 def _refresh_progress(run_id: str) -> None:
     with _runs_lock:
         run = _runs.get(run_id)
@@ -636,6 +665,40 @@ def get_evaluation_run(
             )
 
         return _public_run(run)
+
+
+@router.get("/runs/{run_id}/results")
+def get_evaluation_run_results(
+    run_id: str,
+    request: Request,
+) -> dict[str, Any]:
+    """Return already-recorded per-question results for a run."""
+
+    _require_team(request)
+
+    with _runs_lock:
+        run = _runs.get(run_id)
+
+        if run is None:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Evaluation run not found.",
+            )
+
+        output_path = Path(run["output_path"])
+        run_status = run["status"]
+
+    results = _read_results(output_path)
+
+    return {
+        "run_id": run_id,
+        "status": run_status,
+        "completed": len(results),
+        "results": [
+            _public_result(result)
+            for result in results
+        ],
+    }
 
 
 @router.post("/runs/{run_id}/stop")

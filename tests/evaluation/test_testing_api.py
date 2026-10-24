@@ -196,3 +196,101 @@ def test_summary_applies_supported_gates(monkeypatch):
     assert cards["p95_latency_ms"]["outcome"] == "fail"
     assert cards["judge_correctness"]["outcome"] == "info"
     assert summary["gates_met"] is False
+
+
+def test_run_results_return_completed_cases(client, monkeypatch, tmp_path):
+    output_path = tmp_path / "results.jsonl"
+    output_path.write_text(
+        '{"id":"EVAL-001","class":"C1","question":"Test question?",'
+        '"expected_sources":["source.txt"],'
+        '"expected_outcome":"Expected answer",'
+        '"must_refuse":false,'
+        '"model_name":"gemini-3-8-flash",'
+        '"retrieval_strategy":"keyword",'
+        '"top_k":6,'
+        '"model_answer":"Test answer [1]",'
+        '"retrieved_files":["source.txt"],'
+        '"retrieved_chunks":[],'
+        '"metrics":{"expected_source_hit":true,'
+        '"citation_present":true,'
+        '"citation_valid":true,'
+        '"citation_format_standard":true,'
+        '"refusal_correct":true,'
+        '"provider_available":true},'
+        '"judge":null,'
+        '"retrieval_latency_ms":100,'
+        '"generation_latency_ms":200,'
+        '"latency_ms":300,'
+        '"status":"ok"}\n',
+        encoding="utf-8",
+    )
+
+    with testing._runs_lock:
+        testing._runs["run123"] = {
+            "run_id": "run123",
+            "status": "completed",
+            "output_path": str(output_path),
+        }
+
+    response = client.get("/api/testing/runs/run123/results")
+
+    assert response.status_code == 200
+
+    payload = response.json()
+
+    assert payload["run_id"] == "run123"
+    assert payload["completed"] == 1
+    assert payload["results"][0]["id"] == "EVAL-001"
+    assert payload["results"][0]["question"] == "Test question?"
+    assert payload["results"][0]["model_answer"] == "Test answer [1]"
+    assert payload["results"][0]["expected_sources"] == ["source.txt"]
+    assert payload["results"][0]["failures"] == []
+
+
+def test_run_results_include_failure_reasons(client, tmp_path):
+    output_path = tmp_path / "failed-results.jsonl"
+    output_path.write_text(
+        '{"id":"EVAL-002","class":"C1","question":"Failed question?",'
+        '"expected_sources":["expected.txt"],'
+        '"expected_outcome":"Expected answer",'
+        '"must_refuse":false,'
+        '"model_name":"gemini-3-8-flash",'
+        '"retrieval_strategy":"keyword",'
+        '"top_k":6,'
+        '"model_answer":"Answer without citation",'
+        '"retrieved_files":["wrong.txt"],'
+        '"retrieved_chunks":[],'
+        '"metrics":{"expected_source_hit":false,'
+        '"citation_present":false,'
+        '"citation_valid":true,'
+        '"citation_format_standard":true,'
+        '"refusal_correct":true,'
+        '"provider_available":true},'
+        '"judge":null,'
+        '"latency_ms":300,'
+        '"status":"ok"}\n',
+        encoding="utf-8",
+    )
+
+    with testing._runs_lock:
+        testing._runs["run456"] = {
+            "run_id": "run456",
+            "status": "completed",
+            "output_path": str(output_path),
+        }
+
+    response = client.get("/api/testing/runs/run456/results")
+
+    assert response.status_code == 200
+
+    result = response.json()["results"][0]
+
+    assert "expected source not retrieved" in result["failures"]
+    assert "no citation" in result["failures"]
+
+
+def test_run_results_unknown_run_returns_404(client):
+    response = client.get("/api/testing/runs/not-real/results")
+
+    assert response.status_code == 404
+    assert response.json()["detail"] == "Evaluation run not found."
